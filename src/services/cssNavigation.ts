@@ -168,7 +168,7 @@ function getHighlightKind(node: nodes.Node): DocumentHighlightKind {
 
 	if (node instanceof nodes.Identifier) {
 		if (node.parent && node.parent instanceof nodes.Property) {
-			if (Symbols.isCssVariable(node)) {
+			if (node.isCustomProperty) {
 				return DocumentHighlightKind.Write;
 			}
 		}
