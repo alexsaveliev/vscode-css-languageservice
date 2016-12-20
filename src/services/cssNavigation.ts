@@ -6,64 +6,189 @@
 
 import * as nodes from '../parser/cssNodes';
 import {TextDocument, Range, Position, Location, DocumentHighlightKind, DocumentHighlight,
-	SymbolInformation, SymbolKind, WorkspaceEdit, TextEdit} from 'vscode-languageserver-types';
+	SymbolInformation, SymbolKind, WorkspaceEdit, TextEdit, VersionedTextDocumentIdentifier, MarkedString} from 'vscode-languageserver-types';
 import {Symbols} from '../parser/cssSymbolScope';
 import {isColorValue} from '../services/languageFacts';
 
 import * as nls from 'vscode-nls';
 const localize = nls.loadMessageBundle();
 
+var path = require("path");
+
 export class CSSNavigation {
-
-	public findDefinition(document: TextDocument, position: Position, stylesheet: nodes.Node): Location {
-
-		let symbols = new Symbols(stylesheet);
-		let offset = document.offsetAt(position);
-		let node = nodes.getNodeAtOffset(stylesheet, offset);
-
-		if (!node) {
-			//workaround for https://github.com/Microsoft/vscode-languageserver-node/issues/45
-			return {
-				uri: document.uri,
-				range: Range.create(position, position)
-			};
+	public findDecl(thisURI: string, documents: {[uri: string]: {textDoc: TextDocument, styleSheet: nodes.Stylesheet}}, name: string, type: nodes.NodeType, range: Range): Location {
+		function getRange(document: TextDocument, node: nodes.Node) {
+			return Range.create(document.positionAt(node.offset), document.positionAt(node.end));
 		}
 
-		let symbol = symbols.findSymbolFromNode(node);
-		if (!symbol) {
-			//workaround for https://github.com/Microsoft/vscode-languageserver-node/issues/45
-			return {
-				uri: document.uri,
-				range: Range.create(position, position)
-			};
+		for (var uri in documents) {
+			const possibleCandidate = (function searchNode(node: nodes.Node): Location {
+				if (!node) {
+					return null;
+				}
+				if (node.type === type) {
+					if ((node as any).getName() === name) {
+						return {
+							uri: documents[uri].textDoc.uri,
+							range: getRange(documents[uri].textDoc, node)
+						};
+					}
+				}
+				for (let idx = 0; idx < node.getChildren().length; idx++) {
+					const nodeRes = searchNode(node.getChildren()[idx]);
+					if (nodeRes) {
+						return nodeRes;
+					}
+				}
+				return null;
+			})(documents[uri].styleSheet);
+ 
+			if (possibleCandidate) {
+				return possibleCandidate;
+			}
+		}
+		return {
+			uri: thisURI,
+			range: range
+		};
+	}
+
+	public findDefinition(thisURI: string, documents: {[uri: string]: {textDoc: TextDocument, styleSheet: nodes.Stylesheet}}, position: Position): Location {
+		const document = documents[thisURI].textDoc;
+		const stylesheet = documents[thisURI].styleSheet;
+
+		function getRange(node: nodes.Node) {
+			return Range.create(document.positionAt(node.offset), document.positionAt(node.end));
+		}
+
+		let offset = document.offsetAt(position);
+		let nodepath = nodes.getNodePath(stylesheet, offset);
+
+		let node : nodes.Node;
+
+		for (let idx = nodepath.length; idx-- > 0;) {
+			node = nodepath[idx];
+
+			switch (node.type) {
+				case nodes.NodeType.Undefined: { } break;
+				case nodes.NodeType.Identifier: { } break;
+				case nodes.NodeType.Stylesheet: { } break;
+				case nodes.NodeType.Ruleset: { } break;
+				case nodes.NodeType.Selector: { } break;
+				case nodes.NodeType.SimpleSelector: { } break;
+				case nodes.NodeType.SelectorInterpolation: { } break;
+				case nodes.NodeType.SelectorCombinator: { } break;
+				case nodes.NodeType.SelectorCombinatorParent: { } break;
+				case nodes.NodeType.SelectorCombinatorSibling: { } break;
+				case nodes.NodeType.SelectorCombinatorAllSiblings: { } break;
+				case nodes.NodeType.Page: { } break;
+				case nodes.NodeType.PageBoxMarginBox: { } break;
+				case nodes.NodeType.ClassSelector: { } break;
+				case nodes.NodeType.IdentifierSelector: { } break;
+				case nodes.NodeType.ElementNameSelector: { } break;
+				case nodes.NodeType.PseudoSelector: { } break;
+				case nodes.NodeType.AttributeSelector: { } break;
+				case nodes.NodeType.Declaration: { } break;
+				case nodes.NodeType.Declarations: { } break;
+				case nodes.NodeType.Property: { } break;
+				case nodes.NodeType.Expression: { } break;
+				case nodes.NodeType.BinaryExpression: { } break;
+				case nodes.NodeType.Term: { } break;
+				case nodes.NodeType.Operator: { } break;
+				case nodes.NodeType.Value: { } break;
+				case nodes.NodeType.StringLiteral: { } break;
+				case nodes.NodeType.URILiteral: { } break;
+				case nodes.NodeType.EscapedValue: { } break;
+				case nodes.NodeType.Function: { } break;
+				case nodes.NodeType.NumericValue: { } break;
+				case nodes.NodeType.HexColorValue: { } break;
+				case nodes.NodeType.MixinDeclaration: { } break;
+				case nodes.NodeType.MixinReference: {
+					let mDecl: Location;
+
+					mDecl = this.findDecl(thisURI, documents, (node as nodes.MixinReference).getName(), nodes.NodeType.MixinDeclaration, Range.create(position, position));
+					if (mDecl) {
+						return mDecl;
+					} else {
+						return {
+							uri: document.uri,
+							range: Range.create(position, position)
+						};
+					}
+				}
+				case nodes.NodeType.VariableName: {
+					let vDecl: Location;
+
+					vDecl = this.findDecl(thisURI, documents, (node as nodes.Variable).getName(), nodes.NodeType.VariableDeclaration, Range.create(position, position));
+					if (vDecl) {
+						return vDecl;
+					} else {
+						return {
+							uri: document.uri,
+							range: Range.create(position, position)
+						};
+					}
+				}
+				case nodes.NodeType.VariableDeclaration: { } break;
+				case nodes.NodeType.Prio: { } break;
+				case nodes.NodeType.Interpolation: { } break;
+				case nodes.NodeType.NestedProperties: { } break;
+				case nodes.NodeType.ExtendsReference: { } break;
+				case nodes.NodeType.SelectorPlaceholder: { } break;
+				case nodes.NodeType.Debug: { } break;
+				case nodes.NodeType.If: { } break;
+				case nodes.NodeType.Else: { } break;
+				case nodes.NodeType.For: { } break;
+				case nodes.NodeType.Each: { } break;
+				case nodes.NodeType.While: { } break;
+				case nodes.NodeType.MixinContent: { } break;
+				case nodes.NodeType.Media: { } break;
+				case nodes.NodeType.Keyframe: { } break;
+				case nodes.NodeType.FontFace: { } break;
+				case nodes.NodeType.Import: { } break;
+				case nodes.NodeType.Namespace: { } break;
+				case nodes.NodeType.Invocation: { }
+				case nodes.NodeType.FunctionDeclaration: { } break;
+				case nodes.NodeType.ReturnStatement: { } break;
+				case nodes.NodeType.MediaQuery: { } break;
+				case nodes.NodeType.FunctionParameter: { } break;
+				case nodes.NodeType.FunctionArgument: { } break;
+				case nodes.NodeType.KeyframeSelector: { } break;
+				case nodes.NodeType.ViewPort: { } break;
+				case nodes.NodeType.Document: { } break;
+				default: { } break;
+			}
 		}
 
 		return {
 			uri: document.uri,
-			range: getRange(symbol.node, document)
+			range: Range.create(position, position)
 		};
 	}
 
-	public findReferences(document: TextDocument, position: Position, stylesheet: nodes.Stylesheet): Location[] {
-		let highlights = this.findDocumentHighlights(document, position, stylesheet);
-		return highlights.map(h => {
-			return {
-				uri: document.uri,
-				range: h.range
-			};
-		});
+	public findReferences(thisURI: string, documents: {[uri: string]: {textDoc: TextDocument, styleSheet: nodes.Stylesheet}}, position: Position): Location[] {
+		let refs: Location[] = [];
+		const node: nodes.Node = nodes.getNodeAtOffset(documents[thisURI].styleSheet, documents[thisURI].textDoc.offsetAt(position));
+
+		for (var uri in documents) {
+			refs = refs.concat(this.findDocumentHighlights(documents[uri].textDoc, node, new Symbols(documents[thisURI].styleSheet), documents[uri].styleSheet).map(highlight => {
+				return {
+					uri: documents[uri].textDoc.uri,
+					range: highlight.range
+				};
+			}));
+		}
+
+		return refs;
 	}
 
-	public findDocumentHighlights(document: TextDocument, position: Position, stylesheet: nodes.Stylesheet): DocumentHighlight[] {
+	public findDocumentHighlights(document: TextDocument, node: nodes.Node, symbols: Symbols, stylesheet: nodes.Stylesheet): DocumentHighlight[] {
 		let result: DocumentHighlight[] = [];
 
-		let offset = document.offsetAt(position);
-		let node = nodes.getNodeAtOffset(stylesheet, offset);
-		if (!node || node.type === nodes.NodeType.Stylesheet || node.type === nodes.NodeType.Declarations) {
+		if (!node || node.type === nodes.NodeType.Stylesheet || node.type === nodes.NodeType.Declarations || !stylesheet || typeof stylesheet.accept !== "function") {
 			return result;
 		}
 
-		let symbols = new Symbols(stylesheet);
 		let symbol = symbols.findSymbolFromNode(node);
 		let name = node.getText();
 
@@ -142,7 +267,7 @@ export class CSSNavigation {
 	}
 
 	public doRename(document: TextDocument, position: Position, newName: string, stylesheet: nodes.Stylesheet): WorkspaceEdit {
-		let highlights = this.findDocumentHighlights(document, position, stylesheet);
+		let highlights = this.findDocumentHighlights(document, nodes.getNodeAtOffset(stylesheet, document.offsetAt(position)), new Symbols(stylesheet), stylesheet);
 		let edits = highlights.map(h => TextEdit.replace(h.range, newName));
 		return {
 			changes: {

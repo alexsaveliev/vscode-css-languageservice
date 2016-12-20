@@ -5,7 +5,7 @@
 'use strict';
 
 import * as assert from 'assert';
-import {Scope, GlobalScope, ScopeBuilder} from '../../parser/cssSymbolScope';
+import {Scope, GlobalScope, ScopeBuilder, Symbols} from '../../parser/cssSymbolScope';
 import * as nodes from '../../parser/cssNodes';
 import {Parser} from '../../parser/cssParser';
 import {CSSNavigation} from '../../services/cssNavigation';
@@ -30,7 +30,7 @@ export function assertHighlights(p: Parser, input: string, marker: string, expec
 	let index = input.indexOf(marker) + marker.length;
 	let position = document.positionAt(index);
 
-	return asPromise(new CSSNavigation().findDocumentHighlights(document, position, stylesheet)).then(highlights => {
+	return asPromise(new CSSNavigation().findDocumentHighlights(document, nodes.getNodeAtOffset(stylesheet, document.offsetAt(position)), new Symbols(stylesheet), stylesheet)).then(highlights => {
 		assert.equal(highlights.length, expectedMatches, input);
 
 		let nWrites = 0;

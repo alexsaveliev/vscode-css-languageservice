@@ -1,0 +1,6 @@
+build/* linguist-vendored
+lib/* linguist-vendored
+LICENSE.md linguist-documentation
+README.md linguist-documentation
+thirdpartynotices.txt linguist-documentation
+

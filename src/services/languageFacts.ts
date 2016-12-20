@@ -425,6 +425,8 @@ export interface IEntry {
 	name:string;
 	restrictions:string[];
 	browsers:Browsers;
+	syntax:string;
+	ref:string;
 	description:string;
 	values:Value[];
 }
@@ -501,6 +503,14 @@ class EntryImpl implements IEntry {
 			this.browserEntry = evalBrowserEntry(this.data.browsers);
 		}
 		return this.browserEntry;
+	}
+
+	get ref(): string {
+		return this.data.ref;
+	}
+
+	get syntax(): string {
+		return this.data.syntax;
 	}
 
 	get restrictions(): string[] {

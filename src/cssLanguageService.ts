@@ -26,9 +26,10 @@ export interface LanguageService {
 	doValidation(document: TextDocument, stylesheet: Stylesheet): Diagnostic[];
 	parseStylesheet(document: TextDocument): Stylesheet;
 	doComplete(document: TextDocument, position: Position, stylesheet: Stylesheet): CompletionList;
-	doHover(document: TextDocument, position: Position, stylesheet: Stylesheet): Hover;
-	findDefinition(document: TextDocument, position: Position, stylesheet: Stylesheet): Location;
-	findReferences(document: TextDocument, position: Position, stylesheet: Stylesheet): Location[];
+	findDependencies(stylesheet: Stylesheet): string[];
+	doHover(thisURI: string, documents: {[uri: string]: {textDoc: TextDocument, styleSheet: Stylesheet}}, position: Position): Hover;
+	findDefinition(thisURI: string, documents: {[uri: string]: {textDoc: TextDocument, styleSheet: Stylesheet}}, position: Position): Location;
+	findReferences(thisURI: string, documents: {[uri: string]: {textDoc: TextDocument, styleSheet: Stylesheet}}, position: Position): Location[];
 	findDocumentHighlights(document: TextDocument, position: Position, stylesheet: Stylesheet): DocumentHighlight[];
 	findDocumentSymbols(document: TextDocument, stylesheet: Stylesheet): SymbolInformation[];
 	doCodeActions(document: TextDocument, range: Range, context: CodeActionContext, stylesheet: Stylesheet): Command[];
@@ -48,6 +49,7 @@ function createFacade(parser: Parser, completion: CSSCompletion, hover: CSSHover
 		doValidation: validation.doValidation.bind(validation),
 		parseStylesheet: parser.parseStylesheet.bind(parser),
 		doComplete: completion.doComplete.bind(completion),
+		findDependencies: parser.findDependencies.bind(parser),
 		doHover: hover.doHover.bind(hover),
 		findDefinition: navigation.findDefinition.bind(navigation),
 		findReferences: navigation.findReferences.bind(navigation),

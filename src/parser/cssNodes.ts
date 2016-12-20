@@ -409,9 +409,27 @@ export class Identifier extends Node {
 export class Stylesheet extends Node {
 
 	private name: string;
+	private dependencyMap: {[src: string]: string};
 
 	constructor(offset: number, length: number) {
 		super(offset, length);
+		this.dependencyMap = Object.create(null);
+	}
+
+	public getDependencies(): {[src: string]: string} {
+		return this.dependencyMap;
+	}
+
+	public remDependencies(src: string[]) {
+		src.map((dep) => {
+			delete this.dependencyMap[dep];
+		})
+	}
+
+	public addDependencies(src: string[]) {
+		src.map((dep) => {
+			this.dependencyMap[dep] = "";
+		});
 	}
 
 	public get type(): NodeType {
@@ -974,13 +992,23 @@ export class KeyframeSelector extends BodyDeclaration {
 export class Import extends Node {
 
 	private medialist: Node;
+	private sourceList: string[];
 
 	constructor(offset: number, length: number) {
 		super(offset, length);
+		this.sourceList = [];
 	}
 
 	public get type(): NodeType {
 		return NodeType.Import;
+	}
+
+	public addSource(src: string): void {
+		this.sourceList.push(src.replace(/['"]+/g, ""));
+	}
+
+	public getSources(): string[] {
+		return this.sourceList;
 	}
 
 	public setMedialist(node: Node): boolean {

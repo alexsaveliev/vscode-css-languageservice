@@ -38,11 +38,9 @@ export class LESSParser extends cssParser.Parser {
 			if (!this.accept(TokenType.Ident)) {
 				return this.finish(node, ParseError.IdentifierExpected, [TokenType.SemiColon]);
 			}
-			do {
-				if (!this.accept(TokenType.Comma)) {
-					break;
-				}
-			} while (this.accept(TokenType.Ident));
+			while (this.accept(TokenType.Comma) && this.accept(TokenType.Ident)) {
+				node.addSource(this.prevToken.text);
+			}
 
 			if (!this.accept(TokenType.ParenthesisR)) {
 				return this.finish(node, ParseError.RightParenthesisExpected, [TokenType.SemiColon]);
@@ -52,7 +50,7 @@ export class LESSParser extends cssParser.Parser {
 		if (!this.accept(TokenType.URI) && !this.accept(TokenType.String)) {
 			return this.finish(node, ParseError.URIOrStringExpected, [TokenType.SemiColon]);
 		}
-
+		node.addSource(this.prevToken.text);
 		node.setMedialist(this._parseMediaList());
 
 		return this.finish(node);
@@ -72,7 +70,7 @@ export class LESSParser extends cssParser.Parser {
 
 	public _parseMediaDeclaration(): nodes.Node {
 		return this._tryParseRuleset(false) 
-			|| this._tryToParseDeclaration() 
+			|| this._tryToParseDeclaration()
 			|| this._tryParseMixinDeclaration()
 			|| this._tryParseMixinReference()
 			|| this._parseStylesheetStatement();

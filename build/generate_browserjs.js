@@ -6,6 +6,7 @@
 var fs = require('fs');
 var path = require('path');
 var xml2js = require('xml2js');
+var jsdom = require('jsdom');
 var os = require('os');
 var util = require('util');
 
@@ -327,12 +328,31 @@ function toSource(object, keyName) {
 			desc: e.desc,
 			browsers: e.$.browsers !== 'all' ? e.$.browsers : void 0
 		};
+		if (e.$.ref) {
+			data.ref = e.$.ref;
+		}
+		if (e.$.syntax) {
+			data.syntax = e.$.syntax.replace("$(name)", e.$.name);
+		}
 		if (e.$.restriction) {
 			data.restriction= e.$.restriction;
 		}
 		if (e.values) {
 			data.values= getValues(e.values.value, data.restriction || '', data.name);
 		}
+
+		try {
+			const mdnDOM = jsdom.jsdom(fs.readFileSync(path.resolve(__dirname, `moz-mdn-css/${e.$.name.replace(":", "_")}.html`), {encoding: 'utf8'})).defaultView.document;
+
+			let mdnDoc = mdnDOM.getElementById("Summary").nextSibling;
+			while (mdnDoc && !(mdnDoc.tagName === "P" && mdnDoc.textContent.trim().length > 0)) {
+				mdnDoc = mdnDoc.nextSibling;
+			}
+			if (mdnDoc) {
+				data.ref = `https://developer.mozilla.org/en-US/docs/Web/CSS/${e.$.name}`;
+				data.desc = mdnDoc.textContent;
+			}
+		} catch (err) {};
 
 		result.push(data);
 	});

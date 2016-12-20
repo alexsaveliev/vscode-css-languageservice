@@ -16,234 +16,323 @@
 		"atdirectives": [
 			{
 				"name": "@charset",
-				"desc": "Defines character set of the document."
+				"desc": "Defines character set of the document.",
+				"ref": "http://www.w3.org/TR/css3-syntax/#charset",
+				"syntax": "@charset 'utf-8';"
 			},
 			{
 				"name": "@counter-style",
 				"desc": "Defines a custom counter style.",
-				"browsers": "FF33"
+				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#the-counter-style-rule",
+				"syntax": "@counter-style <counter-style-name> { <declaration-list> }"
 			},
 			{
 				"name": "@font-face",
-				"desc": "Allows for linking to fonts that are automatically activated when needed. This permits authors to work around the limitation of 'web-safe' fonts, allowing for consistent rendering independent of the fonts available in a given user's environment."
+				"desc": "Allows for linking to fonts that are automatically activated when needed. This permits authors to work around the limitation of 'web-safe' fonts, allowing for consistent rendering independent of the fonts available in a given user's environment.",
+				"ref": "http://www.w3.org/TR/css3-fonts/#the-font-face-rule",
+				"syntax": "@font-face { <font-description> }"
 			},
 			{
 				"name": "@font-feature-values",
 				"desc": "Defines named values for the indices used to select alternate glyphs for a given font family.",
-				"browsers": "FF34"
+				"browsers": "FF34",
+				"ref": "http://www.w3.org/TR/css-fonts-3/#at-font-feature-values-rule",
+				"syntax": "@font-feature-values <font-family> { }"
 			},
 			{
 				"name": "@import",
-				"desc": "Includes content of another file."
+				"desc": "Includes content of another file.",
+				"ref": "http://www.w3.org/TR/css3-syntax/#at-import",
+				"syntax": "@import url('file.css') tv, print;"
 			},
 			{
 				"name": "@keyframes",
 				"desc": "Defines set of animation key frames.",
-				"browsers": "E,C43,FF16,IE10,O30,S9"
+				"browsers": "E,C43,FF16,IE10,O30,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#keyframes",
+				"syntax": "@keyframes animation-name"
 			},
 			{
 				"name": "@media",
-				"desc": "Defines a stylesheet for a particular media type."
+				"desc": "Defines a stylesheet for a particular media type.",
+				"ref": "http://www.w3.org/TR/css3-mediaqueries",
+				"syntax": "@media print { ... }"
 			},
 			{
 				"name": "@-moz-document",
 				"desc": "Gecko-specific at-rule that restricts the style rules contained within it based on the URL of the document.",
-				"browsers": "FF1.8"
+				"browsers": "FF1.8",
+				"ref": "https://developer.mozilla.org/en/CSS/@document"
 			},
 			{
 				"name": "@-moz-keyframes",
 				"desc": "Defines set of animation key frames.",
-				"browsers": "FF5"
+				"browsers": "FF5",
+				"ref": "http://www.w3.org/TR/css3-animations/#keyframes",
+				"syntax": "@-moz-keyframes animation-name"
 			},
 			{
 				"name": "@-ms-viewport",
 				"desc": "Specifies the size, zoom factor, and orientation of the viewport.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css-device-adapt/#the-viewport-rule",
+				"syntax": "@@-ms-viewport { width: device-width; }"
 			},
 			{
 				"name": "@namespace",
 				"desc": "Declares a prefix and associates it with a namespace name.",
-				"browsers": "E,C,FF1,IE9,O8,S1"
+				"browsers": "E,C,FF1,IE9,O8,S1",
+				"ref": "http://www.w3.org/TR/css3-namespace/#declaration",
+				"syntax": "@namespace [prefix] string|url;"
 			},
 			{
 				"name": "@-o-keyframes",
 				"desc": "Defines set of animation key frames.",
-				"browsers": "O12"
+				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#keyframes",
+				"syntax": "@-o-keyframes animation-name { }"
 			},
 			{
 				"name": "@-o-viewport",
 				"desc": "Specifies the size, zoom factor, and orientation of the viewport.",
-				"browsers": "O11"
+				"browsers": "O11",
+				"ref": "http://dev.w3.org/csswg/css-device-adapt/#the-viewport-rule",
+				"syntax": "@@-o-viewport { width: 320px; zoom: 0.5; }"
 			},
 			{
 				"name": "@page",
-				"desc": "Directive defines various page parameters."
+				"desc": "Directive defines various page parameters.",
+				"ref": "http://www.w3.org/TR/css3-page/#page-box-page-rule",
+				"syntax": "@page :first { margin-top: 10cm }"
 			},
 			{
 				"name": "@supports",
 				"desc": "A conditional group rule whose condition tests whether the user agent supports CSS property:value pairs.",
-				"browsers": "E,C28,FF22,O12.1,S9"
+				"browsers": "E,C28,FF22,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-conditional/#at-supports",
+				"syntax": "@supports (display: flexbox) { div { display: flexbox; } }"
 			},
 			{
 				"name": "@-webkit-keyframes",
 				"desc": "Defines set of animation key frames.",
-				"browsers": "C,S4"
+				"browsers": "C,S4",
+				"ref": "http://www.w3.org/TR/css3-animations/#keyframes",
+				"syntax": "@-webkit-keyframes animation-name"
 			}
 		],
 		"pseudoclasses": [
 			{
 				"name": ":active",
-				"desc": "Applies while an element is being activated by the user. For example, between the times the user presses the mouse button and releases it."
+				"desc": "Applies while an element is being activated by the user. For example, between the times the user presses the mouse button and releases it.",
+				"ref": "http://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act",
+				"syntax": "a:active { color: red; }"
 			},
 			{
 				"name": ":any-link",
 				"desc": "Represents an element that acts as the source anchor of a hyperlink. Applies to both visited and unvisited links.",
-				"browsers": "S9"
+				"browsers": "S9",
+				"ref": "http://www.w3.org/TR/selectors4/#the-any-link-pseudo",
+				"syntax": "a:any-link { text-decoration: none; }"
 			},
 			{
 				"name": ":checked",
 				"desc": "Radio and checkbox elements can be toggled by the user. Some menu items are 'checked' when the user selects them. When such elements are toggled 'on' the :checked pseudo-class applies.",
-				"browsers": "E,C,FF1,IE9,O9,S3.13"
+				"browsers": "E,C,FF1,IE9,O9,S3.13",
+				"ref": "http://www.w3.org/TR/css3-selectors/#checked",
+				"syntax": "input:checked { color: red; }"
 			},
 			{
 				"name": ":corner-present",
 				"desc": "Non-standard. Indicates whether or not a scrollbar corner is present.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":decrement",
 				"desc": "Non-standard. Applies to buttons and track pieces. Indicates whether or not the button or track piece will decrement the view’s position when used.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":default",
 				"desc": "Applies to the one or more UI elements that are the default among a set of similar elements. Typically applies to context menu items, buttons, and select lists/menus.",
-				"browsers": "C,FF3,O10,S5"
+				"browsers": "C,FF3,O10,S5",
+				"ref": "http://www.w3.org/TR/selectors4/#the-default-pseudo",
+				"syntax": "input:default { color: red; }"
 			},
 			{
 				"name": ":disabled",
 				"desc": "Represents user interface elements that are in a disabled state; such elements have a corresponding enabled state.",
-				"browsers": "E,C,FF1.5,IE9,O9,S3.1"
+				"browsers": "E,C,FF1.5,IE9,O9,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#enableddisabled",
+				"syntax": "input:disabled { background-color: silver; }"
 			},
 			{
 				"name": ":double-button",
 				"desc": "Non-standard. Applies to buttons and track pieces. Applies when both buttons are displayed together at the same end of the scrollbar.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":empty",
 				"desc": "Represents an element that has no children at all.",
-				"browsers": "E,C,FF1.5,IE9,O9,S3.1"
+				"browsers": "E,C,FF1.5,IE9,O9,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#empty-pseudo",
+				"syntax": "div:empty { background-color: red; }"
 			},
 			{
 				"name": ":enabled",
 				"desc": "Represents user interface elements that are in an enabled state; such elements have a corresponding disabled state.",
-				"browsers": "E,C,FF1.5,IE9,O9,S3.1"
+				"browsers": "E,C,FF1.5,IE9,O9,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#enableddisabled",
+				"syntax": "input:enabled { background-color: green; }"
 			},
 			{
 				"name": ":end",
 				"desc": "Non-standard. Applies to buttons and track pieces. Indicates whether the object is placed after the thumb.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":first",
-				"desc": "When printing double-sided documents, the page boxes on left and right pages may be different. This can be expressed through CSS pseudo-classes defined in the  page context."
+				"desc": "When printing double-sided documents, the page boxes on left and right pages may be different. This can be expressed through CSS pseudo-classes defined in the  page context.",
+				"ref": "http://www.w3.org/TR/css3-page/#left-right-first",
+				"syntax": "@page :first { margin-left: 4cm; }"
 			},
 			{
 				"name": ":first-child",
 				"desc": "Same as :nth-child(1). Represents an element that is the first child of some other element.",
-				"browsers": "E,C,FF3,IE7,O9.5,S3.1"
+				"browsers": "E,C,FF3,IE7,O9.5,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#first-child-pseudo",
+				"syntax": "li:first-child { font-size: 1.2em; }"
 			},
 			{
 				"name": ":first-of-type",
 				"desc": "Same as :nth-of-type(1). Represents an element that is the first sibling of its type in the list of children of its parent element.",
-				"browsers": "E,C,FF3.5,IE9,O9.5,S3.2"
+				"browsers": "E,C,FF3.5,IE9,O9.5,S3.2",
+				"ref": "http://www.w3.org/TR/css3-selectors/#first-of-type-pseudo",
+				"syntax": "dl dt:first-of-type { font-size: 200%; }"
 			},
 			{
 				"name": ":focus",
-				"desc": "Applies while an element has the focus (accepts keyboard or mouse events, or other forms of input)."
+				"desc": "Applies while an element has the focus (accepts keyboard or mouse events, or other forms of input).",
+				"ref": "http://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act",
+				"syntax": "a:focus { color: yellow; }"
 			},
 			{
 				"name": ":fullscreen",
 				"desc": "Matches any element that has its fullscreen flag set.",
-				"browsers": "E"
+				"browsers": "E",
+				"ref": "https://fullscreen.spec.whatwg.org/#:fullscreen-pseudo-class",
+				"syntax": "iframe:fullscreen { border: none; }"
 			},
 			{
 				"name": ":future",
 				"desc": "Represents any element that is defined to occur entirely after a :current element.",
-				"browsers": "C,O16,S6"
+				"browsers": "C,O16,S6",
+				"ref": "http://www.w3.org/TR/selectors4/#the-future-pseudo",
+				"syntax": ":future { color: yellow; }"
 			},
 			{
 				"name": ":horizontal",
 				"desc": "Non-standard. Applies to any scrollbar pieces that have a horizontal orientation.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":host",
 				"desc": "When evaluated in the context of a shadow tree, matches the shadow tree’s host element.",
-				"browsers": "C35,O22"
+				"browsers": "C35,O22",
+				"ref": "http://www.w3.org/TR/css-scoping-1/#selectordef-host0",
+				"syntax": ":host { display: block; }"
 			},
 			{
 				"name": ":host()",
 				"desc": "When evaluated in the context of a shadow tree, it matches the shadow tree’s host element if the host element, in its normal context, matches the selector argument.",
-				"browsers": "C35,O22"
+				"browsers": "C35,O22",
+				"ref": "http://www.w3.org/TR/css-scoping-1/#selectordef-host",
+				"syntax": ":host(.myclass) { color: blue; }"
 			},
 			{
 				"name": ":host-context()",
 				"desc": "Tests whether there is an ancestor, outside the shadow tree, which matches a particular selector.",
-				"browsers": "C35,O22"
+				"browsers": "C35,O22",
+				"ref": "http://www.w3.org/TR/css-scoping-1/#selectordef-host-context",
+				"syntax": ":host-context(.myclass) { color: blue; }"
 			},
 			{
 				"name": ":hover",
-				"desc": "Applies while the user designates an element with a pointing device, but does not necessarily activate it. For example, a visual user agent could apply this pseudo-class when the cursor (mouse pointer) hovers over a box generated by the element."
+				"desc": "Applies while the user designates an element with a pointing device, but does not necessarily activate it. For example, a visual user agent could apply this pseudo-class when the cursor (mouse pointer) hovers over a box generated by the element.",
+				"ref": "http://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act",
+				"syntax": "a:hover { text-decoration: none; }"
 			},
 			{
 				"name": ":increment",
 				"desc": "Non-standard. Applies to buttons and track pieces. Indicates whether or not the button or track piece will increment the view’s position when used.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":indeterminate",
 				"desc": "Applies to UI elements whose value is in an indeterminate state.",
-				"browsers": "E,C,FF3.6,IE9,O10.6,S3"
+				"browsers": "E,C,FF3.6,IE9,O10.6,S3",
+				"ref": "http://www.w3.org/TR/selectors4/#indeterminate",
+				"syntax": "input:indeterminate { margin: auto 2px; }"
 			},
 			{
 				"name": ":in-range",
 				"desc": "Used in conjunction with the min and max attributes, whether on a range input, a number field, or any other types that accept those attributes.",
-				"browsers": "E13,C,FF10,O9.6,S5.1"
+				"browsers": "E13,C,FF10,O9.6,S5.1",
+				"ref": "http://www.w3.org/TR/selectors4/#range-pseudos",
+				"syntax": "input:in-range { color: green; }"
 			},
 			{
 				"name": ":invalid",
 				"desc": "An element is :valid or :invalid when it is, respectively, valid or invalid with respect to data validity semantics defined by a different specification.",
-				"browsers": "E,C,FF4,IE10,O10,S5"
+				"browsers": "E,C,FF4,IE10,O10,S5",
+				"ref": "http://www.w3.org/TR/selectors4/#validity-pseudos",
+				"syntax": "input:invalid { border-color: red; }"
 			},
 			{
 				"name": ":lang()",
 				"desc": "Represents an element that is in language specified.",
-				"browsers": "E,C,FF1,IE8,O8,S3"
+				"browsers": "E,C,FF1,IE8,O8,S3",
+				"ref": "http://www.w3.org/TR/css3-selectors/#lang-pseudo",
+				"syntax": "html:lang(en) { color: blue; }"
 			},
 			{
 				"name": ":last-child",
 				"desc": "Same as :nth-last-child(1). Represents an element that is the last child of some other element.",
-				"browsers": "E,C,FF1,IE9,O9.5,S3.1"
+				"browsers": "E,C,FF1,IE9,O9.5,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#last-child-pseudo",
+				"syntax": "li:last-child { font-size: 1.2em; }"
 			},
 			{
 				"name": ":last-of-type",
 				"desc": "Same as :nth-last-of-type(1). Represents an element that is the last sibling of its type in the list of children of its parent element.",
-				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1"
+				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#last-of-type-pseudo",
+				"syntax": "dl dt:last-of-type { font-size: 200%; }"
 			},
 			{
 				"name": ":left",
-				"desc": "When printing double-sided documents, the page boxes on left and right pages may be different. This can be expressed through CSS pseudo-classes defined in the  page context."
+				"desc": "When printing double-sided documents, the page boxes on left and right pages may be different. This can be expressed through CSS pseudo-classes defined in the  page context.",
+				"ref": "http://www.w3.org/TR/css3-page/#left-right-first",
+				"syntax": "@page :left { margin-left: 4cm; }"
 			},
 			{
 				"name": ":link",
-				"desc": "Applies to links that have not yet been visited."
+				"desc": "Applies to links that have not yet been visited.",
+				"ref": "http://www.w3.org/TR/css3-selectors/#the-link-pseudo-classes-link-and-visited",
+				"syntax": "a:link { text-decoration: none; }"
 			},
 			{
 				"name": ":matches()",
 				"desc": "Takes a selector list as its argument. It represents an element that is represented by its argument.",
-				"browsers": "S9"
+				"browsers": "S9",
+				"ref": "http://www.w3.org/TR/selectors4/#matches",
+				"syntax": "div:matches(:hover) { border-color: pink; }"
 			},
 			{
 				"name": ":-moz-any()",
@@ -333,135 +422,185 @@
 			{
 				"name": ":-ms-fullscreen",
 				"desc": "Matches any element that has its fullscreen flag set.",
-				"browsers": "IE11"
+				"browsers": "IE11",
+				"ref": "https://fullscreen.spec.whatwg.org/#:fullscreen-pseudo-class",
+				"syntax": "iframe:-ms-fullscreen { border: none; }"
 			},
 			{
 				"name": ":-ms-input-placeholder",
 				"desc": "Represents placeholder text in an input field. Note: for Edge use the pseudo-element ::-ms-input-placeholder. Standardized as ::placeholder.",
-				"browsers": "IE10"
+				"browsers": "IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh767367.aspx",
+				"syntax": "input:-ms-input-placeholder { color: red; }"
 			},
 			{
 				"name": ":-ms-keyboard-active",
 				"desc": "Windows Store apps only. Applies one or more styles to an element when it has focus and the user presses the space bar.",
-				"browsers": "IE10"
+				"browsers": "IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/dn336891(v=vs.85).aspx",
+				"syntax": "input:-ms-keyboard-active { background: red; }"
 			},
 			{
 				"name": ":-ms-lang()",
 				"desc": "Represents an element that is in the language specified. Accepts a comma seperated list of language tokens.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/selectors4/#lang-pseudo",
+				"syntax": "html:-ms-lang(en, fr, de) { color: blue; }"
 			},
 			{
 				"name": ":no-button",
 				"desc": "Non-standard. Applies to track pieces. Applies when there is no button at that end of the track.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":not()",
 				"desc": "The negation pseudo-class, :not(X), is a functional notation taking a simple selector (excluding the negation pseudo-class itself) as an argument. It represents an element that is not represented by its argument.",
-				"browsers": "E,C,FF1,IE9,O9.5,S2"
+				"browsers": "E,C,FF1,IE9,O9.5,S2",
+				"ref": "http://www.w3.org/TR/css3-selectors/#negation",
+				"syntax": "div:not(:empty) { border-color: pink; }"
 			},
 			{
 				"name": ":nth-child()",
 				"desc": "Represents an element that has an+b-1 siblings before it in the document tree, for any positive integer or zero value of n, and has a parent element.",
-				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1"
+				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#nth-child-pseudo",
+				"syntax": "tr:nth-child(2n+1) { border-color: pink; }"
 			},
 			{
 				"name": ":nth-last-child()",
 				"desc": "Represents an element that has an+b-1 siblings after it in the document tree, for any positive integer or zero value of n, and has a parent element.",
-				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1"
+				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#nth-last-child-pseudo",
+				"syntax": "tr:nth-last-child(-n+2) { border-color: pink; }"
 			},
 			{
 				"name": ":nth-last-of-type()",
 				"desc": "Represents an element that has an+b-1 siblings with the same expanded element name after it in the document tree, for any zero or positive integer value of n, and has a parent element.",
-				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1"
+				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#nth-of-type-pseudo",
+				"syntax": "tr:nth-last-of-type(n+2) { border-color: pink; }"
 			},
 			{
 				"name": ":nth-of-type()",
 				"desc": "Represents an element that has an+b-1 siblings with the same expanded element name before it in the document tree, for any zero or positive integer value of n, and has a parent element.",
-				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1"
+				"browsers": "E,C,FF3.5,IE9,O9.5,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#nth-of-type-pseudo",
+				"syntax": "tr:nth-of-type(2n) { border-color: pink; }"
 			},
 			{
 				"name": ":only-child",
 				"desc": "Represents an element that has a parent element and whose parent element has no other element children. Same as :first-child:last-child or :nth-child(1):nth-last-child(1), but with a lower specificity.",
-				"browsers": "E,C,FF1.5,IE9,O9.5,S3.1"
+				"browsers": "E,C,FF1.5,IE9,O9.5,S3.1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#only-child-pseudo",
+				"syntax": "p:only-child { color: #f00; }"
 			},
 			{
 				"name": ":only-of-type",
 				"desc": "Matches every element that is the only child of its type, of its parent. Same as :first-of-type:last-of-type or :nth-of-type(1):nth-last-of-type(1), but with a lower specificity.",
-				"browsers": "E,C,FF3.5,IE9,O9.5,S3.2"
+				"browsers": "E,C,FF3.5,IE9,O9.5,S3.2",
+				"ref": "http://www.w3.org/TR/css3-selectors/#only-of-type-pseudo",
+				"syntax": "p:only-of-type { color: #f00; }"
 			},
 			{
 				"name": ":optional",
 				"desc": "A form element is :required or :optional if a value for it is, respectively, required or optional before the form it belongs to is submitted. Elements that are not form elements are neither required nor optional.",
-				"browsers": "E,C,FF4,IE10,O10,S5"
+				"browsers": "E,C,FF4,IE10,O10,S5",
+				"ref": "http://www.w3.org/TR/selectors4/#opt-pseudos",
+				"syntax": "input:optional { color: yellow; }"
 			},
 			{
 				"name": ":out-of-range",
 				"desc": "Used in conjunction with the min and max attributes, whether on a range input, a number field, or any other types that accept those attributes.",
-				"browsers": "E13,C,FF10,O9.6,S5.1"
+				"browsers": "E13,C,FF10,O9.6,S5.1",
+				"ref": "http://www.w3.org/TR/selectors4/#range-pseudos",
+				"syntax": "input:out-of-range { color: red; }"
 			},
 			{
 				"name": ":past",
 				"desc": "Represents any element that is defined to occur entirely prior to a :current element.",
-				"browsers": "C,O16,S6"
+				"browsers": "C,O16,S6",
+				"ref": "http://www.w3.org/TR/selectors4/#the-past-pseudo",
+				"syntax": ":past { color: green; }"
 			},
 			{
 				"name": ":read-only",
 				"desc": "An element whose contents are not user-alterable is :read-only. However, elements whose contents are user-alterable (such as text input fields) are considered to be in a :read-write state. In typical documents, most elements are :read-only.",
-				"browsers": "E13,C,FF10,O9,S4"
+				"browsers": "E13,C,FF10,O9,S4",
+				"ref": "http://www.w3.org/TR/selectors4/#rw-pseudos",
+				"syntax": "input:read-only { margin: auto; }"
 			},
 			{
 				"name": ":read-write",
 				"desc": "An element whose contents are not user-alterable is :read-only. However, elements whose contents are user-alterable (such as text input fields) are considered to be in a :read-write state. In typical documents, most elements are :read-only.",
-				"browsers": "E13,C,FF10,O9,S4"
+				"browsers": "E13,C,FF10,O9,S4",
+				"ref": "http://www.w3.org/TR/selectors4/#rw-pseudos",
+				"syntax": "input:read-write { margin: auto 2px; }"
 			},
 			{
 				"name": ":required",
 				"desc": "A form element is :required or :optional if a value for it is, respectively, required or optional before the form it belongs to is submitted. Elements that are not form elements are neither required nor optional.",
-				"browsers": "E,C,FF4,IE10,O10,S5"
+				"browsers": "E,C,FF4,IE10,O10,S5",
+				"ref": "http://www.w3.org/TR/selectors4/#opt-pseudos",
+				"syntax": "input:optional { color: yellow; }"
 			},
 			{
 				"name": ":right",
-				"desc": "When printing double-sided documents, the page boxes on left and right pages may be different. This can be expressed through CSS pseudo-classes defined in the  page context."
+				"desc": "When printing double-sided documents, the page boxes on left and right pages may be different. This can be expressed through CSS pseudo-classes defined in the  page context.",
+				"ref": "http://www.w3.org/TR/css3-page/#left-right-first",
+				"syntax": "@page :right { margin-left: 4cm; }"
 			},
 			{
 				"name": ":root",
 				"desc": "Represents an element that is the root of the document. In HTML 4, this is always the HTML element.",
-				"browsers": "E,C,FF1,IE9,O9.5,S1"
+				"browsers": "E,C,FF1,IE9,O9.5,S1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#root-pseudo",
+				"syntax": ":root { padding: auto 3em; }"
 			},
 			{
 				"name": ":scope",
 				"desc": "Represents any element that is in the contextual reference element set.",
-				"browsers": "FF32,S6"
+				"browsers": "FF32,S6",
+				"ref": "http://www.w3.org/TR/selectors4/#scope-pseudo",
+				"syntax": ":scope { border-color: pink; }"
 			},
 			{
 				"name": ":single-button",
 				"desc": "Non-standard. Applies to buttons and track pieces. Applies when both buttons are displayed separately at either end of the scrollbar.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":start",
 				"desc": "Non-standard. Applies to buttons and track pieces. Indicates whether the object is placed before the thumb.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":target",
 				"desc": "Some URIs refer to a location within a resource. This kind of URI ends with a 'number sign' (#) followed by an anchor identifier (called the fragment identifier).",
-				"browsers": "E,C,FF1,IE9,O9.5,S1"
+				"browsers": "E,C,FF1,IE9,O9.5,S1",
+				"ref": "http://www.w3.org/TR/css3-selectors/#root-pseudo",
+				"syntax": "h2:target { background-color: yellow; }"
 			},
 			{
 				"name": ":valid",
 				"desc": "An element is :valid or :invalid when it is, respectively, valid or invalid with respect to data validity semantics defined by a different specification.",
-				"browsers": "E,C,FF4,IE10,O10,S5"
+				"browsers": "E,C,FF4,IE10,O10,S5",
+				"ref": "http://www.w3.org/TR/selectors4/#validity-pseudos",
+				"syntax": "input:valid { border-color: green; }"
 			},
 			{
 				"name": ":vertical",
 				"desc": "Non-standard. Applies to any scrollbar pieces that have a vertical orientation.",
-				"browsers": "C,S5"
+				"browsers": "C,S5",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			},
 			{
 				"name": ":visited",
-				"desc": "Applies once the link has been visited by the user."
+				"desc": "Applies once the link has been visited by the user.",
+				"ref": "http://www.w3.org/TR/css3-selectors/#the-link-pseudo-classes-link-and-visited",
+				"syntax": "a:visited { color: purple; }"
 			},
 			{
 				"name": ":-webkit-any()",
@@ -476,55 +615,76 @@
 			{
 				"name": ":window-inactive",
 				"desc": "Non-standard. Applies to all scrollbar pieces. Indicates whether or not the window containing the scrollbar is currently active.",
-				"browsers": "C,S3"
+				"browsers": "C,S3",
+				"ref": "https://webkit.org/blog/363/styling-scrollbars/"
 			}
 		],
 		"pseudoelements": [
 			{
 				"name": "::after",
 				"desc": "Represents a styleable child pseudo-element immediately after the originating element’s actual content.",
-				"browsers": "E,C,FF1.5,IE9,O9,S4"
+				"browsers": "E,C,FF1.5,IE9,O9,S4",
+				"ref": "http://www.w3.org/TR/css-pseudo-4/#selectordef-after",
+				"syntax": "div::after { content: 'abc'; }"
 			},
 			{
 				"name": "::backdrop",
 				"desc": "Used to create a backdrop that hides the underlying document for an element in a top layer (such as an element that is displayed fullscreen).",
-				"browsers": "E"
+				"browsers": "E",
+				"ref": "https://fullscreen.spec.whatwg.org/#::backdrop-pseudo-element",
+				"syntax": "*|*:fullscreen::backdrop { position: fixed; }"
 			},
 			{
 				"name": "::before",
 				"desc": "Represents a styleable child pseudo-element immediately before the originating element’s actual content.",
-				"browsers": "E,C,FF1.5,IE9,O9,S4"
+				"browsers": "E,C,FF1.5,IE9,O9,S4",
+				"ref": "http://www.w3.org/TR/css-pseudo-4/#selectordef-before",
+				"syntax": "div::before { content: 'abc'; }"
 			},
 			{
 				"name": "::content",
 				"desc": "Deprecated. Matches the distribution list itself, on elements that have one. Use ::slotted for forward compatibility.",
-				"browsers": "C35,O22"
+				"browsers": "C35,O22",
+				"ref": "http://www.w3.org/TR/css-scoping-1/#selectordef-content",
+				"syntax": "::content > span { color: yellow; }"
 			},
 			{
 				"name": "::cue",
-				"browsers": "C,O16,S6"
+				"browsers": "C,O16,S6",
+				"ref": "https://w3c.github.io/webvtt/#the-cue-pseudo-element",
+				"syntax": "::cue { color: red; }"
 			},
 			{
 				"name": "::cue()",
-				"browsers": "C,O16,S6"
+				"browsers": "C,O16,S6",
+				"ref": "https://w3c.github.io/webvtt/#selectordef-cue-selector",
+				"syntax": "::cue(v(voice=woman)) { color: red; }"
 			},
 			{
 				"name": "::cue-region",
-				"browsers": "C,O16,S6"
+				"browsers": "C,O16,S6",
+				"ref": "https://w3c.github.io/webvtt/#the-cue-region-pseudo-element",
+				"syntax": "::cue-region { border: none; }"
 			},
 			{
 				"name": "::cue-region()",
-				"browsers": "C,O16,S6"
+				"browsers": "C,O16,S6",
+				"ref": "https://w3c.github.io/webvtt/#the-cue-region-pseudo-element",
+				"syntax": "::cue-region(v(voice=woman)) { color: red; }"
 			},
 			{
 				"name": "::first-letter",
 				"desc": "Represents the first letter of an element, if it is not preceded by any other content (such as images or inline tables) on its line.",
-				"browsers": "E,C,FF1.5,IE9,O7,S1"
+				"browsers": "E,C,FF1.5,IE9,O7,S1",
+				"ref": "http://www.w3.org/TR/css-pseudo-4/#first-letter-pseudo",
+				"syntax": "p::first-letter { font-size: 200%; }"
 			},
 			{
 				"name": "::first-line",
 				"desc": "Describes the contents of the first formatted line of its originating element.",
-				"browsers": "E,C,FF1.5,IE9,O7,S1"
+				"browsers": "E,C,FF1.5,IE9,O7,S1",
+				"ref": "http://www.w3.org/TR/css-pseudo-4/#selectordef-first-line",
+				"syntax": "p::first-line { color: green; }"
 			},
 			{
 				"name": "::-moz-focus-inner",
@@ -562,87 +722,107 @@
 			{
 				"name": "::-ms-backdrop",
 				"desc": "Used to create a backdrop that hides the underlying document for an element in a top layer (such as an element that is displayed fullscreen).",
-				"browsers": "IE11"
+				"browsers": "IE11",
+				"ref": "https://fullscreen.spec.whatwg.org/#::backdrop-pseudo-element",
+				"syntax": "*|*:-ms-fullscreen::-ms-backdrop { position: fixed; }"
 			},
 			{
 				"name": "::-ms-browse",
 				"desc": "Represents the browse button of an input type=file control.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh779844.aspx"
 			},
 			{
 				"name": "::-ms-check",
 				"desc": "Represents the check of a checkbox or radio button input control.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465739.aspx"
 			},
 			{
 				"name": "::-ms-clear",
 				"desc": "Represents the clear button of a text input control",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465740.aspx"
 			},
 			{
 				"name": "::-ms-expand",
 				"desc": "Represents the drop-down button of a select control.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465742.aspx"
 			},
 			{
 				"name": "::-ms-fill",
 				"desc": "Represents the bar portion of a progress bar.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465757.aspx"
 			},
 			{
 				"name": "::-ms-fill-lower",
 				"desc": "Represents the portion of the slider track from its smallest value up to the value currently selected by the thumb. In a left-to-right layout, this is the portion of the slider track to the left of the thumb.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465745.aspx"
 			},
 			{
 				"name": "::-ms-fill-upper",
 				"desc": "Represents the portion of the slider track from the value currently selected by the thumb up to the slider's largest value. In a left-to-right layout, this is the portion of the slider track to the right of the thumb.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465748.aspx"
 			},
 			{
 				"name": "::-ms-reveal",
 				"desc": "Represents the password reveal button of an input type=password control.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465773.aspx"
 			},
 			{
 				"name": "::-ms-thumb",
 				"desc": "Represents the portion of range input control (also known as a slider control) that the user drags.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465780.aspx"
 			},
 			{
 				"name": "::-ms-ticks-after",
 				"desc": "Represents the tick marks of a slider that begin just after the thumb and continue up to the slider's largest value. In a left-to-right layout, these are the ticks to the right of the thumb.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465789.aspx"
 			},
 			{
 				"name": "::-ms-ticks-before",
 				"desc": "Represents the tick marks of a slider that represent its smallest values up to the value currently selected by the thumb. In a left-to-right layout, these are the ticks to the left of the thumb.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465796.aspx"
 			},
 			{
 				"name": "::-ms-tooltip",
 				"desc": "Represents the tooltip of a slider (input type=range).",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465805.aspx"
 			},
 			{
 				"name": "::-ms-track",
 				"desc": "Represents the track of a slider.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465813.aspx"
 			},
 			{
 				"name": "::-ms-value",
 				"desc": "Represents the content of a text or password input control, or a select control.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh465820.aspx"
 			},
 			{
 				"name": "::selection",
 				"desc": "Represents the portion of a document that has been highlighted by the user.",
-				"browsers": "E,C,IE9,O9.5,S1.1"
+				"browsers": "E,C,IE9,O9.5,S1.1",
+				"ref": "http://www.w3.org/TR/css-pseudo-4/#selectordef-selection",
+				"syntax": "p::selection { color: red; }"
 			},
 			{
 				"name": "::shadow",
 				"desc": "Matches the shadow root if an element has a shadow tree.",
-				"browsers": "C35,O22"
+				"browsers": "C35,O22",
+				"ref": "http://www.w3.org/TR/css-scoping-1/#shadow-pseudoelement",
+				"syntax": "x-foo::shadow > span { color: red; }"
 			},
 			{
 				"name": "::-webkit-file-upload-button",
@@ -778,12 +958,16 @@
 				"name": "additive-symbols",
 				"desc": "@counter-style descriptor. Specifies the symbols used by the marker-construction algorithm specified by the system descriptor. Needs to be specified if the counter system is 'additive'.",
 				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-additive-symbols",
+				"syntax": "@counter-style { additive-symbols: 1 I; }",
 				"restriction": "integer, string, image, identifier"
 			},
 			{
 				"name": "align-content",
 				"desc": "Aligns a flex container’s lines within the flex container when there is extra space in the cross-axis, similar to how 'justify-content' aligns individual items within the main-axis.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#align-content",
+				"syntax": "p { align-content: flex-start; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -816,6 +1000,8 @@
 				"name": "align-items",
 				"desc": "Aligns flex items along the cross axis of the current line of the flex container.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#align-items",
+				"syntax": "p { align-items: flex-start; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -844,6 +1030,8 @@
 				"name": "align-self",
 				"desc": "Allows the default alignment along the cross axis to be overridden for individual flex items.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#align-items",
+				"syntax": "p { align-self: flex-start; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -876,6 +1064,8 @@
 				"name": "all",
 				"desc": "Shorthand that resets all properties except 'direction' and 'unicode-bidi'.",
 				"browsers": "C37,FF27,O24",
+				"ref": "http://www.w3.org/TR/css-cascade-3/#all-shorthand",
+				"syntax": "* { all: unset; }",
 				"restriction": "enum",
 				"values": []
 			},
@@ -883,6 +1073,8 @@
 				"name": "alt",
 				"desc": "Provides alternative text for assistive technology to replace the genenerated content of a ::before or ::after element.",
 				"browsers": "S9",
+				"ref": "https://drafts.csswg.org/css-content-3/#propdef-alt",
+				"syntax": "label::before { alt: 'alt text'; }",
 				"restriction": "string, enum",
 				"values": []
 			},
@@ -890,6 +1082,8 @@
 				"name": "animation",
 				"desc": "Shorthand property combines six of the animation properties into a single property.",
 				"browsers": "E,C43,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation",
+				"syntax": "div { animation: movearound 4s ease 3 normal; }",
 				"restriction": "time, timing-function, enum, identifier, number",
 				"values": [
 					{
@@ -930,12 +1124,16 @@
 				"name": "animation-delay",
 				"desc": "Defines when the animation will start.",
 				"browsers": "E,C43,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-delay",
+				"syntax": "div { animation-delay: 4s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "animation-direction",
 				"desc": "Defines whether or not the animation should play in reverse on alternate cycles.",
 				"browsers": "E,C43,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-direction",
+				"syntax": "div { animation-direction: normal; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -958,12 +1156,16 @@
 				"name": "animation-duration",
 				"desc": "Defines the length of time that an animation takes to complete one cycle.",
 				"browsers": "E,C43,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-duration",
+				"syntax": "div { animation-duration: 4s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "animation-fill-mode",
 				"desc": "Defines what values are applied by the animation outside the time it is executing.",
 				"browsers": "E,C43,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-fill-mode-property",
+				"syntax": "div { animation-fill-mode: forwards; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -986,6 +1188,8 @@
 				"name": "animation-iteration-count",
 				"desc": "Defines the number of times an animation cycle is played. The default value is one, meaning the animation will play from beginning to end once.",
 				"browsers": "E,C43,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-iteration-count",
+				"syntax": "div { animation-iteration-count: 3; }",
 				"restriction": "number, enum",
 				"values": [
 					{
@@ -998,6 +1202,8 @@
 				"name": "animation-name",
 				"desc": "Defines a list of animations that apply. Each name is used to select the keyframe at-rule that provides the property values for the animation.",
 				"browsers": "E,C43,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#the-animation-name-property-",
+				"syntax": "div { animation-name: movearound; }",
 				"restriction": "identifier, enum",
 				"values": [
 					{
@@ -1010,6 +1216,8 @@
 				"name": "animation-play-state",
 				"desc": "Defines whether the animation is running or paused.",
 				"browsers": "E,C43,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-play-state",
+				"syntax": "div { animation-play-state: running; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1024,12 +1232,16 @@
 				"name": "animation-timing-function",
 				"desc": "Describes how the animation will progress over one cycle of its duration.",
 				"browsers": "E,C43,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-timing-function",
+				"syntax": "div { animation-timing-function: ease; }",
 				"restriction": "timing-function"
 			},
 			{
 				"name": "backface-visibility",
 				"desc": "Determines whether or not the 'back' side of a transformed element is visible when facing the viewer. With an identity transform, the front side of an element faces the viewer.",
 				"browsers": "E,C36,FF16,IE10,O23",
+				"ref": "http://www.w3.org/TR/css3-transforms/#backface-visibility-property",
+				"syntax": "div { backface-visibility: hidden; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1045,6 +1257,8 @@
 			{
 				"name": "background",
 				"desc": "Shorthand property for setting most background properties at the same place in the style sheet.",
+				"ref": "http://www.w3.org/TR/css3-background/#background",
+				"syntax": "section { background: url(image.png) no-repeat #999; }",
 				"restriction": "enum, image, color, position, length, repeat, percentage, box",
 				"values": [
 					{
@@ -1064,6 +1278,8 @@
 			{
 				"name": "background-attachment",
 				"desc": "Specifies whether the background images are fixed with regard to the viewport ('fixed') or scroll along with the element ('scroll') or its contents ('local').",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-attachment",
+				"syntax": ".box { background-attachment: fixed; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1085,6 +1301,8 @@
 				"name": "background-blend-mode",
 				"desc": "Defines the blending mode of each background layer.",
 				"browsers": "C35,FF30,O22,S7.1",
+				"ref": "http://www.w3.org/TR/compositing-1/#propdef-background-blend-mode",
+				"syntax": "div { background-blend-mode: saturation; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1146,16 +1364,22 @@
 				"name": "background-clip",
 				"desc": "Determines the background painting area.",
 				"browsers": "E,C,FF4,IE9,O10.5,S3",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-clip",
+				"syntax": "header { background-clip: border-box; }",
 				"restriction": "box"
 			},
 			{
 				"name": "background-color",
 				"desc": "Sets the background color of an element.",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-color",
+				"syntax": "body { background-color: white; }",
 				"restriction": "color"
 			},
 			{
 				"name": "background-image",
 				"desc": "Sets the background image(s) of an element.",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-image",
+				"syntax": "article { background-image: url(image.png); }",
 				"restriction": "image, enum",
 				"values": [
 					{
@@ -1168,17 +1392,23 @@
 				"name": "background-origin",
 				"desc": "For elements rendered as a single box, specifies the background positioning area. For elements rendered as multiple boxes (e.g., inline boxes on several lines, boxes on several pages) specifies which boxes 'box-decoration-break' operates on to determine the background positioning area(s).",
 				"browsers": "E,C,FF4,IE9,O10.5,S3",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-origin",
+				"syntax": "header { background-origin: border-box; }",
 				"restriction": "box"
 			},
 			{
 				"name": "background-position",
 				"desc": "Specifies the initial position of the background image(s) (after any resizing) within their corresponding background positioning area.",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-position",
+				"syntax": "div { background-position: left center}",
 				"restriction": "position, length, percentage"
 			},
 			{
 				"name": "background-position-x",
 				"desc": "If background images have been specified, this property specifies their initial position (after any resizing) within their corresponding background positioning area.",
 				"browsers": "E,IE6",
+				"ref": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position-x",
+				"syntax": "body { background-position-x: center; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -1199,6 +1429,8 @@
 				"name": "background-position-y",
 				"desc": "If background images have been specified, this property specifies their initial position (after any resizing) within their corresponding background positioning area.",
 				"browsers": "E,IE6",
+				"ref": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position-y",
+				"syntax": "body { background-position-y: center; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -1218,6 +1450,8 @@
 			{
 				"name": "background-repeat",
 				"desc": "Specifies how background images are tiled after they have been sized and positioned.",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-repeat",
+				"syntax": "article { background-repeat: no-repeat; }",
 				"restriction": "repeat",
 				"values": []
 			},
@@ -1225,6 +1459,8 @@
 				"name": "background-size",
 				"desc": "Specifies the size of the background images.",
 				"browsers": "E,C,FF4,IE9,O10,S4.1",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-size",
+				"syntax": "header { background-size: 20px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -1245,12 +1481,16 @@
 				"name": "behavior",
 				"desc": "IE only. Used to extend behaviors of the browser.",
 				"browsers": "IE6",
+				"ref": "https://msdn.microsoft.com/en-us/ie/gg192966.aspx",
+				"syntax": "div { behavior: url(http://example.com/png_fix.htc); }",
 				"restriction": "url"
 			},
 			{
 				"name": "block-size",
 				"desc": "Logical 'width'. Mapping depends on the element’s 'writing-mode'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#propdef-block-size",
+				"syntax": "header { block-size: 200px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -1262,91 +1502,123 @@
 			{
 				"name": "border",
 				"desc": "Shorthand property for setting border width, style, and color.",
+				"ref": "http://www.w3.org/TR/css3-background/#borders",
+				"syntax": "header { border: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "border-block-end",
 				"desc": "Logical 'border-bottom'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "header { border-block-end: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "border-block-start",
 				"desc": "Logical 'border-top'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "header { border-block-start: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "border-block-end-color",
 				"desc": "Logical 'border-bottom-color'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-block-end-color: red; }",
 				"restriction": "color"
 			},
 			{
 				"name": "border-block-start-color",
 				"desc": "Logical 'border-top-color'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-block-start-color: red; }",
 				"restriction": "color"
 			},
 			{
 				"name": "border-block-end-style",
 				"desc": "Logical 'border-bottom-style'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-block-end-style: solid; }",
 				"restriction": "line-style"
 			},
 			{
 				"name": "border-block-start-style",
 				"desc": "Logical 'border-top-style'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-block-start-style: solid; }",
 				"restriction": "lline-style"
 			},
 			{
 				"name": "border-block-end-width",
 				"desc": "Logical 'border-bottom-width'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-block-end-width: 50px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "border-block-start-width",
 				"desc": "Logical 'border-top-width'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-block-start-width: 50px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "border-bottom",
 				"desc": "Shorthand property for setting border width, style and color.",
+				"ref": "http://www.w3.org/TR/css3-background/#borders",
+				"syntax": "header { border-bottom: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "border-bottom-color",
 				"desc": "Sets the color of the bottom border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-color",
+				"syntax": "td { border-bottom-color: blue; }",
 				"restriction": "color"
 			},
 			{
 				"name": "border-bottom-left-radius",
 				"desc": "Defines the radii of the bottom left outer border edge.",
 				"browsers": "E,C,FF4,IE9,O10.5,S5",
+				"ref": "http://www.w3.org/TR/css3-background/#border-radius",
+				"syntax": "td { border-bottom-left-radius: 4px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "border-bottom-right-radius",
 				"desc": "Defines the radii of the bottom right outer border edge.",
 				"browsers": "E,C,FF4,IE9,O10.5,S5",
+				"ref": "http://www.w3.org/TR/css3-background/#border-radius",
+				"syntax": "td { border-bottom-right-radius: 4px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "border-bottom-style",
 				"desc": "Sets the style of the bottom border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-style",
+				"syntax": "td { border-bottom-style: solid; }",
 				"restriction": "line-style"
 			},
 			{
 				"name": "border-bottom-width",
 				"desc": "Sets the thickness of the bottom border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-width",
+				"syntax": "td { border-bottom-width: 2px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "border-collapse",
 				"desc": "Selects a table's border model.",
+				"ref": "http://www.w3.org/TR/CSS2/tables.html#borders",
+				"syntax": "table { border-collapse: collapse; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1362,6 +1634,8 @@
 			{
 				"name": "border-color",
 				"desc": "The color of the border around all four edges of an element.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-color",
+				"syntax": "td { border-color: blue; }",
 				"restriction": "color",
 				"values": []
 			},
@@ -1369,6 +1643,8 @@
 				"name": "border-image",
 				"desc": "Shorthand property for setting 'border-image-source', 'border-image-slice', 'border-image-width', 'border-image-outset' and 'border-image-repeat'. Omitted values are set to their initial values.",
 				"browsers": "E,C16,FF15,IE11,O15,S6",
+				"ref": "http://www.w3.org/TR/css3-background/#border-image",
+				"syntax": "td { border-image: url(border.png) 30 30 round;}",
 				"restriction": "length, percentage, number, url, enum",
 				"values": [
 					{
@@ -1407,12 +1683,16 @@
 				"name": "border-image-outset",
 				"desc": "The values specify the amount by which the border image area extends beyond the border box on the top, right, bottom, and left sides respectively. If the fourth value is absent, it is the same as the second. If the third one is also absent, it is the same as the first. If the second one is also absent, it is the same as the first. Numbers represent multiples of the corresponding border-width.",
 				"browsers": "E,C16,FF15,IE11,O15,S6",
+				"ref": "http://www.w3.org/TR/css3-background/#border-image-outset",
+				"syntax": "div { border-image-outset: 3px; }",
 				"restriction": "length, number"
 			},
 			{
 				"name": "border-image-repeat",
 				"desc": "Specifies how the images for the sides and the middle part of the border image are scaled and tiled. If the second keyword is absent, it is assumed to be the same as the first.",
 				"browsers": "E,C16,FF15,IE11,O15,S6",
+				"ref": "http://www.w3.org/TR/css3-background/#the-border-image-repeat",
+				"syntax": "td { border-image-repeat: stretch; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1436,6 +1716,8 @@
 				"name": "border-image-slice",
 				"desc": "Specifies inward offsets from the top, right, bottom, and left edges of the image, dividing it into nine regions: four corners, four edges and a middle.",
 				"browsers": "E,C16,FF15,IE11,O15,S6",
+				"ref": "http://www.w3.org/TR/css3-background/#border-image-slice",
+				"syntax": "div { border-image-slice: 10%; }",
 				"restriction": "number, percentage",
 				"values": [
 					{
@@ -1448,6 +1730,8 @@
 				"name": "border-image-source",
 				"desc": "Specifies an image to use instead of the border styles given by the 'border-style' properties and as an additional background layer for the element. If the value is 'none' or if the image cannot be displayed, the border styles will be used.",
 				"browsers": "E,C16,FF15,IE11,O15,S6",
+				"ref": "http://www.w3.org/TR/css3-background/#the-border-image-source",
+				"syntax": "aside { border-image-source: url(image.png); }",
 				"restriction": "image",
 				"values": [
 					{
@@ -1460,6 +1744,8 @@
 				"name": "border-image-width",
 				"desc": "The four values of 'border-image-width' specify offsets that are used to divide the border image area into nine parts. They represent inward distances from the top, right, bottom, and left sides of the area, respectively.",
 				"browsers": "E,C16,FF15,IE11,O15,S6",
+				"ref": "http://www.w3.org/TR/css3-background/#border-image-slice",
+				"syntax": ".album { border-image-width: 4px; }",
 				"restriction": "length, percentage, number",
 				"values": [
 					{
@@ -1472,149 +1758,203 @@
 				"name": "border-inline-end",
 				"desc": "Logical 'border-right'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "header { border-inline-end: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "border-inline-start",
 				"desc": "Logical 'border-left'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "header { border-inline-start: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "border-inline-end-color",
 				"desc": "Logical 'border-right-color'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-inline-end-color: red; }",
 				"restriction": "color"
 			},
 			{
 				"name": "border-inline-start-color",
 				"desc": "Logical 'border-left-color'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-inline-start-color: red; }",
 				"restriction": "color"
 			},
 			{
 				"name": "border-inline-end-style",
 				"desc": "Logical 'border-right-style'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-inline-end-style: solid; }",
 				"restriction": "line-style"
 			},
 			{
 				"name": "border-inline-start-style",
 				"desc": "Logical 'border-left-style'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-inline-start-style: solid; }",
 				"restriction": "lline-style"
 			},
 			{
 				"name": "border-inline-end-width",
 				"desc": "Logical 'border-right-width'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-inline-end-width: 50px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "border-inline-start-width",
 				"desc": "Logical 'border-left-width'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { border-inline-start-width: 50px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "border-left",
 				"desc": "Shorthand property for setting border width, style and color",
+				"ref": "http://www.w3.org/TR/css3-background/#borders",
+				"syntax": "header { border-left: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "border-left-color",
 				"desc": "Sets the color of the left border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-color",
+				"syntax": "td { border-left-color: blue; }",
 				"restriction": "color"
 			},
 			{
 				"name": "border-left-style",
 				"desc": "Sets the style of the left border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-style",
+				"syntax": "td { border-left-style: solid; }",
 				"restriction": "line-style"
 			},
 			{
 				"name": "border-left-width",
 				"desc": "Sets the thickness of the left border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-width",
+				"syntax": "td { border-left-width: 2px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "border-radius",
 				"desc": "Defines the radii of the outer border edge.",
 				"browsers": "E,C,FF4,IE9,O10.5,S5",
+				"ref": "http://www.w3.org/TR/css3-background/#border-radius",
+				"syntax": "td { border-radius: 3px 4px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "border-right",
 				"desc": "Shorthand property for setting border width, style and color",
+				"ref": "http://www.w3.org/TR/css3-background/#borders",
+				"syntax": "header { border-right: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "border-right-color",
 				"desc": "Sets the color of the right border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-color",
+				"syntax": "td { border-right-color: blue; }",
 				"restriction": "color"
 			},
 			{
 				"name": "border-right-style",
 				"desc": "Sets the style of the right border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-style",
+				"syntax": "td { border-right-style: solid; }",
 				"restriction": "line-style"
 			},
 			{
 				"name": "border-right-width",
 				"desc": "Sets the thickness of the right border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-width",
+				"syntax": "td { border-right-width: 2px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "border-spacing",
 				"desc": "The lengths specify the distance that separates adjoining cell borders. If one length is specified, it gives both the horizontal and vertical spacing. If two are specified, the first gives the horizontal spacing and the second the vertical spacing. Lengths may not be negative.",
 				"browsers": "E,C,FF1,IE8,O7,S1.2",
+				"ref": "http://www.w3.org/TR/CSS2/tables.html#borders",
+				"syntax": "table { border-spacing: 10px 50px; }",
 				"restriction": "length"
 			},
 			{
 				"name": "border-style",
 				"desc": "The style of the border around edges of an element.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-style",
+				"syntax": "td { border-style: solid; }",
 				"restriction": "line-style",
 				"values": []
 			},
 			{
 				"name": "border-top",
 				"desc": "Shorthand property for setting border width, style and color",
+				"ref": "http://www.w3.org/TR/css3-background/#borders",
+				"syntax": "header { border-top: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "border-top-color",
 				"desc": "Sets the color of the top border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-color",
+				"syntax": "td { border-top-color: blue; }",
 				"restriction": "color"
 			},
 			{
 				"name": "border-top-left-radius",
 				"desc": "Defines the radii of the top left outer border edge.",
 				"browsers": "E,C,FF4,IE9,O10.5,S5",
+				"ref": "http://www.w3.org/TR/css3-background/#border-radius",
+				"syntax": "td { border-top-left-radius: 4px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "border-top-right-radius",
 				"desc": "Defines the radii of the top right outer border edge.",
 				"browsers": "E,C,FF4,IE9,O10.5,S5",
+				"ref": "http://www.w3.org/TR/css3-background/#border-radius",
+				"syntax": "td { border-top-right-radius: 4px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "border-top-style",
 				"desc": "Sets the style of the top border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-style",
+				"syntax": "td { border-top-style: solid; }",
 				"restriction": "line-style"
 			},
 			{
 				"name": "border-top-width",
 				"desc": "Sets the thickness of the top border.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-width",
+				"syntax": "td { border-top-width: 2px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "border-width",
 				"desc": "Shorthand that sets the four 'border-*-width' properties. If it has four values, they set top, right, bottom and left in that order. If left is missing, it is the same as right; if bottom is missing, it is the same as top; if right is missing, it is the same as top.",
+				"ref": "http://www.w3.org/TR/css3-background/#border-width",
+				"syntax": "td { border-width: 2px; }",
 				"restriction": "length, line-width",
 				"values": []
 			},
 			{
 				"name": "bottom",
 				"desc": "Specifies how far an absolutely positioned box's bottom margin edge is offset above the bottom edge of the box's 'containing block'.",
+				"ref": "http://www.w3.org/TR/css3-positioning/#propdef-bottom",
+				"syntax": "article { bottom: 50px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -1627,6 +1967,8 @@
 				"name": "box-decoration-break",
 				"desc": "Specifies whether individual boxes are treated as broken pieces of one continuous box, or whether each box is individually wrapped with the border and padding.",
 				"browsers": "FF32,O11",
+				"ref": "http://www.w3.org/TR/css3-break/#break-decoration",
+				"syntax": "div { box-decoration-break: clone; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1641,6 +1983,8 @@
 				"name": "box-shadow",
 				"desc": "Attaches one or more drop-shadows to the box. The property is a comma-separated list of shadows, each specified by 2-4 length values, an optional color, and an optional 'inset' keyword. Omitted lengths are 0; omitted colors are a user agent chosen color.",
 				"browsers": "E,C,FF4,IE9,O11.5,S5.1",
+				"ref": "http://www.w3.org/TR/css3-background/#box-shadow",
+				"syntax": "div { box-shadow: rgba(0,0,0,0.4) 10px 10px inset; }",
 				"restriction": "length, color, enum",
 				"values": [
 					{
@@ -1652,6 +1996,8 @@
 				"name": "box-sizing",
 				"desc": "Specifies the behavior of the 'width' and 'height' properties.",
 				"browsers": "E,C10,FF29,IE8,O8,S5.1",
+				"ref": "http://www.w3.org/TR/css3-ui/#box-sizing",
+				"syntax": "div { box-sizing: content-box; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1666,6 +2012,8 @@
 				"name": "break-after",
 				"desc": "Describes the page/column/region break behavior after the generated box.",
 				"browsers": "E,IE10,O11.5",
+				"ref": "http://www.w3.org/TR/css3-break/#break-between",
+				"syntax": "h2 { break-after: column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1710,6 +2058,8 @@
 				"name": "break-before",
 				"desc": "Describes the page/column/region break behavior before the generated box.",
 				"browsers": "E,IE10,O11.5",
+				"ref": "http://www.w3.org/TR/css3-break/#break-between",
+				"syntax": "h2 { break-before: column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1754,6 +2104,8 @@
 				"name": "break-inside",
 				"desc": "Describes the page/column/region break behavior inside the principal box.",
 				"browsers": "E,IE10,O11.5",
+				"ref": "http://www.w3.org/TR/css3-break/#break-within",
+				"syntax": "h2 { break-inside: avoid-column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1778,6 +2130,8 @@
 				"name": "caption-side",
 				"desc": "Specifies the position of the caption box with respect to the table box.",
 				"browsers": "E,C,FF,IE8,O,S",
+				"ref": "http://www.w3.org/TR/CSS2/tables.html#caption-position",
+				"syntax": "caption { caption-side: bottom; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1793,6 +2147,8 @@
 			{
 				"name": "clear",
 				"desc": "Indicates which sides of an element's box(es) may not be adjacent to an earlier floating box. The 'clear' property does not consider floats inside the element itself or in other block formatting contexts.",
+				"ref": "http://www.w3.org/TR/2006/WD-CSS21-20060411/visuren.html#propdef-clear",
+				"syntax": "footer { clear: both; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1816,6 +2172,8 @@
 			{
 				"name": "clip",
 				"desc": "Deprecated. Use the 'clip-path' property when support allows. Defines the visible portion of an element’s box.",
+				"ref": "http://www.w3.org/TR/css-masking/#clip-property",
+				"syntax": "span { clip: rect(0px, 60px, 200px, 0px); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1831,6 +2189,7 @@
 				"name": "clip-path",
 				"desc": "Specifies a clipping path where everything inside the path is visable and everything outside is clipped out.",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css-masking/#the-clip-path",
 				"restriction": "url, shape, geometry-box, enum",
 				"values": [
 					{
@@ -1847,6 +2206,7 @@
 				"name": "clip-rule",
 				"desc": "Indicates the algorithm which is to be used to determine what parts of the canvas are included inside the shape.",
 				"browsers": "E,C5,FF3,IE10,O9,S6",
+				"ref": "http://www.w3.org/TR/css-masking-1/#the-clip-rule",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1860,12 +2220,15 @@
 			{
 				"name": "color",
 				"desc": "Color of an element's text",
+				"ref": "http://www.w3.org/TR/css3-color/#foreground",
+				"syntax": "body { color: red; }",
 				"restriction": "color"
 			},
 			{
 				"name": "color-interpolation-filters",
 				"desc": "Specifies the color space for imaging operations performed via filter effects.",
 				"browsers": "E,C5,FF3,IE10,O9,S6",
+				"ref": "http://www.w3.org/TR/filter-effects/#ColorInterpolationFiltersProperty",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1884,6 +2247,8 @@
 				"name": "column-count",
 				"desc": "Describes the optimal number of columns into which the content of the element will be flowed.",
 				"browsers": "E,IE10,O11.5,S9",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-count",
+				"syntax": "div { column-count: 3; }",
 				"restriction": "integer, enum",
 				"values": [
 					{
@@ -1896,6 +2261,8 @@
 				"name": "column-fill",
 				"desc": "In continuous media, this property will only be consulted if the length of columns has been constrained. Otherwise, columns will automatically be balanced.",
 				"browsers": "E,IE10,O11.5,S9",
+				"ref": "http://www.w3.org/TR/css3-multicol/#filling-columns",
+				"syntax": "article { column-fill: balance; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1911,6 +2278,8 @@
 				"name": "column-gap",
 				"desc": "Sets the gap between columns. If there is a column rule between columns, it will appear in the middle of the gap.",
 				"browsers": "E,IE10,O11.5,S9",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-gap0",
+				"syntax": "div { column-gap: 10px; }",
 				"restriction": "length, enum",
 				"values": [
 					{
@@ -1923,30 +2292,40 @@
 				"name": "column-rule",
 				"desc": "Shorthand for setting 'column-rule-width', 'column-rule-style', and 'column-rule-color' at the same place in the style sheet. Omitted values are set to their initial values.",
 				"browsers": "E,IE10,O11.5,S9",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule0",
+				"syntax": "header { column-rule: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "column-rule-color",
 				"desc": "Sets the color of the column rule",
 				"browsers": "E,IE10,O11.6",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule-color",
+				"syntax": "div { column-rule-color: #ff0; }",
 				"restriction": "color"
 			},
 			{
 				"name": "column-rule-style",
 				"desc": "Sets the style of the rule between columns of an element.",
 				"browsers": "E,IE10,O11.5,S6",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule-style",
+				"syntax": "div { column-rule-style: solid; }",
 				"restriction": "line-style"
 			},
 			{
 				"name": "column-rule-width",
 				"desc": "Sets the width of the rule between columns. Negative values are not allowed.",
 				"browsers": "E,IE10,O11.5,S9",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule-width",
+				"syntax": "div { column-rule-width: 3px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "columns",
 				"desc": "A shorthand property which sets both 'column-width' and 'column-count'.",
 				"browsers": "E,IE10,O11.5,S9",
+				"ref": "http://www.w3.org/TR/css3-multicol/#columns0",
+				"syntax": "div { columns: 100px 3; }",
 				"restriction": "length, integer, enum",
 				"values": [
 					{
@@ -1959,6 +2338,8 @@
 				"name": "column-span",
 				"desc": "Describes the page/column break behavior after the generated box.",
 				"browsers": "E,IE10,O11.5,S9",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-span0",
+				"syntax": "article { column-span: all; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -1975,6 +2356,8 @@
 				"name": "column-width",
 				"desc": "Describes the width of columns in multicol elements.",
 				"browsers": "E,IE10,O11.5,S9",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-width",
+				"syntax": "div { column-width: 100px; }",
 				"restriction": "length, enum",
 				"values": [
 					{
@@ -1987,6 +2370,8 @@
 				"name": "content",
 				"desc": "Determines which page-based occurrence of a given element is applied to a counter or string value.",
 				"browsers": "E,C,FF1,IE8,O4,S1",
+				"ref": "http://www.w3.org/TR/css3-content/#content",
+				"syntax": "a:after { content: ' ( attr(href))';}",
 				"restriction": "string, url",
 				"values": [
 					{
@@ -2016,6 +2401,8 @@
 				"name": "counter-increment",
 				"desc": "Manipulate the value of existing counters.",
 				"browsers": "E,C,FF1.5,IE8,O10.5,S3",
+				"ref": "http://www.w3.org/TR/css3-content/#counters",
+				"syntax": "h1:before { counter-increment: section; }",
 				"restriction": "identifier, integer",
 				"values": [
 					{
@@ -2028,6 +2415,8 @@
 				"name": "counter-reset",
 				"desc": "Property accepts one or more names of counters (identifiers), each one optionally followed by an integer. The integer gives the value that the counter is set to on each occurrence of the element.",
 				"browsers": "E,C,FF1.5,IE8,O10.5,S3",
+				"ref": "http://www.w3.org/TR/css3-content/#counters",
+				"syntax": "h1 { counter-reset: section; }",
 				"restriction": "identifier, integer",
 				"values": [
 					{
@@ -2039,6 +2428,8 @@
 			{
 				"name": "cursor",
 				"desc": "Allows control over cursor appearance in an element",
+				"ref": "http://www.w3.org/TR/css3-ui/#cursor0",
+				"syntax": "nav { cursor: pointer; }",
 				"restriction": "url, number, enum",
 				"values": [
 					{
@@ -2194,6 +2585,8 @@
 			{
 				"name": "direction",
 				"desc": "Specifies the inline base direction or directionality of any bidi paragraph, embedding, isolate, or override established by the box. Note: for HTML content use the 'dir' attribute and 'bdo' element rather than this property.",
+				"ref": "http://www.w3.org/TR/css-writing-modes-3/#direction",
+				"syntax": "div { direction: rtl; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -2207,6 +2600,8 @@
 			{
 				"name": "display",
 				"desc": "In combination with 'float' and 'position', determines the type of box or boxes that are generated for an element.",
+				"ref": "http://www.w3.org/TR/css-display-3/#propdef-display",
+				"syntax": "p { display: inline; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -2378,6 +2773,8 @@
 				"name": "empty-cells",
 				"desc": "In the separated borders model, this property controls the rendering of borders and backgrounds around cells that have no visible content.",
 				"browsers": "E,C,FF1,IE7,O4,S1.2",
+				"ref": "http://www.w3.org/TR/CSS2/tables.html#empty-cells",
+				"syntax": "table { empty-cells: hide; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -2395,6 +2792,7 @@
 			{
 				"name": "enable-background",
 				"desc": "Deprecated. Use 'isolation' property instead when support allows. Specifies how the accumulation of the background image is managed.",
+				"ref": "http://www.w3.org/TR/filter-effects/#AccessBackgroundImage",
 				"restriction": "integer, length, percentage, enum",
 				"values": [
 					{
@@ -2409,11 +2807,14 @@
 				"name": "fallback",
 				"desc": "@counter-style descriptor. Specifies a fallback counter style to be used when the current counter style can’t create a representation for a given counter value.",
 				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-fallback",
+				"syntax": "@counter-style { fallback: upper-alpha; }",
 				"restriction": "identifier"
 			},
 			{
 				"name": "fill",
 				"desc": "Paints the interior of the given graphical element.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#FillProperty",
 				"restriction": "color, enum, url",
 				"values": [
 					{
@@ -2425,11 +2826,13 @@
 			{
 				"name": "fill-opacity",
 				"desc": "Specifies the opacity of the painting operation used to paint the interior the current object.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#FillOpacity",
 				"restriction": "number(0-1)"
 			},
 			{
 				"name": "fill-rule",
 				"desc": "Indicates the algorithm (or winding rule) which is to be used to determine what parts of the canvas are included inside the shape.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#WindingRule",
 				"restriction": "enum",
 				"values": [
 					{
@@ -2444,6 +2847,8 @@
 				"name": "filter",
 				"desc": "Processes an element’s rendering before it is displayed in the document, by applying one or more filter effects.",
 				"browsers": "E13,FF35",
+				"ref": "http://www.w3.org/TR/filter-effects/#propdef-filter",
+				"syntax": "div { filter: opacity(50%); }",
 				"restriction": "enum, url",
 				"values": [
 					{
@@ -2491,6 +2896,8 @@
 				"name": "flex",
 				"desc": "Specifies the components of a flexible length: the flex grow factor and flex shrink factor, and the flex basis.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex",
+				"syntax": "p { flex: 0 1 auto; }",
 				"restriction": "length, number, percentage",
 				"values": [
 					{
@@ -2511,6 +2918,8 @@
 				"name": "flex-basis",
 				"desc": "Sets the flex basis.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-basis-propdef",
+				"syntax": "p { flex-basis: 30%; }",
 				"restriction": "length, number, percentage",
 				"values": [
 					{
@@ -2527,6 +2936,8 @@
 				"name": "flex-direction",
 				"desc": "Specifies how flex items are placed in the flex container, by setting the direction of the flex container’s main axis.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-direction",
+				"syntax": "div { flex-direction: column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -2548,6 +2959,8 @@
 				"name": "flex-flow",
 				"desc": "Specifies how flexbox items are placed in the flexbox.",
 				"browsers": "E,C29,FF28,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-flow",
+				"syntax": "div { flex-flow: column wrap; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -2580,18 +2993,24 @@
 				"name": "flex-grow",
 				"desc": "Sets the flex grow factor. Negative numbers are invalid.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-grow",
+				"syntax": "p { flex-grow: 4; }",
 				"restriction": "number"
 			},
 			{
 				"name": "flex-shrink",
 				"desc": "Sets the flex shrink factor. Negative numbers are invalid.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-shrink",
+				"syntax": "p { flex-shrink: 4; }",
 				"restriction": "number"
 			},
 			{
 				"name": "flex-wrap",
 				"desc": "Controls whether the flex container is single-line or multi-line, and the direction of the cross-axis, which determines the direction new lines are stacked in.",
 				"browsers": "E,C29,FF28,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-wrap",
+				"syntax": "div { flex-wrap: nowrap; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -2610,6 +3029,8 @@
 			{
 				"name": "float",
 				"desc": "Specifies how a box should be floated. It may be set for any element, but only applies to elements that generate boxes that are not absolutely positioned.",
+				"ref": "http://www.w3.org/TR/CSS21/visuren.html#propdef-float",
+				"syntax": "img { float: right; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -2630,17 +3051,21 @@
 				"name": "flood-color",
 				"desc": "Indicates what color to use to flood the current filter primitive subregion.",
 				"browsers": "E,C5,FF3,IE10,O9,S6",
+				"ref": "http://www.w3.org/TR/filter-effects/#FloodColorProperty",
 				"restriction": "color"
 			},
 			{
 				"name": "flood-opacity",
 				"desc": "Indicates what opacity to use to flood the current filter primitive subregion.",
 				"browsers": "E,C5,FF3,IE10,O9,S6",
+				"ref": "http://www.w3.org/TR/filter-effects/#FloodOpacityProperty",
 				"restriction": "number(0-1), percentage"
 			},
 			{
 				"name": "font",
 				"desc": "Shorthand property for setting 'font-style', 'font-variant', 'font-weight', 'font-size', 'line-height', and 'font-family', at the same place in the style sheet. The syntax of this property is based on a traditional typographical shorthand notation to set multiple properties related to fonts.",
+				"ref": "http://www.w3.org/TR/css3-fonts/#propdef-font",
+				"syntax": "body { font: bold 12px arial, verdana; }",
 				"restriction": "font",
 				"values": [
 					{
@@ -2746,6 +3171,8 @@
 			{
 				"name": "font-family",
 				"desc": "Specifies a prioritized list of font family names or generic family names. A user agent iterates through the list of family names until it matches an available font that contains a glyph for the character to be rendered.",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-family0",
+				"syntax": "body { font-family: arial, verdana; }",
 				"restriction": "font",
 				"values": [
 					{
@@ -2805,6 +3232,8 @@
 				"name": "font-feature-settings",
 				"desc": "Provides low-level control over OpenType font features. It is intended as a way of providing access to font features that are not widely used but are needed for a particular use case.",
 				"browsers": "E,FF34,IE10",
+				"ref": "http://www.w3.org/TR/css3-fonts/#propdef-font-feature-settings",
+				"syntax": "body { font-feature-settings: 'hwid'; }",
 				"restriction": "string, integer",
 				"values": [
 					{
@@ -3185,6 +3614,8 @@
 				"name": "font-kerning",
 				"desc": "Kerning is the contextual adjustment of inter-glyph spacing. This property controls metric kerning, kerning that utilizes adjustment data contained in the font.",
 				"browsers": "C33,FF34,O20",
+				"ref": "http://www.w3.org/TR/css3-fonts/#propdef-font-kerning",
+				"syntax": "body { font-kerning: normal; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3205,6 +3636,8 @@
 				"name": "font-language-override",
 				"desc": "The value of 'normal' implies that when rendering with OpenType fonts the language of the document is used to infer the OpenType language system, used to select language specific features when rendering.",
 				"browsers": "FF34",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-language-override-prop",
+				"syntax": "body { font-language-override: 'SRB'; }",
 				"restriction": "string",
 				"values": [
 					{
@@ -3216,6 +3649,8 @@
 			{
 				"name": "font-size",
 				"desc": "Indicates the desired height of glyphs from the font. For scalable fonts, the font-size is a scale factor applied to the EM unit of the font. (Note that certain glyphs may bleed outside their EM box.) For non-scalable fonts, the font-size is converted into absolute units and matched against the declared font-size of the font, using the same absolute coordinate space for both of the matched values.",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-size-prop",
+				"syntax": "div { font-size: 12px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -3251,6 +3686,8 @@
 				"name": "font-size-adjust",
 				"desc": "Preserves the readability of text when font fallback occurs by adjusting the font-size so that the x-height is the same irregardless of the font used.",
 				"browsers": "E,FF3,IE10",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-size-adjust",
+				"syntax": "div { font-size-adjust: 0.58; }",
 				"restriction": "number",
 				"values": [
 					{
@@ -3263,6 +3700,8 @@
 				"name": "font-stretch",
 				"desc": "Selects a normal, condensed, or expanded face from a font family.",
 				"browsers": "E,FF9,IE9",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-stretch0",
+				"syntax": "div { font-stretch: expanded; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3305,6 +3744,8 @@
 			{
 				"name": "font-style",
 				"desc": "Allows italic or oblique faces to be selected. Italic forms are generally cursive in nature while oblique faces are typically sloped versions of the regular face.",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-style0",
+				"syntax": "body { font-style: italic; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3325,6 +3766,8 @@
 				"name": "font-synthesis",
 				"desc": "Controls whether user agents are allowed to synthesize bold or oblique font faces when a font family lacks bold or italic faces.",
 				"browsers": "FF34,S9",
+				"ref": "http://www.w3.org/TR/css3-fonts/#propdef-font-synthesis",
+				"syntax": "html:lang(ar) { font-synthesis: none; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3342,6 +3785,8 @@
 			{
 				"name": "font-variant",
 				"desc": "Specifies variant representations of the font",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-variant-prop",
+				"syntax": "div { font-variant: small-caps; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3358,6 +3803,8 @@
 				"name": "font-variant-alternates",
 				"desc": "For any given character, fonts can provide a variety of alternate glyphs in addition to the default glyph for that character. This property provides control over the selection of these alternate glyphs.",
 				"browsers": "FF34",
+				"ref": "http://www.w3.org/TR/css3-fonts/#propdef-font-variant-alternates",
+				"syntax": "h2 { font-variant-alternates: styleset(3,5); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3391,6 +3838,8 @@
 				"name": "font-variant-caps",
 				"desc": "Specifies control over capitalized forms.",
 				"browsers": "FF34",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-variant-caps-prop",
+				"syntax": "p { font-variant-caps: titling-caps; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3422,6 +3871,8 @@
 				"name": "font-variant-east-asian",
 				"desc": "Allows control of glyph substitute and positioning in East Asian text.",
 				"browsers": "FF34",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-variant-east-asian-prop",
+				"syntax": "mark { font-variant-east-asian: normal; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3462,6 +3913,8 @@
 				"name": "font-variant-ligatures",
 				"desc": "Specifies control over which ligatures are enabled or disabled. A value of ‘normal’ implies that the defaults set by the font are used.",
 				"browsers": "C18,FF34,O15,S6",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-variant-ligatures-prop",
+				"syntax": "div { font-variant-ligatures: historical-ligatures; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3511,6 +3964,8 @@
 				"name": "font-variant-numeric",
 				"desc": "Specifies control over numerical forms.",
 				"browsers": "FF34",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-variant-numeric-prop",
+				"syntax": ".amount { font-variant-numeric: oldstyle-nums diagonal-fractions; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3547,6 +4002,8 @@
 				"name": "font-variant-position",
 				"desc": "Specifies the vertical position",
 				"browsers": "FF34",
+				"ref": "http://www.w3.org/TR/css3-fonts/#propdef-font-variant-position",
+				"syntax": "sub { font-variant-position: subscript; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3566,6 +4023,8 @@
 			{
 				"name": "font-weight",
 				"desc": "Specifies weight of glyphs in the font, their degree of blackness or stroke thickness.",
+				"ref": "http://www.w3.org/TR/css3-fonts/#font-weight-the-font-weight-property",
+				"syntax": "th { font-weight: bold; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3613,11 +4072,13 @@
 			{
 				"name": "glyph-orientation-horizontal",
 				"desc": "Controls glyph orientation when the inline-progression-direction is horizontal.",
+				"ref": "http://www.w3.org/TR/SVG2/text.html#GlyphOrientationHorizontal",
 				"restriction": "angle, number"
 			},
 			{
 				"name": "glyph-orientation-vertical",
 				"desc": "Controls glyph orientation when the inline-progression-direction is vertical.",
+				"ref": "http://www.w3.org/TR/SVG2/text.html#GlyphOrientationVertical",
 				"restriction": "angle, number, enum",
 				"values": [
 					{
@@ -3629,6 +4090,8 @@
 			{
 				"name": "height",
 				"desc": "Specifies the height of the content area, padding area or border area (depending on 'box-sizing') of certain boxes.",
+				"ref": "http://www.w3.org/TR/css3-box/#height",
+				"syntax": "footer { height: 100px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -3653,6 +4116,8 @@
 				"name": "image-orientation",
 				"desc": "Specifies an orthogonal rotation to be applied to an image before it is laid out.",
 				"browsers": "FF26",
+				"ref": "http://www.w3.org/TR/css4-images/#image-orientation",
+				"syntax": "img.ninety { image-orientation: 90deg; }",
 				"restriction": "angle",
 				"values": [
 					{
@@ -3667,6 +4132,7 @@
 				"name": "image-rendering",
 				"desc": "Provides a hint to the user-agent about what aspects of an image are most important to preserve when the image is scaled, to aid the user-agent in the choice of an appropriate scaling algorithm.",
 				"browsers": "C,FF3.6,O11.6,S",
+				"ref": "https://drafts.csswg.org/css-images-3/#the-image-rendering",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3696,6 +4162,8 @@
 				"name": "ime-mode",
 				"desc": "Controls the state of the input method editor for text fields.",
 				"browsers": "E,FF3,IE5",
+				"ref": "http://www.w3.org/TR/css3-ui/#ime-mode",
+				"syntax": "body { ime-mode: active; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3721,6 +4189,8 @@
 				"name": "inline-size",
 				"desc": "Logical 'height'. Mapping depends on the element’s 'writing-mode'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#propdef-inline-size",
+				"syntax": "header { inline-size: 200px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -3733,6 +4203,8 @@
 				"name": "isolation",
 				"desc": "In CSS setting to 'isolate' will turn the element into a stacking context. In SVG, it defines whether an element is isolated or not.",
 				"browsers": "C,FF,O,S",
+				"ref": "http://www.w3.org/TR/compositing-1/#isolation",
+				"syntax": "div { isolation: isolate; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3749,6 +4221,8 @@
 				"name": "justify-content",
 				"desc": "Aligns flex items along the main axis of the current line of the flex container.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#align-content",
+				"syntax": "p { justify-content: flex-start; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3776,6 +4250,7 @@
 			{
 				"name": "kerning",
 				"desc": "Indicates whether the user agent should adjust inter-glyph spacing based on kerning tables that are included in the relevant font or instead disable auto-kerning and set inter-character spacing to a specific length.",
+				"ref": "http://www.w3.org/TR/SVG11/text.html#KerningProperty",
 				"restriction": "length, enum",
 				"values": [
 					{
@@ -3787,6 +4262,8 @@
 			{
 				"name": "left",
 				"desc": "Specifies how far an absolutely positioned box's left margin edge is offset to the right of the left edge of the box's 'containing block'.",
+				"ref": "http://www.w3.org/TR/css3-positioning/#propdef-left",
+				"syntax": "article { left: 50px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -3798,6 +4275,8 @@
 			{
 				"name": "letter-spacing",
 				"desc": "Specifies the minimum, maximum, and optimal spacing between grapheme clusters.",
+				"ref": "http://www.w3.org/TR/css3-text/#letter-spacing0",
+				"syntax": "h2 { letter-spacing: 2px; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -3810,11 +4289,14 @@
 				"name": "lighting-color",
 				"desc": "Defines the color of the light source for filter primitives 'feDiffuseLighting' and 'feSpecularLighting'.",
 				"browsers": "E,C5,FF3,IE10,O9,S6",
+				"ref": "http://www.w3.org/TR/filter-effects/#LightingColorProperty",
 				"restriction": "color"
 			},
 			{
 				"name": "line-height",
 				"desc": "Determines the block-progression dimension of the text content area of an inline box.",
+				"ref": "http://www.w3.org/TR/css3-linebox/#line-height",
+				"syntax": "#menu { line-height: 22px; }",
 				"restriction": "number, length, percentage",
 				"values": [
 					{
@@ -3826,6 +4308,8 @@
 			{
 				"name": "list-style",
 				"desc": "Shorthand for setting 'list-style-type', 'list-style-position' and 'list-style-image'",
+				"ref": "http://www.w3.org/TR/css3-lists/#list-style",
+				"syntax": "ul { list-style: square url('square.png');}",
 				"restriction": "image, enum, url",
 				"values": [
 					{
@@ -3892,6 +4376,8 @@
 			{
 				"name": "list-style-image",
 				"desc": "Sets the image that will be used as the list item marker. When the image is available, it will replace the marker set with the 'list-style-type' marker.",
+				"ref": "http://www.w3.org/TR/css3-lists/#list-style-image",
+				"syntax": "<uri> | none",
 				"restriction": "image",
 				"values": [
 					{
@@ -3903,6 +4389,8 @@
 			{
 				"name": "list-style-position",
 				"desc": "Specifies the position of the '::marker' pseudo-element's box in the list item.",
+				"ref": "http://www.w3.org/TR/css3-lists/#list-style-position",
+				"syntax": "ul { list-style-position: inside; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -3916,6 +4404,8 @@
 			{
 				"name": "list-style-type",
 				"desc": "Used to construct the default contents of a list item’s marker",
+				"ref": "http://www.w3.org/TR/css3-lists/#list-style-type",
+				"syntax": "<glyph> | <algorithmic> | <numeric> | <alphabetic> | <symbolic> | <non-repeating> | normal | none",
 				"restriction": "enum, string",
 				"values": [
 					{
@@ -3985,6 +4475,8 @@
 			{
 				"name": "margin",
 				"desc": "Shorthand property to set values the thickness of the margin area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#margin1",
+				"syntax": "div { margin: 4px 7px 2px 4px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -3996,6 +4488,8 @@
 				"name": "margin-block-end",
 				"desc": "Logical 'margin-bottom'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#logical-prop",
+				"syntax": "div { margin-block-end: 4px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4007,6 +4501,8 @@
 				"name": "margin-block-start",
 				"desc": "Logical 'margin-top'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#logical-prop",
+				"syntax": "div { margin-block-start: 4px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4017,6 +4513,8 @@
 			{
 				"name": "margin-bottom",
 				"desc": "Shorthand property to set values the thickness of the margin area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#margin1",
+				"syntax": "div { margin-bottom: 4px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4028,6 +4526,8 @@
 				"name": "margin-inline-end",
 				"desc": "Logical 'margin-right'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#logical-prop",
+				"syntax": "div { margin-inline-end: 4px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4039,6 +4539,8 @@
 				"name": "margin-inline-start",
 				"desc": "Logical 'margin-left'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#logical-prop",
+				"syntax": "div { margin-inline-start: 4px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4049,6 +4551,8 @@
 			{
 				"name": "margin-left",
 				"desc": "Shorthand property to set values the thickness of the margin area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#margin1",
+				"syntax": "div { margin-left: 4px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4059,6 +4563,8 @@
 			{
 				"name": "margin-right",
 				"desc": "Shorthand property to set values the thickness of the margin area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#margin1",
+				"syntax": "div { margin-right: 4px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4069,6 +4575,8 @@
 			{
 				"name": "margin-top",
 				"desc": "Shorthand property to set values the thickness of the margin area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#margin1",
+				"syntax": "div { margin-top: 4px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4079,6 +4587,7 @@
 			{
 				"name": "marker",
 				"desc": "Specifies the marker symbol that shall be used for all points on the sets the value for all vertices on the given ‘path’ element or basic shape.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#MarkerProperty",
 				"restriction": "url",
 				"values": [
 					{
@@ -4094,6 +4603,7 @@
 			{
 				"name": "marker-end",
 				"desc": "Specifies the marker that will be drawn at the last vertices of the given markable element.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#VertexMarkerProperties",
 				"restriction": "url",
 				"values": [
 					{
@@ -4109,6 +4619,7 @@
 			{
 				"name": "marker-mid",
 				"desc": "Specifies the marker that will be drawn at all vertices except the first and last.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#VertexMarkerProperties",
 				"restriction": "url",
 				"values": [
 					{
@@ -4124,6 +4635,7 @@
 			{
 				"name": "marker-start",
 				"desc": "Specifies the marker that will be drawn at the first vertices of the given markable element.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#VertexMarkerProperties",
 				"restriction": "url",
 				"values": [
 					{
@@ -4140,6 +4652,7 @@
 				"name": "mask-type",
 				"desc": "Defines whether the content of the <mask> element is treated as as luminance mask or alpha mask.",
 				"browsers": "C24,FF35,O15,S7",
+				"ref": "http://www.w3.org/TR/css-masking-1/#the-mask-type",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4154,6 +4667,8 @@
 				"name": "max-block-size",
 				"desc": "Logical 'max-width'. Mapping depends on the element’s 'writing-mode'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#propdef-min-block-size",
+				"syntax": "header { max-block-size: 200px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4166,6 +4681,8 @@
 				"name": "max-height",
 				"desc": "Allows authors to constrain content height to a certain range.",
 				"browsers": "E,C,FF1,IE7,O7,S1",
+				"ref": "http://www.w3.org/TR/css3-box/#max-height",
+				"syntax": "footer { max-height: 300px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4190,6 +4707,8 @@
 				"name": "max-inline-size",
 				"desc": "Logical 'max-height'. Mapping depends on the element’s 'writing-mode'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#propdef-min-block-size",
+				"syntax": "header { max-inline-size: 200px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4202,6 +4721,8 @@
 				"name": "max-width",
 				"desc": "Allows authors to constrain content width to a certain range.",
 				"browsers": "E,C,FF1,IE7,O7,S1",
+				"ref": "http://www.w3.org/TR/css3-box/#max-width",
+				"syntax": "footer { max-width: 300px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4226,12 +4747,16 @@
 				"name": "min-block-size",
 				"desc": "Logical 'min-width'. Mapping depends on the element’s 'writing-mode'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#propdef-min-block-size",
+				"syntax": "header { min-block-size: 200px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "min-height",
 				"desc": "Allows authors to constrain content height to a certain range.",
 				"browsers": "E,C,FF1,IE7,O7,S1",
+				"ref": "http://www.w3.org/TR/css3-box/#min-height",
+				"syntax": "footer { min-height: 300px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4256,12 +4781,16 @@
 				"name": "min-inline-size",
 				"desc": "Logical 'min-height'. Mapping depends on the element’s 'writing-mode'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#propdef-min-block-size",
+				"syntax": "header { min-inline-size: 200px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "min-width",
 				"desc": "Allows authors to constrain content width to a certain range.",
 				"browsers": "E,C,FF1,IE7,O7,S1",
+				"ref": "http://www.w3.org/TR/css3-box/#min-width",
+				"syntax": "footer { min-width: 300px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -4286,6 +4815,8 @@
 				"name": "mix-blend-mode",
 				"desc": "Defines the formula that must be used to mix the colors with the backdrop.",
 				"browsers": "C41,FF32,O29,S7.1",
+				"ref": "http://www.w3.org/TR/compositing-1/#propdef-mix-blend-mode",
+				"syntax": "div { mix-blend-mode: saturation; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4347,6 +4878,7 @@
 				"name": "motion",
 				"desc": "Shorthand property for setting 'motion-path', 'motion-offset' and 'motion-rotation'.",
 				"browsers": "C46,O33",
+				"ref": "http://www.w3.org/TR/motion-1/#propdef-motion",
 				"restriction": "url, length, percentage, angle, shape, geometry-box, enum",
 				"values": [
 					{
@@ -4370,12 +4902,15 @@
 				"name": "motion-offset",
 				"desc": "A distance that describes the position along the specified motion path.",
 				"browsers": "C46,O33",
+				"ref": "http://www.w3.org/TR/motion-1/#propdef-motion-offset",
+				"syntax": "div { motion-offset: 10%; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "motion-path",
 				"desc": "Specifies the motion path the element gets positioned at.",
 				"browsers": "C46,O33",
+				"ref": "http://www.w3.org/TR/motion-1/#propdef-motion-path",
 				"restriction": "url, shape, geometry-box, enum",
 				"values": [
 					{
@@ -4391,6 +4926,8 @@
 				"name": "motion-rotation",
 				"desc": "Defines the direction of the element while positioning along the motion path.",
 				"browsers": "C46,O33",
+				"ref": "http://www.w3.org/TR/motion-1/#propdef-motion-rotation",
+				"syntax": "div { motion-rotation: 90%; }",
 				"restriction": "angle",
 				"values": [
 					{
@@ -4407,6 +4944,8 @@
 				"name": "-moz-animation",
 				"desc": "Shorthand property combines six of the animation properties into a single property.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation",
+				"syntax": "div { -moz-animation: movearound 4s ease 3 normal; }",
 				"restriction": "time, enum, timing-function, identifier, number",
 				"values": [
 					{
@@ -4447,12 +4986,16 @@
 				"name": "-moz-animation-delay",
 				"desc": "Defines when the animation will start.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-delay",
+				"syntax": "div { -moz-animation-delay: 4s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-moz-animation-direction",
 				"desc": "Defines whether or not the animation should play in reverse on alternate cycles.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-direction",
+				"syntax": "div { -moz-animation-direction: normal; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4475,12 +5018,16 @@
 				"name": "-moz-animation-duration",
 				"desc": "Defines the length of time that an animation takes to complete one cycle.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-duration",
+				"syntax": "div { -moz-animation-duration: 4s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-moz-animation-iteration-count",
 				"desc": "Defines the number of times an animation cycle is played. The default value is one, meaning the animation will play from beginning to end once.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-iteration-count",
+				"syntax": "div { -moz-animation-iteration-count: 3; }",
 				"restriction": "number, enum",
 				"values": [
 					{
@@ -4493,6 +5040,8 @@
 				"name": "-moz-animation-name",
 				"desc": "Defines a list of animations that apply. Each name is used to select the keyframe at-rule that provides the property values for the animation.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-animations/#the-animation-name-property-",
+				"syntax": "div { -moz-animation-name: movearound; }",
 				"restriction": "identifier, enum",
 				"values": [
 					{
@@ -4505,6 +5054,8 @@
 				"name": "-moz-animation-play-state",
 				"desc": "Defines whether the animation is running or paused.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-play-state",
+				"syntax": "div { -moz-animation-play-state: running; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4519,12 +5070,16 @@
 				"name": "-moz-animation-timing-function",
 				"desc": "Describes how the animation will progress over one cycle of its duration. See the 'transition-timing-function'.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-timing-function",
+				"syntax": "div { -moz-animation-timing-function: ease; }",
 				"restriction": "timing-function"
 			},
 			{
 				"name": "-moz-appearance",
 				"desc": "Used in Gecko (Firefox) to display an element using a platform-native styling based on the operating system's theme.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-appearance",
+				"syntax": ".example { -moz-appearance: toolbarbutton; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4737,6 +5292,8 @@
 				"name": "-moz-backface-visibility",
 				"desc": "Determines whether or not the 'back' side of a transformed element is visible when facing the viewer. With an identity transform, the front side of an element faces the viewer.",
 				"browsers": "FF10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#backface-visibility",
+				"syntax": "div { -moz-backface-visibility: hidden; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4751,6 +5308,8 @@
 				"name": "-moz-background-clip",
 				"desc": "Determines the background painting area.",
 				"browsers": "FF1-3.6",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-clip",
+				"syntax": "header { -moz-background-clip: border-box; }",
 				"restriction": "box, enum",
 				"values": [
 					{
@@ -4762,6 +5321,8 @@
 				"name": "-moz-background-inline-policy",
 				"desc": "In Gecko-based applications like Firefox, the -moz-background-inline-policy CSS property specifies how the background image of an inline element is determined when the content of the inline element wraps onto multiple lines. The choice of position has significant effects on repetition.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-background-inline-policy",
+				"syntax": "div { -moz-background-inline-policy: bounding-box; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4779,18 +5340,24 @@
 				"name": "-moz-background-origin",
 				"desc": "For elements rendered as a single box, specifies the background positioning area. For elements rendered as multiple boxes (e.g., inline boxes on several lines, boxes on several pages) specifies which boxes 'box-decoration-break' operates on to determine the background positioning area(s).",
 				"browsers": "FF1",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-origin",
+				"syntax": "header { -moz-background-origin: border-box; }",
 				"restriction": "box"
 			},
 			{
 				"name": "-moz-border-bottom-colors",
 				"desc": "Sets a list of colors for the bottom border.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-border-left-colors",
+				"syntax": "td { -moz-border-bottom-colors:  #00ff33 #33ff66 #66ff99; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-moz-border-image",
 				"desc": "Shorthand property for setting 'border-image-source', 'border-image-slice', 'border-image-width', 'border-image-outset' and 'border-image-repeat'. Omitted values are set to their initial values.",
 				"browsers": "FF3.6",
+				"ref": "http://www.w3.org/TR/css3-background/#border-image",
+				"syntax": "td { -moz-border-image: url(border.png) 30 30 round;}",
 				"restriction": "length, percentage, number, url, enum",
 				"values": [
 					{
@@ -4828,24 +5395,32 @@
 				"name": "-moz-border-left-colors",
 				"desc": "Sets a list of colors for the bottom border.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-border-left-colors",
+				"syntax": "td { -moz-border-left-colors:  #00ff33 #33ff66 #66ff99; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-moz-border-right-colors",
 				"desc": "Sets a list of colors for the bottom border.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-border-left-colors",
+				"syntax": "td { -moz-border-right-colors:  #00ff33 #33ff66 #66ff99; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-moz-border-top-colors",
 				"desc": "Ske Firefox, -moz-border-bottom-colors sets a list of colors for the bottom border.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-border-left-colors",
+				"syntax": "td { -moz-border-top-colors:  #00ff33 #33ff66 #66ff99; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-moz-box-align",
 				"desc": "Specifies how a XUL box aligns its contents across (perpendicular to) the direction of its layout. The effect of this is only visible if there is extra space in the box.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-box-align",
+				"syntax": "div { -moz-box-align: end; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4874,6 +5449,8 @@
 				"name": "-moz-box-direction",
 				"desc": "Specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-box-direction",
+				"syntax": "div { -moz-box-direction: reverse; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4890,24 +5467,32 @@
 				"name": "-moz-box-flex",
 				"desc": "Specifies how a box grows to fill the box that contains it, in the direction of the containing box's layout.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-box-flex",
+				"syntax": "div { -moz-box-flex: 1; }",
 				"restriction": "number"
 			},
 			{
 				"name": "-moz-box-flexgroup",
 				"desc": "Flexible elements can be assigned to flex groups using the 'box-flex-group' property.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-box-flexgroup",
+				"syntax": "div { -moz-box-flexgroup: 3; }",
 				"restriction": "integer"
 			},
 			{
 				"name": "-moz-box-ordinal-group",
 				"desc": "Indicates the ordinal group the element belongs to. Elements with a lower ordinal group are displayed before those with a higher ordinal group.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-box-ordinal-group",
+				"syntax": "div { -moz-box-ordinal-group: 5; }",
 				"restriction": "integer"
 			},
 			{
 				"name": "-moz-box-orient",
 				"desc": "In Mozilla applications, -moz-box-orient specifies whether a box lays out its contents horizontally or vertically.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-box-orient",
+				"syntax": "div { -moz-box-orient: vertical; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4930,6 +5515,8 @@
 				"name": "-moz-box-pack",
 				"desc": "Specifies how a box packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.",
 				"browsers": "FF1",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-box-pack",
+				"syntax": "div { -moz-box-pack: end; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4954,6 +5541,8 @@
 				"name": "-moz-box-sizing",
 				"desc": "Box Model addition in CSS3.",
 				"browsers": "FF1",
+				"ref": "http://www.w3.org/TR/css3-ui/#box-sizing",
+				"syntax": "div { -moz-box-sizing: content-box; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -4971,6 +5560,8 @@
 				"name": "-moz-column-count",
 				"desc": "Describes the optimal number of columns into which the content of the element will be flowed.",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-count",
+				"syntax": "div { -moz-column-count: 3; }",
 				"restriction": "integer",
 				"values": [
 					{
@@ -4983,6 +5574,8 @@
 				"name": "-moz-column-gap",
 				"desc": "Sets the gap between columns. If there is a column rule between columns, it will appear in the middle of the gap.",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-gap0",
+				"syntax": "div { -moz-column-gap: 10px; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -4995,30 +5588,40 @@
 				"name": "-moz-column-rule",
 				"desc": "Shorthand for setting 'column-rule-width', 'column-rule-style', and 'column-rule-color' at the same place in the style sheet. Omitted values are set to their initial values.",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule0",
+				"syntax": "header { -moz-column-rule: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "-moz-column-rule-color",
 				"desc": "Sets the color of the column rule",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule-color",
+				"syntax": "div { -moz-column-rule-color: #ff0; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-moz-column-rule-style",
 				"desc": "Sets the style of the rule between columns of an element.",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule-style",
+				"syntax": "div { -moz-column-rule-style: solid; }",
 				"restriction": "line-style"
 			},
 			{
 				"name": "-moz-column-rule-width",
 				"desc": "Sets the width of the rule between columns. Negative values are not allowed.",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule-width",
+				"syntax": "div { -moz-column-rule-width: 3px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "-moz-columns",
 				"desc": "A shorthand property which sets both 'column-width' and 'column-count'.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-multicol/#columns0",
+				"syntax": "div { -moz-columns: 100px 3; }",
 				"restriction": "length, integer",
 				"values": [
 					{
@@ -5031,6 +5634,8 @@
 				"name": "-moz-column-width",
 				"desc": "This property describes the width of columns in multicol elements.",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-width",
+				"syntax": "div { -moz-column-width: 100px; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -5043,6 +5648,8 @@
 				"name": "-moz-font-feature-settings",
 				"desc": "Provides low-level control over OpenType font features. It is intended as a way of providing access to font features that are not widely used but are needed for a particular use case.",
 				"browsers": "FF4",
+				"ref": "http://www.w3.org/TR/css3-fonts/#propdef-font-feature-settings",
+				"syntax": "body { -moz-font-feature-settings: 'hwid'; }",
 				"restriction": "string, integer",
 				"values": [
 					{
@@ -5090,6 +5697,8 @@
 				"name": "-moz-hyphens",
 				"desc": "Controls whether hyphenation is allowed to create more break opportunities within a line of text.",
 				"browsers": "FF9",
+				"ref": "http://www.w3.org/TR/css3-text/#hyphens0",
+				"syntax": "div { -moz-hyphens: manual; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5109,6 +5718,8 @@
 				"name": "-moz-perspective",
 				"desc": "Applies the same transform as the perspective(<number>) transform function, except that it applies only to the positioned or transformed children of the element, not to the transform on the element itself.",
 				"browsers": "FF10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective",
+				"syntax": "div { -moz-perspective: none; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -5121,12 +5732,16 @@
 				"name": "-moz-perspective-origin",
 				"desc": "Establishes the origin for the perspective property. It effectively sets the X and Y position at which the viewer appears to be looking at the children of the element.",
 				"browsers": "FF10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective-origin",
+				"syntax": "div { -moz-perspective-origin: 10px; }",
 				"restriction": "position, percentage, length"
 			},
 			{
 				"name": "-moz-text-align-last",
 				"desc": "Describes how the last line of a block or a line right before a forced line break is aligned when 'text-align' is set to 'justify'.",
 				"browsers": "FF12",
+				"ref": "http://www.w3.org/TR/css3-text/#text-align-last0",
+				"syntax": "div { -moz-text-align-last: right; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5154,12 +5769,16 @@
 				"name": "-moz-text-decoration-color",
 				"desc": "Specifies the color of text decoration (underlines overlines, and line-throughs) set on the element with text-decoration-line.",
 				"browsers": "FF6",
+				"ref": "http://www.w3.org/TR/css-text-decor-3/#text-decoration-color",
+				"syntax": "div { -moz-text-decoration-color: #ff0; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-moz-text-decoration-line",
 				"desc": "Specifies what line decorations, if any, are added to the element.",
 				"browsers": "FF6",
+				"ref": "http://www.w3.org/TR/css-text-decor-3/#text-decoration-line",
+				"syntax": "div { -moz-text-decoration-line: underline; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5181,6 +5800,8 @@
 				"name": "-moz-text-decoration-style",
 				"desc": "Specifies the line style for underline, line-through and overline text decoration.",
 				"browsers": "FF6",
+				"ref": "http://www.w3.org/TR/css-text-decor-3/#text-decoration-style",
+				"syntax": "div { -moz-text-decoration-style: solid; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5208,6 +5829,8 @@
 				"name": "-moz-text-size-adjust",
 				"desc": "Specifies a size adjustment for displaying text content in mobile browsers.",
 				"browsers": "FF",
+				"ref": "http://dev.w3.org/csswg/css-size-adjust/",
+				"syntax": "body { -moz-text-size-adjust: 150%; }",
 				"restriction": "enum, percentage",
 				"values": [
 					{
@@ -5224,6 +5847,8 @@
 				"name": "-moz-transform",
 				"desc": "A two-dimensional transformation is applied to an element through the 'transform' property. This property contains a list of transform functions similar to those allowed by SVG.",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css3-2d-transforms/#transform-property",
+				"syntax": "div { -moz-transform: rotate(-90deg); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5298,12 +5923,16 @@
 				"name": "-moz-transform-origin",
 				"desc": "Establishes the origin of transformation for an element.",
 				"browsers": "FF3.5",
+				"ref": "http://www.w3.org/TR/css3-2d-transforms/#transform-origin",
+				"syntax": ".album { -moz-transform-origin: 20% 40%; }",
 				"restriction": "position, length, percentage"
 			},
 			{
 				"name": "-moz-transition",
 				"desc": "Shorthand property combines four of the transition properties into a single property.",
 				"browsers": "FF4",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition",
+				"syntax": "div { -moz-transition: background-color linear 1s; }",
 				"restriction": "time, property, timing-function, enum",
 				"values": [
 					{
@@ -5320,18 +5949,24 @@
 				"name": "-moz-transition-delay",
 				"desc": "Defines when the transition will start. It allows a transition to begin execution some period of time from when it is applied.",
 				"browsers": "FF4",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-delay",
+				"syntax": "div { -moz-transition-delay: 1s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-moz-transition-duration",
 				"desc": "Specifies how long the transition from the old value to the new value should take.",
 				"browsers": "FF4",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-duration",
+				"syntax": "div { -moz-transition-duration: 1s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-moz-transition-property",
 				"desc": "Specifies the name of the CSS property to which the transition is applied.",
 				"browsers": "FF4",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-property",
+				"syntax": "div { -moz-transition-property: background-color; }",
 				"restriction": "property",
 				"values": [
 					{
@@ -5348,12 +5983,16 @@
 				"name": "-moz-transition-timing-function",
 				"desc": "Describes how the intermediate values used during a transition will be calculated.",
 				"browsers": "FF4",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-timing-function",
+				"syntax": "div { -moz-transition-timing-function: linear; }",
 				"restriction": "timing-function"
 			},
 			{
 				"name": "-moz-user-focus",
 				"desc": "Used to indicate whether the element can have focus.",
 				"browsers": "FF1.5",
+				"ref": "https://developer.mozilla.org/en-US/docs/CSS/-moz-user-focus",
+				"syntax": "div { -moz-user-focus: ignore; }",
 				"values": [
 					{
 						"name": "ignore"
@@ -5367,6 +6006,8 @@
 				"name": "-moz-user-select",
 				"desc": "Controls the appearance of selection.",
 				"browsers": "FF1.5",
+				"ref": "https://developer.mozilla.org/en/CSS/-moz-user-select",
+				"syntax": "div { -moz-user-select: text; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5399,6 +6040,8 @@
 				"name": "-ms-accelerator",
 				"desc": "IE only. Has the ability to turn off its system underlines for accelerator keys until the ALT key is pressed",
 				"browsers": "E,IE10",
+				"ref": "http://www.css3.com/css-accelerator/",
+				"syntax": "u { -ms-accelerator: true; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5413,12 +6056,16 @@
 				"name": "-ms-behavior",
 				"desc": "IE only. Used to extend behaviors of the browser",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/ie/gg192966.aspx",
+				"syntax": "div { -ms-behavior: url(http://example.com/png_fix.htc); }",
 				"restriction": "url"
 			},
 			{
 				"name": "-ms-block-progression",
 				"desc": "Sets the block-progression value and the flow orientation",
 				"browsers": "IE8",
+				"ref": "http://www.w3.org/TR/2003/CR-css3-text-20030514/#Progression",
+				"syntax": "div { -ms-block-progression: bt; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5439,6 +6086,8 @@
 				"name": "-ms-content-zoom-chaining",
 				"desc": "Specifies the zoom behavior that occurs when a user hits the zoom limit during a manipulation.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh441243.aspx",
+				"syntax": "div { -ms-content-zoom-chaining: chained; }",
 				"values": [
 					{
 						"name": "chained",
@@ -5454,6 +6103,8 @@
 				"name": "-ms-content-zooming",
 				"desc": "Specifies whether zooming is enabled.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh441251.aspx",
+				"syntax": "div { -ms-content-zooming: zoom; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5469,24 +6120,32 @@
 				"name": "-ms-content-zoom-limit",
 				"desc": "Shorthand property for the -ms-content-zoom-limit-min and -ms-content-zoom-limit-max properties.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh996912.aspx",
+				"syntax": "div { -ms-content-zoom-limit: 10%; }",
 				"restriction": "percentage"
 			},
 			{
 				"name": "-ms-content-zoom-limit-max",
 				"desc": "Specifies the maximum zoom factor.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh996913.aspx",
+				"syntax": "div { -ms-content-zoom-limit-max: 10%; }",
 				"restriction": "percentage"
 			},
 			{
 				"name": "-ms-content-zoom-limit-min",
 				"desc": "Specifies the minimum zoom factor.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh996914.aspx",
+				"syntax": "div { -ms-content-zoom-limit-min: 10%; }",
 				"restriction": "percentage"
 			},
 			{
 				"name": "-ms-content-zoom-snap",
 				"desc": "Shorthand property for the -ms-content-zoom-snap-type and -ms-content-zoom-snap-points properties.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh441255.aspx",
+				"syntax": "header { -ms-content-zoom-snap: proximity; }",
 				"values": [
 					{
 						"name": "mandatory",
@@ -5514,6 +6173,7 @@
 				"name": "-ms-content-zoom-snap-points",
 				"desc": "Defines where zoom snap-points are located.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh441259.aspx",
 				"values": [
 					{
 						"name": "snapInterval(100%, 100%)",
@@ -5529,6 +6189,8 @@
 				"name": "-ms-content-zoom-snap-type",
 				"desc": "Specifies how zooming is affected by defined snap-points.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh441264.aspx",
+				"syntax": "header { -ms-content-zoom-snap-type: proximity; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5549,12 +6211,16 @@
 				"name": "-ms-filter",
 				"desc": "IE only. Used to produce visual effects.",
 				"browsers": "IE8-9",
+				"ref": "https://msdn.microsoft.com/en-us/ie/gg192966.aspx",
+				"syntax": "div { -ms-filter: 'alpha(opacity = 50)'; }",
 				"restriction": "string"
 			},
 			{
 				"name": "-ms-flex",
 				"desc": "specifies the parameters of a flexible length: the positive and negative flexibility, and the preferred size.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex",
+				"syntax": "p { -ms-flex: 1 auto; }",
 				"restriction": "length, number, percentage",
 				"values": [
 					{
@@ -5571,6 +6237,8 @@
 				"name": "-ms-flex-align",
 				"desc": "Aligns flex items along the cross axis of the current line of the flex container.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-align0",
+				"syntax": "div { -ms-flex-align: center; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5599,6 +6267,8 @@
 				"name": "-ms-flex-direction",
 				"desc": "Specifies how flex items are placed in the flex container, by setting the direction of the flex container’s main axis.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-direction0",
+				"syntax": "div { -ms-flex-direction: column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5620,6 +6290,8 @@
 				"name": "-ms-flex-flow",
 				"desc": "Specifies how flexbox items are placed in the flexbox.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-flow",
+				"syntax": "div { -ms-flex-flow: column wrap; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5649,6 +6321,8 @@
 				"name": "-ms-flex-item-align",
 				"desc": "Allows the default alignment along the cross axis to be overridden for individual flex items.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-item-align",
+				"syntax": "div { -ms-flex-item-align: center; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5681,6 +6355,8 @@
 				"name": "-ms-flex-line-pack",
 				"desc": "Aligns a flex container’s lines within the flex container when there is extra space in the cross-axis, similar to how 'justify-content' aligns individual items within the main-axis.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-line-pack0",
+				"syntax": "div { -ms-flex-line-pack: justify; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5713,12 +6389,16 @@
 				"name": "-ms-flex-order",
 				"desc": "Controls the order in which children of a flex container appear within the flex container, by assigning them to ordinal groups.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-order0",
+				"syntax": "p { -ms-flex-order: 1; }",
 				"restriction": "integer"
 			},
 			{
 				"name": "-ms-flex-pack",
 				"desc": "Aligns flex items along the main axis of the current line of the flex container.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-pack0",
+				"syntax": "div { -ms-flex-pack: justify; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5747,6 +6427,8 @@
 				"name": "-ms-flex-wrap",
 				"desc": "Controls whether the flex container is single-line or multi-line, and the direction of the cross-axis, which determines the direction new lines are stacked in.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#flex-wrap",
+				"syntax": "div { -ms-flex-wrap: nowrap; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5766,6 +6448,8 @@
 				"name": "-ms-flow-from",
 				"desc": "Makes a block container a region and associates it with a named flow.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-regions/#flow-from",
+				"syntax": "div { -ms-flow-from: identifier; }",
 				"restriction": "identifier",
 				"values": [
 					{
@@ -5778,6 +6462,8 @@
 				"name": "-ms-flow-into",
 				"desc": "Places an element or its contents into a named flow.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-regions/#flow-into",
+				"syntax": "div { -ms-flow-into: identifier; }",
 				"restriction": "identifier",
 				"values": [
 					{
@@ -5790,6 +6476,8 @@
 				"name": "-ms-grid-column",
 				"desc": "Used to place grid items and explicitly defined grid cells in the Grid.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-grid-layout/#grid-column",
+				"syntax": "#item1 { -ms-grid-column: start end; }",
 				"restriction": "integer, string, enum",
 				"values": [
 					{
@@ -5807,6 +6495,8 @@
 				"name": "-ms-grid-column-align",
 				"desc": "Aligns the columns in a grid.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-grid-layout/#grid-column-align",
+				"syntax": "article { -ms-grid-column-align: center; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5830,24 +6520,32 @@
 			{
 				"name": "-ms-grid-columns",
 				"desc": "Lays out the columns of the grid.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-grid-layout/#grid-columns",
+				"syntax": "div { -ms-grid-columns: 150px 1fr; }"
 			},
 			{
 				"name": "-ms-grid-column-span",
 				"desc": "Specifies the number of columns to span.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-grid-layout/#grid-row-span-and-grid-column-span",
+				"syntax": "#item { -ms-grid-column-span: 2; }.",
 				"restriction": "integer"
 			},
 			{
 				"name": "-ms-grid-layer",
 				"desc": "Grid-layer is similar in concept to z-index, but avoids overloading the meaning of the z-index property, which is applicable only to positioned elements.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/#grid-layer",
+				"syntax": "div { -ms-grid-layer: 2; }",
 				"restriction": "integer"
 			},
 			{
 				"name": "-ms-grid-row",
 				"desc": "grid-row is used to place grid items and explicitly defined grid cells in the Grid.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-grid-layout/#grid-row",
+				"syntax": "#item1 { -ms-grid-row: start end; }",
 				"restriction": "integer, string, enum",
 				"values": [
 					{
@@ -5865,6 +6563,8 @@
 				"name": "-ms-grid-row-align",
 				"desc": "Aligns the rows in a grid.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-grid-layout/#grid-row-align",
+				"syntax": "div { -ms-grid-row-align: stretch; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5888,18 +6588,24 @@
 			{
 				"name": "-ms-grid-rows",
 				"desc": "Lays out the columns of the grid.",
-				"browsers": "E,IE10"
+				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-grid-layout/#grid-rows",
+				"syntax": "div { -ms-grid-rows: 50px 1fr 50px; }"
 			},
 			{
 				"name": "-ms-grid-row-span",
 				"desc": "Specifies the number of rows to span.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-grid-layout/#grid-row-span-and-grid-column-span",
+				"syntax": "#item { -ms-grid-row-span: 2; }.",
 				"restriction": "integer"
 			},
 			{
 				"name": "-ms-high-contrast-adjust",
 				"desc": "Specifies if properties should be adjusted in high contrast mode.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh441137.aspx",
+				"syntax": "section { -ms-high-contrast-adjust: auto; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5916,6 +6622,8 @@
 				"name": "-ms-hyphenate-limit-chars",
 				"desc": "Specifies the minimum number of characters in a hyphenated word.",
 				"browsers": "E,IE10",
+				"ref": "https://drafts.csswg.org/css-text-4/#propdef-hyphenate-limit-chars",
+				"syntax": "div { -ms-hyphenate-limit-chars: 5 2 2; }",
 				"restriction": "integer",
 				"values": [
 					{
@@ -5928,6 +6636,8 @@
 				"name": "-ms-hyphenate-limit-lines",
 				"desc": "Indicates the maximum number of successive hyphenated lines in an element.",
 				"browsers": "E,IE10",
+				"ref": "https://drafts.csswg.org/css-text-4/#propdef-hyphenate-limit-lines",
+				"syntax": "div { -ms-hyphenate-limit-lines: 2; }",
 				"restriction": "integer",
 				"values": [
 					{
@@ -5939,12 +6649,16 @@
 				"name": "-ms-hyphenate-limit-zone",
 				"desc": "Specifies the maximum amount of unfilled space (before justification) that may be left in the line box before hyphenation is triggered to pull part of a word from the next line back up into the current line.",
 				"browsers": "E,IE10",
+				"ref": "https://drafts.csswg.org/css-text-4/#propdef-hyphenate-limit-zone",
+				"syntax": "div { -ms-hyphenate-limit-zone: 25%; }",
 				"restriction": "percentage, length"
 			},
 			{
 				"name": "-ms-hyphens",
 				"desc": "Controls whether hyphenation is allowed to create more break opportunities within a line of text.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-text/#hyphens0",
+				"syntax": "div { -ms-hyphens: manual; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5964,6 +6678,8 @@
 				"name": "-ms-ime-mode",
 				"desc": "Controls the state of the input method editor for text fields.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-ui/#ime-mode",
+				"syntax": "body { -ms-ime-mode: active; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -5989,6 +6705,8 @@
 				"name": "-ms-interpolation-mode",
 				"desc": "Gets or sets the interpolation (resampling) method used to stretch images.",
 				"browsers": "IE7",
+				"ref": "https://msdn.microsoft.com/en-us/library/ie/ms530822(v=vs.85).aspx",
+				"syntax": "img.highqual { -ms-interpolation-mode: bicubic; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6003,6 +6721,8 @@
 				"name": "-ms-layout-grid",
 				"desc": "Sets or retrieves the composite document grid properties that specify the layout of text characters.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/ie/ms530771(v=vs.85).aspx",
+				"syntax": "div { -ms-layout-grid: both fixed 12px 12px}",
 				"values": [
 					{
 						"name": "char",
@@ -6024,6 +6744,8 @@
 				"name": "-ms-layout-grid-char",
 				"desc": "Sets or retrieves the size of the character grid used for rendering the text content of an element.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/ie/ms530772(v=vs.85).aspx",
+				"syntax": "div { -ms-layout-grid-char: auto; }",
 				"restriction": "enum, length, percentage",
 				"values": [
 					{
@@ -6040,6 +6762,8 @@
 				"name": "-ms-layout-grid-line",
 				"desc": "Sets or retrieves the gridline value used for rendering the text content of an element.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/ie/ms530773(v=vs.85).aspx",
+				"syntax": "div { -ms-layout-grid-line: auto; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -6056,6 +6780,8 @@
 				"name": "-ms-layout-grid-mode",
 				"desc": "Gets or sets whether the text layout grid uses two dimensions.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/ie/ms530774(v=vs.85).aspx",
+				"syntax": "div { -ms-layout-grid-mode: line; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6080,6 +6806,8 @@
 				"name": "-ms-layout-grid-type",
 				"desc": "Sets or retrieves the type of grid used for rendering the text content of an element.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/ie/ms530775(v=vs.85).aspx",
+				"syntax": "div { -ms-layout-grid-type: strict; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6099,6 +6827,8 @@
 				"name": "-ms-line-break",
 				"desc": "Specifies what set of line breaking restrictions are in effect within the element.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-text/#line-break0",
+				"syntax": "p { -ms-line-break: strict; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6127,6 +6857,8 @@
 				"name": "-ms-overflow-style",
 				"desc": "Specify whether content is clipped when it overflows the element's content area.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh441298.aspx",
+				"syntax": "p { -ms-overflow-style: scrollbar; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6149,6 +6881,8 @@
 				"name": "-ms-perspective",
 				"desc": "Applies the same transform as the perspective(<number>) transform function, except that it applies only to the positioned or transformed children of the element, not to the transform on the element itself.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective",
+				"syntax": "div { -ms-perspective: none; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -6161,24 +6895,30 @@
 				"name": "-ms-perspective-origin",
 				"desc": "Establishes the origin for the perspective property. It effectively sets the X and Y position at which the viewer appears to be looking at the children of the element.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective-origin",
+				"syntax": "div { -ms-perspective-origin: 10px; }",
 				"restriction": "position, percentage, length"
 			},
 			{
 				"name": "-ms-perspective-origin-x",
 				"desc": "Establishes the origin for the perspective property. It effectively sets the X  position at which the viewer appears to be looking at the children of the element.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective-origin",
 				"restriction": "position, percentage, length"
 			},
 			{
 				"name": "-ms-perspective-origin-y",
 				"desc": "Establishes the origin for the perspective property. It effectively sets the Y position at which the viewer appears to be looking at the children of the element.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective-origin",
 				"restriction": "position, percentage, length"
 			},
 			{
 				"name": "-ms-progress-appearance",
 				"desc": "Gets or sets a value that specifies whether a progress control displays as a bar or a ring.",
 				"browsers": "IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/Hh779845.aspx",
+				"syntax": "progress { -ms-progress-appearance: bar; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6193,54 +6933,72 @@
 				"name": "-ms-scrollbar-3dlight-color",
 				"desc": "Determines the color of the top and left edges of the scroll box and scroll arrows of a scroll bar.",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531153(VS.85).aspx",
+				"syntax": "textarea { -ms-scrollbar-3dlight-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-ms-scrollbar-arrow-color",
 				"desc": "Determines the color of the arrow elements of a scroll arrow.",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531154(VS.85).aspx",
+				"syntax": "body { -ms-scrollbar-arrow-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-ms-scrollbar-base-color",
 				"desc": "Determines the color of the main elements of a scroll bar, which include the scroll box, track, and scroll arrows.",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531155(VS.85).aspx",
+				"syntax": "textarea { -ms-scrollbar-base-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-ms-scrollbar-darkshadow-color",
 				"desc": "Determines the color of the gutter of a scroll bar.",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531156(v=VS.85).aspx",
+				"syntax": "textarea { -ms-scrollbar-darkshadow-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-ms-scrollbar-face-color",
 				"desc": "Determines the color of the scroll box and scroll arrows of a scroll bar.",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531157(VS.85).aspx",
+				"syntax": "textarea { -ms-scrollbar-face-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-ms-scrollbar-highlight-color",
 				"desc": "Determines the color of the top and left edges of the scroll box and scroll arrows of a scroll bar.",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531158(VS.85).aspx",
+				"syntax": "textarea { -ms-scrollbar-highlight-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-ms-scrollbar-shadow-color",
 				"desc": "Determines the color of the bottom and right edges of the scroll box and scroll arrows of a scroll bar.",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531159(VS.85).aspx",
+				"syntax": "textarea { -ms-scrollbar-shadow-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-ms-scrollbar-track-color",
 				"desc": "Determines the color of the track element of a scroll bar.",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531160(VS.85).aspx",
+				"syntax": "textarea { -ms-scrollbar-track-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-ms-scroll-chaining",
 				"desc": "Gets or sets a value that indicates the scrolling behavior that occurs when a user hits the content boundary during a manipulation.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh466007.aspx",
+				"syntax": "div { -ms-scroll-chaining: chained; }",
 				"restriction": "enum, length",
 				"values": [
 					{
@@ -6255,6 +7013,7 @@
 				"name": "-ms-scroll-limit",
 				"desc": "Gets or sets a shorthand value that sets values for the -ms-scroll-limit-x-min, -ms-scroll-limit-y-min, -ms-scroll-limit-x-max, and -ms-scroll-limit-y-max properties.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh996918.aspx",
 				"restriction": "length",
 				"values": [
 					{
@@ -6266,6 +7025,8 @@
 				"name": "-ms-scroll-limit-x-max",
 				"desc": "Gets or sets a value that specifies the maximum value for the scrollLeft property.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh996919.aspx",
+				"syntax": "div { -ms-scroll-limit-x-max: auto; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -6277,12 +7038,16 @@
 				"name": "-ms-scroll-limit-x-min",
 				"desc": "Gets or sets a value that specifies the minimum value for the scrollLeft property.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh996920.aspx",
+				"syntax": "div { -ms-scroll-limit-x-min: 5px; }",
 				"restriction": "length"
 			},
 			{
 				"name": "-ms-scroll-limit-y-max",
 				"desc": "Gets or sets a value that specifies the maximum value for the scrollTop property.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh996921.aspx",
+				"syntax": "div { -ms-scroll-limit-y-max: auto; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -6294,12 +7059,16 @@
 				"name": "-ms-scroll-limit-y-min",
 				"desc": "Gets or sets a value that specifies the minimum value for the scrollTop property.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh996922.aspx",
+				"syntax": "div { -ms-scroll-limit-y-min: 5px; }",
 				"restriction": "length"
 			},
 			{
 				"name": "-ms-scroll-rails",
 				"desc": "Gets or sets a value that indicates whether or not small motions perpendicular to the primary axis of motion will result in either changes to both the scrollTop and scrollLeft properties or a change to the primary axis (for instance, either the scrollTop or scrollLeft properties will change, but not both).",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh466018.aspx",
+				"syntax": "div { -ms-scroll-rails: railed; }",
 				"restriction": "enum, length",
 				"values": [
 					{
@@ -6314,6 +7083,8 @@
 				"name": "-ms-scroll-snap-points-x",
 				"desc": "Gets or sets a value that defines where snap-points will be located along the x-axis.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh466031.aspx",
+				"syntax": "div { -ms-scroll-snap-points-x: snapInterval(100%, 100%); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6328,6 +7099,8 @@
 				"name": "-ms-scroll-snap-points-y",
 				"desc": "Gets or sets a value that defines where snap-points will be located along the y-axis.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh466042.aspx",
+				"syntax": "div { -ms-scroll-snap-points-y: snapInterval(100%, 100%); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6342,6 +7115,8 @@
 				"name": "-ms-scroll-snap-type",
 				"desc": "Gets or sets a value that defines what type of snap-point should be used for the current element. There are two type of snap-points, with the primary difference being whether or not the user is guaranteed to always stop on a snap-point.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh466057.aspx",
+				"syntax": "div { -ms-scroll-snap-type: proximity; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6362,6 +7137,8 @@
 				"name": "-ms-scroll-snap-x",
 				"desc": "Gets or sets a shorthand value that sets values for the -ms-scroll-snap-type and -ms-scroll-snap-points-x properties.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh466066.aspx",
+				"syntax": "div { -ms-scroll-snap-x: proximity snapInterval(100%, 100%); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6385,6 +7162,8 @@
 				"name": "-ms-scroll-snap-y",
 				"desc": "Gets or sets a shorthand value that sets values for the -ms-scroll-snap-type and -ms-scroll-snap-points-y properties.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh466078.aspx",
+				"syntax": "div { -ms-scroll-snap-y: proximity snapInterval(100%, 100%); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6408,6 +7187,8 @@
 				"name": "-ms-scroll-translation",
 				"desc": "Gets or sets a value that specifies whether vertical-to-horizontal scroll wheel translation occurs on the specified element.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh996917.aspx",
+				"syntax": "div { -ms-scroll-translation: vertical-to-horizontal; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6422,6 +7203,8 @@
 				"name": "-ms-text-align-last",
 				"desc": "Describes how the last line of a block or a line right before a forced line break is aligned when 'text-align' is set to 'justify'.",
 				"browsers": "E,IE8",
+				"ref": "http://www.w3.org/TR/css3-text/#text-align-last0",
+				"syntax": "div { -ms-text-align-last: right; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6449,6 +7232,8 @@
 				"name": "-ms-text-autospace",
 				"desc": "Determines whether or not a full-width punctuation mark character should be trimmed if it appears at the beginning of a line, so that its 'ink' lines up with the first glyph in the line above and below.",
 				"browsers": "E,IE8",
+				"ref": "http://www.w3.org/TR/css3-text/#text-autospace",
+				"syntax": "div { -ms-text-autospace: ideograph-numeric; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6476,6 +7261,8 @@
 				"name": "-ms-text-combine-horizontal",
 				"desc": "This property specifies the combination of multiple characters into the space of a single character.",
 				"browsers": "E,IE11",
+				"ref": "http://www.w3.org/TR/css-writing-modes-3/#text-combine-upright",
+				"syntax": "span { -ms-text-combine-horizontal: all; }",
 				"restriction": "enum, integer",
 				"values": [
 					{
@@ -6495,6 +7282,8 @@
 				"name": "-ms-text-justify",
 				"desc": "Selects the justification algorithm used when 'text-align' is set to 'justify'. The property applies to block containers, but the UA may (but is not required to) also support it on inline elements.",
 				"browsers": "E,IE8",
+				"ref": "http://www.w3.org/TR/css3-text/#text-justify0",
+				"syntax": "div { -ms-text-justify: inter-word; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6523,12 +7312,16 @@
 				"name": "-ms-text-kashida-space",
 				"desc": "Sets or retrieves the ratio of kashida expansion to white space expansion when justifying lines of text in the object.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh453798.aspx",
+				"syntax": "article { -ms-text-kashida-space: 10%; }",
 				"restriction": "percentage"
 			},
 			{
 				"name": "-ms-text-overflow",
 				"desc": "Text can overflow for example when it is prevented from wrapping",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-ui/#text-overflow0",
+				"syntax": "span { -ms-text-overflow: ellipsis; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6543,6 +7336,8 @@
 				"name": "-ms-text-size-adjust",
 				"desc": "Specifies a size adjustment for displaying text content in mobile browsers.",
 				"browsers": "E,IE10",
+				"ref": "http://dev.w3.org/csswg/css-size-adjust/",
+				"syntax": "body { -ms-text-size-adjust: 150%; }",
 				"restriction": "enum, percentage",
 				"values": [
 					{
@@ -6559,6 +7354,8 @@
 				"name": "-ms-text-underline-position",
 				"desc": "Sets the position of an underline specified on the same element: it does not affect underlines specified by ancestor elements.This property is typically used in vertical writing contexts such as in Japanese documents where it often desired to have the underline appear 'over' (to the right of) the affected run of text",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-text/#text-underline-position0",
+				"syntax": "div { -ms-text-underline-position: auto; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6581,6 +7378,8 @@
 				"name": "-ms-touch-action",
 				"desc": "Gets or sets a value that indicates whether and how a given region can be manipulated by the user.",
 				"browsers": "IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/Hh767313.aspx",
+				"syntax": "div { -ms-touch-action: manipulation double-tap-zoom; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6617,6 +7416,8 @@
 				"name": "-ms-touch-select",
 				"desc": "Gets or sets a value that toggles the 'gripper' visual elements that enable touch text selection.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/ie/hh975292(v=vs.85).aspx",
+				"syntax": "div::selection { -ms-touch-select: grippers; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6632,6 +7433,8 @@
 				"name": "-ms-transform",
 				"desc": "A two-dimensional transformation is applied to an element through the 'transform' property. This property contains a list of transform functions similar to those allowed by SVG.",
 				"browsers": "IE9-9",
+				"ref": "http://www.w3.org/TR/css3-2d-transforms/#transform-property",
+				"syntax": "div { -ms-transform: rotate(-90deg); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6703,30 +7506,37 @@
 				"name": "-ms-transform-origin",
 				"desc": "Establishes the origin of transformation for an element.",
 				"browsers": "IE9-9",
+				"ref": "http://www.w3.org/TR/css3-2d-transforms/#transform-origin",
+				"syntax": ".album { -ms-transform-origin: 20% 40%; }",
 				"restriction": "position, length, percentage"
 			},
 			{
 				"name": "-ms-transform-origin-x",
 				"desc": "The x coordinate of the origin for transforms applied to an element with respect to its border box.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#transform-origin",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "-ms-transform-origin-y",
 				"desc": "The y coordinate of the origin for transforms applied to an element with respect to its border box.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#transform-origin",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "-ms-transform-origin-z",
 				"desc": "The z coordinate of the origin for transforms applied to an element with respect to its border box.",
 				"browsers": "IE10",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#transform-origin",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "-ms-user-select",
 				"desc": "Controls the appearance of selection.",
 				"browsers": "E,IE10",
+				"ref": "http://ie.microsoft.com/testdrive/HTML5/msUserSelect/",
+				"syntax": "div { -ms-user-select: none; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6744,6 +7554,8 @@
 				"name": "-ms-word-break",
 				"desc": "Specifies line break opportunities for non-CJK scripts.",
 				"browsers": "IE8",
+				"ref": "http://www.w3.org/TR/css3-text/#word-break0",
+				"syntax": "p.album { -ms-word-break: break-all; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6763,6 +7575,8 @@
 				"name": "-ms-word-wrap",
 				"desc": "Specifies whether the UA may break within a word to prevent overflow when an otherwise-unbreakable string is too long to fit.",
 				"browsers": "IE8",
+				"ref": "http://www.w3.org/TR/css3-text/#word-wrap0",
+				"syntax": "p { -ms-word-wrap: break-word; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6779,6 +7593,8 @@
 				"name": "-ms-wrap-flow",
 				"desc": "An element becomes an exclusion when its 'wrap-flow' property has a computed value other than 'auto'.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-exclusions/#wrap-flow-property",
+				"syntax": "div { -ms-wrap-flow: maximum; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6812,12 +7628,16 @@
 				"name": "-ms-wrap-margin",
 				"desc": "Gets or sets a value that is used to offset the inner wrap shape from other shapes.",
 				"browsers": "E,IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh466103.aspx",
+				"syntax": "div { -ms-wrap-margin: 20px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "-ms-wrap-through",
 				"desc": "Specifies if an element inherits its parent wrapping context. In other words if it is subject to the exclusions defined outside the element.",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-exclusions/#propdef-wrap-through",
+				"syntax": "div { -ms-wrap-through: wrap; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6834,6 +7654,8 @@
 				"name": "-ms-writing-mode",
 				"desc": "Shorthand property for both 'direction' and 'block-progression'.",
 				"browsers": "IE8",
+				"ref": "http://www.w3.org/TR/2003/CR-css3-text-20030514/#writing-mode",
+				"syntax": "span { -ms-writing-mode: lr-tb; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6866,6 +7688,8 @@
 				"name": "-ms-zoom",
 				"desc": "Sets or retrieves the magnification scale of the object.",
 				"browsers": "IE8",
+				"ref": "https://msdn.microsoft.com/en-us/ie/gg192966.aspx",
+				"syntax": ".example { -ms-zoom: 1; }",
 				"restriction": "enum, integer, number, percentage",
 				"values": [
 					{
@@ -6877,6 +7701,8 @@
 				"name": "-ms-zoom-animation",
 				"desc": "Gets or sets a value that indicates whether an animation is used when zooming.",
 				"browsers": "IE10",
+				"ref": "https://msdn.microsoft.com/en-us/library/windows/apps/hh466117.aspx",
+				"syntax": "div { -ms-zoom-animation: none; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -6891,6 +7717,8 @@
 				"name": "nav-down",
 				"desc": "Provides an way to control directional focus navigation.",
 				"browsers": "O9.5",
+				"ref": "http://www.w3.org/TR/css3-ui/#nav-dir",
+				"syntax": "auto | 'id' [ current | root | 'target-name' ]?",
 				"restriction": "enum, identifier, string",
 				"values": [
 					{
@@ -6909,6 +7737,8 @@
 				"name": "nav-index",
 				"desc": "Provides an input-method-neutral way of specifying the sequential navigation order (also known as 'tabbing order').",
 				"browsers": "O9.5",
+				"ref": "http://www.w3.org/TR/css3-ui/#nav-index0",
+				"syntax": "auto | 'number'",
 				"restriction": "number",
 				"values": [
 					{
@@ -6921,6 +7751,8 @@
 				"name": "nav-left",
 				"desc": "Provides an way to control directional focus navigation.",
 				"browsers": "O9.5",
+				"ref": "http://www.w3.org/TR/css3-ui/#nav-dir",
+				"syntax": "auto | 'id' [ current | root | 'target-name' ]?",
 				"restriction": "enum, identifier, string",
 				"values": [
 					{
@@ -6939,6 +7771,8 @@
 				"name": "nav-right",
 				"desc": "Provides an way to control directional focus navigation.",
 				"browsers": "O9.5",
+				"ref": "http://www.w3.org/TR/css3-ui/#nav-dir",
+				"syntax": "auto | 'id' [ current | root | 'target-name' ]?",
 				"restriction": "enum, identifier, string",
 				"values": [
 					{
@@ -6957,6 +7791,8 @@
 				"name": "nav-up",
 				"desc": "Provides an way to control directional focus navigation.",
 				"browsers": "O9.5",
+				"ref": "http://www.w3.org/TR/css3-ui/#nav-dir",
+				"syntax": "auto | 'id' [ current | root | 'target-name' ]?",
 				"restriction": "enum, identifier, string",
 				"values": [
 					{
@@ -6975,12 +7811,16 @@
 				"name": "negative",
 				"desc": "@counter-style descriptor. Defines how to alter the representation when the counter value is negative.",
 				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-negative",
+				"syntax": "@counter-style { negative: '(' ')'; }",
 				"restriction": "image, identifier, string"
 			},
 			{
 				"name": "-o-animation",
 				"desc": "Shorthand property combines six of the animation properties into a single property.",
 				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation",
+				"syntax": "div { -o-animation: movearound 4s ease 3 normal; }",
 				"restriction": "time, enum, timing-function, identifier, number",
 				"values": [
 					{
@@ -7021,12 +7861,16 @@
 				"name": "-o-animation-delay",
 				"desc": "Defines when the animation will start.",
 				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-delay",
+				"syntax": "div { -o-animation-delay: 4s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-o-animation-direction",
 				"desc": "Defines whether or not the animation should play in reverse on alternate cycles.",
 				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-direction",
+				"syntax": "div { -o-animation-direction: normal; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7049,12 +7893,16 @@
 				"name": "-o-animation-duration",
 				"desc": "Defines the length of time that an animation takes to complete one cycle.",
 				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-duration",
+				"syntax": "div { -o-animation-duration: 4s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-o-animation-fill-mode",
 				"desc": "Defines what values are applied by the animation outside the time it is executing.",
 				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-fill-mode-property",
+				"syntax": "div { -o-animation-fill-mode: forwards; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7077,6 +7925,8 @@
 				"name": "-o-animation-iteration-count",
 				"desc": "Defines the number of times an animation cycle is played. The default value is one, meaning the animation will play from beginning to end once.",
 				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-iteration-count",
+				"syntax": "div { -o-animation-iteration-count: 3; }",
 				"restriction": "number, enum",
 				"values": [
 					{
@@ -7089,6 +7939,8 @@
 				"name": "-o-animation-name",
 				"desc": "Defines a list of animations that apply. Each name is used to select the keyframe at-rule that provides the property values for the animation.",
 				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#the-animation-name-property-",
+				"syntax": "div { -o-animation-name: movearound; }",
 				"restriction": "identifier, enum",
 				"values": [
 					{
@@ -7101,6 +7953,8 @@
 				"name": "-o-animation-play-state",
 				"desc": "Defines whether the animation is running or paused.",
 				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-play-state",
+				"syntax": "div { -o-animation-play-state: running; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7115,12 +7969,16 @@
 				"name": "-o-animation-timing-function",
 				"desc": "Describes how the animation will progress over one cycle of its duration. See the 'transition-timing-function'.",
 				"browsers": "O12",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-timing-function",
+				"syntax": "div { -o-animation-timing-function: ease; }",
 				"restriction": "timing-function"
 			},
 			{
 				"name": "object-fit",
 				"desc": "Specifies how the contents of a replaced element should be scaled relative to the box established by its used height and width.",
 				"browsers": "C32,FF36,O19,S7.1",
+				"ref": "http://www.w3.org/TR/css-images/#object-fit",
+				"syntax": "p { object-fit: cover; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7148,12 +8006,16 @@
 				"name": "object-position",
 				"desc": "Determines the alignment of the replaced element inside its box.",
 				"browsers": "C32,FF36,O19",
+				"ref": "http://www.w3.org/TR/css-images/#object-position",
+				"syntax": "img { object-position: left top; }",
 				"restriction": "position, length, percentage"
 			},
 			{
 				"name": "-o-border-image",
 				"desc": "Shorthand property for setting 'border-image-source', 'border-image-slice', 'border-image-width', 'border-image-outset' and 'border-image-repeat'. Omitted values are set to their initial values.",
 				"browsers": "O11.6",
+				"ref": "http://www.w3.org/TR/css3-background/#border-image",
+				"syntax": "div { -o-border-image: url(border.png) 0 5 0 5;}",
 				"restriction": "length, percentage, number, image, enum",
 				"values": [
 					{
@@ -7188,6 +8050,8 @@
 				"name": "-o-object-fit",
 				"desc": "Specifies how the contents of a replaced element should be scaled relative to the box established by its used height and width.",
 				"browsers": "O10.6",
+				"ref": "http://www.w3.org/TR/css4-images/#object-fit",
+				"syntax": "p { -o-object-fit: cover; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7215,42 +8079,56 @@
 				"name": "-o-object-position",
 				"desc": "Determines the alignment of the replaced element inside its box.",
 				"browsers": "O10.6",
+				"ref": "http://www.w3.org/TR/css4-images/#object-position",
+				"syntax": "img { -o-object-position: left top; }",
 				"restriction": "position, length, percentage"
 			},
 			{
 				"name": "opacity",
 				"desc": "Opacity of an element's text, where 1 is opaque and 0 is entirely transparent.",
 				"browsers": "C,FF3.6,IE9,O9,S1.2",
+				"ref": "http://www.w3.org/TR/css3-color/#opacity",
+				"syntax": "article { opacity: opacity: 0.4; }",
 				"restriction": "number(0-1)"
 			},
 			{
 				"name": "order",
 				"desc": "Controls the order in which children of a flex container appear within the flex container, by assigning them to ordinal groups.",
 				"browsers": "E,C29,FF22,IE11,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-flexbox/#order",
+				"syntax": "p { order: -1; }",
 				"restriction": "integer"
 			},
 			{
 				"name": "orphans",
 				"desc": "Specifies the minimum number of line boxes in a block container that must be left in a fragment before a fragmentation break.",
 				"browsers": "C,IE8,O7,S1.3",
+				"ref": "http://www.w3.org/TR/css3-break/#widows-orphans",
+				"syntax": "<integer>",
 				"restriction": "integer"
 			},
 			{
 				"name": "-o-table-baseline",
 				"desc": "Determines which row of a inline-table should be used as baseline of inline-table.",
 				"browsers": "O9.6",
+				"ref": "http://www.w3.org/TR/mathml-for-css/",
+				"syntax": "td { -o-table-baseline: 2; }",
 				"restriction": "integer"
 			},
 			{
 				"name": "-o-tab-size",
 				"desc": "This property determines the width of the tab character (U+0009), in space characters (U+0020), when rendered.",
 				"browsers": "O10.6",
+				"ref": "http://www.w3.org/TR/css3-text/#tab-size",
+				"syntax": "div { -o-tab-size: 4; }",
 				"restriction": "integer, length"
 			},
 			{
 				"name": "-o-text-overflow",
 				"desc": "Text can overflow for example when it is prevented from wrapping",
 				"browsers": "O10",
+				"ref": "http://www.w3.org/TR/css3-ui/#text-overflow0",
+				"syntax": "span { -o-text-overflow: ellipsis; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7265,6 +8143,8 @@
 				"name": "-o-transform",
 				"desc": "A two-dimensional transformation is applied to an element through the 'transform' property. This property contains a list of transform functions similar to those allowed by SVG.",
 				"browsers": "O10.5",
+				"ref": "http://www.w3.org/TR/css3-2d-transforms/#transform-property",
+				"syntax": "div { -o-transform: rotate(-90deg); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7336,12 +8216,16 @@
 				"name": "-o-transform-origin",
 				"desc": "Establishes the origin of transformation for an element.",
 				"browsers": "O10.5",
+				"ref": "http://www.w3.org/TR/css3-2d-transforms/#transform-origin",
+				"syntax": "div { -o-transform-origin: 20% 40%; }",
 				"restriction": "positon, length, percentage"
 			},
 			{
 				"name": "-o-transition",
 				"desc": "Shorthand property combines four of the transition properties into a single property.",
 				"browsers": "O11.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition",
+				"syntax": "div { -o-transition: background-color linear 1s; }",
 				"restriction": "time, property, timing-function, enum",
 				"values": [
 					{
@@ -7358,18 +8242,24 @@
 				"name": "-o-transition-delay",
 				"desc": "Defines when the transition will start. It allows a transition to begin execution some period of time from when it is applied.",
 				"browsers": "O11.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-delay",
+				"syntax": "div { -o-transition-delay: 1s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-o-transition-duration",
 				"desc": "Specifies how long the transition from the old value to the new value should take.",
 				"browsers": "O11.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-duration",
+				"syntax": "div { -o-transition-duration: 1s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-o-transition-property",
 				"desc": "Specifies the name of the CSS property to which the transition is applied.",
 				"browsers": "O11.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-property",
+				"syntax": "div { -o-transition-property: background-color; }",
 				"restriction": "property",
 				"values": [
 					{
@@ -7386,12 +8276,16 @@
 				"name": "-o-transition-timing-function",
 				"desc": "Describes how the intermediate values used during a transition will be calculated.",
 				"browsers": "O11.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-timing-function",
+				"syntax": "div { -o-transition-timing-function: linear; }",
 				"restriction": "timing-function"
 			},
 			{
 				"name": "offset-block-end",
 				"desc": "Logical 'bottom'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#logical-prop",
+				"syntax": "article { offset-block-end: 50px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -7404,6 +8298,8 @@
 				"name": "offset-block-start",
 				"desc": "Logical 'top'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#logical-prop",
+				"syntax": "article { offset-block-start: 50px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -7416,6 +8312,8 @@
 				"name": "offset-inline-end",
 				"desc": "Logical 'right'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#logical-prop",
+				"syntax": "article { offset-inline-end: 50px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -7428,6 +8326,8 @@
 				"name": "offset-inline-start",
 				"desc": "Logical 'left'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#logical-prop",
+				"syntax": "article { offset-inline-start: 50px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -7440,6 +8340,8 @@
 				"name": "outline",
 				"desc": "Shorthand property for 'outline-style', 'outline-width', and 'outline-color'.",
 				"browsers": "E,C,FF1.5,IE8,O8,S1.2",
+				"ref": "http://www.w3.org/TR/css3-ui/#outline0",
+				"syntax": "header { outline: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color, enum",
 				"values": [
 					{
@@ -7456,6 +8358,8 @@
 				"name": "outline-color",
 				"desc": "The color of the outline.",
 				"browsers": "E,C,FF1.5,IE8,O8,S1.2",
+				"ref": "http://www.w3.org/TR/css3-ui/#outline-color",
+				"syntax": "body { outline-color: red; }",
 				"restriction": "enum, color",
 				"values": [
 					{
@@ -7468,12 +8372,16 @@
 				"name": "outline-offset",
 				"desc": "Offset the outline and draw it beyond the border edge.",
 				"browsers": "C,FF1.5,O9.5,S1.2",
+				"ref": "http://www.w3.org/TR/css3-ui/#outline-offset0",
+				"syntax": "article { outline-offset: 15px; }",
 				"restriction": "length"
 			},
 			{
 				"name": "outline-style",
 				"desc": "Style of the outline.",
 				"browsers": "E,C,FF1.5,IE8,O8,S1.2",
+				"ref": "http://www.w3.org/TR/css3-ui/#outline-style0",
+				"syntax": "td { outline-style: solid; }",
 				"restriction": "line-style, enum",
 				"values": [
 					{
@@ -7486,11 +8394,15 @@
 				"name": "outline-width",
 				"desc": "Width of the outline.",
 				"browsers": "E,C,FF1.5,IE8,O8,S1.2",
+				"ref": "http://www.w3.org/TR/css3-ui/#outline-width0",
+				"syntax": "td { outline-width: 2px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "overflow",
 				"desc": "Shorthand for setting 'overflow-x' and 'overflow-y'.",
+				"ref": "http://www.w3.org/TR/css-overflow-3/#overflow",
+				"syntax": "div { overflow: hidden auto; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7519,6 +8431,8 @@
 				"name": "overflow-wrap",
 				"desc": "Specifies whether the UA may break within a word to prevent overflow when an otherwise-unbreakable string is too long to fit within the line box.",
 				"browsers": "C23,O12.1,S6.1",
+				"ref": "http://www.w3.org/TR/css3-text/#overflow-wrap0",
+				"syntax": "div { overflow-wrap: break-word; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7535,6 +8449,8 @@
 				"name": "overflow-x",
 				"desc": "Specifies the handling of overflow in the horizontal direction.",
 				"browsers": "E,C,FF1.5,IE5,O9.5,S3",
+				"ref": "http://www.w3.org/TR/css3-box/#overflow-x",
+				"syntax": "div { overflow-x: hidden; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7559,6 +8475,8 @@
 				"name": "overflow-y",
 				"desc": "Specifies the handling of overflow in the vertical direction.",
 				"browsers": "E,C,FF1.5,IE5,O9.5,S3",
+				"ref": "http://www.w3.org/TR/css3-box/#overflow-x",
+				"syntax": "div { overflow-y: hidden; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7583,61 +8501,83 @@
 				"name": "pad",
 				"desc": "@counter-style descriptor. Specifies a “fixed-width” counter style, where representations shorter than the pad value are padded with a particular <symbol>",
 				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-pad",
+				"syntax": "@counter-style { pad: 3 '0'; }",
 				"restriction": "integer, image, string, identifier"
 			},
 			{
 				"name": "padding",
 				"desc": "Shorthand property to set values the thickness of the padding area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#padding1",
+				"syntax": "div { padding: 4px 7px 2px 4px; }",
 				"restriction": "length, percentage",
 				"values": []
 			},
 			{
 				"name": "padding-bottom",
 				"desc": "Shorthand property to set values the thickness of the padding area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#padding1",
+				"syntax": "ul { padding-bottom: 2em; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "padding-block-end",
 				"desc": "Logical 'padding-bottom'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { padding-block-end: 50px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "padding-block-start",
 				"desc": "Logical 'padding-top'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { padding-block-start: 50px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "padding-inline-end",
 				"desc": "Logical 'padding-right'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { padding-inline-end: 50px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "padding-inline-start",
 				"desc": "Logical 'padding-left'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				"browsers": "FF41",
+				"ref": "https://drafts.csswg.org/css-logical-props/#border-padding",
+				"syntax": "article { padding-inline-start: 50px; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "padding-left",
 				"desc": "Shorthand property to set values the thickness of the padding area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#padding1",
+				"syntax": "ul { padding-left: 2em; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "padding-right",
 				"desc": "Shorthand property to set values the thickness of the padding area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#padding1",
+				"syntax": "ul { padding-right: 2em; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "padding-top",
 				"desc": "Shorthand property to set values the thickness of the padding area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
+				"ref": "http://www.w3.org/TR/css3-box/#padding1",
+				"syntax": "ul { padding-top: 2em; }",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "page-break-after",
 				"desc": "Defines rules for page breaks after an element.",
+				"ref": "http://www.w3.org/TR/css3-break/#page-break-properties",
+				"syntax": "table { page-break-after: always; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7665,6 +8605,8 @@
 			{
 				"name": "page-break-before",
 				"desc": "Defines rules for page breaks before an element.",
+				"ref": "http://www.w3.org/TR/css3-break/#page-break-properties",
+				"syntax": "table { page-break-before: always; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7693,6 +8635,8 @@
 				"name": "page-break-inside",
 				"desc": "Defines rules for page breaks inside an element.",
 				"browsers": "C,IE8,O7,S1.3",
+				"ref": "http://www.w3.org/TR/css3-break/#page-break-properties",
+				"syntax": "table { page-break-inside: avoid; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7709,6 +8653,7 @@
 				"name": "paint-order",
 				"desc": "Controls the order that the three paint operations that shapes and text are rendered with: their fill, their stroke and any markers they might have.",
 				"browsers": "C35,FF31,O22,S7.1",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#PaintOrderProperty",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7730,6 +8675,8 @@
 				"name": "perspective",
 				"desc": "Applies the same transform as the perspective(<number>) transform function, except that it applies only to the positioned or transformed children of the element, not to the transform on the element itself.",
 				"browsers": "E,C36,FF16,IE10,O23,S9",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective",
+				"syntax": "div { perspective: none; }",
 				"restriction": "length, enum",
 				"values": [
 					{
@@ -7742,11 +8689,14 @@
 				"name": "perspective-origin",
 				"desc": "Establishes the origin for the perspective property. It effectively sets the X and Y position at which the viewer appears to be looking at the children of the element.",
 				"browsers": "E,C36,FF16,IE10,O23,S9",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective-origin",
+				"syntax": "div { perspective-origin: 10px; }",
 				"restriction": "position, percentage, length"
 			},
 			{
 				"name": "pointer-events",
 				"desc": "Specifies under what circumstances a given element can be the target element for a pointer event.",
+				"ref": "http://www.w3.org/TR/SVG2/interact.html#PointerEventsProperty",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7785,6 +8735,8 @@
 			},
 			{
 				"name": "position",
+				"ref": "http://www.w3.org/TR/css3-positioning/#propdef-position",
+				"syntax": "div { position: absolute; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7818,12 +8770,16 @@
 				"name": "prefix",
 				"desc": "@counter-style descriptor. Specifies a <symbol> that is prepended to the marker representation.",
 				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-prefix",
+				"syntax": "@counter-style { prefix: '#'; }",
 				"restriction": "image, string, identifier"
 			},
 			{
 				"name": "quotes",
 				"desc": "Specifies quotation marks for any number of embedded quotations.",
 				"browsers": "E,C,FF1.5,IE8,O8,S5.1",
+				"ref": "http://www.w3.org/TR/css3-content/#quotes",
+				"syntax": "none | [ <string> <string> ]+",
 				"restriction": "string",
 				"values": [
 					{
@@ -7836,6 +8792,8 @@
 				"name": "range",
 				"desc": "@counter-style descriptor. Defines the ranges over which the counter style is defined.",
 				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-range",
+				"syntax": "@counter-style { range: 2 infinite, 8 834048; }",
 				"restriction": "integer, enum",
 				"values": [
 					{
@@ -7852,6 +8810,8 @@
 				"name": "resize",
 				"desc": "Specifies whether or not an element is resizable by the user, and if so, along which axis/axes.",
 				"browsers": "C,FF4,O15,S3",
+				"ref": "http://www.w3.org/TR/css3-ui/#resize0",
+				"syntax": "div { resize: both; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7875,6 +8835,8 @@
 			{
 				"name": "right",
 				"desc": "Specifies how far an absolutely positioned box's right margin edge is offset to the left of the right edge of the box's 'containing block'.",
+				"ref": "http://www.w3.org/TR/css3-positioning/#propdef-right",
+				"syntax": "article { right: 50px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -7887,6 +8849,8 @@
 				"name": "ruby-align",
 				"desc": "Specifies how text is distributed within the various ruby boxes when their contents do not exactly fill their respective boxes.",
 				"browsers": "FF10,IE5",
+				"ref": "http://www.w3.org/TR/css3-ruby/#rubyalign",
+				"syntax": "auto | start | left | center | end | right | distribute-letter | distribute-space | line-edge",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7940,6 +8904,8 @@
 				"name": "ruby-overhang",
 				"desc": "Determines whether, and on which side, ruby text is allowed to partially overhang any adjacent text in addition to its own base, when the ruby text is wider than the ruby base.",
 				"browsers": "FF10,IE5",
+				"ref": "http://www.w3.org/TR/css3-ruby/#rubyover",
+				"syntax": "auto | start | end | none",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7964,6 +8930,8 @@
 				"name": "ruby-position",
 				"desc": "Used by the parent of elements with display: ruby-text to control the position of the ruby text with respect to its base.",
 				"browsers": "FF10,IE5",
+				"ref": "http://www.w3.org/TR/css3-ruby/#ruby-position",
+				"syntax": "before | after | right",
 				"restriction": "enum",
 				"values": [
 					{
@@ -7985,6 +8953,8 @@
 				"name": "ruby-span",
 				"desc": "Determines whether, and on which side, ruby text is allowed to partially overhang any adjacent text in addition to its own base, when the ruby text is wider than the ruby base.",
 				"browsers": "FF10",
+				"ref": "http://www.w3.org/TR/css3-ruby/#rubyspan",
+				"syntax": "attr(x) | none",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8000,54 +8970,71 @@
 				"name": "scrollbar-3dlight-color",
 				"desc": "Determines the color of the top and left edges of the scroll box and scroll arrows of a scroll bar.",
 				"browsers": "IE6",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531153(VS.85).aspx",
+				"syntax": "textarea { scrollbar-3dlight-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "scrollbar-arrow-color",
 				"desc": "Determines the color of the arrow elements of a scroll arrow.",
 				"browsers": "IE6",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531154(VS.85).aspx",
+				"syntax": "body { scrollbar-arrow-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "scrollbar-base-color",
 				"desc": "Determines the color of the main elements of a scroll bar, which include the scroll box, track, and scroll arrows.",
 				"browsers": "IE6",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531155(VS.85).aspx",
+				"syntax": "textarea { scrollbar-base-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "scrollbar-darkshadow-color",
 				"desc": "Determines the color of the gutter of a scroll bar.",
 				"browsers": "IE6",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531156(v=VS.85).aspx",
+				"syntax": "textarea { scrollbar-darkshadow-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "scrollbar-face-color",
 				"desc": "Determines the color of the scroll box and scroll arrows of a scroll bar.",
 				"browsers": "IE6",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531157(VS.85).aspx",
+				"syntax": "textarea { scrollbar-face-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "scrollbar-highlight-color",
 				"desc": "Determines the color of the top and left edges of the scroll box and scroll arrows of a scroll bar.",
 				"browsers": "IE6",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531158(VS.85).aspx",
+				"syntax": "textarea { scrollbar-highlight-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "scrollbar-shadow-color",
 				"desc": "Determines the color of the bottom and right edges of the scroll box and scroll arrows of a scroll bar.",
 				"browsers": "IE6",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531159(VS.85).aspx",
+				"syntax": "textarea { scrollbar-shadow-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "scrollbar-track-color",
 				"desc": "Determines the color of the track element of a scroll bar.",
 				"browsers": "IE6",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531160(VS.85).aspx",
+				"syntax": "textarea { scrollbar-track-color: #00ffff; }",
 				"restriction": "color"
 			},
 			{
 				"name": "scroll-behavior",
 				"desc": "Specifies the scrolling behavior for a scrolling box, when scrolling happens due to navigation or CSSOM scrolling APIs.",
 				"browsers": "FF36",
+				"ref": "http://www.w3.org/TR/cssom-view/#scroll-behavior",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8063,6 +9050,7 @@
 				"name": "scroll-snap-coordinate",
 				"desc": "Defines the x and y coordinate within the element which will align with the nearest ancestor scroll container’s snap-destination for the respective axis.",
 				"browsers": "FF39",
+				"ref": "http://www.w3.org/TR/css-snappoints-1/#propdef-scroll-snap-coordinate",
 				"restriction": "position, length, percentage, enum",
 				"values": [
 					{
@@ -8075,12 +9063,14 @@
 				"name": "scroll-snap-destination",
 				"desc": "Define the x and y coordinate within the scroll container’s visual viewport which element snap points will align with.",
 				"browsers": "FF39",
+				"ref": "http://www.w3.org/TR/css-snappoints-1/#propdef-scroll-snap-destination",
 				"restriction": "position, length, percentage"
 			},
 			{
 				"name": "scroll-snap-points-x",
 				"desc": "Defines the positioning of snap points along the x axis of the scroll container it is applied to.",
 				"browsers": "FF39",
+				"ref": "http://www.w3.org/TR/css-snappoints-1/#propdef-scroll-snap-points-x",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8096,6 +9086,7 @@
 				"name": "scroll-snap-points-y",
 				"desc": "Defines the positioning of snap points alobg the y axis of the scroll container it is applied to.",
 				"browsers": "FF39",
+				"ref": "http://www.w3.org/TR/css-snappoints-1/#propdef-scroll-snap-points-y",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8111,6 +9102,7 @@
 				"name": "scroll-snap-type",
 				"desc": "Defines how strictly snap points are enforced on the scroll container.",
 				"browsers": "FF39",
+				"ref": "http://www.w3.org/TR/css-snappoints-1/#propdef-scroll-snap-type",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8131,18 +9123,24 @@
 				"name": "shape-image-threshold",
 				"desc": "Defines the alpha channel threshold used to extract the shape using an image. A value of 0.5 means that the shape will enclose all the pixels that are more than 50% opaque.",
 				"browsers": "C37,O24",
+				"ref": "http://www.w3.org/TR/css-shapes-1/#propdef-shape-image-threshold",
+				"syntax": "div { shape-image-threshold: 0.5; }",
 				"restriction": "number"
 			},
 			{
 				"name": "shape-margin",
 				"desc": "Adds a margin to a 'shape-outside'. This defines a new shape that is the smallest contour that includes all the points that are the 'shape-margin' distance outward in the perpendicular direction from a point on the underlying shape.",
 				"browsers": "C37,O24",
+				"ref": "http://www.w3.org/TR/css-shapes-1/#propdef-shape-margin",
+				"syntax": "div { shape-margin: 10px; }",
 				"restriction": "url, length, percentage"
 			},
 			{
 				"name": "shape-outside",
 				"desc": "Specifies an orthogonal rotation to be applied to an image before it is laid out.",
 				"browsers": "C37,O24",
+				"ref": "http://www.w3.org/TR/css-shapes-1/#shape-outside-property",
+				"syntax": "div { shape-outside: margin-box; }",
 				"restriction": "image, box, shape, enum",
 				"values": [
 					{
@@ -8157,11 +9155,15 @@
 			{
 				"name": "size",
 				"browsers": "C,O8",
+				"ref": "http://www.w3.org/TR/css3-page/#page-size-prop",
+				"syntax": "<length>{1,2} | auto | [ <page-size> || [ portrait | landscape] ]",
 				"restriction": "length"
 			},
 			{
 				"name": "src",
 				"desc": "@font-face descriptor. Specifies the resource containing font data. It is required, whether the font is downloadable or locally installed.",
+				"ref": "http://www.w3.org/TR/css3-fonts/#src-desc",
+				"syntax": "src: url(font.woff) format('woff');",
 				"restriction": "enum, url, identifier",
 				"values": [
 					{
@@ -8179,16 +9181,19 @@
 			{
 				"name": "stop-color",
 				"desc": "Indicates what color to use at that gradient stop.",
+				"ref": "http://www.w3.org/TR/SVG2/pservers.html#StopColorProperty",
 				"restriction": "color"
 			},
 			{
 				"name": "stop-opacity",
 				"desc": "Defines the opacity of a given gradient stop.",
+				"ref": "http://www.w3.org/TR/SVG2/pservers.html#StopOpacityProperty",
 				"restriction": "number(0-1)"
 			},
 			{
 				"name": "stroke",
 				"desc": "Paints along the outline of the given graphical element.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#StrokeProperty",
 				"restriction": "color, enum, url",
 				"values": [
 					{
@@ -8200,6 +9205,7 @@
 			{
 				"name": "stroke-dasharray",
 				"desc": "Controls the pattern of dashes and gaps used to stroke paths.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#StrokeDasharrayProperty",
 				"restriction": "length, percentage, number, enum",
 				"values": [
 					{
@@ -8211,11 +9217,13 @@
 			{
 				"name": "stroke-dashoffset",
 				"desc": "Specifies the distance into the dash pattern to start the dash.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#StrokeDashoffsetProperty",
 				"restriction": "percentage, length"
 			},
 			{
 				"name": "stroke-linecap",
 				"desc": "Specifies the shape to be used at the end of open subpaths when they are stroked.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#StrokeLinecapProperty",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8234,6 +9242,7 @@
 			{
 				"name": "stroke-linejoin",
 				"desc": "Specifies the shape to be used at the corners of paths or basic shapes when they are stroked.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#StrokeLinejoinProperty",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8251,28 +9260,36 @@
 			{
 				"name": "stroke-miterlimit",
 				"desc": "When two line segments meet at a sharp angle and miter joins have been specified for 'stroke-linejoin', it is possible for the miter to extend far beyond the thickness of the line stroking the path.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#StrokeMiterlimitProperty",
+				"syntax": "path { stroke-miterlimit: 4; }",
 				"restriction": "number"
 			},
 			{
 				"name": "stroke-opacity",
 				"desc": "Specifies the opacity of the painting operation used to stroke the current object.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#StrokeOpacityProperty",
 				"restriction": "number(0-1)"
 			},
 			{
 				"name": "stroke-width",
 				"desc": "Specifies the width of the stroke on the current object.",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#StrokeWidth",
 				"restriction": "percentage, length"
 			},
 			{
 				"name": "suffix",
 				"desc": "@counter-style descriptor. Specifies a <symbol> that is appended to the marker representation.",
 				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-suffix",
+				"syntax": "@counter-style { suffix: '\\2E\\20'; }",
 				"restriction": "image, string, identifier"
 			},
 			{
 				"name": "system",
 				"desc": "@counter-style descriptor. Specifies which algorithm will be used to construct the counter’s representation based on the counter value.",
 				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-system",
+				"syntax": "@counter-style triangle { system: cyclic; }",
 				"restriction": "enum, integer",
 				"values": [
 					{
@@ -8304,11 +9321,15 @@
 				"name": "symbols",
 				"desc": "@counter-style descriptor. Specifies the symbols used by the marker-construction algorithm specified by the system descriptor.",
 				"browsers": "FF33",
+				"ref": "http://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-symbols",
+				"syntax": "@counter-style { symbols: '*' ⁑ † ‡; }",
 				"restriction": "image, string, identifier"
 			},
 			{
 				"name": "table-layout",
 				"desc": "Controls the algorithm used to lay out the table cells, rows, and columns.",
+				"ref": "http://www.w3.org/TR/CSS2/tables.html#width-layout",
+				"syntax": "table { table-layout: fixed; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8325,11 +9346,15 @@
 				"name": "tab-size",
 				"desc": "Determines the width of the tab character (U+0009), in space characters (U+0020), when rendered.",
 				"browsers": "C21,O15,S6.1",
+				"ref": "http://www.w3.org/TR/css3-text/#tab-size",
+				"syntax": "div { tab-size: 4; }",
 				"restriction": "integer, length"
 			},
 			{
 				"name": "text-align",
 				"desc": "Describes how inline contents of a block are horizontally aligned if the contents do not completely fill the line box.",
+				"ref": "http://www.w3.org/TR/css3-text/#text-align0",
+				"syntax": "h2 { text-align: center; }",
 				"restriction": "string",
 				"values": [
 					{
@@ -8364,6 +9389,8 @@
 				"name": "text-align-last",
 				"desc": "Describes how the last line of a block or a line right before a forced line break is aligned when 'text-align' is set to 'justify'.",
 				"browsers": "E,FF12,IE5",
+				"ref": "http://www.w3.org/TR/css3-text/#text-align-last0",
+				"syntax": "div { text-align-last: right; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8391,6 +9418,7 @@
 			{
 				"name": "text-anchor",
 				"desc": "Used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
+				"ref": "http://www.w3.org/TR/SVG2/text.html#TextAnchorProperty",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8410,6 +9438,8 @@
 			{
 				"name": "text-decoration",
 				"desc": "Decorations applied to font used for an element's text.",
+				"ref": "http://www.w3.org/TR/css-text-decor-3/#text-decoration-style",
+				"syntax": "a:visited { text-decoration: line-through; }",
 				"restriction": "enum, color",
 				"values": [
 					{
@@ -8442,6 +9472,8 @@
 				"name": "text-decoration-line",
 				"desc": "Specifies what line decorations, if any, are added to the element.",
 				"browsers": "FF36",
+				"ref": "http://www.w3.org/TR/css-text-decor-3/#text-decoration-line",
+				"syntax": "div { text-decoration-line: underline; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8463,6 +9495,8 @@
 				"name": "text-decoration-style",
 				"desc": "Specifies the line style for underline, line-through and overline text decoration.",
 				"browsers": "FF36",
+				"ref": "http://www.w3.org/TR/css-text-decor-3/#text-decoration-style",
+				"syntax": "div { text-decoration-style: solid; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8489,6 +9523,8 @@
 			{
 				"name": "text-indent",
 				"desc": "Specifies the indentation applied to lines of inline content in a block. The indentation only affects the first line of inline content in the block unless the 'hanging' keyword is specified, in which case it affects all lines except the first.",
+				"ref": "http://www.w3.org/TR/css3-text/#text-indent0",
+				"syntax": "li { text-indent: 5px; }",
 				"restriction": "percentage, length",
 				"values": []
 			},
@@ -8496,6 +9532,8 @@
 				"name": "text-justify",
 				"desc": "Selects the justification algorithm used when 'text-align' is set to 'justify'. The property applies to block containers, but the UA may (but is not required to) also support it on inline elements.",
 				"browsers": "E,IE5.5",
+				"ref": "http://www.w3.org/TR/css3-text/#text-justify0",
+				"syntax": "div { text-justify: inter-word; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8530,6 +9568,8 @@
 				"name": "text-orientation",
 				"desc": "Specifies the orientation of text within a line.",
 				"browsers": "C,O15,S5.1",
+				"ref": "http://www.w3.org/TR/css-writing-modes-3/#text-orientation",
+				"syntax": "span { text-orientation: mixed; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8549,6 +9589,8 @@
 				"name": "text-overflow",
 				"desc": "Text can overflow for example when it is prevented from wrapping.",
 				"browsers": "E,C,FF9,IE5.5,O11.6,S2",
+				"ref": "http://www.w3.org/TR/css3-ui/#text-overflow0",
+				"syntax": "span { text-overflow: ellipsis; }",
 				"restriction": "enum, string",
 				"values": [
 					{
@@ -8563,6 +9605,7 @@
 				"name": "text-rendering",
 				"desc": "The creator of SVG content might want to provide a hint to the implementation about what tradeoffs to make as it renders text. The ‘text-rendering’ property provides these hints.",
 				"browsers": "C,FF3,O9,S5",
+				"ref": "http://www.w3.org/TR/SVG2/painting.html#TextRenderingProperty",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8584,12 +9627,16 @@
 				"name": "text-shadow",
 				"desc": "Enables shadow effects to be applied to the text of the element.",
 				"browsers": "E,C,FF3.6,IE10,O9.5,S1.1",
+				"ref": "http://www.w3.org/TR/css3-text/#text-shadow0",
+				"syntax": "h1 { text-shadow: 20px 12px 2px #333;}",
 				"restriction": "length, color",
 				"values": []
 			},
 			{
 				"name": "text-transform",
 				"desc": "Controls capitalization effects of an element’s text.",
+				"ref": "http://www.w3.org/TR/css3-text/#text-transform0",
+				"syntax": "h1 { text-transform: capitalize; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8611,6 +9658,8 @@
 				"name": "text-underline-position",
 				"desc": "Sets the position of an underline specified on the same element: it does not affect underlines specified by ancestor elements. This property is typically used in vertical writing contexts such as in Japanese documents where it often desired to have the underline appear 'over' (to the right of) the affected run of text",
 				"browsers": "E,IE10",
+				"ref": "http://www.w3.org/TR/css3-text/#text-underline-position0",
+				"syntax": "article { text-underline-position: auto; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8629,6 +9678,8 @@
 			{
 				"name": "top",
 				"desc": "Specifies how far an absolutely positioned box's top margin edge is offset below the top edge of the box's 'containing block'.",
+				"ref": "http://www.w3.org/TR/css3-positioning/#propdef-top",
+				"syntax": "article { top: 50px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -8641,6 +9692,8 @@
 				"name": "touch-action",
 				"desc": "Determines whether touch input may trigger default behavior supplied by user agent.",
 				"browsers": "E,C36,IE11,O23",
+				"ref": "http://www.w3.org/TR/pointerevents/#the-touch-action-css-property",
+				"syntax": "div { touch-action: pan-x; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8685,6 +9738,8 @@
 				"name": "transform",
 				"desc": "A two-dimensional transformation is applied to an element through the 'transform' property. This property contains a list of transform functions similar to those allowed by SVG.",
 				"browsers": "E,C36,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-transforms/#transform-property",
+				"syntax": "div { transform: rotate(-90deg); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8759,12 +9814,16 @@
 				"name": "transform-origin",
 				"desc": "Establishes the origin of transformation for an element.",
 				"browsers": "E,C36,FF16,IE10,O12.1,S9",
+				"ref": "http://www.w3.org/TR/css3-transforms/#propdef-transform-origin",
+				"syntax": ".album { transform-origin: 20% 40%; }",
 				"restriction": "position, length, percentage"
 			},
 			{
 				"name": "transform-style",
 				"desc": "Defines how nested elements are rendered in 3D space.",
 				"browsers": "E,C36,FF16,IE10,O23,S9",
+				"ref": "http://www.w3.org/TR/css3-transforms/#propdef-transform-style",
+				"syntax": "div { transform-style: flat; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8780,6 +9839,8 @@
 				"name": "transition",
 				"desc": "Shorthand property combines four of the transition properties into a single property.",
 				"browsers": "E,FF16,IE10,O12.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition",
+				"syntax": "div { transition: background-color linear 1s; }",
 				"restriction": "time, property, timing-function, enum",
 				"values": [
 					{
@@ -8796,18 +9857,24 @@
 				"name": "transition-delay",
 				"desc": "Defines when the transition will start. It allows a transition to begin execution some period of time from when it is applied.",
 				"browsers": "E,FF16,IE10,O12.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-delay",
+				"syntax": "div { transition-delay: 1s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "transition-duration",
 				"desc": "Specifies how long the transition from the old value to the new value should take.",
 				"browsers": "E,FF16,IE10,O12.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-duration",
+				"syntax": "div { transition-duration: 1s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "transition-property",
 				"desc": "Specifies the name of the CSS property to which the transition is applied.",
 				"browsers": "E,FF16,IE10,O12.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-property",
+				"syntax": "div { transition-property: background-color; }",
 				"restriction": "property",
 				"values": [
 					{
@@ -8824,11 +9891,15 @@
 				"name": "transition-timing-function",
 				"desc": "Describes how the intermediate values used during a transition will be calculated.",
 				"browsers": "E,FF16,IE10,O12.5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-timing-function",
+				"syntax": "div { transition-timing-function: linear; }",
 				"restriction": "timing-function"
 			},
 			{
 				"name": "unicode-bidi",
 				"desc": "The level of embedding with respect to the bidirectional algorithm.",
+				"ref": "http://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+				"syntax": "p { unicode-bidi: embed; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -8859,6 +9930,8 @@
 			{
 				"name": "unicode-range",
 				"desc": "@font-face descriptor. Defines the set of Unicode codepoints that may be supported by the font face for which it is declared.",
+				"ref": "http://www.w3.org/TR/css3-fonts/#unicode-range-desc",
+				"syntax": "@font-face { unicode-range: U+26; }",
 				"restriction": "unicode-range",
 				"values": [
 					{
@@ -9097,6 +10170,8 @@
 			{
 				"name": "user-select",
 				"desc": "Controls the appearance of selection.",
+				"ref": "http://www.w3.org/TR/css-ui-4/#propdef-user-select",
+				"syntax": "div { user-select: text; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9123,6 +10198,8 @@
 			{
 				"name": "vertical-align",
 				"desc": "Affects the vertical positioning of the inline boxes generated by an inline-level element inside a line box.",
+				"ref": "http://www.w3.org/TR/css3-linebox/#vertical-align",
+				"syntax": "div { vertical-align: middle; }",
 				"restriction": "percentage, length",
 				"values": [
 					{
@@ -9168,6 +10245,8 @@
 			{
 				"name": "visibility",
 				"desc": "Specifies whether the boxes generated by an element are rendered. Invisible boxes still affect layout (set the ‘display’ property to ‘none’ to suppress box generation altogether).",
+				"ref": "http://www.w3.org/TR/css3-box/#visibility",
+				"syntax": "img { visibility: hidden; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9188,6 +10267,8 @@
 				"name": "-webkit-animation",
 				"desc": "Shorthand property combines six of the animation properties into a single property.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation",
+				"syntax": "div { -webkit-animation: movearound 4s ease 3 normal; }",
 				"restriction": "time, enum, timing-function, identifier, number",
 				"values": [
 					{
@@ -9228,12 +10309,16 @@
 				"name": "-webkit-animation-delay",
 				"desc": "Defines when the animation will start.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-delay",
+				"syntax": "div { -webkit-animation-delay: 4s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-webkit-animation-direction",
 				"desc": "Defines whether or not the animation should play in reverse on alternate cycles.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-direction",
+				"syntax": "div { -webkit-animation-direction: normal; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9256,12 +10341,16 @@
 				"name": "-webkit-animation-duration",
 				"desc": "Defines the length of time that an animation takes to complete one cycle.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-duration",
+				"syntax": "div { -webkit-animation-duration: 4s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-webkit-animation-fill-mode",
 				"desc": "Defines what values are applied by the animation outside the time it is executing.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-fill-mode-property",
+				"syntax": "div { -webkit-animation-fill-mode: forwards; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9284,6 +10373,8 @@
 				"name": "-webkit-animation-iteration-count",
 				"desc": "Defines the number of times an animation cycle is played. The default value is one, meaning the animation will play from beginning to end once.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-iteration-count",
+				"syntax": "div { -webkit-animation-iteration-count: 3; }",
 				"restriction": "number, enum",
 				"values": [
 					{
@@ -9296,6 +10387,8 @@
 				"name": "-webkit-animation-name",
 				"desc": "Defines a list of animations that apply. Each name is used to select the keyframe at-rule that provides the property values for the animation.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-animations/#the-animation-name-property-",
+				"syntax": "div { -webkit-animation-name: movearound; }",
 				"restriction": "identifier, enum",
 				"values": [
 					{
@@ -9308,6 +10401,8 @@
 				"name": "-webkit-animation-play-state",
 				"desc": "Defines whether the animation is running or paused.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-play-state",
+				"syntax": "div { -webkit-animation-play-state: running; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9322,12 +10417,16 @@
 				"name": "-webkit-animation-timing-function",
 				"desc": "Describes how the animation will progress over one cycle of its duration. See the 'transition-timing-function'.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-animations/#animation-timing-function",
+				"syntax": "div { -webkit-animation-timing-function: ease; }",
 				"restriction": "timing-function"
 			},
 			{
 				"name": "-webkit-appearance",
 				"desc": "Changes the appearance of buttons and other controls to resemble native controls.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-appearance",
+				"syntax": "h3 { -webkit-appearance: button; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9468,6 +10567,8 @@
 				"name": "-webkit-backdrop-filter",
 				"desc": "Applies a filter effect where the first filter in the list takes the element's background image as the input image.",
 				"browsers": "S9",
+				"ref": "https://drafts.fxtf.org/filters-2/#propdef-backdrop-filter",
+				"syntax": "div { -webkit-backdrop-filter: blur(2px); }",
 				"restriction": "enum, url",
 				"values": [
 					{
@@ -9514,6 +10615,8 @@
 				"name": "-webkit-backface-visibility",
 				"desc": "Determines whether or not the 'back' side of a transformed element is visible when facing the viewer. With an identity transform, the front side of an element faces the viewer.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#backface-visibility",
+				"syntax": "div { -webkit-backface-visibility: hidden; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9528,11 +10631,14 @@
 				"name": "-webkit-background-clip",
 				"desc": "Determines the background painting area.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-clip",
+				"syntax": "header { -webkit-background-clip: border-box; }",
 				"restriction": "box"
 			},
 			{
 				"name": "-webkit-background-composite",
 				"browsers": "C,S3",
+				"syntax": "div { -webkit-background-composite: padding; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9547,12 +10653,16 @@
 				"name": "-webkit-background-origin",
 				"desc": "For elements rendered as a single box, specifies the background positioning area. For elements rendered as multiple boxes (e.g., inline boxes on several lines, boxes on several pages) specifies which boxes 'box-decoration-break' operates on to determine the background positioning area(s).",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-background/#the-background-origin",
+				"syntax": "header { -webkit-background-origin: border-box; }",
 				"restriction": "box"
 			},
 			{
 				"name": "-webkit-border-image",
 				"desc": "Shorthand property for setting 'border-image-source', 'border-image-slice', 'border-image-width', 'border-image-outset' and 'border-image-repeat'. Omitted values are set to their initial values.",
 				"browsers": "C,S5",
+				"ref": "http://www.w3.org/TR/css3-background/#border-image",
+				"syntax": "td { -webkit-border-image: url(border.png) 30 30 round;}",
 				"restriction": "length, percentage, number, url, enum",
 				"values": [
 					{
@@ -9590,6 +10700,8 @@
 				"name": "-webkit-box-align",
 				"desc": "Specifies the alignment of nested elements within an outer flexible box element.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-box-align",
+				"syntax": "div { -webkit-box-align: end; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9618,6 +10730,8 @@
 				"name": "-webkit-box-direction",
 				"desc": "In webkit applications, -webkit-box-direction specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-box-direction",
+				"syntax": "div { -webkit-box-direction: reverse; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9634,24 +10748,32 @@
 				"name": "-webkit-box-flex",
 				"desc": "Specifies an element's flexibility.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-box-flex",
+				"syntax": "div { -webkit-box-flex: 1; }",
 				"restriction": "number"
 			},
 			{
 				"name": "-webkit-box-flex-group",
 				"desc": "Flexible elements can be assigned to flex groups using the 'box-flex-group' property.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-box-flex-group",
+				"syntax": "div { -webkit-box-flex-group: 4; }",
 				"restriction": "integer"
 			},
 			{
 				"name": "-webkit-box-ordinal-group",
 				"desc": "Indicates the ordinal group the element belongs to. Elements with a lower ordinal group are displayed before those with a higher ordinal group.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-box-ordinal-group",
+				"syntax": "div { -webkit-box-ordinal-group: 3; }",
 				"restriction": "integer"
 			},
 			{
 				"name": "-webkit-box-orient",
 				"desc": "In webkit applications, -webkit-box-orient specifies whether a box lays out its contents horizontally or vertically.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-box-orient",
+				"syntax": "div { -webkit-box-orient: vertical; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9674,6 +10796,8 @@
 				"name": "-webkit-box-pack",
 				"desc": "Specifies alignment of child elements within the current element in the direction of orientation.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-box-pack",
+				"syntax": "div { -webkit-box-pack: end; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9698,6 +10822,8 @@
 				"name": "-webkit-box-reflect",
 				"desc": "Defines a reflection of a border box.",
 				"browsers": "C,S4",
+				"ref": "http://css-infos.net/property/-webkit-box-reflect",
+				"syntax": "div { -webkit-box-reflect: below 5px; }",
 				"values": [
 					{
 						"name": "above",
@@ -9721,6 +10847,8 @@
 				"name": "-webkit-box-sizing",
 				"desc": "Box Model addition in CSS3.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-ui/#box-sizing",
+				"syntax": "div { -webkit-box-sizing: content-box; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9735,6 +10863,8 @@
 				"name": "-webkit-break-after",
 				"desc": "Describes the page/column break behavior before the generated box.",
 				"browsers": "S7",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-breaks",
+				"syntax": "h2 { -webkit-break-after: column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9785,6 +10915,8 @@
 				"name": "-webkit-break-before",
 				"desc": "Describes the page/column break behavior before the generated box.",
 				"browsers": "S7",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-breaks",
+				"syntax": "h2 { -webkit-break-before: column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9835,6 +10967,8 @@
 				"name": "-webkit-break-inside",
 				"desc": "Describes the page/column break behavior inside the generated box.",
 				"browsers": "S7",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-breaks",
+				"syntax": "h2 { -webkit-break-inside: avoid-column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9862,6 +10996,8 @@
 				"name": "-webkit-column-break-after",
 				"desc": "Describes the page/column break behavior before the generated box.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-breaks",
+				"syntax": "h2 { -webkit-column-break-after: column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9912,6 +11048,8 @@
 				"name": "-webkit-column-break-before",
 				"desc": "Describes the page/column break behavior before the generated box.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-breaks",
+				"syntax": "h2 { -webkit-column-break-before: column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9962,6 +11100,8 @@
 				"name": "-webkit-column-break-inside",
 				"desc": "Describes the page/column break behavior inside the generated box.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-breaks",
+				"syntax": "h2 { -webkit-column-break-inside: avoid-column; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -9989,6 +11129,8 @@
 				"name": "-webkit-column-count",
 				"desc": "Describes the optimal number of columns into which the content of the element will be flowed.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-count",
+				"syntax": "div { -webkit-column-count: 3; }",
 				"restriction": "integer",
 				"values": [
 					{
@@ -10001,6 +11143,8 @@
 				"name": "-webkit-column-gap",
 				"desc": "Sets the gap between columns. If there is a column rule between columns, it will appear in the middle of the gap.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-gap0",
+				"syntax": "div { -webkit-column-gap: 10px; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -10013,30 +11157,40 @@
 				"name": "-webkit-column-rule",
 				"desc": "This property is a shorthand for setting 'column-rule-width', 'column-rule-style', and 'column-rule-color' at the same place in the style sheet. Omitted values are set to their initial values.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule0",
+				"syntax": "header { -webkit-column-rule: 5px solid red;}",
 				"restriction": "length, line-width, line-style, color"
 			},
 			{
 				"name": "-webkit-column-rule-color",
 				"desc": "Sets the color of the column rule",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule-color",
+				"syntax": "div { -webkit-column-rule-color: #ff0; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-webkit-column-rule-style",
 				"desc": "Sets the style of the rule between columns of an element.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule-style",
+				"syntax": "div { -webkit-column-rule-style: solid; }",
 				"restriction": "line-style"
 			},
 			{
 				"name": "-webkit-column-rule-width",
 				"desc": "Sets the width of the rule between columns. Negative values are not allowed.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-rule-width",
+				"syntax": "div { -webkit-column-rule-width: 3px; }",
 				"restriction": "length, line-width"
 			},
 			{
 				"name": "-webkit-columns",
 				"desc": "A shorthand property which sets both 'column-width' and 'column-count'.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#columns0",
+				"syntax": "div { -webkit-columns: 100px 3; }",
 				"restriction": "length, integer",
 				"values": [
 					{
@@ -10049,6 +11203,8 @@
 				"name": "-webkit-column-span",
 				"desc": "Describes the page/column break behavior after the generated box.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-span0",
+				"syntax": "article { -webkit-column-span: all; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10065,6 +11221,8 @@
 				"name": "-webkit-column-width",
 				"desc": "This property describes the width of columns in multicol elements.",
 				"browsers": "C,S3",
+				"ref": "http://www.w3.org/TR/css3-multicol/#column-width",
+				"syntax": "div { -webkit-column-width: 100px; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -10077,6 +11235,8 @@
 				"name": "-webkit-filter",
 				"desc": "Processes an element’s rendering before it is displayed in the document, by applying one or more filter effects.",
 				"browsers": "C18,O15,S6",
+				"ref": "http://www.w3.org/TR/filter-effects/#propdef-filter",
+				"syntax": "img { -webkit-filter: blur(3px); }",
 				"restriction": "enum, url",
 				"values": [
 					{
@@ -10123,6 +11283,8 @@
 				"name": "-webkit-flow-from",
 				"desc": "Makes a block container a region and associates it with a named flow.",
 				"browsers": "S6.1",
+				"ref": "http://www.w3.org/TR/css3-regions/#flow-from",
+				"syntax": "div { -webkit-flow-from: identifier; }",
 				"restriction": "identifier",
 				"values": [
 					{
@@ -10135,6 +11297,8 @@
 				"name": "-webkit-flow-into",
 				"desc": "Places an element or its contents into a named flow.",
 				"browsers": "S6.1",
+				"ref": "http://www.w3.org/TR/css3-regions/#flow-into",
+				"syntax": "div { -webkit-flow-into: identifier; }",
 				"restriction": "identifier",
 				"values": [
 					{
@@ -10147,6 +11311,8 @@
 				"name": "-webkit-font-feature-settings",
 				"desc": "This property provides low-level control over OpenType font features. It is intended as a way of providing access to font features that are not widely used but are needed for a particular use case.",
 				"browsers": "C16",
+				"ref": "http://www.w3.org/TR/css3-fonts/#propdef-font-feature-settings",
+				"syntax": "body { -webkit-font-feature-settings: 'hwid'; }",
 				"restriction": "string, integer",
 				"values": [
 					{
@@ -10192,6 +11358,8 @@
 				"name": "-webkit-hyphens",
 				"desc": "Controls whether hyphenation is allowed to create more break opportunities within a line of text.",
 				"browsers": "S5.1",
+				"ref": "http://www.w3.org/TR/css3-text/#hyphens0",
+				"syntax": "div { -webkit-hyphens: manual; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10211,6 +11379,8 @@
 				"name": "-webkit-line-break",
 				"desc": "Specifies line-breaking rules for CJK (Chinese, Japanese, and Korean) text.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-line-break",
+				"syntax": "p { -webkit-line-break: normal; }",
 				"values": [
 					{
 						"name": "after-white-space"
@@ -10223,6 +11393,7 @@
 			{
 				"name": "-webkit-margin-bottom-collapse",
 				"browsers": "C,S3",
+				"syntax": "div { -webkit-margin-bottom-collapse: collapse; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10239,6 +11410,7 @@
 			{
 				"name": "-webkit-margin-collapse",
 				"browsers": "C,S3",
+				"syntax": "div { -webkit-margin-collapse: collapse; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10255,6 +11427,7 @@
 			{
 				"name": "-webkit-margin-start",
 				"browsers": "C,S3",
+				"syntax": "div { -webkit-margin-start: 5px; }",
 				"restriction": "percentage, length",
 				"values": [
 					{
@@ -10265,6 +11438,7 @@
 			{
 				"name": "-webkit-margin-top-collapse",
 				"browsers": "C,S3",
+				"syntax": "div { -webkit-margin-top-collapse: collapse; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10282,12 +11456,14 @@
 				"name": "-webkit-mask-clip",
 				"desc": "Determines the mask painting area, which determines the area that is affected by the mask.",
 				"browsers": "C,O15,S4",
+				"ref": "http://www.w3.org/TR/css-masking-1/#the-mask-clip",
 				"restriction": "box"
 			},
 			{
 				"name": "-webkit-mask-image",
 				"desc": "Sets the mask layer image of an element.",
 				"browsers": "C,O15,S4",
+				"ref": "http://www.w3.org/TR/css-masking-1/#the-mask-image",
 				"restriction": "url, image, enum",
 				"values": [
 					{
@@ -10304,18 +11480,21 @@
 				"name": "-webkit-mask-origin",
 				"desc": "Specifies the mask positioning area.",
 				"browsers": "C,O15,S4",
+				"ref": "http://www.w3.org/TR/css-masking-1/#the-mask-origin",
 				"restriction": "box"
 			},
 			{
 				"name": "-webkit-mask-repeat",
 				"desc": "Specifies how mask layer images are tiled after they have been sized and positioned.",
 				"browsers": "C,O15,S4",
+				"ref": "http://www.w3.org/TR/css-masking-1/#the-mask-repeat",
 				"restriction": "repeat"
 			},
 			{
 				"name": "-webkit-mask-size",
 				"desc": "Specifies the size of the mask layer images.",
 				"browsers": "C,O15,S4",
+				"ref": "http://www.w3.org/TR/css-masking-1/#the-mask-size",
 				"restriction": "length, percentage, enum",
 				"values": [
 					{
@@ -10336,6 +11515,8 @@
 				"name": "-webkit-nbsp-mode",
 				"desc": "Defines the behavior of nonbreaking spaces within text.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-nbsp-mode",
+				"syntax": "p { -webkit-nbsp-mode: space; }",
 				"values": [
 					{
 						"name": "normal"
@@ -10349,6 +11530,8 @@
 				"name": "-webkit-overflow-scrolling",
 				"desc": "Specifies whether to use native-style scrolling in an overflow:scroll element.",
 				"browsers": "C,S5",
+				"ref": "http://css-infos.net/property/-webkit-nbsp-mode",
+				"syntax": "div { -webkit-overflow-scrolling: touch; }",
 				"values": [
 					{
 						"name": "auto"
@@ -10361,12 +11544,15 @@
 			{
 				"name": "-webkit-padding-start",
 				"browsers": "C,S3",
+				"syntax": "div { -webkit-padding-start: 5px; }",
 				"restriction": "percentage, length"
 			},
 			{
 				"name": "-webkit-perspective",
 				"desc": "Applies the same transform as the perspective(<number>) transform function, except that it applies only to the positioned or transformed children of the element, not to the transform on the element itself.",
 				"browsers": "C,S4",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective",
+				"syntax": "div { -webkit-perspective: none; }",
 				"restriction": "length",
 				"values": [
 					{
@@ -10379,12 +11565,16 @@
 				"name": "-webkit-perspective-origin",
 				"desc": "Establishes the origin for the perspective property. It effectively sets the X and Y position at which the viewer appears to be looking at the children of the element.",
 				"browsers": "C,S4",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#perspective-origin",
+				"syntax": "div { -webkit-perspective-origin: 10px; }",
 				"restriction": "position, percentage, length"
 			},
 			{
 				"name": "-webkit-region-fragment",
 				"desc": "The 'region-fragment' property controls the behavior of the last region associated with a named flow.",
 				"browsers": "S7",
+				"ref": "http://dev.w3.org/csswg/css-regions/#region-fragment",
+				"syntax": "article { -webkit-region-fragment: break; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10399,17 +11589,21 @@
 			{
 				"name": "-webkit-tap-highlight-color",
 				"browsers": "E,C,S3.1",
+				"ref": "http://css-infos.net/property/-webkit-tap-highlight-color",
 				"restriction": "color"
 			},
 			{
 				"name": "-webkit-text-fill-color",
 				"browsers": "E,C,S3",
+				"syntax": "div { -webkit-text-fill-color: red; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-webkit-text-size-adjust",
 				"desc": "Specifies a size adjustment for displaying text content in mobile browsers.",
 				"browsers": "E,C,S3",
+				"ref": "https://drafts.csswg.org/css-size-adjust/#text-size-adjust",
+				"syntax": "div { -webkit-text-size-adjust: 60%; }",
 				"restriction": "percentage",
 				"values": [
 					{
@@ -10425,21 +11619,25 @@
 			{
 				"name": "-webkit-text-stroke",
 				"browsers": "S3",
+				"syntax": "div { -webkit-text-stroke: red 2x; }",
 				"restriction": "length, line-width, color, percentage"
 			},
 			{
 				"name": "-webkit-text-stroke-color",
 				"browsers": "S3",
+				"syntax": "div { -webkit-text-stroke-color: red; }",
 				"restriction": "color"
 			},
 			{
 				"name": "-webkit-text-stroke-width",
 				"browsers": "S3",
+				"syntax": "div { -webkit-text-stroke-width: 2px; }",
 				"restriction": "length, line-width, percentage"
 			},
 			{
 				"name": "-webkit-touch-callout",
 				"browsers": "S3",
+				"syntax": "a { -webkit-touch-callout: none; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10451,6 +11649,8 @@
 				"name": "-webkit-transform",
 				"desc": "A two-dimensional transformation is applied to an element through the 'transform' property. This property contains a list of transform functions similar to those allowed by SVG.",
 				"browsers": "C,O12,S3.1",
+				"ref": "http://www.w3.org/TR/css3-2d-transforms/#transform-property",
+				"syntax": "div { -webkit-transform: rotate(-90deg); }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10525,30 +11725,40 @@
 				"name": "-webkit-transform-origin",
 				"desc": "Establishes the origin of transformation for an element.",
 				"browsers": "C,O15,S3.1",
+				"ref": "http://www.w3.org/TR/css3-2d-transforms/#transform-origin",
+				"syntax": ".album { -webkit-transform-origin: 20% 40%; }",
 				"restriction": "position, length, percentage"
 			},
 			{
 				"name": "-webkit-transform-origin-x",
 				"desc": "The x coordinate of the origin for transforms applied to an element with respect to its border box.",
 				"browsers": "C,S3.1",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#transform-origin",
+				"syntax": "img { -webkit-transform-origin-x: 5px}",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "-webkit-transform-origin-y",
 				"desc": "The y coordinate of the origin for transforms applied to an element with respect to its border box.",
 				"browsers": "C,S3.1",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#transform-origin",
+				"syntax": "img { -webkit-transform-origin-y: 5px}",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "-webkit-transform-origin-z",
 				"desc": "The z coordinate of the origin for transforms applied to an element with respect to its border box.",
 				"browsers": "C,S4",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#transform-origin",
+				"syntax": "img { -webkit-transform-origin-z: 5px}",
 				"restriction": "length, percentage"
 			},
 			{
 				"name": "-webkit-transform-style",
 				"desc": "Defines how nested elements are rendered in 3D space.",
 				"browsers": "C,S4",
+				"ref": "http://www.w3.org/TR/css3-3d-transforms/#transform-origin",
+				"syntax": "div { -webkit-transform-style: flat; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10560,6 +11770,8 @@
 				"name": "-webkit-transition",
 				"desc": "Shorthand property combines four of the transition properties into a single property.",
 				"browsers": "C,O12,S5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition",
+				"syntax": "div { -webkit-transition: background-color linear 1s; }",
 				"restriction": "time, property, timing-function, enum",
 				"values": [
 					{
@@ -10576,18 +11788,24 @@
 				"name": "-webkit-transition-delay",
 				"desc": "Defines when the transition will start. It allows a transition to begin execution some period of time from when it is applied.",
 				"browsers": "C,O12,S5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-delay",
+				"syntax": "div { -webkit-transition-delay: 1s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-webkit-transition-duration",
 				"desc": "Specifies how long the transition from the old value to the new value should take.",
 				"browsers": "C,O12,S5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-duration",
+				"syntax": "div { -webkit-transition-duration: 1s; }",
 				"restriction": "time"
 			},
 			{
 				"name": "-webkit-transition-property",
 				"desc": "Specifies the name of the CSS property to which the transition is applied.",
 				"browsers": "C,O12,S5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-property",
+				"syntax": "div { -webkit-transition-property: background-color; }",
 				"restriction": "property",
 				"values": [
 					{
@@ -10604,11 +11822,14 @@
 				"name": "-webkit-transition-timing-function",
 				"desc": "Describes how the intermediate values used during a transition will be calculated.",
 				"browsers": "C,O12,S5",
+				"ref": "http://www.w3.org/TR/css3-transitions/#transition-timing-function",
+				"syntax": "div { -webkit-transition-timing-function: linear; }",
 				"restriction": "timing-function"
 			},
 			{
 				"name": "-webkit-user-drag",
 				"browsers": "S3",
+				"syntax": "div { -webkit-user-drag: element; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10626,6 +11847,8 @@
 				"name": "-webkit-user-modify",
 				"desc": "Determines whether a user can edit the content of an element.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-user-modify",
+				"syntax": "div { -webkit-user-modify: read-only; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10643,6 +11866,8 @@
 				"name": "-webkit-user-select",
 				"desc": "Controls the appearance of selection.",
 				"browsers": "C,S3",
+				"ref": "http://css-infos.net/property/-webkit-user-select",
+				"syntax": "div { -webkit-user-select: text; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10659,6 +11884,8 @@
 			{
 				"name": "white-space",
 				"desc": "Shorthand property for the 'white-space-collapsing' and 'text-wrap' properties.",
+				"ref": "http://www.w3.org/TR/css3-text/#white-space0",
+				"syntax": "section { white-space: nowrap; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10684,11 +11911,15 @@
 				"name": "widows",
 				"desc": "Specifies the minimum number of line boxes of a block container that must be left in a fragment after a break.",
 				"browsers": "C,IE8,O9.5,S1",
+				"ref": "http://www.w3.org/TR/css3-break/#widows-orphans",
+				"syntax": "<integer>",
 				"restriction": "integer"
 			},
 			{
 				"name": "width",
 				"desc": "Specifies the width of the content area, padding area or border area (depending on 'box-sizing') of certain boxes.",
+				"ref": "http://www.w3.org/TR/css3-box/#width",
+				"syntax": "header { width: 200px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -10713,6 +11944,8 @@
 				"name": "will-change",
 				"desc": "Provides a rendering hint to the user agent, stating what kinds of changes the author expects to perform on the element.",
 				"browsers": "C36,FF36,O24",
+				"ref": "http://www.w3.org/TR/css-will-change/",
+				"syntax": "body { will-change: scroll-position; }",
 				"restriction": "enum, identifier",
 				"values": [
 					{
@@ -10731,6 +11964,8 @@
 				"name": "word-break",
 				"desc": "Specifies line break opportunities for non-CJK scripts.",
 				"browsers": "E,C,FF15,IE5,S3",
+				"ref": "http://www.w3.org/TR/css3-text/#word-break0",
+				"syntax": "p.album { word-break: break-all; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10749,6 +11984,8 @@
 			{
 				"name": "word-spacing",
 				"desc": "Specifies additional spacing between “words”.",
+				"ref": "http://www.w3.org/TR/css3-text/#word-spacing0",
+				"syntax": "article { word-spacing: 3px; }",
 				"restriction": "length, percentage",
 				"values": [
 					{
@@ -10760,6 +11997,8 @@
 			{
 				"name": "word-wrap",
 				"desc": "Specifies whether the UA may break within a word to prevent overflow when an otherwise-unbreakable string is too long to fit.",
+				"ref": "http://www.w3.org/TR/css3-text/#word-wrap0",
+				"syntax": "p { word-wrap: break-word; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10776,6 +12015,8 @@
 				"name": "writing-mode",
 				"desc": "This is a shorthand property for both 'direction' and 'block-progression'.",
 				"browsers": "E,FF41",
+				"ref": "http://www.w3.org/TR/css-writing-modes-3/#writing-mode",
+				"syntax": "span { writing-mode: lr-tb; }",
 				"restriction": "enum",
 				"values": [
 					{
@@ -10800,6 +12041,8 @@
 			{
 				"name": "z-index",
 				"desc": "For a positioned box, the 'z-index' property specifies the stack level of the box in the current stacking context and whether the box establishes a local stacking context.",
+				"ref": "http://www.w3.org/TR/css3-positioning/#propdef-z-index",
+				"syntax": "img { z-index: 3; }",
 				"restriction": "integer",
 				"values": [
 					{
@@ -10812,6 +12055,8 @@
 				"name": "zoom",
 				"desc": "Non-standard. Specifies the magnification scale of the object. See 'transform: scale()' for a standards-based alternative.",
 				"browsers": "E,C,IE6,O15,S4",
+				"ref": "https://msdn.microsoft.com/en-us/library/ms531189(v=vs.85).aspx",
+				"syntax": ".example { zoom: 1; }",
 				"restriction": "enum, integer, number, percentage",
 				"values": [
 					{

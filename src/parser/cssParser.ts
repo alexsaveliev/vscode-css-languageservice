@@ -33,6 +33,17 @@ export class Parser {
 		this.prevToken = null;
 	}
 
+	public findDependencies(stylesheet: nodes.Stylesheet): string[] {
+		let ret = [];
+		let Deps = stylesheet.getDependencies();
+
+		for (var prop in Deps) {
+			ret.push(prop + "");
+		}
+
+		return ret;
+	}
+
 	public peek(type: TokenType, text?: string, ignoreCase: boolean = true): boolean {
 		if (type !== this.token.type) {
 			return false;
@@ -187,6 +198,16 @@ export class Parser {
 				let statement = this._parseStylesheetStatement();
 				if (statement) {
 					node.addChild(statement);
+					(function parseChildNodes(sheet: nodes.Stylesheet, node: nodes.Node) {
+						if (!node) {
+							return;
+						}
+						if (node.type === nodes.NodeType.Import) {
+							sheet.addDependencies((node as nodes.Import).getSources());
+							return;
+						}
+						node.getChildren().map((node) => parseChildNodes(sheet, node));
+					})(node, statement);
 					hasMatch = true;
 					inRecovery = false;
 					if (!this.peek(TokenType.EOF) && this._needsSemicolonAfter(statement) && !this.accept(TokenType.SemiColon)) {
@@ -574,6 +595,7 @@ export class Parser {
 			return this.finish(node, ParseError.URIOrStringExpected);
 		}
 
+		node.addSource(this.prevToken.text);
 		node.setMedialist(this._parseMediaList());
 
 		return this.finish(node);
