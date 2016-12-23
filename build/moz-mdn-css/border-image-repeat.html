@@ -1,0 +1,1006 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:37:40 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>border-image-repeat</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat$json">
+  <link rel="canonical" href="border-image-repeat.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/border-image-repeat" title="border-image-repeat">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/border-image-repeat" title="border-image-repeat">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/border-image-repeat" title="border-image-repeat">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/border-image-repeat" title="border-image-repeat">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-image-repeat" title="border-image-repeat">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="border-image-repeat">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat">
+  <meta name="twitter:title" content="border-image-repeat">
+  
+  <meta property="og:description" content="The border-image-repeat CSS property defines how the middle part of a border image is handled so that it can match the size of the border. It has a one-value syntax that describes the behavior of all the sides, and a two-value syntax that sets a different value for the horizontal and vertical behavior.">
+  <meta name="description" content="The border-image-repeat CSS property defines how the middle part of a border image is handled so that it can match the size of the border. It has a one-value syntax that describes the behavior of all the sides, and a two-value syntax that sets a different value for the horizontal and vertical behavior.">
+  <meta name="twitter:description" content="The border-image-repeat CSS property defines how the middle part of a border image is handled so that it can match the size of the border. It has a one-value syntax that describes the behavior of all the sides, and a two-value syntax that sets a different value for the horizontal and vertical behavior.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/border-image-repeat" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fborder-image-repeat" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/border-image-repeat" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/border-image-repeat" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/border-image-repeat" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/border-image-repeat" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-image-repeat" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">border-image-repeat</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/yisibl" title="View profile: yisibl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="yisibl" data-src="../../../../../secure.gravatar.com/avatar/5c4ad3dbe5a5074993a6e270c38636096c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">yisibl</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei" title="View profile: ziyunfei">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ziyunfei" data-src="../../../../../secure.gravatar.com/avatar/2dbf9c055c2b32d3ca45d25be01174236c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ziyunfei</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Majr" title="View profile: Majr">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Majr" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Majr</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/jsx" title="View profile: jsx">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jsx" data-src="../../../../../secure.gravatar.com/avatar/8cc61d4e2dc63e75976a334348d473bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jsx</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/sboroda" title="View profile: sboroda">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="sboroda" data-src="../../../../../secure.gravatar.com/avatar/38dcd8109a1574817eddaad239db4f5b6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">sboroda</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/KuroTora" title="View profile: KuroTora">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="KuroTora" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">KuroTora</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/lobaluna" title="View profile: lobaluna">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="lobaluna" data-src="../../../../../secure.gravatar.com/avatar/b2c8d6a5a3aeb8877c193733b510e2aa6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">lobaluna</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/davy.martinez" title="View profile: davy.martinez">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="davy.martinez" data-src="../../../../../secure.gravatar.com/avatar/48a0f888f7dae178593b6b2b7801d0906c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">davy.martinez</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/paulami_banerjee" title="View profile: paulami_banerjee">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="paulami_banerjee" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">paulami_banerjee</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/LouisLazaris" title="View profile: LouisLazaris">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="LouisLazaris" data-src="../../../../../secure.gravatar.com/avatar/c2ebeeddf61c649ab08a2aeaf07ba2d66c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">LouisLazaris</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/amycb" title="View profile: amycb">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="amycb" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">amycb</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/wlach" title="View profile: wlach">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="wlach" data-src="../../../../../secure.gravatar.com/avatar/c4c489c896993738ef342a6a812c10326c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">wlach</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/trevorh" title="View profile: trevorh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="trevorh" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">trevorh</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/brianloveswords" title="View profile: brianloveswords">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="brianloveswords" data-src="../../../../../secure.gravatar.com/avatar/50de5d0681e88e9f9fdb44ebb2995d346c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">brianloveswords</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>border-image-repeat</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Example" rel="internal">Example</a><ol><li><a href="#CSS_content" rel="internal">CSS content</a></li><li><a href="#HTML_content" rel="internal">HTML content</a></li><li><a href="#JavaScript_content" rel="internal">JavaScript content</a></li></ol></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>border-image-repeat</code></strong> CSS property defines how the middle part of a border image is handled so that it can match the size of the border. It has a one-value syntax that describes the behavior of all the sides, and a two-value syntax that sets a different value for the horizontal and vertical behavior.</p>
+
+<div><table class="properties"><tbody><tr><th scope="row"><a href="initial_value.html">Initial value</a></th><td><code>stretch</code></td></tr><tr><th scope="row">Applies to</th><td>all elements, except internal table elements when <a href="border-collapse.html" title="The border-collapse CSS property determines whether a table's borders are separated or collapsed. In the separated model, adjacent cells each have their own distinct borders. In the collapsed model, adjacent table cells share borders."><code>border-collapse</code></a> is <code>collapse</code>. It also applies to <a href="__first-letter.html" title="The ::first-letter CSS pseudo-element selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line."><code>::first-letter</code></a>.</td></tr><tr><th scope="row"><a href="inheritance.html">Inherited</a></th><td>no</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="computed_value.html">Computed value</a></th><td>as specified</td></tr><tr><th scope="row">Animation type</th><td>discrete</td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table></div>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush:css">/* border-image-repeat: <em>type</em> */
+border-image-repeat: stretch;
+
+/* border-image-repeat: <em>horizontal</em> <em>vertical</em> */
+border-image-repeat: round stretch;
+
+/* Global values */
+border-image-repeat: inherit;
+border-image-repeat: initial;
+border-image-repeat: unset;
+</pre>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt><em>type</em></dt>
+ <dd>One of the <code>stretch</code>, <code>repeat</code>, or <code>round</code> keywords denoting how the image is treated both horizontally and vertically.</dd>
+ <dt><em>horizontal</em></dt>
+ <dd>One of the <code>stretch</code>, <code>repeat</code>, or <code>round</code> keywords denoting how the image is treated horizontally.</dd>
+ <dt><em>vertical</em></dt>
+ <dd>One of the <code>stretch</code>, <code>repeat</code>, or <code>round</code> keywords denoting how the image is treated vertically.</dd>
+ <dt><code>stretch</code></dt>
+ <dd>Keyword indicating that the image must be stretched to fill the gap between the two borders.</dd>
+ <dt><code>repeat</code></dt>
+ <dd>Keyword indicating that the image must be repeated until it fills the gap between the two borders.</dd>
+ <dt><code>round</code></dt>
+ <dd>Keyword indicating that the image must be repeated until it fills the gap between the two borders. If the image doesn't fit after being repeated for an integral number of times, the image is rescaled to fit.</dd>
+ <dt><code>space</code></dt>
+ <dd>The image is tiled (repeated) to fill the area. If it does not fill the area with a whole number of tiles, the extra space is distributed around the tiles.</dd>
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox"><a href="Value_definition_syntax.html#Brackets" title="Brackets">[</a> stretch <a href="Value_definition_syntax.html#Single_bar" title="Single bar">|</a> repeat <a href="Value_definition_syntax.html#Single_bar" title="Single bar">|</a> round <a href="Value_definition_syntax.html#Single_bar" title="Single bar">|</a> space <a href="Value_definition_syntax.html#Brackets" title="Brackets">]</a><a href="Value_definition_syntax.html#Curly_braces_(.7B_.7D)" title="Curly braces">{</a>1,2<a href="Value_definition_syntax.html#Curly_braces_(.7B_.7D)" title="Curly braces">}</a></pre>
+
+<h2 id="Example">Example</h2>
+
+<h3 id="CSS_content">CSS content</h3>
+
+<pre class="brush: css; highlight[7]">#borderImageRepetition {
+  width: 260px;
+  height: 80px;
+  margin-bottom: 10px;
+  border: 30px solid;
+  border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 27;
+  border-image-repeat: stretch; /* Can be changed in the live sample */
+}
+</pre>
+
+<div class="hidden">
+<h3 id="HTML_content">HTML content</h3>
+
+<pre class="brush: html">&lt;div id="borderImageRepetition"&gt;
+&lt;/div&gt;
+&lt;select id="repetition"&gt;
+  &lt;option value="stretch"&gt;stretch&lt;/option&gt;
+  &lt;option value="repeat"&gt;repeat&lt;/option&gt;
+  &lt;option value="round"&gt;round&lt;/option&gt;
+  &lt;option value="space"&gt;space&lt;/option&gt;
+  &lt;option value="stretch repeat"&gt;stretch repeat&lt;/option&gt;
+  &lt;option value="space round"&gt;space round&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+
+<h3 id="JavaScript_content">JavaScript content</h3>
+
+<pre class="brush: js">var repetition = document.getElementById("repetition");
+repetition.addEventListener("change", function (evt) {
+  document.getElementById("borderImageRepetition").style.borderImageRepeat = evt.target.value;
+});
+</pre>
+</div>
+
+<p><iframe id="frame_Example" height="180px" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/border-image-repeat%24samples/Exampleeda4.html?revision=1092183" frameborder="0" width="330px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h2 name="Specifications" id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-backgrounds-3/#border-image-repeat" class="external" lang="en" hreflang="en">CSS Backgrounds and Borders Module Level&nbsp;3<br><small lang="en-US">The definition of 'border-image-repeat' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<div><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div></div>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>15.0</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/15" title="Released on 2012-08-28.">15.0</a> (15.0)</td>
+   <td>11</td>
+   <td>15</td>
+   <td>6</td>
+  </tr>
+  <tr>
+   <td><code>round</code></td>
+   <td>30<sup>[3]</sup></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/15" title="Released on 2012-08-28.">15.0</a> (15.0)</td>
+   <td>11</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>9.1<sup>[4]</sup></td>
+  </tr>
+  <tr>
+   <td><code>space</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[1]</sup></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/50" title="Released on 2016-11-08.">50.0</a> (50.0)<sup>[2]</sup></td>
+   <td>11</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>9.1<sup>[4]</sup></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>15.0 (15.0)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>9.3<sup>[4]</sup></td>
+  </tr>
+  <tr>
+   <td><code>round</code></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>15.0 (15.0)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+  <tr>
+   <td><code>space</code></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>50.0 (50.0)<sup>[2]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1]&nbsp;Supports the&nbsp;<code>space</code> value, but the actual effect is the same as the <code>repeat</code> value. See <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=584916" rel="external" class="external">Chromium bug 584916</a>.</p>
+
+<p>[2] Implemented in <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=720531" class="external" title="FIXED: Implement border-image-repeat space keyword">bug&nbsp;720531</a>.</p>
+
+<p>[3] See <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=169254" rel="external" class="external">Chromium bug 169254</a>.</p>
+
+<p>[4] See <a href="https://bugs.webkit.org/show_bug.cgi?id=14185" rel="external" class="external" title="">WebKit bug 14185</a>.</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="https://css-tricks.com/almanac/properties/b/border-image/" class="external">css-tricks border-image</a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Borders.html">CSS Borders</a></li>
+      
+        <li><a href="../../tag/CSS%20Property.html">CSS Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/NeedsMobileBrowserCompatibility">NeedsMobileBrowserCompatibility</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/yisibl">yisibl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei">ziyunfei</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Majr">Majr</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jsx">jsx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/sboroda">sboroda</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/KuroTora">KuroTora</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/lobaluna">lobaluna</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/davy.martinez">davy.martinez</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/paulami_banerjee">paulami_banerjee</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/LouisLazaris">LouisLazaris</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/amycb">amycb</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/wlach">wlach</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/trevorh">trevorh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/brianloveswords">brianloveswords</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>,
+                      <time datetime="2016-07-27T23:47:26-07:00">Jul 27, 2016, 11:47:26 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Background_and_Borders.html">CSS Background and Borders</a></strong></li><li data-default-state="open"><a href="#"><strong>Guides</strong></a><ol><li><a href="CSS_Background_and_Borders/Border-image_generator.html" title="This tool can be used to generate CSS3 border-image values.">Border-image generator</a></li><li><a href="CSS_Background_and_Borders/Border-radius_generator.html" title="This tool can be used to generate CSS3 border-radius effects.">Border-radius generator</a></li><li><a href="CSS_Background_and_Borders/Scaling_background_images.html" title="The background-size CSS property makes it possible to adjust the size of background images, instead of the default behavior of tiling the image at its full size.">Scaling background images</a></li><li><a href="CSS_Background_and_Borders/Using_CSS_multiple_backgrounds.html" title="With CSS3, you can apply multiple backgrounds to elements. These are layered atop one another with the first background you provide on top and the last background listed in the back.">Using CSS multiple backgrounds</a></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a href="background.html" title="The background CSS property is a shorthand for setting the individual background values in a single place in the style sheet. background can be used to set the values for one or more of: background-clip, background-color, background-image, background-origin, background-position, background-repeat, background-size, and background-attachment."><code>background</code></a></li><li><a href="background-attachment.html" title="If a background-image is specified, the background-attachment CSS property determines whether that image's position is fixed within the viewport, or scrolls along with its containing block."><code>background-attachment</code></a></li><li><a href="background-clip.html" title="The background-clip CSS property specifies whether an element's background, either the color or image, extends underneath its border."><code>background-clip</code></a></li><li><a href="background-color.html" title="The background-color CSS property sets the background color of an element, either through a color value or the keyword transparent."><code>background-color</code></a></li><li><a href="background-image.html" title="The CSS background-image property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user."><code>background-image</code></a></li><li><a href="background-origin.html" title="The background-origin CSS property determines the background positioning area, that is the position of the origin of an image specified using the background-image CSS property."><code>background-origin</code></a></li><li><a href="background-position.html" title="The background-position CSS property sets the initial position for each defined background image, relative to the background position layer defined by background-origin."><code>background-position</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a href="background-position-x.html" title="The background-position-x CSS property sets the initial horizontal position, relative to the background position layer defined by background-origin for each defined background image. For more information, see the background-position property, which has been widely supported."><code>background-position-x</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a href="background-position-y.html" title="The background-position-y CSS property sets the initial vertical position, relative to the background position layer defined by background-origin for each defined background image. For more information, see the background-position property, which has been widely supported for much longer."><code>background-position-y</code></a></li><li><a href="background-repeat.html" title="The background-repeat CSS property defines how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all."><code>background-repeat</code></a></li><li><a href="background-size.html" title="The background-size CSS property specifies the size of the background images. The size of the image can be fully constrained or only partially in order to preserve its intrinsic ratio."><code>background-size</code></a></li><li><a href="border.html" title="The border CSS property is a shorthand property for setting the individual border property values in a single place in the style sheet. border can be used to set the values for one or more of: border-width, border-style, border-color."><code>border</code></a></li><li><a href="border-bottom.html" title="The border-bottom CSS property is a shorthand that sets the values of border-bottom-color, border-bottom-style, and border-bottom-width. These properties describe the bottom border of elements."><code>border-bottom</code></a></li><li><a href="border-bottom-color.html" title="The border-bottom-color CSS property sets the color of the bottom border of an element. Note that in many cases the shorthand CSS properties border-color or border-bottom are more convenient and preferable."><code>border-bottom-color</code></a></li><li><a href="border-bottom-left-radius.html" title="The border-bottom-left-radius CSS property sets the rounding of the bottom-left corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0 no rounding is done and the corner is square."><code>border-bottom-left-radius</code></a></li><li><a href="border-bottom-right-radius.html" title="The border-bottom-right-radius CSS property sets the rounding of the bottom-right corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0 no rounding is done and the corner is square."><code>border-bottom-right-radius</code></a></li><li><a href="border-bottom-style.html" title="The border-bottom-style CSS property sets the line style of the bottom border of a box."><code>border-bottom-style</code></a></li><li><a href="border-bottom-width.html" title="The border-bottom-width CSS property sets the width of the bottom border of a box."><code>border-bottom-width</code></a></li><li><a href="border-color.html" title="The border-color CSS property is a shorthand for setting the color of the four sides of an element's border: border-top-color, border-right-color, border-bottom-color, border-left-color"><code>border-color</code></a></li><li><a href="border-image.html" title="The border-image CSS property allows drawing an image on the borders of elements. This makes drawing complex looking widgets much simpler than it has been and removes the need for nine boxes in some cases. The border-image is used instead of the border styles given by the border-style properties. Though the specification requires that border-style must be present if border-image is used, some browsers many not implement this."><code>border-image</code></a></li><li><a href="border-image-outset.html" title="The border-image-outset property describes by what amount the border image area extends beyond the border box."><code>border-image-outset</code></a></li><li><em><code>border-image-repeat</code></em></li><li><a href="border-image-slice.html" title="The border-image-slice CSS property divides the image specified by border-image-source in nine regions: the four corners, the four edges and the middle. It does this by specifying 4 inwards offsets."><code>border-image-slice</code></a></li><li><a href="border-image-source.html" title="The border-image-source CSS property defines the &lt;image&gt; to use instead of the style of the border. If this property is set to none, the style defined by border-style is used instead."><code>border-image-source</code></a></li><li><a href="border-image-width.html" title="The border-image-width CSS property defines the width of the border image by defining inward offsets from the border edges. If the border-image-width is greater than the border-width, then the border image extends beyond&nbsp;the padding (and/or content) edge."><code>border-image-width</code></a></li><li><a href="border-left.html" title="The border-left CSS property is a shorthand that sets the values of border-left-color, border-left-style, and border-left-width. These properties describe the left border of elements."><code>border-left</code></a></li><li><a href="border-left-color.html" title="The border-left-color CSS property sets the color of the left border of an element. Note that in many cases the shorthand CSS properties border-color or border-left are more convenient and preferable."><code>border-left-color</code></a></li><li><a href="border-left-style.html" title="The border-left-style CSS property sets the line style of the left border of a box."><code>border-left-style</code></a></li><li><a href="border-left-width.html" title="The border-left-width CSS property sets the width of the left border of a box."><code>border-left-width</code></a></li><li><a href="border-radius.html" title="The border-radius CSS property allows Web authors to define how rounded border corners are. The curve of each corner is defined using one or two radii, defining its shape: circle or ellipse."><code>border-radius</code></a></li><li><a href="border-right.html" title="The border-right CSS property is a shorthand that sets the values of border-right-color, border-right-style, and border-right-width. These properties describe the right border of elements."><code>border-right</code></a></li><li><a href="border-right-color.html" title="The border-right-color CSS property sets the color of the right border of an element. Note that in many cases the shorthand CSS properties&nbsp; border-color or border-right are more convenient and preferable."><code>border-right-color</code></a></li><li><a href="border-right-style.html" title="The border-right-style CSS property sets the line style of the right border of a box."><code>border-right-style</code></a></li><li><a href="border-right-width.html" title="The border-right-width CSS property sets the width of the right border of a box."><code>border-right-width</code></a></li><li><a href="border-style.html" title="The border-style property is a shorthand property for setting the line style for all four sides of the element´s border."><code>border-style</code></a></li><li><a href="border-top.html" title="The border-top CSS property is a shorthand that sets the values of border-top-color, border-top-style, and border-top-width. These properties describe the top border of elements."><code>border-top</code></a></li><li><a href="border-top-color.html" title="The border-top-color CSS property sets the color of the top border of an element. Note that in many cases the shorthand CSS properties border-color or border-top are more convenient and preferable."><code>border-top-color</code></a></li><li><a href="border-top-left-radius.html" title="The border-top-left-radius CSS property sets the rounding of the top-left corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0,no rounding is done and the corner is square."><code>border-top-left-radius</code></a></li><li><a href="border-top-right-radius.html" title="The border-top-right-radius CSS property sets the rounding of the top-right corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0 no rounding is done and the corner is square."><code>border-top-right-radius</code></a></li><li><a href="border-top-style.html" title="The border-top-style CSS property sets the line style of the top border of a box."><code>border-top-style</code></a></li><li><a href="border-top-width.html" title="The border-top-width CSS property sets the width of the top border of a box."><code>border-top-width</code></a></li><li><a href="border-width.html" title="The border-width property is a shorthand property for setting border-top-width,&nbsp;border-right-width,&nbsp;border-bottom-width and&nbsp;border-left-width&nbsp;of a box at the same place."><code>border-width</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/border-image-repeat$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/border-image-repeat$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/border-image-repeat" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/border-image-repeat">
+            Deutsch (de)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/border-image-repeat">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/border-image-repeat">
+            日本語 (ja)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/border-image-repeat">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/border-image-repeat">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:37:42 GMT -->
+</body></html>

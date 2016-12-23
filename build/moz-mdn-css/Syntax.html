@@ -1,0 +1,851 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/Syntax by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:49:16 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>Syntax</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax$json">
+  <link rel="canonical" href="Syntax.html">
+
+  
+    
+      <link rel="alternate" hreflang="bn-BD" href="https://developer.mozilla.org/bn-BD/docs/Web/CSS/Syntax" title="Syntax">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/Syntax" title="Syntax">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/Syntaxe" title="Syntaxe">
+    
+      <link rel="alternate" hreflang="it" href="https://developer.mozilla.org/it/docs/Web/CSS/Syntax" title="Syntax">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/Syntax" title="構文">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/Syntax" title="구문">
+    
+      <link rel="alternate" hreflang="pt-BR" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/sintaxe" title="Sintaxe">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/Синтаксис" title="Синтаксис">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Syntax" title="语法">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="Syntax">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">
+  <meta name="twitter:title" content="Syntax">
+  
+  <meta property="og:description" content="The basic goal of the Cascading Stylesheet (CSS) language is to allow a browser engine to paint elements of the page with specific features, like colors, positioning, or decorations. The CSS syntax reflects this goal and its basic building blocks are:">
+  <meta name="description" content="The basic goal of the Cascading Stylesheet (CSS) language is to allow a browser engine to paint elements of the page with specific features, like colors, positioning, or decorations. The CSS syntax reflects this goal and its basic building blocks are:">
+  <meta name="twitter:description" content="The basic goal of the Cascading Stylesheet (CSS) language is to allow a browser engine to paint elements of the page with specific features, like colors, positioning, or decorations. The CSS syntax reflects this goal and its basic building blocks are:">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/Syntax" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FSyntax" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/Syntax">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/bn-BD/docs/Web/CSS/Syntax" title="Bengali (Bangladesh)">বাংলা (বাংলাদেশ) (bn-BD)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/Syntax" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/Syntaxe" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/it/docs/Web/CSS/Syntax" title="Italian">Italiano (it)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/Syntax" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/Syntax" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/sintaxe" title="Portuguese (Brazilian)">Português (do&nbsp;Brasil) (pt-BR)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/Синтаксис" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Syntax" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">Syntax</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/torazaburo" title="View profile: torazaburo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="torazaburo" data-src="../../../../../secure.gravatar.com/avatar/0a9c6b933c11e0bb01a636b3d8116ff56c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">torazaburo</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/NetNerd" title="View profile: NetNerd">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="NetNerd" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">NetNerd</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/pygy" title="View profile: pygy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="pygy" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">pygy</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/SphinxKnight" title="View profile: SphinxKnight">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="SphinxKnight" data-src="../../../../../secure.gravatar.com/avatar/8fb358ea9b7af22f5021a29e122ea0696c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">SphinxKnight</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/elomatreb" title="View profile: elomatreb">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="elomatreb" data-src="../../../../../secure.gravatar.com/avatar/ec5a4036ce59f9943a2a23042c71b77f6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">elomatreb</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/peterholthoffman" title="View profile: peterholthoffman">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="peterholthoffman" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">peterholthoffman</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>Syntax</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a rel="internal" href="#CSS_declarations">CSS declarations</a></li><li><a rel="internal" href="#CSS_declarations_blocks">CSS declarations blocks</a></li><li><a rel="internal" href="#CSS_rulesets">CSS rulesets</a></li><li><a rel="internal" href="#CSS_statements">CSS statements</a></li><li><a rel="internal" href="#See_also">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section></div>
+
+<p>The basic goal of the Cascading Stylesheet (<a title="CSS" href="../../../../en/CSS.png">CSS</a>) language is to allow a browser engine to paint elements of the page with specific features, like colors, positioning, or decorations. The <em>CSS syntax</em> reflects this goal and its basic building blocks are:</p>
+
+<ul>
+ <li>The <strong>property</strong> which is an identifier, that is a human-readable <em>name</em>, that defines which feature is considered.</li>
+ <li>The <strong>value</strong> which describe how the feature must be handled by the engine. Each property has a set of valid values, defined by a formal grammar, as well as a semantic meaning, implemented by the browser engine.</li>
+</ul>
+
+<h2 id="CSS_declarations">CSS declarations</h2>
+
+<p>Setting CSS properties to specific values is the core function of the CSS language. A property and value pair is called a <strong>declaration</strong>, and any CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out, and to style it.</p>
+
+<p>Both properties and values are case-sensitive in CSS. The pair is separated by a colon, '<code>:</code>' (<code>U+003A COLON</code>), and white spaces before, between, and after properties and values, but not necessarily inside, are ignored.</p>
+
+<p><img src="../../../../../mdn.mozillademos.org/files/3665/css%20syntax%20-%20declaration.png" style="border: 1px solid black; padding: 1em;" class="default internal" alt="css syntax - declaration.png"></p>
+
+<p>There are more than <a title="en/CSS/CSS_Reference" href="Reference.html">100 different properties</a> in CSS and a nearly infinite number of different values. Not all pairs of properties and values are allowed and each property defines what are the valid values. When a value is not valid for a given property, the declaration is deemed <em>invalid</em> and is wholly ignored by the CSS engine.</p>
+
+<h2 id="CSS_declarations_blocks">CSS declarations blocks</h2>
+
+<p>Declarations are grouped in <strong>blocks</strong>, that is in a structure delimited by an opening brace, '<code>{</code>' (<code>U+007B LEFT CURLY BRACKET</code>), and a closing one, '<code>}</code>' (<code>U+007D RIGHT CURLY BRACKET</code>). Blocks sometimes can be nested, so opening and closing braces must be matched.</p>
+
+<p><img src="../../../../../mdn.mozillademos.org/files/3666/css%20syntax%20-%20block.png" style="border: 1px solid black; padding: 1em;" class="default internal" alt="css syntax - block.png"></p>
+
+<p>Such blocks are naturally called <strong>declaration blocks</strong> and declarations inside them are separated by a semi-colon, '<code>;</code>' (<code>U+003B SEMICOLON</code>). A declaration block may be empty, that is containing null declaration. White spaces around declarations are ignored. The last declaration of a block doesn't need to be terminated by a semi-colon, though it is often considered <em>good style</em> to do it as it prevents forgetting to add it when extending the block with another declaration.</p>
+
+<p><img src="../../../../../mdn.mozillademos.org/files/3667/css%20syntax%20-%20declarations%20block.png" style="border: 1px solid black; padding: 1em;" class="default internal" alt="css syntax - declarations block.png"></p>
+
+<div class="note">The content of a CSS declaration block, that is a list of semi-colon-separated declarations, without the initial and closing braces, can be put inside an HTML <a title="https://developer.mozilla.org/en/HTML/Global_attributes#attr-style" href="https://developer.mozilla.org/en/HTML/Global_attributes#attr-style"><code>style</code></a> attribute.</div>
+
+<h2 id="CSS_rulesets">CSS rulesets</h2>
+
+<p>If style sheets could only apply a declaration to each element of a Web page, they would be pretty useless. The real goal is to apply different declarations to different parts of the document.</p>
+
+<p>CSS allows this by associating conditions with declarations blocks. Each (valid) declaration block is preceded by one or more&nbsp;<em>selectors</em> which are&nbsp;conditions selecting some elements of the page. The pair selector group-declarations block is called a <strong>ruleset</strong>, or often simply a <strong>rule</strong>.</p>
+
+<p><img src="../../../../../mdn.mozillademos.org/files/3668/css%20syntax%20-%20ruleset.png" style="border: 1px solid black; padding: 1em;" class="default internal" alt="css syntax - ruleset.png"></p>
+
+<p>As an element of the page may be matched by several selectors, and therefore by several rules potentially containing a given property several times, with different values, the CSS standard defines which one has precedence over the other and must be applied: this is called the <a title="Cascading and inheritance" href="../Guide/CSS/Getting_started/Cascading_and_inheritance-2.html">cascade</a> algorithm.</p>
+
+<div class="note">It is important to note that even if a ruleset characterized by a group of selectors is a kind of shorthand replacing rulesets with a single selector each, this doesn't apply to the validity of the ruleset itself.<br>
+<br>
+This leads to an important consequence: if one single basic selector is invalid, like when using an unknown pseudo-element or pseudo-class, the whole <em>selector</em> is invalid and therefor the entire rule is ignored (as invalid too).</div>
+
+<h2 id="CSS_statements">CSS statements</h2>
+
+<p>Rulesets are the main building blocks of a style sheet, which often consists of only a big list of them. But there is other information that a Web author wants to convey in the style sheet, like the character set, other external style sheets to import, font face or list counter descriptions and many more. It will use other and specific kinds of statements to do that.</p>
+
+<p>A <strong>statement</strong> is a building block that begins with any non-space characters and ends at the first closing brace or semi-colon (outside a string, non-escaped and not included into another {}, () or [] pair).</p>
+
+<p><img src="../../../../../mdn.mozillademos.org/files/3669/css%20syntax%20-%20statements%20Venn%20diag.png" style="padding: 1em;" class="default internal" alt="css syntax - statements Venn diag.png"></p>
+
+<p>There are different kinds of statements:</p>
+
+<ul>
+ <li><strong>Rulesets</strong> (or <em>rules</em>) that, as seen, associate a collection of CSS declarations to a condition described by a selector.</li>
+ <li><strong>At-rules</strong> that start with an at sign, '<code>@</code>' (<code>U+0040 COMMERCIAL AT</code>), followed by an identifier and then continuing up the end of the statement, that is up to the next semi-colon (;) outside of a block, or the end of the next block. Each type of <a title="At-rule" href="At-rule.html">at-rules</a>, defined by the identifier, may have its own internal syntax, and semantics of course. They are used to convey meta-data information (like <a title="The @charset CSS at-rule specifies the character encoding used in the style sheet. It must be the first element in the style sheet and not be preceded by any character; as it is not a nested statement, it cannot be used inside conditional group at-rules. If several @charset at-rules are defined, only the first one is used, and it cannot be used inside a style attribute on an HTML element or inside the &lt;style&gt; element where the character set of the HTML page is relevant." href="/en-US/docs/Web/CSS/@charset"><code>@charset</code></a> or <a title="The @import CSS at-rule is used to import style rules from other style sheets. These rules must precede all other types of rules, except @charset rules; as it is not a nested statement, @import cannot be used inside conditional group at-rules." href="%40import.html"><code>@import</code></a>), conditional information (like&nbsp;<a title="The @media CSS at-rule associates a set of nested statements, in a CSS block that is delimited by curly braces, with a condition defined by a media query. The @media at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule." href="%40media.html"><code>@media</code></a> or <a title="The @document CSS at-rule restricts the style rules contained within it based on the URL of the document. It is designed primarily for user style sheets. A @document rule can specify one or more matching functions. If any of the functions apply to a URL, the rule will take effect on that URL." href="%40document.html"><code>@document</code></a>), or descriptive information (like <a title="The @font-face CSS at-rule allows authors to specify online fonts to display text on their web pages. By allowing authors to provide their own fonts, @font-face eliminates the need to depend on the limited number of fonts users have installed on their computers. The @font-face at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule." href="%40font-face.html"><code>@font-face</code></a>).</li>
+</ul>
+
+<p>Any statement which isn't a ruleset or an at-rule is invalid and ignored.</p>
+
+<p><a name="nested_statements">There is another group of statements, the <strong>nested statements</strong>, these are statements that can be used in a specific subset of at-rules, the <em>conditional group rules</em>. These statements only apply if a specific condition is matched: the <code>@media</code> at-rule content is applied only if the device on which runs the browser matches the expressed condition; the <code>@document</code> at-rule content is applied only if the current page matches some conditions, and so on. In CSS1 and CSS2.1, only <em>rulesets</em> could be used inside a conditional group rules. That was very restrictive and this restriction was lifted in </a><a title="en/CSS/CSS3#Conditionals" href="CSS3.html#Conditionals"><em>CSS Conditionals Level 3</em></a>. Now, though it still is experimental and not supported by every browser, a conditional group rules can contain a wider range of content, rulesets but also some, but not all, at-rules.</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li>CSS Key Concepts: 
+ <a title="Syntax" href="Syntax.html">CSS syntax</a>, 
+ <a title="At-rule" href="At-rule.html">at-rule</a>, 
+ <a title="Comments" href="Comments.html">comments</a>, 
+ <a title="Specificity" href="Specificity.html">specificity</a> and 
+ <a title="inheritance" href="inheritance.html">inheritance</a>, 
+ the <a title="Box model" href="CSS_Box_Model/Introduction_to_the_CSS_box_model.html">box</a>, 
+ <a title="CSS layout modes" href="Layout_mode.html">layout modes</a> and 
+ <a title="Visual formatting model" href="../Guide/CSS/Visual_formatting_model.html">visual formatting models</a>, 
+ and <a title="Margin collapsing" href="CSS_Box_Model/Mastering_margin_collapsing.html">margin collapsing</a>, 
+ or the <a title="initial value" href="initial_value.html">initial</a>, 
+ <a title="computed value" href="computed_value.html">computed</a>, 
+ <a title="resolved value" href="resolved_value.html">resolved</a>, 
+ <a title="specified value" href="specified_value.html">specified</a>, 
+ <a title="used value" href="used_value.html">used</a>, 
+ and <a title="actual value" href="actual_value.html">actual</a> values. 
+ Definitions of <a title="Value definition syntax" href="Value_definition_syntax.html">value syntax</a>, 
+ <a title="Shorthand properties" href="Shorthand_properties.html">shorthand properties</a> 
+ and <a title="Replaced element" href="Replaced_element.html">replaced elements</a>.</li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Beginner">Beginner</a></li>
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Guide">Guide</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Web">Web</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/torazaburo">torazaburo</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/NetNerd">NetNerd</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/pygy">pygy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/SphinxKnight">SphinxKnight</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/elomatreb">elomatreb</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/peterholthoffman">peterholthoffman</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/torazaburo">torazaburo</a>,
+                      <time datetime="2016-08-22T21:38:12-07:00">Aug 22, 2016, 9:38:12 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/Syntax$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/Syntax$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/Syntax" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="Bengali (Bangladesh)" value="/bn-BD/docs/Web/CSS/Syntax">
+            বাংলা (বাংলাদেশ) (bn-BD)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/Syntax">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/Syntaxe">
+            Français (fr)
+          </option>
+          <option title="Italian" value="/it/docs/Web/CSS/Syntax">
+            Italiano (it)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/Syntax">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/Syntax">
+            한국어 (ko)
+          </option>
+          <option title="Portuguese (Brazilian)" value="/pt-BR/docs/Web/CSS/sintaxe">
+            Português (do&nbsp;Brasil) (pt-BR)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/%D0%A1%D0%B8%D0%BD%D1%82%D0%B0%D0%BA%D1%81%D0%B8%D1%81">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/Syntax">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/Syntax by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:49:21 GMT -->
+</body></html>

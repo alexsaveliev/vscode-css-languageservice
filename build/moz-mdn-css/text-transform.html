@@ -1,0 +1,1295 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/text-transform by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:46:33 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>text-transform</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform$json">
+  <link rel="canonical" href="text-transform.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/text-transform" title="text-transform">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/text-transform" title="text-transform">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/text-transform" title="text-transform">
+    
+      <link rel="alternate" hreflang="pl" href="https://developer.mozilla.org/pl/docs/Web/CSS/text-transform" title="text-transform">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-transform" title="text-transform">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="text-transform">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">
+  <meta name="twitter:title" content="text-transform">
+  
+  <meta property="og:description" content="The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized.">
+  <meta name="description" content="The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized.">
+  <meta name="twitter:description" content="The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/text-transform" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Ftext-transform" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/text-transform">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/text-transform" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/text-transform" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/text-transform" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pl/docs/Web/CSS/text-transform" title="Polish">Polski (pl)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-transform" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">text-transform</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Druzion" title="View profile: Druzion">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Druzion" data-src="../../../../../secure.gravatar.com/avatar/256946e794d4192b39969e78e30e80656c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Druzion</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Siilwyn" title="View profile: Siilwyn">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Siilwyn" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Siilwyn</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Tigt" title="View profile: Tigt">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Tigt" data-src="../../../../../secure.gravatar.com/avatar/6dfc114d927c3f5bd61c2697b4adf2bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Tigt</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/kbariotis" title="View profile: kbariotis">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kbariotis" data-src="../../../../../secure.gravatar.com/avatar/921760752e826fcf2c6b4d45031ad3aa6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kbariotis</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/tyrantkill" title="View profile: tyrantkill">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tyrantkill" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tyrantkill</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/tregagnon" title="View profile: tregagnon">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tregagnon" data-src="../../../../../secure.gravatar.com/avatar/8431892ef37f88fe820096de721c00ba6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tregagnon</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/bigbossSNK" title="View profile: bigbossSNK">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="bigbossSNK" data-src="../../../../../secure.gravatar.com/avatar/2f4148ef70b435df44ce119d9cde79006c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">bigbossSNK</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Lupus" title="View profile: Lupus">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Lupus" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Lupus</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/neb" title="View profile: neb">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="neb" data-src="../../../../../secure.gravatar.com/avatar/e669e0ac13a7a9f0433b610b0cb57f066c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">neb</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/cers" title="View profile: cers">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="cers" data-src="../../../../../secure.gravatar.com/avatar/f707fa6760548904567df014d76a4f046c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">cers</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/McGurk" title="View profile: McGurk">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="McGurk" data-src="../../../../../secure.gravatar.com/avatar/dcf5220f84cecf5b4eec14f0c43a589a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">McGurk</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/elysdir" title="View profile: elysdir">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="elysdir" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">elysdir</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/BijuGC" title="View profile: BijuGC">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="BijuGC" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">BijuGC</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>text-transform</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Examples" rel="internal">Examples</a><ol><li><a href="#none" rel="internal"><code>none</code></a></li><li><a href="#capitalize_(General)" rel="internal"><code>capitalize</code> (General)</a></li><li><a href="#capitalize_(Punctuation)" rel="internal"><code>capitalize</code> (Punctuation)</a></li><li><a href="#capitalize_(Symbols)" rel="internal"><code>capitalize</code> (Symbols)</a></li><li><a href="#capitalize_(Dutch_ij_digraph)" rel="internal"><code>capitalize</code> (Dutch ij digraph)</a></li><li><a href="#uppercase_(General)" rel="internal"><code>uppercase</code> (General)</a></li><li><a href="#uppercase_(Greek_Vowels)" rel="internal"><code>uppercase</code> (Greek Vowels)</a></li><li><a href="#lowercase_(General)" rel="internal"><code>lowercase</code> (General)</a></li><li><a href="#lowercase_(Greek_Σ)" rel="internal"><code>lowercase</code> (Greek Σ)</a></li><li><a href="#full-width_(General)" rel="internal"><code>full-width</code> (General)</a></li></ol></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section class="Quick_links" id="Quick_Links"><!-- --></section></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>text-transform</code></strong> CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized.</p>
+
+<p>The <code>text-transform</code> property takes into account language-specific case mapping rules, like:</p>
+
+<ul>
+ <li>
+  <p>in Turkic languages, like Turkish (<code>tr</code>), Azerbaijani (<code>az</code>), Crimean Tatar (<code>crh</code>), Volga Tatar (<code>tt</code>), and Bashkir (<code>ba</code>), there are two kinds of i, with and without the dot, and two case pairings: <code>i</code>/<code>İ</code> and <code>ı</code>/<code>I</code>.</p>
+ </li>
+ <li>
+  <p>In German (<code>de</code>), the <code>ß</code> becomes <code>SS</code> in uppercase.</p>
+ </li>
+ <li>
+  <p>In Dutch (<code>nl</code>), the <code>ij</code> digraph becomes <code>IJ</code>, even with <code>text-transform: capitalize</code>, which only put the first letter of a word in uppercase.</p>
+ </li>
+ <li>
+  <p>In Greek (<code>el</code>), vowels lose their accent when the whole word is in uppercase (<code>ά</code>/<code>Α</code>), except for the disjunctive <span lang="el">eta</span> (<code>ή</code>/<code>Ή</code>). Also, diphthongs with an accent on the first vowel lose the accent and gain a diaeresis on the second vowel (<code>άι</code>/<code>ΑΪ</code>).</p>
+ </li>
+ <li>
+  <p>In Greek (<code>el</code>), the lowercase sigma character has two forms: <code>σ</code> and <code>ς</code>. <code>ς</code> is used only when sigma terminates a word. When applying <code>text-transform: lowercase</code> to an uppercase sigma (<code>Σ</code>), the browser needs to choose the right lowercase form based on context.</p>
+ </li>
+</ul>
+
+<p>On the other some other specific case mapping rules are not taken into account by any browser like:</p>
+
+<ul>
+ <li>in Gaelic (<code>ga</code>), a prefix letter remains in lowercase when the base initial is capitalised, so in this example the <code>h-</code> should not be capitalized: <code>text-transform: uppercase</code> will change <code>Meud na h-aplacaid</code> to <code>MEUD NA H-APLACAID</code> which violates the locale orthographic rules, as it ought to be <code>MEUD NA h-APLACAID.</code></li>
+</ul>
+
+<p>The language is defined by the <code>lang</code> HTML attribute or the <code>xml:lang</code> XML attribute.</p>
+
+<p>Support for these specific cases vary from one browser to the other, so check the <a href="#Browser_compatibility">browser compatibility table</a>.</p>
+
+<p></p><table class="properties"><tbody><tr><th scope="row"><a href="initial_value.html">Initial value</a></th><td><code>none</code></td></tr><tr><th scope="row">Applies to</th><td>all elements. It also applies to <a title="The ::first-letter CSS pseudo-element selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line." href="__first-letter.html"><code>::first-letter</code></a> and <a title="The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element." href="__first-line.html"><code>::first-line</code></a>.</td></tr><tr><th scope="row"><a href="inheritance.html">Inherited</a></th><td>yes</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="computed_value.html">Computed value</a></th><td>as specified</td></tr><tr><th scope="row">Animatable</th><td>no</td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table><p></p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush: css">/* Keyword values */
+text-transform: capitalize;
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: none;
+text-transform: full-width;
+
+/* Global values */
+text-transform: inherit;
+text-transform: initial;
+text-transform: unset;
+</pre>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt><code>capitalize</code></dt>
+ <dd>
+ <p>Is a keyword forcing the first <em>letter</em> of each word to be converted to uppercase. Other characters are unchanged; that is, they retain their original case as written in the element's text. A letter is any Unicode character part of the Letter or Number general categories <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span> : it excludes any punctuation marks or symbols at the beginning of the word.</p>
+
+ <div class="note">Authors should not expect <code class="css">capitalize</code> to follow language-specific titlecasing conventions (such as skipping articles in English).</div>
+ </dd>
+ <dt><code>uppercase</code></dt>
+ <dd>Is a keyword forcing all characters to be converted to uppercase.</dd>
+ <dt><code>lowercase</code></dt>
+ <dd>Is a keyword forcing all characters to be converted to lowercase.</dd>
+ <dt><code>none</code></dt>
+ <dd>Is a keyword preventing the case of all characters to be changed.</dd>
+ <dt><code>full-width</code> <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></dt>
+ <dd>Is a keyword forcing the writing of a character, mainly ideograms and latin scripts inside a square, allowing them to be aligned in the usual East Asian scripts (like Chinese or Japanese).</dd>
+ 
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox">none <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> capitalize <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> uppercase <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> lowercase <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> full-width</pre>
+
+<h2 id="Examples">Examples</h2>
+
+<h3 name="none" id="none"><code>none</code></h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong&gt;<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: none
+  &lt;strong&gt;&lt;span&gt;<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</code>&lt;/span&gt;&lt;/strong&gt;
+&lt;/p&gt;
+</pre>
+
+<pre class="brush: css">span {
+  text-transform: none;
+}
+strong { float: right; }</pre>
+
+<p>This demonstrates no text transformation.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_none" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/none9864.html?revision=1069382" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 name="capitalize_(General)" id="capitalize_(General)"><code>capitalize</code> (General)</h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong&gt;<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: capitalize
+<code>  &lt;strong&gt;</code>&lt;span&gt;<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</code>&lt;/span&gt;<code>&lt;/strong&gt;</code>
+&lt;/p&gt;</pre>
+
+<pre class="brush: css">span {
+  text-transform: capitalize;
+}
+strong { float: right; }</pre>
+
+<p>This demonstrates text capitalization.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_capitalize_(General)" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/capitalize_(General)9864.html?revision=1069382" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 name="capitalize_(Punctuation)" id="capitalize_(Punctuation)"><code>capitalize</code> (Punctuation)</h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong&gt;<code>(this) “is” [a] –short– -test- «for» *the* _css_ ¿capitalize? ?¡transform!</code><code>&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: capitalize
+  <code>&lt;strong&gt;</code>&lt;span&gt;<code>(this) “is” [a] –short– -test- «for» *the* _css_ ¿capitalize? ?¡transform!</code>&lt;/span&gt;<code>&lt;/strong&gt;</code>
+&lt;/p&gt;</pre>
+
+<pre class="brush: css">span {
+  text-transform: capitalize;
+}
+strong { float: right; }</pre>
+
+<p>This demostrates how initial punctuations of a word are ignored. The keyword target the first letter, that is the first Unicode character part of the Letter or Number general category.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_capitalize_(Punctuation)" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/capitalize_(Punctuation)9864.html?revision=1069382" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 name="capitalize_(Symbols)" id="capitalize_(Symbols)"><code>capitalize</code> (Symbols)</h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong&gt;<code>ⓐⓑⓒ (ⓓⓔⓕ) —ⓖⓗⓘ— ⓙkl</code><code>&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: capitalize
+  <code>&lt;strong&gt;</code>&lt;span&gt;<code>ⓐⓑⓒ (ⓓⓔⓕ) —ⓖⓗⓘ— ⓙkl</code>&lt;/span&gt;<code>&lt;/strong&gt;</code>
+&lt;/p&gt;</pre>
+
+<pre class="brush: css">span {
+  text-transform: capitalize;
+}
+strong { float: right; }</pre>
+
+<p>This demonstrates how initial symbols are ignored. The keyword target the first letter, that is the first Unicode character part of the Letter or Number general category.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_capitalize_(Symbols)" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/capitalize_(Symbols)9864.html?revision=1069382" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 name="capitalize_(Dutch_ij_digraph)" id="capitalize_(Dutch_ij_digraph)"><code>capitalize</code> (Dutch <em>ij</em> digraph)</h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong lang="nl"&gt;<code>The Dutch word: "<span lang="nl">ijsland</span>" starts with a digraph.</code><code>&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: capitalize
+  <code>&lt;strong&gt;</code>&lt;span lang="nl"&gt;<code>The Dutch word: "<span lang="nl">ijsland</span>" starts with a digraph.</code>&lt;/span&gt;<code>&lt;/strong&gt;</code>
+&lt;/p&gt;</pre>
+
+<pre class="brush: css">span {
+  text-transform: capitalize;
+}
+strong { float: right; }</pre>
+
+<p>This demonstrates how the Dutch <em>ij</em> digraph must be handled like one single letter.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_capitalize_(Dutch_ij_digraph)" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/capitalize_(Dutch_ij_digraph)9864.html?revision=1069382" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 name="uppercase_(General)" id="uppercase_(General)"><code>uppercase</code> (General)</h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong&gt;<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</code><code>&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: uppercase
+  <code>&lt;strong&gt;</code>&lt;span&gt;<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</code>&lt;/span&gt;<code>&lt;/strong&gt;</code>
+&lt;/p&gt;</pre>
+
+<pre class="brush: css">span {
+  text-transform: uppercase;
+}
+strong { float: right; }</pre>
+
+<p>This demonstrates transforming the text to uppercase.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_uppercase_(General)" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/uppercase_(General)9864.html?revision=1069382" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 name="uppercase_(Greek_Vowels)" id="uppercase_(Greek_Vowels)"><code>uppercase</code> (Greek Vowels)</h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong&gt;<code>Θα πάμε στο "Θεϊκό φαΐ" ή στη "Νεράιδα"</code><code>&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: uppercase
+  <code>&lt;strong&gt;</code>&lt;span&gt;<code>Θα πάμε στο "Θεϊκό φαΐ" ή στη "Νεράιδα"</code>&lt;/span&gt;<code>&lt;/strong&gt;</code>
+&lt;/p&gt;</pre>
+
+<pre class="brush: css">span {
+  text-transform: uppercase;
+}
+strong { float: right; }</pre>
+
+<p>This demonstrates how Greek vowels except disjunctive <em>eta</em> should have no accent, and the accent on the first vowel of a vowel pair becomes a diaeresis on the second vowel.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_uppercase_(Greek_Vowels)" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/uppercase_(Greek_Vowels)9864.html?revision=1069382" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 name="lowercase_(General)" id="lowercase_(General)"><code>lowercase</code> (General)</h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong&gt;<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</code><code>&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: lowercase
+  <code>&lt;strong&gt;</code>&lt;span&gt;<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</code>&lt;/span&gt;<code>&lt;/strong&gt;</code>
+&lt;/p&gt;</pre>
+
+<pre class="brush: css">span {
+  text-transform: lowercase;
+}
+strong { float: right; }</pre>
+
+<p>This demonstrates transforming the text to lowercase.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_lowercase_(General)" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/lowercase_(General)9864.html?revision=1069382" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 name="lowercase_(Greek_Σ)" id="lowercase_(Greek_Σ)"><code>lowercase</code> (Greek Σ)</h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong&gt;<code>Σ IS A greek LETTER that appears SEVERAL TIMES IN ΟΔΥΣΣΕΥΣ.</code><code>&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: lowercase
+  <code>&lt;strong&gt;</code>&lt;span&gt;<code>Σ IS A greek LETTER that appears SEVERAL TIMES IN ΟΔΥΣΣΕΥΣ.</code>&lt;/span&gt;<code>&lt;/strong&gt;</code>
+&lt;/p&gt;</pre>
+
+<pre class="brush: css">span {
+  text-transform: lowercase;
+}
+strong { float: right; }</pre>
+
+<p>This demonstrates how the Greek character sigma (<code>Σ</code>) is transformed into the regular lowercase sigma (<code>σ</code>) or the word-final variant (<code>ς</code>), according the context.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_lowercase_(Greek_Σ)" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/lowercase_(Greek_%ce%a3)9864.html?revision=1069382" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 name="full-width_(General)" id="full-width_(General)"><code>full-width</code> (General)</h3>
+
+<pre class="brush: html">&lt;p&gt;Initial String
+  &lt;strong&gt;0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&amp;()*+,-./:;&lt;=&gt;?@{|}~<code>&lt;/strong&gt;
+&lt;/p&gt;</code>
+&lt;p&gt;text-transform: full-width
+  <code>&lt;strong&gt;</code>&lt;span&gt;0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&amp;()*+,-./:;&lt;=&gt;?@{|}~&lt;/span&gt;<code>&lt;/strong&gt;</code>
+&lt;/p&gt;</pre>
+
+<pre class="brush: css">span {
+  text-transform: full-width;
+}
+strong { width: 100%; float: right; }</pre>
+
+<p>Some characters exists in two formats, normal width and a full-width, with different Unicode code points. The full-width version is used to mix them smoothly with Asian ideographic characters.</p>
+
+<p><iframe width="100%" frameborder="0" id="frame_full-width_(General)" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-transform%24samples/full-width_(General)9864.html?revision=1069382" height="175px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a lang="en" hreflang="en" href="https://drafts.csswg.org/css-text-4/#text-transform" class="external">CSS Text Level&nbsp;4<br><small lang="en-US">The definition of 'text-transform' in that specification.</small></a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>From <a lang="en" hreflang="en" href="https://drafts.csswg.org/css-text-3/#text-transform" class="external">CSS Text Level&nbsp;3<br><small lang="en-US">The definition of 'text-transform' in that specification.</small></a>, adds the <code>full-size-kana</code> keyword and allows the <code>full-width</code> keyword to be used together with another keyword.</td>
+  </tr>
+  <tr>
+   <td><a lang="en" hreflang="en" href="https://drafts.csswg.org/css-text-3/#text-transform" class="external">CSS Text Level&nbsp;3<br><small lang="en-US">The definition of 'text-transform' in that specification.</small></a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>From <a lang="en" hreflang="en" href="http://www.w3.org/TR/CSS2/text.html#caps-prop" class="external">CSS Level&nbsp;2 (Revision&nbsp;1)<br><small lang="en-US">The definition of 'text-transform' in that specification.</small></a>, extends letters to any Unicode character in the Number or Letter general category.&nbsp; Modifies the behavior of <code>capitalize</code> to apply to the first letter of the word, ignoring initial punctuations or symbols. Adds the <code>full-width</code> keyword to mix smoothly ideographic characters and alphabetical characters.</td>
+  </tr>
+  <tr>
+   <td><a lang="en" hreflang="en" href="http://www.w3.org/TR/CSS2/text.html#caps-prop" class="external">CSS Level&nbsp;2 (Revision&nbsp;1)<br><small lang="en-US">The definition of 'text-transform' in that specification.</small></a></td>
+   <td><span class="spec-REC">Recommendation</span></td>
+   <td>From <a lang="en" hreflang="en" href="http://www.w3.org/TR/CSS1/#text-transform" class="external">CSS Level&nbsp;1<br><small lang="en-US">The definition of 'text-transform' in that specification.</small></a>, extends letters to non-latin bi-cameral scripts</td>
+  </tr>
+  <tr>
+   <td><a lang="en" hreflang="en" href="http://www.w3.org/TR/CSS1/#text-transform" class="external">CSS Level&nbsp;1<br><small lang="en-US">The definition of 'text-transform' in that specification.</small></a></td>
+   <td><span class="spec-REC">Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>1.0</td>
+   <td>1.0 (1.7 or earlier)</td>
+   <td>4.0</td>
+   <td>7.0</td>
+   <td>1.0</td>
+  </tr>
+  <tr>
+   <td><code>capitalize</code> (CSS3 version)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span><sup>[1]</sup></td>
+   <td><a title="Released on 2012-07-17." href="https://developer.mozilla.org/en-US/Firefox/Releases/14">14</a> (14)<sup>[1]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span><sup>[1]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span><sup>[1]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span><sup>[1]</sup></td>
+  </tr>
+  <tr>
+   <td><code>full-size-kana</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td><code>full-width</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><a title="Released on 2013-02-19." href="https://developer.mozilla.org/en-US/Firefox/Releases/19">19</a> (19)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td><code>ß</code> → <code>SS</code></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>1.0 (1.7 or earlier)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+  <tr>
+   <td><code>i</code> → <code>İ</code> and <code>ı</code> → <code>I</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><a title="Released on 2012-07-17." href="https://developer.mozilla.org/en-US/Firefox/Releases/14">14</a> (14)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>Dutch <code>IJ</code> digraph</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><a title="Released on 2012-07-17." href="https://developer.mozilla.org/en-US/Firefox/Releases/14">14</a> (14)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>Greek accented letters</td>
+   <td>30</td>
+   <td><a title="Released on 2012-08-28." href="https://developer.mozilla.org/en-US/Firefox/Releases/15">15</a> (15)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td><code>Σ</code> → <code>σ</code> or word-final <code>ς</code></td>
+   <td>30</td>
+   <td><a title="Released on 2012-07-17." href="https://developer.mozilla.org/en-US/Firefox/Releases/14">14</a> (14)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>6.0</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>1.0</td>
+   <td>1.0 (1)</td>
+   <td>6.0</td>
+   <td>6.0</td>
+   <td>1.0</td>
+  </tr>
+  <tr>
+   <td><code>capitalize</code> (CSS3 version)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span><sup>[1]</sup></td>
+   <td>14.0 (14)<sup>[1]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span><sup>[1]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span><sup>[1]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span><sup>[1]</sup></td>
+  </tr>
+  <tr>
+   <td><code>full-size-kana</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td><code>full-width</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>19.0 (19)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td><code>ß</code> → <code>SS</code></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>1.0 (1)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+  <tr>
+   <td><code>i</code> → <code>İ</code> and <code>ı</code> → <code>I</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>14.0 (14)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>Dutch <code>IJ</code> digraph</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>14.0 (14)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>Greek accented letters</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td><code>Σ</code> → <code>σ</code> or word-final <code>ς</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>14.0 (14)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] The <code>capitalize</code> keyword was under-specified in CSS 1 and CSS 2.1. There were differences between browsers in the way the first letter was calculated (Firefox considered - and _ as letters, but not the others. Both Webkit and Gecko incorrectly considered letter-based symbols like <code>ⓐ</code> to be real letters. Internet Explorer 9 was the closest to the CSS 2 definition, but with some weird cases). By precisely defining the correct behavior, CSS Text Level 3 cleans this mess up. The <code>capitalize</code> line in the browser compatibility table contains the version the different engines started to support this now precisely defined behavior.</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a title="The font-variant property acts as a shorthand for the longhand properties: font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian. You can also set the CSS Level 2 (Revision 1) values of font-variant, (that is, normal or small-caps), by using the font shorthand." href="font-variant.html"><code>font-variant</code></a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Property.html">CSS Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Layout">Layout</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Property">Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Text">Text</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/Druzion">Druzion</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Siilwyn">Siilwyn</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Tigt">Tigt</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kbariotis">kbariotis</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tyrantkill">tyrantkill</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tregagnon">tregagnon</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/bigbossSNK">bigbossSNK</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Lupus">Lupus</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/neb">neb</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/cers">cers</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/McGurk">McGurk</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/elysdir">elysdir</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/BijuGC">BijuGC</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/Druzion">Druzion</a>,
+                      <time datetime="2016-06-08T00:29:25-07:00">Jun 8, 2016, 12:29:25 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Text.html">CSS Text</a></strong></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The hyphens CSS property tells the browser how to hyphenate words when line-wrapping. You can prevent hyphenation entirely, control when the browser should hyphenate, or let the browser control when to hyphenate." href="hyphens.html"><code>hyphens</code></a></li><li><a title="The letter-spacing CSS property specifies spacing behavior between text characters." href="letter-spacing.html"><code>letter-spacing</code></a></li><li><a title="The line-break CSS property is used to specify how (or if) to break lines." href="line-break.html"><code>line-break</code></a></li><li><a title="The overflow-wrap property is used to specify whether or not the browser may break lines within words in order to prevent overflow when an otherwise unbreakable string is too long to fit in its containing box." href="overflow-wrap.html"><code>overflow-wrap</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The tab-size CSS property is used to customize the width of a tab (U+0009) character." href="tab-size.html"><code>tab-size</code></a></li><li><a title="The text-align CSS property describes how inline content like text is aligned in its parent block element. text-align does not control the alignment of block elements, only their inline content." href="text-align.html"><code>text-align</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The text-align-last CSS property describes how the last line of a block or a line, right before a forced line break, is aligned." href="text-align-last.html"><code>text-align-last</code></a></li><li><a title="The text-indent property specifies the amount of indentation (empty space) should be left before lines of text in a block. By default, this controls the indentation of only the first formatted line of the block, but the hanging and each-line keywords can be used to change this behavior." href="text-indent.html"><code>text-indent</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="On mobile devices, the text-size-adjust property allows Web authors to control if and how the text-inflating algorithm is applied to the textual content of the element it is applied to." href="text-size-adjust.html"><code>text-size-adjust</code></a></li><li><em><code>text-transform</code></em></li><li><a title="The white-space property is used to describe how whitespace inside the element is handled." href="white-space.html"><code>white-space</code></a></li><li><a title="The word-break CSS property is used to specify whether to break lines within words." href="word-break.html"><code>word-break</code></a></li><li><a title="The word-spacing CSS property specifies the spacing behavior between tags and words." href="word-spacing.html"><code>word-spacing</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/text-transform$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/text-transform$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/text-transform" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/text-transform">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/text-transform">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/text-transform">
+            Français (fr)
+          </option>
+          <option title="Polish" value="/pl/docs/Web/CSS/text-transform">
+            Polski (pl)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/text-transform">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/text-transform by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:46:37 GMT -->
+</body></html>

@@ -1,0 +1,1157 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/calc by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:38:51 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>calc()</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc$json">
+  <link rel="canonical" href="calc.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/calc" title="calc">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/calc" title="calc">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/calc" title="calc">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/calc" title="calc">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/calc" title="calc">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/calc" title="Функция calc()">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/calc" title="calc">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="calc()">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/calc">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/calc">
+  <meta name="twitter:title" content="calc()">
+  
+  <meta property="og:description" content="The calc() CSS function can be used anywhere a length, frequency, angle, time, number, or integer is required. With calc(), you can perform calculations to determine CSS property values.">
+  <meta name="description" content="The calc() CSS function can be used anywhere a length, frequency, angle, time, number, or integer is required. With calc(), you can perform calculations to determine CSS property values.">
+  <meta name="twitter:description" content="The calc() CSS function can be used anywhere a length, frequency, angle, time, number, or integer is required. With calc(), you can perform calculations to determine CSS property values.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/calc" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fcalc" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/calc">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/calc" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/calc" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/calc" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/calc" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/calc" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/calc" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/calc" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">calc()</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/kongkx" title="View profile: kongkx">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kongkx" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kongkx</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/yisibl" title="View profile: yisibl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="yisibl" data-src="../../../../../secure.gravatar.com/avatar/5c4ad3dbe5a5074993a6e270c38636096c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">yisibl</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei" title="View profile: ziyunfei">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ziyunfei" data-src="../../../../../secure.gravatar.com/avatar/2dbf9c055c2b32d3ca45d25be01174236c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ziyunfei</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/rolfedh" title="View profile: rolfedh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="rolfedh" data-src="../../../../../secure.gravatar.com/avatar/4d9e73208c9af39018924d0e67821a796c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">rolfedh</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/tomalec" title="View profile: tomalec">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tomalec" data-src="../../../../../secure.gravatar.com/avatar/cd0229824aac5163d676dedd7bf951966c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tomalec</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mrstork" title="View profile: mrstork">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mrstork" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mrstork</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/prayash" title="View profile: prayash">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="prayash" data-src="../../../../../secure.gravatar.com/avatar/8552d124497578ddb2071507c0aa75f46c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">prayash</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/gapple" title="View profile: gapple">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="gapple" data-src="../../../../../secure.gravatar.com/avatar/f5028c84d93e09d9df27aebb6d3fa8466c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">gapple</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jsx" title="View profile: jsx">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jsx" data-src="../../../../../secure.gravatar.com/avatar/8cc61d4e2dc63e75976a334348d473bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jsx</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Odd3r" title="View profile: Odd3r">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Odd3r" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Odd3r</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/raselmahmud" title="View profile: raselmahmud">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="raselmahmud" data-src="../../../../../secure.gravatar.com/avatar/eddb980e0c8395fe9ede938c845c42dc6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">raselmahmud</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Francois06" title="View profile: Francois06">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Francois06" data-src="../../../../../secure.gravatar.com/avatar/f579e7c7cc37a0cde6aed60a340e4d476c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Francois06</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/nhoizey" title="View profile: nhoizey">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="nhoizey" data-src="../../../../../secure.gravatar.com/avatar/9aa2aa68144b2781ac025a29c83bbdd46c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">nhoizey</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/bigbossSNK" title="View profile: bigbossSNK">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="bigbossSNK" data-src="../../../../../secure.gravatar.com/avatar/2f4148ef70b435df44ce119d9cde79006c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">bigbossSNK</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Nox" title="View profile: Nox">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Nox" data-src="../../../../../secure.gravatar.com/avatar/1f6b7e59d106ffcb8d5c44f327a6e1076c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Nox</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/matt.kantor" title="View profile: matt.kantor">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="matt.kantor" data-src="../../../../../secure.gravatar.com/avatar/225d0619e0b03ecd72c026954a0987cb6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">matt.kantor</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mattbrundage" title="View profile: mattbrundage">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mattbrundage" data-src="../../../../../secure.gravatar.com/avatar/4498ae1597545e32b7eff4019971a32d6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mattbrundage</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/m_gol" title="View profile: m_gol">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="m_gol" data-src="../../../../../secure.gravatar.com/avatar/72ea0622f7b690ed82f5261b16ff8cef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">m_gol</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/trevorh" title="View profile: trevorh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="trevorh" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">trevorh</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jswisher" title="View profile: jswisher">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jswisher" data-src="../../../../../secure.gravatar.com/avatar/38185c2812cbcae186ebbe4a829106616c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jswisher</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/sprt" title="View profile: sprt">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="sprt" data-src="../../../../../secure.gravatar.com/avatar/9c89da2cb9bbc0c7b9ed858fd1b849316c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">sprt</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ebidel" title="View profile: ebidel">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ebidel" data-src="../../../../../secure.gravatar.com/avatar/e7948aac7c52b26470be80311873a3986c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ebidel</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Glazou" title="View profile: Glazou">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Glazou" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Glazou</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/livingston" title="View profile: livingston">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="livingston" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">livingston</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>calc()</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Expressions" rel="internal">Expressions</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Examples" rel="internal">Examples</a><ol><li><a href="#Positioning_an_object_on_screen_with_a_margin" rel="internal">Positioning an object on screen with a margin</a></li><li><a href="#Automatically_sizing_form_fields_to_fit_their_container" rel="internal">Automatically sizing form fields to fit their container</a></li><li><a href="#Nested_calc()_with_CSS_Variables" rel="internal">Nested calc() with CSS Variables</a></li></ol></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section><div class="notice experimental"> 
+    <p><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span> <strong>This is an experimental technology</strong><br>Because this technology's specification has not stabilized, check the <a href="#Browser_compatibility">compatibility table</a> for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes.</p> 
+</div></div>
+
+<p>The <code>calc()</code> CSS function can be used anywhere a <a href="length.html" title="The &lt;length&gt; CSS data type denotes distance measurements. It is a &lt;number&gt; immediately followed by a length unit (px, em, pc, in, mm, …). Like for any CSS dimension, there is no space between the unit literal and the number.&nbsp;The length unit is optional after the &lt;number&gt; 0."><code>&lt;length&gt;</code></a>, <a href="frequency.html" title="The &lt;frequency&gt; CSS data type denotes a frequency dimension, like the pitch of a speaking voice."><code>&lt;frequency&gt;</code></a>, <a href="angle.html" title="The &lt;angle&gt; CSS data type represents angle values. Positive angles represent clockwise angles, negative angles represent counterclockwise angles. Its syntax is a &lt;number&gt; data type immediately followed by the unit (deg, grad, rad or turn). Like for any CSS dimension, there is no space between the unit literal and the number."><code>&lt;angle&gt;</code></a>, <a href="time.html" title="The &lt;time&gt; CSS data type denotes time dimensions expressed in seconds or milliseconds. They consists of a​ ​​​​​​&lt;number&gt; immediately followed by the unit. Like for any CSS dimension, there is no space between the unit literal and the number."><code>&lt;time&gt;</code></a>, <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension."><code>&lt;number&gt;</code></a>, or <a href="integer.html" title="The &lt;integer&gt; CSS data type denotes an integer number, positive or negative. There isn't any associated unit with the value. An integer consists of one or several decimal digits, 0 to 9, optionally preceded by one single + or - sign."><code>&lt;integer&gt;</code></a> is required. With <code>calc()</code>, you can perform calculations to determine CSS property values.</p>
+
+<p>It is possible to nest <code>calc()</code> function, the internal ones being considered as simple parenthesis <code>()</code>.</p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush: css">/* property: calc(expression) */
+width: calc(100% - 80px);
+</pre>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt>expression</dt>
+ <dd>A mathematical expression, the result of which is used as the value.</dd>
+</dl>
+
+<h3 id="Expressions">Expressions</h3>
+
+<p>The expression can be any simple expression combining the following operators, using standard operator precedence rules:</p>
+
+<dl>
+ <dt><strong>+</strong></dt>
+ <dd>Addition.</dd>
+ <dt><strong>-</strong></dt>
+ <dd>Subtraction.</dd>
+ <dt><strong>*</strong></dt>
+ <dd>Multiplication. At least one of the arguments must be a <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension."><code>&lt;number&gt;</code></a>.</dd>
+ <dt><strong>/</strong></dt>
+ <dd>Division. The right-hand side must be a <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension."><code>&lt;number&gt;</code></a>.</dd>
+</dl>
+
+<p>The operands in the expression may be any length syntax value. You can use different units for each value in your expression, if you wish. You may also use parentheses to establish computation order when needed.</p>
+
+<div class="note"><strong>Note:</strong> Division by zero results in an error being generated by the HTML parser.</div>
+
+<div class="note"><strong>Note:</strong> The <code>+</code> and <code>-</code> operators must always be surrounded by whitespace. The operand of <code>calc(50% -8px)</code> for instance will be parsed as a percentage followed by a negative length, an invalid expression, while the operand of <code>calc(50% - 8px)</code> is a percentage followed by a minus sign and a length. Even further, <code>calc(8px + -50%)</code> is treated as a length followed by a plus sign and a negative percentage.<br>
+The <code>*</code> and <code>/</code> operators do not require whitespace, but adding it for consistency is allowed, and recommended.</div>
+
+<div class="note"><strong>Note:</strong> Math expressions involving percentages for widths and heights on table columns, table column groups, table rows, table row groups, and table cells in both auto and fixed layout tables MAY be treated as if <code>auto</code> had been specified.</div>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox">calc( <a href="#calc-sum">&lt;calc-sum&gt;</a> )<p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="calc-sum">&lt;calc-sum&gt;</span> = <a href="#calc-product">&lt;calc-product&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets">[</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets">[</a> '<a href="Value_definition_syntax.html#Plus_()" title="Plus">+</a>' <a href="Value_definition_syntax.html#Single_bar" title="Single bar">|</a> '-' <a href="Value_definition_syntax.html#Brackets" title="Brackets">]</a> <a href="#calc-product">&lt;calc-product&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets">]</a><a href="Value_definition_syntax.html#Asterisk_(*)" title="Asterisk">*</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="calc-product">&lt;calc-product&gt;</span> = <a href="#calc-value">&lt;calc-value&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets">[</a> '<a href="Value_definition_syntax.html#Asterisk_(*)" title="Asterisk">*</a>' <a href="#calc-value">&lt;calc-value&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar">|</a> '/' <a href="number.html" title="">&lt;number&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets">]</a><a href="Value_definition_syntax.html#Asterisk_(*)" title="Asterisk">*</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="calc-value">&lt;calc-value&gt;</span> = <a href="number.html" title="">&lt;number&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar">|</a> &lt;dimension&gt; <a href="Value_definition_syntax.html#Single_bar" title="Single bar">|</a> <a href="percentage.html" title="">&lt;percentage&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar">|</a> ( <a href="#calc-sum">&lt;calc-sum&gt;</a> )</code></p></pre>
+
+<h2 id="Examples">Examples</h2>
+
+<h3 id="Positioning_an_object_on_screen_with_a_margin">Positioning an object on screen with a margin</h3>
+
+<p><code>calc()</code> makes it easy to position an object with a set margin. In this example, the CSS creates a banner that stretches across the window, with a 40-pixel gap between both sides of the banner and the edges of the window:</p>
+
+<pre class="brush: css">.banner {
+  position: absolute;
+  left: 5%;                 /* fallback for browsers without support for calc() */
+  left: calc(40px);
+  width: 90%;               /* fallback for browsers without support for calc() */
+  width: calc(100% - 80px);
+  border: solid black 1px;
+  box-shadow: 1px 2px;
+  background-color: yellow;
+  padding: 6px;
+  text-align: center;
+}
+</pre>
+
+<pre class="brush: html">&lt;div class="banner"&gt;This is a banner!&lt;/div&gt;</pre>
+
+<p><iframe id="frame_Positioning_an_object_on_screen_with_a_margin" height="60" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/calc%24samples/Positioning_an_object_on_screen_with_a_margin9f90.html?revision=1061186" frameborder="0" width="100%" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 id="Automatically_sizing_form_fields_to_fit_their_container">Automatically sizing form fields to fit their container</h3>
+
+<p>Another use case for <code>calc()</code> is to help ensure that form fields fit in the available space, without extruding past the edge of their container, while maintaining an appropriate margin.</p>
+
+<p>Let's look at some CSS:</p>
+
+<pre class="brush: css">input {
+  padding: 2px;
+  display: block;
+  width: 98%;               /* fallback for browsers without support for calc() */
+  width: calc(100% - 1em);
+}
+
+#formbox {
+  width: 130px;             /* fallback for browsers without support for calc() */
+  width: calc(100% / 6);
+  border: 1px solid black;
+  padding: 4px;
+}
+</pre>
+
+<p>Here, the form itself is established to use 1/6 of the available window width. Then, to ensure that input fields retain an appropriate size, we use <code>calc()</code> again to establish that they should be the width of their container minus 1em. Then, the following HTML makes use of this CSS:</p>
+
+<pre class="brush: html">&lt;form&gt;
+  &lt;div id="formbox"&gt;
+  &lt;label&gt;Type something:&lt;/label&gt;
+  &lt;input type="text"&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+
+<p><iframe id="frame_Automatically_sizing_form_fields_to_fit_their_container" height="80" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/calc%24samples/Automatically_sizing_form_fields_to_fit_their_container9f90.html?revision=1061186" frameborder="0" width="100%" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h3 id="Nested_calc()_with_CSS_Variables">Nested calc() with CSS Variables</h3>
+
+<p>Consider the following code:</p>
+
+<pre class="brush: css">.foo {
+  --widthA: 100px;
+  --widthB: calc(var(--widthA) / 2);
+  --widthC: calc(var(--widthB) / 2);
+&nbsp; width: var(--widthC);
+}</pre>
+
+<p>After all variables are expanded, <code>widthC</code>'s value will be <code>calc( calc( 100px / 2) / 2)</code>, then when it's assigned to .foo's width property,&nbsp;all inner <code>calc()</code>s (no matter how deeply nested) will be flattened to just parentheses, so the&nbsp;<code>width</code>&nbsp;property's value will be eventually <code>calc( ( 100px / 2) / 2)</code>, i.e. <code>25px</code>. In short: a&nbsp;<code>calc()</code> inside of a <code>calc()</code> is identical to just parentheses.</p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-values-3/#calc-notation" class="external" lang="en" hreflang="en">CSS Values and Units Module Level&nbsp;3<br><small lang="en-US">The definition of 'calc()' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<div><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div></div>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari (WebKit)</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>19 <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><br>
+    26</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/4" title="Released on 2011-03-22.">4.0</a> (2) <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-moz' as this browser considers it experimental">-moz</a></span><br>
+    <a href="https://developer.mozilla.org/en-US/Firefox/Releases/16" title="Released on 2012-10-09.">16</a> (16)</td>
+   <td>9</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>6 <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><sup>[1]</sup><br>
+    7</td>
+  </tr>
+  <tr>
+   <td>On gradients' color stops</td>
+   <td>19 <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><br>
+    26</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/19" title="Released on 2013-02-19.">19</a> (19)</td>
+   <td>9</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>6 <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><sup>[1]</sup><br>
+    7</td>
+  </tr>
+  <tr>
+   <td>nested calc()</td>
+   <td>51<sup>[2]</sup></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/48" title="Released on 2016-08-02.">48</a> (48)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+  <tr>
+   <td>Support for <code>&lt;number&gt;</code> values</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/48" title="Released on 2016-08-02.">48</a> (48)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Mobile</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>4.0 (2) <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-moz' as this browser considers it experimental">-moz</a></span><br>
+    16.0 (16)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>6 <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><br>
+    7</td>
+  </tr>
+  <tr>
+   <td>On gradients' color stops</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>19.0 (19)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+  <tr>
+   <td>nested calc()</td>
+   <td>51<sup>[2]</sup></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/48" title="Released on 2016-08-02.">48</a> (48)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+  <tr>
+   <td>Support for <code>&lt;number&gt;</code> values</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/48" title="Released on 2016-08-02.">48</a> (48)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] In WebKit 6.0 the implementation was incorrect.</p>
+
+<p>[2] See Blink <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=600113" class="external">bug&nbsp;600113</a>&nbsp;</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="https://hacks.mozilla.org/2010/06/css3-calc/" class="external">Firefox 4: CSS3 calc() ✩ Mozilla Hacks – the Web developer blog</a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Function.html">CSS Function</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Layout">Layout</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Web">Web</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/kongkx">kongkx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/yisibl">yisibl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei">ziyunfei</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/rolfedh">rolfedh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tomalec">tomalec</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mrstork">mrstork</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/prayash">prayash</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/gapple">gapple</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jsx">jsx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Odd3r">Odd3r</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/raselmahmud">raselmahmud</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Francois06">Francois06</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/nhoizey">nhoizey</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/bigbossSNK">bigbossSNK</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Nox">Nox</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/matt.kantor">matt.kantor</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mattbrundage">mattbrundage</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/m_gol">m_gol</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/trevorh">trevorh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jswisher">jswisher</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/sprt">sprt</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ebidel">ebidel</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Glazou">Glazou</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/livingston">livingston</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/kongkx">kongkx</a>,
+                      <time datetime="2016-05-17T04:14:35-07:00">May 17, 2016, 4:14:35 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/calc$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/calc$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/calc" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/calc">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/calc">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/calc">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/calc">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/calc">
+            한국어 (ko)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/calc">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/calc">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/calc by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:38:55 GMT -->
+</body></html>

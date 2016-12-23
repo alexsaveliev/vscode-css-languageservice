@@ -1,0 +1,1251 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/font-size by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:41:28 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>font-size</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size$json">
+  <link rel="canonical" href="font-size.html">
+
+  
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/font-size" title="font-size">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/font-size" title="font-size">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" title="font-size">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/font-size" title="font-size">
+    
+      <link rel="alternate" hreflang="pl" href="https://developer.mozilla.org/pl/docs/Web/CSS/font-size" title="font-size">
+    
+      <link rel="alternate" hreflang="pt-PT" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/font-size" title="font-size">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/font-size" title="font-size">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-size" title="font-size">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="font-size">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">
+  <meta name="twitter:title" content="font-size">
+  
+  <meta property="og:description" content="The font-size CSS property specifies the size of the font (historically the width of the capital &quot;M&quot;). Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the em and ex length units.">
+  <meta name="description" content="The font-size CSS property specifies the size of the font (historically the width of the capital &quot;M&quot;). Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the em and ex length units.">
+  <meta name="twitter:description" content="The font-size CSS property specifies the size of the font (historically the width of the capital &quot;M&quot;). Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the em and ex length units.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/font-size" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Ffont-size" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/font-size">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/font-size" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/font-size" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/font-size" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pl/docs/Web/CSS/font-size" title="Polish">Polski (pl)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/font-size" title="Portuguese (Portugal)">Português (Europeu) (pt-PT)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/font-size" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-size" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">font-size</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/cpplearner" title="View profile: cpplearner">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="cpplearner" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">cpplearner</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/roy-vanegas" title="View profile: roy-vanegas">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="roy-vanegas" data-src="../../../../../secure.gravatar.com/avatar/d0ebe8991f42850714c77f3e0ef2d84b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">roy-vanegas</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/mina86" title="View profile: mina86">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mina86" data-src="../../../../../secure.gravatar.com/avatar/a123a070ab3c9dca76acc66acf8ec93a6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mina86</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/dmitriz" title="View profile: dmitriz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="dmitriz" data-src="../../../../../secure.gravatar.com/avatar/2f5283cc7b85e352c0f86ad8581ff3716c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">dmitriz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Simplexible" title="View profile: Simplexible">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Simplexible" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Simplexible</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Prinz_Rana" title="View profile: Prinz_Rana">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Prinz_Rana" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Prinz_Rana</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/TylerH" title="View profile: TylerH">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="TylerH" data-src="../../../../../secure.gravatar.com/avatar/1cd9e6edf9f4defca0c0d5b68ac9cded6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">TylerH</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Flimm" title="View profile: Flimm">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Flimm" data-src="../../../../../secure.gravatar.com/avatar/936383b387d6cc6d51279e429e5d7cd96c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Flimm</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/wbamberg" title="View profile: wbamberg">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="wbamberg" data-src="../../../../../secure.gravatar.com/avatar/576b94c81f8ad97e58d63f12e5fdb00c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">wbamberg</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/roryokane" title="View profile: roryokane">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="roryokane" data-src="../../../../../secure.gravatar.com/avatar/5b2b185c814bb25f2f95a1152e58f0336c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">roryokane</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jeff_mangus" title="View profile: jeff_mangus">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jeff_mangus" data-src="../../../../../secure.gravatar.com/avatar/e8a775fd6b302f8b18fbcdce159271a26c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jeff_mangus</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/geanglin" title="View profile: geanglin">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="geanglin" data-src="../../../../../secure.gravatar.com/avatar/d1917bb2e9bf40bd692f679acf79518a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">geanglin</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Tarmil" title="View profile: Tarmil">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Tarmil" data-src="../../../../../secure.gravatar.com/avatar/41ec2d6f8bb245abf3194f7600e6c4f76c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Tarmil</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/gilmtw123" title="View profile: gilmtw123">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="gilmtw123" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">gilmtw123</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/trevorh" title="View profile: trevorh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="trevorh" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">trevorh</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/revandy" title="View profile: revandy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="revandy" data-src="../../../../../secure.gravatar.com/avatar/e342ebc9b13bedea9222828a1e3904e26c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">revandy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/william_rose26@aol.com" title="View profile: william_rose26@aol.com">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="william_rose26@aol.com" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">william_rose26@aol.com</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/angelofuma2010" title="View profile: angelofuma2010">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="angelofuma2010" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">angelofuma2010</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/oceanwalker23@yahoo.com" title="View profile: oceanwalker23@yahoo.com">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="oceanwalker23@yahoo.com" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">oceanwalker23@yahoo.com</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/brunoais" title="View profile: brunoais">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="brunoais" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">brunoais</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/hannahozasa" title="View profile: hannahozasa">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="hannahozasa" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">hannahozasa</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jswisher" title="View profile: jswisher">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jswisher" data-src="../../../../../secure.gravatar.com/avatar/38185c2812cbcae186ebbe4a829106616c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jswisher</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mezzanine" title="View profile: Mezzanine">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mezzanine" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mezzanine</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/pdmdn" title="View profile: pdmdn">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="pdmdn" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">pdmdn</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/McGurk" title="View profile: McGurk">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="McGurk" data-src="../../../../../secure.gravatar.com/avatar/dcf5220f84cecf5b4eec14f0c43a589a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">McGurk</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/nizyri" title="View profile: nizyri">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="nizyri" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">nizyri</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kyleb" title="View profile: kyleb">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kyleb" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kyleb</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/myakura" title="View profile: myakura">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="myakura" data-src="../../../../../secure.gravatar.com/avatar/5053cd2607234c47d43959cc9430f1a56c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">myakura</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/grendel" title="View profile: grendel">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="grendel" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">grendel</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot" title="View profile: Mgjbot">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mgjbot" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mgjbot</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/BijuGC" title="View profile: BijuGC">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="BijuGC" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">BijuGC</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Killerowski" title="View profile: Killerowski">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Killerowski" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Killerowski</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Fredchat" title="View profile: Fredchat">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Fredchat" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Fredchat</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/DBaron" title="View profile: DBaron">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="DBaron" data-src="../../../../../secure.gravatar.com/avatar/0a32391d55cfa63276f87eb9819dfbd06c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">DBaron</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Backinblakk" title="View profile: Backinblakk">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Backinblakk" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Backinblakk</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>font-size</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Possible_approaches" rel="internal">Possible approaches</a><ol><li><a href="#Keywords" rel="internal">Keywords</a></li><li><a href="#Pixels" rel="internal">Pixels</a></li><li><a href="#Ems" rel="internal">Ems</a></li><li><a href="#Rems" rel="internal">Rems</a></li></ol></li><li><a href="#Examples" rel="internal">Examples</a><ol><li><a href="#Example_1" rel="internal">Example 1</a></li><li><a href="#Example_2" rel="internal">Example 2</a><ol><li><a href="#Live_Sample" rel="internal">Live Sample</a></li></ol></li></ol></li><li><a href="#Notes" rel="internal">Notes</a></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section class="Quick_links" id="Quick_Links"><!-- --></section></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>font-size</code></strong> <a title="CSS" href="../CSS.html">CSS</a> property specifies the size of the font (historically the width of the capital "M"). Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the <code>em</code> and <code>ex</code> <a title="The &lt;length&gt; CSS data type denotes distance measurements. It is a &lt;number&gt; immediately followed by a length unit (px, em, pc, in, mm, …). Like for any CSS dimension, there is no space between the unit literal and the number.&nbsp;The length unit is optional after the &lt;number&gt; 0." href="/en-US/docs/Web/CSS/length"><code>&lt;length&gt;</code></a> units.</p>
+
+<p></p><table class="properties"><tbody><tr><th scope="row"><a href="initial_value.html">Initial value</a></th><td><code>medium</code></td></tr><tr><th scope="row">Applies to</th><td>all elements. It also applies to <a title="The ::first-letter CSS pseudo-element selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line." href="__first-letter.html"><code>::first-letter</code></a> and <a title="The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element." href="__first-line.html"><code>::first-line</code></a>.</td></tr><tr><th scope="row"><a href="inheritance.html">Inherited</a></th><td>yes</td></tr><tr><th scope="row">Percentages</th><td>refer to the parent element's font size</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="computed_value.html">Computed value</a></th><td>as specified, but with relative lengths converted into absolute lengths</td></tr><tr><th scope="row">Animation type</th><td>a <a title="Values of the &lt;length&gt; CSS data type are interpolated as real, floating-point numbers." href="/en-US/docs/Web/CSS/length#Interpolation">length</a></td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table><p></p>
+
+<h2 name="Syntax" id="Syntax">Syntax</h2>
+
+<pre class="brush:css">/* &lt;absolute-size&gt; values */
+font-size: xx-small;
+font-size: x-small;
+font-size: small;
+font-size: medium;
+font-size: large;
+font-size: x-large;
+font-size: xx-large;
+
+/* &lt;relative-size&gt; values */
+font-size: larger;
+font-size: smaller;
+
+/* &lt;length&gt; values */
+font-size: 12px;
+font-size: 0.8em;
+
+/* &lt;percentage&gt; values */
+font-size: 80%;
+
+/* Global values */
+font-size: inherit;
+font-size: initial;
+font-size: unset;
+</pre>
+
+<h3 name="Values" id="Values">Values</h3>
+
+<dl>
+ <dt><code>xx-small, x-small, small, medium, large, x-large, xx-large</code></dt>
+ <dd>A set of absolute size keywords based on the user's default font size (which is <code>medium</code>). Similar to presentational HTML's <code>&lt;font size="1"&gt;</code> through <code>&lt;font size="7"&gt;</code> where the user's default font size is <code>&lt;font size="3"&gt;</code>.</dd>
+ <dt><code>larger, smaller</code></dt>
+ <dd>Larger or smaller than the parent element's font size, by roughly the ratio used to separate the absolute size keywords above.</dd>
+ <dt><code>&lt;length-percentage&gt;</code><em> </em></dt>
+ <dd>
+ <p>A positive <a title="The &lt;length&gt; CSS data type denotes distance measurements. It is a &lt;number&gt; immediately followed by a length unit (px, em, pc, in, mm, …). Like for any CSS dimension, there is no space between the unit literal and the number.&nbsp;The length unit is optional after the &lt;number&gt; 0." href="/en-US/docs/Web/CSS/length"><code>&lt;length&gt;</code></a> or <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage"><code>&lt;percentage&gt;</code></a> value. When the units of <code>&lt;length&gt;</code> values are specified in <code>em</code> or <code>ex</code>, the size is defined relative to the size of the font on the parent element of the element in question. For example, 0.5em is half the font size of the parent of the current element. When the units are specified in <code>rem</code>, the size is defined relative to the size of the font used by the <a title="The HTML &lt;html&gt; element (or HTML root element) represents the root of an HTML document. All other elements must be descendants of this element." href="/en-US/docs/Web/HTML/Element/html"><code>&lt;html&gt;</code></a> (root) element.</p>
+
+ <p>&lt;percentage&gt; values refer to the parent element's font size.</p>
+ </dd>
+</dl>
+
+<p>It is best to use values that are relative to the user's default font size, and avoid absolute values such as lengths with units other than <code>em</code> or <code>ex</code>. However, if such absolute values must be used, <code>px</code> are preferred over other units because their meaning does not vary depending on what the operating system thinks (generally incorrectly) the resolution of the monitor is.</p>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox"><a href="#absolute-size">&lt;absolute-size&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#relative-size">&lt;relative-size&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#length-percentage">&lt;length-percentage&gt;</a><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="absolute-size">&lt;absolute-size&gt;</span> = xx-small <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> x-small <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> small <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> medium <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> large <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> x-large <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> xx-large<br><span id="relative-size">&lt;relative-size&gt;</span> = larger <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> smaller<br><span id="length-percentage">&lt;length-percentage&gt;</span> = <a title="Possible values: a number followed by'em', 'ex', 'ch', 'rem', 'px', 'cm', 'mm', 'in', 'vh', 'vw', 'vmin', 'vmax', 'pt', 'pc' or 'px', like 3px, 1.5cm, -0.5em or 0" href="length.html">&lt;length&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a></code></p></pre>
+
+<h2 name="Possible_approaches" id="Possible_approaches">Possible approaches</h2>
+
+<p>There are several ways to specify the font size, with keywords or numerical values for pixels or ems. Choose the appropriate method based on the needs for the particular web page.</p>
+
+<h3 name="Keywords" id="Keywords">Keywords</h3>
+
+<p>Keywords are a good way to set the size of fonts on the web. By setting a keyword font size on the body element, you can set relative font-sizing everywhere else on the page, giving you the ability to easily scale the font up or down on the entire page accordingly.</p>
+
+<h3 name="Pixels" id="Pixels">Pixels</h3>
+
+<p>Setting the font size in pixel values (<code>px</code>) is a good choice when you need pixel accuracy. A px value is static. This is an OS-independent and cross-browser way of literally telling the browsers to render the letters at exactly the number of pixels in height that you specified. The results may vary slightly across browsers, as they may use different algorithms to achieve a similar effect.</p>
+
+<p>Font sizing settings can also be used in combination. For example, if a parent element is set to <code>16px</code> and its child element is set to <code>larger</code>, the child element displays larger than the parent element in the page.</p>
+
+<div class="note"><strong>Note:</strong> Defining font sizes in pixel is <em><a href="https://en.wikipedia.org/wiki/Web_accessibility" class="external">not accessible</a></em>, because the user cannot change the font size from the browser. (For example, users with limited vision may wish to set the font size much larger than the size chosen by a web designer.) Therefore, avoid using pixels for font sizes if you wish to create an inclusive design.</div>
+
+<h3 name="Ems" id="Ems">Ems</h3>
+
+<p>Another way of setting the font size is with <code>em</code> values. The size of an <code>em</code> value is dynamic. When defining the <code>font-size</code> property, an em is equal to the size of the font that applies to the parent of the element in question. If you haven't set the font size anywhere on the page, then it is the browser default, which is often 16px. So, by default 1em = 16px, and 2em = 32px. If you set a <code>font-size</code> of 20px on the body element, then 1em = 20px and 2em = 40px. Note that the value 2 is essentially a multiplier of the current em size.</p>
+
+<p>In order to calculate the em equivalent for any pixel value required, you can use this formula:</p>
+
+<pre>em = desired element pixel value / parent element font-size in pixels</pre>
+
+<p>For example, suppose the font-size of the body of the page is set to 16px. If the font-size you want is 12px, then you should specify 0.75em (because 12/16 = 0.75). Similarly, if you want a font size of 10px, then specify 0.625em (10/16 = 0.625); for 22px, specify 1.375em (22/16).</p>
+
+<p>The em is a very useful unit in CSS, since it automatically adapts its length relative to the font that the reader chooses to use.</p>
+
+<p>One important fact to keep in mind:&nbsp; em values compound. Take the following HTML and apply it with the previous CSS above:</p>
+
+<pre class="brush: html">&lt;div&gt;
+&lt;span&gt;Outer &lt;span&gt;inner&lt;/span&gt; outer&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+<p>The result is:</p>
+
+<p><iframe width="400" frameborder="0" id="frame_Ems" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/font-size%24samples/Emsbe7f.html?revision=1138989" height="40" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<p>Assuming that the browser's default <code>font-size</code> is 16px, the words “outer” would be rendered at 16px, but the word “inner” would be rendered at 25.6px. This is because the inner span's <code>font-size</code> is 1.6 em which is relative to its parent's <code>font-size</code>, which is in turn relative to its parent's <code>font-size</code>. This is often called <strong>compounding</strong>.</p>
+
+<h3 name="Rems" id="Rems">Rems</h3>
+
+<p><code>rem</code> values were invented in order to sidestep the compounding problem. <code>rem</code> values are relative to the root <code>html</code> element, not the parent element. In other words, it lets you specify a font size in a relative fashion without being affected by the size of the parent, thereby eliminating compounding.</p>
+
+<p>The CSS below is nearly identical to the previous example. The only exception is that the unit has been changed to <code>rem</code>.</p>
+
+<pre class="brush: css">html {
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+}
+span {
+  font-size: 1.6rem;
+}
+</pre>
+
+<p>Then we apply this CSS to the same HTML, which looks like this:</p>
+
+<pre class="brush: html">&lt;span&gt;Outer &lt;span&gt;inner&lt;/span&gt; outer&lt;/span&gt;</pre>
+
+<p><iframe width="400" frameborder="0" id="frame_Rems" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/font-size%24samples/Remsbe7f.html?revision=1138989" height="40" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<p>In this example, the words “outer inner outer” are all displayed at 16px (assuming that the browser's font-size has been left at the default value of 16px).</p>
+
+<h2 name="Examples" id="Examples">Examples</h2>
+
+<h3 name="Example_1" id="Example_1">Example 1</h3>
+
+<pre class="brush: css">/* Set paragraph text to be very large. */
+p { font-size: xx-large }
+
+/* Set h1 (level 1 heading) text to be 2.5 times the size
+ * of the text around it. */
+h1 { font-size: 250% }
+
+/* Sets text enclosed within span tag to be 16px */
+span { font-size: 16px; }
+</pre>
+
+<h3 id="Example_2">Example 2</h3>
+
+<pre class="brush: css">.small {
+	font-size: xx-small;
+}
+.larger {
+	font-size: larger;
+}
+.point {
+	font-size: 24pt;
+}
+.percent {
+	font-size: 200%;
+}
+</pre>
+
+<pre class="brush: html"><span>&lt;h1 class="small"&gt;Small H1&lt;/h1&gt;
+&lt;h1 class="larger"&gt;Larger H1&lt;/h1&gt;</span>
+<span>&lt;h1 class="point"&gt;24 point H1&lt;/h1&gt;
+&lt;h1 class="percent"&gt;200% H1&lt;/h1&gt;</span></pre>
+
+<h4 id="Live_Sample">Live Sample</h4>
+
+<p><iframe width="600" frameborder="0" id="frame_Example_2" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/font-size%24samples/Example_2be7f.html?revision=1138989" height="200" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h2 name="Notes" id="Notes">Notes</h2>
+
+<p><code>em</code> and <code>ex</code> units on the <a title="The font-size CSS property specifies the size of the font (historically the width of the capital &quot;M&quot;). Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the em and ex &lt;length&gt; units." href="/en-US/docs/Web/CSS/font-size"><code>font-size</code></a> property are relative to the parent element's font size (unlike all other properties, where they're relative to the font size on the element). This means <code>em</code> units and percentages do the same thing for <a title="The font-size CSS property specifies the size of the font (historically the width of the capital &quot;M&quot;). Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the em and ex &lt;length&gt; units." href="/en-US/docs/Web/CSS/font-size"><code>font-size</code></a>.</p>
+
+<h2 name="Specifications" id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a lang="en" hreflang="en" href="https://drafts.csswg.org/css-fonts-3/#font-size-prop" class="external">CSS Fonts Module Level&nbsp;3<br><small lang="en-US">The definition of 'font-size' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>No change</td>
+  </tr>
+  <tr>
+   <td><a lang="en" hreflang="en" href="https://drafts.csswg.org/css-transitions/#animatable-css" class="external">CSS Transitions<br><small lang="en-US">The definition of 'font-size' in that specification.</small></a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>Defines <code>font-size</code> as animatable.</td>
+  </tr>
+  <tr>
+   <td><a lang="en" hreflang="en" href="http://www.w3.org/TR/CSS2/fonts.html#propdef-font-size" class="external">CSS Level&nbsp;2 (Revision&nbsp;1)<br><small lang="en-US">The definition of 'font-size' in that specification.</small></a></td>
+   <td><span class="spec-REC">Recommendation</span></td>
+   <td>No change</td>
+  </tr>
+  <tr>
+   <td><a lang="en" hreflang="en" href="http://www.w3.org/TR/CSS1/#font-size" class="external">CSS Level&nbsp;1<br><small lang="en-US">The definition of 'font-size' in that specification.</small></a></td>
+   <td><span class="spec-REC">Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 name="Browser_compatibility" id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>1.0</td>
+   <td>1.0 (1.7 or earlier)</td>
+   <td>5.5</td>
+   <td>7.0</td>
+   <td>1.0</td>
+  </tr>
+  <tr>
+   <td>Rem values</td>
+   <td>31.0</td>
+   <td>31.0</td>
+   <td>9<sup>[1]</sup><br>
+    11</td>
+   <td>28.0</td>
+   <td>7.0</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Chrome for Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Mobile</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>1.0</td>
+   <td>1.0</td>
+   <td>1.0 (1)</td>
+   <td>6.0</td>
+   <td>6.0</td>
+   <td>
+    <p>1.0</p>
+   </td>
+  </tr>
+  <tr>
+   <td>Rem values</td>
+   <td>4.1</td>
+   <td>42</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] Internet Explorer 9 and 10 only had partial support for this feature.</p>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Fonts.html">CSS Fonts</a></li>
+      
+        <li><a href="../../tag/CSS%20Property.html">CSS Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/cpplearner">cpplearner</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/roy-vanegas">roy-vanegas</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mina86">mina86</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/dmitriz">dmitriz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Simplexible">Simplexible</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Prinz_Rana">Prinz_Rana</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/TylerH">TylerH</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Flimm">Flimm</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/wbamberg">wbamberg</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/roryokane">roryokane</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jeff_mangus">jeff_mangus</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/geanglin">geanglin</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Tarmil">Tarmil</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/gilmtw123">gilmtw123</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/trevorh">trevorh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/revandy">revandy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/william_rose26@aol.com">william_rose26@aol.com</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/angelofuma2010">angelofuma2010</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/oceanwalker23@yahoo.com">oceanwalker23@yahoo.com</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/brunoais">brunoais</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/hannahozasa">hannahozasa</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jswisher">jswisher</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mezzanine">Mezzanine</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/pdmdn">pdmdn</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/McGurk">McGurk</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/nizyri">nizyri</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kyleb">kyleb</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/myakura">myakura</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/grendel">grendel</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot">Mgjbot</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/BijuGC">BijuGC</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Killerowski">Killerowski</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Fredchat">Fredchat</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/DBaron">DBaron</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Backinblakk">Backinblakk</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/cpplearner">cpplearner</a>,
+                      <time datetime="2016-11-06T10:12:17-08:00">Nov 6, 2016, 10:12:17 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Fonts.html">CSS Fonts</a></strong></li><li data-default-state="open"><a href="#"><strong>At-Rules</strong></a><ol><li><a title="The @font-face CSS at-rule allows authors to specify online fonts to display text on their web pages. By allowing authors to provide their own fonts, @font-face eliminates the need to depend on the limited number of fonts users have installed on their computers. The @font-face at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule." href="%40font-face.html"><code>@font-face</code></a></li><li><a title="The @font-feature-values CSS at-rule allows authors to use a common name in font-variant-alternates for feature activated differently in OpenType. It allows to simplify the CSS when using several fonts." href="%40font-feature-values.html"><code>@font-feature-values</code></a></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a title="The font CSS property is either a shorthand property for setting font-style, font-variant, font-weight, font-size, line-height and font-family, or a way to set the element's font to a system font, using specific keywords." href="font.html"><code>font</code></a></li><li><a title="The font-family CSS property lets you specify a prioritized list of font family names and/or generic family names for the selected element. Values are separated by a comma to indicate that they are alternatives. The browser will select the first font on the list that is installed on the computer or that can be downloaded using a @font-face at-rule." href="font-family.html"><code>font-family</code></a></li><li><a title="The font-feature-settings CSS property gives you control over advanced typographic features in OpenType fonts." href="font-feature-settings.html"><code>font-feature-settings</code></a></li><li><a title="The font-kerning CSS property controls the usage of the kerning information; that is, it controls how letters are spaced. The kerning information is stored in the font, and if the font is well-kerned, this feature allows spacing between characters to be very similar, whatever the characters are." href="font-kerning.html"><code>font-kerning</code></a></li><li><a title="The font-language-override CSS property controls the usage of language-specific glyphs in a typeface." href="font-language-override.html"><code>font-language-override</code></a></li><li><em><code>font-size</code></em></li><li><a title="The font-size-adjust CSS property specifies that font size should be chosen based on the height of lowercase letters rather than the height of capital letters. This is useful since the legibility of fonts, especially at small sizes, is determined more by the size of lowercase letters than by the size of capital letters." href="font-size-adjust.html"><code>font-size-adjust</code></a></li><li><a title="The font-stretch property selects a normal, condensed, or expanded face from a font." href="font-stretch.html"><code>font-stretch</code></a></li><li><a title="The font-style CSS property lets you select italic or oblique faces within a font-family. Italic forms are generally cursive in nature, usually using less horizontal space than their unstyled counterparts, while oblique faces are usually just sloped versions of the regular face. Both italic and oblique faces are simulated by artificially sloping the glyphs of the regular face (see font-synthesis for control over this)." href="font-style.html"><code>font-style</code></a></li><li><a title="The font-synthesis CSS property controls which missing typefaces, bold or italic, may be synthesized by the browser." href="font-synthesis.html"><code>font-synthesis</code></a></li><li><a title="The font-variant property acts as a shorthand for the longhand properties: font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian. You can also set the CSS Level 2 (Revision 1) values of font-variant, (that is, normal or small-caps), by using the font shorthand." href="font-variant.html"><code>font-variant</code></a></li><li><a title="The font-variant-alternates CSS property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in @font-feature-values." href="font-variant-alternates.html"><code>font-variant-alternates</code></a></li><li><a title="The font-variant-caps CSS property controls the usage of alternate glyphs for capital letters. Scripts can have capital letter glyphs of different sizes, the normal uppercase glyphs, small capital glyphs, and petite capital glyphs. This property controls which alternate glyphs to use." href="font-variant-caps.html"><code>font-variant-caps</code></a></li><li><a title="The font-variant-east-asian CSS property controls the usage of alternate glyphs for East Asian scripts, like Japanese and Chinese." href="font-variant-east-asian.html"><code>font-variant-east-asian</code></a></li><li><a title="The font-variant-ligatures CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text." href="font-variant-ligatures.html"><code>font-variant-ligatures</code></a></li><li><a title="The font-variant-numeric CSS property controls the usage of alternate glyphs for numbers, fractions, and ordinal markers." href="font-variant-numeric.html"><code>font-variant-numeric</code></a></li><li><a title="The font-variant-position CSS property controls the usage of alternate glyphs of smaller size positioned as superscript or subscript regarding the baseline of the font, which is set unchanged. These glyphs are likely to be used in &lt;sub&gt; and &lt;sup&gt; elements." href="/en-US/docs/Web/CSS/font-variant-position"><code>font-variant-position</code></a></li><li><a title="The font-weight CSS property specifies the weight or boldness of the font. Some fonts are only available in normal and bold." href="font-weight.html"><code>font-weight</code></a></li><li><a title="On block level elements, the line-height property specifies the minimum height of line boxes within the element." href="line-height.html"><code>line-height</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/font-size$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/font-size$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/font-size" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="Spanish" value="/es/docs/Web/CSS/font-size">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/font-size">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/font-size">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/font-size">
+            한국어 (ko)
+          </option>
+          <option title="Polish" value="/pl/docs/Web/CSS/font-size">
+            Polski (pl)
+          </option>
+          <option title="Portuguese (Portugal)" value="/pt-PT/docs/Web/CSS/font-size">
+            Português (Europeu) (pt-PT)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/font-size">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/font-size">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/font-size by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:41:34 GMT -->
+</body></html>

@@ -1,0 +1,1239 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/Reference by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:26:47 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>CSS reference</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference$json">
+  <link rel="canonical" href="Reference.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/CSS_Referenz" title="CSS Referenz">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/Referencia_CSS" title="Referencia CSS">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference" title="Référence CSS">
+    
+      <link rel="alternate" hreflang="hi-IN" href="https://developer.mozilla.org/hi-IN/docs/Web/CSS/Reference" title="CSS reference">
+    
+      <link rel="alternate" hreflang="id" href="https://developer.mozilla.org/id/docs/Web/CSS/Reference" title="CSS reference">
+    
+      <link rel="alternate" hreflang="it" href="https://developer.mozilla.org/it/docs/Web/CSS/Guida_di_riferimento_ai_CSS" title="Guida di riferimento ai CSS">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/Reference" title="CSS リファレンス">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Reference" title="CSS Reference">
+    
+      <link rel="alternate" hreflang="pl" href="https://developer.mozilla.org/pl/docs/Web/CSS/CSS_Reference" title="Dokumentacja CSS">
+    
+      <link rel="alternate" hreflang="pt-BR" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Reference" title="Referência CSS">
+    
+      <link rel="alternate" hreflang="pt-PT" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/Referência_CSS" title="Referência CSS">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/Reference" title="Руководство по CSS">
+    
+      <link rel="alternate" hreflang="tr" href="https://developer.mozilla.org/tr/docs/Web/CSS/Reference" title="CSS Refernansı">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference" title="CSS 参考">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="CSS reference">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
+  <meta name="twitter:title" content="CSS reference">
+  
+  <meta property="og:description" content="This CSS Reference shows the basic syntax of a CSS rule; lists all standard CSS properties, pseudo-classes and pseudo-elements, @-rules, units, and selectors,&nbsp;all together in alphabetical order, as well as just the selectors by type ;&nbsp;and allows you to quickly access detailed information for each of them. It not only lists the CSS 1 and CSS 2.1 properties, but also is a CSS3 reference that links to any CSS3 property and concept standardized, or already stabilized. &nbsp;Also included is a brief DOM-CSS / CSSOM reference.">
+  <meta name="description" content="This CSS Reference shows the basic syntax of a CSS rule; lists all standard CSS properties, pseudo-classes and pseudo-elements, @-rules, units, and selectors,&nbsp;all together in alphabetical order, as well as just the selectors by type ;&nbsp;and allows you to quickly access detailed information for each of them. It not only lists the CSS 1 and CSS 2.1 properties, but also is a CSS3 reference that links to any CSS3 property and concept standardized, or already stabilized. &nbsp;Also included is a brief DOM-CSS / CSSOM reference.">
+  <meta name="twitter:description" content="This CSS Reference shows the basic syntax of a CSS rule; lists all standard CSS properties, pseudo-classes and pseudo-elements, @-rules, units, and selectors,&nbsp;all together in alphabetical order, as well as just the selectors by type ;&nbsp;and allows you to quickly access detailed information for each of them. It not only lists the CSS 1 and CSS 2.1 properties, but also is a CSS3 reference that links to any CSS3 property and concept standardized, or already stabilized. &nbsp;Also included is a brief DOM-CSS / CSSOM reference.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/Reference" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FReference" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/Reference">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/CSS_Referenz" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/Referencia_CSS" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/hi-IN/docs/Web/CSS/Reference" title="Hindi (India)">हिन्दी (भारत) (hi-IN)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/id/docs/Web/CSS/Reference" title="Indonesian">Bahasa Indonesia (id)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/it/docs/Web/CSS/Guida_di_riferimento_ai_CSS" title="Italian">Italiano (it)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/Reference" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Reference" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pl/docs/Web/CSS/CSS_Reference" title="Polish">Polski (pl)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Reference" title="Portuguese (Brazilian)">Português (do&nbsp;Brasil) (pt-BR)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/Referência_CSS" title="Portuguese (Portugal)">Português (Europeu) (pt-PT)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/Reference" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/tr/docs/Web/CSS/Reference" title="Turkish">Türkçe (tr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">CSS reference</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jeremie" title="View profile: Jeremie">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jeremie" data-src="../../../../../secure.gravatar.com/avatar/ea74cf7f528273838138e9ae407cd8ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jeremie</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/pcat" title="View profile: pcat">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="pcat" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">pcat</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/BychekRU" title="View profile: BychekRU">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="BychekRU" data-src="../../../../../secure.gravatar.com/avatar/bf305e50606dd2a25a8ab673e317fc266c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">BychekRU</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/avd-apps" title="View profile: avd-apps">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="avd-apps" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">avd-apps</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/xiaolong" title="View profile: xiaolong">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="xiaolong" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">xiaolong</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/amitabha197" title="View profile: amitabha197">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="amitabha197" data-src="../../../../../secure.gravatar.com/avatar/db120a6c3f973ebba7252d7bea55870b6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">amitabha197</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/chrisdavidmills" title="View profile: chrisdavidmills">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="chrisdavidmills" data-src="../../../../../secure.gravatar.com/avatar/deeea0ba82390bd5acc539703c4b0cfb6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">chrisdavidmills</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei" title="View profile: ziyunfei">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ziyunfei" data-src="../../../../../secure.gravatar.com/avatar/2dbf9c055c2b32d3ca45d25be01174236c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ziyunfei</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jonathan_Watt" title="View profile: Jonathan_Watt">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jonathan_Watt" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jonathan_Watt</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/phil_nist" title="View profile: phil_nist">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="phil_nist" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">phil_nist</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/loptop" title="View profile: loptop">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="loptop" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">loptop</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jswisher" title="View profile: jswisher">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jswisher" data-src="../../../../../secure.gravatar.com/avatar/38185c2812cbcae186ebbe4a829106616c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jswisher</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/HUBOGART" title="View profile: HUBOGART">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="HUBOGART" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">HUBOGART</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/elkhote" title="View profile: elkhote">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="elkhote" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">elkhote</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/hade" title="View profile: hade">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="hade" data-src="../../../../../secure.gravatar.com/avatar/3939022c46738cce401336a98d44254d6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">hade</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jogo.obb" title="View profile: jogo.obb">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jogo.obb" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jogo.obb</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/bpartridge81" title="View profile: bpartridge81">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="bpartridge81" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">bpartridge81</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/deepak7275" title="View profile: deepak7275">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="deepak7275" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">deepak7275</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/lmorchard" title="View profile: lmorchard">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="lmorchard" data-src="../../../../../secure.gravatar.com/avatar/b45c48fc9e05922e2f368a9d7d7d8de16c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">lmorchard</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/tregagnon" title="View profile: tregagnon">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tregagnon" data-src="../../../../../secure.gravatar.com/avatar/8431892ef37f88fe820096de721c00ba6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tregagnon</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/takahashi_yuki" title="View profile: takahashi_yuki">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="takahashi_yuki" data-src="../../../../../secure.gravatar.com/avatar/1ba16bea58565ceea9da36ac59b3d79a6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">takahashi_yuki</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Manuel_Strehl" title="View profile: Manuel_Strehl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Manuel_Strehl" data-src="../../../../../secure.gravatar.com/avatar/9b786dd1448a5a6da29ec7ef0b228e5f6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Manuel_Strehl</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/McGurk" title="View profile: McGurk">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="McGurk" data-src="../../../../../secure.gravatar.com/avatar/dcf5220f84cecf5b4eec14f0c43a589a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">McGurk</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/sjltaylor" title="View profile: sjltaylor">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="sjltaylor" data-src="../../../../../secure.gravatar.com/avatar/b2f47c3c1e51b5609b5de048d8fb046e6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">sjltaylor</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/inma_610" title="View profile: inma_610">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="inma_610" data-src="../../../../../secure.gravatar.com/avatar/bdc39d1a570f34b1aca764a6dd6822586c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">inma_610</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/BijuGC" title="View profile: BijuGC">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="BijuGC" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">BijuGC</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jwalker" title="View profile: jwalker">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jwalker" data-src="../../../../../secure.gravatar.com/avatar/8dd47f0c426cd8204b8bf996cb98cb566c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jwalker</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Crash" title="View profile: Crash">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Crash" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Crash</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Brettz9" title="View profile: Brettz9">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Brettz9" data-src="../../../../../secure.gravatar.com/avatar/4c750582e23fcf068bdde51cc50416d16c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Brettz9</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Miken32" title="View profile: Miken32">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Miken32" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Miken32</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Moacir Bispo" title="View profile: Moacir Bispo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Moacir Bispo" data-src="../../../../../secure.gravatar.com/avatar/25a014973df6df625e3a5cf7c6e946bb6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Moacir Bispo</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/TigerSoldier" title="View profile: TigerSoldier">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="TigerSoldier" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">TigerSoldier</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Nathymig" title="View profile: Nathymig">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Nathymig" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Nathymig</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot" title="View profile: Mgjbot">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mgjbot" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mgjbot</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Saurabhmathur" title="View profile: Saurabhmathur">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Saurabhmathur" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Saurabhmathur</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Waldo" title="View profile: Waldo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Waldo" data-src="../../../../../secure.gravatar.com/avatar/d26a0ca7ae1134e0e1dbdddf82e289296c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Waldo</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Pastelgrim" title="View profile: Pastelgrim">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Pastelgrim" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Pastelgrim</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Michael2402" title="View profile: Michael2402">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Michael2402" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Michael2402</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Federico" title="View profile: Federico">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Federico" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Federico</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/DBaron" title="View profile: DBaron">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="DBaron" data-src="../../../../../secure.gravatar.com/avatar/0a32391d55cfa63276f87eb9819dfbd06c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">DBaron</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/George3" title="View profile: George3">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="George3" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">George3</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Nickolay" title="View profile: Nickolay">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Nickolay" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Nickolay</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Ptak82" title="View profile: Ptak82">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Ptak82" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Ptak82</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Dria" title="View profile: Dria">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Dria" data-src="../../../../../secure.gravatar.com/avatar/c6c044311a2c98b383718e00964cda726c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Dria</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>CSS reference</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-closed wiki-left-none">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Basic_rule_syntax" rel="internal">Basic rule syntax</a></li><li><a href="#Keyword_index" rel="internal">Keyword index</a></li><li><a href="#Selectors" rel="internal">Selectors</a></li><li><a href="#CSS3_Tutorials" rel="internal">CSS3 Tutorials</a></li><li><a href="#Concepts" rel="internal">Concepts</a></li><li><a href="#DOM-CSS_CSSOM" rel="internal">DOM-CSS / CSSOM</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-main wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p><span class="seoSummary">This <em>CSS Reference</em> shows the basic syntax of a CSS rule; lists all standard <a href="../CSS.html">CSS</a> properties, <a href="Pseudo-classes.html">pseudo-classes</a> and <a href="Pseudo-elements.html">pseudo-elements</a>, <a href="At-rule.html">@-rules</a>, <a href="length.html">units</a>, and <a href="../Guide/CSS/Getting_Started/Selectors.html">selectors</a>,&nbsp;all together in <a href="#Keyword_index">alphabetical order</a>, as well as just the <a href="#Selectors">selectors by type</a>;&nbsp;and allows you to quickly access detailed information for each of them. It not only lists the CSS 1 and CSS 2.1 properties, but also is a CSS3 reference that links to any <a href="CSS3.html">CSS3</a> property and concept standardized, or already stabilized. &nbsp;Also included is a brief&nbsp;<a href="#DOM_CSS">DOM-CSS / CSSOM reference</a>.</span></p>
+
+<p>Note that CSS rule-definitions are entirely (ASCII) <a href="https://www.w3.org/TR/css-syntax-3/#intro" class="external">text-based</a>, whereas DOM-CSS / CSSOM,&nbsp;the&nbsp;rule-management system, is <a href="https://www.w3.org/TR/cssom/#introduction" class="external">object-based</a>.</p>
+
+<p>See also <a href="Mozilla_Extensions.html">Mozilla CSS Extensions</a> for Gecko-specific properties prefixed with <code>-moz</code>; and <a href="Webkit_Extensions.html">WebKit CSS Extensions</a> for WebKit-specific properties. See <a href="http://peter.sh/experiments/vendor-prefixed-css-property-overview/" class="external">Vendor-prefixed CSS Property Overview</a> by Peter Beverloo for all prefixed properties.</p>
+
+<h2 id="Basic_rule_syntax">Basic rule syntax</h2>
+
+<p>Be warned that any syntax error in a rule definition will invalidate the entire rule.</p>
+
+<h3 id="Style_rules">Style rules</h3>
+
+<pre class="syntaxbox"><strong><var>selectorlist</var> { <var>property</var>: <var>value</var>;</strong> <var>[more property:value; pairs]</var> <strong>}</strong>
+
+...where <var>selectorlist</var> is: <var>selector[:pseudo-class] [::pseudo-element] [, more selectorlists]</var>
+
+See <a href="#Selectors"><em>selector</em></a>, <a href="#pelm"><em>pseudo-element</em></a>, <a href="#pcls"><em>pseudo-class</em></a> lists below.
+</pre>
+
+<h4 id="Examples">Examples</h4>
+
+<pre class="brush: css">strong { color: red;}                                
+div.menu-bar li:hover &gt; ul { display: block; }
+</pre>
+
+<p>More about examples: <a href="../Guide/CSS/Getting_started/Selectors-2.html#Information_Selectors">#1</a>, <a href="../Guide/CSS/Getting_started/Selectors-2.html#Action_Using_selectors_based_on_relationships_and_pseudo-classes">#2</a></p>
+
+<h3 id="rules">@rules</h3>
+
+<p>As these have so many different structure-formats, see the desired <a href="At-rule.html">At-rule</a> for syntax.</p>
+
+<h2 id="Keyword_index">Keyword index</h2>
+
+<div><div class="index"> 
+    <span>A</span><ul><li><a href="_active.html"><code>:active</code></a></li><li><a href="%40counter-style/additive-symbols.html"><code>additive-symbols (@counter-style)</code></a></li><li><a href="__after.html"><code>::after (:after)</code></a></li><li><a href="align-content.html"><code>align-content</code></a></li><li><a href="align-items.html"><code>align-items</code></a></li><li><a href="align-self.html"><code>align-self</code></a></li><li><a href="all.html"><code>all</code></a></li><li><a href="angle.html"><code>&lt;angle&gt;</code></a></li><li><a href="animation.html"><code>animation</code></a></li><li><a href="animation-delay.html"><code>animation-delay</code></a></li><li><a href="animation-direction.html"><code>animation-direction</code></a></li><li><a href="animation-duration.html"><code>animation-duration</code></a></li><li><a href="animation-fill-mode.html"><code>animation-fill-mode</code></a></li><li><a href="animation-iteration-count.html"><code>animation-iteration-count</code></a></li><li><a href="animation-name.html"><code>animation-name</code></a></li><li><a href="animation-play-state.html"><code>animation-play-state</code></a></li><li><a href="animation-timing-function.html"><code>animation-timing-function</code></a></li><li><a href="%40font-feature-values.html#@annotation"><code>@annotation</code></a></li><li><a href="font-variant-alternates.html#annotation()"><code>annotation()</code></a></li><li><a href="attr.html"><code>attr()</code></a></li></ul><span>B</span><ul><li><a href="__backdrop.html"><code>::backdrop</code></a></li><li><a href="backface-visibility.html"><code>backface-visibility</code></a></li><li><a href="background.html"><code>background</code></a></li><li><a href="background-attachment.html"><code>background-attachment</code></a></li><li><a href="background-blend-mode.html"><code>background-blend-mode</code></a></li><li><a href="background-clip.html"><code>background-clip</code></a></li><li><a href="background-color.html"><code>background-color</code></a></li><li><a href="background-image.html"><code>background-image</code></a></li><li><a href="background-origin.html"><code>background-origin</code></a></li><li><a href="background-position.html"><code>background-position</code></a></li><li><a href="background-repeat.html"><code>background-repeat</code></a></li><li><a href="background-size.html"><code>background-size</code></a></li><li><a href="basic-shape.html"><code>&lt;basic-shape&gt;</code></a></li><li><a href="__before.html"><code>::before (:before)</code></a></li><li><a href="blend-mode.html"><code>&lt;blend-mode&gt;</code></a></li><li><a href="block-size.html"><code>block-size</code></a></li><li><a href="filter.html#blur()"><code>blur()</code></a></li><li><a href="border.html"><code>border</code></a></li><li><a href="border-block-end.html"><code>border-block-end</code></a></li><li><a href="border-block-end-color.html"><code>border-block-end-color</code></a></li><li><a href="border-block-end-style.html"><code>border-block-end-style</code></a></li><li><a href="border-block-end-width.html"><code>border-block-end-width</code></a></li><li><a href="border-block-start.html"><code>border-block-start</code></a></li><li><a href="border-block-start-color.html"><code>border-block-start-color</code></a></li><li><a href="border-block-start-style.html"><code>border-block-start-style</code></a></li><li><a href="border-block-start-width.html"><code>border-block-start-width</code></a></li><li><a href="border-bottom.html"><code>border-bottom</code></a></li><li><a href="border-bottom-color.html"><code>border-bottom-color</code></a></li><li><a href="border-bottom-left-radius.html"><code>border-bottom-left-radius</code></a></li><li><a href="border-bottom-right-radius.html"><code>border-bottom-right-radius</code></a></li><li><a href="border-bottom-style.html"><code>border-bottom-style</code></a></li><li><a href="border-bottom-width.html"><code>border-bottom-width</code></a></li><li><a href="border-collapse.html"><code>border-collapse</code></a></li><li><a href="border-color.html"><code>border-color</code></a></li><li><a href="border-image.html"><code>border-image</code></a></li><li><a href="border-image-outset.html"><code>border-image-outset</code></a></li><li><a href="border-image-repeat.html"><code>border-image-repeat</code></a></li><li><a href="border-image-slice.html"><code>border-image-slice</code></a></li><li><a href="border-image-source.html"><code>border-image-source</code></a></li><li><a href="border-image-width.html"><code>border-image-width</code></a></li><li><a href="border-inline-end.html"><code>border-inline-end</code></a></li><li><a href="border-inline-end-color.html"><code>border-inline-end-color</code></a></li><li><a href="border-inline-end-style.html"><code>border-inline-end-style</code></a></li><li><a href="border-inline-end-width.html"><code>border-inline-end-width</code></a></li><li><a href="border-inline-start.html"><code>border-inline-start</code></a></li><li><a href="border-inline-start-color.html"><code>border-inline-start-color</code></a></li><li><a href="border-inline-start-style.html"><code>border-inline-start-style</code></a></li><li><a href="border-inline-start-width.html"><code>border-inline-start-width</code></a></li><li><a href="border-left.html"><code>border-left</code></a></li><li><a href="border-left-color.html"><code>border-left-color</code></a></li><li><a href="border-left-style.html"><code>border-left-style</code></a></li><li><a href="border-left-width.html"><code>border-left-width</code></a></li><li><a href="border-radius.html"><code>border-radius</code></a></li><li><a href="border-right.html"><code>border-right</code></a></li><li><a href="border-right-color.html"><code>border-right-color</code></a></li><li><a href="border-right-style.html"><code>border-right-style</code></a></li><li><a href="border-right-width.html"><code>border-right-width</code></a></li><li><a href="border-spacing.html"><code>border-spacing</code></a></li><li><a href="border-style.html"><code>border-style</code></a></li><li><a href="border-top.html"><code>border-top</code></a></li><li><a href="border-top-color.html"><code>border-top-color</code></a></li><li><a href="border-top-left-radius.html"><code>border-top-left-radius</code></a></li><li><a href="border-top-right-radius.html"><code>border-top-right-radius</code></a></li><li><a href="border-top-style.html"><code>border-top-style</code></a></li><li><a href="border-top-width.html"><code>border-top-width</code></a></li><li><a href="border-width.html"><code>border-width</code></a></li><li><a href="bottom.html"><code>bottom</code></a></li><li><a href="%40bottom-center.html" class="new"><code>@bottom-center</code></a></li><li><a href="%40bottom-left.html" class="new"><code>@bottom-left</code></a></li><li><a href="%40bottom-left-corner.html" class="new"><code>@bottom-left-corner</code></a></li><li><a href="%40bottom-right.html" class="new"><code>@bottom-right</code></a></li><li><a href="%40bottom-right-corner.html" class="new"><code>@bottom-right-corner</code></a></li><li><a href="box-decoration-break.html"><code>box-decoration-break</code></a></li><li><a href="box-shadow.html"><code>box-shadow</code></a></li><li><a href="box-sizing.html"><code>box-sizing</code></a></li><li><a href="break-after.html"><code>break-after</code></a></li><li><a href="break-before.html"><code>break-before</code></a></li><li><a href="break-inside.html"><code>break-inside</code></a></li><li><a href="filter.html#brightness()"><code>brightness()</code></a></li></ul><span>C</span><ul><li><a href="calc.html"><code>calc()</code></a></li><li><a href="caption-side.html"><code>caption-side</code></a></li><li><a href="length.html#ch"><code>ch</code></a></li><li><a href="%40character-variant.html" class="new"><code>@character-variant</code></a></li><li><a href="%40font-face/font-variant.html#character-variant()" class="new"><code>character-variant()</code></a></li><li><a href="%40charset.html"><code>@charset</code></a></li><li><a href="_checked.html"><code>:checked</code></a></li><li><a href="circle.html" class="new"><code>circle()</code></a></li><li><a href="clear.html"><code>clear</code></a></li><li><a href="clip.html"><code>clip</code></a></li><li><a href="clip-path.html"><code>clip-path</code></a></li><li><a href="length.html#cm"><code>cm</code></a></li><li><a href="color_value.html"><code>&lt;color&gt;</code></a></li><li><a href="color.html"><code>color</code></a></li><li><a href="column-count.html"><code>column-count</code></a></li><li><a href="column-fill.html"><code>column-fill</code></a></li><li><a href="column-gap.html"><code>column-gap</code></a></li><li><a href="column-rule.html"><code>column-rule</code></a></li><li><a href="column-rule-color.html"><code>column-rule-color</code></a></li><li><a href="column-rule-style.html"><code>column-rule-style</code></a></li><li><a href="column-rule-width.html"><code>column-rule-width</code></a></li><li><a href="column-span.html"><code>column-span</code></a></li><li><a href="column-width.html"><code>column-width</code></a></li><li><a href="columns.html"><code>columns</code></a></li><li><a href="content.html"><code>content</code></a></li><li><a href="filter.html#contrast()"><code>contrast()</code></a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters"><code>&lt;counter&gt;</code></a></li><li><a href="counter-increment.html"><code>counter-increment</code></a></li><li><a href="counter-reset.html"><code>counter-reset</code></a></li><li><a href="%40counter-style.html"><code>@counter-style</code></a></li><li><a href="cross-fade.html" class="new"><code>cross-fade()</code></a></li><li><a href="cubic-bezier.html" class="new"><code>cubic-bezier()</code></a></li><li><a href="cursor.html"><code>cursor</code></a></li><li><a href="custom-ident.html"><code>&lt;custom-ident&gt;</code></a></li></ul><span>D</span><ul><li><a href="_default.html"><code>:default</code></a></li><li><a href="angle.html#deg"><code>deg</code></a></li><li><a href="_dir.html"><code>:dir</code></a></li><li><a href="direction.html"><code>direction</code></a></li><li><a href="_disabled.html"><code>:disabled</code></a></li><li><a href="display.html"><code>display</code></a></li><li><a href="resolution.html#dpcm"><code>dpcm</code></a></li><li><a href="resolution.html#dpi"><code>dpi</code></a></li><li><a href="resolution.html#dppx"><code>dppx</code></a></li><li><a href="filter.html#drop-shadow()"><code>drop-shadow()</code></a></li></ul><span>E</span><ul><li><a href="element.html"><code>element()</code></a></li><li><a href="ellipse.html" class="new"><code>ellipse()</code></a></li><li><a href="length.html#em"><code>em</code></a></li><li><a href="_empty.html"><code>:empty</code></a></li><li><a href="empty-cells.html"><code>empty-cells</code></a></li><li><a href="_enabled.html"><code>:enabled</code></a></li><li><a href="length.html#ex"><code>ex</code></a></li></ul><span>F</span><ul><li><a href="%40counter-style/fallback.html"><code>fallback (@counter-style)</code></a></li><li><a href="filter.html"><code>filter</code></a></li><li><a href="_first.html"><code>:first</code></a></li><li><a href="_first-child.html"><code>:first-child</code></a></li><li><a href="__first-letter.html"><code>::first-letter (:first-letter)</code></a></li><li><a href="__first-line.html"><code>::first-line (:first-line)</code></a></li><li><a href="_first-of-type.html"><code>:first-of-type</code></a></li><li><a href="fit-content.html"><code>fit-content()</code></a></li><li><a href="flex.html"><code>&lt;flex&gt;</code></a></li><li><a href="flex-basis.html"><code>flex-basis</code></a></li><li><a href="flex-direction.html"><code>flex-direction</code></a></li><li><a href="flex-flow.html"><code>flex-flow</code></a></li><li><a href="flex-grow.html"><code>flex-grow</code></a></li><li><a href="flex-shrink.html"><code>flex-shrink</code></a></li><li><a href="flex-wrap.html"><code>flex-wrap</code></a></li><li><a href="float.html"><code>float</code></a></li><li><a href="_focus.html"><code>:focus</code></a></li><li><a href="font.html"><code>font</code></a></li><li><a href="%40font-face.html"><code>@font-face</code></a></li><li><a href="font-family.html"><code>font-family</code></a></li><li><a href="%40font-face/font-family.html"><code>font-family (@font-face)</code></a></li><li><a href="font-feature-settings.html"><code>font-feature-settings</code></a></li><li><a href="%40font-face/font-feature-settings.html" class="new"><code>font-feature-settings (@font-face)</code></a></li><li><a href="%40font-feature-values.html"><code>@font-feature-values</code></a></li><li><a href="font-kerning.html"><code>font-kerning</code></a></li><li><a href="font-language-override.html"><code>font-language-override</code></a></li><li><a href="font-size.html"><code>font-size</code></a></li><li><a href="font-size-adjust.html"><code>font-size-adjust</code></a></li><li><a href="font-stretch.html"><code>font-stretch</code></a></li><li><a href="%40font-face/font-stretch.html" class="new"><code>font-stretch (@font-face)</code></a></li><li><a href="font-style.html"><code>font-style</code></a></li><li><a href="%40font-face/font-style.html"><code>font-style (@font-face)</code></a></li><li><a href="font-synthesis.html"><code>font-synthesis</code></a></li><li><a href="font-variant.html"><code>font-variant</code></a></li><li><a href="%40font-face/font-variant.html" class="new"><code>font-variant (@font-face)</code></a></li><li><a href="font-variant-alternates.html"><code>font-variant-alternates</code></a></li><li><a href="font-variant-caps.html"><code>font-variant-caps</code></a></li><li><a href="font-variant-east-asian.html"><code>font-variant-east-asian</code></a></li><li><a href="font-variant-ligatures.html"><code>font-variant-ligatures</code></a></li><li><a href="font-variant-numeric.html"><code>font-variant-numeric</code></a></li><li><a href="font-variant-position.html"><code>font-variant-position</code></a></li><li><a href="font-weight.html"><code>font-weight</code></a></li><li><a href="%40font-face/font-weight.html" class="new"><code>font-weight (@font-face)</code></a></li><li><a href="%40font-face/src.html#format()"><code>format()</code></a></li><li><a href="%40font-face/format().html" class="new"><code>format() (@font-face)</code></a></li><li><a href="length.html#fr"><code>fr</code></a></li><li><a href="frequency.html"><code>&lt;frequency&gt;</code></a></li><li><a href="_fullscreen.html"><code>:fullscreen</code></a></li></ul><span>G</span><ul><li><a href="angle.html#grad"><code>grad</code></a></li><li><a href="gradient.html"><code>&lt;gradient&gt;</code></a></li><li><a href="filter.html#grayscale()"><code>grayscale()</code></a></li><li><a href="grid.html"><code>grid</code></a></li><li><a href="grid-area.html"><code>grid-area</code></a></li><li><a href="grid-auto-columns.html"><code>grid-auto-columns</code></a></li><li><a href="grid-auto-flow.html"><code>grid-auto-flow</code></a></li><li><a href="grid-auto-rows.html"><code>grid-auto-rows</code></a></li><li><a href="grid-column.html"><code>grid-column</code></a></li><li><a href="grid-column-end.html"><code>grid-column-end</code></a></li><li><a href="grid-column-gap.html"><code>grid-column-gap</code></a></li><li><a href="grid-column-start.html"><code>grid-column-start</code></a></li><li><a href="grid-gap.html"><code>grid-gap</code></a></li><li><a href="grid-row.html"><code>grid-row</code></a></li><li><a href="grid-row-end.html"><code>grid-row-end</code></a></li><li><a href="grid-row-gap.html"><code>grid-row-gap</code></a></li><li><a href="grid-row-start.html"><code>grid-row-start</code></a></li><li><a href="grid-template.html"><code>grid-template</code></a></li><li><a href="grid-template-areas.html"><code>grid-template-areas</code></a></li><li><a href="grid-template-columns.html"><code>grid-template-columns</code></a></li><li><a href="grid-template-rows.html"><code>grid-template-rows</code></a></li></ul><span>H</span><ul><li><a href="height.html"><code>height</code></a></li><li><a href="%40viewport/height.html"><code>height (@viewport)</code></a></li><li><a href="%40historical-forms.html" class="new"><code>@historical-forms</code></a></li><li><a href="_hover.html"><code>:hover</code></a></li><li><a href="color_value.html#hsl()"><code>hsl()</code></a></li><li><a href="color_value.html#hsla()"><code>hsla()</code></a></li><li><a href="filter.html#hue-rotate()"><code>hue-rotate()</code></a></li><li><a href="hyphens.html"><code>hyphens</code></a></li><li><a href="frequency.html#hz"><code>hz</code></a></li></ul><span>I</span><ul><li><a href="ident.html" class="new"><code>&lt;ident&gt;</code></a></li><li><a href="image.html"><code>&lt;image&gt;</code></a></li><li><a href="image.html#The_image()_functional_notation"><code>image()</code></a></li><li><a href="image-orientation.html"><code>image-orientation</code></a></li><li><a href="image-rendering.html"><code>image-rendering</code></a></li><li><a href="image-resolution.html" class="new"><code>image-resolution</code></a></li><li><a href="image-set.html" class="new"><code>image-set()</code></a></li><li><a href="ime-mode.html"><code>ime-mode</code></a></li><li><a href="%40import.html"><code>@import</code></a></li><li><a href="length.html#in"><code>in</code></a></li><li><a href="_in-range.html"><code>:in-range</code></a></li><li><a href="_indeterminate.html"><code>:indeterminate</code></a></li><li><a href="inherit.html"><code>inherit</code></a></li><li><a href="initial.html"><code>initial</code></a></li><li><a href="inline-size.html"><code>inline-size</code></a></li><li><a href="inset.html" class="new"><code>inset()</code></a></li><li><a href="integer.html"><code>&lt;integer&gt;</code></a></li><li><a href="_invalid.html"><code>:invalid</code></a></li><li><a href="filter.html#invert()"><code>invert()</code></a></li><li><a href="isolation.html"><code>isolation</code></a></li></ul><span>J</span><ul><li><a href="justify-content.html"><code>justify-content</code></a></li></ul><span>K</span><ul><li><a href="%40keyframes.html"><code>@keyframes</code></a></li><li><a href="frequency.html#khz"><code>khz</code></a></li></ul><span>L</span><ul><li><a href="_lang.html"><code>:lang</code></a></li><li><a href="_last-child.html"><code>:last-child</code></a></li><li><a href="_last-of-type.html"><code>:last-of-type</code></a></li><li><a href="leader.html" class="new"><code>leader()</code></a></li><li><a href="_left.html"><code>:left</code></a></li><li><a href="left.html"><code>left</code></a></li><li><a href="%40left-bottom.html" class="new"><code>@left-bottom</code></a></li><li><a href="%40left-middle.html" class="new"><code>@left-middle</code></a></li><li><a href="%40left-top.html" class="new"><code>@left-top</code></a></li><li><a href="length.html"><code>&lt;length&gt;</code></a></li><li><a href="letter-spacing.html"><code>letter-spacing</code></a></li><li><a href="line-break.html"><code>line-break</code></a></li><li><a href="line-height.html"><code>line-height</code></a></li><li><a href="linear-gradient.html"><code>linear-gradient()</code></a></li><li><a href="_link.html"><code>:link</code></a></li><li><a href="list-style.html"><code>list-style</code></a></li><li><a href="list-style-image.html"><code>list-style-image</code></a></li><li><a href="list-style-position.html"><code>list-style-position</code></a></li><li><a href="list-style-type.html"><code>list-style-type</code></a></li><li><a href="%40font-face/src.html#local()"><code>local()</code></a></li></ul><span>M</span><ul><li><a href="margin.html"><code>margin</code></a></li><li><a href="margin-block-end.html"><code>margin-block-end</code></a></li><li><a href="margin-block-start.html"><code>margin-block-start</code></a></li><li><a href="margin-bottom.html"><code>margin-bottom</code></a></li><li><a href="margin-inline-end.html"><code>margin-inline-end</code></a></li><li><a href="margin-inline-start.html"><code>margin-inline-start</code></a></li><li><a href="margin-left.html"><code>margin-left</code></a></li><li><a href="margin-right.html"><code>margin-right</code></a></li><li><a href="margin-top.html"><code>margin-top</code></a></li><li><a href="mask.html"><code>mask</code></a></li><li><a href="mask-clip.html"><code>mask-clip</code></a></li><li><a href="mask-composite.html"><code>mask-composite</code></a></li><li><a href="mask-image.html"><code>mask-image</code></a></li><li><a href="mask-mode.html"><code>mask-mode</code></a></li><li><a href="mask-origin.html"><code>mask-origin</code></a></li><li><a href="mask-position.html"><code>mask-position</code></a></li><li><a href="mask-repeat.html"><code>mask-repeat</code></a></li><li><a href="mask-size.html"><code>mask-size</code></a></li><li><a href="mask-type.html"><code>mask-type</code></a></li><li><a href="transform-function.html#matrix()"><code>matrix()</code></a></li><li><a href="transform-function.html#matrix3d()"><code>matrix3d()</code></a></li><li><a href="max-block-size.html"><code>max-block-size</code></a></li><li><a href="max-height.html"><code>max-height</code></a></li><li><a href="%40viewport/max-height.html"><code>max-height (@viewport)</code></a></li><li><a href="max-inline-size.html"><code>max-inline-size</code></a></li><li><a href="max-width.html"><code>max-width</code></a></li><li><a href="%40viewport/max-width.html"><code>max-width (@viewport)</code></a></li><li><a href="%40viewport/max-zoom.html"><code>max-zoom (@viewport)</code></a></li><li><a href="%40media.html"><code>@media</code></a></li><li><a href="min-block-size.html"><code>min-block-size</code></a></li><li><a href="min-height.html"><code>min-height</code></a></li><li><a href="%40viewport/min-height.html"><code>min-height (@viewport)</code></a></li><li><a href="min-inline-size.html"><code>min-inline-size</code></a></li><li><a href="min-width.html"><code>min-width</code></a></li><li><a href="%40viewport/min-width.html"><code>min-width (@viewport)</code></a></li><li><a href="%40viewport/min-zoom.html"><code>min-zoom (@viewport)</code></a></li><li><a href="minmax.html"><code>minmax()</code></a></li><li><a href="mix-blend-mode.html"><code>mix-blend-mode</code></a></li><li><a href="length.html#mm"><code>mm</code></a></li><li><a href="time.html#ms"><code>ms</code></a></li></ul><span>N</span><ul><li><a href="%40namespace.html"><code>@namespace</code></a></li><li><a href="%40counter-style/negative.html"><code>negative (@counter-style)</code></a></li><li><a href="_not.html"><code>:not</code></a></li><li><a href="_nth-child.html"><code>:nth-child</code></a></li><li><a href="_nth-last-child.html"><code>:nth-last-child</code></a></li><li><a href="_nth-last-of-type.html"><code>:nth-last-of-type</code></a></li><li><a href="_nth-of-type.html"><code>:nth-of-type</code></a></li><li><a href="number.html"><code>&lt;number&gt;</code></a></li></ul><span>O</span><ul><li><a href="object-fit.html"><code>object-fit</code></a></li><li><a href="object-position.html"><code>object-position</code></a></li><li><a href="offset-block-end.html"><code>offset-block-end</code></a></li><li><a href="offset-block-start.html"><code>offset-block-start</code></a></li><li><a href="offset-inline-end.html"><code>offset-inline-end</code></a></li><li><a href="offset-inline-start.html"><code>offset-inline-start</code></a></li><li><a href="_only-child.html"><code>:only-child</code></a></li><li><a href="_only-of-type.html"><code>:only-of-type</code></a></li><li><a href="opacity.html"><code>opacity</code></a></li><li><a href="filter.html#opacity()"><code>opacity()</code></a></li><li><a href="_optional.html"><code>:optional</code></a></li><li><a href="order.html"><code>order</code></a></li><li><a href="%40viewport/orientation.html"><code>orientation (@viewport)</code></a></li><li><a href="%40ornaments.html" class="new"><code>@ornaments</code></a></li><li><a href="%40font-face/font-variant.html#ornaments()" class="new"><code>ornaments()</code></a></li><li><a href="orphans.html"><code>orphans</code></a></li><li><a href="_out-of-range.html"><code>:out-of-range</code></a></li><li><a href="outline.html"><code>outline</code></a></li><li><a href="outline-color.html"><code>outline-color</code></a></li><li><a href="outline-offset.html"><code>outline-offset</code></a></li><li><a href="outline-style.html"><code>outline-style</code></a></li><li><a href="outline-width.html"><code>outline-width</code></a></li><li><a href="overflow.html"><code>overflow</code></a></li><li><a href="overflow-wrap.html"><code>overflow-wrap</code></a></li><li><a href="overflow-x.html"><code>overflow-x</code></a></li><li><a href="overflow-y.html"><code>overflow-y</code></a></li></ul><span>P</span><ul><li><a href="%40counter-style/pad.html"><code>pad (@counter-style)</code></a></li><li><a href="padding.html"><code>padding</code></a></li><li><a href="padding-block-end.html"><code>padding-block-end</code></a></li><li><a href="padding-block-start.html"><code>padding-block-start</code></a></li><li><a href="padding-bottom.html"><code>padding-bottom</code></a></li><li><a href="padding-inline-end.html"><code>padding-inline-end</code></a></li><li><a href="padding-inline-start.html"><code>padding-inline-start</code></a></li><li><a href="padding-left.html"><code>padding-left</code></a></li><li><a href="padding-right.html"><code>padding-right</code></a></li><li><a href="padding-top.html"><code>padding-top</code></a></li><li><a href="%40page.html"><code>@page</code></a></li><li><a href="page-break-after.html"><code>page-break-after</code></a></li><li><a href="page-break-before.html"><code>page-break-before</code></a></li><li><a href="page-break-inside.html"><code>page-break-inside</code></a></li><li><a href="length.html#pc"><code>pc</code></a></li><li><a href="percentage.html"><code>&lt;percentage&gt;</code></a></li><li><a href="perspective.html"><code>perspective</code></a></li><li><a href="transform-function.html#perspective()"><code>perspective()</code></a></li><li><a href="perspective-origin.html"><code>perspective-origin</code></a></li><li><a href="pointer-events.html"><code>pointer-events</code></a></li><li><a href="polygon.html" class="new"><code>polygon()</code></a></li><li><a href="position_value.html"><code>&lt;position&gt;</code></a></li><li><a href="position.html"><code>position</code></a></li><li><a href="%40counter-style/prefix.html"><code>prefix (@counter-style)</code></a></li><li><a href="length.html#pt"><code>pt</code></a></li><li><a href="length.html#px"><code>px</code></a></li></ul><span>Q</span><ul><li><a href="length.html#q"><code>q</code></a></li><li><a href="quotes.html"><code>quotes</code></a></li></ul><span>R</span><ul><li><a href="angle.html#rad"><code>rad</code></a></li><li><a href="radial-gradient.html"><code>radial-gradient()</code></a></li><li><a href="%40counter-style/range.html"><code>range (@counter-style)</code></a></li><li><a href="ratio.html"><code>&lt;ratio&gt;</code></a></li><li><a href="_read-only.html"><code>:read-only</code></a></li><li><a href="_read-write.html"><code>:read-write</code></a></li><li><a href="rect.html" class="new"><code>rect()</code></a></li><li><a href="length.html#rem"><code>rem</code></a></li><li><a href="repeat.html" class="new"><code>repeat()</code></a></li><li><a href="repeating-linear-gradient.html"><code>repeating-linear-gradient()</code></a></li><li><a href="repeating-radial-gradient.html"><code>repeating-radial-gradient()</code></a></li><li><a href="_required.html"><code>:required</code></a></li><li><a href="resize.html"><code>resize</code></a></li><li><a href="resolution.html"><code>&lt;resolution&gt;</code></a></li><li><a href="revert.html"><code>revert</code></a></li><li><a href="color_value.html#rgb()"><code>rgb()</code></a></li><li><a href="color_value.html#rgba()"><code>rgba()</code></a></li><li><a href="_right.html"><code>:right</code></a></li><li><a href="right.html"><code>right</code></a></li><li><a href="%40right-bottom.html" class="new"><code>@right-bottom</code></a></li><li><a href="%40right-middle.html" class="new"><code>@right-middle</code></a></li><li><a href="%40right-top.html" class="new"><code>@right-top</code></a></li><li><a href="_root.html"><code>:root</code></a></li><li><a href="transform-function.html#rotate()"><code>rotate()</code></a></li><li><a href="transform-function.html#rotate3d()"><code>rotate3d()</code></a></li><li><a href="transform-function.html#rotateX()"><code>rotateX()</code></a></li><li><a href="transform-function.html#rotateY()"><code>rotateY()</code></a></li><li><a href="transform-function.html#rotateZ()"><code>rotateZ()</code></a></li><li><a href="ruby-align.html"><code>ruby-align</code></a></li><li><a href="ruby-merge.html" class="new"><code>ruby-merge</code></a></li><li><a href="ruby-position.html"><code>ruby-position</code></a></li></ul><span>S</span><ul><li><a href="time.html#s"><code>s</code></a></li><li><a href="filter.html#saturate()"><code>saturate()</code></a></li><li><a href="transform-function.html#scale()"><code>scale()</code></a></li><li><a href="transform-function.html#scale3d()"><code>scale3d()</code></a></li><li><a href="transform-function.html#scaleX()"><code>scaleX()</code></a></li><li><a href="transform-function.html#scaleY()"><code>scaleY()</code></a></li><li><a href="transform-function.html#scaleZ()"><code>scaleZ()</code></a></li><li><a href="_scope.html"><code>:scope</code></a></li><li><a href="scroll-behavior.html"><code>scroll-behavior</code></a></li><li><a href="scroll-snap-coordinate.html"><code>scroll-snap-coordinate</code></a></li><li><a href="scroll-snap-destination.html"><code>scroll-snap-destination</code></a></li><li><a href="scroll-snap-type.html"><code>scroll-snap-type</code></a></li><li><a href="__selection.html"><code>::selection</code></a></li><li><a href="filter.html#sepia()"><code>sepia()</code></a></li><li><a href="shape.html"><code>&lt;shape&gt;</code></a></li><li><a href="shape-image-threshold.html"><code>shape-image-threshold</code></a></li><li><a href="shape-margin.html"><code>shape-margin</code></a></li><li><a href="shape-outside.html"><code>shape-outside</code></a></li><li><a href="transform-function.html#skew()"><code>skew()</code></a></li><li><a href="transform-function.html#skewX()"><code>skewX()</code></a></li><li><a href="transform-function.html#skewY()"><code>skewY()</code></a></li><li><a href="%40counter-style/speak-as.html"><code>speak-as (@counter-style)</code></a></li><li><a href="%40font-face/src.html"><code>src (@font-face)</code></a></li><li><a href="steps.html" class="new"><code>steps()</code></a></li><li><a href="string.html"><code>&lt;string&gt;</code></a></li><li><a href="%40styleset.html"><code>@styleset</code></a></li><li><a href="%40font-face/font-variant.html#styleset()" class="new"><code>styleset()</code></a></li><li><a href="%40stylistic.html" class="new"><code>@stylistic</code></a></li><li><a href="%40font-face/font-variant.html#stylistic()" class="new"><code>stylistic()</code></a></li><li><a href="%40counter-style/suffix.html"><code>suffix (@counter-style)</code></a></li><li><a href="%40supports.html"><code>@supports</code></a></li><li><a href="%40swash.html" class="new"><code>@swash</code></a></li><li><a href="%40font-face/font-variant.html#swash()" class="new"><code>swash()</code></a></li><li><a href="%40counter-style/symbols.html"><code>symbols (@counter-style)</code></a></li><li><a href="symbols.html"><code>symbols()</code></a></li><li><a href="%40counter-style/system.html"><code>system (@counter-style)</code></a></li></ul><span>T</span><ul><li><a href="tab-size.html"><code>tab-size</code></a></li><li><a href="table-layout.html"><code>table-layout</code></a></li><li><a href="_target.html"><code>:target</code></a></li><li><a href="target-counter.html" class="new"><code>target-counter()</code></a></li><li><a href="target-counters.html" class="new"><code>target-counters()</code></a></li><li><a href="target-text.html" class="new"><code>target-text()</code></a></li><li><a href="text-align.html"><code>text-align</code></a></li><li><a href="text-align-last.html"><code>text-align-last</code></a></li><li><a href="text-combine-upright.html"><code>text-combine-upright</code></a></li><li><a href="text-decoration.html"><code>text-decoration</code></a></li><li><a href="text-decoration-color.html"><code>text-decoration-color</code></a></li><li><a href="text-decoration-line.html"><code>text-decoration-line</code></a></li><li><a href="text-decoration-style.html"><code>text-decoration-style</code></a></li><li><a href="text-emphasis.html"><code>text-emphasis</code></a></li><li><a href="text-emphasis-color.html"><code>text-emphasis-color</code></a></li><li><a href="text-emphasis-position.html"><code>text-emphasis-position</code></a></li><li><a href="text-emphasis-style.html"><code>text-emphasis-style</code></a></li><li><a href="text-indent.html"><code>text-indent</code></a></li><li><a href="text-orientation.html"><code>text-orientation</code></a></li><li><a href="text-overflow.html"><code>text-overflow</code></a></li><li><a href="text-rendering.html"><code>text-rendering</code></a></li><li><a href="text-shadow.html"><code>text-shadow</code></a></li><li><a href="text-transform.html"><code>text-transform</code></a></li><li><a href="text-underline-position.html"><code>text-underline-position</code></a></li><li><a href="time.html"><code>&lt;time&gt;</code></a></li><li><a href="single-transition-timing-function.html"><code>&lt;timing-function&gt;</code></a></li><li><a href="top.html"><code>top</code></a></li><li><a href="%40top-center.html" class="new"><code>@top-center</code></a></li><li><a href="%40top-left.html" class="new"><code>@top-left</code></a></li><li><a href="%40top-left-corner.html" class="new"><code>@top-left-corner</code></a></li><li><a href="%40top-right.html" class="new"><code>@top-right</code></a></li><li><a href="%40top-right-corner.html" class="new"><code>@top-right-corner</code></a></li><li><a href="touch-action.html"><code>touch-action</code></a></li><li><a href="transform.html"><code>transform</code></a></li><li><a href="transform-box.html"><code>transform-box</code></a></li><li><a href="transform-function.html"><code>&lt;transform-function&gt;</code></a></li><li><a href="transform-origin.html"><code>transform-origin</code></a></li><li><a href="transform-style.html"><code>transform-style</code></a></li><li><a href="transition.html"><code>transition</code></a></li><li><a href="transition-delay.html"><code>transition-delay</code></a></li><li><a href="transition-duration.html"><code>transition-duration</code></a></li><li><a href="transition-property.html"><code>transition-property</code></a></li><li><a href="transition-timing-function.html"><code>transition-timing-function</code></a></li><li><a href="transform-function.html#translate()"><code>translate()</code></a></li><li><a href="transform-function.html#translate3d()"><code>translate3d()</code></a></li><li><a href="transform-function.html#translateX()"><code>translateX()</code></a></li><li><a href="transform-function.html#translateY()"><code>translateY()</code></a></li><li><a href="transform-function.html#translateZ()"><code>translateZ()</code></a></li><li><a href="angle.html#turn"><code>turn</code></a></li></ul><span>U</span><ul><li><a href="unicode-bidi.html"><code>unicode-bidi</code></a></li><li><a href="%40font-face/unicode-range.html"><code>unicode-range (@font-face)</code></a></li><li><a href="_unresolved.html" class="new"><code>:unresolved</code></a></li><li><a href="unset.html"><code>unset</code></a></li><li><a href="url.html"><code>&lt;url&gt;</code></a></li><li><a href="url.html#The_url()_functional_notation"><code>url()</code></a></li><li><a href="%40viewport/user-zoom.html"><code>user-zoom (@viewport)</code></a></li></ul><span>V</span><ul><li><a href="_valid.html"><code>:valid</code></a></li><li><a href="var.html"><code>var()</code></a></li><li><a href="vertical-align.html"><code>vertical-align</code></a></li><li><a href="length.html#vh"><code>vh</code></a></li><li><a href="%40viewport.html"><code>@viewport</code></a></li><li><a href="visibility.html"><code>visibility</code></a></li><li><a href="_visited.html"><code>:visited</code></a></li><li><a href="length.html#vmax"><code>vmax</code></a></li><li><a href="length.html#vmin"><code>vmin</code></a></li><li><a href="length.html#vw"><code>vw</code></a></li></ul><span>W</span><ul><li><a href="white-space.html"><code>white-space</code></a></li><li><a href="widows.html"><code>widows</code></a></li><li><a href="width.html"><code>width</code></a></li><li><a href="%40viewport/width.html"><code>width (@viewport)</code></a></li><li><a href="will-change.html"><code>will-change</code></a></li><li><a href="word-break.html"><code>word-break</code></a></li><li><a href="word-spacing.html"><code>word-spacing</code></a></li><li><a href="overflow-wrap.html"><code>word-wrap</code></a></li><li><a href="writing-mode.html"><code>writing-mode</code></a></li></ul><span>Z</span><ul><li><a href="z-index.html"><code>z-index</code></a></li><li><a href="%40viewport/zoom.html"><code>zoom (@viewport)</code></a></li></ul><span>Others</span><ul><li><a href="--_.html"><code>--*</code></a></li></ul> 
+</div></div>
+
+<div class="column-container">
+<div class="column-half">
+<h2 id="Selectors">Selectors</h2>
+
+<ul>
+ <li>Basic Selectors
+  <ul>
+   <li><a href="Type_selectors.html">Type selectors</a><code> elementname</code></li>
+   <li><a href="Class_selectors.html">Class selectors</a> <code>.classname</code></li>
+   <li><a href="ID_selectors.html">ID selectors</a> <code>#idname</code></li>
+   <li><a href="Universal_selectors.html">Universal selectors</a><code> * ns|* *|*</code></li>
+   <li><a href="Attribute_selectors.html">Attribute selectors</a><code> [attr=value]</code></li>
+  </ul>
+ </li>
+ <li>Combinators &nbsp; &nbsp;<a href="../Guide/CSS/Getting_started/Selectors-2.html#Information_Selectors_based_on_relationships">(more info)</a>
+  <ul>
+   <li><a href="Adjacent_sibling_selectors.html">Adjacent sibling selectors</a> <code>A + B</code></li>
+   <li><a href="General_sibling_selectors.html">General sibling selectors</a> <code>A ~ B</code></li>
+   <li><a href="Child_selectors.html">Child selectors</a> <code>A &gt; B</code></li>
+   <li><a href="Descendant_selectors.html">Descendant selectors</a> <code>A B</code></li>
+  </ul>
+ </li>
+ <li id="pelm">Pseudo-elements &nbsp; &nbsp;<a href="Pseudo-elements.html">(more info)</a>
+  <ul>
+   <li><a title="The CSS ::after pseudo-element matches a virtual last child of the selected element. It is typically used to add cosmetic content to an element by using the content CSS property. This element is inline by default." href="__after.html"><code>::after</code></a></li>
+   <li><a title="::before creates a pseudo-element that is the first child of the element matched. It is often used to add cosmetic content to an element by using the content property. This element is inline by default." href="__before.html"><code>::before</code></a></li>
+   <li><a title="The ::first-letter CSS pseudo-element selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line." href="__first-letter.html"><code>::first-letter</code></a></li>
+   <li><a title="The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element." href="__first-line.html"><code>::first-line</code></a></li>
+   <li><a title="The ::selection CSS pseudo-element applies rules to the portion of a document that has been highlighted (e.g. selected with the mouse or another pointing device) by the user." href="__selection.html"><code>::selection</code></a></li>
+   <li><a title="Each element in the top layer's stack has a ::backdrop pseudo-element. This pseudo-element is a box rendered immediately below the element (and above the element below the element in the stack, if any), within the same top layer." href="__backdrop.html"><code>::backdrop</code></a></li>
+   <li><a title="The ::placeholder CSS pseudo-element represents the placeholder text of a form element. This allows web developers and theme designers to customize the appearance of placeholder text." href="__placeholder.html"><code>::placeholder</code></a> <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></li>
+   <li><a title="The ::marker CSS pseudo-element represents the marker box of a list item (e.g. the bullet point or item number)." href="__marker.html"><code>::marker</code></a> <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></li>
+   <li><a title="Editorial review completed." href="__spelling-error.html"><code>::spelling-error</code></a> <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></li>
+   <li><a title="Editorial review completed." href="__grammar-error.html"><code>::grammar-error</code></a> <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></li>
+  </ul>
+ </li>
+ <li id="pcls">Standard pseudo-classes &nbsp; &nbsp;<a href="Pseudo-classes.html">(more info)</a>
+  <div class="index">
+  <ul>
+   <li><a title="The :active CSS pseudo-class matches when an element is being activated by the user. It allows the page to give a feedback that the activation has been detected by the browser. When interacting with a mouse, this is typically the time between the user presses the mouse button and releases it. The :active pseudo-class is also typically matched when using the keyboard tab key. It is frequently used on &lt;a&gt; and &lt;button&gt; HTML&nbsp;elements, but may not be limited to just those." href="/en-US/docs/Web/CSS/:active"><code>:active</code></a></li>
+   <li><a title="The :any() pseudo-class lets you quickly construct sets of similar selectors by establishing groups from which any of the included items will match. This is an alternative to having to repeat the entire selector for the one item that varies." href="_any.html"><code>:any</code></a></li>
+   <li><a title="The :checked CSS pseudo-class selector represents any radio (&lt;input type=&quot;radio&quot;&gt;), checkbox (&lt;input type=&quot;checkbox&quot;&gt;) or option (&lt;option&gt; in a &lt;select&gt;) element that is checked or toggled to an on state. The user can change this state by clicking on the element, or selecting a different value, in which case the :checked pseudo-class no longer applies to this element, but will to the relevant one." href="/en-US/docs/Web/CSS/:checked"><code>:checked</code></a></li>
+   <li><a title="The :default CSS pseudo-class represents any user interface element that is the default among a group of similar elements." href="_default.html"><code>:default</code></a></li>
+   <li><a title="The documentation about this has not yet been written; please consider contributing!" href="_dir.html"><code>:dir()</code></a></li>
+   <li><a title="The :disabled CSS pseudo-class represents any disabled element. An element is disabled if it can't be activated (e.g. selected, clicked on or accept text input) or accept focus. The element also has an enabled state, in which it can be activated or accept focus." href="_disabled.html"><code>:disabled</code></a></li>
+   <li><a title="The :empty pseudo-class represents any element that has no children at all. Only element nodes and text (including whitespace) are considered. Comments or processing instructions do not affect whether an element is considered empty or not." href="_empty.html"><code>:empty</code></a></li>
+   <li><a title="The :enabled CSS pseudo-class represents any enabled element. An element is enabled if it can be activated (e.g. selected, clicked on or accept text input) or accept focus. The element also has an disabled state, in which it can't be activated or accept focus." href="_enabled.html"><code>:enabled</code></a></li>
+   <li><a title="The :first @page CSS pseudo-class describes the styling of the first page when printing a document." href="_first.html"><code>:first</code></a></li>
+   <li><a title="The :first-child CSS pseudo-class represents any element that is the first child element of its parent." href="_first-child.html"><code>:first-child</code></a></li>
+   <li><a title="The :first-of-type CSS pseudo-class represents the first sibling of its type in the list of children of its parent element." href="_first-of-type.html"><code>:first-of-type</code></a></li>
+   <li><a title="The :fullscreen CSS pseudo-class applies to any element that's currently being displayed in full-screen mode. It selects not only to the top level element, but to the whole stack of elements that appears." href="_fullscreen.html"><code>:fullscreen</code></a></li>
+   <li><a title="The :focus CSS pseudo-class is applied when an element has received focus, either from the user selecting it with the use of a keyboard or by activating with the mouse (e.g. a form input)." href="_focus.html"><code>:focus</code></a></li>
+   <li><a title="The :hover CSS pseudo-class matches when the user designates an element with a pointing device, but does not necessarily activate it. This style may be overridden by any other link-related pseudo-classes, that is :link, :visited, and :active, appearing in subsequent rules. In order to style appropriately links, you need to put the :hover rule after the :link and :visited rules but before the :active one, as defined by the LVHA-order: :link — :visited — :hover — :active." href="_hover.html"><code>:hover</code></a></li>
+   <li><a title="The :indeterminate CSS pseudo-class represents:" href="_indeterminate.html"><code>:indeterminate</code></a></li>
+   <li><a title="The :in-range CSS pseudo-class matches when an element has its value attribute inside the specified range limitations for this element. It allows the page to give a feedback that the value currently defined using the element is inside the range limits." href="_in-range.html"><code>:in-range</code></a></li>
+   <li><a title="The :invalid CSS pseudo-class represents any &lt;input&gt; or &lt;form&gt; element whose content fails to validate according to the input's type setting. This allows you to easily have invalid fields adopt an appearance that helps the user identify and correct errors." href="/en-US/docs/Web/CSS/:invalid"><code>:invalid</code></a></li>
+   <li><a title="The documentation about this has not yet been written; please consider contributing!" href="_lang.html"><code>:lang()</code></a></li>
+   <li><a title="The :last-child CSS pseudo-class represents any element that is the last child element of its parent." href="_last-child.html"><code>:last-child</code></a></li>
+   <li><a title="The :last-of-type CSS pseudo-class represents the last sibling with the given element name in the list of children of its parent element." href="_last-of-type.html"><code>:last-of-type</code></a></li>
+   <li><a title="The :left CSS page pseudo-class matches any left page when printing a page. It allows to describe the styling of left-side pages." href="_left.html"><code>:left</code></a></li>
+   <li><a title="The :link CSS pseudo-class lets you select links inside elements. This will select any link which has not yet been visited, even those already styled using selector with other link-related pseudo-classes like :hover, :active or :visited. In order to appropriately style links, you need to put the :link rule before the other ones, as defined by the LVHA-order: :link — :visited — :hover — :active. The :focus pseudo-class is usually placed right before or right after :hover, depending on the expected effect." href="_link.html"><code>:link</code></a></li>
+   <li><a title="The documentation about this has not yet been written; please consider contributing!" href="_not.html"><code>:not()</code></a></li>
+   <li><a title="The documentation about this has not yet been written; please consider contributing!" href="_nth-child.html"><code>:nth-child()</code></a></li>
+   <li><a title="The documentation about this has not yet been written; please consider contributing!" href="_nth-last-child.html"><code>:nth-last-child()</code></a></li>
+   <li><a title="The documentation about this has not yet been written; please consider contributing!" href="_nth-last-of-type.html"><code>:nth-last-of-type()</code></a></li>
+   <li><a title="The documentation about this has not yet been written; please consider contributing!" href="_nth-of-type.html"><code>:nth-of-type()</code></a></li>
+   <li><a title="The :only-child CSS pseudo-class represents any element which is the only child of its parent. This is the same as :first-child:last-child or :nth-child(1):nth-last-child(1), but with a lower specificity." href="_only-child.html"><code>:only-child</code></a></li>
+   <li><a title="The :only-of-type CSS pseudo-class represents any element that has no siblings of the given type." href="_only-of-type.html"><code>:only-of-type</code></a></li>
+   <li><a title="The :optional CSS pseudo-class represents any &lt;input&gt; or &lt;textarea&gt;&nbsp;element that does not have the required attribute set on it. This allows forms to easily indicate optional fields, and to style them accordingly." href="/en-US/docs/Web/CSS/:optional"><code>:optional</code></a></li>
+   <li><a title="The :out-of-range CSS pseudo-class matches when an element has its value attribute outside the specified range limitations for this element. It allows the page to give a feedback that the value currently defined using the element is outside the range limits. A value can be outside of a range if it is either smaller or larger than maximum and minimum set values." href="_out-of-range.html"><code>:out-of-range</code></a></li>
+   <li><a title="The :read-only CSS pseudo-class matches when an element is not writable by the user." href="_read-only.html"><code>:read-only</code></a></li>
+   <li><a title="The :read-write CSS pseudo-class matches when an element is editable by user like text input elements." href="_read-write.html"><code>:read-write</code></a></li>
+   <li><a title="The :required CSS pseudo-class represents any &lt;input&gt;&nbsp;element that has the required attribute set on it. This allows forms to easily indicate which fields must have valid data before the form can be submitted." href="/en-US/docs/Web/CSS/:required"><code>:required</code></a></li>
+   <li><a title="The :right CSS page pseudo-class matches any right page when printing a page. It allows to describe the styling of right-side page." href="_right.html"><code>:right</code></a></li>
+   <li><a title="The :root CSS  pseudo-class matches the root element of a tree representing the document. Applied to HTML, :root represents the &lt;html&gt; element and is identical to the selector html, except that its specificity is higher." href="/en-US/docs/Web/CSS/:root"><code>:root</code></a></li>
+   <li><a title="The :scope CSS  pseudo-class matches the elements that are a reference point for selectors to match against. In HTML, a new reference point can be defined using the scoped attribute of the &lt;style&gt;. If no such attribute is used on an HTML page, the reference point is the &lt;html&gt; element." href="/en-US/docs/Web/CSS/:scope"><code>:scope</code></a></li>
+   <li><a title="The :target pseudo-class represents the unique element, if any, with an id matching the fragment identifier of the URI of the document." href="_target.html"><code>:target</code></a></li>
+   <li><a title="The :valid CSS pseudo-class represents any &lt;input&gt; or &lt;form&gt; element whose content validates correctly according to the input's type setting. This allows to easily make valid fields adopt an appearance that helps the user confirm that their data is formatted properly." href="/en-US/docs/Web/CSS/:valid"><code>:valid</code></a></li>
+   <li><a title="The :visited CSS pseudo-class lets you select only links that have been visited. This style may be overridden by any other link-related pseudo-classes, that is :link, :hover, and :active, appearing in subsequent rules. In order to style appropriately links, you need to put the :visited rule after the :link rule but before the other ones, defined in the LVHA-order: :link — :visited — :hover — :active." href="_visited.html"><code>:visited</code></a></li>
+  </ul>
+  </div>
+ </li>
+</ul>
+
+<p>A complete <a href="https://www.w3.org/TR/selectors/#selectors" class="external">list of selectors</a> in the Selectors Level 3 specification.</p>
+
+<h2 id="CSS3_Tutorials">CSS3 Tutorials</h2>
+
+<p>These small how-to pages describe new technologies appeared in CSS3, or in CSS2.1 but with low support until recently:</p>
+
+<ul>
+ <li><a href="Media_Queries/Using_media_queries.html">Using CSS media queries</a></li>
+ <li><a href="CSS_Lists_and_Counters/Using_CSS_counters.html">Using CSS counters</a></li>
+ <li><a href="CSS_Images/Using_CSS_gradients.html">Using CSS gradients</a></li>
+ <li><a href="CSS_Transforms/Using_CSS_transforms.html">Using CSS transforms</a></li>
+ <li><a href="CSS_Animations/Using_CSS_animations.html">Using CSS animations</a></li>
+ <li><a href="CSS_Transitions/Using_CSS_transitions.html">Using CSS transitions</a></li>
+ <li><a href="CSS_Background_and_Borders/Using_CSS_multiple_backgrounds.html">Using CSS multiple backgrounds</a></li>
+ <li><a href="CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes.html">Using CSS flexible boxes</a></li>
+ <li><a href="CSS_Columns/Using_multi-column_layouts.html">Using CSS multi-column layouts</a></li>
+</ul>
+
+<h2 id="Concepts">Concepts</h2>
+
+<ul>
+ <li><a href="Syntax.html">CSS syntax</a></li>
+ <li><a href="At-rule.html">At-rule</a></li>
+ <li><a href="Comments.html">Comments</a></li>
+ <li><a href="Specificity.html">Specificity</a></li>
+ <li><a href="initial_value.html">Initial value</a></li>
+ <li><a href="inheritance.html">Inheritance</a></li>
+ <li><a href="specified_value.html">Specified value</a></li>
+ <li><a href="computed_value.html">Computed value</a></li>
+ <li><a href="used_value.html">Used value</a></li>
+ <li><a href="actual_value.html">Actual value</a></li>
+ <li><a href="resolved_value.html">Resolved value</a></li>
+ <li><a href="CSS_Box_Model/Introduction_to_the_CSS_box_model.html">Box model</a></li>
+ <li><a href="Replaced_element.html">Replaced element</a></li>
+ <li><a href="Value_definition_syntax.html">Value definition syntax</a></li>
+ <li><a href="Shorthand_properties.html">Shorthand properties</a></li>
+ <li><a href="CSS_Box_Model/Mastering_margin_collapsing.html">Mastering margin collapsing</a></li>
+ <li><a href="../Guide/CSS/Visual_formatting_model.html">Visual formatting model</a></li>
+ <li><a href="Layout_mode.html">Layout mode</a></li>
+</ul>
+
+<h2 id="DOM-CSS_CSSOM">DOM-CSS / CSSOM</h2>
+
+<p>Major&nbsp;object&nbsp;types:</p>
+
+<ul>
+ <li>document . <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/styleSheets">styleSheets</a></li>
+ <li>styleSheets[x] . <a href="../API/CSSRuleList.html">cssRules</a></li>
+ <li>cssRules[x] . <a href="../API/CSSRule/cssText.html">cssText</a> (selector &amp; style)</li>
+ <li>cssRules[x] . <a href="../API/CSSStyleRule/selectorText.html">selectorText</a></li>
+ <li>elem . <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style">style</a></li>
+ <li>elem . style . <a href="../API/CSSStyleDeclaration/cssText.html">cssText</a> (just style)</li>
+ <li>elem . <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/className">className</a></li>
+ <li>elem . <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">classList</a></li>
+</ul>
+
+<p>Important methods:</p>
+
+<ul>
+ <li><a title="CSSStyleSheet.insertRule() method inserts a new CSS rule into the current style sheet. (with some restrictions)" href="../API/CSSStyleSheet/insertRule.html"><code>CSSStyleSheet.insertRule</code></a></li>
+ <li><a title="The CSSStyleSheet.deleteRule() method removes a style rule from the current style sheet object." href="../API/CSSStyleSheet/deleteRule.html"><code>CSSStyleSheet.deleteRule</code></a></li>
+</ul>
+</div>
+</div>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Reference.html">CSS Reference</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/l10n:priority">l10n:priority</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/Jeremie">Jeremie</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/pcat">pcat</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/BychekRU">BychekRU</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/avd-apps">avd-apps</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/xiaolong">xiaolong</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/amitabha197">amitabha197</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/chrisdavidmills">chrisdavidmills</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei">ziyunfei</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jonathan_Watt">Jonathan_Watt</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/phil_nist">phil_nist</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/loptop">loptop</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jswisher">jswisher</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/HUBOGART">HUBOGART</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/elkhote">elkhote</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/hade">hade</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jogo.obb">jogo.obb</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/bpartridge81">bpartridge81</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/deepak7275">deepak7275</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/lmorchard">lmorchard</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tregagnon">tregagnon</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/takahashi_yuki">takahashi_yuki</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Manuel_Strehl">Manuel_Strehl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/McGurk">McGurk</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/sjltaylor">sjltaylor</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/inma_610">inma_610</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/BijuGC">BijuGC</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jwalker">jwalker</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Crash">Crash</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Brettz9">Brettz9</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Miken32">Miken32</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Moacir Bispo">Moacir Bispo</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/TigerSoldier">TigerSoldier</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Nathymig">Nathymig</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot">Mgjbot</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Saurabhmathur">Saurabhmathur</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Waldo">Waldo</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Pastelgrim">Pastelgrim</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Michael2402">Michael2402</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Federico">Federico</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/DBaron">DBaron</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/George3">George3</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Nickolay">Nickolay</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Ptak82">Ptak82</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Dria">Dria</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/Jeremie">Jeremie</a>,
+                      <time datetime="2016-11-21T07:27:28-08:00">Nov 21, 2016, 7:27:28 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/Reference$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/Reference$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/Reference" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/CSS_Referenz">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/Referencia_CSS">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/Reference">
+            Français (fr)
+          </option>
+          <option title="Hindi (India)" value="/hi-IN/docs/Web/CSS/Reference">
+            हिन्दी (भारत) (hi-IN)
+          </option>
+          <option title="Indonesian" value="/id/docs/Web/CSS/Reference">
+            Bahasa Indonesia (id)
+          </option>
+          <option title="Italian" value="/it/docs/Web/CSS/Guida_di_riferimento_ai_CSS">
+            Italiano (it)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/Reference">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/CSS_Reference">
+            한국어 (ko)
+          </option>
+          <option title="Polish" value="/pl/docs/Web/CSS/CSS_Reference">
+            Polski (pl)
+          </option>
+          <option title="Portuguese (Brazilian)" value="/pt-BR/docs/Web/CSS/CSS_Reference">
+            Português (do&nbsp;Brasil) (pt-BR)
+          </option>
+          <option title="Portuguese (Portugal)" value="/pt-PT/docs/Web/CSS/Refer%C3%AAncia_CSS">
+            Português (Europeu) (pt-PT)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/Reference">
+            Русский (ru)
+          </option>
+          <option title="Turkish" value="/tr/docs/Web/CSS/Reference">
+            Türkçe (tr)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/Reference">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/Reference by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:29:43 GMT -->
+</body></html>

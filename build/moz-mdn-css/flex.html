@@ -1,0 +1,1074 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/flex by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:40:43 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>flex</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex$json">
+  <link rel="canonical" href="flex.html">
+
+  
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/flex" title="flex">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/flex" title="flex">
+    
+      <link rel="alternate" hreflang="it" href="https://developer.mozilla.org/it/docs/Web/CSS/flex" title="flex">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/flex" title="flex">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/flex" title="flex">
+    
+      <link rel="alternate" hreflang="uk" href="https://developer.mozilla.org/uk/docs/Web/CSS/flex" title="flex">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex" title="flex">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="flex">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">
+  <meta name="twitter:title" content="flex">
+  
+  <meta property="og:description" content="The flex CSS property is a shorthand property specifying the ability of a flex item to alter its dimensions to fill available space. Flex items can be stretched to use available space proportional to their flex grow factor or their flex shrink factor to prevent overflow.">
+  <meta name="description" content="The flex CSS property is a shorthand property specifying the ability of a flex item to alter its dimensions to fill available space. Flex items can be stretched to use available space proportional to their flex grow factor or their flex shrink factor to prevent overflow.">
+  <meta name="twitter:description" content="The flex CSS property is a shorthand property specifying the ability of a flex item to alter its dimensions to fill available space. Flex items can be stretched to use available space proportional to their flex grow factor or their flex shrink factor to prevent overflow.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/flex" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fflex" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/flex">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/flex" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/flex" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/it/docs/Web/CSS/flex" title="Italian">Italiano (it)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/flex" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/flex" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/uk/docs/Web/CSS/flex" title="Ukrainian">Українська (uk)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">flex</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/riversYeHaha" title="View profile: riversYeHaha">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="riversYeHaha" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">riversYeHaha</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/geirmarius" title="View profile: geirmarius">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="geirmarius" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">geirmarius</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/jdescottes" title="View profile: jdescottes">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jdescottes" data-src="../../../../../secure.gravatar.com/avatar/60dd86ccfd9c63b53e9f2a34b2f484426c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jdescottes</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/mrenty" title="View profile: mrenty">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mrenty" data-src="../../../../../secure.gravatar.com/avatar/c8f29bcf27d5ddaeb1164f24f42a3ba26c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mrenty</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/mgiuffrida" title="View profile: mgiuffrida">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mgiuffrida" data-src="../../../../../secure.gravatar.com/avatar/0df3231c111cb9216d2976d310dcc1616c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mgiuffrida</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mahan91" title="View profile: Mahan91">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mahan91" data-src="../../../../../secure.gravatar.com/avatar/ac03d45cef46d90fa228958e99687f376c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mahan91</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/cvrebert" title="View profile: cvrebert">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="cvrebert" data-src="../../../../../secure.gravatar.com/avatar/1432b541cac41e85e190050a5361b3966c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">cvrebert</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/NicolasGoudry" title="View profile: NicolasGoudry">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="NicolasGoudry" data-src="../../../../../secure.gravatar.com/avatar/51f91987e5d72821d669a37979fdde386c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">NicolasGoudry</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/wbamberg" title="View profile: wbamberg">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="wbamberg" data-src="../../../../../secure.gravatar.com/avatar/576b94c81f8ad97e58d63f12e5fdb00c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">wbamberg</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/hexalys" title="View profile: hexalys">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="hexalys" data-src="../../../../../secure.gravatar.com/avatar/80ed6c45bd08fc17ec88acd50de0f6676c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">hexalys</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Dholbert" title="View profile: Dholbert">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Dholbert" data-src="../../../../../secure.gravatar.com/avatar/cd9b85b2e112bd7941b21ad03f42604e6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Dholbert</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/MattBrubeck" title="View profile: MattBrubeck">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="MattBrubeck" data-src="../../../../../secure.gravatar.com/avatar/6c7f46790bdcbae3f2046b02b43ab6bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">MattBrubeck</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/so_matt_basta" title="View profile: so_matt_basta">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="so_matt_basta" data-src="../../../../../secure.gravatar.com/avatar/c4df87978b1443a5ff3297bd193d39ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">so_matt_basta</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Golmote" title="View profile: Golmote">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Golmote" data-src="../../../../../secure.gravatar.com/avatar/606599f4e8dd244c014e33090b3aae276c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Golmote</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/andRyanMiller" title="View profile: andRyanMiller">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="andRyanMiller" data-src="../../../../../secure.gravatar.com/avatar/50f20912a4a318a5668670893d6d81e06c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">andRyanMiller</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mori" title="View profile: Mori">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mori" data-src="../../../../../secure.gravatar.com/avatar/03067b9748db5ab2ee75a6197e5240596c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mori</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/SJW" title="View profile: SJW">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="SJW" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">SJW</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/davidben" title="View profile: davidben">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="davidben" data-src="../../../../../secure.gravatar.com/avatar/68d8074477537ff3c6a8d6296badfa676c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">davidben</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/JDBurnZ" title="View profile: JDBurnZ">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="JDBurnZ" data-src="../../../../../secure.gravatar.com/avatar/c795e9073ce1be6c6b85cfbae6006d3e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">JDBurnZ</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/SaschaNaz" title="View profile: SaschaNaz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="SaschaNaz" data-src="../../../../../secure.gravatar.com/avatar/f8c82bc9cbb037eb3f988371d941c5e86c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">SaschaNaz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/scottrowe" title="View profile: scottrowe">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="scottrowe" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">scottrowe</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>flex</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Example" rel="internal">Example</a><ol><li><a href="#Result" rel="internal">Result</a></li></ol></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>flex</code></strong> <a href="../CSS.html" title="CSS">CSS</a> property is a <a href="Shorthand_properties.html">shorthand</a> property specifying the ability of a flex item to alter its dimensions to fill available space. Flex items can be stretched to use available space proportional to their flex grow factor or their flex shrink factor to prevent overflow.</p>
+
+<p></p><table class="properties"><tbody><tr><th scope="row"><a href="initial_value.html">Initial value</a></th><td>as each of the properties of the shorthand:<br><ul><li><a href="flex-grow.html" title="The flex-grow CSS property specifies the flex grow factor of a flex item. It specifies what amount of space inside the flex container the item should take up."><code>flex-grow</code></a>: <code>0</code></li><li><a href="flex-shrink.html" title="The flex-shrink CSS property specifies the flex shrink factor of a flex item."><code>flex-shrink</code></a>: <code>1</code></li><li><a href="flex-basis.html" title="The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item. This property determines the size of the content-box unless specified otherwise using box-sizing."><code>flex-basis</code></a>: <code>auto</code></li></ul></td></tr><tr><th scope="row">Applies to</th><td>flex items, including in-flow pseudo-elements</td></tr><tr><th scope="row"><a href="inheritance.html">Inherited</a></th><td>no</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="computed_value.html">Computed value</a></th><td>as each of the properties of the shorthand:<br><ul><li><a href="flex-grow.html" title="The flex-grow CSS property specifies the flex grow factor of a flex item. It specifies what amount of space inside the flex container the item should take up."><code>flex-grow</code></a>: as specified</li><li><a href="flex-shrink.html" title="The flex-shrink CSS property specifies the flex shrink factor of a flex item."><code>flex-shrink</code></a>: as specified</li><li><a href="flex-basis.html" title="The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item. This property determines the size of the content-box unless specified otherwise using box-sizing."><code>flex-basis</code></a>: as specified, but with relative lengths converted into absolute lengths</li></ul></td></tr><tr><th scope="row">Animation type</th><td>as each of the properties of the shorthand:<br><ul><li><a href="flex-grow.html" title="The flex-grow CSS property specifies the flex grow factor of a flex item. It specifies what amount of space inside the flex container the item should take up."><code>flex-grow</code></a>: a <a href="number.html#Interpolation" title="Values of the &lt;number&gt; CSS data type are interpolated as real, floating-point, numbers.">number</a></li><li><a href="flex-shrink.html" title="The flex-shrink CSS property specifies the flex shrink factor of a flex item."><code>flex-shrink</code></a>: a <a href="number.html#Interpolation" title="Values of the &lt;number&gt; CSS data type are interpolated as real, floating-point, numbers.">number</a></li><li><a href="flex-basis.html" title="The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item. This property determines the size of the content-box unless specified otherwise using box-sizing."><code>flex-basis</code></a>: a <a href="length.html#Interpolation" title="Values of the &lt;length&gt; CSS data type are interpolated as real, floating-point numbers.">length</a>, <a href="percentage.html#Interpolation" title="Values of the &lt;percentage&gt; CSS data type are interpolated as real, floating-point numbers.">percentage</a> or calc();</li></ul></td></tr><tr><th scope="row">Canonical order</th><td>order of appearance in the formal grammar of the values</td></tr></tbody></table><p></p>
+
+<p>See <a href="CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes.html" title="CSS/Using_CSS_flexible_boxes">Using CSS flexible boxes</a> for more properties and information.</p>
+
+<h2 name="Syntax" id="Syntax">Syntax</h2>
+
+<pre class="brush:css">/* 0 0 auto */
+flex: none;
+
+/* One value, unitless number: flex-grow */
+flex: 2;
+
+/* One value, width/height: flex-basis */
+flex: 10em;
+flex: 30px;
+flex: auto;
+flex: content;
+
+/* Two values: flex-grow | flex-basis */
+flex: 1 30px;
+
+/* Two values: flex-grow | flex-shrink */
+flex: 2 2;
+
+/* Three values: flex-grow | flex-shrink | flex-basis */
+flex: 2 2 10%;
+
+/* Global values */
+flex: inherit;
+flex: initial;
+flex: unset;
+</pre>
+
+<h3 name="Values" id="Values">Values</h3>
+
+<dl>
+ <dt><code>&lt;'flex-grow'&gt;</code></dt>
+ <dd>Defines the&nbsp;<code><a href="flex-grow.html">flex-grow</a></code>&nbsp;of the flex item. See <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension."><code>&lt;number&gt;</code></a> for more details. Negative values are considered invalid. Defaults to <code>1</code> when omitted.</dd>
+ <dt><code>&lt;'flex-shrink'&gt;</code></dt>
+ <dd>Defines the&nbsp;<code><a href="flex-shrink.html">flex-shrink</a></code>&nbsp;of the flex item. See <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension."><code>&lt;number&gt;</code></a> for more details. Negative values are considered invalid. Defaults to <code>1</code> when omitted.</dd>
+ <dt><code>&lt;'flex-basis'&gt;</code></dt>
+ <dd>Defines the&nbsp;<a href="flex-basis.html" title="CSS/flex-basis"><code>flex-basis</code></a>&nbsp;of the flex item. Any value valid for <code>width</code> and <code>height</code> properties are accepted. A preferred size of <code>0</code> must have a unit to avoid being interpreted as a flexibility. Defaults to <code>0%</code> when omitted.</dd>
+ <dt><code>none</code></dt>
+ <dd>This keyword computes to <code>0 0 auto</code>.</dd>
+ <dt>
+ <h3 id="Formal_syntax">Formal syntax</h3>
+ </dt>
+</dl>
+
+<pre class="syntaxbox">none <a href="Value_definition_syntax.html#Single_bar" title="Single bar">|</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets">[</a> <a href="flex-grow.html" title="&lt;number&gt;">&lt;'flex-grow'&gt;</a> <a href="flex-shrink.html" title="&lt;number&gt;">&lt;'flex-shrink'&gt;</a><a href="Value_definition_syntax.html#Question_mark_(.3F)" title="Question mark">?</a> <a href="Value_definition_syntax.html#Double_bar" title="Double bar">||</a> <a href="flex-basis.html" title="content | &lt;'width'&gt;">&lt;'flex-basis'&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets">]</a></pre>
+
+<h2 id="Example">Example</h2>
+
+<pre class="brush: css">#flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+#flex-container &gt; .flex-item {
+	-webkit-flex: auto;
+	flex: auto;
+}
+
+#flex-container &gt; .raw-item {
+	width: 5rem;
+}
+</pre>
+
+<pre class="brush: html">&lt;div id="flex-container"&gt;
+&nbsp;&nbsp; &nbsp;&lt;div class="flex-item" id="flex"&gt;Flex box (click to toggle raw box)&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&lt;div class="raw-item" id="raw"&gt;Raw box&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<div class="hidden">
+<pre class="brush: js">var flex = document.getElementById("flex");
+var raw = document.getElementById("raw");
+flex.addEventListener("click", function() {
+	raw.style.display = raw.style.display == "none" ? "block" : "none";
+});
+</pre>
+
+<pre class="brush: css">#flex-container {
+	width: 100%;
+	font-family: Consolas, Arial, sans-serif;
+}
+
+#flex-container &gt; div {
+	border: 1px solid #f00;
+	padding: 1rem;
+}
+
+#flex-container &gt; .raw-item {
+	border: 1px solid #000;
+}
+</pre>
+</div>
+
+<h3 id="Result">Result</h3>
+
+<p><iframe id="frame_Example" height="60" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/flex%24samples/Example9970.html?revision=1118629" frameborder="0" width="100%" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h2 name="Specifications" id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th>Specification</th>
+   <th>Status</th>
+   <th>Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-flexbox-1/#flex-property" class="external" lang="en" hreflang="en">CSS Flexible Box Layout Module<br><small lang="en-US">The definition of 'flex' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Firefox (Gecko)</th>
+   <th>Chrome</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/18" title="Released on 2013-01-08.">18.0</a> (18.0)<sup>[1]</sup><br>
+    <a href="https://developer.mozilla.org/en-US/Firefox/Releases/20" title="Released on 2013-04-02.">20.0</a> (20.0)<br>
+    <a href="https://developer.mozilla.org/en-US/Firefox/Releases/28" title="Released on 2014-03-18.">28.0</a> (28.0)<sup>[2]</sup></td>
+   <td>21.0<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><br>
+    29.0</td>
+   <td>10.0<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-ms' as this browser considers it experimental">-ms</a></span><sup>[3]</sup><br>
+    11.0<sup>[3]</sup></td>
+   <td>12.10</td>
+   <td>
+    <p>6.1<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><br>
+     9.0</p>
+   </td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>Android</th>
+   <th>IE Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>4.4</td>
+   <td>11</td>
+   <td>12.10</td>
+   <td>7.1<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] In Gecko 18.0 (Firefox 18.0 / Thunderbird 18.0 / SeaMonkey 2.15) and 19.0 (Firefox 19.0 / Thunderbird 19.0 / SeaMonkey 2.16) flexbox support is hidden behind the <code>about:config</code> preference <code>layout.css.flexbox.enabled</code>, defaulting to <code>false</code>.</p>
+
+<p>[2] Multi-line flexbox is supported since Gecko 28.0 (Firefox 28.0 / Thunderbird 28.0 / SeaMonkey 2.25).</p>
+
+<p>In addition to the unprefixed support, Gecko 48.0 (Firefox 48.0 / Thunderbird 48.0 / SeaMonkey 2.45) added support for a <code>-webkit</code> prefixed version of the property for web compatibility reasons behind the preference <code>layout.css.prefixes.webkit</code>, defaulting to <code>false</code>. Since Gecko 49.0 (Firefox 49.0 / Thunderbird 49.0 / SeaMonkey 2.46) the preference defaults to <code>true</code>.</p>
+
+<p>[3] Internet Explorer 10-11 (but not 12+) ignores uses of <a href="calc.html"><code>calc()</code></a> in the flex-basis part of the <code>flex</code> syntax. This can be worked around by using the longhand properties instead of the shorthand. See <a href="https://github.com/philipwalton/flexbugs#8-flex-basis-doesnt-support-calc" class="external">Flexbug #8</a> for more info. Furthermore a <code>flex</code> declaration with a unitless value in its <code>flex-basis</code> part is considered syntactically invalid in those versions and will thus be ignored. A workaround is to always include a unit in the <code>flex-basis</code> part of the <code>flex</code> shorthand value. See <a href="https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored" class="external">Flexbug #4</a> for more info.</p>
+
+<h2 name="See_also" id="See_also">See also</h2>
+
+<ul>
+ <li><a href="CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes.html" title="CSS/Using_CSS_flexible_boxes">Using CSS flexible boxes</a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Flexible%20Boxes.html">CSS Flexible Boxes</a></li>
+      
+        <li><a href="../../tag/CSS%20Property.html">CSS Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/riversYeHaha">riversYeHaha</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/geirmarius">geirmarius</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jdescottes">jdescottes</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mrenty">mrenty</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mgiuffrida">mgiuffrida</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mahan91">Mahan91</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/cvrebert">cvrebert</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/NicolasGoudry">NicolasGoudry</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/wbamberg">wbamberg</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/hexalys">hexalys</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Dholbert">Dholbert</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/MattBrubeck">MattBrubeck</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/so_matt_basta">so_matt_basta</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Golmote">Golmote</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/andRyanMiller">andRyanMiller</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mori">Mori</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/SJW">SJW</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/davidben">davidben</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/JDBurnZ">JDBurnZ</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/SaschaNaz">SaschaNaz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/scottrowe">scottrowe</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/riversYeHaha">riversYeHaha</a>,
+                      <time datetime="2016-09-13T19:10:41-07:00">Sep 13, 2016, 7:10:41 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Flexible_Box_Layout.html">CSS Flexible Box Layout</a></strong></li><li data-default-state="open"><a href="#"><strong>Guides</strong></a><ol><li><a href="CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox.html" title="The defining aspect of the flexbox is the ability to alter its items, width, and/or height to best fill the available space on any display device. A flex container expands its items to fill the available free space or shrinks them to prevent overflow.">Advanced layouts with flexbox</a></li><li><a href="CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes.html" title="The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page such that the elements behave predictably when the page layout must accommodate different screen sizes and different display devices.">Using CSS Flexible Boxes</a></li><li><a href="CSS_Flexible_Box_Layout/Using_flexbox_to_lay_out_web_applications.html" title="Using flexbox can help you design compelling layouts in web applications that scale better from desktop to mobile. Put an end to floating &lt;div&gt; elements, absolute positioning, and JavaScript hacks, and start building horizontal and vertical flowing layouts in just a few lines of CSS. Some basic example use cases:">Using flexbox to lay out web applications</a></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a href="align-content.html" title="The CSS align-content property aligns a flex container's lines within the flex container when there is extra space on the cross-axis."><code>align-content</code></a></li><li><a href="align-items.html" title="The CSS align-items property aligns flex items of the current flex line the same way as justify-content but in the perpendicular direction."><code>align-items</code></a></li><li><a href="align-self.html" title="The align-self CSS property aligns flex items of the current flex line overriding the align-items value. If any of the flex item's cross-axis margin is set to auto, then align-self is ignored."><code>align-self</code></a></li><li><em><code>flex</code></em></li><li><a href="flex-basis.html" title="The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item. This property determines the size of the content-box unless specified otherwise using box-sizing."><code>flex-basis</code></a></li><li><a href="flex-direction.html" title="The flex-direction CSS property specifies how flex items are placed in the flex container defining the main axis and the direction (normal or reversed)."><code>flex-direction</code></a></li><li><a href="flex-flow.html" title="The flex-flow CSS property is a shorthand property for flex-direction and flex-wrap individual properties."><code>flex-flow</code></a></li><li><a href="flex-grow.html" title="The flex-grow CSS property specifies the flex grow factor of a flex item. It specifies what amount of space inside the flex container the item should take up."><code>flex-grow</code></a></li><li><a href="flex-shrink.html" title="The flex-shrink CSS property specifies the flex shrink factor of a flex item."><code>flex-shrink</code></a></li><li><a href="flex-wrap.html" title="The CSS flex-wrap property specifies whether flex items are forced into a single line or can be wrapped onto multiple lines. If wrapping is allowed, this property also enables you to control the direction in which lines are stacked."><code>flex-wrap</code></a></li><li><a href="justify-content.html" title="The CSS justify-content property defines how the browser distributes space between and around flex items along the main-axis of their container."><code>justify-content</code></a></li><li><a href="order.html" title="The CSS order property specifies the order used to lay out flex items in their flex container. Elements are laid out in the&nbsp;ascending order of the order value. Elements with the same order value are laid out in the order in which they appear in the source code."><code>order</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/flex$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/flex$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/flex" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="Spanish" value="/es/docs/Web/CSS/flex">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/flex">
+            Français (fr)
+          </option>
+          <option title="Italian" value="/it/docs/Web/CSS/flex">
+            Italiano (it)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/flex">
+            日本語 (ja)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/flex">
+            Русский (ru)
+          </option>
+          <option title="Ukrainian" value="/uk/docs/Web/CSS/flex">
+            Українська (uk)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/flex">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/flex by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:40:48 GMT -->
+</body></html>

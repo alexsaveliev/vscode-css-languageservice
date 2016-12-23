@@ -1,0 +1,1075 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 01:01:06 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>WebKit extensions</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Webkit_Extensions$json">
+  <link rel="canonical" href="Webkit_Extensions.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="../../../../de/docs/Web/CSS/CSS_Referenz/Webkit_Extensions.html" title="WebKit extensions">
+    
+      <link rel="alternate" hreflang="fr" href="../../../../fr/docs/Web/CSS/Reference/Extensions_WebKit.html" title="Extensions WebKit">
+    
+      <link rel="alternate" hreflang="zh-CN" href="../../../../zh-CN/docs/Web/CSS/Reference/Webkit_Extensions.html" title="Webkit Extensions">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="WebKit extensions">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Webkit_Extensions">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Webkit_Extensions">
+  <meta name="twitter:title" content="WebKit extensions">
+  
+  <meta property="og:description" content="WebKit supports a number of extensions to CSS that are prefixed with -webkit. All -webkit prefixed properties also work with an -apple prefix.">
+  <meta name="description" content="WebKit supports a number of extensions to CSS that are prefixed with -webkit. All -webkit prefixed properties also work with an -apple prefix.">
+  <meta name="twitter:description" content="WebKit supports a number of extensions to CSS that are prefixed with -webkit. All -webkit prefixed properties also work with an -apple prefix.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/Webkit_Extensions" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FWebKit_Extensions" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="../../../../de/docs/Web/CSS/CSS_Referenz/Webkit_Extensions.html" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="../../../../fr/docs/Web/CSS/Reference/Extensions_WebKit.html" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="../../../../zh-CN/docs/Web/CSS/Reference/Webkit_Extensions.html" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Webkit_Extensions$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Webkit_Extensions$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Webkit_Extensions$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">WebKit extensions</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/tobias47n9e" title="View profile: tobias47n9e">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tobias47n9e" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tobias47n9e</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/yisibl" title="View profile: yisibl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="yisibl" data-src="../../../../../secure.gravatar.com/avatar/5c4ad3dbe5a5074993a6e270c38636096c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">yisibl</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teo1978" title="View profile: teo1978">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teo1978" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teo1978</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/y0ssar1an" title="View profile: y0ssar1an">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="y0ssar1an" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">y0ssar1an</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/aneesh.mb" title="View profile: aneesh.mb">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="aneesh.mb" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">aneesh.mb</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Rob W" title="View profile: Rob W">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Rob W" data-src="../../../../../secure.gravatar.com/avatar/c916d92c098426d84778a7910cc32b396c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Rob W</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jeremie" title="View profile: Jeremie">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jeremie" data-src="../../../../../secure.gravatar.com/avatar/ea74cf7f528273838138e9ae407cd8ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jeremie</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Inkbug" title="View profile: Inkbug">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Inkbug" data-src="../../../../../secure.gravatar.com/avatar/be195c7bea8f486c8642aaa5c14b8f796c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Inkbug</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei" title="View profile: ziyunfei">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ziyunfei" data-src="../../../../../secure.gravatar.com/avatar/2dbf9c055c2b32d3ca45d25be01174236c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ziyunfei</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>WebKit extensions</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#WebKit-prefixed_entities_on_the_standard_track" rel="internal">WebKit-prefixed entities on the standard track</a></li><li><a href="#WebKit-prefixed_entities_with_an_unprefixed_counterpart" rel="internal">WebKit-prefixed entities with an unprefixed counterpart</a></li><li><a href="#Proprietary_WebKit-prefixed_entities_(do_not_use_on_Web_sites)" rel="internal">Proprietary WebKit-prefixed entities (do not use on Web sites)</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section></div>
+
+<p>WebKit supports a number of extensions to <a href="../CSS.html">CSS</a> that are prefixed with <code>-webkit</code>. All <code>-webkit</code> prefixed properties also work with an <code>-apple</code> prefix.</p>
+
+<p>Some of these properties have been included in draft CSS specification for inclusion in the final recommendation, but are still experimental. Some of these non-standard properties are not on the standard track.</p>
+
+<h2 id="WebKit-prefixed_entities_on_the_standard_track">WebKit-prefixed entities on the standard track</h2>
+
+<div class="index">
+<h3 id="A_–_C">A – C</h3>
+
+<ul>
+ <li><a href="column-count.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-count</code></a></li>
+ <li><a href="column-gap.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-gap</code></a></li>
+ <li><a href="column-width.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-width</code></a></li>
+ <li><a href="column-rule.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-rule</code></a></li>
+ <li><a href="column-rule-width.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-rule-width</code></a></li>
+ <li><a href="column-rule-style.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-rule-style</code></a></li>
+ <li><a href="column-rule-color.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-rule-color</code></a></li>
+ <li><a href="columns.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-columns</code></a></li>
+ <li><a href="column-span.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-span</code></a></li>
+</ul>
+
+<h3 id="F">F</h3>
+
+<ul>
+ <li><a href="font-feature-settings.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-font-feature-settings</code></a></li>
+ <li><a href="font-kerning.html" title="The font-kerning CSS property controls the usage of the kerning information; that is, it controls how letters are spaced. The kerning information is stored in the font, and if the font is well-kerned, this feature allows spacing between characters to be very similar, whatever the characters are."><code>-webkit-font-kerning</code></a></li>
+ <li><a href="-webkit-font-size-delta.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-font-size-delta</code></a></li>
+ <li><a href="font-variant-ligatures.html" title="The font-variant-ligatures CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text."><code>-webkit-font-variant-ligatures</code></a></li>
+</ul>
+
+<h3 id="G">G</h3>
+
+<ul>
+ <li><a href="-webkit-grid-column.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-grid-column</code></a></li>
+ <li><a href="-webkit-grid-row.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-grid-row</code></a></li>
+</ul>
+
+<h3 id="H_–_O">H – O</h3>
+
+<ul>
+ <li><a href="hyphens.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-hyphens</code></a></li>
+</ul>
+
+<h3 id="M">M</h3>
+
+<ul>
+ <li><a href="mask.html" title="The mask property in CSS allows users to alter the visibility of an item by either partially or fully hiding it. This is accomplished by either masking or clipping the image at specific points."><code>-webkit-mask</code></a></li>
+ <li><a href="mask-clip.html" title="The mask-clip CSS property determines the area, which is affected by a mask. The painted content of an element must be restricted to this area."><code>-webkit-mask-clip</code></a></li>
+ <li><a href="-webkit-mask-composite.html" title="The -webkit-mask-composite property specifies the manner in which multiple mask images applied to the same element are composited with one another."><code>-webkit-mask-composite</code></a></li>
+ <li><a href="mask-image.html" title="The mask-image CSS property sets the image that is used as mask layer for an element."><code>-webkit-mask-image</code></a></li>
+ <li><a href="mask-origin.html" title="The mask-origin CSS property determines the origin of a mask."><code>-webkit-mask-origin</code></a></li>
+ <li><a href="mask-position.html" title="The mask-position CSS property sets the initial position, relative to the mask position layer defined by mask-origin for each defined mask image."><code>-webkit-mask-position</code></a></li>
+ <li><a href="-webkit-mask-position-x.html" title="The -webkit-mask-position-x CSS property sets the initial horizontal position of a mask image."><code>-webkit-mask-position-x</code></a></li>
+ <li><a href="-webkit-mask-position-y.html" title="The -webkit-mask-position-y CSS property sets the initial vertical position of a mask image."><code>-webkit-mask-position-y</code></a></li>
+ <li><a href="mask-repeat.html" title="The -webkit-mask-repeat property specifies whether and how a mask image is repeated (tiled)."><code>-webkit-mask-repeat</code></a></li>
+ <li><a href="-webkit-mask-repeat-x.html" title="The -webkit-mask-repeat-x property specifies whether and how a mask image is repeated (tiled) horizontally."><code>-webkit-mask-repeat-x</code></a></li>
+ <li><a href="-webkit-mask-repeat-y.html" title="The -webkit-mask-repeat-y property specifies whether and how a mask image is repeated (tiled) vertically."><code>-webkit-mask-repeat-y</code></a></li>
+ <li><a href="mask-size.html" title="The mask-size CSS property specifies the sizes of the mask images. The size of the image can be fully or partially constrained&nbsp;in order to preserve its intrinsic ratio."><code>-webkit-mask-size</code></a></li>
+</ul>
+
+<h3 id="P">P</h3>
+
+<ul>
+ <li><a href="perspective.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-perspective</code></a></li>
+ <li><a href="perspective-origin.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-perspective-origin</code></a></li>
+</ul>
+
+<h3 id="Q_–_Z">Q – Z</h3>
+
+<ul>
+ <li><a href="-webkit-region-fragment.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-region-fragment</code></a></li>
+ <li><a href="-webkit-shape-outside.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-shape-outside</code></a></li>
+ <li><a href="text-emphasis.html" title="The text-emphasis CSS property is a shorthand&nbsp;property for setting text-emphasis-style and text-emphasis-color in one declaration. This property will apply the specified emphasis mark to each character of the element's text, except separator characters, like spaces,&nbsp; and control characters."><code>-webkit-text-emphasis</code></a></li>
+ <li><a href="text-emphasis-color.html" title="The text-emphasis-color CSS property defines the color used to draw an emphasis mark. It can also be set, and reset, using the text-emphasis shorthand."><code>-webkit-text-emphasis-color</code></a></li>
+ <li><a href="text-emphasis-position.html" title="The text-emphasis-position CSS property describes where emphasis marks are drawn at. The effect of emphasis marks on the line height is the same as for ruby text: if there isn't enough place, the line height is increased."><code>-webkit-text-emphasis-position</code></a></li>
+ <li><a href="text-emphasis-style.html" title="The text-emphasis-style CSS property defines the type of emphasis used. It can also be set, and reset, using the text-emphasis shorthand."><code>-webkit-text-emphasis-style</code></a></li>
+ <li><a href="transform.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-transform</code></a></li>
+ <li><a href="transform-origin.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-transform-origin</code></a></li>
+ <li><a href="transform-style.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-transform-style</code></a></li>
+ <li><a href="-epub-word-break.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-epub-word-break</code></a></li>
+ <li><a href="-epub-writing-mode.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-epub-writing-mode</code></a></li>
+</ul>
+</div>
+
+<h2 id="WebKit-prefixed_entities_with_an_unprefixed_counterpart">WebKit-prefixed entities with an unprefixed counterpart</h2>
+
+<p>In order to maximize the compatibility of your CSS, you should use the unprefixed standard properties instead of the prefixed ones listed below in all cases.</p>
+
+<div class="index">
+<h3 id="A">A</h3>
+
+<ul>
+ <li><a href="animation.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-animation</code></a></li>
+ <li><a href="animation-delay.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-animation-delay</code></a></li>
+ <li><a href="animation-direction.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-animation-direction</code></a></li>
+ <li><a href="animation-duration.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-animation-duration</code></a></li>
+ <li><a href="animation-fill-mode.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-animation-fill-mode</code></a></li>
+ <li><a href="animation-iteration-count.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-animation-iteration-count</code></a></li>
+ <li><a href="animation-name.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-animation-name</code></a></li>
+ <li><a href="animation-play-state.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-animation-play-state</code></a></li>
+ <li><a href="animation-timing-function.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-animation-timing-function</code></a></li>
+</ul>
+
+<h3 id="B">B</h3>
+
+<ul>
+ <li><a href="backface-visibility.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-backface-visibility</code></a></li>
+ <li><a href="background-clip.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-background-clip</code></a></li>
+ <li><a href="background-origin.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-background-origin</code></a></li>
+ <li><a href="background-size.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-background-size</code></a></li>
+ <li><a href="border-bottom-left-radius.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-bottom-left-radius</code></a></li>
+ <li><a href="border-bottom-right-radius.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-bottom-right-radius</code></a></li>
+ <li><a href="border-image.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-image</code></a></li>
+ <li><a href="border-radius.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-radius</code></a></li>
+ <li><a href="border-top-left-radius.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-top-left-radius</code></a></li>
+ <li><a href="border-top-right-radius.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-top-right-radius</code></a></li>
+ <li><a href="box-sizing.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-box-sizing</code></a></li>
+</ul>
+
+<h3 id="C_–_N">C – N</h3>
+
+<ul>
+ <li><a href="caption-side.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-epub-caption-side</code></a></li>
+</ul>
+
+<h3 id="O_–_S">O – S</h3>
+
+<ul>
+ <li><a href="opacity.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-opacity</code></a></li>
+</ul>
+
+<h3 id="T_–_Z">T – Z</h3>
+
+<ul>
+ <li><a href="text-transform.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-epub-text-transform</code></a></li>
+ <li><a href="transition.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-transition</code></a></li>
+ <li><a href="transition-delay.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-transition-delay</code></a></li>
+ <li><a href="transition-duration.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-transition-duration</code></a></li>
+ <li><a href="transition-property.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-transition-property</code></a></li>
+ <li><a href="transition-timing-function.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-transition-timing-function</code></a></li>
+</ul>
+</div>
+
+<h2 id="Proprietary_WebKit-prefixed_entities_(do_not_use_on_Web_sites)">Proprietary WebKit-prefixed entities (do not use on Web sites)</h2>
+
+<div class="index">
+<h3 id="A_2">A</h3>
+
+<ul>
+ <li><a href="-moz-appearance.html" title="REDIRECT /en-US/docs/CSS/-moz-appearance"><code>-webkit-appearance</code></a></li>
+ <li><a href="-webkit-aspect-ratio.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-aspect-ratio</code></a></li>
+ <li><a href="_-webkit-autofill.html" title="The :-webkit-autofill CSS pseudo-class matches when an &lt;input&gt; element has its value autofilled by the browser."><code>:-webkit-autofill</code></a></li>
+</ul>
+
+<h3 id="B_2">B</h3>
+
+<ul>
+ <li><a href="-webkit-background-composite.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-background-composite</code></a></li>
+ <li><a href="background-origin-x.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>background-origin-x</code></a> (unprefixed!)</li>
+ <li><a href="background-origin-y.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>background-origin-y</code></a> (unprefixed!)</li>
+ <li><a href="-webkit-border-after.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-after</code></a></li>
+ <li><a href="-webkit-border-after-color.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-after-color</code></a></li>
+ <li><a href="-webkit-border-after-style.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-after-style</code></a></li>
+ <li><a href="-webkit-border-after-width.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-after-width</code></a></li>
+ <li><a href="-webkit-border-before.html" title="Technical review completed."><code>-webkit-border-before</code></a></li>
+ <li><a href="-webkit-border-before-color.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-before-color</code></a></li>
+ <li><a href="-webkit-border-before-style.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-before-style</code></a></li>
+ <li><a href="-webkit-border-before-width.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-before-width</code></a></li>
+ <li><a href="-webkit-border-end.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-end</code></a></li>
+ <li><a href="-webkit-border-end-color.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-end-color</code></a></li>
+ <li><a href="-webkit-border-end-style.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-end-style</code></a></li>
+ <li><a href="-webkit-border-end-width.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-end-width</code></a></li>
+ <li><a href="border-image-repeat.html" title="The border-image-repeat CSS property defines how the middle part of a border image is handled so that it can match the size of the border. It has a one-value syntax that describes the behavior of all the sides, and a two-value syntax that sets a different value for the horizontal and vertical behavior."><code>-webkit-border-fit</code></a></li>
+ <li><a href="-webkit-border-horizontal-spacing.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-horizontal-spacing</code></a></li>
+ <li><a href="-webkit-border-start.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-start</code></a></li>
+ <li><a href="-webkit-border-start-color.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-start-color</code></a></li>
+ <li><a href="-webkit-border-start-style.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-start-style</code></a></li>
+ <li><a href="-webkit-border-start-width.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-start-width</code></a></li>
+ <li><a href="-webkit-border-vertical-spacing.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-border-vertical-spacing</code></a></li>
+ <li><a href="box-align.html" title="The CSS box-align property specifies how an element aligns its contents across (perpendicular to) the direction of its layout. The effect of this is only visible if there is extra space in the box. See Flexbox for more about the properties of flexbox elements."><code>-webkit-box-align</code></a></li>
+ <li><a href="box-direction.html" title="The CSS box-direction property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge). See Flexbox for more about the properties of flexbox elements."><code>-webkit-box-direction</code></a></li>
+ <li><a href="box-flex.html" title="The -moz-box-flex and -webkit-box-flex CSS properties specify how a -moz-box or -webkit-box grows to fill the box that contains it, in the direction of the containing box's layout. See Flexbox for more about the properties of flexbox elements."><code>-webkit-box-flex</code></a></li>
+ <li><a href="-webkit-box-flex-group.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-box-flex-group</code></a></li>
+ <li><a href="-webkit-box-lines.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-box-lines</code></a></li>
+ <li><a href="box-ordinal-group.html" title="See Flexbox for more information."><code>-webkit-box-ordinal-group</code></a></li>
+ <li><a href="box-orient.html" title="The CSS box-orient property specifies whether an element lays out its contents horizontally or vertically. See Flexbox for more about the properties of flexbox elements."><code>-webkit-box-orient</code></a></li>
+ <li><a href="box-pack.html" title="The -moz-box-pack and -webkit-box-pack CSS properties specify how a -moz-box or -webkit-box packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box. See Flexbox for more about the properties of flexbox elements."><code>-webkit-box-pack</code></a></li>
+ <li><a href="-webkit-box-reflect.html" title="The -webkit-box-reflect CSS property lets you reflect the content of an element in one specific direction."><code>-webkit-box-reflect</code></a></li>
+ <li><a href="box-shadow.html" title="The box-shadow property describes one or more shadow effects as a comma-separated list."><code>-webkit-box-shadow</code></a></li>
+</ul>
+
+<h3 id="C">C</h3>
+
+<ul>
+ <li><a href="-webkit-column-axis.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-axis</code></a></li>
+ <li><a href="-webkit-column-break-after.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-break-after</code></a></li>
+ <li><a href="-webkit-column-break-before.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-break-before</code></a></li>
+ <li><a href="-webkit-column-break-inside.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-column-break-inside</code></a></li>
+</ul>
+
+<h3 id="D_E">D E</h3>
+
+<ul>
+ <li><a href="-webkit-dashboard-region.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-dashboard-region</code></a></li>
+</ul>
+
+<h3 id="F_2">F</h3>
+
+<ul>
+ <li><a href="filter.html" title="The CSS filter property provides for effects like blurring or color shifting on an element’s rendering before the element is displayed. Filters are commonly used to adjust the rendering of an image, a background, or a border."><code>-webkit-filter</code></a></li>
+ <li><a href="font-smooth.html" title="REDIRECT https://developer.mozilla.org/en/CSS/font-smooth"><code>-webkit-font-smoothing</code></a></li>
+</ul>
+
+<h3 id="G_2">G</h3>
+
+<ul>
+ <li><a href="-webkit-grid-columns.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-grid-columns</code></a></li>
+ <li><a href="-webkit-grid-rows.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-grid-rows</code></a></li>
+</ul>
+
+<h3 id="H_–_K">H – K</h3>
+
+<ul>
+ <li><a href="-webkit-highlight.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-highlight</code></a></li>
+ <li><a href="-webkit-hyphenate-charset.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-hyphenate-charset</code></a></li>
+ <li><a href="-webkit-hyphenate-limit-after.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-hyphenate-limit-after</code></a></li>
+ <li><a href="-webkit-hyphenate-limit-before.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-hyphenate-limit-before</code></a></li>
+ <li><a href="-webkit-hyphenate-limit-lines.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-hyphenate-limit-lines</code></a></li>
+ <li><a href="-webkit-image-set.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-image-set</code></a></li>
+</ul>
+
+<h3 id="L">L</h3>
+
+<ul>
+ <li><a href="-webkit-line-align.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-line-align</code></a></li>
+ <li><a href="-webkit-line-box-contain.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-line-box-contain</code></a></li>
+ <li><a href="-webkit-line-break.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-line-break</code></a></li>
+ <li><a href="-webkit-line-clamp.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-line-clamp</code></a></li>
+ <li><a href="-webkit-line-grid.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-line-grid</code></a></li>
+ <li><a href="-webkit-line-snap.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-line-snap</code></a></li>
+ <li><a href="-webkit-locale.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-locale</code></a></li>
+ <li><a href="-webkit-logical-height.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-logical-height</code></a></li>
+ <li><a href="-webkit-logical-width.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-logical-width</code></a></li>
+</ul>
+
+<h3 id="M_2">M</h3>
+
+<ul>
+ <li><a href="-webkit-margin-after.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-margin-after</code></a></li>
+ <li><a href="-webkit-margin-after-collapse.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-margin-after-collapse</code></a></li>
+ <li><a href="-webkit-margin-before.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-margin-before</code></a></li>
+ <li><a href="-webkit-margin-before-collapse.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-margin-before-collapse</code></a></li>
+ <li><a href="-webkit-margin-bottom-collapse.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-margin-bottom-collapse</code></a></li>
+ <li><a href="-webkit-margin-collapse.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-margin-collapse</code></a></li>
+ <li><a href="-webkit-margin-end.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-margin-end</code></a></li>
+ <li><a href="-webkit-margin-start.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-margin-start</code></a></li>
+ <li><a href="-webkit-margin-top-collapse.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-margin-top-collapse</code></a></li>
+ <li><a href="-webkit-marquee.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-marquee</code></a></li>
+ <li><a href="-webkit-marquee-direction.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-marquee-direction</code></a></li>
+ <li><a href="-webkit-marquee-increment.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-marquee-increment</code></a></li>
+ <li><a href="-webkit-marquee-repetition.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-marquee-repetition</code></a></li>
+ <li><a href="-webkit-marquee-speed.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-marquee-speed</code></a></li>
+ <li><a href="-webkit-marquee-style.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-marquee-style</code></a></li>
+ <li><a href="-webkit-mask-attachment.html" title="If a -webkit-mask-image is specified, -webkit-mask-attachment determines whether the mask image's position is fixed within the viewport, or scrolls along with its containing block."><code>-webkit-mask-attachment</code></a></li>
+ <li><a href="-webkit-mask-box-image.html" title="-webkit-mask-box-image sets the mask image for an element's border box."><code>-webkit-mask-box-image</code></a></li>
+ <li><a href="-webkit-mask-box-image-outset.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-mask-box-image-outset</code></a></li>
+ <li><a href="-webkit-mask-box-image-repeat.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-mask-box-image-repeat</code></a></li>
+ <li><a href="-webkit-mask-box-image-slice.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-mask-box-image-slice</code></a></li>
+ <li><a href="-webkit-mask-box-image-source.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-mask-box-image-source</code></a></li>
+ <li><a href="-webkit-mask-box-image-width.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-mask-box-image-width</code></a></li>
+ <li><a href="-webkit-mask-position-x.html" title="The -webkit-mask-position-x CSS property sets the initial horizontal position of a mask image."><code>-webkit-mask-position-x</code></a></li>
+ <li><a href="-webkit-mask-position-y.html" title="The -webkit-mask-position-y CSS property sets the initial vertical position of a mask image."><code>-webkit-mask-position-y</code></a></li>
+ <li><a href="-webkit-mask-repeat-x.html" title="The -webkit-mask-repeat-x property specifies whether and how a mask image is repeated (tiled) horizontally."><code>-webkit-mask-repeat-x</code></a></li>
+ <li><a href="-webkit-mask-repeat-y.html" title="The -webkit-mask-repeat-y property specifies whether and how a mask image is repeated (tiled) vertically."><code>-webkit-mask-repeat-y</code></a></li>
+ <li><a href="-webkit-match-nearest-mail-blockquote-color.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-match-nearest-mail-blockquote-color</code></a></li>
+ <li><a href="-webkit-max-logical-height.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-max-logical-height</code></a></li>
+ <li><a href="-webkit-max-logical-width.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-max-logical-width</code></a></li>
+ <li><a href="-webkit-min-logical-height.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-min-logical-height</code></a></li>
+ <li><a href="-webkit-min-logical-width.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-min-logical-width</code></a></li>
+</ul>
+
+<h3 id="N">N</h3>
+
+<ul>
+ <li><a href="-webkit-nbsp-mode.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-nbsp-mode</code></a></li>
+</ul>
+
+<h3 id="O">O</h3>
+
+<ul>
+ <li><a href="-webkit-overflow-scrolling.html" title="The -webkit-overflow-scrolling CSS property controls whether or not touch devices use momentum-based scrolling for the given element."><code>-webkit-overflow-scrolling</code></a></li>
+</ul>
+
+<h3 id="P_Q">P Q</h3>
+
+<ul>
+ <li><a href="-webkit-padding-after.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-padding-after</code></a></li>
+ <li><a href="-webkit-padding-before.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-padding-before</code></a></li>
+ <li><a href="-webkit-padding-end.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-padding-end</code></a></li>
+ <li><a href="-webkit-padding-start.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-padding-start</code></a></li>
+ <li><a href="-webkit-perspective-origin-x.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-perspective-origin-x</code></a></li>
+ <li><a href="-webkit-perspective-origin-y.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-perspective-origin-y</code></a></li>
+ <li><a href="-webkit-print-color-adjust.html" title="The -webkit-print-color-adjust property is a non-standard CSS extension that can be used to force printing of background colors and images in browsers based on the WebKit engine."><code>-webkit-print-color-adjust</code></a></li>
+</ul>
+
+<h3 id="R">R</h3>
+
+<ul>
+ <li><a href="-webkit-region-break-after.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-region-break-after</code></a></li>
+ <li><a href="-webkit-region-break-before.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-region-break-before</code></a></li>
+ <li><a href="-webkit-region-break-inside.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-region-break-inside</code></a></li>
+ <li><a href="-webkit-rtl-ordering.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-rtl-ordering</code></a></li>
+</ul>
+
+<h3 id="S">S</h3>
+
+<ul>
+ <li><a href="-webkit-shape-inside.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-shape-inside</code></a></li>
+ <li><a href="-webkit-svg-shadow.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-svg-shadow</code></a></li>
+</ul>
+
+<h3 id="T_–_Z_2">T – Z</h3>
+
+<ul>
+ <li><a href="-webkit-tap-highlight-color.html" title="-webkit-tap-highlight-color is a non-standard CSS property that sets the color of the highlight that appears over a link while it's being tapped. The highlighting indicates to the user&nbsp;that their tap is being successfully recognized, and indicates which element they're tapping on."><code>-webkit-tap-highlight-color</code></a></li>
+ <li><a href="-webkit-text-combine.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-text-combine</code></a></li>
+ <li><a href="-epub-text-combine.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-epub-text-combine</code></a></li>
+ <li><a href="-webkit-text-decorations-in-effect.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-text-decorations-in-effect</code></a></li>
+ <li><a href="-epub-text-emphasis.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-epub-text-emphasis</code></a></li>
+ <li><a href="-epub-text-emphasis-color.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-epub-text-emphasis-color</code></a></li>
+ <li><a href="-epub-text-emphasis-style.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-epub-text-emphasis-style</code></a></li>
+ <li><a href="-webkit-text-fill-color.html" title="The -webkit-text-fill-color CSS property specifies the fill color of characters of text. If this property is not set, the value of the color property is used."><code>-webkit-text-fill-color</code></a></li>
+ <li><a href="-epub-text-orientation.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-epub-text-orientation</code></a></li>
+ <li><a href="-webkit-text-security.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-text-security</code></a></li>
+ <li><a href="text-size-adjust.html" title="The documentation about this has not yet been written; please consider contributing!"><code>-webkit-text-size-adjust</code></a></li>
+ <li><a href="-webkit-text-stroke.html" title="The -webkit-text-stroke CSS property specifies the width and color of strokes for text characters. This is a shorthand property for the longhand properties -webkit-text-stroke-width and -webkit-text-stroke-color."><code>-webkit-text-stroke</code></a></li>
+ <li><a href="-webkit-text-stroke-color.html" title="The -webkit-text-stroke-color CSS property specifies the stroke color of characters of text. If this property is not set, the value of the color property is used."><code>-webkit-text-stroke-color</code></a></li>
+ <li><a href="-webkit-text-stroke-width.html" title="The -webkit-text-stroke-width CSS property specifies the width of the stroke for text."><code>-webkit-text-stroke-width</code></a></li>
+ <li><a href="-webkit-touch-callout.html" title="The -webkit-touch-callout CSS property controls the display of the default callout shown when you touch and hold a touch target."><code>-webkit-touch-callout</code></a></li>
+</ul>
+</div>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="https://trac.webkit.org/wiki/Styling Form Controls" class="external" title="https://trac.webkit.org/wiki/Styling Form Controls">Styling Form Controls on the WebKit Trac</a></li>
+ <li>Extensions not listed above: <a href="https://gist.github.com/afabbro/3759334" class="external">https://gist.github.com/afabbro/3759334</a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Reference.html">CSS Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/tobias47n9e">tobias47n9e</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/yisibl">yisibl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teo1978">teo1978</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/y0ssar1an">y0ssar1an</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/aneesh.mb">aneesh.mb</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Rob W">Rob W</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jeremie">Jeremie</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Inkbug">Inkbug</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei">ziyunfei</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/tobias47n9e">tobias47n9e</a>,
+                      <time datetime="2016-08-12T06:17:14-07:00">Aug 12, 2016, 6:17:14 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="Webkit_Extensions.html">Webkit Extensions</a></strong></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/Webkit_Extensions$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/Webkit_Extensions$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/Webkit_Extensions" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/CSS_Referenz/Webkit_Extensions">
+            Deutsch (de)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/Reference/Extensions_WebKit">
+            Français (fr)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/Reference/Webkit_Extensions">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 01:02:03 GMT -->
+</body></html>

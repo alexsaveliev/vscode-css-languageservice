@@ -1,0 +1,1050 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/@keyframes by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:42:31 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>@keyframes</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes$json">
+  <link rel="canonical" href="%40keyframes.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/@keyframes" title="@keyframes">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/@keyframes" title="@keyframes">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/@keyframes" title="@keyframes">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/@keyframes" title="@keyframes">
+    
+      <link rel="alternate" hreflang="ka" href="https://developer.mozilla.org/ka/docs/Web/CSS/@keyframes" title="@keyframes">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/@keyframes" title="@keyframes">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@keyframes" title="CSS3中的关键帧">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="@keyframes">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes">
+  <meta name="twitter:title" content="@keyframes">
+  
+  <meta property="og:description" content="The @keyframes CSS at-rule lets authors control the intermediate steps in a CSS animation sequence by establishing keyframes (or waypoints) along the animation sequence that must be reached by certain points during the animation. This gives you more specific control over the intermediate steps of the animation sequence than you'd get when letting the browser handle everything automatically.">
+  <meta name="description" content="The @keyframes CSS at-rule lets authors control the intermediate steps in a CSS animation sequence by establishing keyframes (or waypoints) along the animation sequence that must be reached by certain points during the animation. This gives you more specific control over the intermediate steps of the animation sequence than you'd get when letting the browser handle everything automatically.">
+  <meta name="twitter:description" content="The @keyframes CSS at-rule lets authors control the intermediate steps in a CSS animation sequence by establishing keyframes (or waypoints) along the animation sequence that must be reached by certain points during the animation. This gives you more specific control over the intermediate steps of the animation sequence than you'd get when letting the browser handle everything automatically.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/@keyframes" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2F%40keyframes" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/%40keyframes">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/@keyframes" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/@keyframes" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/@keyframes" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/@keyframes" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ka/docs/Web/CSS/@keyframes" title="Georgian">ქართული (ka)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/@keyframes" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@keyframes" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">@keyframes</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/HuangYuSan" title="View profile: HuangYuSan">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="HuangYuSan" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">HuangYuSan</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Simplexible" title="View profile: Simplexible">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Simplexible" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Simplexible</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Rooster212" title="View profile: Rooster212">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Rooster212" data-src="../../../../../secure.gravatar.com/avatar/5f3a43ee0053080f1b2755f2597622526c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Rooster212</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jackarmley" title="View profile: jackarmley">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jackarmley" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jackarmley</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/benelliott" title="View profile: benelliott">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="benelliott" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">benelliott</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/yisibl" title="View profile: yisibl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="yisibl" data-src="../../../../../secure.gravatar.com/avatar/5c4ad3dbe5a5074993a6e270c38636096c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">yisibl</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/vabhdman" title="View profile: vabhdman">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="vabhdman" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">vabhdman</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/axg" title="View profile: axg">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="axg" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">axg</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jswisher" title="View profile: jswisher">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jswisher" data-src="../../../../../secure.gravatar.com/avatar/38185c2812cbcae186ebbe4a829106616c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jswisher</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/CutenessOverload" title="View profile: CutenessOverload">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="CutenessOverload" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">CutenessOverload</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/brianloveswords" title="View profile: brianloveswords">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="brianloveswords" data-src="../../../../../secure.gravatar.com/avatar/50de5d0681e88e9f9fdb44ebb2995d346c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">brianloveswords</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter" title="View profile: enderandpeter">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="enderandpeter" data-src="../../../../../secure.gravatar.com/avatar/e272c067cd5fe72f2992b1667340956b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">enderandpeter</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/yyss" title="View profile: yyss">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="yyss" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">yyss</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/myakura" title="View profile: myakura">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="myakura" data-src="../../../../../secure.gravatar.com/avatar/5053cd2607234c47d43959cc9430f1a56c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">myakura</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Bzbarsky" title="View profile: Bzbarsky">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Bzbarsky" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Bzbarsky</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/estelle" title="View profile: estelle">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="estelle" data-src="../../../../../secure.gravatar.com/avatar/8e75de08afdc1e0fe9333e758d3c72496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">estelle</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Marcoos" title="View profile: Marcoos">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Marcoos" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Marcoos</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>@keyframes</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a><ol><li><a href="#Valid_keyframe_lists" rel="internal">Valid keyframe lists</a></li><li><a href="#Duplicate_resolution" rel="internal">Duplicate resolution</a></li><li><a href="#When_properties_are_left_out_of_some_keyframes" rel="internal">When properties are left out of some keyframes</a></li><li><a href="#When_a_keyframe_is_defined_multiple_times" rel="internal">When a keyframe is defined multiple times</a></li><li><a href="#!important_in_a_keyframe" rel="internal">!important in a keyframe</a></li></ol></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Examples" rel="internal">Examples</a></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_Compatibility" rel="internal">Browser compatibility</a></li><li><a href="#Notes" rel="internal">Notes</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section class="Quick_links" id="Quick_Links"><!-- --></section> <div class="notice experimental"> 
+    <p><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span> <strong>This is an experimental technology</strong><br>Because this technology's specification has not stabilized, check the <a href="#Browser_compatibility">compatibility table</a> for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes.</p> 
+</div></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>@keyframes</code></strong> CSS <a href="At-rule.html">at-rule</a> lets authors control the intermediate steps in a CSS animation sequence by establishing keyframes (or waypoints) along the animation sequence that must be reached by certain points during the animation. This gives you more specific control over the intermediate steps of the animation sequence than you'd get when letting the browser handle everything automatically.</p>
+
+<p>The <code>@keyframes</code> at-rule can be accessed via the CSS object model interface <a title="The CSSKeyframesRule interface describes an object representing a complete set of keyframes for a CSS animation. It corresponds to the contains of a whole @keyframes at-rule. It implements the CSSRule interface with a type value of 7 (CSSRule.KEYFRAMES_RULE)." href="../API/CSSKeyframesRule.html"><code>CSSKeyframesRule</code></a>.</p>
+
+<p>To use keyframes, you create a <code>@keyframes</code> rule with a name that is then used by the <a title="The animation-name CSS property specifies a list of animations that should be applied to the selected element. Each name indicates a @keyframes at-rule that defines the property values for the animation sequence." href="animation-name.html"><code>animation-name</code></a> property to match an animation to its keyframe list. Each <code>@keyframes</code> rule contains a style list of keyframe selectors, each of which&nbsp;comprises&nbsp;a percentage along the animation at which the keyframe occurs as well as a block containing the style information for that keyframe.</p>
+
+<p>You can list the keyframes in any order; they will be handled in the order in which their specified percentages indicate they should occur.</p>
+
+<h3 id="Valid_keyframe_lists">Valid keyframe lists</h3>
+
+<p>In order for a keyframe list to be valid, it must include rules for at least the times <code>0%</code> (or <code>from</code>) and <code>100%</code> (or <code>to</code>) (that is, the starting and ending states of the animation). If both of these time offsets aren't specified, the keyframe declaration is invalid; as such, it will be ignored by the parser&nbsp;and can't be used for animation.</p>
+
+<p>If you include properties that can't be animated in your keyframe rules&nbsp;they get ignored, but supported properties will still be animated.</p>
+
+<h3 id="Duplicate_resolution">Duplicate resolution</h3>
+
+<p>If multiple keyframe sets exist for a given name, the last one encountered by the parser is used. <code>@keyframes</code> rules don't cascade, so animations never derive keyframes from more than one rule set.</p>
+
+<p>If a given animation time offset is duplicated, the last keyframe in the <code>@keyframes</code> rule for that percentage is used for that frame. There's no cascading within a <code>@keyframes</code> rule if multiple keyframes specify the same percentage values.</p>
+
+<h3 id="When_properties_are_left_out_of_some_keyframes">When properties are left out of some keyframes</h3>
+
+<p>Properties that aren't specified in every&nbsp;keyframe are interpolated (excepting those that can't be interpolated, which are dropped from the animation entirely). For example:</p>
+
+<pre class="brush: css">@keyframes identifier {
+  0% { top: 0; left: 0; }
+  30% { top: 50px; }
+  68%, 72% { left: 50px; }
+  100% { top: 100px; left: 100%; }
+}
+</pre>
+
+<p>Here, the <a title="The top CSS property specifies part of the position of positioned elements. It has no effect on non-positioned elements." href="top.html"><code>top</code></a> property animates using the <code>0%</code>, <code>30%</code>, and <code>100%</code> keyframes, and <a title="The left CSS property specifies part of the position of positioned elements." href="left.html"><code>left</code></a> animates using the <code>0%</code>, <code>68%</code>, and <code>100%</code> keyframes.</p>
+
+<p>Only properties that are specified in both the <code>0%</code> and <code>100%</code> keyframes will be animated; any property not included in both of those keyframes will retain their starting value for the duration of the animation sequence.</p>
+
+<h3 id="When_a_keyframe_is_defined_multiple_times">When a keyframe is defined multiple times</h3>
+
+<p>The specification defines that if a keyframe is defined multiple times but not all properties affected are specified in each keyframe, only the values specified in the latest keyframe are considered. For example:</p>
+
+<pre class="brush: css">@keyframes identifier {
+  0% { top: 0; }
+  50% { top: 30px; left: 20px; }
+  50% { top: 10px; }
+  100% { top: 0; }
+}
+</pre>
+
+<p>In this example, at the <code>50%</code> keyframe, the value used is <code>top: 10px</code> and all other values at this keyframe are ignored.</p>
+
+<p><span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span> &nbsp; Cascading keyframes are supported starting in Firefox 14. For the example above, it means that at the&nbsp;<code style="font-style: normal;">50%</code>&nbsp;keyframe, the value&nbsp;<code style="font-style: normal;">left: 20px</code>&nbsp;will be considered. This is not defined in the specification yet, but it is being discussed.</p>
+
+<h3 id="!important_in_a_keyframe">!important in a keyframe</h3>
+
+<p>Declarations in a keyframe that are qualified with <code>!important</code> are ignored</p>
+
+<pre class="brush: css">@keyframes important1 {
+&nbsp; from { margin-top: 50px; }
+&nbsp; 50%&nbsp; { margin-top: 150px !important; } /* ignored */
+&nbsp; to&nbsp;&nbsp; { margin-top: 100px; }
+}
+
+@keyframes important2 {
+  from { margin-top: 50px;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom: 100px; }
+&nbsp; to&nbsp;&nbsp; { margin-top: 150px !important; /* ignored */
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom: 50px; }
+}
+</pre>
+
+<h2 id="Syntax">Syntax</h2>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt><code>&lt;identifier&gt;</code></dt>
+ <dd>A name identifying the keyframe list. This must match the identifier production in CSS syntax.</dd>
+ <dt><code>from</code></dt>
+ <dd>A starting offset of <code>0%</code>.</dd>
+ <dt><code>to</code></dt>
+ <dd>An ending offset of <code>100%</code>.</dd>
+ <dt><a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage"><code>&lt;percentage&gt;</code></a></dt>
+ <dd>A percentage of the time through the animation sequence at which the specified keyframe should occur.</dd>
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox">@keyframes <a href="#keyframes-name">&lt;keyframes-name&gt;</a> {
+  <a href="#keyframe-block-list">&lt;keyframe-block-list&gt;</a>
+}<p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="keyframes-name">&lt;keyframes-name&gt;</span> = <a title="The &lt;custom-ident&gt; CSS data value denotes an arbitrary user-defined string used as an identifier. It is case-sensitive and in each context, several values are excluded to prevent misinterpretations." href="/en-US/docs/Web/CSS/custom-ident">&lt;custom-ident&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;string&gt; CSS data type represents a string. It is formed by a Unicode characters delimited by either double (&quot;) or single (') quotes. A double quoted string cannot contain double quotes unless escaped using a backslash (\). The same practice applies for single quoted strings, they cannot contain single quotes unless escaped using a backslash (\). The backslash character must be escaped to be part of the string." href="/en-US/docs/Web/CSS/string">&lt;string&gt;</a><br><span id="keyframe-block-list">&lt;keyframe-block-list&gt;</span> = <a href="#keyframe-block">&lt;keyframe-block&gt;</a><a title="Plus: the entity may occur one or several times" href="Value_definition_syntax.html#Plus_()">+</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="keyframe-block">&lt;keyframe-block&gt;</span> = <a href="#keyframe-selector">&lt;keyframe-selector&gt;</a><a title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma" href="Value_definition_syntax.html#Hash_mark_()">#</a> {
+  &lt;declaration-list&gt;
+}</code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="keyframe-selector">&lt;keyframe-selector&gt;</span> = from <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> to <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a></code></p></pre>
+
+<h2 id="Examples">Examples</h2>
+
+<p>See <a title="en/CSS/CSS_animations" href="CSS_Animations/Using_CSS_animations.html">CSS animations</a> for examples.</p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a lang="en" hreflang="en" href="https://drafts.csswg.org/css-animations/#keyframes" class="external">CSS Animations<br><small lang="en-US">The definition of '@keyframes' in that specification.</small></a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>&nbsp;</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 name="Browser_Compatibility" id="Browser_Compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari (WebKit)</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>
+    <p><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span><br>
+     43.0</p>
+   </td>
+   <td><a title="Released on 2011-06-21." href="https://developer.mozilla.org/en-US/Firefox/Releases/5">5.0</a> (5.0)<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-moz' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-moz</a></span><br>
+    <a title="Released on 2012-10-09." href="https://developer.mozilla.org/en-US/Firefox/Releases/16">16.0</a> (16.0)</td>
+   <td>10</td>
+   <td>12 <span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-o' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-o</a></span><br>
+    12.10 <a title="http://my.opera.com/ODIN/blog/2012/08/03/a-hot-opera-12-50-summer-time-snapshot" href="http://my.opera.com/ODIN/blog/2012/08/03/a-hot-opera-12-50-summer-time-snapshot" class="external">#</a></td>
+   <td>4.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+  </tr>
+  <tr>
+   <td>ignore <code>!important</code> declarations</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><a title="Released on 2013-02-19." href="https://developer.mozilla.org/en-US/Firefox/Releases/19">19</a> (19)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+   <td>5.0 (5.0)<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-moz' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-moz</a></span><br>
+    16.0 (16.0)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+  <tr>
+   <td>ignore <code>!important</code> declarations</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>19.0 (19)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<h2 id="Notes">Notes</h2>
+
+<ol>
+ <li>@keyframes not supported in an inline or scoped stylesheet in Firefox &nbsp;(<a title="scoped style sheets should allow scoped effects of @font-face and @keyframes" href="https://bugzilla.mozilla.org/show_bug.cgi?id=830056" class="external">bug&nbsp;830056</a>).</li>
+</ol>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a title="Tutorial about CSS animations" href="CSS_Animations/Using_CSS_animations.html">Using CSS animations</a></li>
+ <li><a title="The AnimationEvent interface represents events providing information related to animations." href="https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent"><code>AnimationEvent</code></a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Animations">Animations</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/animations">animations</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/At-rule">At-rule</a></li>
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Experimental">Experimental</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/HuangYuSan">HuangYuSan</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Simplexible">Simplexible</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Rooster212">Rooster212</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jackarmley">jackarmley</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/benelliott">benelliott</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/yisibl">yisibl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/vabhdman">vabhdman</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/axg">axg</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jswisher">jswisher</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/CutenessOverload">CutenessOverload</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/brianloveswords">brianloveswords</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter">enderandpeter</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/yyss">yyss</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/myakura">myakura</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Bzbarsky">Bzbarsky</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/estelle">estelle</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Marcoos">Marcoos</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/HuangYuSan">HuangYuSan</a>,
+                      <time datetime="2016-05-29T08:48:26-07:00">May 29, 2016, 8:48:26 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Animations.html">CSS Animations</a></strong></li><li data-default-state="open"><a href="#"><strong>Guides</strong></a><ol><li><a title="CSS animations make it possible to do creative animations of content using nothing but CSS. However, there are likely to be times when this feature isn't available, and you may wish to handle that case by using JavaScript code to simulate a similar effect. This article, based on this blog post by Chris Heilmann, demonstrates a technique for doing this." href="CSS_Animations/Detecting_CSS_animation_support.html">Detecting CSS animation support</a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="CSS animations make it possible to animate transitions from one CSS style configuration to another." href="CSS_Animations/Using_CSS_animations.html">Using CSS animations</a></li></ol></li><li data-default-state="open"><a href="#"><strong>At-Rules</strong></a><ol><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><em><code>@keyframes</code></em></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The animation CSS property is a shorthand property for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode and animation-play-state." href="animation.html"><code>animation</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The animation-delay CSS property specifies when the animation should start. This lets the animation sequence begin some time after it's applied to an element." href="animation-delay.html"><code>animation-delay</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The animation-direction CSS property indicates whether the animation should play in reverse on alternate cycles." href="animation-direction.html"><code>animation-direction</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The animation-duration CSS property specifies the length of time that an animation should take to complete one cycle." href="animation-duration.html"><code>animation-duration</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The animation-fill-mode CSS property specifies how a CSS animation should apply styles to its target before and after it is executing." href="animation-fill-mode.html"><code>animation-fill-mode</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The animation-iteration-count CSS property defines the number of times an animation cycle should be played before stopping." href="animation-iteration-count.html"><code>animation-iteration-count</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The animation-name CSS property specifies a list of animations that should be applied to the selected element. Each name indicates a @keyframes at-rule that defines the property values for the animation sequence." href="animation-name.html"><code>animation-name</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The animation-play-state CSS property determines whether an animation is running or paused. This can be queried to determine whether or not the animation is currently running. In addition, its value can be set to pause and resume playback of an animation." href="animation-play-state.html"><code>animation-play-state</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The animation-timing-function CSS property specifies how a CSS animation should progress over the duration of each cycle. The possible values are one or several &lt;timing-function&gt;." href="/en-US/docs/Web/CSS/animation-timing-function"><code>animation-timing-function</code></a></li></ol></li><li data-default-state="open"><a href="#"><strong>Data types</strong></a><ol><li><a title="The &lt;custom-ident&gt; CSS data value denotes an arbitrary user-defined string used as an identifier. It is case-sensitive and in each context, several values are excluded to prevent misinterpretations." href="/en-US/docs/Web/CSS/custom-ident"><code>&lt;custom-ident&gt;</code></a></li><li><a title="The &lt;timing-function&gt; CSS data type denotes a mathematical function that describes how fast one-dimensional values change during transitions or animations. This in essence lets you establish an acceleration curve, so that the speed of the animation can vary over its duration. These functions are often called easing functions." href="/en-US/docs/Web/CSS/timing-function"><code>&lt;timing-function&gt;</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/@keyframes$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/@keyframes$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/@keyframes" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/@keyframes">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/@keyframes">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/@keyframes">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/@keyframes">
+            日本語 (ja)
+          </option>
+          <option title="Georgian" value="/ka/docs/Web/CSS/@keyframes">
+            ქართული (ka)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/@keyframes">
+            한국어 (ko)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/@keyframes">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/@keyframes by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:42:36 GMT -->
+</body></html>

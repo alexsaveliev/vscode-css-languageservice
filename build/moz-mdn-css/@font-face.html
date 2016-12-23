@@ -1,0 +1,1302 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/@font-face by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:41:10 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>@font-face</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face$json">
+  <link rel="canonical" href="%40font-face.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/@font-face" title="@font-face">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/@font-face" title="@font-face">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/@font-face" title="@font-face">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/@font-face" title="@font-face">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/@font-face" title="@font-face">
+    
+      <link rel="alternate" hreflang="pt-PT" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/@font-face" title="@font-face">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face" title="@font-face">
+    
+      <link rel="alternate" hreflang="zh-TW" href="https://developer.mozilla.org/zh-TW/docs/Web/CSS/@font-face" title="@font-face">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="@font-face">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">
+  <meta name="twitter:title" content="@font-face">
+  
+  <meta property="og:description" content="The @font-face CSS at-rule allows authors to specify online fonts to display text on their web pages. By allowing authors to provide their own fonts, @font-face eliminates the need to depend on the limited number of fonts users have installed on their computers. The @font-face at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule.">
+  <meta name="description" content="The @font-face CSS at-rule allows authors to specify online fonts to display text on their web pages. By allowing authors to provide their own fonts, @font-face eliminates the need to depend on the limited number of fonts users have installed on their computers. The @font-face at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule.">
+  <meta name="twitter:description" content="The @font-face CSS at-rule allows authors to specify online fonts to display text on their web pages. By allowing authors to provide their own fonts, @font-face eliminates the need to depend on the limited number of fonts users have installed on their computers. The @font-face at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/@font-face" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2F%40font-face" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/%40font-face">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/@font-face" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/@font-face" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/@font-face" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/@font-face" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/@font-face" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/@font-face" title="Portuguese (Portugal)">Português (Europeu) (pt-PT)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-TW/docs/Web/CSS/@font-face" title="Chinese (Traditional)">正體中文 (繁體) (zh-TW)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">@font-face</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/erikadoyle" title="View profile: erikadoyle">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="erikadoyle" data-src="../../../../../secure.gravatar.com/avatar/0f2324340bc4d49b1c17e82a643d387b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">erikadoyle</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Didglee" title="View profile: Didglee">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Didglee" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Didglee</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/omguhh" title="View profile: omguhh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="omguhh" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">omguhh</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Tigt" title="View profile: Tigt">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Tigt" data-src="../../../../../secure.gravatar.com/avatar/6dfc114d927c3f5bd61c2697b4adf2bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Tigt</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/vast" title="View profile: vast">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="vast" data-src="../../../../../secure.gravatar.com/avatar/0b6b6c1d8e5a92c8084e0ad0601aab7b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">vast</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/michalzigo" title="View profile: michalzigo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="michalzigo" data-src="../../../../../secure.gravatar.com/avatar/74afc4d3d4859980eca75336151f0c4a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">michalzigo</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/skhilko" title="View profile: skhilko">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="skhilko" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">skhilko</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/edna" title="View profile: edna">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="edna" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">edna</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/upsuper" title="View profile: upsuper">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="upsuper" data-src="../../../../../secure.gravatar.com/avatar/be24b063ea4f5106839b08a30780923b6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">upsuper</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/finalfantasia" title="View profile: finalfantasia">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="finalfantasia" data-src="../../../../../secure.gravatar.com/avatar/6345fa15b6bb4c31e6e0e399c23270346c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">finalfantasia</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/phistuck" title="View profile: phistuck">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="phistuck" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">phistuck</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/elindie" title="View profile: elindie">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="elindie" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">elindie</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/glandium" title="View profile: glandium">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="glandium" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">glandium</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/benelsen" title="View profile: benelsen">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="benelsen" data-src="../../../../../secure.gravatar.com/avatar/ce954e07b961c3285b116cd626ca37e86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">benelsen</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/acdha" title="View profile: acdha">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="acdha" data-src="../../../../../secure.gravatar.com/avatar/f5934485a0863578733c4470165055476c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">acdha</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ccarruitero" title="View profile: ccarruitero">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ccarruitero" data-src="../../../../../secure.gravatar.com/avatar/2c64a5e6f3174d1b32f92b81237662596c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ccarruitero</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/pdmdn" title="View profile: pdmdn">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="pdmdn" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">pdmdn</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Marcoos" title="View profile: Marcoos">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Marcoos" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Marcoos</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fvsch" title="View profile: fvsch">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fvsch" data-src="../../../../../secure.gravatar.com/avatar/4251c44f346e8d358f338b0ec0034cd26c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fvsch</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/estelle" title="View profile: estelle">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="estelle" data-src="../../../../../secure.gravatar.com/avatar/8e75de08afdc1e0fe9333e758d3c72496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">estelle</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jswisher" title="View profile: jswisher">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jswisher" data-src="../../../../../secure.gravatar.com/avatar/38185c2812cbcae186ebbe4a829106616c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jswisher</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter" title="View profile: enderandpeter">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="enderandpeter" data-src="../../../../../secure.gravatar.com/avatar/e272c067cd5fe72f2992b1667340956b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">enderandpeter</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Kennyluck" title="View profile: Kennyluck">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Kennyluck" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Kennyluck</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/sltam" title="View profile: sltam">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="sltam" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">sltam</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Verruckt" title="View profile: Verruckt">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Verruckt" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Verruckt</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/sloppy_4455" title="View profile: sloppy_4455">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="sloppy_4455" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">sloppy_4455</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Level" title="View profile: Level">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Level" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Level</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Taken" title="View profile: Taken">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Taken" data-src="../../../../../secure.gravatar.com/avatar/b80232a8fdfe509a55ef7a34c41f030d6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Taken</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Yaroukh" title="View profile: Yaroukh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Yaroukh" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Yaroukh</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Philip Chee" title="View profile: Philip Chee">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Philip Chee" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Philip Chee</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jdaggett" title="View profile: Jdaggett">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jdaggett" data-src="../../../../../secure.gravatar.com/avatar/1b580ee8449f50edc80566d70a0ea2c96c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jdaggett</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jonathan_Watt" title="View profile: Jonathan_Watt">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jonathan_Watt" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jonathan_Watt</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Psz" title="View profile: Psz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Psz" data-src="../../../../../secure.gravatar.com/avatar/a4c74e4d053faacb8d8b30b7e4497c446c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Psz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Cdolivei" title="View profile: Cdolivei">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Cdolivei" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Cdolivei</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Prmatt11" title="View profile: Prmatt11">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Prmatt11" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Prmatt11</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Zearin" title="View profile: Zearin">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Zearin" data-src="../../../../../secure.gravatar.com/avatar/67df2b154cff3d8ddb3c55bcec2a34006c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Zearin</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Fredchat" title="View profile: Fredchat">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Fredchat" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Fredchat</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Waldo" title="View profile: Waldo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Waldo" data-src="../../../../../secure.gravatar.com/avatar/d26a0ca7ae1134e0e1dbdddf82e289296c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Waldo</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/BijuGC" title="View profile: BijuGC">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="BijuGC" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">BijuGC</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>@font-face</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Descriptors" rel="internal">Descriptors</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Examples" rel="internal">Examples</a></li><li><a href="#Notes" rel="internal">Notes</a></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a><ol><li><a href="#Notes_2" rel="internal">Notes</a></li></ol></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                  <div class="warning warning-review">
+                    <p>
+                      This article needs a technical review. <a href="https://developer.mozilla.org/docs/MDN/Contribute/HowTo/Do_a_technical_review">How you can help.</a>
+                    </p>
+                  </div>
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>@font-face</code></strong> <a href="../CSS.html">CSS</a> <a href="At-rule.html">at-rule</a> allows authors to specify online fonts to display text on their web pages. By allowing authors to provide their own fonts, <code>@font-face</code> eliminates the need to depend on the limited number of fonts users have installed on their computers. The <code>@font-face</code> at-rule may be used not only at the top level of a CSS, but also inside any <a href="At-rule.html#Conditional_Group_Rules">CSS conditional-group at-rule</a>.</p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<h3 id="Descriptors">Descriptors</h3>
+
+<dl>
+ <dt><a href="%40font-face/font-family.html" title="The documentation about this has not yet been written; please consider contributing!"><code>font-family</code></a></dt>
+ <dd>Specifies a name that will be used as the font face value for font properties.</dd>
+ <dt><a href="%40font-face/src.html" title="The documentation about this has not yet been written; please consider contributing!"><code>src</code></a></dt>
+ <dd>Specifies the resource containing the font data. This can be a URL to a remote font file location or the name of a font on the user's computer.</dd>
+ <dt><a href="%40font-face/font-variant.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>font-variant</code></a></dt>
+ <dd>A <a href="font-variant.html" title="The font-variant property acts as a shorthand for the longhand properties: font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian. You can also set the CSS Level 2 (Revision 1) values of font-variant, (that is, normal or small-caps), by using the font shorthand."><code>font-variant</code></a> value.</dd>
+ <dt><a href="%40font-face/font-stretch.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>font-stretch</code></a></dt>
+ <dd>A <a href="font-stretch.html" title="The font-stretch property selects a normal, condensed, or expanded face from a font."><code>font-stretch</code></a> value.</dd>
+ <dt><a href="%40font-face/font-weight.html" class="new" title="The documentation about this has not yet been written; please consider contributing!"><code>font-weight</code></a></dt>
+ <dd>A <a href="font-weight.html" title="The font-weight CSS property specifies the weight or boldness of the font. Some fonts are only available in normal and bold."><code>font-weight</code></a> value.</dd>
+ <dt><a href="%40font-face/font-style.html" title="The documentation about this has not yet been written; please consider contributing!"><code>font-style</code></a></dt>
+ <dd>A <a href="font-style.html" title="The font-style CSS property lets you select italic or oblique faces within a font-family. Italic forms are generally cursive in nature, usually using less horizontal space than their unstyled counterparts, while oblique faces are usually just sloped versions of the regular face. Both italic and oblique faces are simulated by artificially sloping the glyphs of the regular face (see font-synthesis for control over this)."><code>font-style</code></a> value.</dd>
+ <dt><a href="%40font-face/unicode-range.html" title="The documentation about this has not yet been written; please consider contributing!"><code>unicode-range</code></a></dt>
+ <dd>The range of Unicode code points to be used from the font.</dd>
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox">@font-face {
+  <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> font-family: <a href="#family-name">&lt;family-name&gt;</a>; <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a> <a href="Value_definition_syntax.html#Double_bar" title="Double bar: one or several of the entities must be present, in any order">||</a>
+  <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> src: <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> <a href="url.html" title="The &lt;url&gt; CSS data type denotes a pointer to a resource. It has no proper syntax and can only be expressed through the url() functional notation.">&lt;url&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> format(<a href="string.html" title="The &lt;string&gt; CSS data type represents a string. It is formed by a Unicode characters delimited by either double (&quot;) or single (') quotes. A double quoted string cannot contain double quotes unless escaped using a backslash (\). The same practice applies for single quoted strings, they cannot contain single quotes unless escaped using a backslash (\). The backslash character must be escaped to be part of the string.">&lt;string&gt;</a><a href="Value_definition_syntax.html#Hash_mark_()" title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma">#</a>) <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a><a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> &lt;font-face-name&gt; <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a><a href="Value_definition_syntax.html#Hash_mark_()" title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma">#</a>; <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a> <a href="Value_definition_syntax.html#Double_bar" title="Double bar: one or several of the entities must be present, in any order">||</a>
+  <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> unicode-range: &lt;urange&gt;<a href="Value_definition_syntax.html#Hash_mark_()" title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma">#</a>; <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a> <a href="Value_definition_syntax.html#Double_bar" title="Double bar: one or several of the entities must be present, in any order">||</a>
+  <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> font-variant: &lt;font-variant&gt;; <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a> <a href="Value_definition_syntax.html#Double_bar" title="Double bar: one or several of the entities must be present, in any order">||</a>
+  <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> font-feature-settings: normal <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#feature-tag-value">&lt;feature-tag-value&gt;</a><a href="Value_definition_syntax.html#Hash_mark_()" title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma">#</a>; <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a> <a href="Value_definition_syntax.html#Double_bar" title="Double bar: one or several of the entities must be present, in any order">||</a>
+  <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> font-stretch: &lt;font-stretch&gt;; <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a> <a href="Value_definition_syntax.html#Double_bar" title="Double bar: one or several of the entities must be present, in any order">||</a>
+  <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> font-weight: &lt;weight&gt;; <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a> <a href="Value_definition_syntax.html#Double_bar" title="Double bar: one or several of the entities must be present, in any order">||</a>
+  <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> font-style: &lt;style&gt;; <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a>
+}<p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="family-name">&lt;family-name&gt;</span> = <a href="string.html" title="The &lt;string&gt; CSS data type represents a string. It is formed by a Unicode characters delimited by either double (&quot;) or single (') quotes. A double quoted string cannot contain double quotes unless escaped using a backslash (\). The same practice applies for single quoted strings, they cannot contain single quotes unless escaped using a backslash (\). The backslash character must be escaped to be part of the string.">&lt;string&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="custom-ident.html" title="The &lt;custom-ident&gt; CSS data value denotes an arbitrary user-defined string used as an identifier. It is case-sensitive and in each context, several values are excluded to prevent misinterpretations.">&lt;custom-ident&gt;</a><a href="Value_definition_syntax.html#Plus_()" title="Plus: the entity may occur one or several times">+</a><br><span id="feature-tag-value">&lt;feature-tag-value&gt;</span> = <a href="string.html" title="The &lt;string&gt; CSS data type represents a string. It is formed by a Unicode characters delimited by either double (&quot;) or single (') quotes. A double quoted string cannot contain double quotes unless escaped using a backslash (\). The same practice applies for single quoted strings, they cannot contain single quotes unless escaped using a backslash (\). The backslash character must be escaped to be part of the string.">&lt;string&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> <a href="integer.html" title="The &lt;integer&gt; CSS data type denotes an integer number, positive or negative. There isn't any associated unit with the value. An integer consists of one or several decimal digits, 0 to 9, optionally preceded by one single + or - sign.">&lt;integer&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> on <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> off <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a><a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a></code></p></pre>
+
+<h2 id="Examples">Examples</h2>
+
+<p>This example simply specifies a downloadable font to use, applying it to the entire body of the document:</p>
+
+<p><a href="../../../../../mdn.mozillademos.org/files/7775/webfont-sample.html" class="external">View the live example</a></p>
+
+<pre class="brush: html">&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Web Font Sample&lt;/title&gt;
+  &lt;style type="text/css" media="screen, print"&gt;
+    @font-face {
+      font-family: "Bitstream Vera Serif Bold";
+      src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+    }
+    
+    body { font-family: "Bitstream Vera Serif Bold", serif }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  This is Bitstream Vera Serif Bold.
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>In this example, the user's local copy of "Helvetica Neue Bold" is used; if the user does not have that font installed (two different names are tried), then the downloadable font named "MgOpenModernaBold.ttf" is used instead:</p>
+
+<pre class="brush: css">@font-face {
+  font-family: MyHelvetica;
+  src: local("Helvetica Neue Bold"),
+       local("HelveticaNeue-Bold"),
+       url(MgOpenModernaBold.ttf);
+  font-weight: bold;
+}
+</pre>
+
+<h2 id="Notes">Notes</h2>
+
+<ul>
+ <li>Web fonts are subject to the same domain restriction (font files must be on the same domain as the page using them), unless <a href="https://developer.mozilla.org/en-US/docs/HTTP_access_control">HTTP access controls</a> are used to relax this restriction.</li>
+ <li>Because there are no defined MIME types for TrueType, OpenType, and Web Open File Format (WOFF) fonts, the MIME type of the file specified is not considered.</li>
+ <li>@font-face cannot be declared within a CSS selector.&nbsp;For example, the following will not work:
+  <pre class="brush: css; example-bad">.className { 
+  @font-face { 
+    font-family: MyHelvetica; 
+    src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"),
+        url(MgOpenModernaBold.ttf);
+    font-weight: bold; 
+  } 
+}</pre>
+ </li>
+</ul>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://www.w3.org/TR/WOFF2/" class="external" lang="en" hreflang="en">WOFF File Format 2.0<br><small lang="en-US">The definition of 'WOFF2 font format' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Font format specification with new compression algorithm</td>
+  </tr>
+  <tr>
+   <td><a href="http://www.w3.org/TR/WOFF/" class="external" lang="en" hreflang="en">WOFF File Format 1.0<br><small lang="en-US">The definition of 'WOFF font format' in that specification.</small></a></td>
+   <td><span class="spec-REC">Recommendation</span></td>
+   <td>Font format specification</td>
+  </tr>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-fonts-3/#font-face-rule" class="external" lang="en" hreflang="en">CSS Fonts Module Level&nbsp;3<br><small lang="en-US">The definition of '@font-face' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Edge</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>4.0</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/3.5" title="Released on 2009-06-30.">3.5</a> (1.9.1)</td>
+   <td>4.0</td>
+   <td>10.0</td>
+   <td>3.1</td>
+  </tr>
+  <tr>
+   <td>WOFF</td>
+   <td>6.0</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/3.5" title="Released on 2009-06-30.">3.5</a> (1.9.1)</td>
+   <td>9.0</td>
+   <td>11.10</td>
+   <td>5.1</td>
+  </tr>
+  <tr>
+   <td>WOFF2</td>
+   <td>38</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/39" title="Released on 2015-06-30.">39</a> (39)<sup>[1]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>24</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>SVG Fonts<sup>[2]</sup></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[3]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td><code>unicode-range</code></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>
+    <p><a href="https://developer.mozilla.org/en-US/Firefox/Releases/36" title="Released on 2015-02-24.">36</a> (36)</p>
+   </td>
+   <td>9.0</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Edge</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Mobile</th>
+   <th>Opera Mini</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>1.0 (1.9.1)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>10.0</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td>WOFF</td>
+   <td>4.4</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>5.0 (5.0)</td>
+   <td>10.0</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>11.0</td>
+   <td>5.0</td>
+  </tr>
+  <tr>
+   <td>WOFF2</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>39.0 (39.0)<sup>[1]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>SVG Fonts<sup>[2]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[3]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>10.0</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td><code>unicode-range</code></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>36.0 (36.0)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] WOFF2 supports from Gecko 35 to Gecko 38 included is only activated by default on Aurora and Nightly versions. To use it on Beta and Release versions, the user needs to set the <code>gfx.downloadable_fonts.woff2.enabled</code> preference to <code>true</code>.</p>
+
+<p>[2] Support for SVG Fonts was dropped in favor of allowing SVG glyphs within OpenType font packages.</p>
+
+<p>[3] For Gecko there was <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=119490" class="external" title="Implement SVG fonts">bug&nbsp;119490</a> filed for implementing SVG Fonts, though as SVG Fonts got superseded by SVG glyphs within OpenType font packages, the bug got closed.</p>
+
+<h3 id="Notes_2">Notes</h3>
+
+<ul>
+ <li>Support of the Embedded OpenType font format is not included in the compatibility table because it is a proprietary feature. Prior to IE 9.0, IE supported only this format.</li>
+ <li>TrueType and OpenType are not included because they are superseded by WOFF.</li>
+ <li>The same origin policy is not implemented in WebKit based browsers like Safari and Mobile Safari. This was also true for Blink based browsers, until September, 2014 - Chrome 37 and Opera 24.</li>
+</ul>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="https://developer.mozilla.org/en-US/docs/WOFF">About WOFF</a></li>
+ <li><a href="https://everythingfonts.com/font-face" class="external">Everythingfonts font-face generator</a></li>
+ <li><a href="http://www.fontsquirrel.com/fontface/generator" class="external">FontSquirrel @font-face generator</a></li>
+ <li><a href="http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/" class="external">Beautiful fonts with @font-face</a></li>
+ <li><a href="http://openfontlibrary.org/" class="external">Open&nbsp;Font Library</a></li>
+ <li><a href="http://msdn.microsoft.com/en-us/library/ms530757(VS.85).aspx" class="external">Microsoft Developer Network (MSDN) @font-face reference</a></li>
+ <li><a href="http://caniuse.com/woff" class="external">When can I use WOFF?</a></li>
+ <li><a href="http://caniuse.com/svg-fonts" class="external">When can I use SVG Fonts?</a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/At-rule">At-rule</a></li>
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Fonts">Fonts</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/erikadoyle">erikadoyle</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Didglee">Didglee</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/omguhh">omguhh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Tigt">Tigt</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/vast">vast</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/michalzigo">michalzigo</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/skhilko">skhilko</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/edna">edna</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/upsuper">upsuper</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/finalfantasia">finalfantasia</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/phistuck">phistuck</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/elindie">elindie</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/glandium">glandium</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/benelsen">benelsen</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/acdha">acdha</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ccarruitero">ccarruitero</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/pdmdn">pdmdn</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Marcoos">Marcoos</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fvsch">fvsch</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/estelle">estelle</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jswisher">jswisher</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter">enderandpeter</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Kennyluck">Kennyluck</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/sltam">sltam</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Verruckt">Verruckt</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/sloppy_4455">sloppy_4455</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Level">Level</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Taken">Taken</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Yaroukh">Yaroukh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Philip Chee">Philip Chee</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jdaggett">Jdaggett</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jonathan_Watt">Jonathan_Watt</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Psz">Psz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Cdolivei">Cdolivei</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Prmatt11">Prmatt11</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Zearin">Zearin</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Fredchat">Fredchat</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Waldo">Waldo</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/BijuGC">BijuGC</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/erikadoyle">erikadoyle</a>,
+                      <time datetime="2016-11-28T14:17:00-08:00">Nov 28, 2016, 2:17:00 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Fonts.html">CSS Fonts</a></strong></li><li data-default-state="open"><a href="#"><strong>At-Rules</strong></a><ol><li><em><code>@font-face</code></em></li><li><a href="%40font-feature-values.html" title="The @font-feature-values CSS at-rule allows authors to use a common name in font-variant-alternates for feature activated differently in OpenType. It allows to simplify the CSS when using several fonts."><code>@font-feature-values</code></a></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a href="font.html" title="The font CSS property is either a shorthand property for setting font-style, font-variant, font-weight, font-size, line-height and font-family, or a way to set the element's font to a system font, using specific keywords."><code>font</code></a></li><li><a href="font-family.html" title="The font-family CSS property lets you specify a prioritized list of font family names and/or generic family names for the selected element. Values are separated by a comma to indicate that they are alternatives. The browser will select the first font on the list that is installed on the computer or that can be downloaded using a @font-face at-rule."><code>font-family</code></a></li><li><a href="font-feature-settings.html" title="The font-feature-settings CSS property gives you control over advanced typographic features in OpenType fonts."><code>font-feature-settings</code></a></li><li><a href="font-kerning.html" title="The font-kerning CSS property controls the usage of the kerning information; that is, it controls how letters are spaced. The kerning information is stored in the font, and if the font is well-kerned, this feature allows spacing between characters to be very similar, whatever the characters are."><code>font-kerning</code></a></li><li><a href="font-language-override.html" title="The font-language-override CSS property controls the usage of language-specific glyphs in a typeface."><code>font-language-override</code></a></li><li><a href="font-size.html" title="The font-size CSS property specifies the size of the font (historically the width of the capital &quot;M&quot;). Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the em and ex &lt;length&gt; units."><code>font-size</code></a></li><li><a href="font-size-adjust.html" title="The font-size-adjust CSS property specifies that font size should be chosen based on the height of lowercase letters rather than the height of capital letters. This is useful since the legibility of fonts, especially at small sizes, is determined more by the size of lowercase letters than by the size of capital letters."><code>font-size-adjust</code></a></li><li><a href="font-stretch.html" title="The font-stretch property selects a normal, condensed, or expanded face from a font."><code>font-stretch</code></a></li><li><a href="font-style.html" title="The font-style CSS property lets you select italic or oblique faces within a font-family. Italic forms are generally cursive in nature, usually using less horizontal space than their unstyled counterparts, while oblique faces are usually just sloped versions of the regular face. Both italic and oblique faces are simulated by artificially sloping the glyphs of the regular face (see font-synthesis for control over this)."><code>font-style</code></a></li><li><a href="font-synthesis.html" title="The font-synthesis CSS property controls which missing typefaces, bold or italic, may be synthesized by the browser."><code>font-synthesis</code></a></li><li><a href="font-variant.html" title="The font-variant property acts as a shorthand for the longhand properties: font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian. You can also set the CSS Level 2 (Revision 1) values of font-variant, (that is, normal or small-caps), by using the font shorthand."><code>font-variant</code></a></li><li><a href="font-variant-alternates.html" title="The font-variant-alternates CSS property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in @font-feature-values."><code>font-variant-alternates</code></a></li><li><a href="font-variant-caps.html" title="The font-variant-caps CSS property controls the usage of alternate glyphs for capital letters. Scripts can have capital letter glyphs of different sizes, the normal uppercase glyphs, small capital glyphs, and petite capital glyphs. This property controls which alternate glyphs to use."><code>font-variant-caps</code></a></li><li><a href="font-variant-east-asian.html" title="The font-variant-east-asian CSS property controls the usage of alternate glyphs for East Asian scripts, like Japanese and Chinese."><code>font-variant-east-asian</code></a></li><li><a href="font-variant-ligatures.html" title="The font-variant-ligatures CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text."><code>font-variant-ligatures</code></a></li><li><a href="font-variant-numeric.html" title="The font-variant-numeric CSS property controls the usage of alternate glyphs for numbers, fractions, and ordinal markers."><code>font-variant-numeric</code></a></li><li><a href="font-variant-position.html" title="The font-variant-position CSS property controls the usage of alternate glyphs of smaller size positioned as superscript or subscript regarding the baseline of the font, which is set unchanged. These glyphs are likely to be used in &lt;sub&gt; and &lt;sup&gt; elements."><code>font-variant-position</code></a></li><li><a href="font-weight.html" title="The font-weight CSS property specifies the weight or boldness of the font. Some fonts are only available in normal and bold."><code>font-weight</code></a></li><li><a href="line-height.html" title="On block level elements, the line-height property specifies the minimum height of line boxes within the element."><code>line-height</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/@font-face$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/@font-face$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/@font-face" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/@font-face">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/@font-face">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/@font-face">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/@font-face">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/@font-face">
+            한국어 (ko)
+          </option>
+          <option title="Portuguese (Portugal)" value="/pt-PT/docs/Web/CSS/@font-face">
+            Português (Europeu) (pt-PT)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/@font-face">
+            中文 (简体) (zh-CN)
+          </option>
+          <option title="Chinese (Traditional)" value="/zh-TW/docs/Web/CSS/@font-face">
+            正體中文 (繁體) (zh-TW)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/@font-face by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:41:17 GMT -->
+</body></html>

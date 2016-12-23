@@ -1,0 +1,1082 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/text-shadow by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:46:30 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>text-shadow</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow$json">
+  <link rel="canonical" href="text-shadow.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/text-shadow" title="text-shadow">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/text-shadow" title="text-shadow">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/text-shadow" title="text-shadow">
+    
+      <link rel="alternate" hreflang="it" href="https://developer.mozilla.org/it/docs/Web/CSS/text-shadow" title="text-shadow">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/text-shadow" title="text-shadow">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/text-shadow" title="text-shadow">
+    
+      <link rel="alternate" hreflang="pt-BR" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow" title="text-shadow">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-shadow" title="text-shadow">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="text-shadow">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow">
+  <meta name="twitter:title" content="text-shadow">
+  
+  <meta property="og:description" content="The text-shadow property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and text-decorations of the element.">
+  <meta name="description" content="The text-shadow property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and text-decorations of the element.">
+  <meta name="twitter:description" content="The text-shadow property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and text-decorations of the element.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/text-shadow" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Ftext-shadow" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/text-shadow">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/text-shadow" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/text-shadow" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/text-shadow" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/it/docs/Web/CSS/text-shadow" title="Italian">Italiano (it)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/text-shadow" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/text-shadow" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow" title="Portuguese (Brazilian)">Português (do&nbsp;Brasil) (pt-BR)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-shadow" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">text-shadow</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/LouisLazaris" title="View profile: LouisLazaris">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="LouisLazaris" data-src="../../../../../secure.gravatar.com/avatar/c2ebeeddf61c649ab08a2aeaf07ba2d66c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">LouisLazaris</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Prinz_Rana" title="View profile: Prinz_Rana">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Prinz_Rana" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Prinz_Rana</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Siilwyn" title="View profile: Siilwyn">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Siilwyn" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Siilwyn</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jeremie" title="View profile: Jeremie">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jeremie" data-src="../../../../../secure.gravatar.com/avatar/ea74cf7f528273838138e9ae407cd8ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jeremie</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/wbamberg" title="View profile: wbamberg">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="wbamberg" data-src="../../../../../secure.gravatar.com/avatar/576b94c81f8ad97e58d63f12e5fdb00c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">wbamberg</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/tregagnon" title="View profile: tregagnon">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tregagnon" data-src="../../../../../secure.gravatar.com/avatar/8431892ef37f88fe820096de721c00ba6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tregagnon</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Martyr2" title="View profile: Martyr2">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Martyr2" data-src="../../../../../secure.gravatar.com/avatar/61e08ca6cc273fb54144fdcf0d84a3916c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Martyr2</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jargnik" title="View profile: Jargnik">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jargnik" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jargnik</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/torbasow" title="View profile: torbasow">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="torbasow" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">torbasow</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/myf" title="View profile: myf">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="myf" data-src="../../../../../secure.gravatar.com/avatar/f4768a0e2cb256c7fa968ef226f4d8456c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">myf</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/elysdir" title="View profile: elysdir">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="elysdir" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">elysdir</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/leaverou" title="View profile: leaverou">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="leaverou" data-src="../../../../../secure.gravatar.com/avatar/3869e93ce6b2a22e37cf13281d9e6f756c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">leaverou</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/sebmozilla" title="View profile: sebmozilla">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="sebmozilla" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">sebmozilla</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Marsf" title="View profile: Marsf">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Marsf" data-src="../../../../../secure.gravatar.com/avatar/ad00649afe235adeecc876a86ded16e26c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Marsf</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/riven" title="View profile: riven">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="riven" data-src="../../../../../secure.gravatar.com/avatar/9f90a3cbf5763834b6bce134129599896c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">riven</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/CHaoSlayeR" title="View profile: CHaoSlayeR">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="CHaoSlayeR" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">CHaoSlayeR</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/glen-84" title="View profile: glen-84">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="glen-84" data-src="../../../../../secure.gravatar.com/avatar/47cada570dab96bb30ebcc332eb904e16c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">glen-84</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mvent2" title="View profile: Mvent2">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mvent2" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mvent2</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Etan Wexler" title="View profile: Etan Wexler">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Etan Wexler" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Etan Wexler</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot" title="View profile: Mgjbot">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mgjbot" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mgjbot</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/BijuGC" title="View profile: BijuGC">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="BijuGC" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">BijuGC</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jmb" title="View profile: Jmb">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jmb" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jmb</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>text-shadow</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Examples" rel="internal">Examples</a></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>text-shadow</code></strong> property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and <a href="text-decoration.html" title="The documentation about this has not yet been written; please consider contributing!"><code>text-decorations</code></a> of the element.</p>
+
+<p>Each shadow is specified as an offset from the text, along with optional color and blur radius values.</p>
+
+<p>Multiple shadows are applied front-to-back, with the first-specified shadow on top.</p>
+
+<p>This property applies to both <a href="__first-line.html" title="The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element."><code>::first-line</code></a> and <a href="__first-letter.html" title="The ::first-letter CSS pseudo-element selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line."><code>::first-letter</code></a> <a href="Pseudo-elements.html">pseudo-elements</a>.</p>
+
+<p></p><table class="properties"><tbody><tr><th scope="row"><a href="initial_value.html">Initial value</a></th><td><code>none</code></td></tr><tr><th scope="row">Applies to</th><td>all elements. It also applies to <a href="__first-letter.html" title="The ::first-letter CSS pseudo-element selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line."><code>::first-letter</code></a> and <a href="__first-line.html" title="The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element."><code>::first-line</code></a>.</td></tr><tr><th scope="row"><a href="inheritance.html">Inherited</a></th><td>yes</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="computed_value.html">Computed value</a></th><td>a color plus three absolute lengths</td></tr><tr><th scope="row">Animation type</th><td>a <a href="box-shadow.html#Interpolation" title="The color, x, y, blur and spread (if applicable) components of shadow lists are interpolated independently. If the inset value of any shadow pair differs between both lists, the whole list is uninterpolable. If one list is smaller than the other, it gets padded with transparent shadows with all their lengths set to 0 and its inset value matching the longer list.">shadow list</a></td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table><p></p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush: css">/* offset-x | offset-y | blur-radius | color */
+text-shadow: 1px 1px 2px black; 
+
+/* color | offset-x | offset-y | blur-radius */
+text-shadow: #CCC 1px 0 10px; 
+
+/* offset-x | offset-y | color */
+text-shadow: 5px 5px #558ABB;
+
+/* color | offset-x | offset-y */
+text-shadow: white 2px 5px;
+
+/* offset-x | offset-y
+/* Use defaults for color and blur-radius */
+text-shadow: 5px 10px;
+
+/* Global values */
+text-shadow: inherit;
+text-shadow: initial;
+text-shadow: unset;
+</pre>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt>&lt;color&gt;</dt>
+ <dd>Optional. Can be specified either before or after the offset values. If the color is not specified, a UA-chosen color will be used. <div class="note"><strong>Note:</strong>&nbsp;If you want to ensure consistency across browsers, explicitly specify a color.</div></dd>
+ <dt>&lt;offset-x&gt; &lt;offset-y&gt;</dt>
+ <dd>Required. These <code>length</code>&nbsp;values specify the shadow's offset from the text. <code>&lt;offset-x&gt;</code> specifies the horizontal distance; a negative value places the shadow to the left of the text. <code>&lt;offset-y&gt;</code> specifies the vertical distance; a negative value places the shadow above the text. If both values are <code>0</code>, then the shadow is placed behind the text (and may generate a blur effect when <code>&lt;blur-radius&gt;</code> is set).<br>
+ To find out what units you can use, see <a href="length.html" title="The &lt;length&gt; CSS data type denotes distance measurements. It is a &lt;number&gt; immediately followed by a length unit (px, em, pc, in, mm, …). Like for any CSS dimension, there is no space between the unit literal and the number.&nbsp;The length unit is optional after the &lt;number&gt; 0."><code>&lt;length&gt;</code></a>.</dd>
+ <dt>&lt;blur-radius&gt;</dt>
+ <dd>Optional. This is a <a href="length.html" title="The &lt;length&gt; CSS data type denotes distance measurements. It is a &lt;number&gt; immediately followed by a length unit (px, em, pc, in, mm, …). Like for any CSS dimension, there is no space between the unit literal and the number.&nbsp;The length unit is optional after the &lt;number&gt; 0."><code>&lt;length&gt;</code></a> value. If not specified, it defaults to <code>0</code>. The higher this value, the bigger the blur; the shadow becomes wider and lighter.</dd>
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox">none <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#shadow-t">&lt;shadow-t&gt;</a><a href="Value_definition_syntax.html#Hash_mark_()" title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma">#</a><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="shadow-t">&lt;shadow-t&gt;</span> = <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> <a href="length.html" title="Possible values: a number followed by'em', 'ex', 'ch', 'rem', 'px', 'cm', 'mm', 'in', 'vh', 'vw', 'vmin', 'vmax', 'pt', 'pc' or 'px', like 3px, 1.5cm, -0.5em or 0">&lt;length&gt;</a><a href="Value_definition_syntax.html#Curly_braces_(_)" title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity">{</a>2,3<a href="Value_definition_syntax.html#Curly_braces_(_)" title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity">}</a> <a href="Value_definition_syntax.html#Double_ampersand" title="Double ampersand: all of the entities must be present, in any order">&amp;&amp;</a> <a href="color_value.html" title="The &lt;color&gt; CSS data type denotes a color in the sRGB color space. A color can be described in any of these ways:">&lt;color&gt;</a><a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="color">&lt;color&gt;</span> = <a href="#rgb()">&lt;rgb()&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#rgba()">&lt;rgba()&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#hsl()">&lt;hsl()&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#hsla()">&lt;hsla()&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> &lt;hex-color&gt; <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#named-color">&lt;named-color&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> currentcolor <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#deprecated-system-color">&lt;deprecated-system-color&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="rgb()">&lt;rgb()&gt;</span> = rgb( <a href="#rgb-component">&lt;rgb-component&gt;</a><a href="Value_definition_syntax.html#Hash_mark_()" title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma">#</a><a href="Value_definition_syntax.html#Curly_braces_(_)" title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity">{</a>3<a href="Value_definition_syntax.html#Curly_braces_(_)" title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity">}</a> )<br><span id="rgba()">&lt;rgba()&gt;</span> = rgba( <a href="#rgb-component">&lt;rgb-component&gt;</a><a href="Value_definition_syntax.html#Hash_mark_()" title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma">#</a><a href="Value_definition_syntax.html#Curly_braces_(_)" title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity">{</a>3<a href="Value_definition_syntax.html#Curly_braces_(_)" title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity">}</a> , <a href="#alpha-value">&lt;alpha-value&gt;</a> )<br><span id="hsl()">&lt;hsl()&gt;</span> = hsl( <a href="#hue">&lt;hue&gt;</a>, <a href="percentage.html" title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number.">&lt;percentage&gt;</a>, <a href="percentage.html" title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number.">&lt;percentage&gt;</a> )<br><span id="hsla()">&lt;hsla()&gt;</span> = hsla( <a href="#hue">&lt;hue&gt;</a>, <a href="percentage.html" title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number.">&lt;percentage&gt;</a>, <a href="percentage.html" title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number.">&lt;percentage&gt;</a>, <a href="#alpha-value">&lt;alpha-value&gt;</a> )<br><span id="named-color">&lt;named-color&gt;</span> = transparent <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> aliceblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> antiquewhite <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> aqua <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> aquamarine <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> azure <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> beige <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> bisque <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> black <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> blanchedalmond <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> blue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> blueviolet <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> brown <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> burlywood <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> cadetblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> chartreuse <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> chocolate <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> coral <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> cornflowerblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> cornsilk <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> crimson <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> cyan <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkcyan <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkgoldenrod <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkgray <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkgreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkgrey <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkkhaki <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkmagenta <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkolivegreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkorange <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkorchid <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkred <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darksalmon <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkseagreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkslateblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkslategray <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkslategrey <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkturquoise <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> darkviolet <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> deeppink <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> deepskyblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> dimgray <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> dimgrey <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> dodgerblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> firebrick <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> floralwhite <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> forestgreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> fuchsia <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> gainsboro <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ghostwhite <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> gold <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> goldenrod <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> gray <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> green <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> greenyellow <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> grey <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> honeydew <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> hotpink <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> indianred <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> indigo <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ivory <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> khaki <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lavender <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lavenderblush <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lawngreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lemonchiffon <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightcoral <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightcyan <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightgoldenrodyellow <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightgray <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightgreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightgrey <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightpink <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightsalmon <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightseagreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightskyblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightslategray <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightslategrey <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightsteelblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lightyellow <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> lime <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> limegreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> linen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> magenta <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> maroon <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mediumaquamarine <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mediumblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mediumorchid <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mediumpurple <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mediumseagreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mediumslateblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mediumspringgreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mediumturquoise <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mediumvioletred <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> midnightblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mintcream <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> mistyrose <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> moccasin <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> navajowhite <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> navy <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> oldlace <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> olive <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> olivedrab <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> orange <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> orangered <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> orchid <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> palegoldenrod <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> palegreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> paleturquoise <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> palevioletred <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> papayawhip <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> peachpuff <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> peru <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> pink <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> plum <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> powderblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> purple <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> rebeccapurple <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> red <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> rosybrown <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> royalblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> saddlebrown <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> salmon <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> sandybrown <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> seagreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> seashell <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> sienna <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> silver <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> skyblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> slateblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> slategray <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> slategrey <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> snow <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> springgreen <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> steelblue <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> tan <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> teal <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> thistle <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> tomato <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> turquoise <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> violet <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> wheat <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> white <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> whitesmoke <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> yellow <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> yellowgreen<br><span id="deprecated-system-color">&lt;deprecated-system-color&gt;</span> = ActiveBorder <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ActiveCaption <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> AppWorkspace <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> Background <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ButtonFace <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ButtonHighlight <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ButtonShadow <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ButtonText <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> CaptionText <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> GrayText <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> Highlight <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> HighlightText <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> InactiveBorder <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> InactiveCaption <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> InactiveCaptionText <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> InfoBackground <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> InfoText <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> Menu <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> MenuText <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> Scrollbar <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ThreeDDarkShadow <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ThreeDFace <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ThreeDHighlight <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ThreeDLightShadow <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ThreeDShadow <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> Window <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> WindowFrame <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> WindowText</code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="rgb-component">&lt;rgb-component&gt;</span> = <a href="integer.html" title="The &lt;integer&gt; CSS data type denotes an integer number, positive or negative. There isn't any associated unit with the value. An integer consists of one or several decimal digits, 0 to 9, optionally preceded by one single + or - sign.">&lt;integer&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="percentage.html" title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number.">&lt;percentage&gt;</a><br><span id="alpha-value">&lt;alpha-value&gt;</span> = <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension.">&lt;number&gt;</a><br><span id="hue">&lt;hue&gt;</span> = <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension.">&lt;number&gt;</a></code></p></pre>
+
+<h2 id="Examples">Examples</h2>
+
+<div id="Example1">
+<pre class="brush: css">.red-text-shadow {
+   text-shadow: red 0 -2px;
+}</pre>
+
+<pre class="brush: html">&lt;p class="red-text-shadow"&gt;
+   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
+   inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+&lt;/p&gt;</pre>
+</div>
+
+<p><iframe id="frame_Example1" height="90px" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-shadow%24samples/Example18ca5.html?revision=1071296" frameborder="0" width="689px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<div id="Example2">
+<pre class="brush:css">.white-with-blue-shadow {
+   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+   color: white;
+   font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+}</pre>
+
+<pre class="brush: html">&lt;p class="white-with-blue-shadow"&gt;
+   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+   veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+&lt;/p&gt;</pre>
+</div>
+
+<p><iframe id="frame_Example2" height="180px" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-shadow%24samples/Example28ca5.html?revision=1071296" frameborder="0" width="689px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<div id="Example3">
+<pre class="brush:css">.gold-on-gold {
+   text-shadow: rgba(0,0,0,0.1) -1px 0, rgba(0,0,0,0.1) 0 -1px,
+   rgba(255,255,255,0.1) 1px 0, rgba(255,255,255,0.1) 0 1px,
+   rgba(0,0,0,0.1) -1px -1px, rgba(255,255,255,0.1) 1px 1px; 
+   color: gold;
+   background: gold;
+}</pre>
+
+<pre class="brush: html">&lt;p class="gold-on-gold"&gt;
+   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+   veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+&lt;/p&gt;</pre>
+</div>
+
+<p><iframe id="frame_Example3" height="90px" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/text-shadow%24samples/Example38ca5.html?revision=1071296" frameborder="0" width="689px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-transitions/#animatable-css" class="external" lang="en" hreflang="en">CSS Transitions<br><small lang="en-US">The definition of 'text-shadow' in that specification.</small></a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>Lists <code>text-shadow</code> as animatable.</td>
+  </tr>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-text-decor-3/#text-shadow" class="external" lang="en" hreflang="en">CSS Text Decoration Level&nbsp;3<br><small lang="en-US">The definition of 'text-shadow' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>The CSS property <code>text-shadow</code> was <a href="http://www.w3.org/TR/2008/REC-CSS2-20080411/text.html#text-shadow-props" class="external">improperly defined in CSS2</a> and dropped in CSS2 (Level 1). The CSS Text Module Level 3 spec improved and precised the syntax. Later it was moved to new working draft <a href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/" class="external">CSS Text Decoration Module Level 3</a>.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari (WebKit)</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>2.0</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/3.5" title="Released on 2009-06-30.">3.5</a> (1.9.1)<sup>[1]</sup></td>
+   <td>10<sup>[3]</sup></td>
+   <td>9.5<sup>[2]</sup></td>
+   <td>1.1 (100)<sup>[4]</sup></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] Gecko theoretically supports infinite text-shadows (don't try it). Gecko 2 (Firefox 4 / Thunderbird 3.3 / SeaMonkey 2.1) and later cap the blur radius at 300 for performance reasons. If the &lt;color&gt; value is unspecified, then Gecko uses the value of the element's <a href="color.html" title="The color property sets the foreground color of an element's text content, and its decorations. It doesn't affect any other characteristic of the element; it should really be called text-color and would have been named so, save for historical reasons and its appearance in CSS Level 1."><code>color</code></a> property.</p>
+
+<p>[2] Opera supports a maximum of 6-9 text-shadows for performance reasons. The blur radius is limited to 100px. Opera 9.5 to 10.1 adheres to the old, reverse painting order (CSS2, the first specified shadow is on the bottom).</p>
+
+<p>[3] Internet Explorer 5.5 supports Microsoft's <a href="http://msdn.microsoft.com/en-us/library/ms673539(loband).aspx" class="external"><code>Shadow</code> and <code>DropShadow</code> Filter</a>.</p>
+
+<p>[4] In Safari, any shadows that do not explicitly specify a color are transparent. Safari 1.1 to 3.2 only supports one text-shadow (displays the first shadow of a comma-separated list and ignores the rest). Safari 4.0 (WebKit 528) and later support multiple text-shadows.<br>
+ Konqueror supports text-shadow starting with version 3.4.</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="box-shadow.html" title="The box-shadow property describes one or more shadow effects as a comma-separated list."><code>box-shadow</code></a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Property.html">CSS Property</a></li>
+      
+        <li><a href="../../tag/CSS%20Text.html">CSS Text</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/NeedsMobileBrowserCompatibility">NeedsMobileBrowserCompatibility</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Property">Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/LouisLazaris">LouisLazaris</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Prinz_Rana">Prinz_Rana</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Siilwyn">Siilwyn</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jeremie">Jeremie</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/wbamberg">wbamberg</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tregagnon">tregagnon</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Martyr2">Martyr2</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jargnik">Jargnik</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/torbasow">torbasow</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/myf">myf</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/elysdir">elysdir</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/leaverou">leaverou</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/sebmozilla">sebmozilla</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Marsf">Marsf</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/riven">riven</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/CHaoSlayeR">CHaoSlayeR</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/glen-84">glen-84</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mvent2">Mvent2</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Etan Wexler">Etan Wexler</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot">Mgjbot</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/BijuGC">BijuGC</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jmb">Jmb</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/LouisLazaris">LouisLazaris</a>,
+                      <time datetime="2016-06-13T18:45:51-07:00">Jun 13, 2016, 6:45:51 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Text_Decoration.html">CSS Text Decoration</a></strong></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a href="text-decoration.html" title="The text-decoration CSS property is used to set the text formatting to underline, overline, line-through or blink. Underline and overline decorations are positioned under the text, line-through over it."><code>text-decoration</code></a></li><li><a href="text-decoration-color.html" title="The CSS text-decoration-color property sets the line color used when drawing underlines, overlines, and strikethrough lines specified by the corresponding text-decoration-line property. The color specified will be the same for all three line&nbsp;types."><code>text-decoration-color</code></a></li><li><a href="text-decoration-line.html" title="The text-decoration-line CSS property sets what kind of line decorations are added to an element."><code>text-decoration-line</code></a></li><li><a href="text-decoration-skip.html" title="The property defines horizontally where the text-decoration property applies."><code>text-decoration-skip</code></a></li><li><a href="text-decoration-style.html" title="The text-decoration-style CSS property defines the style of the lines specified by text-decoration-line. The style applies to all lines: there is no way to define different styles for each of the lines defined by text-decoration-line."><code>text-decoration-style</code></a></li><li><a href="text-emphasis.html" title="The text-emphasis CSS property is a shorthand&nbsp;property for setting text-emphasis-style and text-emphasis-color in one declaration. This property will apply the specified emphasis mark to each character of the element's text, except separator characters, like spaces,&nbsp; and control characters."><code>text-emphasis</code></a></li><li><a href="text-emphasis-color.html" title="The text-emphasis-color CSS property defines the color used to draw an emphasis mark. It can also be set, and reset, using the text-emphasis shorthand."><code>text-emphasis-color</code></a></li><li><a href="text-emphasis-position.html" title="The text-emphasis-position CSS property describes where emphasis marks are drawn at. The effect of emphasis marks on the line height is the same as for ruby text: if there isn't enough place, the line height is increased."><code>text-emphasis-position</code></a></li><li><a href="text-emphasis-style.html" title="The text-emphasis-style CSS property defines the type of emphasis used. It can also be set, and reset, using the text-emphasis shorthand."><code>text-emphasis-style</code></a></li><li><em><code>text-shadow</code></em></li><li><a href="text-underline-position.html" title="The CSS text-underline-position property specifies the position of the underline which is set using the text-decoration property underline value."><code>text-underline-position</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/text-shadow$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/text-shadow$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/text-shadow" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/text-shadow">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/text-shadow">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/text-shadow">
+            Français (fr)
+          </option>
+          <option title="Italian" value="/it/docs/Web/CSS/text-shadow">
+            Italiano (it)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/text-shadow">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/text-shadow">
+            한국어 (ko)
+          </option>
+          <option title="Portuguese (Brazilian)" value="/pt-BR/docs/Web/CSS/text-shadow">
+            Português (do&nbsp;Brasil) (pt-BR)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/text-shadow">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/text-shadow by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:46:33 GMT -->
+</body></html>

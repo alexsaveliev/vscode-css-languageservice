@@ -1,0 +1,1310 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/background-image by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:36:19 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>background-image</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image$json">
+  <link rel="canonical" href="background-image.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="it" href="https://developer.mozilla.org/it/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="pl" href="https://developer.mozilla.org/pl/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="pt-BR" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="pt-PT" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/background-image" title="background-image">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-image" title="background-image">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="background-image">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image">
+  <meta name="twitter:title" content="background-image">
+  
+  <meta property="og:description" content="The CSS background-image property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user.">
+  <meta name="description" content="The CSS background-image property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user.">
+  <meta name="twitter:description" content="The CSS background-image property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/background-image" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fbackground-image" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/background-image">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/background-image" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/background-image" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/background-image" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/it/docs/Web/CSS/background-image" title="Italian">Italiano (it)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/background-image" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/background-image" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pl/docs/Web/CSS/background-image" title="Polish">Polski (pl)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-image" title="Portuguese (Brazilian)">Português (do&nbsp;Brasil) (pt-BR)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/background-image" title="Portuguese (Portugal)">Português (Europeu) (pt-PT)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/background-image" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-image" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">background-image</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/erikadoyle" title="View profile: erikadoyle">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="erikadoyle" data-src="../../../../../secure.gravatar.com/avatar/0f2324340bc4d49b1c17e82a643d387b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">erikadoyle</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/ivan-kolmychek" title="View profile: ivan-kolmychek">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ivan-kolmychek" data-src="../../../../../secure.gravatar.com/avatar/0926c1ed52c7584df6caa35485e3905f6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ivan-kolmychek</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/wizAmit" title="View profile: wizAmit">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="wizAmit" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">wizAmit</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/SphinxKnight" title="View profile: SphinxKnight">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="SphinxKnight" data-src="../../../../../secure.gravatar.com/avatar/8fb358ea9b7af22f5021a29e122ea0696c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">SphinxKnight</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/jsx" title="View profile: jsx">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jsx" data-src="../../../../../secure.gravatar.com/avatar/8cc61d4e2dc63e75976a334348d473bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jsx</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jeremie" title="View profile: Jeremie">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jeremie" data-src="../../../../../secure.gravatar.com/avatar/ea74cf7f528273838138e9ae407cd8ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jeremie</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/wbamberg" title="View profile: wbamberg">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="wbamberg" data-src="../../../../../secure.gravatar.com/avatar/576b94c81f8ad97e58d63f12e5fdb00c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">wbamberg</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/randytarampi" title="View profile: randytarampi">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="randytarampi" data-src="../../../../../secure.gravatar.com/avatar/03e511d5205279bd2d9d652fe75245a46c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">randytarampi</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Barabara56" title="View profile: Barabara56">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Barabara56" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Barabara56</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/hoosteeno" title="View profile: hoosteeno">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="hoosteeno" data-src="../../../../../secure.gravatar.com/avatar/8aa95f466d3e939557948e3069e2fa706c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">hoosteeno</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei" title="View profile: ziyunfei">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ziyunfei" data-src="../../../../../secure.gravatar.com/avatar/2dbf9c055c2b32d3ca45d25be01174236c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ziyunfei</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/hanna" title="View profile: hanna">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="hanna" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">hanna</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/J-Mackerel" title="View profile: J-Mackerel">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="J-Mackerel" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">J-Mackerel</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/halifaris" title="View profile: halifaris">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="halifaris" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">halifaris</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/uuuu" title="View profile: uuuu">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="uuuu" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">uuuu</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/trevorh" title="View profile: trevorh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="trevorh" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">trevorh</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/tuhoojabotti" title="View profile: tuhoojabotti">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tuhoojabotti" data-src="../../../../../secure.gravatar.com/avatar/0e3bd7f324458aa1599e81ae9d768da66c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tuhoojabotti</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/caseyketch007" title="View profile: caseyketch007">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="caseyketch007" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">caseyketch007</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Agnesisbest" title="View profile: Agnesisbest">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Agnesisbest" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Agnesisbest</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/micuta" title="View profile: micuta">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="micuta" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">micuta</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/tregagnon" title="View profile: tregagnon">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tregagnon" data-src="../../../../../secure.gravatar.com/avatar/8431892ef37f88fe820096de721c00ba6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tregagnon</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/hawkrives" title="View profile: hawkrives">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="hawkrives" data-src="../../../../../secure.gravatar.com/avatar/c121934b61cd7517aa1b33bf6dac86776c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">hawkrives</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/estelle" title="View profile: estelle">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="estelle" data-src="../../../../../secure.gravatar.com/avatar/8e75de08afdc1e0fe9333e758d3c72496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">estelle</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mdnmullany" title="View profile: mdnmullany">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mdnmullany" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mdnmullany</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Kennyluck" title="View profile: Kennyluck">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Kennyluck" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Kennyluck</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/paul.irish" title="View profile: paul.irish">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="paul.irish" data-src="../../../../../secure.gravatar.com/avatar/ffe68d6f71b225f7661d33f2a89082816c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">paul.irish</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/JonRimmer" title="View profile: JonRimmer">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="JonRimmer" data-src="../../../../../secure.gravatar.com/avatar/1aca962cdaeceaefccc278951bc7721e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">JonRimmer</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Level" title="View profile: Level">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Level" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Level</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Souqueta" title="View profile: Souqueta">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Souqueta" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Souqueta</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Nathymig" title="View profile: Nathymig">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Nathymig" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Nathymig</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/BijuGC" title="View profile: BijuGC">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="BijuGC" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">BijuGC</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot" title="View profile: Mgjbot">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mgjbot" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mgjbot</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Ptak82" title="View profile: Ptak82">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Ptak82" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Ptak82</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Qazzian" title="View profile: Qazzian">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Qazzian" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Qazzian</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Callek" title="View profile: Callek">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Callek" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Callek</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/DBaron" title="View profile: DBaron">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="DBaron" data-src="../../../../../secure.gravatar.com/avatar/0a32391d55cfa63276f87eb9819dfbd06c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">DBaron</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Waldo" title="View profile: Waldo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Waldo" data-src="../../../../../secure.gravatar.com/avatar/d26a0ca7ae1134e0e1dbdddf82e289296c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Waldo</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Rappo" title="View profile: Rappo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Rappo" data-src="../../../../../secure.gravatar.com/avatar/3e129f4d5671005bc59a0b1faeccd67e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Rappo</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Dria" title="View profile: Dria">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Dria" data-src="../../../../../secure.gravatar.com/avatar/c6c044311a2c98b383718e00964cda726c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Dria</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>background-image</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Examples" rel="internal">Examples</a><ol><li><a href="#HTML" rel="internal">HTML</a></li><li><a href="#CSS" rel="internal">CSS</a></li><li><a href="#Result" rel="internal">Result</a></li></ol></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section class="Quick_links" id="Quick_Links"><!-- --></section></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <a title="/en-US/docs/CSS" href="../CSS.html">CSS</a> <strong><code>background-image</code></strong> property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user.</p>
+
+<p>The <a title="border" href="https://developer.mozilla.org/cn/CSS/border">borders</a> of the element are then drawn on top of them, and the <a title="The background-color CSS property sets the background color of an element, either through a color value or the keyword transparent." href="background-color.html"><code>background-color</code></a> is drawn beneath them. How the images are drawn relative to the box and its borders is defined by the <a title="The background-clip CSS property specifies whether an element's background, either the color or image, extends underneath its border." href="background-clip.html"><code>background-clip</code></a> and <a title="The background-origin CSS property determines the background positioning area, that is the position of the origin of an image specified using the background-image CSS property." href="background-origin.html"><code>background-origin</code></a> CSS properties.</p>
+
+<p>If a specified image cannot be drawn (for example, when the file denoted by the specified URI cannot be loaded), browsers handle it as they would a <code>none</code> value.</p>
+
+<div class="note"><strong>Note:</strong> Even if the images are opaque and the color won't be displayed in normal circumstances, web developers should always specify a <a title="The background-color CSS property sets the background color of an element, either through a color value or the keyword transparent." href="background-color.html"><code>background-color</code></a>. If the images cannot be loaded—for instance, when the network is down—the background color will be used as a fallback.</div>
+
+<p></p><table class="properties"><tbody><tr><th scope="row"><a href="initial_value.html">Initial value</a></th><td><code>none</code></td></tr><tr><th scope="row">Applies to</th><td>all elements. It also applies to <a title="The ::first-letter CSS pseudo-element selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line." href="__first-letter.html"><code>::first-letter</code></a> and <a title="The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element." href="__first-line.html"><code>::first-line</code></a>.</td></tr><tr><th scope="row"><a href="inheritance.html">Inherited</a></th><td>no</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="computed_value.html">Computed value</a></th><td>as specified, but with URIs made absolute</td></tr><tr><th scope="row">Animation type</th><td>discrete</td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table><p></p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush: css">background-image: none;
+background-image: url("http://www.example.com/bck.png");
+
+background-image: inherit;
+</pre>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt><code>none</code></dt>
+ <dd>Is a keyword denoting the absence of images.</dd>
+ <dt><code>&lt;image&gt;</code></dt>
+ <dd>Is an <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image"><code>&lt;image&gt;</code></a> denoting the image to display. There can be several of them, separated by commas, as <a title="Multiple backgrounds" href="CSS_Background_and_Borders/Using_CSS_multiple_backgrounds.html">multiple backgrounds</a> are supported.</dd>
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox"><a href="#bg-image">&lt;bg-image&gt;</a><a title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma" href="Value_definition_syntax.html#Hash_mark_()">#</a><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="bg-image">&lt;bg-image&gt;</span> = none <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image">&lt;image&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="image">&lt;image&gt;</span> = <a title="The &lt;url&gt; CSS data type denotes a pointer to a resource. It has no proper syntax and can only be expressed through the url() functional notation." href="/en-US/docs/Web/CSS/url">&lt;url&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#image()">&lt;image()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#image-set()">&lt;image-set()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#element()">&lt;element()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#cross-fade()">&lt;cross-fade()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#gradient">&lt;gradient&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="image()">&lt;image()&gt;</span> = image( <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image">&lt;image&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;string&gt; CSS data type represents a string. It is formed by a Unicode characters delimited by either double (&quot;) or single (') quotes. A double quoted string cannot contain double quotes unless escaped using a backslash (\). The same practice applies for single quoted strings, they cannot contain single quotes unless escaped using a backslash (\). The backslash character must be escaped to be part of the string." href="/en-US/docs/Web/CSS/string">&lt;string&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a title="The &lt;color&gt; CSS data type denotes a color in the sRGB color space. A color can be described in any of these ways:" href="/en-US/docs/Web/CSS/color_value">&lt;color&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Exclamation point: the group must produce at least one value" href="Value_definition_syntax.html##Exclamation_point_(!)">!</a> )<br><span id="image-set()">&lt;image-set()&gt;</span> = image-set( <a href="#image-set-option">&lt;image-set-option&gt;</a><a title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma" href="Value_definition_syntax.html#Hash_mark_()">#</a> )<br><span id="element()">&lt;element()&gt;</span> = element( &lt;id-selector&gt; )<br><span id="cross-fade()">&lt;cross-fade()&gt;</span> = cross-fade( <a href="#cf-mixing-image">&lt;cf-mixing-image&gt;</a> , <a href="#cf-final-image">&lt;cf-final-image&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> )<br><span id="gradient">&lt;gradient&gt;</span> = <a href="#linear-gradient()">&lt;linear-gradient()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#repeating-linear-gradient()">&lt;repeating-linear-gradient()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#radial-gradient()">&lt;radial-gradient()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#repeating-radial-gradient()">&lt;repeating-radial-gradient()&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="color">&lt;color&gt;</span> = <a href="#rgb()">&lt;rgb()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#rgba()">&lt;rgba()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#hsl()">&lt;hsl()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#hsla()">&lt;hsla()&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> &lt;hex-color&gt; <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#named-color">&lt;named-color&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> currentcolor <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#deprecated-system-color">&lt;deprecated-system-color&gt;</a><br><span id="image-set-option">&lt;image-set-option&gt;</span> = <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image">&lt;image&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;string&gt; CSS data type represents a string. It is formed by a Unicode characters delimited by either double (&quot;) or single (') quotes. A double quoted string cannot contain double quotes unless escaped using a backslash (\). The same practice applies for single quoted strings, they cannot contain single quotes unless escaped using a backslash (\). The backslash character must be escaped to be part of the string." href="/en-US/docs/Web/CSS/string">&lt;string&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a title="The &lt;resolution&gt; CSS data types, used in media queries, denotes the density of pixels of an output device, its resolution. It is a &lt;number&gt; immediately followed by a unit of resolution (dpi, dpcm, ...). Like for any CSS dimension, there is no space between the unit literal and the number." href="/en-US/docs/Web/CSS/resolution">&lt;resolution&gt;</a><br><span id="cf-mixing-image">&lt;cf-mixing-image&gt;</span> = <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Double ampersand: all of the entities must be present, in any order" href="Value_definition_syntax.html#Double_ampersand">&amp;&amp;</a> <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image">&lt;image&gt;</a><br><span id="cf-final-image">&lt;cf-final-image&gt;</span> = <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image">&lt;image&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;color&gt; CSS data type denotes a color in the sRGB color space. A color can be described in any of these ways:" href="/en-US/docs/Web/CSS/color_value">&lt;color&gt;</a><br><span id="linear-gradient()">&lt;linear-gradient()&gt;</span> = linear-gradient( <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a title="Possible values: a number followed by'deg', 'grad', 'rad' or 'turn', like 2turn, 1.3rad, -60deg or 0grad." href="angle.html">&lt;angle&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> to <a href="#side-or-corner">&lt;side-or-corner&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a href="#color-stop-list">&lt;color-stop-list&gt;</a> )<br><span id="repeating-linear-gradient()">&lt;repeating-linear-gradient()&gt;</span> = repeating-linear-gradient( <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a title="Possible values: a number followed by'deg', 'grad', 'rad' or 'turn', like 2turn, 1.3rad, -60deg or 0grad." href="angle.html">&lt;angle&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> to <a href="#side-or-corner">&lt;side-or-corner&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a href="#color-stop-list">&lt;color-stop-list&gt;</a> )<br><span id="radial-gradient()">&lt;radial-gradient()&gt;</span> = radial-gradient( <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#ending-shape">&lt;ending-shape&gt;</a> <a title="Double bar: one or several of the entities must be present, in any order" href="Value_definition_syntax.html#Double_bar">||</a> <a href="#size">&lt;size&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> at <a title="The &lt;position&gt; CSS data type denotes a coordinate in a 2D space used to set a location relative to a box." href="/en-US/docs/Web/CSS/position_value">&lt;position&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a href="#color-stop-list">&lt;color-stop-list&gt;</a> )<br><span id="repeating-radial-gradient()">&lt;repeating-radial-gradient()&gt;</span> = repeating-radial-gradient( <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#ending-shape">&lt;ending-shape&gt;</a> <a title="Double bar: one or several of the entities must be present, in any order" href="Value_definition_syntax.html#Double_bar">||</a> <a href="#size">&lt;size&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> at <a title="The &lt;position&gt; CSS data type denotes a coordinate in a 2D space used to set a location relative to a box." href="/en-US/docs/Web/CSS/position_value">&lt;position&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a href="#color-stop-list">&lt;color-stop-list&gt;</a> )</code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="rgb()">&lt;rgb()&gt;</span> = rgb( <a href="#rgb-component">&lt;rgb-component&gt;</a><a title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma" href="Value_definition_syntax.html#Hash_mark_()">#</a><a title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity" href="Value_definition_syntax.html#Curly_braces_(_)">{</a>3<a title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity" href="Value_definition_syntax.html#Curly_braces_(_)">}</a> )<br><span id="rgba()">&lt;rgba()&gt;</span> = rgba( <a href="#rgb-component">&lt;rgb-component&gt;</a><a title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma" href="Value_definition_syntax.html#Hash_mark_()">#</a><a title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity" href="Value_definition_syntax.html#Curly_braces_(_)">{</a>3<a title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity" href="Value_definition_syntax.html#Curly_braces_(_)">}</a> , <a href="#alpha-value">&lt;alpha-value&gt;</a> )<br><span id="hsl()">&lt;hsl()&gt;</span> = hsl( <a href="#hue">&lt;hue&gt;</a>, <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a>, <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a> )<br><span id="hsla()">&lt;hsla()&gt;</span> = hsla( <a href="#hue">&lt;hue&gt;</a>, <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a>, <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a>, <a href="#alpha-value">&lt;alpha-value&gt;</a> )<br><span id="named-color">&lt;named-color&gt;</span> = transparent <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> aliceblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> antiquewhite <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> aqua <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> aquamarine <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> azure <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> beige <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> bisque <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> black <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> blanchedalmond <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> blue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> blueviolet <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> brown <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> burlywood <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> cadetblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> chartreuse <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> chocolate <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> coral <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> cornflowerblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> cornsilk <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> crimson <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> cyan <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkcyan <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkgoldenrod <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkgray <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkgreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkgrey <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkkhaki <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkmagenta <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkolivegreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkorange <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkorchid <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkred <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darksalmon <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkseagreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkslateblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkslategray <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkslategrey <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkturquoise <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> darkviolet <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> deeppink <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> deepskyblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> dimgray <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> dimgrey <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> dodgerblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> firebrick <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> floralwhite <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> forestgreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> fuchsia <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> gainsboro <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ghostwhite <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> gold <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> goldenrod <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> gray <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> green <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> greenyellow <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> grey <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> honeydew <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> hotpink <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> indianred <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> indigo <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ivory <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> khaki <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lavender <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lavenderblush <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lawngreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lemonchiffon <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightcoral <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightcyan <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightgoldenrodyellow <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightgray <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightgreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightgrey <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightpink <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightsalmon <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightseagreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightskyblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightslategray <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightslategrey <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightsteelblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lightyellow <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> lime <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> limegreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> linen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> magenta <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> maroon <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mediumaquamarine <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mediumblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mediumorchid <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mediumpurple <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mediumseagreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mediumslateblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mediumspringgreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mediumturquoise <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mediumvioletred <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> midnightblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mintcream <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> mistyrose <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> moccasin <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> navajowhite <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> navy <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> oldlace <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> olive <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> olivedrab <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> orange <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> orangered <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> orchid <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> palegoldenrod <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> palegreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> paleturquoise <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> palevioletred <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> papayawhip <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> peachpuff <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> peru <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> pink <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> plum <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> powderblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> purple <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> rebeccapurple <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> red <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> rosybrown <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> royalblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> saddlebrown <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> salmon <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> sandybrown <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> seagreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> seashell <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> sienna <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> silver <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> skyblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> slateblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> slategray <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> slategrey <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> snow <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> springgreen <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> steelblue <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> tan <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> teal <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> thistle <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> tomato <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> turquoise <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> violet <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> wheat <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> white <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> whitesmoke <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> yellow <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> yellowgreen<br><span id="deprecated-system-color">&lt;deprecated-system-color&gt;</span> = ActiveBorder <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ActiveCaption <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> AppWorkspace <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> Background <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ButtonFace <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ButtonHighlight <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ButtonShadow <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ButtonText <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> CaptionText <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> GrayText <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> Highlight <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> HighlightText <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> InactiveBorder <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> InactiveCaption <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> InactiveCaptionText <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> InfoBackground <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> InfoText <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> Menu <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> MenuText <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> Scrollbar <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDDarkShadow <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDFace <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDHighlight <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDLightShadow <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDShadow <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> Window <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> WindowFrame <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> WindowText<br><span id="side-or-corner">&lt;side-or-corner&gt;</span> = <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> left <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> right <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a title="Double bar: one or several of the entities must be present, in any order" href="Value_definition_syntax.html#Double_bar">||</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> top <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> bottom <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><br><span id="color-stop-list">&lt;color-stop-list&gt;</span> = <a href="#color-stop">&lt;color-stop&gt;</a><a title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity" href="Value_definition_syntax.html#Curly_braces_(_)">{</a>2,}<br><span id="ending-shape">&lt;ending-shape&gt;</span> = circle <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> ellipse<br><span id="size">&lt;size&gt;</span> = closest-side <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> farthest-side <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> closest-corner <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> farthest-corner <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Possible values: a number followed by'em', 'ex', 'ch', 'rem', 'px', 'cm', 'mm', 'in', 'vh', 'vw', 'vmin', 'vmax', 'pt', 'pc' or 'px', like 3px, 1.5cm, -0.5em or 0" href="length.html">&lt;length&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#length-percentage">&lt;length-percentage&gt;</a><a title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity" href="Value_definition_syntax.html#Curly_braces_(_)">{</a>2<a title="Curly braces: encloses two integers defining the minimal and maximal numbers of occurrences of the entity" href="Value_definition_syntax.html#Curly_braces_(_)">}</a><br><span id="position">&lt;position&gt;</span> = <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a><a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> left <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> center <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> right <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> top <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> bottom <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#length-percentage">&lt;length-percentage&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> left <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> center <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> right <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#length-percentage">&lt;length-percentage&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> top <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> center <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> bottom <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#length-percentage">&lt;length-percentage&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> center <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> left <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> right <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a href="#length-percentage">&lt;length-percentage&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a title="Double ampersand: all of the entities must be present, in any order" href="Value_definition_syntax.html#Double_ampersand">&amp;&amp;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> center <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> top <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> bottom <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a href="#length-percentage">&lt;length-percentage&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><br></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="rgb-component">&lt;rgb-component&gt;</span> = <a title="The &lt;integer&gt; CSS data type denotes an integer number, positive or negative. There isn't any associated unit with the value. An integer consists of one or several decimal digits, 0 to 9, optionally preceded by one single + or - sign." href="/en-US/docs/Web/CSS/integer">&lt;integer&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a><br><span id="alpha-value">&lt;alpha-value&gt;</span> = <a title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension." href="/en-US/docs/Web/CSS/number">&lt;number&gt;</a><br><span id="hue">&lt;hue&gt;</span> = <a title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension." href="/en-US/docs/Web/CSS/number">&lt;number&gt;</a><br><span id="color-stop">&lt;color-stop&gt;</span> = <a title="The &lt;color&gt; CSS data type denotes a color in the sRGB color space. A color can be described in any of these ways:" href="/en-US/docs/Web/CSS/color_value">&lt;color&gt;</a> <a href="#length-percentage">&lt;length-percentage&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a><br><span id="length-percentage">&lt;length-percentage&gt;</span> = <a title="Possible values: a number followed by'em', 'ex', 'ch', 'rem', 'px', 'cm', 'mm', 'in', 'vh', 'vw', 'vmin', 'vmax', 'pt', 'pc' or 'px', like 3px, 1.5cm, -0.5em or 0" href="length.html">&lt;length&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a></code></p>
+</pre>
+
+<h2 id="Examples">Examples</h2>
+
+<p>Note that the star image is partially transparent and is layered over the cat image.</p>
+
+<h3 id="HTML">HTML</h3>
+
+<pre class="brush: html">&lt;div&gt;
+    &lt;p class="catsandstars"&gt;
+        This paragraph is full of cats&lt;br /&gt;and stars.
+    &lt;/p&gt;
+    &lt;p&gt;This paragraph is not.&lt;/p&gt;
+    &lt;p class="catsandstars"&gt;
+        Here are more cats for you.&lt;br /&gt;Look at them!
+    &lt;/p&gt;
+    &lt;p&gt;And no more.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+<h3 id="CSS">CSS</h3>
+
+<pre class="brush: css">pre, p {
+    font-size: 1.5em;
+    color: #FE7F88;
+    background-color: transparent;
+}
+
+div {
+  background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+}
+
+p {
+  background-image: none;
+}
+
+.catsandstars {
+  background-image:  url("https://mdn.mozillademos.org/files/11991/startransparent.gif"), 
+                     url("https://mdn.mozillademos.org/files/7693/catfront.png");
+  background-color: transparent;
+}
+</pre>
+
+<h3 id="Result">Result</h3>
+
+<p><iframe class="live-sample-frame sample-code-frame" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/background-image%24samples/Examplesb463.html?revision=1148954" frameborder="0" id="frame_Examples"></iframe></p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a lang="en" hreflang="en" href="https://drafts.csswg.org/css-backgrounds-3/#background-image" class="external">CSS Backgrounds and Borders Module Level&nbsp;3<br><small lang="en-US">The definition of 'background-image' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>From CSS2 Revision 1, the property has been extended to support multiple backgrounds and any <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image"><code>&lt;image&gt;</code></a> CSS data type.</td>
+  </tr>
+  <tr>
+   <td><a lang="en" hreflang="en" href="http://www.w3.org/TR/CSS2/colors.html#propdef-background-image" class="external">CSS Level&nbsp;2 (Revision&nbsp;1)<br><small lang="en-US">The definition of 'background-image' in that specification.</small></a></td>
+   <td><span class="spec-REC">Recommendation</span></td>
+   <td>From CSS1, the way images with and without intrinsic dimensions are handled is now described.</td>
+  </tr>
+  <tr>
+   <td><a lang="en" hreflang="en" href="http://www.w3.org/TR/CSS1/#background-image" class="external">CSS Level&nbsp;1<br><small lang="en-US">The definition of 'background-image' in that specification.</small></a></td>
+   <td><span class="spec-REC">Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Edge</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>1.0</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>1.0 (1.7 or earlier)[1]</td>
+   <td>4.0</td>
+   <td>3.5</td>
+   <td>1.0</td>
+  </tr>
+  <tr>
+   <td>Multiple backgrounds</td>
+   <td>1.0</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><a title="Released on 2010-01-21." href="https://developer.mozilla.org/en-US/Firefox/Releases/3.6">3.6</a> (1.9.2)</td>
+   <td>9.0</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>1.3</td>
+  </tr>
+  <tr>
+   <td>Gradients</td>
+   <td>1.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><a title="Released on 2010-01-21." href="https://developer.mozilla.org/en-US/Firefox/Releases/3.6">3.6</a> (1.9.2)<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-moz' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-moz</a></span></td>
+   <td>10</td>
+   <td>11<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-o' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-o</a></span></td>
+   <td>4.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+  </tr>
+  <tr>
+   <td>SVG images</td>
+   <td>8.0</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><a title="Released on 2011-03-22." href="https://developer.mozilla.org/en-US/Firefox/Releases/4">4.0</a> (2.0)</td>
+   <td>9.0</td>
+   <td>9.5</td>
+   <td>5.0 [2]</td>
+  </tr>
+  <tr>
+   <td><code>element</code></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-moz' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-moz</a></span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td><code>image-rect</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-moz' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-moz</a></span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>Any <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image"><code>&lt;image&gt;</code></a> value.</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Edge</th>
+   <th>Safari Mobile</th>
+   <th>Opera Mini</th>
+   <th>Opera Mobile</th>
+   <th>Android</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td>Multiple backgrounds</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td>Gradients</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span> <span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span><br>
+    [3]</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span>&nbsp;<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span> [4]</td>
+  </tr>
+  <tr>
+   <td>SVG images</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span> [2]</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td><code>element</code></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-moz' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-moz</a></span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+  <tr>
+   <td><code>image-rect</code></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-moz' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-moz</a></span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>Any <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image"><code>&lt;image&gt;</code></a> value</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] If the <code>browser.display.use_document_colors</code> user preference in <code>about:config</code> is set to <code>false</code>, background images will not de displayed.</p>
+
+<p>[2] Support of SVG in CSS background is incomplete in the current version of iOS Safari (5.0). The same for Safari prior 5.0.</p>
+
+<p>[3] Old webkit syntax for iOS 4.2 and older</p>
+
+<p>[4]&nbsp;Old webkit syntax</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="CSS_Images/Implementing_image_sprites_in_CSS.html">CSS Image Sprites</a></li>
+ <li><a title="The HTML &lt;img&gt; element represents an image in the document." href="/en-US/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a></li>
+ <li>Image-related articles: <a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image"><code>&lt;image&gt;</code></a>, <a title="The CSS linear-gradient() function creates an &lt;image&gt; which represents a linear gradient of colors. The result of this function is an object of the CSS &lt;gradient&gt; data type. Like any other gradient, a CSS linear gradient is not a CSS &lt;color&gt; but an image with no intrinsic dimensions; that is, it has neither natural or preferred size, nor ratio. Its concrete size will match the size&nbsp;of the element it applies to." href="/en-US/docs/Web/CSS/linear-gradient"><code>linear-gradient()</code></a>, <a title="The CSS radial-gradient() function creates an &lt;image&gt; which represents a gradient of colors radiating from an origin, the center of the gradient. The result of this function is an object of the CSS &lt;gradient&gt; data type." href="/en-US/docs/Web/CSS/radial-gradient"><code>radial-gradient()</code></a>, <a title="The CSS repeating-linear-gradient function creates an &lt;image&gt; consisting of repeating gradients. It works similarly to the basic linear gradients as described by linear-gradient(), and takes the same arguments. However, it automatically repeats the color stops infinitely in both directions. The color stops'&nbsp;positions shift by multiples of the length of a basic linear gradient (the difference between the last color stops' position and the first)." href="/en-US/docs/Web/CSS/repeating-linear-gradient"><code>repeating-linear-gradient()</code></a>, <a title="This works similarly to the standard radial gradients as described by radial-gradient(), but it automatically repeats the color stops infinitely in both directions, with their positions shifted by multiples of the difference between the last color stop's position and the first one's position." href="repeating-radial-gradient.html"><code>repeating-radial-gradient()</code></a>, <a title="The element() CSS function defines an &lt;image&gt; value generated from an arbitrary HTML element. This image is live, meaning that if the HTML element is changed, the CSS properties using the resulting value are automatically updated." href="/en-US/docs/Web/CSS/element"><code>element()</code></a>.</li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Background.html">CSS Background</a></li>
+      
+        <li><a href="../../tag/CSS%20Property.html">CSS Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/NeedsMobileBrowserCompatibility">NeedsMobileBrowserCompatibility</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/erikadoyle">erikadoyle</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ivan-kolmychek">ivan-kolmychek</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/wizAmit">wizAmit</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/SphinxKnight">SphinxKnight</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jsx">jsx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jeremie">Jeremie</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/wbamberg">wbamberg</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/randytarampi">randytarampi</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Barabara56">Barabara56</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/hoosteeno">hoosteeno</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei">ziyunfei</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/hanna">hanna</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/J-Mackerel">J-Mackerel</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/halifaris">halifaris</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/uuuu">uuuu</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/trevorh">trevorh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tuhoojabotti">tuhoojabotti</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/caseyketch007">caseyketch007</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Agnesisbest">Agnesisbest</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/micuta">micuta</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tregagnon">tregagnon</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/hawkrives">hawkrives</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/estelle">estelle</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mdnmullany">mdnmullany</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Kennyluck">Kennyluck</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/paul.irish">paul.irish</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/JonRimmer">JonRimmer</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Level">Level</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Souqueta">Souqueta</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Nathymig">Nathymig</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/BijuGC">BijuGC</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot">Mgjbot</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Ptak82">Ptak82</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Qazzian">Qazzian</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Callek">Callek</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/DBaron">DBaron</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Waldo">Waldo</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Rappo">Rappo</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Dria">Dria</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/erikadoyle">erikadoyle</a>,
+                      <time datetime="2016-11-28T14:58:47-08:00">Nov 28, 2016, 2:58:47 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Background_and_Borders.html">CSS Background and Borders</a></strong></li><li data-default-state="open"><a href="#"><strong>Guides</strong></a><ol><li><a title="This tool can be used to generate CSS3 border-image values." href="CSS_Background_and_Borders/Border-image_generator.html">Border-image generator</a></li><li><a title="This tool can be used to generate CSS3 border-radius effects." href="CSS_Background_and_Borders/Border-radius_generator.html">Border-radius generator</a></li><li><a title="The background-size CSS property makes it possible to adjust the size of background images, instead of the default behavior of tiling the image at its full size." href="CSS_Background_and_Borders/Scaling_background_images.html">Scaling background images</a></li><li><a title="With CSS3, you can apply multiple backgrounds to elements. These are layered atop one another with the first background you provide on top and the last background listed in the back." href="CSS_Background_and_Borders/Using_CSS_multiple_backgrounds.html">Using CSS multiple backgrounds</a></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a title="The background CSS property is a shorthand for setting the individual background values in a single place in the style sheet. background can be used to set the values for one or more of: background-clip, background-color, background-image, background-origin, background-position, background-repeat, background-size, and background-attachment." href="background.html"><code>background</code></a></li><li><a title="If a background-image is specified, the background-attachment CSS property determines whether that image's position is fixed within the viewport, or scrolls along with its containing block." href="background-attachment.html"><code>background-attachment</code></a></li><li><a title="The background-clip CSS property specifies whether an element's background, either the color or image, extends underneath its border." href="background-clip.html"><code>background-clip</code></a></li><li><a title="The background-color CSS property sets the background color of an element, either through a color value or the keyword transparent." href="background-color.html"><code>background-color</code></a></li><li><em><code>background-image</code></em></li><li><a title="The background-origin CSS property determines the background positioning area, that is the position of the origin of an image specified using the background-image CSS property." href="background-origin.html"><code>background-origin</code></a></li><li><a title="The background-position CSS property sets the initial position for each defined background image, relative to the background position layer defined by background-origin." href="background-position.html"><code>background-position</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The background-position-x CSS property sets the initial horizontal position, relative to the background position layer defined by background-origin for each defined background image. For more information, see the background-position property, which has been widely supported." href="background-position-x.html"><code>background-position-x</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The background-position-y CSS property sets the initial vertical position, relative to the background position layer defined by background-origin for each defined background image. For more information, see the background-position property, which has been widely supported for much longer." href="background-position-y.html"><code>background-position-y</code></a></li><li><a title="The background-repeat CSS property defines how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all." href="background-repeat.html"><code>background-repeat</code></a></li><li><a title="The background-size CSS property specifies the size of the background images. The size of the image can be fully constrained or only partially in order to preserve its intrinsic ratio." href="background-size.html"><code>background-size</code></a></li><li><a title="The border CSS property is a shorthand property for setting the individual border property values in a single place in the style sheet. border can be used to set the values for one or more of: border-width, border-style, border-color." href="border.html"><code>border</code></a></li><li><a title="The border-bottom CSS property is a shorthand that sets the values of border-bottom-color, border-bottom-style, and border-bottom-width. These properties describe the bottom border of elements." href="border-bottom.html"><code>border-bottom</code></a></li><li><a title="The border-bottom-color CSS property sets the color of the bottom border of an element. Note that in many cases the shorthand CSS properties border-color or border-bottom are more convenient and preferable." href="border-bottom-color.html"><code>border-bottom-color</code></a></li><li><a title="The border-bottom-left-radius CSS property sets the rounding of the bottom-left corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0 no rounding is done and the corner is square." href="border-bottom-left-radius.html"><code>border-bottom-left-radius</code></a></li><li><a title="The border-bottom-right-radius CSS property sets the rounding of the bottom-right corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0 no rounding is done and the corner is square." href="border-bottom-right-radius.html"><code>border-bottom-right-radius</code></a></li><li><a title="The border-bottom-style CSS property sets the line style of the bottom border of a box." href="border-bottom-style.html"><code>border-bottom-style</code></a></li><li><a title="The border-bottom-width CSS property sets the width of the bottom border of a box." href="border-bottom-width.html"><code>border-bottom-width</code></a></li><li><a title="The border-color CSS property is a shorthand for setting the color of the four sides of an element's border: border-top-color, border-right-color, border-bottom-color, border-left-color" href="border-color.html"><code>border-color</code></a></li><li><a title="The border-image CSS property allows drawing an image on the borders of elements. This makes drawing complex looking widgets much simpler than it has been and removes the need for nine boxes in some cases. The border-image is used instead of the border styles given by the border-style properties. Though the specification requires that border-style must be present if border-image is used, some browsers may not implement this." href="border-image.html"><code>border-image</code></a></li><li><a title="The border-image-outset property describes by what amount the border image area extends beyond the border box." href="border-image-outset.html"><code>border-image-outset</code></a></li><li><a title="The border-image-repeat CSS property defines how the middle part of a border image is handled so that it can match the size of the border. It has a one-value syntax that describes the behavior of all the sides, and a two-value syntax that sets a different value for the horizontal and vertical behavior." href="border-image-repeat.html"><code>border-image-repeat</code></a></li><li><a title="The border-image-slice CSS property divides the image specified by border-image-source in nine regions: the four corners, the four edges and the middle. It does this by specifying 4 inwards offsets." href="border-image-slice.html"><code>border-image-slice</code></a></li><li><a title="The border-image-source CSS property defines the &lt;image&gt; to use instead of the style of the border. If this property is set to none, the style defined by border-style is used instead." href="/en-US/docs/Web/CSS/border-image-source"><code>border-image-source</code></a></li><li><a title="The border-image-width CSS property defines the width of the border image by defining inward offsets from the border edges. If the border-image-width is greater than the border-width, then the border image extends beyond&nbsp;the padding (and/or content) edge." href="border-image-width.html"><code>border-image-width</code></a></li><li><a title="The border-left CSS property is a shorthand that sets the values of border-left-color, border-left-style, and border-left-width. These properties describe the left border of elements." href="border-left.html"><code>border-left</code></a></li><li><a title="The border-left-color CSS property sets the color of the left border of an element. Note that in many cases the shorthand CSS properties border-color or border-left are more convenient and preferable." href="border-left-color.html"><code>border-left-color</code></a></li><li><a title="The border-left-style CSS property sets the line style of the left border of a box." href="border-left-style.html"><code>border-left-style</code></a></li><li><a title="The border-left-width CSS property sets the width of the left border of a box." href="border-left-width.html"><code>border-left-width</code></a></li><li><a title="The border-radius CSS property allows Web authors to define how rounded border corners are. The curve of each corner is defined using one or two radii, defining its shape: circle or ellipse." href="border-radius.html"><code>border-radius</code></a></li><li><a title="The border-right CSS property is a shorthand that sets the values of border-right-color, border-right-style, and border-right-width. These properties describe the right border of elements." href="border-right.html"><code>border-right</code></a></li><li><a title="The border-right-color CSS property sets the color of the right border of an element. Note that in many cases the shorthand CSS properties&nbsp; border-color or border-right are more convenient and preferable." href="border-right-color.html"><code>border-right-color</code></a></li><li><a title="The border-right-style CSS property sets the line style of the right border of a box." href="border-right-style.html"><code>border-right-style</code></a></li><li><a title="The border-right-width CSS property sets the width of the right border of a box." href="border-right-width.html"><code>border-right-width</code></a></li><li><a title="The border-style property is a shorthand property for setting the line style for all four sides of the element´s border." href="border-style.html"><code>border-style</code></a></li><li><a title="The border-top CSS property is a shorthand that sets the values of border-top-color, border-top-style, and border-top-width. These properties describe the top border of elements." href="border-top.html"><code>border-top</code></a></li><li><a title="The border-top-color CSS property sets the color of the top border of an element. Note that in many cases the shorthand CSS properties border-color or border-top are more convenient and preferable." href="border-top-color.html"><code>border-top-color</code></a></li><li><a title="The border-top-left-radius CSS property sets the rounding of the top-left corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0,no rounding is done and the corner is square." href="border-top-left-radius.html"><code>border-top-left-radius</code></a></li><li><a title="The border-top-right-radius CSS property sets the rounding of the top-right corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0 no rounding is done and the corner is square." href="border-top-right-radius.html"><code>border-top-right-radius</code></a></li><li><a title="The border-top-style CSS property sets the line style of the top border of a box." href="border-top-style.html"><code>border-top-style</code></a></li><li><a title="The border-top-width CSS property sets the width of the top border of a box." href="border-top-width.html"><code>border-top-width</code></a></li><li><a title="The border-width property is a shorthand property for setting border-top-width,&nbsp;border-right-width,&nbsp;border-bottom-width and&nbsp;border-left-width&nbsp;of a box at the same place." href="border-width.html"><code>border-width</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/background-image$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/background-image$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/background-image" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/background-image">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/background-image">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/background-image">
+            Français (fr)
+          </option>
+          <option title="Italian" value="/it/docs/Web/CSS/background-image">
+            Italiano (it)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/background-image">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/background-image">
+            한국어 (ko)
+          </option>
+          <option title="Polish" value="/pl/docs/Web/CSS/background-image">
+            Polski (pl)
+          </option>
+          <option title="Portuguese (Brazilian)" value="/pt-BR/docs/Web/CSS/background-image">
+            Português (do&nbsp;Brasil) (pt-BR)
+          </option>
+          <option title="Portuguese (Portugal)" value="/pt-PT/docs/Web/CSS/background-image">
+            Português (Europeu) (pt-PT)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/background-image">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/background-image">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/background-image by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:36:28 GMT -->
+</body></html>

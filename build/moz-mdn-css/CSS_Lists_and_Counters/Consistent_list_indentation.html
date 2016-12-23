@@ -1,0 +1,846 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:55:29 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>Consistent list indentation</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation$json">
+  <link rel="canonical" href="Consistent_list_indentation.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/CSS_Lists_and_Counters/Konsistente_Listeneinrückung" title="Konsistente Listeneinrückung">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Indentation_homogène_des_listes" title="Indentation homogène des listes">
+    
+      <link rel="alternate" hreflang="it" href="https://developer.mozilla.org/it/docs/Indentazione_corretta_delle_liste" title="Indentazione corretta delle liste">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Consistent_List_Indentation" title="Consistent List Indentation">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Consistent_list_indentation" title="调整列表缩进">
+    
+      <link rel="alternate" hreflang="zh-TW" href="https://developer.mozilla.org/zh-TW/docs/Consistent_List_Indentation" title="調整列表縮排">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="Consistent list indentation">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation">
+  <meta name="twitter:title" content="Consistent list indentation">
+  
+  <meta property="og:description" content="One of the most common style changes made to lists is a change in the indentation distance—that is, how far the list items are pushed over to the right. This article will help you understand the problems that can occur and how to avoid them.">
+  <meta name="description" content="One of the most common style changes made to lists is a change in the indentation distance—that is, how far the list items are pushed over to the right. This article will help you understand the problems that can occur and how to avoid them.">
+  <meta name="twitter:description" content="One of the most common style changes made to lists is a change in the indentation distance—that is, how far the list items are pushed over to the right. This article will help you understand the problems that can occur and how to avoid them.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FCSS_Lists_and_Counters%2FConsistent_list_indentation" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/CSS_Lists_and_Counters/Konsistente_Listeneinrückung" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Indentation_homogène_des_listes" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/it/docs/Indentazione_corretta_delle_liste" title="Italian">Italiano (it)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Consistent_List_Indentation" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Consistent_list_indentation" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-TW/docs/Consistent_List_Indentation" title="Chinese (Traditional)">正體中文 (繁體) (zh-TW)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS_Lists_and_Counters.html" rel="v:url" property="v:title">CSS Lists and Counters</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">Consistent list indentation</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/xfq" title="View profile: xfq">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="xfq" data-src="../../../../../../secure.gravatar.com/avatar/d37eb6e5701cb30b871077f04cf2ebb76c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">xfq</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jeremie" title="View profile: Jeremie">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jeremie" data-src="../../../../../../secure.gravatar.com/avatar/ea74cf7f528273838138e9ae407cd8ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jeremie</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/pdmdn" title="View profile: pdmdn">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="pdmdn" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">pdmdn</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter" title="View profile: enderandpeter">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="enderandpeter" data-src="../../../../../../secure.gravatar.com/avatar/e272c067cd5fe72f2992b1667340956b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">enderandpeter</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Dria" title="View profile: Dria">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Dria" data-src="../../../../../../secure.gravatar.com/avatar/c6c044311a2c98b383718e00964cda726c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Dria</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Laurent Denis" title="View profile: Laurent Denis">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Laurent Denis" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Laurent Denis</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/CitizenK" title="View profile: CitizenK">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="CitizenK" data-src="../../../../../../secure.gravatar.com/avatar/2b0e74986cbba99f558df3df79168dbf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">CitizenK</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>Consistent list indentation</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Making_a_List" rel="internal">Making a List</a></li><li><a href="#Indenting_It_Twice" rel="internal">Indenting It Twice</a></li><li><a href="#Finding_Consistency" rel="internal">Finding Consistency</a></li><li><a href="#Conclusion" rel="internal">Conclusion</a></li><li><a href="#Recommendations" rel="internal">Recommendations</a></li><li><a href="#Original_Document_Information" rel="internal">Original Document Information</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section></div>
+
+<p><span class="seoSummary">One of the most common style changes made to lists is a change in the indentation distance—that is, how far the list items are pushed over to the right.</span> This often leads to frustration, because what works in one browser often doesn't have the same effect in another. For example, if you declare that lists have no left margin, they move over in Internet Explorer, but sit stubbornly in place in Gecko-based browsers.<span class="seoSummary">This article will help you understand the problems that can occur and how to avoid them.</span></p>
+
+<p>In order to understand why this is the case, and more importantly how to avoid the problem altogether, it's necessary to examine the details of list construction.</p>
+
+<h2 id="Making_a_List">Making a List</h2>
+
+<p>First, we consider a single, pure list item. This list item has no marker (otherwise known as a "bullet") and is not yet part of a list itself. It hangs alone in the void, simple and unadorned, as shown in Figure 1.</p>
+
+<p><img src="../../../../../../mdn.mozillademos.org/files/268/consistent-list-indentation-figure1.gif" alt="Figure 1" class="internal"></p>
+
+<p>That dotted red border represents outer edges of the content-area of the list item. Remember that, at this point, the list item has no padding or borders. If we add two more list items, we get a result like that shown in Figure 2.</p>
+
+<p><img src="../../../../../../mdn.mozillademos.org/files/269/consistent-list-indentation-figure2.gif" alt="Figure 2" class="internal"></p>
+
+<p>Now we wrap these in a parent element; in this case, we'll wrap them in an unordered list (i.e., <code>&lt;ul&gt;</code>). According to the CSS box model, the list items' boxes must be displayed within the parent element's content area. Since that parent has no padding or margins yet, we get the situation shown in Figure 3.</p>
+
+<p><img src="../../../../../../mdn.mozillademos.org/files/270/consistent-list-indentation-figure3.gif" alt="Figure 3" class="internal"></p>
+
+<p>Here, the dotted blue border shows us the edges of the <code>&lt;ul&gt;</code> element's content area. Since we have no padding for the <code>&lt;ul&gt;</code> element, its content wraps snugly around the three list items.</p>
+
+<p>Now we add the list item markers. Since this is an unordered list, we'll add traditional filled-circle "bullets," as shown in Figure 4.</p>
+
+<p><img src="../../../../../../mdn.mozillademos.org/files/271/consistent-list-indentation-figure4.gif" alt="Figure 4" class="internal"></p>
+
+<p>Visually, the markers are <em>outside</em> the content area of the <code>&lt;ul&gt;</code>, but that's not the important part here. What's key is that the markers are placed outside the "principal box" of the <code>&lt;li&gt;</code> elements, not the <code>&lt;ul&gt;</code>. They're sort of like appendages to the list items, hanging outside the content-area of the <code>&lt;li&gt;</code> but still attached to the <code>&lt;li&gt;</code>.</p>
+
+<p>This is why, in every browser except Internet Explorer for Windows, markers are placed outside any border set for an <code>&lt;li&gt;</code> element, assuming the value of <code>list-style-position</code> is <code>outside</code>. If it's changed to <code>inside</code>, then the markers are brought inside the <code>&lt;li&gt;</code>'s content, as though they're an inline box placed at the very beginning of the <code>&lt;li&gt;</code>.</p>
+
+<h2 id="Indenting_It_Twice">Indenting It Twice</h2>
+
+<p>So how will all this appear in a document? At the moment, we have a situation analogous to these styles:</p>
+
+<pre class="brush:css">ul, li {margin-left: 0; padding-left: 0;}</pre>
+
+<p>If we dropped this list into a document as-is, there would be no apparent indentation and the markers would be in danger of falling off the left edge of the browser window.</p>
+
+<p>In order to avoid this and get some indentation, there are really only three options available to browser implementors.</p>
+
+<ol>
+ <li>Give each <code>&lt;li&gt;</code> element a left margin.</li>
+ <li>Give the <code>&lt;ul&gt;</code> element a left margin.</li>
+ <li>Give the <code>&lt;ul&gt;</code> element some left padding.</li>
+</ol>
+
+<p>As it turns out, nobody seems to have used the first option. The second option was taken by Internet Explorer for Windows and Macintosh, and Opera. The third was adopted by Gecko, and by extension all the browsers that embed it.</p>
+
+<p>Let's look at the two approaches for a moment. In Internet Explorer and Opera, the lists are indented by setting a left margin of 40 pixels on the <code>&lt;ul&gt;</code> element. If we apply a background color to the <code>&lt;ul&gt;</code> element and leave the list item and <code>&lt;ul&gt;</code> borders in place, we get the result shown in Figure 5.</p>
+
+<p><img src="../../../../../../mdn.mozillademos.org/files/272/consistent-list-indentation-figure5.gif" alt="Figure 5" class="internal"></p>
+
+<p>Gecko, on the other hand, sets a left <em>padding</em> of 40 pixels for the <code>&lt;ul&gt;</code> element, so given the exact same styles as were used to produce Figure 5, loading the example into a Gecko-based browser gives us Figure 6.</p>
+
+<p><img src="../../../../../../mdn.mozillademos.org/files/273/consistent-list-indentation-figure6.gif" alt="Figure 6" class="internal"></p>
+
+<p>As we can see, the markers remain attached to the <code>&lt;li&gt;</code> elements, no matter where they are. The difference is entirely in how the <code>&lt;ul&gt;</code> is styled. We can only see the difference if we try to set a background or border on the <code>&lt;ul&gt;</code> element.</p>
+
+<h2 id="Finding_Consistency">Finding Consistency</h2>
+
+<p>Boil it all down, and what we're left with is this: if you want consistent rendering of lists between Gecko, Internet Explorer, and Opera, you need to set <strong>both</strong> the left margin and left padding of the <code>&lt;ul&gt;</code> element. We can ignore <code>&lt;li&gt;</code> altogether for these purposes. If you want to reproduce the default display in Netscape 6.x, you write:</p>
+
+<pre class="brush:css">ul {margin-left: 0; padding-left: 40px;}</pre>
+
+<p>If you're more interested in following the Internet Explorer/Opera model, then:</p>
+
+<pre class="brush:css">ul {margin-left: 40px; padding-left: 0;}</pre>
+
+<p>Of course, you can fill in your own preferred values. Set both to <code>1.25em</code>, if you like -- there's no reason why you have to stick with pixel-based indentation. If you want to reset lists to have no indentation, then you still have to zero out both padding and margin:</p>
+
+<pre class="brush:css">ul {margin-left: 0; padding-left: 0;}</pre>
+
+<p>Remember, though, that in so doing, you'll have the bullets hanging outside the list and its parent element. If the parent is the <code>body</code>, there's a strong chance your bullets will be completely outside the browser window, and thus will not be visible.</p>
+
+<h2 id="Conclusion">Conclusion</h2>
+
+<p>In the end, we can see that none of the browsers mentioned in this article is right or wrong about how they lay out lists. They use different default styles, and that's where the problems creep in. By making sure you style both the left padding and left margin of lists, you can find much greater cross-browser consistency in your list indentation.</p>
+
+<h2 id="Recommendations">Recommendations</h2>
+
+<ul>
+ <li>When altering the indentation of lists, make sure to set both the padding and margin.</li>
+</ul>
+
+<div class="originaldocinfo">
+<h2 id="Original_Document_Information">Original Document Information</h2>
+
+<ul>
+ <li>Author(s): Eric A. Meyer, Netscape Communications</li>
+ <li>Last Updated Date: Published 30 Aug 2002</li>
+ <li>Copyright Information: Copyright © 2001-2003 Netscape. All rights reserved.</li>
+ <li>Note: This reprinted article was originally part of the DevEdge site.</li>
+</ul>
+</div>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Guide">Guide</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Intermediate">Intermediate</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/NeedsUpdate">NeedsUpdate</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/xfq">xfq</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jeremie">Jeremie</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/pdmdn">pdmdn</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter">enderandpeter</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Dria">Dria</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Laurent Denis">Laurent Denis</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/CitizenK">CitizenK</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>,
+                      <time datetime="2015-11-30T13:55:46-08:00">Nov 30, 2015, 1:55:46 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../../CSS.html">CSS</a></strong></li><li><strong><a href="../Reference.html">CSS Reference</a></strong></li><li><strong><a href="../CSS_Lists_and_Counters.html">CSS Lists and Counters</a></strong></li><li data-default-state="open"><a href="#"><strong>Guides</strong></a><ol><li><em>Consistent list indentation</em></li><li><a href="Using_CSS_counters.html" title="CSS counters are, in essence, variables maintained by CSS whose values may be incremented by CSS rules to track how many times they're used. This lets you adjust the appearance of content based on its placement in the document.">Using CSS counters</a></li></ol></li><li data-default-state="open"><a href="#"><strong>At-Rules</strong></a><ol><li><a href="../%40counter-style-2.html" title="The @counter-style CSS at-rule&nbsp;lets authors define&nbsp;specific counter styles that are not part of the predefined set of styles. A @counter-style rule defines how to convert a counter value into a string representation."><code>@counter-style</code></a></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a href="../counter-increment.html" title="The counter-increment CSS property is used to increase the value of CSS Counters by a given value. The counter's value can be reset using the counter-reset CSS property."><code>counter-increment</code></a></li><li><a href="../counter-reset.html" title="The counter-reset CSS property is used to reset CSS Counters to a given value."><code>counter-reset</code></a></li><li><a href="../list-style.html" title="The list-style property is a shorthand property for setting list-style-type, list-style-image and list-style-position."><code>list-style</code></a></li><li><a href="../list-style-image.html" title="The list-style-image property specifies an image to be used as the list item marker."><code>list-style-image</code></a></li><li><a href="../list-style-position.html" title="The list-style-position property specifies the position of the marker box in the principal block box."><code>list-style-position</code></a></li><li><a href="../list-style-type.html" title="The list-style-type property specifies the appearance of a list item element. Because it is the only property that&nbsp;defaults to display:list-item, this is usually a &lt;li&gt; element, but can be any element with this display value."><code>list-style-type</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/CSS_Lists_and_Counters/Konsistente_Listeneinr%C3%BCckung">
+            Deutsch (de)
+          </option>
+          <option title="French" value="/fr/docs/Indentation_homog%C3%A8ne_des_listes">
+            Français (fr)
+          </option>
+          <option title="Italian" value="/it/docs/Indentazione_corretta_delle_liste">
+            Italiano (it)
+          </option>
+          <option title="Korean" value="/ko/docs/Consistent_List_Indentation">
+            한국어 (ko)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/Guide/CSS/Consistent_list_indentation">
+            中文 (简体) (zh-CN)
+          </option>
+          <option title="Chinese (Traditional)" value="/zh-TW/docs/Consistent_List_Indentation">
+            正體中文 (繁體) (zh-TW)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:55:33 GMT -->
+</body></html>

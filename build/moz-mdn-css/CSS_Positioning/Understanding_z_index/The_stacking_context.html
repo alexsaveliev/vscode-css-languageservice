@@ -1,0 +1,1123 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:50:49 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>The stacking context</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context$json">
+  <link rel="canonical" href="The_stacking_context.html">
+
+  
+    
+      <link rel="alternate" hreflang="es" href="../../../../../../es/docs/Web/CSS/CSS_Positioning/entendiendo_z_index/El_contexto_de_apilamiento.html" title="El contexto de apilamiento">
+    
+      <link rel="alternate" hreflang="fr" href="../../../../../../fr/docs/Web/CSS/Comprendre_z-index/Empilement_de_couches.html" title="L'empilement de couches">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context" title="スタック文脈">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/Understanding_z-index/The_stacking_context" title="쌓임 맥락(stacking context) 이야기">
+    
+      <link rel="alternate" hreflang="pt-BR" href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/Understanding_z_index/O_contexto_de_empilhamento" title="O Contexto de Empilhamento">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" title="Контекст наложения (stacking context)">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context" title="The stacking context">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="The stacking context">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">
+  <meta name="twitter:title" content="The stacking context">
+  
+  <meta property="og:description" content="Stacking context is the three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user who is assumed to be facing the viewport or the webpage. HTML elements occupy this space in priority order based on element attributes.">
+  <meta name="description" content="Stacking context is the three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user who is assumed to be facing the viewport or the webpage. HTML elements occupy this space in priority order based on element attributes.">
+  <meta name="twitter:description" content="Stacking context is the three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user who is assumed to be facing the viewport or the webpage. HTML elements occupy this space in priority order based on element attributes.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FCSS_Positioning%2FUnderstanding_z_index%2FThe_stacking_context" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../../../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="../../../../../../es/docs/Web/CSS/CSS_Positioning/entendiendo_z_index/El_contexto_de_apilamiento.html" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="../../../../../../fr/docs/Web/CSS/Comprendre_z-index/Empilement_de_couches.html" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/Understanding_z-index/The_stacking_context" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/Understanding_z_index/O_contexto_de_empilhamento" title="Portuguese (Brazilian)">Português (do&nbsp;Brasil) (pt-BR)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../../../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../../CSS_Positioning.html" rel="v:url" property="v:title">CSS Positioning</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../Understanding_z_index.html" rel="v:url" property="v:title">Understanding CSS z-index</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">The stacking context</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Ende93" title="View profile: Ende93">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Ende93" data-src="../../../../../../../secure.gravatar.com/avatar/f6204ddd5f1688a11e4674295f2637fa6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Ende93</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/duncanmcdonald" title="View profile: duncanmcdonald">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="duncanmcdonald" data-src="../../../../../../../secure.gravatar.com/avatar/1dd3c1197196f100910e541005639e486c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">duncanmcdonald</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/paceaux" title="View profile: paceaux">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="paceaux" data-src="../../../../../../../secure.gravatar.com/avatar/de846ceaabdd443f7476e6c1892511ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">paceaux</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/siirila" title="View profile: siirila">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="siirila" data-src="../../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">siirila</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/JDrone_" title="View profile: JDrone_">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="JDrone_" data-src="../../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">JDrone_</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Crispen_Smith" title="View profile: Crispen_Smith">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Crispen_Smith" data-src="../../../../../../../secure.gravatar.com/avatar/2184863dab77bb2beab1e86bc7b1fa076c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Crispen_Smith</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/yisibl" title="View profile: yisibl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="yisibl" data-src="../../../../../../../secure.gravatar.com/avatar/5c4ad3dbe5a5074993a6e270c38636096c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">yisibl</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/amitabha197" title="View profile: amitabha197">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="amitabha197" data-src="../../../../../../../secure.gravatar.com/avatar/db120a6c3f973ebba7252d7bea55870b6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">amitabha197</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/eirikurn" title="View profile: eirikurn">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="eirikurn" data-src="../../../../../../../secure.gravatar.com/avatar/6e98b58467d1c836a0e2ca29e5b740866c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">eirikurn</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jsx" title="View profile: jsx">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jsx" data-src="../../../../../../../secure.gravatar.com/avatar/8cc61d4e2dc63e75976a334348d473bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jsx</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/aav" title="View profile: aav">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="aav" data-src="../../../../../../../secure.gravatar.com/avatar/e8e1f64796568357e5eea1f312c578356c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">aav</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/rosca" title="View profile: rosca">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="rosca" data-src="../../../../../../../secure.gravatar.com/avatar/40a97dc45b27acb3dc84db6e6aa339066c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">rosca</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/KrijnHoetmer" title="View profile: KrijnHoetmer">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="KrijnHoetmer" data-src="../../../../../../../secure.gravatar.com/avatar/5684c415660135a6adf1414151205f516c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">KrijnHoetmer</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/leapoahead" title="View profile: leapoahead">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="leapoahead" data-src="../../../../../../../secure.gravatar.com/avatar/1380392c951c5d3edc96146b1d5b877b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">leapoahead</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/skeller88" title="View profile: skeller88">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="skeller88" data-src="../../../../../../../secure.gravatar.com/avatar/c9872a157c7d379d67694e3969ea6cc96c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">skeller88</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/altano" title="View profile: altano">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="altano" data-src="../../../../../../../secure.gravatar.com/avatar/64225bb31539cd70861cc055b0251ddb6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">altano</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jeremie" title="View profile: Jeremie">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jeremie" data-src="../../../../../../../secure.gravatar.com/avatar/ea74cf7f528273838138e9ae407cd8ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jeremie</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/dbruant" title="View profile: dbruant">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="dbruant" data-src="../../../../../../../secure.gravatar.com/avatar/b9b113093c351a599f86e0647c43add16c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">dbruant</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/hurrymaplelad" title="View profile: hurrymaplelad">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="hurrymaplelad" data-src="../../../../../../../secure.gravatar.com/avatar/27d8c47ce0192428de12cc633661d1226c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">hurrymaplelad</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/tregagnon" title="View profile: tregagnon">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tregagnon" data-src="../../../../../../../secure.gravatar.com/avatar/8431892ef37f88fe820096de721c00ba6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tregagnon</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/julienw" title="View profile: julienw">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="julienw" data-src="../../../../../../../secure.gravatar.com/avatar/a2b625f331361a7110da59a907d79e956c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">julienw</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mozcerize" title="View profile: Mozcerize">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mozcerize" data-src="../../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mozcerize</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sandwich" title="View profile: Sandwich">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sandwich" data-src="../../../../../../../secure.gravatar.com/avatar/64c7c432ee0228ac0f140d5bf066202a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sandwich</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot" title="View profile: Mgjbot">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mgjbot" data-src="../../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mgjbot</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Patrick Garies" title="View profile: Patrick Garies">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Patrick Garies" data-src="../../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Patrick Garies</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Maian" title="View profile: Maian">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Maian" data-src="../../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Maian</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Nickolay" title="View profile: Nickolay">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Nickolay" data-src="../../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Nickolay</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Rod Whiteley" title="View profile: Rod Whiteley">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Rod Whiteley" data-src="../../../../../../../secure.gravatar.com/avatar/6ff097ee42c42acf51ad3e24e5d8d2a26c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Rod Whiteley</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/bradipao" title="View profile: bradipao">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="bradipao" data-src="../../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">bradipao</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>The stacking context</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-closed wiki-left-none">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#The_stacking_context" rel="internal">The stacking context</a></li><li><a href="#The_example" rel="internal">The example</a></li><li><a href="#Example" rel="internal">Example</a><ol><li><a href="#HTML" rel="internal">HTML</a></li><li><a href="#Division_Element_.231" rel="internal">CSS</a></li><li><a href="#Result" rel="internal">Result</a></li></ol></li><li><a href="#See_also" rel="internal">See also</a></li><li><a href="#Original_Document_Information" rel="internal">Original Document Information</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-main wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p>Stacking context is the three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user who is assumed to be facing the viewport or the webpage. HTML elements occupy this space in priority order based on element attributes.</p>
+
+<p>« <a title="CSS" href="../../../CSS.html">CSS</a> « <a title="Understanding CSS z-index" href="../../../../CSS/Understanding_z-index.png">Understanding CSS z-index</a></p>
+
+<h2 id="The_stacking_context">The stacking context</h2>
+
+<p>&nbsp;</p>
+
+<p>In the previous example, <a title="Adding z-index" href="Adding_z-index.html">Adding z-index</a>, the rendering order of certain DIVs is influenced by their z-index value. This occurs because these DIVs have special properties which cause them to form a <em>stacking context</em>.</p>
+
+<p>A stacking context is formed, anywhere in the document, by any element which is either</p>
+
+<ul>
+ <li>the root element (HTML),</li>
+ <li>positioned (absolutely or relatively) with a z-index value other than "auto",</li>
+ <li>a flex item with a z-index value other than "auto",that is the parent element display: flex|inline-flex,</li>
+ <li>elements with an <a title="The opacity CSS property specifies the transparency of an element, that is, the degree to which the background behind the element is overlaid." href="../../opacity.html"><code>opacity</code></a> value less than 1. (See <a title="http://www.w3.org/TR/css3-color/#transparency" href="http://www.w3.org/TR/css3-color/#transparency" class="external">the specification for opacity</a>),</li>
+ <li>elements with a <a title="The CSS transform property lets you modify the coordinate space of the CSS visual formatting model. Using it, elements can be translated, rotated, scaled, and skewed." href="../../transform.html"><code>transform</code></a> value other than "none",</li>
+ <li>elements with a <a title="The mix-blend-mode CSS property describes how an element's content should blend with the content of the element that is below it and the element's background." href="../../mix-blend-mode.html"><code>mix-blend-mode</code></a> value other than "normal",</li>
+ <li>elements with a <a title="The filter property provides graphical effects like blurring, sharpening, or color shifting an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders." href="../../filter.html"><code>filter</code></a> value other than "none",</li>
+ <li>elements with a <a title="The perspective CSS property determines the distance between the z=0 plane and the user in order to give to the 3D-positioned element some perspective. Each 3D element with z&gt;0 becomes larger; each 3D-element with z&lt;0 becomes smaller. The strength of the effect is determined by the value of this property." href="/en-US/docs/Web/CSS/perspective"><code>perspective</code></a> value other than "none",</li>
+ <li>elements with <a title="The isolation CSS property defines if the element must create a new stacking context." href="../../isolation.html"><code>isolation</code></a> set to "isolate",</li>
+ <li><code>position: fixed</code></li>
+ <li>specifying any attribute above in <code><a title="The will-change CSS property provides a way for authors to hint browsers about the kind of changes to be expected on an element, so that the browser can set up appropriate optimizations ahead of time before the element is actually changed." href="../../will-change.html"><code>will-change</code></a></code> even if you don't specify values for these attributes&nbsp;directly (See <a href="http://dev.opera.com/articles/css-will-change-property/" class="external">this post</a>)</li>
+ <li>elements with <a title="The -webkit-overflow-scrolling CSS property controls whether or not touch devices use momentum-based scrolling for the given element." href="../../-webkit-overflow-scrolling.html"><code>-webkit-overflow-scrolling</code></a> set to "touch"</li>
+</ul>
+
+<p>Within a stacking context, child elements are stacked according to the same rules previously explained. Importantly, the z-index values of its child stacking contexts only have meaning in this parent. Stacking contexts are treated atomically as a single unit in the parent stacking context.</p>
+
+<p>In summary:</p>
+
+<ul>
+ <li>Positioning and assigning a z-index value to an HTML element creates a stacking context, (as does assigning non-full opacity).</li>
+ <li>Stacking contexts can be contained in other stacking contexts, and together create a hierarchy of stacking contexts.</li>
+ <li>Each stacking context is completely independent from its siblings: only descendant elements are considered when stacking is processed.</li>
+ <li>Each stacking context is self-contained: after the element's contents are stacked, the whole element is considered in the stacking order of the parent stacking context.</li>
+</ul>
+
+<div class="note"><strong>Note:</strong> The hierarchy of stacking contexts is a subset of the hierarchy of HTML elements, because only certain elements create stacking contexts. We can say that elements that do not create their own stacking contexts are <em>assimilated</em> by the parent stacking context.</div>
+
+<h2 id="The_example"><strong>The example</strong></h2>
+
+<p><img src="../../../../../../../mdn.mozillademos.org/files/790/understanding_zindex_04.png" alt="Example of stacking rules modified using z-index"></p>
+
+<p>In this example every positioned element creates its own stacking context, because of their positioning and z-index values. The hierarchy of stacking contexts is organized as follows:</p>
+
+<ul>
+ <li>Root
+  <ul>
+   <li>DIV #1</li>
+   <li>DIV #2</li>
+   <li>DIV #3
+    <ul>
+     <li>DIV #4</li>
+     <li>DIV #5</li>
+     <li>DIV #6</li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+<p>It is important to note that DIV #4, DIV #5 and DIV #6 are children of DIV #3, so stacking of those elements is completely resolved within DIV#3. Once stacking and rendering within DIV #3 is completed, the whole DIV #3 element is passed for stacking in the root element with respect to its sibling's DIV.</p>
+
+<div class="note">
+<p><strong>Notes:</strong></p>
+
+<ul>
+ <li>DIV #4 is rendered under DIV #1 because DIV #1's z-index (5) is valid within the stacking context of the root element, while DIV #4's z-index (6) is valid within the stacking context of DIV #3. So, DIV #4 is under DIV #1, because DIV #4 belongs to DIV #3, which has a lower z-index value.</li>
+ <li>For the same reason DIV #2 (z-index 2) is rendered under DIV#5 (z-index 1) because DIV #5 belongs to DIV #3, which has an higher z-index value.</li>
+ <li>DIV #3's z-index is 4, but this value is independent from z-index of DIV #4, DIV #5 and DIV #6, because it belongs to a different stacking context.</li>
+ <li>An easy way to figure out the <em>rendering order</em> of stacked elements along the Z axis is to think of it as a "version number" of sorts, where child elements are minor version numbers underneath their parent's major version numbers. This way we can easily see how an element with a z-index of 1 (DIV #5) is stacked above an element with a z-index of 2 (DIV #2), and how an element with a z-index of 6 (DIV #4) is stacked below an element with a z-index of 5 (DIV #1). In our example (sorted according to the final rendering order):
+  <ul>
+   <li>Root
+    <ul>
+     <li>DIV #2 - z-index is 2</li>
+     <li>DIV #3 - z-index is 4
+      <ul>
+       <li>DIV #5 - z-index is 1, stacked under an element with a z-index of 4, which results in a rendering order of 4.1</li>
+       <li>DIV #6 - z-index is 3, stacked under an element with a z-index of 4, which results in a rendering order of 4.3</li>
+       <li>DIV #4 - z-index is 6, stacked under an element with a z-index of 4, which results in a rendering order of 4.6</li>
+      </ul>
+     </li>
+     <li>DIV #1 - z-index is 5</li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+</div>
+
+<h2 id="Example"><strong>Example</strong></h2>
+
+<h3 id="HTML"><strong>HTML</strong></h3>
+
+<pre class="brush: html">    &lt;div id="div1"&gt;
+      &lt;h1&gt;Division Element #1&lt;/h1&gt;
+      &lt;code&gt;position: relative;&lt;br/&gt;
+      z-index: 5;&lt;/code&gt;
+    &lt;/div&gt;
+
+    &lt;div id="div2"&gt;
+      &lt;h1&gt;Division Element #2&lt;/h1&gt;
+      &lt;code&gt;position: relative;&lt;br/&gt;
+      z-index: 2;&lt;/code&gt;
+    &lt;/div&gt;
+
+    &lt;div id="div3"&gt;
+
+      &lt;div id="div4"&gt;
+        &lt;h1&gt;Division Element #4&lt;/h1&gt;
+        &lt;code&gt;position: relative;&lt;br/&gt;
+        z-index: 6;&lt;/code&gt;
+      &lt;/div&gt;
+
+      &lt;h1&gt;Division Element #3&lt;/h1&gt;
+      &lt;code&gt;position: absolute;&lt;br/&gt;
+      z-index: 4;&lt;/code&gt;
+
+      &lt;div id="div5"&gt;
+        &lt;h1&gt;Division Element #5&lt;/h1&gt;
+        &lt;code&gt;position: relative;&lt;br/&gt;
+        z-index: 1;&lt;/code&gt;
+      &lt;/div&gt;
+   
+      &lt;div id="div6"&gt;
+        &lt;h1&gt;Division Element #6&lt;/h1&gt;
+        &lt;code&gt;position: absolute;&lt;br/&gt;
+        z-index: 3;&lt;/code&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+</pre>
+
+<h3 name="Division_Element_.231" id="Division_Element_.231">CSS</h3>
+
+<pre class="brush: css">* {
+    margin: 0;
+}
+html {
+    padding: 20px;
+    font: 12px/20px Arial, sans-serif;
+}
+div {
+    opacity: 0.7;
+    position: relative;
+}
+h1 {
+    font: inherit;
+    font-weight: bold;
+}
+#div1,
+#div2 {
+    border: 1px dashed #696;
+    padding: 10px;
+    background-color: #cfc;
+}
+#div1 {
+    z-index: 5;
+    margin-bottom: 190px;
+}
+#div2 {
+    z-index: 2;
+}
+#div3 {
+    z-index: 4;
+    opacity: 1;
+    position: absolute;
+    top: 40px;
+    left: 180px;
+    width: 330px;
+    border: 1px dashed #900;
+    background-color: #fdd;
+    padding: 40px 20px 20px;
+}
+#div4,
+#div5 {
+    border: 1px dashed #996;
+    background-color: #ffc;
+}
+#div4 {
+    z-index: 6;
+    margin-bottom: 15px;
+    padding: 25px 10px 5px;
+}
+#div5 {
+    z-index: 1;
+    margin-top: 15px;
+    padding: 5px 10px;
+}
+#div6 {
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    width: 150px;
+    height: 125px;
+    border: 1px dashed #009;
+    padding-top: 125px;
+    background-color: #ddf;
+    text-align: center;
+}</pre>
+
+<h3 id="Result">Result</h3>
+
+<p><iframe width="556" frameborder="0" id="frame_Example" src="../../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context%24samples/Example2855.html?revision=1055368" height="396" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a title="CSS/Understanding_z-index/Stacking_without_z-index" href="Stacking_without_z-index.html">Stacking without z-index</a> : Default stacking rules</li>
+ <li><a title="CSS/Understanding_z-index/Stacking_and_float" href="Stacking_and_float.html">Stacking and float</a>&nbsp;: How floating elements are handled</li>
+ <li><a title="CSS/Understanding_z-index/Adding_z-index" href="Adding_z-index.html">Adding z-index</a>&nbsp;: Using z-index to change default stacking</li>
+ <li><a title="CSS/Understanding_z-index/Stacking_context_example_1" href="Stacking_context_example_1.html">Stacking context example 1</a>&nbsp;: 2-level HTML hierarchy, z-index on the last level</li>
+ <li><a title="CSS/Understanding_z-index/Stacking_context_example_2" href="Stacking_context_example_2.html">Stacking context example 2</a>&nbsp;: 2-level HTML hierarchy, z-index on all levels</li>
+ <li><a title="CSS/Understanding_z-index/Stacking_context_example_3" href="Stacking_context_example_3.html">Stacking context example 3</a>&nbsp;: 3-level HTML hierarchy, z-index on the second level</li>
+</ul>
+
+<div class="originaldocinfo">
+<h2 name="Original_Document_Information" id="Original_Document_Information">Original Document Information</h2>
+
+<ul>
+ <li>Author(s): Paolo Lombardi</li>
+ <li>This article is the english translation of an article I wrote in italian for <a href="http://www.yappy.it/" class="external">YappY</a>. I grant the right to share all the content under <a href="http://creativecommons.org/licenses/by-sa/2.0/" class="external">Creative Commons: Attribution-Sharealike license</a></li>
+ <li>Last Updated Date: July 9th, 2005</li>
+</ul>
+</div>
+
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Advanced">Advanced</a></li>
+      
+        <li><a href="../../../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Example">Example</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Guide">Guide</a></li>
+      
+        <li><a href="../../../../tag/Understanding_CSS_z-index.html">Understanding_CSS_z-index</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Web">Web</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/Ende93">Ende93</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/duncanmcdonald">duncanmcdonald</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/paceaux">paceaux</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/siirila">siirila</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/JDrone_">JDrone_</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Crispen_Smith">Crispen_Smith</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/yisibl">yisibl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/amitabha197">amitabha197</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/eirikurn">eirikurn</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jsx">jsx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/aav">aav</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/rosca">rosca</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/KrijnHoetmer">KrijnHoetmer</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/leapoahead">leapoahead</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/skeller88">skeller88</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/altano">altano</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jeremie">Jeremie</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/dbruant">dbruant</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/hurrymaplelad">hurrymaplelad</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tregagnon">tregagnon</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/julienw">julienw</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mozcerize">Mozcerize</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sandwich">Sandwich</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot">Mgjbot</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Patrick Garies">Patrick Garies</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Maian">Maian</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Nickolay">Nickolay</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Rod Whiteley">Rod Whiteley</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/bradipao">bradipao</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/Ende93">Ende93</a>,
+                      <time datetime="2016-05-04T18:02:38-07:00">May 4, 2016, 6:02:38 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="Spanish" value="/es/docs/Web/CSS/CSS_Positioning/entendiendo_z_index/El_contexto_de_apilamiento">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/Comprendre_z-index/Empilement_de_couches">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/Understanding_z-index/The_stacking_context">
+            한국어 (ko)
+          </option>
+          <option title="Portuguese (Brazilian)" value="/pt-BR/docs/Web/Guide/CSS/Understanding_z_index/O_contexto_de_empilhamento">
+            Português (do&nbsp;Brasil) (pt-BR)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:51:02 GMT -->
+</body></html>

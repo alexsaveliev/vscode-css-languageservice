@@ -1,0 +1,1231 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/%40media by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 01:00:19 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>@media</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media$json">
+  <link rel="canonical" href="%40media.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/@media" title="@media">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/@media" title="@media">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/@media" title="@media">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/@media" title="@media">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/@media" title="@media">
+    
+      <link rel="alternate" hreflang="pl" href="https://developer.mozilla.org/pl/docs/Web/CSS/@media" title="@media">
+    
+      <link rel="alternate" hreflang="pt-PT" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/@media" title="@media">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/@media" title="@media">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media" title="@media">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="@media">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">
+  <meta name="twitter:title" content="@media">
+  
+  <meta property="og:description" content="The @media CSS at-rule associates a set of nested statements, in a CSS block that is delimited by curly braces, with a condition defined by a media query. The @media at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule.">
+  <meta name="description" content="The @media CSS at-rule associates a set of nested statements, in a CSS block that is delimited by curly braces, with a condition defined by a media query. The @media at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule.">
+  <meta name="twitter:description" content="The @media CSS at-rule associates a set of nested statements, in a CSS block that is delimited by curly braces, with a condition defined by a media query. The @media at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/@media" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2F%40media" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/%40media">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/@media" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/@media" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/@media" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/@media" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/@media" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pl/docs/Web/CSS/@media" title="Polish">Polski (pl)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-PT/docs/Web/CSS/@media" title="Portuguese (Portugal)">Português (Europeu) (pt-PT)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/@media" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">@media</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/xim" title="View profile: xim">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="xim" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">xim</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/David_Gilbertson" title="View profile: David_Gilbertson">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="David_Gilbertson" data-src="../../../../../secure.gravatar.com/avatar/4ca148e0f69fad2ea48e281d58b74e466c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">David_Gilbertson</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/sideshowbarker" title="View profile: sideshowbarker">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="sideshowbarker" data-src="../../../../../secure.gravatar.com/avatar/4548360c563737339825a6735bbb47b36c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">sideshowbarker</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/david.bruchmann" title="View profile: david.bruchmann">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="david.bruchmann" data-src="../../../../../secure.gravatar.com/avatar/9c06b0f4b8cae3580d8036f40e38a6486c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">david.bruchmann</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/SphinxKnight" title="View profile: SphinxKnight">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="SphinxKnight" data-src="../../../../../secure.gravatar.com/avatar/8fb358ea9b7af22f5021a29e122ea0696c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">SphinxKnight</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/chrisdavidmills" title="View profile: chrisdavidmills">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="chrisdavidmills" data-src="../../../../../secure.gravatar.com/avatar/deeea0ba82390bd5acc539703c4b0cfb6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">chrisdavidmills</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/cvrebert" title="View profile: cvrebert">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="cvrebert" data-src="../../../../../secure.gravatar.com/avatar/1432b541cac41e85e190050a5361b3966c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">cvrebert</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/notetienne" title="View profile: notetienne">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="notetienne" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">notetienne</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Delapouite" title="View profile: Delapouite">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Delapouite" data-src="../../../../../secure.gravatar.com/avatar/1de6337421c1eac0227c88502b2759526c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Delapouite</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/TabAtkins" title="View profile: TabAtkins">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="TabAtkins" data-src="../../../../../secure.gravatar.com/avatar/37881c0540fb86ebfa6c855e610215276c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">TabAtkins</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Brettz9" title="View profile: Brettz9">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Brettz9" data-src="../../../../../secure.gravatar.com/avatar/4c750582e23fcf068bdde51cc50416d16c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Brettz9</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/McGurk" title="View profile: McGurk">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="McGurk" data-src="../../../../../secure.gravatar.com/avatar/dcf5220f84cecf5b4eec14f0c43a589a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">McGurk</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/RAMilewski" title="View profile: RAMilewski">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="RAMilewski" data-src="../../../../../secure.gravatar.com/avatar/0c404ed91de8fafd91cf4b0ab4556a676c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">RAMilewski</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/nimbupani" title="View profile: nimbupani">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="nimbupani" data-src="../../../../../secure.gravatar.com/avatar/c64a99fbbc7785e6cf9588a8777ba0836c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">nimbupani</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Marsf" title="View profile: Marsf">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Marsf" data-src="../../../../../secure.gravatar.com/avatar/ad00649afe235adeecc876a86ded16e26c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Marsf</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Waldo" title="View profile: Waldo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Waldo" data-src="../../../../../secure.gravatar.com/avatar/d26a0ca7ae1134e0e1dbdddf82e289296c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Waldo</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Zearin" title="View profile: Zearin">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Zearin" data-src="../../../../../secure.gravatar.com/avatar/67df2b154cff3d8ddb3c55bcec2a34006c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Zearin</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot" title="View profile: Mgjbot">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mgjbot" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mgjbot</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Qazzian" title="View profile: Qazzian">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Qazzian" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Qazzian</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Nickolay" title="View profile: Nickolay">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Nickolay" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Nickolay</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Rappo" title="View profile: Rappo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Rappo" data-src="../../../../../secure.gravatar.com/avatar/3e129f4d5671005bc59a0b1faeccd67e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Rappo</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>@media</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a></li><li><a href="#Media_types" rel="internal">Media types</a></li><li><a href="#Media_features" rel="internal">Media Features</a></li><li><a href="#Examples" rel="internal">Examples</a></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p></p><section id="Quick_Links" class="Quick_links"><!-- --></section><p></p>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <code>@media</code> <a href="../../../../en/CSS.png" title="CSS">CSS</a> <a href="At-rule.html" title="en/CSS/At-rule">at-rule</a> associates a set of nested statements, in a CSS block that is delimited by curly braces, with a condition defined by a <a href="Media_Queries/Using_media_queries.html" title="CSS media queries">media query</a>. The <code>@media</code> at-rule may be used not only at the top level of a CSS, but also inside any <a href="At-rule.html#Conditional_Group_Rules" title="en/CSS/At-rule#Conditional_Group_Rules">CSS conditional-group at-rule</a>.</p>
+
+<p>The <code>@media</code> at-rule can be accessed via the CSS object model interface <a href="../API/CSSMediaRule.html" title="The CSSMediaRule is an interface representing a single CSS @media rule. It implements the CSSConditionRule interface, and therefore the CSSGroupingRule and the CSSRule interface with a type value of 4 (CSSRule.MEDIA_RULE)."><code>CSSMediaRule</code></a>.</p>
+
+<h2 name="Syntax" id="Syntax">Syntax</h2>
+
+<pre class="syntaxbox">@media <a href="#media-query-list">&lt;media-query-list&gt;</a> {
+  &lt;group-rule-body&gt;
+}<p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="media-query-list">&lt;media-query-list&gt;</span> = <a href="#media-query">&lt;media-query&gt;</a><a href="Value_definition_syntax.html#Hash_mark_()" title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma">#</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="media-query">&lt;media-query&gt;</span> = <a href="#media-condition">&lt;media-condition&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> not <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> only <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a><a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> <a href="#media-type">&lt;media-type&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> and <a href="#media-condition-without-or">&lt;media-condition-without-or&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a><a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="media-condition">&lt;media-condition&gt;</span> = <a href="#media-not">&lt;media-not&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#media-and">&lt;media-and&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#media-or">&lt;media-or&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#media-in-parens">&lt;media-in-parens&gt;</a><br><span id="media-type">&lt;media-type&gt;</span> = <a href="ident.html" class="new" title="The documentation about this has not yet been written; please consider contributing!">&lt;ident&gt;</a><br><span id="media-condition-without-or">&lt;media-condition-without-or&gt;</span> = <a href="#media-not">&lt;media-not&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#media-and">&lt;media-and&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#media-in-parens">&lt;media-in-parens&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="media-not">&lt;media-not&gt;</span> = not <a href="#media-in-parens">&lt;media-in-parens&gt;</a><br><span id="media-and">&lt;media-and&gt;</span> = <a href="#media-in-parens">&lt;media-in-parens&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> and <a href="#media-in-parens">&lt;media-in-parens&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a><a href="Value_definition_syntax.html#Plus_()" title="Plus: the entity may occur one or several times">+</a><br><span id="media-or">&lt;media-or&gt;</span> = <a href="#media-in-parens">&lt;media-in-parens&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> or <a href="#media-in-parens">&lt;media-in-parens&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a><a href="Value_definition_syntax.html#Plus_()" title="Plus: the entity may occur one or several times">+</a><br><span id="media-in-parens">&lt;media-in-parens&gt;</span> = ( <a href="#media-condition">&lt;media-condition&gt;</a> ) <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#media-feature">&lt;media-feature&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#general-enclosed">&lt;general-enclosed&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="media-feature">&lt;media-feature&gt;</span> = ( <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> <a href="#mf-plain">&lt;mf-plain&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#mf-boolean">&lt;mf-boolean&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#mf-range">&lt;mf-range&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a> )<br><span id="general-enclosed">&lt;general-enclosed&gt;</span> = <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> &lt;function-token&gt; &lt;any-value&gt; ) <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> ( <a href="ident.html" class="new" title="The documentation about this has not yet been written; please consider contributing!">&lt;ident&gt;</a> &lt;any-value&gt; )</code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="mf-plain">&lt;mf-plain&gt;</span> = <a href="#mf-name">&lt;mf-name&gt;</a> : <a href="#mf-value">&lt;mf-value&gt;</a><br><span id="mf-boolean">&lt;mf-boolean&gt;</span> = <a href="#mf-name">&lt;mf-name&gt;</a><br><span id="mf-range">&lt;mf-range&gt;</span> = <a href="#mf-name">&lt;mf-name&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> '&lt;' <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> '&gt;' <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a><a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> '='<a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> <a href="#mf-value">&lt;mf-value&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#mf-value">&lt;mf-value&gt;</a> <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">[</a> '&lt;' <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> '&gt;' <a href="Value_definition_syntax.html#Brackets" title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component">]</a><a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> '='<a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> <a href="#mf-name">&lt;mf-name&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#mf-value">&lt;mf-value&gt;</a> '&lt;' '='<a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> <a href="#mf-name">&lt;mf-name&gt;</a> '&lt;' '='<a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> <a href="#mf-value">&lt;mf-value&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="#mf-value">&lt;mf-value&gt;</a> '&gt;' '='<a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> <a href="#mf-name">&lt;mf-name&gt;</a> '&gt;' '='<a href="Value_definition_syntax.html#Question_mark_()" title="Question mark: the entity is optional">?</a> <a href="#mf-value">&lt;mf-value&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="mf-name">&lt;mf-name&gt;</span> = <a href="ident.html" class="new" title="The documentation about this has not yet been written; please consider contributing!">&lt;ident&gt;</a><br><span id="mf-value">&lt;mf-value&gt;</span> = <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension.">&lt;number&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> &lt;dimension&gt; <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> <a href="ident.html" class="new" title="The documentation about this has not yet been written; please consider contributing!">&lt;ident&gt;</a> <a href="Value_definition_syntax.html#Single_bar" title="Single bar: exactly one of the entities must be present">|</a> &lt;ratio&gt;</code></p></pre>
+
+<p>A <code>&lt;media-query&gt;</code> is composed of a optional media type and/or a number of media features.</p>
+
+<h2 name="Media_types" id="Media_types">Media types</h2>
+
+<dl>
+ <dt>all</dt>
+ <dd>Suitable for all devices.</dd>
+ <dt>print</dt>
+ <dd>Intended for paged material and for documents viewed on screen in print preview mode. Please consult the section on <a href="Paged_Media.html" title="https://developer.mozilla.org/en/CSS/Paged_Media">paged media</a>, and the <a href="../Guide/CSS/Getting_started/Media-2.html" title="https://developer.mozilla.org/en/CSS/Getting_Started/Media">media section of the Getting Started tutorial</a> for information about formatting issues that are specific to paged media.</dd>
+ <dt>screen</dt>
+ <dd>Intended primarily for color computer screens.</dd>
+ <dt>speech</dt>
+ <dd>Intended for speech synthesizers. Note: CSS2 had a similar media type called 'aural' for this purpose. See the appendix on aural style sheets for details.</dd>
+</dl>
+
+<div class="note"><strong>Note:</strong> CSS2.1 and Media Queries 3 defined several additional media types (<code>tty</code>, <code>tv</code>, <code>projection</code>, <code>handheld</code>, <code>braille</code>, <code>embossed</code>, <code>aural</code>), but they were deprecated in <a href="http://dev.w3.org/csswg/mediaqueries/#media-types" class="external">Media Queries 4</a> and shouldn't be used.</div>
+
+<h2 name="Media_features" id="Media_features">Media Features</h2>
+
+<p>Each <em>media feature</em> tests for one specific feature of the browser or device.</p>
+
+<table>
+ <thead>
+  <tr>
+   <th>Name</th>
+   <th>Summary</th>
+   <th>Notes</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="%40media/width.html"><code>width</code></a></td>
+   <td>Viewport width</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/height.html"><code>height</code></a></td>
+   <td>Viewport height</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/aspect-ratio.html"><code>aspect-ratio</code></a></td>
+   <td>Width-to-height aspect ratio of the viewport</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/orientation.html"><code>orientation</code></a></td>
+   <td>Orientation of the viewport</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/resolution.html"><code>resolution</code></a></td>
+   <td>Pixel density of the output device</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/scan.html"><code>scan</code></a></td>
+   <td>Scanning process of the output device</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/grid.html"><code>grid</code></a></td>
+   <td>Is the device a grid or bitmap?</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/update-frequency.html"><code>update-frequency</code></a></td>
+   <td>How quickly (if at all) can the output device modify the appearance of the content</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/overflow-block.html"><code>overflow-block</code></a></td>
+   <td>How does the output device handle content that overflows the viewport along the block axis?</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/overflow-inline.html"><code>overflow-inline</code></a></td>
+   <td>Can content that overflows the viewport along the inline axis be scrolled?</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/color.html"><code>color</code></a></td>
+   <td>Number of bits per color component of the output device, or zero if the device isn't color.</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/color-index.html"><code>color-index</code></a></td>
+   <td>Number of entries in the output device's color lookup table, or zero if the device does not use such a table.</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><code><a href="%40media/display-mode.html">display-mode</a></code></td>
+   <td>The display mode of the application, as specified in the web app manifest's <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest#display">display member</a>.</td>
+   <td>Defined in the <a href="http://w3c.github.io/manifest/#the-display-mode-media-feature" class="external">Web App Manifest spec</a>.</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/monochrome.html"><code>monochrome</code></a></td>
+   <td>Bits per pixel in the output device's monochrome frame buffer, or 0 if the device is not monochrome.</td>
+   <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/inverted-colors.html"><code>inverted-colors</code></a></td>
+   <td>Is the user agent or underlying OS inverting colors?</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/pointer.html"><code>pointer</code></a></td>
+   <td>Is the primary input mechanism a pointing device, and if so, how accurate is it?</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/hover.html"><code>hover</code></a></td>
+   <td>Does the primary input mechanism allow the user to hover over elements?</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/any-pointer.html"><code>any-pointer</code></a></td>
+   <td>Is any available input mechanism a pointing device, and if so, how accurate is it?</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/any-hover.html"><code>any-hover</code></a></td>
+   <td>Does any available input mechanism allow the user to hover over elements?</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/light-level.html"><code>light-level</code></a></td>
+   <td>Current ambient light level</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/scripting.html"><code>scripting</code></a></td>
+   <td>Is scripting (e.g. JavaScript) available?</td>
+   <td>Added in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/device-width.html"><code>device-width</code></a> <span title="This is an obsolete API and is no longer guaranteed to work."><i class="icon-trash"> </i></span></td>
+   <td>Width of the rendering surface of the output device</td>
+   <td>Deprecated in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/device-height.html"><code>device-height</code></a> <span title="This is an obsolete API and is no longer guaranteed to work."><i class="icon-trash"> </i></span></td>
+   <td>Height of the rendering surface of the output device</td>
+   <td>Deprecated in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/device-aspect-ratio.html"><code>device-aspect-ratio</code></a> <span title="This is an obsolete API and is no longer guaranteed to work."><i class="icon-trash"> </i></span></td>
+   <td>Width-to-height aspect ratio of the output device</td>
+   <td>Deprecated in Media Queries Level 4</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/-webkit-device-pixel-ratio.html"><code>-webkit-device-pixel-ratio</code></a> <span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></td>
+   <td>Number of physical device pixels per CSS pixel</td>
+   <td>Nonstandard; WebKit/Blink-specific. If possible, use the <a href="%40media/resolution.html"><code>resolution</code></a> media feature instead.</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/-webkit-transform-3d.html"><code>-webkit-transform-3d</code></a> <span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></td>
+   <td>Are CSS 3D <a href="transform.html" title="The CSS transform property lets you modify the coordinate space of the CSS visual formatting model. Using it, elements can be translated, rotated, scaled, and skewed."><code>transform</code></a>s supported?</td>
+   <td>Nonstandard; WebKit/Blink-specific</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/-webkit-transform-2d.html"><code>-webkit-transform-2d</code></a> <span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></td>
+   <td>Are CSS 2D <a href="transform.html" title="The CSS transform property lets you modify the coordinate space of the CSS visual formatting model. Using it, elements can be translated, rotated, scaled, and skewed."><code>transform</code></a>s supported?</td>
+   <td>Nonstandard; WebKit-specific</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/-webkit-transition.html"><code>-webkit-transition</code></a> <span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></td>
+   <td>Are CSS <a href="transition.html" title="The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. It enables you to define the transition between two states of an element. Different states may be defined using pseudo-classes like :hover or :active or dynamically set using JavaScript."><code>transition</code></a>s supported?</td>
+   <td>Nonstandard; WebKit-specific</td>
+  </tr>
+  <tr>
+   <td><a href="%40media/-webkit-animation.html"><code>-webkit-animation</code></a> <span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></td>
+   <td>Are CSS <a href="animation.html" title="The animation CSS property is a shorthand property for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode and animation-play-state."><code>animation</code></a>s supported?</td>
+   <td>Nonstandard; WebKit-specific</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 name="Examples" id="Examples">Examples</h2>
+
+<pre class="brush: css">@media print {
+  body { font-size: 10pt }
+}
+@media screen {
+  body { font-size: 13px }
+}
+@media screen, print {
+  body { line-height: 1.2 }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body { line-height: 1.4 }
+}
+</pre>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://compat.spec.whatwg.org/#css-media-queries" class="external" lang="en" hreflang="en">Web Compatibility Standard<br><small lang="en-US">The definition of 'CSS Media Queries' in that specification.</small></a></td>
+   <td><span class="spec-Living">Living Standard</span></td>
+   <td>Standardizes the <code>-webkit-device-pixel-ratio</code> and <code>-webkit-transform-3d</code> media features.</td>
+  </tr>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-conditional-3/#at-media" class="external" lang="en" hreflang="en">CSS Conditional Rules Module Level&nbsp;3<br><small lang="en-US">The definition of '@media' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Defines the basic syntax of the <code>@media</code> rule.</td>
+  </tr>
+  <tr>
+   <td><a href="https://drafts.csswg.org/mediaqueries-4/#media" class="external" lang="en" hreflang="en">Media Queries Level&nbsp;4<br><small lang="en-US">The definition of '@media' in that specification.</small></a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>
+    <p>Added <code>scripting</code>, <code>pointer</code>, <code>hover</code>, <code>light-level</code>, <code>update-frequency</code>, <code>overflow-block</code>, and <code>overflow-inline</code> media features.<br>
+     Deprecated all media types except for <code>screen</code>, <code>print</code>, <code>speech</code>, and <code>all</code>.<br>
+     Made the syntax more flexible by adding, among other things, the <code>or</code> keyword.</p>
+   </td>
+  </tr>
+  <tr>
+   <td><a href="https://drafts.csswg.org/mediaqueries-3/#media0" class="external" lang="en" hreflang="en">Media Queries<br><small lang="en-US">The definition of '@media' in that specification.</small></a></td>
+   <td><span class="spec-REC">Recommendation</span></td>
+   <td>No change.</td>
+  </tr>
+  <tr>
+   <td><a href="http://www.w3.org/TR/CSS2/media.html#at-media-rule" class="external" lang="en" hreflang="en">CSS Level&nbsp;2 (Revision&nbsp;1)<br><small lang="en-US">The definition of '@media' in that specification.</small></a></td>
+   <td><span class="spec-REC">Recommendation</span></td>
+   <td>Initial definition.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 name="Browser_compatibility" id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support (<code>all</code>, <code>print</code>, <code>screen</code>)</td>
+   <td>1.0</td>
+   <td>1.0 (1.7 or earlier)</td>
+   <td>6.0</td>
+   <td>9.2</td>
+   <td>1.3</td>
+  </tr>
+  <tr>
+   <td><code>speech</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>9.2</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>Media features</td>
+   <td>1.0</td>
+   <td>1.0 (1.7 or earlier)</td>
+   <td>9.0</td>
+   <td>9.2</td>
+   <td>1.3</td>
+  </tr>
+  <tr>
+   <td><code>display-mode</code> media feature</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/47" title="Released on 2016-06-07.">47</a> (47)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Mobile</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support (<code>all</code>, <code>print</code>, <code>screen</code>)</td>
+   <td>1.0</td>
+   <td>1.0 (1.7)</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>9.0</td>
+   <td>3.1</td>
+  </tr>
+  <tr>
+   <td><code>speech</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>9.0</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>Media features</td>
+   <td>1.0</td>
+   <td>1.0 (1.7)</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>9.0</td>
+   <td>3.1</td>
+  </tr>
+  <tr>
+   <td><code>display-mode</code> media feature</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="Media_Queries/Using_media_queries.html" class="internal" title="En/CSS/Media queries">Media queries</a></li>
+ <li>The CSSOM <a href="../API/CSSMediaRule.html" title="The CSSMediaRule is an interface representing a single CSS @media rule. It implements the CSSConditionRule interface, and therefore the CSSGroupingRule and the CSSRule interface with a type value of 4 (CSSRule.MEDIA_RULE)."><code>CSSMediaRule</code></a> associated with this at-rule.</li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/At-rule">At-rule</a></li>
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/xim">xim</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/David_Gilbertson">David_Gilbertson</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/sideshowbarker">sideshowbarker</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/david.bruchmann">david.bruchmann</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/SphinxKnight">SphinxKnight</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/chrisdavidmills">chrisdavidmills</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/cvrebert">cvrebert</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/notetienne">notetienne</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Delapouite">Delapouite</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/TabAtkins">TabAtkins</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Brettz9">Brettz9</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/McGurk">McGurk</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/RAMilewski">RAMilewski</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/nimbupani">nimbupani</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Marsf">Marsf</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Waldo">Waldo</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Zearin">Zearin</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mgjbot">Mgjbot</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Qazzian">Qazzian</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Nickolay">Nickolay</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Rappo">Rappo</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/xim">xim</a>,
+                      <time datetime="2016-11-13T05:01:47-08:00">Nov 13, 2016, 5:01:47 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Conditional_Rules.html">CSS Conditional Rules</a></strong></li><li><strong><a href="Media_Queries.html">Media Queries</a></strong></li><li data-default-state="open"><a href="#"><strong>Guides</strong></a><ol><li><a href="Media_Queries/Testing_media_queries.html" title="The DOM provides features that make it possible to test the results of a media query programmatically. This is done using the MediaQueryList interface and its methods and properties. Once you've created a MediaQueryList object, you can check the result of the query or, alternatively, receive notifications automatically when the result changes.">Testing media queries</a></li><li><a href="Media_Queries/Using_media_queries.html" title="A media query consists of an optional media type and zero or more expressions that limit the style sheets' scope by using media features, such as width, height, and color. Media queries, added in CSS3, let the presentation of content be tailored to a specific range of output devices without having to change the content itself.">Using media queries</a></li></ol></li><li data-default-state="open"><a href="#"><strong>At-Rules</strong></a><ol><li><a href="%40document.html" title="The @document CSS at-rule restricts the style rules contained within it based on the URL of the document. It is designed primarily for user style sheets. A @document rule can specify one or more matching functions. If any of the functions apply to a URL, the rule will take effect on that URL."><code>@document</code></a></li><li><a href="%40import.html" title="The @import CSS at-rule is used to import style rules from other style sheets. These rules must precede all other types of rules, except @charset rules; as it is not a nested statement, @import cannot be used inside conditional group at-rules."><code>@import</code></a></li><li><em><code>@media</code></em></li><li><a href="%40supports.html" title="The @supports CSS at-rule associates a set of nested statements, in a CSS block, that is delimited by curly braces, with a condition consisting of testing of CSS declarations, that is property-value pairs, combined with arbitrary conjunctions, disjunctions, and negations of them. Such a condition is called a supports condition."><code>@supports</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/@media$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/@media$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/@media" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/@media">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/@media">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/@media">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/@media">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/@media">
+            한국어 (ko)
+          </option>
+          <option title="Polish" value="/pl/docs/Web/CSS/@media">
+            Polski (pl)
+          </option>
+          <option title="Portuguese (Portugal)" value="/pt-PT/docs/Web/CSS/@media">
+            Português (Europeu) (pt-PT)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/@media">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/@media">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/%40media by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 01:00:21 GMT -->
+</body></html>

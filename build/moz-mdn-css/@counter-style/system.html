@@ -1,0 +1,1081 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:46:03 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>system</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system$json">
+  <link rel="canonical" href="system.html">
+
+  
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/@counter-style/system" title="system">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="system">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system">
+  <meta name="twitter:title" content="system">
+  
+  <meta property="og:description" content="The system descriptor specifies the algorithm to be used for converting the integer value of a counter to a string representation. It is used in a @counter-style to define the behavior of the defined style.">
+  <meta name="description" content="The system descriptor specifies the algorithm to be used for converting the integer value of a counter to a string representation. It is used in a @counter-style to define the behavior of the defined style.">
+  <meta name="twitter:description" content="The system descriptor specifies the algorithm to be used for converting the integer value of a counter to a string representation. It is used in a @counter-style to define the behavior of the defined style.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/@counter-style/system" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2F%40counter-style%2Fsystem" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/%40counter-style/system">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/@counter-style/system" title="French">Français (fr)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../%40counter-style.html" rel="v:url" property="v:title">@counter-style</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">system</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/TotalAMD" title="View profile: TotalAMD">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="TotalAMD" data-src="../../../../../../secure.gravatar.com/avatar/4fb677c8a69f6cea98ff4a67bda6f77a6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">TotalAMD</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/duncanmcdonald" title="View profile: duncanmcdonald">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="duncanmcdonald" data-src="../../../../../../secure.gravatar.com/avatar/1dd3c1197196f100910e541005639e486c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">duncanmcdonald</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/jsx" title="View profile: jsx">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jsx" data-src="../../../../../../secure.gravatar.com/avatar/8cc61d4e2dc63e75976a334348d473bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jsx</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>system</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Examples" rel="internal">Examples</a></li><li><a href="#Example_1" rel="internal">Example 1</a></li><li><a href="#HTML" rel="internal">HTML</a></li><li><a href="#CSS" rel="internal">CSS</a></li><li><a href="#Example_2" rel="internal">Example 2</a></li><li><a href="#HTML_2" rel="internal">HTML</a></li><li><a href="#CSS_2" rel="internal">CSS</a></li><li><a href="#sect1" rel="internal">&nbsp;</a></li><li><a href="#Example_3" rel="internal">Example 3</a></li><li><a href="#HTML_3" rel="internal">HTML</a></li><li><a href="#CSS_3" rel="internal">CSS</a></li><li><a href="#sect2" rel="internal">&nbsp;</a></li><li><a href="#Example_4" rel="internal">Example 4</a></li><li><a href="#HTML_4" rel="internal">HTML</a></li><li><a href="#CSS_4" rel="internal">CSS</a></li><li><a href="#Example_5" rel="internal">Example 5</a></li><li><a href="#HTML_5" rel="internal">HTML</a></li><li><a href="#CSS_5" rel="internal">CSS</a></li><li><a href="#Example_6" rel="internal">Example 6</a></li><li><a href="#HTML_6" rel="internal">HTML</a></li><li><a href="#CSS_6" rel="internal">CSS</a></li><li><a href="#Example_7" rel="internal">Example 7</a></li><li><a href="#HTML_7" rel="internal">HTML</a></li><li><a href="#CSS_7" rel="internal">CSS</a></li><li><a href="#Example_8" rel="internal">Example 8</a></li><li><a href="#HTML_8" rel="internal">HTML</a></li><li><a href="#CSS_8" rel="internal">CSS</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                  <div class="warning warning-review">
+                    <p>
+                      This article needs a technical review. <a href="https://developer.mozilla.org/docs/MDN/Contribute/HowTo/Do_a_technical_review">How you can help.</a>
+                    </p>
+                  </div>
+                
+                
+                  <div class="warning warning-review">
+                    <p>
+                      This article needs an editorial review. <a href="https://developer.mozilla.org/docs/MDN/Contribute/Howto/Do_an_editorial_review">How you can help.</a>
+                    </p>
+                  </div>
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>system</code></strong> descriptor specifies the algorithm to be used for converting the integer value of a counter to a string representation. It is used in a <a href="../%40counter-style.html" title="The @counter-style CSS at-rule&nbsp;lets authors define&nbsp;specific counter styles that are not part of the predefined set of styles. A @counter-style rule defines how to convert a counter value into a string representation."><code>@counter-style</code></a> to define the behavior of the defined style.</p>
+
+<p>If the algorithm specified in the system descriptor is unable to construct the representation for a particular counter value, then that counter value's representation will be constructed using the fallback system provided.</p>
+
+<p></p><table class="properties"><tbody><tr><th scope="row">Related <a href="../At-rule.html">at-rule</a></th><td><a href="../%40counter-style.html" title="The @counter-style CSS at-rule&nbsp;lets authors define&nbsp;specific counter styles that are not part of the predefined set of styles. A @counter-style rule defines how to convert a counter value into a string representation."><code>@counter-style</code></a></td></tr><tr><th scope="row"><a href="../initial_value.html">Initial value</a></th><td><code>symbolic</code></td></tr><tr><th scope="row">Media</th><td>all</td></tr><tr><th scope="row"><a href="../computed_value.html">Computed value</a></th><td>as specified</td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table><p></p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush: css">/* Keyword values */
+system: cyclic;
+system: numeric;
+system: alphabetic;
+system: symbolic;
+system: additive;
+system: fixed;
+
+/* Combined values */
+system: fixed 3;
+system: extends decimal;
+</pre>
+
+<dl>
+ <dt>
+ <div class="syntaxbox"><code>cyclic</code></div>
+ </dt>
+ <dd>Cycles through the list of symbols provided. Once the end of the list of symbols is reached, it will loop back to the beginning and start over. This system is useful for simple bullet styles with just one symbol or for styles having multiple symbols. At least one symbol must be specified in the <code>symbols</code> descriptor or the counter style is not valid.</dd>
+ <dt>
+ <h3 id="Examples">Examples</h3>
+
+ <p>&nbsp;</p>
+ </dt>
+ <dt>
+ <div class="syntaxbox">
+ <h3 id="Example_1">Example 1</h3>
+
+ <h3 id="HTML">HTML</h3>
+
+ <pre class="brush: html">&lt;ul class="list"&gt;
+&nbsp;&nbsp;&nbsp; &lt;li&gt;One&lt;/li&gt;
+&nbsp;&nbsp;&nbsp; &lt;li&gt;Two&lt;/li&gt;
+&nbsp;&nbsp;&nbsp; &lt;li&gt;Three&lt;/li&gt;
+&nbsp;&nbsp;&nbsp; &lt;li&gt;Four&lt;/li&gt;
+&nbsp;&nbsp;&nbsp; &lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+ <h3 id="CSS">CSS</h3>
+
+ <pre>@counter-style fisheye {
+  system: cyclic;
+  symbols: ◉;
+  suffix: " ";
+}
+
+.list {
+    list-style: fisheye;
+}
+</pre>
+
+ <p><iframe frameborder="0" id="frame_Example_1" class="live-sample-frame sample-code-frame" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/%40counter-style/system%24samples/Example_15c5d.html?revision=1082392"></iframe></p>
+
+ <p>&nbsp;</p>
+ </div>
+ </dt>
+ <dd>The above counter style will render lists like this:<br>
+ <br>
+ ◉ One<br>
+ ◉ Two<br>
+ ◉ Three</dd>
+ <dt><code>fixed</code></dt>
+ <dd>Defines a finite set of symbols are specified. Once the system has looped through all the specified symbols, it will fall back. This system is useful in cases where the counter values are finite. At least one symbol must be specified in the <code>symbols</code> descriptor or the counter style is not valid. Also an optional <a href="../integer.html" title="The &lt;integer&gt; CSS data type denotes an integer number, positive or negative. There isn't any associated unit with the value. An integer consists of one or several decimal digits, 0 to 9, optionally preceded by one single + or - sign."><code>&lt;integer&gt;</code></a> can be specified after the the system, as the value of the first symbol. If this integer is omitted, value of the first integer is taken as <code>1</code>.<br>
+ &nbsp;
+ <h3 id="Example_2">Example 2</h3>
+
+ <h3 id="HTML_2">HTML</h3>
+
+ <pre class="brush: html">&lt;ul class="list"&gt;
+    &lt;li&gt;One&lt;/li&gt;
+    &lt;li&gt;Two&lt;/li&gt;
+    &lt;li&gt;Three&lt;/li&gt;
+    &lt;li&gt;Four&lt;/li&gt;
+    &lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+ <h3 id="CSS_2">CSS</h3>
+
+ <pre class="brush: css">@counter-style circled-digits {
+  system: fixed;
+  symbols: ➀ ➁ ➂;
+  suffix: ' ';
+}
+</pre>
+ <iframe frameborder="0" id="frame_Example_2" class="live-sample-frame sample-code-frame" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/%40counter-style/system%24samples/Example_25c5d.html?revision=1082392"></iframe></dd>
+ <dd>The above counter style will render the list like this:<br>
+ <br>
+ ➀ One<br>
+ ➁ Two<br>
+ ➂ Three<br>
+ 4 Four<br>
+ 5 Five</dd>
+ <dt><code>symbolic</code></dt>
+ <dd>Cycles through the provided list of symbols. On each successive pass through the cycle, the symbols used for the counter representation are doubled, tripled and so on. For example, if the original symbols provided were "◽" and "◾", on each successive pass, they will become "◽◽" and "◾◾", "◽◽◽" and "◾◾◾" and so on. At least one symbol must be specified in the <code>symbols</code> descriptor or the counter style is not valid. This counter system works for positive counter values only.
+ <h3 id="sect1">&nbsp;</h3>
+
+ <h3 id="Example_3">Example 3</h3>
+
+ <h3 id="HTML_3">HTML</h3>
+
+ <pre class="brush: html">&lt;ul class="list"&gt;
+    &lt;li&gt;One&lt;/li&gt;
+    &lt;li&gt;Two&lt;/li&gt;
+    &lt;li&gt;Three&lt;/li&gt;
+    &lt;li&gt;Four&lt;/li&gt;
+    &lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+ <h3 id="CSS_3">CSS</h3>
+
+ <pre class="brush: css">@counter-style abc {
+  system: symbolic;
+  symbols: a b c;
+  suffix: ". ";
+}</pre>
+ <iframe frameborder="0" id="frame_Example_3" class="live-sample-frame sample-code-frame" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/%40counter-style/system%24samples/Example_35c5d.html?revision=1082392"></iframe></dd>
+ <dd>The above counter style will render lists like this:<br>
+ <br>
+ &nbsp;&nbsp; a. One<br>
+ &nbsp;&nbsp; b. Two<br>
+ &nbsp;&nbsp; c. Three<br>
+ &nbsp;aa. Four<br>
+ &nbsp;bb. Five<br>
+ &nbsp;cc. Six<br>
+ aaa. Seven</dd>
+ <dt><code>alphabetic</code></dt>
+ <dd>Interprets the specified symbols as digits to an alphabetic numbering system. If the characters <code>"a"</code> to <code>"z"</code> are specified as symbols in a counter style with the <code>alphabetic</code> system, then the first 26 counter representations will be <code>"a"</code>, <code>"b"</code> upto <code>"z"</code>. Upto this point, the behviour is same as that of the <code>symbolic</code> system described above, but after <code>"z"</code>, it will continue like <code>"aa"</code>, <code>"ab"</code>, <code>"ac"</code>…<br>
+ <br>
+ The <code>symbols</code> descriptor must contain at least two symbols or the counter style is not valid. The first counter symbol provided in the <code>symbols</code> descriptor is interpreted as <code>1</code>, the next one as <code>2</code> and so on. This system is also defined strictly over positive counter values.
+ <h3 id="sect2">&nbsp;</h3>
+
+ <h3 id="Example_4">Example 4</h3>
+
+ <h3 id="HTML_4">HTML</h3>
+
+ <pre class="brush: html">&lt;ul class="list"&gt;
+    &lt;li&gt;One&lt;/li&gt;
+    &lt;li&gt;Two&lt;/li&gt;
+    &lt;li&gt;Three&lt;/li&gt;
+    &lt;li&gt;Four&lt;/li&gt;
+    &lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+ <h3 id="CSS_4">CSS</h3>
+
+ <pre class="brush: css">@counter-style abc {
+  system: alphabetic;
+  symbols: a b c;
+  suffix: ". ";
+}
+</pre>
+ <iframe frameborder="0" id="frame_Example_4" class="live-sample-frame sample-code-frame" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/%40counter-style/system%24samples/Example_45c5d.html?revision=1082392"></iframe></dd>
+ <dd>The above counter style will render lists like this:<br>
+ <br>
+ &nbsp; a. One<br>
+ &nbsp; b. Two<br>
+ &nbsp; c. Three<br>
+ aa. Four<br>
+ ab. Five<br>
+ ac. Six<br>
+ ba. Seven</dd>
+ <dt><code>numeric</code></dt>
+ <dd>Interprets the counter symbols as digits in a <a href="https://en.wikipedia.org/wiki/Positional_notation" class="external">place-value numbering system</a>. The numeric system is kind of similar to the <code>alphabetic</code> system described above. The main difference is that, in the <code>alphabetic</code> system, the first counter symbol given in the <code>symbols</code> descriptor is interpreted as <code>1</code>, the next as <code>2</code> and so on. But in the numeric system, the first counter symbol is interpreted as 0, then the next as <code>1</code>, then <code>2</code> and so on.<br>
+ <br>
+ At least two counter symbols must be specified in the <code>symbols</code> descriptor or the counter style is not valid.<br>
+ &nbsp;
+ <h3 id="Example_5">Example 5</h3>
+
+ <h3 id="HTML_5">HTML</h3>
+
+ <pre class="brush: html">&lt;ul class="list"&gt;
+    &lt;li&gt;One&lt;/li&gt;
+    &lt;li&gt;Two&lt;/li&gt;
+    &lt;li&gt;Three&lt;/li&gt;
+    &lt;li&gt;Four&lt;/li&gt;
+    &lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+ <h3 id="CSS_5">CSS</h3>
+
+ <pre class="brush: css">@counter-style abc {
+  system: numeric;
+  symbols: a b c;
+  suffix: ". ";
+}</pre>
+
+ <p><iframe frameborder="0" id="frame_Example_5" class="live-sample-frame sample-code-frame" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/%40counter-style/system%24samples/Example_55c5d.html?revision=1082392"></iframe></p>
+
+ <p>The above counter style will render lists like this:</p>
+
+ <p>&nbsp; b. One<br>
+  &nbsp; c. Two<br>
+  ba. Three<br>
+  bb. Four<br>
+  bc. Five<br>
+  ca. Six<br>
+  cb. Seven<br>
+  <br>
+  The first symbol provided in the <code>symbols</code> descriptor is interpreted as <code>0</code> here.<br>
+  <br>
+  As shown in the following example, if digits from <code>0</code> to <code>9</code> are specified as symbols, this counter style will render symbols same as the decimal counter style.</p>
+
+ <h3 id="Example_6">Example 6</h3>
+
+ <h3 id="HTML_6">HTML</h3>
+
+ <pre class="brush: html">&lt;ul class="list"&gt;
+    &lt;li&gt;One&lt;/li&gt;
+    &lt;li&gt;Two&lt;/li&gt;
+    &lt;li&gt;Three&lt;/li&gt;
+    &lt;li&gt;Four&lt;/li&gt;
+    &lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+ <h3 id="CSS_6">CSS</h3>
+
+ <pre class="brush: css">@counter-style numbers {
+  system: numeric;
+  symbols: 0 1 2 3 4 5 6 7 8 9;
+  suffix: ". ";
+}</pre>
+
+ <p><iframe frameborder="0" id="frame_Example_6" class="live-sample-frame sample-code-frame" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/%40counter-style/system%24samples/Example_65c5d.html?revision=1082392"></iframe></p>
+
+ <p>The above counter style will render the list like this:<br>
+  <br>
+  &nbsp; 1. One<br>
+  &nbsp; 2. Two<br>
+  &nbsp; 3. Three<br>
+  &nbsp; 4. Four<br>
+  &nbsp; 5. Five<br>
+  &nbsp; 6. Six<br>
+  &nbsp; 7. Seven<br>
+  &nbsp; 8. Eight<br>
+  &nbsp; 9. Nine<br>
+  10. Ten</p>
+ </dd>
+ <dt><code>additive</code></dt>
+ <dd>Used to represent "sign-value" numbering systems such as the Roman numerals, which rather than reuse digits in different positions to obtain different values, define additional digits for larger values. The value of a number in such a system can be found out by adding the digits in the number.<br>
+ <br>
+ An additional descriptor called <code>additive-symbols</code> must be specified with at least one <em>additive tuple</em> or else the counter style rule will not be valid. An additive tuple is kind of a composite counter symbol, that is made up of two parts, a normal counter symbol and a non-negative integer weight. The additive tuples must be specified in the descending order of their weights or the system is invalid.<br>
+ &nbsp;
+ <h3 id="Example_7">Example 7</h3>
+
+ <h3 id="HTML_7">HTML</h3>
+
+ <pre class="brush: html">&lt;ul class="list"&gt;
+    &lt;li&gt;One&lt;/li&gt;
+    &lt;li&gt;Two&lt;/li&gt;
+    &lt;li&gt;Three&lt;/li&gt;
+    &lt;li&gt;Four&lt;/li&gt;
+    &lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+ <h3 id="CSS_7">CSS</h3>
+
+ <pre class="brush: css">@counter-style upper-roman {
+  system: additive;
+  range: 1 3999;
+  additive-symbols: 1000 M, 900 CM, 500 D, 400 CD, 100 C, 90 XC, 50 L, 40 XL, 10 X, 9 IX, 5 V, 4 IV, 1 I;
+}</pre>
+
+ <p><iframe frameborder="0" id="frame_Example_7" class="live-sample-frame sample-code-frame" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/%40counter-style/system%24samples/Example_75c5d.html?revision=1082392"></iframe></p>
+
+ <p>This following <a href="../%40counter-style.html" title="The @counter-style CSS at-rule&nbsp;lets authors define&nbsp;specific counter styles that are not part of the predefined set of styles. A @counter-style rule defines how to convert a counter value into a string representation."><code>@counter-style</code></a> rule will render lists with Roman numerals for counter representations.</p>
+
+ <p>Notice that a <code>range</code> is specified in this example. This is because the above representation will produce correct Roman numerals only until the counter value of <code>3999</code>. Once outside of the range, the rest of the counter representations will be based on the <code>decimal</code> style, which is the fall back. But if what you need is to represent counter values as Roman numerals, you could just use either one of&nbsp; the predefined counter styles, <code>upper-roman</code> or <code>lower-roman</code>, rather than reinvenging the rule yourself.</p>
+ </dd>
+ <dt><code>extends</code></dt>
+ <dd>Allows authors to use the algorithm of another counter style, but alter its other aspects. If a counter style rule is using the <code>extends</code> system has any unspecified descriptors, their values will be taken from the extended counter style specified. If the specified counter style name specified in extends is not a currently defined counter style name, it will instead extend from the decimal counter style.<br>
+ <br>
+ It must not contain a <code>symbols</code> or <code>additive-symbols</code> descriptor, or else the counter style rule is invalid. If one more more counter styles defenitions form a cycle with their extends values, the browser will treat all the participating counter styles as extending from the decimal style.<br>
+ &nbsp;
+ <h3 id="Example_8">Example 8</h3>
+
+ <h3 id="HTML_8">HTML</h3>
+
+ <pre>&lt;ul class="list"&gt;
+    &lt;li&gt;One&lt;/li&gt;
+    &lt;li&gt;Two&lt;/li&gt;
+    &lt;li&gt;Three&lt;/li&gt;
+    &lt;li&gt;Four&lt;/li&gt;
+    &lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+ <h3 id="CSS_8">CSS</h3>
+
+ <pre class="brush: css">@counter-style alpha-modified {
+  system: extends lower-alpha;
+  prefix: "(";
+  suffix: ") ";
+}
+</pre>
+ <iframe frameborder="0" id="frame_Example_8" class="live-sample-frame sample-code-frame" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/%40counter-style/system%24samples/Example_85c5d.html?revision=1082392"></iframe></dd>
+ <dd>The above counter style rule will use the algorithm, symbols and other properties of the <code>lower-alpha</code> counter style, but will remove the period (<code>'.'</code>) after the counter representation and enclose the characters in paranthesis like <code>(a)</code> <code>(b)</code> etc.</dd>
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox">cyclic <a href="../Value_definition_syntax.html#Single_bar" title="Single bar">|</a> numeric <a href="../Value_definition_syntax.html#Single_bar" title="Single bar">|</a> alphabetic <a href="../Value_definition_syntax.html#Single_bar" title="Single bar">|</a> symbolic <a href="../Value_definition_syntax.html#Single_bar" title="Single bar">|</a> additive <a href="../Value_definition_syntax.html#Single_bar" title="Single bar">|</a> <a href="../Value_definition_syntax.html#Brackets" title="Brackets">[</a>fixed <a href="../integer.html" title="">&lt;integer&gt;</a><a href="../Value_definition_syntax.html#Question_mark_(.3F)" title="Question mark">?</a><a href="../Value_definition_syntax.html#Brackets" title="Brackets">]</a> <a href="../Value_definition_syntax.html#Single_bar" title="Single bar">|</a> <a href="../Value_definition_syntax.html#Brackets" title="Brackets">[</a> extends <a href="#counter-style-name">&lt;counter-style-name&gt;</a> <a href="../Value_definition_syntax.html#Brackets" title="Brackets">]</a><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="counter-style-name">&lt;counter-style-name&gt;</span> = &lt;custom-ident&gt;</code></p></pre>
+
+<h2 name="Specifications" id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-counter-styles-3/#counter-style-system" class="external" lang="en" hreflang="en">CSS Counter Styles Level&nbsp;3<br><small lang="en-US">The definition of 'system' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/33" title="Released on 2014-10-14.">33</a> (33)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Mobile</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/33" title="Released on 2014-10-14.">33</a> (33)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="../list-style.html" title="The list-style property is a shorthand property for setting list-style-type, list-style-image and list-style-position."><code>list-style</code></a>, <a href="../list-style-image.html" title="The list-style-image property specifies an image to be used as the list item marker."><code>list-style-image</code></a>, <a href="../list-style-position.html" title="The list-style-position property specifies the position of the marker box in the principal block box."><code>list-style-position</code></a></li>
+ <li><a href="../symbols.html" title="The documentation about this has not yet been written; please consider contributing!"><code>symbols()</code></a>, the functional notation creating anonymous counter styles.</li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/@counter-style">@counter-style</a></li>
+      
+        <li><a href="../../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../../tag/CSS%20Counter%20Styles.html">CSS Counter Styles</a></li>
+      
+        <li><a href="../../../tag/CSS%20Descriptor.html">CSS Descriptor</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/NeedsLiveSample">NeedsLiveSample</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/TotalAMD">TotalAMD</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/duncanmcdonald">duncanmcdonald</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jsx">jsx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/TotalAMD">TotalAMD</a>,
+                      <time datetime="2016-07-10T12:51:23-07:00">Jul 10, 2016, 12:51:23 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../../CSS.html">CSS</a></strong></li><li><strong><a href="../Reference.html">CSS Reference</a></strong></li><li><strong><a href="../CSS_Lists_and_Counters.html">CSS Lists and Counters</a></strong></li><li data-default-state="open"><a href="#"><strong>Guides</strong></a><ol><li><a href="../CSS_Lists_and_Counters/Consistent_list_indentation.html" title="One of the most common style changes made to lists is a change in the indentation distance—that is, how far the list items are pushed over to the right.">Consistent list indentation</a></li><li><a href="../CSS_Lists_and_Counters/Using_CSS_counters.html" title="CSS counters are, in essence, variables maintained by CSS whose values may be incremented by CSS rules to track how many times they're used. This lets you adjust the appearance of content based on its placement in the document.">Using CSS counters</a></li></ol></li><li data-default-state="open"><a href="#"><strong>At-Rules</strong></a><ol><li><a href="../%40counter-style.html" title="The @counter-style CSS at-rule&nbsp;lets authors define&nbsp;specific counter styles that are not part of the predefined set of styles. A @counter-style rule defines how to convert a counter value into a string representation."><code>@counter-style</code></a></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a href="../counter-increment.html" title="The counter-increment CSS property is used to increase the value of CSS Counters by a given value. The counter's value can be reset using the counter-reset CSS property."><code>counter-increment</code></a></li><li><a href="../counter-reset.html" title="The counter-reset CSS property is used to reset CSS Counters to a given value."><code>counter-reset</code></a></li><li><a href="../list-style.html" title="The list-style property is a shorthand property for setting list-style-type, list-style-image and list-style-position."><code>list-style</code></a></li><li><a href="../list-style-image.html" title="The list-style-image property specifies an image to be used as the list item marker."><code>list-style-image</code></a></li><li><a href="../list-style-position.html" title="The list-style-position property specifies the position of the marker box in the principal block box."><code>list-style-position</code></a></li><li><a href="../list-style-type.html" title="The list-style-type property specifies the appearance of a list item element. Because it is the only property that&nbsp;defaults to display:list-item, this is usually a &lt;li&gt; element, but can be any element with this display value."><code>list-style-type</code></a></li></ol></li><li data-default-state="open"><a href="#"><strong>Data types</strong></a><ol><li><a href="../custom-ident.html" title="The &lt;custom-ident&gt; CSS data value denotes an arbitrary user-defined string used as an identifier. It is case-sensitive and in each context, several values are excluded to prevent misinterpretations."><code>&lt;custom-ident&gt;</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/@counter-style/system$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/@counter-style/system$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/@counter-style/system" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="French" value="/fr/docs/Web/CSS/@counter-style/system">
+            Français (fr)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:46:05 GMT -->
+</body></html>

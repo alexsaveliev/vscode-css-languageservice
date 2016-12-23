@@ -1,0 +1,839 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:56:51 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>CSS animated properties</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties$json">
+  <link rel="canonical" href="CSS_animated_properties.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/CSS_animierbare_Eigenschaften" title="CSS animierbare Eigenschaften">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/capacidad_de_animacion_de_propiedades_CSS" title="Capacidad de animación de propiedades CSS">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/Liste_propriétés_CSS_animées" title="Liste des propriétés CSS animées">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_animated_properties" title="CSS animated properties">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_animated_properties" title="CSS animated properties">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_animated_properties" title="Анимируемые свойства CSS">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_animated_properties" title="CSS animated properties">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="CSS animated properties">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">
+  <meta name="twitter:title" content="CSS animated properties">
+  
+  <meta property="og:description" content="Some CSS properties can be animated, that is can change in a smooth way when its value change, either when used by CSS Animations or CSS Transitions.">
+  <meta name="description" content="Some CSS properties can be animated, that is can change in a smooth way when its value change, either when used by CSS Animations or CSS Transitions.">
+  <meta name="twitter:description" content="Some CSS properties can be animated, that is can change in a smooth way when its value change, either when used by CSS Animations or CSS Transitions.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/CSS_animated_properties" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FCSS_animated_properties" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/CSS_animierbare_Eigenschaften" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/capacidad_de_animacion_de_propiedades_CSS" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/Liste_propriétés_CSS_animées" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_animated_properties" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_animated_properties" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_animated_properties" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_animated_properties" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">CSS animated properties</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/jpmedley" title="View profile: jpmedley">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jpmedley" data-src="../../../../../secure.gravatar.com/avatar/fde784135f738cc182672e703dea9a4b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jpmedley</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/tregagnon" title="View profile: tregagnon">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tregagnon" data-src="../../../../../secure.gravatar.com/avatar/8431892ef37f88fe820096de721c00ba6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tregagnon</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/rebeccahauck" title="View profile: rebeccahauck">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="rebeccahauck" data-src="../../../../../secure.gravatar.com/avatar/8683111598cb2926fd345a495087b6d66c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">rebeccahauck</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei" title="View profile: ziyunfei">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ziyunfei" data-src="../../../../../secure.gravatar.com/avatar/2dbf9c055c2b32d3ca45d25be01174236c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ziyunfei</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Marsf" title="View profile: Marsf">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Marsf" data-src="../../../../../secure.gravatar.com/avatar/ad00649afe235adeecc876a86ded16e26c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Marsf</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>CSS animated properties</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-closed wiki-right-none wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-main wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p></p><section id="Quick_Links" class="Quick_links"><!-- --></section><p></p>
+
+<p>Some CSS properties can be animated, that is can change in a smooth way when its value change, either when used by <a href="CSS_Animations.html">CSS Animations</a> or <a href="CSS_Transitions.html">CSS Transitions</a>.</p>
+
+<p>The list of animatable properties is:</p>
+
+<p></p><div class="index">
+  <ul>
+     <li><a href="-moz-outline-radius.html" title="In Mozilla applications like Firefox, the -moz-outline-radius CSS property can be used to give outlines rounded corners. An outline is a line that is drawn around elements, outside the border edge, to make the element stand out."><code>-moz-outline-radius</code></a></li>
+     <li><a href="-moz-outline-radius-bottomleft.html" title="The -moz-outline-radius-bottomleft CSS property sets the rounding of the bottom-left corner of the outline within Mozilla applications."><code>-moz-outline-radius-bottomleft</code></a></li>
+     <li><a href="-moz-outline-radius-bottomright.html" title="The -moz-outline-radius-bottomright CSS property sets the rounding of the bottom-right corner of the outline within Mozilla applications."><code>-moz-outline-radius-bottomright</code></a></li>
+     <li><a href="-moz-outline-radius-topleft.html" title="The -moz-outline-radius-topleft CSS property sets the rounding of the top-left corner of the outline within Mozilla applications."><code>-moz-outline-radius-topleft</code></a></li>
+     <li><a href="-moz-outline-radius-topright.html" title="The -moz-outline-radius-topright CSS property sets the rounding of the top-right corner of the outline within Mozilla applications."><code>-moz-outline-radius-topright</code></a></li>
+     <li><a href="-webkit-text-fill-color.html" title="The -webkit-text-fill-color CSS property specifies the fill color of characters of text. If this property is not set, the value of the color property is used."><code>-webkit-text-fill-color</code></a></li>
+     <li><a href="-webkit-text-stroke.html" title="The -webkit-text-stroke CSS property specifies the width and color of strokes for text characters. This is a shorthand property for the longhand properties -webkit-text-stroke-width and -webkit-text-stroke-color."><code>-webkit-text-stroke</code></a></li>
+     <li><a href="-webkit-text-stroke-color.html" title="The -webkit-text-stroke-color CSS property specifies the stroke color of characters of text. If this property is not set, the value of the color property is used."><code>-webkit-text-stroke-color</code></a></li>
+     <li><a href="-webkit-touch-callout.html" title="The -webkit-touch-callout CSS property controls the display of the default callout shown when you touch and hold a touch target."><code>-webkit-touch-callout</code></a></li>
+     <li><a href="all.html" title="The CSS all shorthand property resets all properties, apart from&nbsp;unicode-bidi and direction, to their initial or inherited value."><code>all</code></a></li>
+     <li><a href="backdrop-filter.html" title="The backdrop-filter property provides for effects like blurring or color shifting the area behind an element, which can then be seen through that element by adjusting the element's transparency/opacity."><code>backdrop-filter</code></a></li>
+     <li><a href="background.html" title="The background CSS property is a shorthand for setting the individual background values in a single place in the style sheet. background can be used to set the values for one or more of: background-clip, background-color, background-image, background-origin, background-position, background-repeat, background-size, and background-attachment."><code>background</code></a></li>
+     <li><a href="background-color.html" title="The background-color CSS property sets the background color of an element, either through a color value or the keyword transparent."><code>background-color</code></a></li>
+     <li><a href="background-position.html" title="The background-position CSS property sets the initial position for each defined background image, relative to the background position layer defined by background-origin."><code>background-position</code></a></li>
+     <li><a href="background-size.html" title="The background-size CSS property specifies the size of the background images. The size of the image can be fully constrained or only partially in order to preserve its intrinsic ratio."><code>background-size</code></a></li>
+     <li><a href="border.html" title="The border CSS property is a shorthand property for setting the individual border property values in a single place in the style sheet. border can be used to set the values for one or more of: border-width, border-style, border-color."><code>border</code></a></li>
+     <li><a href="border-bottom.html" title="The border-bottom CSS property is a shorthand that sets the values of border-bottom-color, border-bottom-style, and border-bottom-width. These properties describe the bottom border of elements."><code>border-bottom</code></a></li>
+     <li><a href="border-bottom-color.html" title="The border-bottom-color CSS property sets the color of the bottom border of an element. Note that in many cases the shorthand CSS properties border-color or border-bottom are more convenient and preferable."><code>border-bottom-color</code></a></li>
+     <li><a href="border-bottom-left-radius.html" title="The border-bottom-left-radius CSS property sets the rounding of the bottom-left corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0 no rounding is done and the corner is square."><code>border-bottom-left-radius</code></a></li>
+     <li><a href="border-bottom-right-radius.html" title="The border-bottom-right-radius CSS property sets the rounding of the bottom-right corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0 no rounding is done and the corner is square."><code>border-bottom-right-radius</code></a></li>
+     <li><a href="border-bottom-width.html" title="The border-bottom-width CSS property sets the width of the bottom border of a box."><code>border-bottom-width</code></a></li>
+     <li><a href="border-color.html" title="The border-color CSS property is a shorthand for setting the color of the four sides of an element's border: border-top-color, border-right-color, border-bottom-color, border-left-color"><code>border-color</code></a></li>
+     <li><a href="border-left.html" title="The border-left CSS property is a shorthand that sets the values of border-left-color, border-left-style, and border-left-width. These properties describe the left border of elements."><code>border-left</code></a></li>
+     <li><a href="border-left-color.html" title="The border-left-color CSS property sets the color of the left border of an element. Note that in many cases the shorthand CSS properties border-color or border-left are more convenient and preferable."><code>border-left-color</code></a></li>
+     <li><a href="border-left-width.html" title="The border-left-width CSS property sets the width of the left border of a box."><code>border-left-width</code></a></li>
+     <li><a href="border-radius.html" title="The border-radius CSS property allows Web authors to define how rounded border corners are. The curve of each corner is defined using one or two radii, defining its shape: circle or ellipse."><code>border-radius</code></a></li>
+     <li><a href="border-right.html" title="The border-right CSS property is a shorthand that sets the values of border-right-color, border-right-style, and border-right-width. These properties describe the right border of elements."><code>border-right</code></a></li>
+     <li><a href="border-right-color.html" title="The border-right-color CSS property sets the color of the right border of an element. Note that in many cases the shorthand CSS properties&nbsp; border-color or border-right are more convenient and preferable."><code>border-right-color</code></a></li>
+     <li><a href="border-right-width.html" title="The border-right-width CSS property sets the width of the right border of a box."><code>border-right-width</code></a></li>
+     <li><a href="border-top.html" title="The border-top CSS property is a shorthand that sets the values of border-top-color, border-top-style, and border-top-width. These properties describe the top border of elements."><code>border-top</code></a></li>
+     <li><a href="border-top-color.html" title="The border-top-color CSS property sets the color of the top border of an element. Note that in many cases the shorthand CSS properties border-color or border-top are more convenient and preferable."><code>border-top-color</code></a></li>
+     <li><a href="border-top-left-radius.html" title="The border-top-left-radius CSS property sets the rounding of the top-left corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0,no rounding is done and the corner is square."><code>border-top-left-radius</code></a></li>
+     <li><a href="border-top-right-radius.html" title="The border-top-right-radius CSS property sets the rounding of the top-right corner of the element. The rounding can be a circle or an ellipse, or if one of the value is 0 no rounding is done and the corner is square."><code>border-top-right-radius</code></a></li>
+     <li><a href="border-top-width.html" title="The border-top-width CSS property sets the width of the top border of a box."><code>border-top-width</code></a></li>
+     <li><a href="border-width.html" title="The border-width property is a shorthand property for setting border-top-width,&nbsp;border-right-width,&nbsp;border-bottom-width and&nbsp;border-left-width&nbsp;of a box at the same place."><code>border-width</code></a></li>
+     <li><a href="bottom.html" title="The bottom CSS property participates in specifying the position of positioned elements."><code>bottom</code></a></li>
+     <li><a href="box-shadow.html" title="The box-shadow property describes one or more shadow effects as a comma-separated list."><code>box-shadow</code></a></li>
+     <li><a href="clip.html" title="The clip CSS property defines what portion of an element is visible. The clip property applies only to absolutely positioned elements, that is elements with position:absolute or position:fixed."><code>clip</code></a></li>
+     <li><a href="clip-path.html" title="The clip-path CSS property prevents a portion of an element from getting displayed by defining a clipping region&nbsp;to be displayed i.e,&nbsp;only a specific region of the element is displayed. The clipping region is a path specified as a URL referencing an inline or external SVG, or shape method such as&nbsp;circle(). The clip-path property replaces the now deprecated clip property."><code>clip-path</code></a></li>
+     <li><a href="color.html" title="The color property sets the foreground color of an element's text content, and its decorations. It doesn't affect any other characteristic of the element; it should really be called text-color and would have been named so, save for historical reasons and its appearance in CSS Level 1."><code>color</code></a></li>
+     <li><a href="column-count.html" title="The column-count CSS property describes the number of columns of the element."><code>column-count</code></a></li>
+     <li><a href="column-gap.html" title="The column-gap CSS property sets the size of the gap between columns for elements which are specified to be displayed as multi-column elements."><code>column-gap</code></a></li>
+     <li><a href="column-rule.html" title="In multi-column layouts, the column-rule CSS property specifies a straight line, or &quot;rule&quot;, to be drawn between each column. It is a convenient shorthand to avoid setting each of the individual column-rule-* properties separately : column-rule-width, column-rule-style and column-rule-color."><code>column-rule</code></a></li>
+     <li><a href="column-rule-color.html" title="The column-rule-color CSS property lets you set the color of the &quot;rule&quot; or line drawn between columns in multi-column layouts."><code>column-rule-color</code></a></li>
+     <li><a href="column-rule-width.html" title="The column-rule-width CSS property lets you set the width of the rule drawn between columns in multi-column layouts."><code>column-rule-width</code></a></li>
+     <li><a href="column-width.html" title="The column-width CSS property suggests an optimal column width. The column-width is the maximum width a column will become before adding another column. For instance, a 300px column width a gap of 0px would be a single column at 599px, but at 600px it would be split into 2 columns.&nbsp;This allows us&nbsp;to achieve scalable designs that fit different screen sizes. Especially in presence of the column-count CSS property which has precedence, to set an exact column width, all length values must be specified. In horizontal text these are width, column-width, column-gap, and column-rule-width."><code>column-width</code></a></li>
+     <li><a href="columns.html" title="The columns CSS property is a shorthand property allowing to set both the column-width and the column-count properties at the same time."><code>columns</code></a></li>
+     <li><a href="filter.html" title="The filter property provides graphical effects like blurring, sharpening, or color shifting an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders."><code>filter</code></a></li>
+     <li><a href="flex.html" title="The flex CSS property is a shorthand property specifying the ability of a flex item to alter its dimensions to fill available space. Flex items can be stretched to use available space proportional to their flex grow factor or their flex shrink factor to prevent overflow."><code>flex</code></a></li>
+     <li><a href="flex-basis.html" title="The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item. This property determines the size of the content-box unless specified otherwise using box-sizing."><code>flex-basis</code></a></li>
+     <li><a href="flex-grow.html" title="The flex-grow CSS property specifies the flex grow factor of a flex item. It specifies what amount of space inside the flex container the item should take up."><code>flex-grow</code></a></li>
+     <li><a href="flex-shrink.html" title="The flex-shrink CSS property specifies the flex shrink factor of a flex item."><code>flex-shrink</code></a></li>
+     <li><a href="font.html" title="The font CSS property is either a shorthand property for setting font-style, font-variant, font-weight, font-size, line-height and font-family, or a way to set the element's font to a system font, using specific keywords."><code>font</code></a></li>
+     <li><a href="font-size.html" title="The font-size CSS property specifies the size of the font (historically the width of the capital &quot;M&quot;). Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the em and ex &lt;length&gt; units."><code>font-size</code></a></li>
+     <li><a href="font-size-adjust.html" title="The font-size-adjust CSS property specifies that font size should be chosen based on the height of lowercase letters rather than the height of capital letters. This is useful since the legibility of fonts, especially at small sizes, is determined more by the size of lowercase letters than by the size of capital letters."><code>font-size-adjust</code></a></li>
+     <li><a href="font-stretch.html" title="The font-stretch property selects a normal, condensed, or expanded face from a font."><code>font-stretch</code></a></li>
+     <li><a href="font-weight.html" title="The font-weight CSS property specifies the weight or boldness of the font. Some fonts are only available in normal and bold."><code>font-weight</code></a></li>
+     <li><a href="grid-column-gap.html" title="The grid-column-gap CSS property specifies the gutter between grid columns."><code>grid-column-gap</code></a></li>
+     <li><a href="grid-gap.html" title="The grid-gap CSS property is a shorthand property for grid-row-gap and grid-column-gap specifying the gutters between grid rows and columns."><code>grid-gap</code></a></li>
+     <li><a href="grid-row-gap.html" title="The grid-row-gap CSS property specifies the gutter between grid rows."><code>grid-row-gap</code></a></li>
+     <li><a href="height.html" title="The height CSS property specifies the height of the content area of an element. The content area is inside the padding, border, and margin of the element."><code>height</code></a></li>
+     <li><a href="left.html" title="The left CSS property specifies part of the position of positioned elements."><code>left</code></a></li>
+     <li><a href="letter-spacing.html" title="The letter-spacing CSS property specifies spacing behavior between text characters."><code>letter-spacing</code></a></li>
+     <li><a href="line-height.html" title="On block level elements, the line-height property specifies the minimum height of line boxes within the element."><code>line-height</code></a></li>
+     <li><a href="margin.html" title="The margin CSS property sets the margin for all four sides. It is a shorthand to avoid setting each side separately with the other margin properties: margin-top, margin-right, margin-bottom and margin-left."><code>margin</code></a></li>
+     <li><a href="margin-bottom.html" title="The margin-bottom CSS property of an element sets the margin space required on the bottom of an element. A negative value is also allowed."><code>margin-bottom</code></a></li>
+     <li><a href="margin-left.html" title="The margin-left CSS property sets the margin space required on the left side of a box associated with an element. A negative value is also allowed."><code>margin-left</code></a></li>
+     <li><a href="margin-right.html" title="The margin-right CSS property of an element sets the margin space required on the right side of an element. A negative value is also allowed."><code>margin-right</code></a></li>
+     <li><a href="margin-top.html" title="The margin-top CSS property of an element sets the margin space required on the top of an element. A negative value is also allowed."><code>margin-top</code></a></li>
+     <li><a href="mask.html" title="The mask property in CSS allows users to alter the visibility of an item by either partially or fully hiding it. This is accomplished by either masking or clipping the image at specific points."><code>mask</code></a></li>
+     <li><a href="mask-position.html" title="The mask-position CSS property sets the initial position, relative to the mask position layer defined by mask-origin for each defined mask image."><code>mask-position</code></a></li>
+     <li><a href="mask-size.html" title="The mask-size CSS property specifies the sizes of the mask images. The size of the image can be fully or partially constrained&nbsp;in order to preserve its intrinsic ratio."><code>mask-size</code></a></li>
+     <li><a href="max-height.html" title="The max-height property is used to set the maximum height of an element. It prevents the used value of the height property from becoming larger than the value specified for max-height."><code>max-height</code></a></li>
+     <li><a href="max-width.html" title="The max-width property is used to set the maximum width of a given element. It prevents the used value of the width property from becoming larger than the value specified for max-width."><code>max-width</code></a></li>
+     <li><a href="min-height.html" title="Technical review completed."><code>min-height</code></a></li>
+     <li><a href="min-width.html" title="The min-width property is used to set the minimum width of a given element. It prevents the used value of the width property from becoming smaller than the value specified for min-width."><code>min-width</code></a></li>
+     <li><a href="motion-offset.html" title="The motion-offset CSS property specifies a position along a&nbsp;motion-path."><code>motion-offset</code></a></li>
+     <li><a href="motion-rotation.html" title="The&nbsp;motion-rotation CSS property&nbsp;defines the direction of the element while positioning along the&nbsp;motion path."><code>motion-rotation</code></a></li>
+     <li><a href="object-position.html" title="The object-position property determines the alignment of the replaced element inside its box."><code>object-position</code></a></li>
+     <li><a href="opacity.html" title="The opacity CSS property specifies the transparency of an element, that is, the degree to which the background behind the element is overlaid."><code>opacity</code></a></li>
+     <li><a href="order.html" title="The CSS order property specifies the order used to lay out flex items in their flex container. Elements are laid out in the&nbsp;ascending order of the order value. Elements with the same order value are laid out in the order in which they appear in the source code."><code>order</code></a></li>
+     <li><a href="outline.html" title="The CSS outline property is a shorthand property for setting one or more of the individual outline properties outline-style, outline-width and outline-color in a single declaration. In most cases the use of this shortcut is preferable and more convenient."><code>outline</code></a></li>
+     <li><a href="outline-color.html" title="The outline-color CSS property sets the color of the outline of an element. An outline is a line that is drawn around elements, outside the border edge, to make the element stand out."><code>outline-color</code></a></li>
+     <li><a href="outline-offset.html" title="The outline-offset CSS property is used to set space between an outline and the edge or border of an element. An outline is a line that is drawn around elements, outside the border edge."><code>outline-offset</code></a></li>
+     <li><a href="outline-width.html" title="The outline-width CSS property is used to set the width of the outline of an element. An outline is a line that is drawn around elements, outside the border edge, to make the element stand out:"><code>outline-width</code></a></li>
+     <li><a href="padding.html" title="The padding property sets the padding space on all sides of an element. The padding area is the space between the content of the element and its border. Negative values are not allowed."><code>padding</code></a></li>
+     <li><a href="padding-bottom.html" title="The padding-bottom CSS property of an element sets the height of the padding area at the bottom of an element. The padding area is the space between the content of the element and its border. Contrary to margin-bottom values, negative values of padding-bottom are invalid."><code>padding-bottom</code></a></li>
+     <li><a href="padding-left.html" title="The padding-left CSS property of an element sets the padding space required on the left side of an element. The padding area is the space between the content of the element and it's border. A negative value is not allowed."><code>padding-left</code></a></li>
+     <li><a href="padding-right.html" title="The padding-right CSS property of an element sets the padding space required on the right side of an element. The padding area is the space between the content of the element and its border. Negative values are not allowed."><code>padding-right</code></a></li>
+     <li><a href="padding-top.html" title="The padding-top CSS property of an element sets the padding space required on the top of an element. The padding area is the space between the content of the element and its border. Contrary to margin-top values, negative values of padding-top are invalid."><code>padding-top</code></a></li>
+     <li><a href="perspective.html" title="The perspective CSS property determines the distance between the z=0 plane and the user in order to give to the 3D-positioned element some perspective. Each 3D element with z&gt;0 becomes larger; each 3D-element with z&lt;0 becomes smaller. The strength of the effect is determined by the value of this property."><code>perspective</code></a></li>
+     <li><a href="perspective-origin.html" title="The perspective-origin CSS property determines the position the viewer is looking at. It is used as the vanishing point by the perspective property."><code>perspective-origin</code></a></li>
+     <li><a href="right.html" title="Technical review completed."><code>right</code></a></li>
+     <li><a href="scroll-snap-coordinate.html" title="The scroll-snap-coordinate CSS property defines the positions in x and y coordinates within the element which will align with the nearest ancestor scroll container's scroll-snap-destination for the respective axis."><code>scroll-snap-coordinate</code></a></li>
+     <li><a href="scroll-snap-destination.html" title="The scroll-snap-destination CSS property defines the position in x and y coordinates within the scroll container's visual viewport which element snap points align with."><code>scroll-snap-destination</code></a></li>
+     <li><a href="shape-image-threshold.html" title="The shape-image-threshold&nbsp;CSS property defines the alpha channel threshold used to extract the shape using an image as the value for shape-outside. A value of 0.5 means that the shape will enclose all the pixels that are more than 50% opaque."><code>shape-image-threshold</code></a></li>
+     <li><a href="shape-margin.html" title="The shape-margin CSS property adds a margin to shape-outside."><code>shape-margin</code></a></li>
+     <li><a href="shape-outside.html" title="The shape-outside CSS property uses shape values to define the float area for a float and will cause inline content to wrap around the shape instead of the float's bounding box."><code>shape-outside</code></a></li>
+     <li><a href="text-decoration.html" title="The text-decoration CSS property is used to set the text formatting to underline, overline, line-through or blink. Underline and overline decorations are positioned under the text, line-through over it."><code>text-decoration</code></a></li>
+     <li><a href="text-decoration-color.html" title="The CSS text-decoration-color property sets the line color used when drawing underlines, overlines, and strikethrough lines specified by the corresponding text-decoration-line property. The color specified will be the same for all three line&nbsp;types."><code>text-decoration-color</code></a></li>
+     <li><a href="text-emphasis.html" title="The text-emphasis CSS property is a shorthand&nbsp;property for setting text-emphasis-style and text-emphasis-color in one declaration. This property will apply the specified emphasis mark to each character of the element's text, except separator characters, like spaces,&nbsp; and control characters."><code>text-emphasis</code></a></li>
+     <li><a href="text-emphasis-color.html" title="The text-emphasis-color CSS property defines the color used to draw an emphasis mark. It can also be set, and reset, using the text-emphasis shorthand."><code>text-emphasis-color</code></a></li>
+     <li><a href="text-indent.html" title="The text-indent property specifies the amount of indentation (empty space) should be left before lines of text in a block. By default, this controls the indentation of only the first formatted line of the block, but the hanging and each-line keywords can be used to change this behavior."><code>text-indent</code></a></li>
+     <li><a href="text-shadow.html" title="The text-shadow property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and text-decorations of the element."><code>text-shadow</code></a></li>
+     <li><a href="top.html" title="The top CSS property specifies part of the position of positioned elements. It has no effect on non-positioned elements."><code>top</code></a></li>
+     <li><a href="transform.html" title="The CSS transform property lets you modify the coordinate space of the CSS visual formatting model. Using it, elements can be translated, rotated, scaled, and skewed."><code>transform</code></a></li>
+     <li><a href="transform-origin.html" title="The transform-origin property lets you modify the origin for transformations of an element. For example, the transform-origin of the rotate() function is the centre of rotation. (This property is applied by first translating the element by the negated value of the property, then applying the element's transform, then translating by the property value.)"><code>transform-origin</code></a></li>
+     <li><a href="vertical-align.html" title="The vertical-align CSS property specifies the vertical alignment of an inline or table-cell box."><code>vertical-align</code></a></li>
+     <li><a href="visibility.html" title="The visibility property can be used to hide an element while leaving the space where it would have been. It can also hide rows or columns of a table."><code>visibility</code></a></li>
+     <li><a href="width.html" title="The width CSS property specifies the width of the content area of an element. The content area is inside the padding, border, and margin of the element."><code>width</code></a></li>
+     <li><a href="word-spacing.html" title="The word-spacing CSS property specifies the spacing behavior between tags and words."><code>word-spacing</code></a></li>
+     <li><a href="z-index.html" title="The z-index property specifies the z-order of a positioned element and its descendants. When elements overlap, z-order determines which one covers the other. An element with a larger z-index generally covers an element with a lower one."><code>z-index</code></a></li>
+  </ul>
+</div><p></p>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jpmedley">jpmedley</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tregagnon">tregagnon</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/rebeccahauck">rebeccahauck</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ziyunfei">ziyunfei</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Marsf">Marsf</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>,
+                      <time datetime="2015-12-29T04:53:30-08:00">Dec 29, 2015, 4:53:30 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_animated_properties.html">CSS animated properties</a></strong></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_animated_properties$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_animated_properties$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/CSS_animated_properties" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/CSS_animierbare_Eigenschaften">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" value="/es/docs/Web/CSS/capacidad_de_animacion_de_propiedades_CSS">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/Liste_propri%C3%A9t%C3%A9s_CSS_anim%C3%A9es">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/CSS_animated_properties">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/CSS_animated_properties">
+            한국어 (ko)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/CSS_animated_properties">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/CSS_animated_properties">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:56:52 GMT -->
+</body></html>

@@ -1,0 +1,1129 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/Specificity by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:49:21 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>Specificity</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity$json">
+  <link rel="canonical" href="Specificity.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/Spezifität" title="Spezifität">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/Spécificité" title="Spécificité">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/Specificity" title="詳細度">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/Specificity" title="명시도">
+    
+      <link rel="alternate" hreflang="pt-BR" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity" title="Especificação">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/Specificity" title="Specificity">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity" title="优先级">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="Specificity">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">
+  <meta name="twitter:title" content="Specificity">
+  
+  <meta property="og:description" content="Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.">
+  <meta name="description" content="Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.">
+  <meta name="twitter:description" content="Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/Specificity" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FSpecificity" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/Specificity">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/Spezifität" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/Spécificité" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/Specificity" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/Specificity" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity" title="Portuguese (Brazilian)">Português (do&nbsp;Brasil) (pt-BR)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/Specificity" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">Specificity</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/bunnybooboo" title="View profile: bunnybooboo">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="bunnybooboo" data-src="../../../../../secure.gravatar.com/avatar/6e9ef66996c0fc22dd0908e80dc6de476c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">bunnybooboo</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/chrisprobably" title="View profile: chrisprobably">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="chrisprobably" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">chrisprobably</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/jnachtigall" title="View profile: jnachtigall">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jnachtigall" data-src="../../../../../secure.gravatar.com/avatar/e9e36b02dcb4c2a620adfc0b0e97b7756c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jnachtigall</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/fcard" title="View profile: fcard">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fcard" data-src="../../../../../secure.gravatar.com/avatar/4f8b50f4f441bc9937fab80a5cb67ac06c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fcard</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/jsx" title="View profile: jsx">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jsx" data-src="../../../../../secure.gravatar.com/avatar/8cc61d4e2dc63e75976a334348d473bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jsx</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/rolfedh" title="View profile: rolfedh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="rolfedh" data-src="../../../../../secure.gravatar.com/avatar/4d9e73208c9af39018924d0e67821a796c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">rolfedh</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/PushpitaPikuDey" title="View profile: PushpitaPikuDey">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="PushpitaPikuDey" data-src="../../../../../secure.gravatar.com/avatar/f4b22e727bb1b32bf1957c666d72874d6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">PushpitaPikuDey</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Tigt" title="View profile: Tigt">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Tigt" data-src="../../../../../secure.gravatar.com/avatar/6dfc114d927c3f5bd61c2697b4adf2bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Tigt</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kmhrussell17" title="View profile: kmhrussell17">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kmhrussell17" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kmhrussell17</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kustolovic" title="View profile: kustolovic">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kustolovic" data-src="../../../../../secure.gravatar.com/avatar/94413bc1dbf75d748053d487c3ad07c96c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kustolovic</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/SeriouslyAwesome" title="View profile: SeriouslyAwesome">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="SeriouslyAwesome" data-src="../../../../../secure.gravatar.com/avatar/88ad7d7544e4e0fb973e9015d7bd9b3a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">SeriouslyAwesome</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mina86" title="View profile: mina86">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mina86" data-src="../../../../../secure.gravatar.com/avatar/a123a070ab3c9dca76acc66acf8ec93a6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mina86</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/diraniyoussef" title="View profile: diraniyoussef">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="diraniyoussef" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">diraniyoussef</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/rralian" title="View profile: rralian">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="rralian" data-src="../../../../../secure.gravatar.com/avatar/cf55adb1a5146c0a11a808bce7842f7b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">rralian</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mflodin" title="View profile: mflodin">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mflodin" data-src="../../../../../secure.gravatar.com/avatar/dafcad05242391f339a079c038f544396c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mflodin</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ahmedsai001" title="View profile: ahmedsai001">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ahmedsai001" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ahmedsai001</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/dawsonda" title="View profile: dawsonda">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="dawsonda" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">dawsonda</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mkollra01" title="View profile: mkollra01">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mkollra01" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mkollra01</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/applescr" title="View profile: applescr">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="applescr" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">applescr</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/SphinxKnight" title="View profile: SphinxKnight">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="SphinxKnight" data-src="../../../../../secure.gravatar.com/avatar/8fb358ea9b7af22f5021a29e122ea0696c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">SphinxKnight</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/pablofiumara" title="View profile: pablofiumara">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="pablofiumara" data-src="../../../../../secure.gravatar.com/avatar/4c4d3e6cc75217369a59bf130c5948a46c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">pablofiumara</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/MattBrubeck" title="View profile: MattBrubeck">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="MattBrubeck" data-src="../../../../../secure.gravatar.com/avatar/6c7f46790bdcbae3f2046b02b43ab6bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">MattBrubeck</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fryn" title="View profile: fryn">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fryn" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fryn</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jwalker" title="View profile: jwalker">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jwalker" data-src="../../../../../secure.gravatar.com/avatar/8dd47f0c426cd8204b8bf996cb98cb566c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jwalker</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>Specificity</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#The_concept" rel="internal">The concept</a></li><li><a href="#How_is_it_calculated" rel="internal">How is it calculated?</a><ol><li><a href="#Selector_Types" rel="internal">Selector Types</a></li><li><a href="#The_!important_exception" rel="internal">The !<code>important</code> exception</a></li><li><a href="#The_not_exception" rel="internal">The <code>:not</code> exception</a></li><li><a href="#Form-based_specificity" rel="internal">Form-based specificity</a></li><li><a href="#Tree_proximity_ignorance" rel="internal">Tree proximity ignorance</a></li><li><a href="#Directly_targeted_elements_versus_inherited_styles" rel="internal">Directly targeted elements versus inherited styles</a></li></ol></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p></p><section id="Quick_Links" class="Quick_links"><!-- --></section><p></p>
+
+<h2 id="The_concept">The concept</h2>
+
+<p><span class="seoSummary">Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of <a href="Reference.html#Selectors" title="en/CSS/CSS_Reference#Selectors">CSS selectors</a>.</span></p>
+
+<h2 id="How_is_it_calculated">How is it calculated?</h2>
+
+<p>Specificity is a weight that is applied to a given CSS declaration, determined by the number of each <a href="#Selector_Types">selector type</a> in the matching selector. When specificity is equal to any of the&nbsp;multiple declarations, the last declaration found in the CSS is applied to the element. Specificity only applies when the same element is targeted by multiple declarations. As per CSS rules, <a href="#directly-targeted-elements">directly targeted element</a> will always take precedence over rules which an element inherits from its ancestor.</p>
+
+<div class="note">Note: <a href="#tree-proximity-ignorance">Proximity of elements</a> in the document tree has no effect on the specificity.</div>
+
+<h3 id="Selector_Types">Selector Types</h3>
+
+<p>The following list of selector types increases by specificity:</p>
+
+<ol start="0">
+ <li>Type selectors (e.g., <code>h1</code>) and pseudo-elements (e.g., <code>:before</code>).</li>
+ <li>Class selectors (e.g., <code>.example</code>), attributes selectors (e.g., <code>[type="radio"]</code>) and pseudo-classes (e.g., <code>:hover</code>).</li>
+ <li>ID selectors (e.g., <code>#example</code>).</li>
+</ol>
+
+<p>Universal selector (<code>*</code>), combinators (<code>+</code>, <code>&gt;</code>, <code>~</code>, '<code> </code>') and negation pseudo-class (<code>:not()</code>) have no effect on specificity. (The selectors declared <em>inside</em> <code>:not()</code> do, however.)</p>
+
+<p>Inline styles added to an element (e.g., <code>style="font-weight:bold"</code>) always overwrite any styles in external stylesheets, and thus can be thought of as having the highest specificity.</p>
+
+<h3 id="The_!important_exception">The !<code>important</code> exception</h3>
+
+<p>When an <code>important</code> rule is used on a style declaration, this declaration overrides any other declarations. Although technically <code>!important</code> has nothing to do with specificity, it interacts directly with it. Using <code>!important,</code> however, is <strong>bad practice</strong> and should be avoided because it makes debugging more difficult by breaking the natural <a href="Cascade.html">cascading</a> in your stylesheets. When two conflicting declarations with the <code>!important</code> rule are applied to the same element, the declaration with a greater specificity will be applied.</p>
+
+<p><strong>Some rules of thumb:</strong></p>
+
+<ul>
+ <li><strong>Always</strong> look for a way to use specificity before even considering !important</li>
+ <li><strong>Only</strong> use <code>!important</code> on page-specific CSS that overrides foreign CSS (from external libraries, like Bootstrap or normalize.css).</li>
+ <li><strong>Never</strong> use <code>!important</code> when you're writing a plugin/mashup.</li>
+ <li><strong>Never</strong> use <code>!important</code> on site-wide CSS.</li>
+</ul>
+
+<p><strong>Instead of using <code>!important</code>, you consider:</strong></p>
+
+<ol>
+ <li>Making better use of CSS cascading properties</li>
+ <li>
+  <p>Using more specific rules. By indicating one or more elements before the element you're selecting the rule becomes more specific and gets higher priority:</p>
+
+  <pre class="lang-html prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"test"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;span&gt;</span><span class="pln">Text</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+
+  <pre class="lang-css prettyprint prettyprinted"><code><span class="pln">div</span><span class="pun">#</span><span class="pln">test span </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">color</span><span class="pun">:</span><span class="pln"> green </span><span class="pun">}</span><span class="pln">
+div span { color: blue }
+span </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">color</span><span class="pun">:</span><span class="pln"> red </span><span class="pun">}</span><span class="pln">
+</span></code></pre>
+ </li>
+</ol>
+
+<p>No matter the order, text will be green because that rule is most specific. (Also, the rule for blue overwrites the rule for red, notwithstanding the order of the rules)</p>
+
+<p><strong>You should use it when:</strong></p>
+
+<p>A) Scenario one:</p>
+
+<ol>
+ <li>You have a global CSS file that sets visual aspects of your site globally.</li>
+ <li>You (or others) use inline styles on elements themselves. This is considered very bad practice.</li>
+</ol>
+
+<p>In this case, you could set certain styles in your global CSS file as important, thus overriding inline styles set directly on elements.</p>
+
+<p>Real world example: Some badly written <strong>jQuery plugins</strong> which use inline styles.</p>
+
+<p>B) Another scenario</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="com">#someElement p {</span><span class="pln">
+    color</span><span class="pun">:</span><span class="pln"> blue</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+p</span><span class="pun">.</span><span class="pln">awesome </span><span class="pun">{</span><span class="pln">
+    color</span><span class="pun">:</span><span class="pln"> red</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>How do you make <code>awesome</code> paragraphs always turn red, even ones inside <code>#someElement</code>? Without <code>!important</code>, the first rule will have more specificity and will win over the second rule.</p>
+
+<p><strong>How to override !important</strong></p>
+
+<p>A)&nbsp;Simply add another CSS rule with <code>!important</code>, and either give the selector a higher specificity (adding&nbsp;a tag, id or class to the selector), or add a CSS rule with the same selector at a later point than the existing one. This works because in a specificity tie, the last rule defined wins.</p>
+
+<p>Some examples with a higher specificity:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">table td    </span><span class="pun">{</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50px</span><span class="pln"> </span><span class="pun">!</span><span class="pln">important</span><span class="pun">;}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">myTable td </span><span class="pun">{</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50px</span><span class="pln"> </span><span class="pun">!</span><span class="pln">important</span><span class="pun">;}</span><span class="pln">
+</span><span class="com">#myTable td {height: 50px !important;}</span></code></pre>
+
+<p>B) Or add the same selector after the existing one:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">td </span><span class="pun">{</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50px</span><span class="pln"> </span><span class="pun">!</span><span class="pln">important</span><span class="pun">;}</span></code></pre>
+
+<p>C) Or rewrite the original rule to avoid the use of <code>!important</code> altogether.</p>
+
+<p><strong>For more information, visit: </strong></p>
+
+<p><a href="http://stackoverflow.com/questions/3706819/what-are-the-implications-of-using-important-in-css" class="external">http://stackoverflow.com/questions/3706819/what-are-the-implications-of-using-important-in-css</a></p>
+
+<p><a href="http://stackoverflow.com/questions/9245353/what-does-important-in-css-mean" class="external">http://stackoverflow.com/questions/9245353/what-does-important-in-css-mean</a></p>
+
+<p><a href="http://stackoverflow.com/questions/5701149/when-to-use-important-property-in-css" class="external">http://stackoverflow.com/questions/5701149/when-to-use-important-property-in-css</a></p>
+
+<p><a href="http://stackoverflow.com/questions/11178673/how-to-override-important" class="external">http://stackoverflow.com/questions/11178673/how-to-override-important</a></p>
+
+<p><a href="http://stackoverflow.com/questions/2042497/when-to-use-important-to-save-the-day-when-working-with-css" class="external">http://stackoverflow.com/questions/2042497/when-to-use-important-to-save-the-day-when-working-with-css</a></p>
+
+<p>&nbsp;</p>
+
+<h3 id="The_not_exception">The <code>:not</code> exception</h3>
+
+<p>The negation pseudo-class <code>:not</code> is <em>not</em> considered a pseudo-class in the specificity calculation. But selectors placed into the negation pseudo-class count as normal selectors when determining the count of <a href="#selector-type">selector types</a>.</p>
+
+<p>Here is a CSS chunk:</p>
+
+<pre class="brush: css">div.outer p {
+  color:orange;
+}
+div:not(.outer) p {
+  color: lime;
+}
+</pre>
+
+<p>when used with the following HTML:</p>
+
+<pre class="brush: html">&lt;div class="outer"&gt;
+  &lt;p&gt;This is in the outer div.&lt;/p&gt;
+  &lt;div class="inner"&gt;
+    &lt;p&gt;This text is in the inner div.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<p>Shall appear on the screen as:</p>
+
+<p><iframe frameborder="0" id="frame_The_not_exception" class="live-sample-frame sample-code-frame" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/Specificity%24samples/The_not_exceptionb1bd.html?revision=1137359"></iframe></p>
+
+<h3 id="Form-based_specificity">Form-based specificity</h3>
+
+<p>Specificity is based on the form of a selector. In the following case, the selector <code>*[id="foo"]</code>&nbsp;counts as an attribute selector for the purpose of determining the selector's&nbsp;specificity, even though&nbsp;it selects an ID.</p>
+
+<p>The following style declarations:</p>
+
+<pre class="brush: css">*#foo {
+  color: green;
+}
+*[id="foo"] {
+  color: purple;
+}
+</pre>
+
+<p>when used with this markup:</p>
+
+<pre class="brush: html">&lt;p id="foo"&gt;I am a sample text.&lt;/p&gt;
+</pre>
+
+<p>Will end up looking like:</p>
+
+<p><iframe frameborder="0" id="frame_Form-based_specificity" class="live-sample-frame sample-code-frame" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/Specificity%24samples/Form-based_specificityb1bd.html?revision=1137359"></iframe></p>
+
+<p>Because it matches the same element but the ID selector has a&nbsp;higher specificity.</p>
+
+<h3 id="Tree_proximity_ignorance"><a name="tree-proximity-ignorance" id="tree-proximity-ignorance">Tree proximity ignorance</a></h3>
+
+<p>The proximity of an element to other elements that are referenced in a given selector has&nbsp;no impact on specificity.&nbsp;The following style declaration:</p>
+
+<pre class="brush: css">body h1 {
+  color: green;
+}
+html h1 {
+  color: purple;
+}
+</pre>
+
+<p>With the following HTML:</p>
+
+<pre class="brush: html">&lt;html&gt;
+&lt;body&gt;
+  &lt;h1&gt;Here is a title!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>Will render as:</p>
+
+<p><iframe frameborder="0" id="frame_Tree_proximity_ignorance" class="live-sample-frame sample-code-frame" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/Specificity%24samples/Tree_proximity_ignoranceb1bd.html?revision=1137359"></iframe></p>
+
+<p>Because the two declarations have equal <a href="#selector-type">selector type</a> counts, but the <code>html h1</code> selector is declared last.</p>
+
+<h3 id="Directly_targeted_elements_versus_inherited_styles"><a name="directly-targeted-elements" id="directly-targeted-elements">Directly targeted elements versus inherited styles</a></h3>
+
+<p>Styles for a directly targeted element will always take precedence over inherited styles, regardless of the specificity of the inherited rule.</p>
+
+<pre class="brush: css" style="font-size: 14px;">#parent {
+  color: green;
+}
+h1 {
+  color: purple;
+}</pre>
+
+<p>With the following HTML:</p>
+
+<pre class="brush: html" style="font-size: 14px;">&lt;html&gt;
+&lt;body id="parent"&gt;
+  &lt;h1&gt;Here is a title!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p>Will also render as:</p>
+
+<p><iframe frameborder="0" id="frame_Directly_targeted_elements_versus_inherited_styles" class="live-sample-frame sample-code-frame" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/Specificity%24samples/Directly_targeted_elements_versus_inherited_stylesb1bd.html?revision=1137359"></iframe></p>
+
+<p>Because the <code>h1</code> selector targets the element specifically, but the green selector is only inherited from its parent.</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li>Specificity Calculator: An interactive website to test and understand your own CSS rules - <a href="https://specificity.keegan.st/" class="external">https://specificity.keegan.st/</a></li>
+ <li>CSS3 Selectors Specificity - <a href="http://www.w3.org/TR/selectors/#specificity" rel="freelink" class="external">http://www.w3.org/TR/selectors/#specificity</a></li>
+ <li>CSS Key Concepts: 
+ <a href="Syntax.html" title="Syntax">CSS syntax</a>, 
+ <a href="At-rule.html" title="At-rule">at-rule</a>, 
+ <a href="Comments.html" title="Comments">comments</a>, 
+ <a href="Specificity.html" title="Specificity">specificity</a> and 
+ <a href="inheritance.html" title="inheritance">inheritance</a>, 
+ the <a href="CSS_Box_Model/Introduction_to_the_CSS_box_model.html" title="Box model">box</a>, 
+ <a href="Layout_mode.html" title="CSS layout modes">layout modes</a> and 
+ <a href="../Guide/CSS/Visual_formatting_model.html" title="Visual formatting model">visual formatting models</a>, 
+ and <a href="CSS_Box_Model/Mastering_margin_collapsing.html" title="Margin collapsing">margin collapsing</a>, 
+ or the <a href="initial_value.html" title="initial value">initial</a>, 
+ <a href="computed_value.html" title="computed value">computed</a>, 
+ <a href="resolved_value.html" title="resolved value">resolved</a>, 
+ <a href="specified_value.html" title="specified value">specified</a>, 
+ <a href="used_value.html" title="used value">used</a>, 
+ and <a href="actual_value.html" title="actual value">actual</a> values. 
+ Definitions of <a href="Value_definition_syntax.html" title="Value definition syntax">value syntax</a>, 
+ <a href="Shorthand_properties.html" title="Shorthand properties">shorthand properties</a> 
+ and <a href="Replaced_element.html" title="Replaced element">replaced elements</a>.</li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Beginner">Beginner</a></li>
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Example">Example</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Guide">Guide</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Web">Web</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/bunnybooboo">bunnybooboo</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/chrisprobably">chrisprobably</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jnachtigall">jnachtigall</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fcard">fcard</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jsx">jsx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/rolfedh">rolfedh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/PushpitaPikuDey">PushpitaPikuDey</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Tigt">Tigt</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kmhrussell17">kmhrussell17</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kustolovic">kustolovic</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/SeriouslyAwesome">SeriouslyAwesome</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mina86">mina86</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/diraniyoussef">diraniyoussef</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/rralian">rralian</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mflodin">mflodin</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ahmedsai001">ahmedsai001</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/dawsonda">dawsonda</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mkollra01">mkollra01</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/applescr">applescr</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/SphinxKnight">SphinxKnight</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/pablofiumara">pablofiumara</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/MattBrubeck">MattBrubeck</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fryn">fryn</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jwalker">jwalker</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/bunnybooboo">bunnybooboo</a>,
+                      <time datetime="2016-11-02T13:21:41-07:00">Nov 2, 2016, 1:21:41 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/Specificity$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/Specificity$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/Specificity" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/Spezifit%C3%A4t">
+            Deutsch (de)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/Sp%C3%A9cificit%C3%A9">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/Specificity">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/Specificity">
+            한국어 (ko)
+          </option>
+          <option title="Portuguese (Brazilian)" value="/pt-BR/docs/Web/CSS/Specificity">
+            Português (do&nbsp;Brasil) (pt-BR)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/Specificity">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/Specificity">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/Specificity by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:49:25 GMT -->
+</body></html>

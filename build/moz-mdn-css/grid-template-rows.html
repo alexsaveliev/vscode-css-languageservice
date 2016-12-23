@@ -1,0 +1,840 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:42:01 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>grid-template-rows</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows$json">
+  <link rel="canonical" href="grid-template-rows.html">
+
+  
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/grid-template-rows" title="grid-template-rows">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="grid-template-rows">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows">
+  <meta name="twitter:title" content="grid-template-rows">
+  
+  <meta property="og:description" content="The grid-template-rows CSS property defines the line names and track sizing functions of the grid's rows.">
+  <meta name="description" content="The grid-template-rows CSS property defines the line names and track sizing functions of the grid's rows.">
+  <meta name="twitter:description" content="The grid-template-rows CSS property defines the line names and track sizing functions of the grid's rows.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/grid-template-rows" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fgrid-template-rows" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/grid-template-rows" title="French">Français (fr)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">grid-template-rows</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/rolfedh" title="View profile: rolfedh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="rolfedh" data-src="../../../../../secure.gravatar.com/avatar/4d9e73208c9af39018924d0e67821a796c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">rolfedh</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>grid-template-rows</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Examples" rel="internal">Examples</a><ol><li><a href="#CSS" rel="internal">CSS</a></li><li><a href="#HTML" rel="internal">HTML</a></li><li><a href="#Result" rel="internal">Result</a></li></ol></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                  <div class="warning warning-review">
+                    <p>
+                      This article needs a technical review. <a href="https://developer.mozilla.org/docs/MDN/Contribute/HowTo/Do_a_technical_review">How you can help.</a>
+                    </p>
+                  </div>
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section class="Quick_links" id="Quick_Links"><!-- --></section><div class="notice experimental"> 
+    <p><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span> <strong>This is an experimental technology</strong><br>Because this technology's specification has not stabilized, check the <a href="#Browser_compatibility">compatibility table</a> for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes.</p> 
+</div></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <code>grid-template-rows</code> CSS property defines the line names and track sizing functions of the grid's rows.</p>
+
+<p></p><table class="properties"><tbody><tr><th scope="row"><a href="initial_value.html">Initial value</a></th><td><code>none</code></td></tr><tr><th scope="row">Applies to</th><td>grid containers</td></tr><tr><th scope="row"><a href="inheritance.html">Inherited</a></th><td>no</td></tr><tr><th scope="row">Percentages</th><td>refer to corresponding dimension of the content area</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="computed_value.html">Computed value</a></th><td>as specified, but with relative lengths converted into absolute lengths</td></tr><tr><th scope="row">Animation type</th><td>discrete</td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table><p></p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush: css">/* Keyword value */
+grid-template-rows: none;
+
+/* &lt;track-list&gt; values */
+grid-template-rows: 100px 1fr;
+grid-template-rows: [linename] 100px;
+grid-template-rows: [linename1] 100px [linename2 linename3];
+grid-template-rows: minmax(100px, 1fr);
+grid-template-rows: fit-content(40%);
+
+/* &lt;auto-track-list&gt; values */
+grid-template-rows: 200px repeat(auto-fill, 100px) 300px;
+grid-template-rows: minmax(100px, max-content)
+                       repeat(auto-fill, 200px) 20%;
+grid-template-rows: [linename1] 100px [linename2]
+                       repeat(auto-fit, [linename3 linename4] 300px)
+                       100px;
+grid-template-rows: [linename1 linename2] 100px
+                       repeat(auto-fit, [linename1] 300px) [linename3];
+
+/* Global values */
+grid-template-rows: inherit;
+grid-template-rows: initial;
+grid-template-rows: unset;
+</pre>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt><code>none</code></dt>
+ <dd>Is a keyword meaning that there is no explicit grid. Any rows will be implicitly generated and their size will be determined by the <a title="The grid-auto-rows CSS property specifies the size of an implicitly-created grid row track." href="grid-auto-rows.html"><code>grid-auto-rows</code></a> property.</dd>
+ <dt><code>&lt;length&gt;</code></dt>
+ <dd>Is a non-negative length.</dd>
+ <dt><code>&lt;percentage&gt;</code></dt>
+ <dd>Is a non-negative <a title="The documentation about this has not yet been written; please consider contributing!" href="percentage.html"><code>&lt;percentage&gt;</code></a> value relative to the block size of the grid container. If the size of the grid container depends on the size of its tracks, then the percentage must be treated as <code>auto</code>.<br>
+ The intrinsic size contributions of the track may be adjusted to the size of the grid container and increase the final size of the track by the minimum amount that would result in honoring the percentage.</dd>
+ <dt><code>&lt;flex&gt;</code></dt>
+ <dd>Is a non-negative dimension with the unit <code>fr</code> specifying the track’s flex factor. Each <code>&lt;flex&gt;</code>-sized track takes a share of the remaining space in proportion to its flex factor.
+ <p>When appearing outside a <code>minmax()</code> notation, it implies an automatic minimum (i.e. <code>minmax(auto, &lt;flex&gt;)</code>).</p>
+ </dd>
+ <dt><code>max-content</code></dt>
+ <dd>Is a keyword representing the largest maximal content contribution of the grid items occupying the grid track.</dd>
+ <dt><code>min-content</code></dt>
+ <dd>Is a keyword representing the largest minimal content contribution of the grid items occupying the grid track.</dd>
+ <dt><code>minmax(min, max)</code></dt>
+ <dd>Is a functional notation that defines a size range greater than or equal to <em>min</em> and less than or equal to <em>max</em>. If <em>max</em> is smaller than <em>min</em>, then <em>max</em> is ignored and the function is treated as <em>min</em>. As a maximum, a <code>&lt;flex&gt;</code> value sets the track’s flex factor. It is invalid as a minimum.</dd>
+ <dt><code>auto</code></dt>
+ <dd>Is a keyword that is identical to maximal content if it's a maximum. As a minimum it represents the largest minimum size (as specified by <a title="The min-width property is used to set the minimum width of a given element. It prevents the used value of the width property from becoming smaller than the value specified for min-width." href="min-width.html"><code>min-width</code></a>/<a title="Technical review completed." href="min-height.html"><code>min-height</code></a>) of the grid items occupying the grid track.</dd>
+ <dd>
+ <p class="note">Note: <code>auto</code> track sizes (and only <code>auto</code> track sizes) can be stretched by the <a title="The CSS align-content property aligns a flex container's lines within the flex container when there is extra space on the cross-axis." href="align-content.html"><code>align-content</code></a> and <a title="The CSS justify-content property defines how the browser distributes space between and around flex items along the main-axis of their container." href="justify-content.html"><code>justify-content</code></a> properties.</p>
+ </dd>
+ <dt><code>fit-content( [ &lt;length&gt; | &lt;percentage&gt; ] )</code></dt>
+ <dd>Represents the formula <code>min(max-content, max(auto, <var>argument</var>))</code>, which is calculated similar to <code>auto</code> (i.e. <code>minmax(auto, max-content)</code>), except that the track size is clamped at <var>argument</var> if it is greater than the <code>auto</code> minimum.</dd>
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox">none <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#track-list">&lt;track-list&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#auto-track-list">&lt;auto-track-list&gt;</a><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="track-list">&lt;track-list&gt;</span> = <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#track-size">&lt;track-size&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#track-repeat">&lt;track-repeat&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Plus: the entity may occur one or several times" href="Value_definition_syntax.html#Plus_()">+</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a><br><span id="auto-track-list">&lt;auto-track-list&gt;</span> = <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#fixed-size">&lt;fixed-size&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#fixed-repeat">&lt;fixed-repeat&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Asterisk: the entity may occur zero, one or several times" href="Value_definition_syntax.html#Asterisk_(*)">*</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a href="#auto-repeat">&lt;auto-repeat&gt;</a>
+<a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#fixed-size">&lt;fixed-size&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#fixed-repeat">&lt;fixed-repeat&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Asterisk: the entity may occur zero, one or several times" href="Value_definition_syntax.html#Asterisk_(*)">*</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="line-names">&lt;line-names&gt;</span> = '<a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a>' <a title="The &lt;custom-ident&gt; CSS data value denotes an arbitrary user-defined string used as an identifier. It is case-sensitive and in each context, several values are excluded to prevent misinterpretations." href="/en-US/docs/Web/CSS/custom-ident">&lt;custom-ident&gt;</a><a title="Asterisk: the entity may occur zero, one or several times" href="Value_definition_syntax.html#Asterisk_(*)">*</a> '<a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a>'<br><span id="track-size">&lt;track-size&gt;</span> = <a href="#track-breadth">&lt;track-breadth&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> minmax( <a href="#inflexible-breadth">&lt;inflexible-breadth&gt;</a> , <a href="#track-breadth">&lt;track-breadth&gt;</a> ) <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> fit-content( <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a title="Possible values: a number followed by'em', 'ex', 'ch', 'rem', 'px', 'cm', 'mm', 'in', 'vh', 'vw', 'vmin', 'vmax', 'pt', 'pc' or 'px', like 3px, 1.5cm, -0.5em or 0" href="length.html">&lt;length&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> )<br><span id="track-repeat">&lt;track-repeat&gt;</span> = repeat( <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> &lt;positive-integer&gt; <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> , <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a href="#track-size">&lt;track-size&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Plus: the entity may occur one or several times" href="Value_definition_syntax.html#Plus_()">+</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> )<br><span id="fixed-size">&lt;fixed-size&gt;</span> = <a href="#fixed-breadth">&lt;fixed-breadth&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> minmax( <a href="#fixed-breadth">&lt;fixed-breadth&gt;</a> , <a href="#track-breadth">&lt;track-breadth&gt;</a> ) <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> minmax( <a href="#inflexible-breadth">&lt;inflexible-breadth&gt;</a> , <a href="#fixed-breadth">&lt;fixed-breadth&gt;</a> )<br><span id="fixed-repeat">&lt;fixed-repeat&gt;</span> = repeat( <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> &lt;positive-integer&gt; <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> , <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a href="#fixed-size">&lt;fixed-size&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Plus: the entity may occur one or several times" href="Value_definition_syntax.html#Plus_()">+</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> )<br><span id="auto-repeat">&lt;auto-repeat&gt;</span> = repeat( <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> auto-fill <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> auto-fit <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a> , <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">[</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> <a href="#fixed-size">&lt;fixed-size&gt;</a> <a title="Brackets: enclose several entities, combinators, and multipliers to transform them as a single component" href="Value_definition_syntax.html#Brackets">]</a><a title="Plus: the entity may occur one or several times" href="Value_definition_syntax.html#Plus_()">+</a> <a href="#line-names">&lt;line-names&gt;</a><a title="Question mark: the entity is optional" href="Value_definition_syntax.html#Question_mark_()">?</a> )</code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="track-breadth">&lt;track-breadth&gt;</span> = <a href="#length-percentage">&lt;length-percentage&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;flex&gt; CSS data type denotes a flexible length within a grid container, which is declared as dimension with the unit fr." href="/en-US/docs/Web/CSS/flex_value">&lt;flex&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> min-content <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> max-content <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> auto<br><span id="inflexible-breadth">&lt;inflexible-breadth&gt;</span> = <a title="Possible values: a number followed by'em', 'ex', 'ch', 'rem', 'px', 'cm', 'mm', 'in', 'vh', 'vw', 'vmin', 'vmax', 'pt', 'pc' or 'px', like 3px, 1.5cm, -0.5em or 0" href="length.html">&lt;length&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> min-content <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> max-content <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> auto<br><span id="fixed-breadth">&lt;fixed-breadth&gt;</span> = <a href="#length-percentage">&lt;length-percentage&gt;</a><br></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="length-percentage">&lt;length-percentage&gt;</span> = <a title="Possible values: a number followed by'em', 'ex', 'ch', 'rem', 'px', 'cm', 'mm', 'in', 'vh', 'vw', 'vmin', 'vmax', 'pt', 'pc' or 'px', like 3px, 1.5cm, -0.5em or 0" href="length.html">&lt;length&gt;</a> <a title="Single bar: exactly one of the entities must be present" href="Value_definition_syntax.html#Single_bar">|</a> <a title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number." href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a></code></p></pre>
+
+<h2 id="Examples">Examples</h2>
+
+<h3 id="CSS">CSS</h3>
+
+<pre class="brush:css">#grid {
+  display: grid;
+  height: 100px;
+  grid-template-rows: 30px 1fr;
+}
+
+#areaA {
+  background-color: lime;
+}
+
+#areaB {
+  background-color: yellow;
+}</pre>
+
+<h3 id="HTML">HTML</h3>
+
+<pre class="brush: html">&lt;div id="grid"&gt;
+  &lt;div id="areaA"&gt;A&lt;/div&gt;
+  &lt;div id="areaB"&gt;B&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<h3 id="Result">Result</h3>
+
+<p><iframe width="40px" frameborder="0" id="frame_Examples" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/grid-template-rows%24samples/Examples71cd.html?revision=1145748" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a lang="en" hreflang="en" href="https://drafts.csswg.org/css-grid/#propdef-grid-template-rows" class="external">CSS Grid Layout<br><small lang="en-US">The definition of 'grid-template-rows' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Edge</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[1]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[2]</sup></td>
+   <td>10.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-ms' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-ms</a></span><sup>[3]</sup></td>
+   <td>20<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-ms' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-ms</a></span><sup>[3]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[1]</sup></td>
+   <td><em><a href="http://nightly.webkit.org/" class="external">Nightly build</a></em><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Mobile</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>10.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-ms' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-ms</a></span><sup>[3]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] Implemented behind the <em>experimental Web Platform features</em> flag in <code>chrome://flags</code> since Chrome 29.0 and Opera 28.0.</p>
+
+<p>[2] Implemented behind the preference <code>layout.css.grid.enabled</code>, defaulting to <code>false</code> since Gecko 40.0 (Firefox 40.0 / Thunderbird 40.0 / SeaMonkey 2.37). Since Gecko 51.0 (Firefox 51.0 / Thunderbird 51.0 / SeaMonkey 2.48) the <code>fit-content()</code> function is supported.</p>
+
+<p>[3] Internet Explorer implements an <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/#grid-columns-and-rows-properties" class="external">older version of the specification</a> using the <span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-ms' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-ms</a></span> prefix. Therefore the property is implemented there as <code>-ms-grid-rows</code>.</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li>Related CSS properties: <a title="The grid-template-columns CSS property defines the line names and track sizing functions of the grid's columns." href="grid-template-columns.html"><code>grid-template-columns</code></a>, <a title="The grid-template-areas CSS property specifies named grid areas." href="grid-template-areas.html"><code>grid-template-areas</code></a>, <a title="The grid-template CSS property is a shorthand property for defining grid columns, rows and areas." href="grid-template.html"><code>grid-template</code></a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Grid.html">CSS Grid</a></li>
+      
+        <li><a href="../../tag/CSS%20Property.html">CSS Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/rolfedh">rolfedh</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>,
+                      <time datetime="2016-11-22T00:15:19-08:00">Nov 22, 2016, 12:15:19 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Grid_Layout.html">CSS Grid Layout</a></strong></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a title="The grid CSS property is a shorthand property that sets all of the explicit grid properties (grid-template-rows, grid-template-columns, and grid-template-areas), all the implicit grid properties (grid-auto-rows, grid-auto-columns, and grid-auto-flow), and the gutter properties (grid-column-gap and grid-row-gap) in a single declaration." href="grid.html"><code>grid</code></a></li><li><a title="The grid-area CSS property is a shorthand property for grid-row-start, grid-row-end, grid-column-start and grid-column-end specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area." href="grid-area.html"><code>grid-area</code></a></li><li><a title="The grid-auto-columns CSS property specifies the size of an implicitly-created grid column track." href="grid-auto-columns.html"><code>grid-auto-columns</code></a></li><li><a title="Editorial review completed." href="grid-auto-flow.html"><code>grid-auto-flow</code></a></li><li><a title="The grid-auto-rows CSS property specifies the size of an implicitly-created grid row track." href="grid-auto-rows.html"><code>grid-auto-rows</code></a></li><li><a title="The grid-column CSS property is a shorthand property for grid-column-start and grid-column-end specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area." href="grid-column.html"><code>grid-column</code></a></li><li><a title="The grid-column-end CSS property specifies a grid item’s end position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block-end edge of its grid area." href="grid-column-end.html"><code>grid-column-end</code></a></li><li><a title="The grid-column-gap CSS property specifies the gutter between grid columns." href="grid-column-gap.html"><code>grid-column-gap</code></a></li><li><a title="The grid-column-start CSS property specifies a grid item’s start position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block-start edge of its grid area." href="grid-column-start.html"><code>grid-column-start</code></a></li><li><a title="The grid-gap CSS property is a shorthand property for grid-row-gap and grid-column-gap specifying the gutters between grid rows and columns." href="grid-gap.html"><code>grid-gap</code></a></li><li><a title="The grid-row CSS property is a shorthand property for grid-row-start and grid-row-end specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area." href="grid-row.html"><code>grid-row</code></a></li><li><a title="The grid-row-end CSS property specifies a grid item’s end position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-end edge of its grid area." href="grid-row-end.html"><code>grid-row-end</code></a></li><li><a title="The grid-row-gap CSS property specifies the gutter between grid rows." href="grid-row-gap.html"><code>grid-row-gap</code></a></li><li><a title="The grid-row-start CSS property specifies a grid item’s start position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start edge of its grid area." href="grid-row-start.html"><code>grid-row-start</code></a></li><li><a title="The grid-template CSS property is a shorthand property for defining grid columns, rows and areas." href="grid-template.html"><code>grid-template</code></a></li><li><a title="The grid-template-areas CSS property specifies named grid areas." href="grid-template-areas.html"><code>grid-template-areas</code></a></li><li><a title="The grid-template-columns CSS property defines the line names and track sizing functions of the grid's columns." href="grid-template-columns.html"><code>grid-template-columns</code></a></li><li><em><code>grid-template-rows</code></em></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/grid-template-rows$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/grid-template-rows$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/grid-template-rows" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="French" value="/fr/docs/Web/CSS/grid-template-rows">
+            Français (fr)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:42:01 GMT -->
+</body></html>

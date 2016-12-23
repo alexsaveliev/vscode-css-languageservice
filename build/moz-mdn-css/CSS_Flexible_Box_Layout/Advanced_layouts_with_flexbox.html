@@ -1,0 +1,1064 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:54:35 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>Advanced layouts with flexbox</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox$json">
+  <link rel="canonical" href="Advanced_layouts_with_flexbox.html">
+
+  
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/Disposition_des_boîtes_flexibles_CSS/Mises_en_page_avancees_avec_flexbox" title="Mises en page avancées avec les boîtes flexibles">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/弹性框的高级布局" title="使用弹性盒子进行高级布局">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="Advanced layouts with flexbox">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox">
+  <meta name="twitter:title" content="Advanced layouts with flexbox">
+  
+  <meta property="og:description" content="The defining aspect of the flexbox is the ability to alter its items, width, and/or height to best fill the available space on any display device. A flex container expands its items to fill the available free space or shrinks them to prevent overflow.">
+  <meta name="description" content="The defining aspect of the flexbox is the ability to alter its items, width, and/or height to best fill the available space on any display device. A flex container expands its items to fill the available free space or shrinks them to prevent overflow.">
+  <meta name="twitter:description" content="The defining aspect of the flexbox is the ability to alter its items, width, and/or height to best fill the available space on any display device. A flex container expands its items to fill the available free space or shrinks them to prevent overflow.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FCSS_Flexible_Box_Layout%2FAdvanced_layouts_with_flexbox" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/Disposition_des_boîtes_flexibles_CSS/Mises_en_page_avancees_avec_flexbox" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/弹性框的高级布局" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS_Flexible_Box_Layout.html" rel="v:url" property="v:title">CSS Flexible Box Layout</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">Advanced layouts with flexbox</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/jwhitlock" title="View profile: jwhitlock">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jwhitlock" data-src="../../../../../../secure.gravatar.com/avatar/40c605f51b728fc5655b5de202e898e16c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jwhitlock</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/siilime" title="View profile: siilime">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="siilime" data-src="../../../../../../secure.gravatar.com/avatar/68824b170c2b56b74d6da3561581de966c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">siilime</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/hexalys" title="View profile: hexalys">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="hexalys" data-src="../../../../../../secure.gravatar.com/avatar/80ed6c45bd08fc17ec88acd50de0f6676c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">hexalys</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/rolfedh" title="View profile: rolfedh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="rolfedh" data-src="../../../../../../secure.gravatar.com/avatar/4d9e73208c9af39018924d0e67821a796c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">rolfedh</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/PushpitaPikuDey" title="View profile: PushpitaPikuDey">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="PushpitaPikuDey" data-src="../../../../../../secure.gravatar.com/avatar/f4b22e727bb1b32bf1957c666d72874d6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">PushpitaPikuDey</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/newswim" title="View profile: newswim">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="newswim" data-src="../../../../../../secure.gravatar.com/avatar/3111b0f5bfa18ba35f46b225b8da8a856c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">newswim</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jeremie" title="View profile: Jeremie">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jeremie" data-src="../../../../../../secure.gravatar.com/avatar/ea74cf7f528273838138e9ae407cd8ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jeremie</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/saki007ster" title="View profile: saki007ster">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="saki007ster" data-src="../../../../../../secure.gravatar.com/avatar/48200e7e8e9f1fba18e8d676f0a1df056c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">saki007ster</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>Advanced layouts with flexbox</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-closed wiki-left-none">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><ol><li><a href="#Problems_with_float_layout" rel="internal">Problems with float layout</a></li><li><a href="#How_flexbox_cures_these_issues" rel="internal">How flexbox cures these issues</a></li><li><a href="#Flexbox_properties" rel="internal">Flexbox properties</a><ol><li><a href="#Flex_Container_properties" rel="internal">Flex Container properties</a></li><li><a href="#Flex_items_properties" rel="internal">Flex items properties</a></li></ol></li></ol></li><li><a href="#Flexbox_Mixins" rel="internal">Flexbox Mixins</a><ol><li><a href="#Flexbox_Containers" rel="internal">Flexbox Containers</a></li><li><a href="#Flexbox_Direction" rel="internal">Flexbox Direction</a></li><li><a href="#Flexbox_Wrap" rel="internal">Flexbox Wrap</a></li><li><a href="#Flexbox_Flow_(shorthand)" rel="internal">Flexbox Flow (shorthand)</a></li><li><a href="#Flexbox_Order" rel="internal">Flexbox Order</a></li><li><a href="#Flexbox_Grow" rel="internal">Flexbox Grow</a></li><li><a href="#Flexbox_Shrink" rel="internal">Flexbox Shrink</a></li><li><a href="#Flexbox_Basis" rel="internal">Flexbox Basis</a></li><li><a href="#Flexbox_Flex_(shorthand)" rel="internal">Flexbox "Flex" (shorthand)</a></li><li><a href="#Flexbox_Justify_Content" rel="internal">Flexbox Justify Content</a></li><li><a href="#Flexbox_Align_Items" rel="internal">Flexbox Align Items</a></li><li><a href="#Flexbox_Align_Self" rel="internal">Flexbox Align Self</a></li><li><a href="#Flexbox_Align_Content" rel="internal">Flexbox Align Content</a></li></ol></li>
+                </ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-main wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p>The defining aspect of the flexbox is the ability to alter its items, width, and/or height to best fill the available space on any display device. A flex container expands its items to fill the available free space or shrinks them to prevent overflow.</p>
+
+<h3 id="Problems_with_float_layout">Problems with float layout</h3>
+
+<ul>
+ <li><strong>Difficulty with containment</strong> - If our site has some unpredictable content then it becomes challenging and at the same time tedious to maintain the layout with floats.</li>
+ <li><strong>Source order dependence</strong> - The layout is HTML source dependent, so it becomes difficult to alter the layout for different media queries for responsive sites.</li>
+ <li><strong>Equal Height Columns issues</strong> - If we have 2-3 columns with different content in them, and we need them to be of equal height irrespective of the content in it, then it becomes very difficult.</li>
+ <li><strong>Content Centering</strong> - Using floats is very cumbersome to make the content of div align in the center both vertically and horizontally.</li>
+</ul>
+
+<h3 id="How_flexbox_cures_these_issues">How flexbox cures these issues</h3>
+
+<ul>
+ <li>Makes flex items grow to fill available space or shrink to avoid overflow. In this way, it resolves the issue of new content overflowing and also aligns layouts to adhere to the expectations of the themer.</li>
+ <li>It gives flex items proportional dimensions.</li>
+ <li>Flex items inside the flex containers can be laid out in any direction, so this solves our issue with the content order in different media queries. It makes the visual content order independent of the HTML markup order, thereby helping in the responsive theming of sites.</li>
+</ul>
+
+<h3 id="Flexbox_properties">Flexbox properties</h3>
+
+<p><img src="../../../../../../saki007ster.github.io/public/images/flex-container.png" alt="placeholder" title="Flexbox properties"></p>
+
+<ul>
+ <li><strong>Main axis, main dimension</strong> - The main axis of a flex container is the primary axis along which flex items are laid out. It extends in the main dimension.</li>
+ <li><strong>Main-Start, main-end</strong> - The flex items are placed within the container starting on the main-start side and going towards the main-end side.</li>
+ <li><strong>Main size, main size property</strong> - A flex item’s width or height, whichever is in the main dimension, is the item’s main size. The flex item’s main size property is either the width or height property, whichever is in the main dimension.</li>
+ <li><strong>Cross axis, cross dimension</strong> - The axis perpendicular to the main axis is called the cross axis. It extends in the cross dimension.</li>
+ <li><strong>Cross-Start, cross-end</strong> - Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.</li>
+ <li><strong>Cross size, cross size property</strong> - The width or height of a flex item, whichever is in the cross dimension, is the item’s cross size. The cross size property is whichever of width or height that is in the cross dimension.</li>
+</ul>
+
+<h4 id="Flex_Container_properties">Flex Container properties</h4>
+
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#propdef-flex-direction" class="external">flex-direction</a></li>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#propdef-flex-wrap" class="external">flex-wrap</a></li>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#propdef-flex-flow" class="external">flex-flow</a></li>
+ <li><a href="https://css-tricks.com/almanac/properties/j/justify-content/" class="external">justify-content</a></li>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#align-items-property" class="external">align-items</a></li>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#align-content-property" class="external">align-content</a></li>
+</ul>
+
+<h4 id="Flex_items_properties">Flex items properties</h4>
+
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#propdef-order" class="external">order</a></li>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#align-items-property" class="external">align-self</a></li>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#propdef-flex-grow" class="external">flex-grow</a></li>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#propdef-flex-shrink" class="external">flex-shrink</a></li>
+ <li><a href="http://www.w3.org/TR/css3-flexbox/#propdef-flex-basis" class="external">flex-basis</a></li>
+</ul>
+
+<h2 id="Flexbox_Mixins">Flexbox Mixins</h2>
+
+<p>This is a set of mixins for those who want to mess around with flexbox using the native support of current browsers. For full support table</p>
+
+<p>check: <a href="#">http://caniuse.com/flexbox</a></p>
+
+<p>This will use:</p>
+
+<ul>
+ <li>Fallbacks using 2009 'box' syntax (FF and Older Wekbit ) and prefixed syntaxes (IE10, WebKit browsers without flex wrapping)</li>
+ <li>Final standards syntax (FF, Safari, Chrome, IE11, Opera)</li>
+</ul>
+
+<p>This was inspired by:</p>
+
+<ul>
+ <li><a href="#">http://dev.opera.com/articles/view/advanced-cross-browser-flexbox/</a></li>
+</ul>
+
+<p>With help from:</p>
+
+<ul>
+ <li><a href="#">http://w3.org/tr/css3-flexbox/</a></li>
+ <li><a href="#">http://the-echoplex.net/flexyboxes/</a></li>
+ <li><a href="#">http://msdn.microsoft.com/en-us/library/ie/hh772069(v=vs.85).aspx</a></li>
+ <li><a href="#">http://css-tricks.com/using-flexbox/</a></li>
+ <li><a href="#">http://dev.opera.com/articles/view/advanced-cross-browser-flexbox/</a></li>
+ <li><a href="#">https://developer.mozilla.org/en-us/docs/web/guide/css/flexible_boxes</a></li>
+</ul>
+
+<div class="note"><strong>Note:</strong> Mixins are not currently supported natively in browsers. Instead, you will need to use a CSS pre-processor to make the most of the following. However, CSS pre-processors simply generate valid CSS, so the techniques used below can be written in pure CSS instead, if preferred.</div>
+
+<h3 id="Flexbox_Containers">Flexbox Containers</h3>
+
+<p>The 'flex' value causes an element to generate a block-level flex container box.</p>
+
+<p>The 'inline-flex' value causes an element to generate an inline-level flex container box.</p>
+
+<p>display: flex | inline-flex <a href="#">http://w3.org/tr/css3-flexbox/#flex-containers</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">flexbox</span> <span class="p">{</span>
+  <span class="nt">display</span><span class="o">:</span> <span class="nt">-webkit-box</span><span class="o">;
+</span><span class="nt">  display</span><span class="o">:</span> <span class="nt">-moz-box</span><span class="o">;</span>
+  <span class="nt">display</span><span class="o">:</span> <span class="nt">-webkit-flex</span><span class="o">;</span>
+  <span class="nt">display</span><span class="o">:</span> <span class="nt">-ms-flexbox</span><span class="o">;</span>
+  <span class="nt">display</span><span class="o">:</span> <span class="nt">flex</span><span class="o">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span><span class="nt">Using</span> <span class="nt">this</span> <span class="nt">mixin</span>
+<span class="o">%</span><span class="nt">flexbox</span> <span class="p">{</span> <span class="o">@</span><span class="n">include</span> <span class="n">flexbox</span><span class="p">;</span> <span class="p">}</span></code></pre>
+</div>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">inline-flex</span> <span class="p">{</span>
+  <span class="nt">display</span><span class="o">:</span> <span class="nt">-webkit-inline-box</span><span class="o">;</span>
+  <span class="nt">display</span><span class="o">:</span> <span class="nt">-moz-inline-box</span><span class="o">;
+</span><span class="nt">  display</span><span class="o">:</span> <span class="nt">-webkit-inline-flex</span><span class="o">;</span>
+  <span class="nt">display</span><span class="o">:</span> <span class="nt">-ms-inline-flexbox</span><span class="o">;</span>
+  <span class="nt">display</span><span class="o">:</span> <span class="nt">inline-flex</span><span class="o">;</span>
+<span class="p">}</span>
+
+<span class="o">%</span><span class="nt">inline-flex</span> <span class="p">{</span> <span class="o">@</span><span class="n">include</span> <span class="k">inline</span><span class="o">-</span><span class="n">flex</span><span class="p">;</span> <span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Direction">Flexbox Direction</h3>
+
+<p>The 'flex-direction' property specifies how flex items are placed in the flex container, by setting the direction of the flex container's main axis. This determines the direction in which flex items are laid out in.</p>
+
+<p>Values: row | row-reverse | column | column-reverse <a href="#">http://w3.org/tr/css3-flexbox/#flex-direction-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">flex-direction</span><span class="o">($</span><span class="nt">value</span><span class="o">:</span> <span class="nt">row</span><span class="o">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">row-reverse</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-direction</span><span class="o">:</span> <span class="nt">reverse</span><span class="o">;</span>
+    <span class="nt">-webkit-box-orient</span><span class="o">:</span> <span class="nt">horizontal</span><span class="o">;
+</span><span class="nt">    -moz-box-direction</span><span class="o">:</span> <span class="nt">reverse</span><span class="o">;
+&nbsp;   </span><span class="nt">-moz-box-orient</span><span class="o">:</span> <span class="nt">horizontal</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="nt">if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">column</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-direction</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+    <span class="nt">-webkit-box-orient</span><span class="o">:</span> <span class="nt">vertical</span><span class="o">;
+</span><span class="nt">    -moz-box-direction</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;
+&nbsp;   </span><span class="nt">-moz-box-orient</span><span class="o">:</span> <span class="nt">vertical</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="nt">if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">column-reverse</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-direction</span><span class="o">:</span> <span class="nt">reverse</span><span class="o">;</span>
+    <span class="nt">-webkit-box-orient</span><span class="o">:</span> <span class="nt">vertical</span><span class="o">;
+</span><span class="nt">    -moz-box-direction</span><span class="o">:</span> <span class="nt">reverse</span><span class="o">;
+&nbsp;   </span><span class="nt">-moz-box-orient</span><span class="o">:</span> <span class="nt">vertical</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-direction</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+    <span class="nt">-webkit-box-orient</span><span class="o">:</span> <span class="nt">horizontal</span><span class="o">;
+</span><span class="nt">    -moz-box-direction</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;
+&nbsp;   </span><span class="nt">-moz-box-orient</span><span class="o">:</span> <span class="nt">horizontal</span><span class="o">;</span>
+  <span class="p">}</span>
+  <span class="nt">-webkit-flex-direction</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="nt">-ms-flex-direction</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="nt">flex-direction</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="nt">Shorter</span> <span class="nt">version</span><span class="o">:</span>
+<span class="k">@mixin</span> <span class="nt">flex-dir</span><span class="o">($</span><span class="nt">args</span><span class="o">...)</span> <span class="p">{</span> <span class="k">@include</span> <span class="nt">flex-direction</span><span class="o">($</span><span class="nt">args</span><span class="o">...)</span><span class="p">;</span> <span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Wrap">Flexbox Wrap</h3>
+
+<p>The 'flex-wrap' property controls whether the flex container is single-lined or multi-lined, and the direction of the cross-axis, which determines the direction in which the new lines are stacked in.</p>
+
+<p>Values: nowrap | wrap | wrap-reverse Default: nowrap</p>
+
+<p><a href="#">http://w3.org/tr/css3-flexbox/#flex-wrap-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">flex-wrap</span><span class="o">($</span><span class="nt">value</span><span class="o">:</span> <span class="nt">nowrap</span><span class="o">)</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="nt">No</span> <span class="nt">Webkit/FF</span> <span class="nt">Box</span> <span class="nt">fallback</span><span class="o">.</span>
+  <span class="nt">-webkit-flex-wrap</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="k">@if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">nowrap</span> <span class="p">{</span>
+    <span class="nt">-ms-flex-wrap</span><span class="o">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="nt">-ms-flex-wrap</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="p">}</span>
+  <span class="nt">flex-wrap</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Flow_(shorthand)">Flexbox Flow (shorthand)</h3>
+
+<p>The 'flex-flow' property is shorthand for setting the 'flex-direction' and 'flex-wrap' properties, which together define the flex container's main and cross axes.</p>
+
+<p>Values: | Default: row nowrap</p>
+
+<p><a href="#">http://w3.org/tr/css3-flexbox/#flex-flow-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">flex-flow</span><span class="o">($</span><span class="nt">values</span><span class="o">:</span> <span class="o">(</span><span class="nt">row</span> <span class="nt">nowrap</span><span class="o">))</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="nt">No</span> <span class="nt">Webkit/FF</span> <span class="nt">Box</span> <span class="nt">fallback</span><span class="o">.</span>
+  <span class="nt">-webkit-flex-flow</span><span class="o">:</span> <span class="o">$</span><span class="nt">values</span><span class="o">;</span>
+  <span class="nt">-ms-flex-flow</span><span class="o">:</span> <span class="o">$</span><span class="nt">values</span><span class="o">;</span>
+  <span class="nt">flex-flow</span><span class="o">:</span> <span class="o">$</span><span class="nt">values</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Order">Flexbox Order</h3>
+
+<p>The 'order' property controls the order in which flex items appear within their flex container, by assigning them to ordinal groups.</p>
+
+<p>Default: 0</p>
+
+<p><a href="#">http://w3.org/tr/css3-flexbox/#order-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">order</span><span class="o">($</span><span class="nt">int</span><span class="o">:</span> <span class="nt">0</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nt">-webkit-box-ordinal-group</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span> <span class="o">+</span> <span class="nt">1</span><span class="o">;
+&nbsp; </span><span class="nt">-moz-box-ordinal-group</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span> <span class="o">+</span> <span class="nt">1</span><span class="o">;</span>
+  <span class="nt">-webkit-order</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+  <span class="nt">-ms-flex-order</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+  <span class="nt">order</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Grow">Flexbox Grow</h3>
+
+<p>The 'flex-grow' property sets the flex grow factor. Negative numbers are invalid.</p>
+
+<p>Default: 1</p>
+
+<p><a href="#">http://w3.org/tr/css3-flexbox/#flex-grow-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">flex-grow</span><span class="o">($</span><span class="nt">int</span><span class="o">:</span> 1<span class="o">)</span> <span class="p">{</span>
+  <span class="nt">-webkit-box-flex</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span><span class="o">;
+</span><span class="nt">  -moz-box-flex</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+  <span class="nt">-webkit-flex-grow</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+  <span class="nt">-ms-flex</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+  <span class="nt">flex-grow</span><span class="o">:</span> <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Shrink">Flexbox Shrink</h3>
+
+<p>The 'flex-shrink' property sets the flex shrink factor. Negative numbers are invalid.</p>
+
+<p>Default: 0</p>
+
+<p><a href="#">http://w3.org/tr/css3-flexbox/#flex-shrink-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">flex-shrink</span><span class="o">($</span><span class="nt">int</span><span class="o">:</span> 0<span class="o">)</span> <span class="p">{</span>
+  <span class="nt">-webkit-flex-shrink</span><span class="o">:</span> 1 <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+  <span class="nt">-moz-flex-shrink</span><span class="o">:</span> 1 <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+  <span class="nt">-ms-flex</span><span class="o">:</span> 1 <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+  <span class="nt">flex-shrink</span><span class="o">:</span> 1 <span class="o">$</span><span class="nt">int</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Basis">Flexbox Basis</h3>
+
+<p>The 'flex-basis' property sets the flex basis. Negative lengths are invalid.</p>
+
+<p>Values: Like "width" Default: auto</p>
+
+<p><a href="#">http://www.w3.org/TR/css3-flexbox/#flex-basis-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">flex-basis</span><span class="o">($</span><span class="nt">value</span><span class="o">:</span> <span class="nt">auto</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nt">-webkit-flex-basis</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="nt">flex-basis</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Flex_(shorthand)">Flexbox "Flex" (shorthand)</h3>
+
+<p>The 'flex' property specifies the components of a flexible length; flex grow factor, flex shrink factor, and the flex basis. When an element is a flex item, 'flex' is consulted instead of the main size property to determine the main size of the element. If an element is not a flex item, 'flex' has no effect.</p>
+
+<p>Values: none | ||</p>
+
+<p>Default: See individual properties (1 0 auto).</p>
+
+<p><a href="#">http://w3.org/tr/css3-flexbox/#flex-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">flex</span><span class="o">($</span><span class="nt">fg</span><span class="o">:</span> <span class="nt">1</span><span class="o">,</span> <span class="o">$</span><span class="nt">fs</span><span class="o">:</span> <span class="nt">0</span><span class="o">,</span> <span class="o">$</span><span class="nt">fb</span><span class="o">:</span> <span class="nt">auto</span><span class="o">)</span> <span class="p">{</span>
+
+  <span class="o">//</span> <span class="nt">Set</span> <span class="nt">a</span> <span class="nt">variable</span> <span class="nt">to</span> <span class="nt">be</span> <span class="nt">used</span> <span class="nt">by</span> <span class="nt">box-flex</span> <span class="nt">properties</span>
+  <span class="o">$</span><span class="nt">fg-boxflex</span><span class="o">:</span> <span class="o">$</span><span class="nt">fg</span><span class="o">;</span>
+
+  <span class="o">//</span> <span class="nt">Box-Flex</span> <span class="nt">only</span> <span class="nt">supports</span> <span class="nt">a</span> <span class="nt">flex-grow</span> <span class="nt">value</span> <span class="nt">so</span> <span class="nt">lets</span> <span class="nt">grab</span> <span class="nt">the</span>
+  <span class="o">//</span> <span class="nt">first</span> <span class="nt">item</span> <span class="nt">in</span> <span class="nt">the</span> <span class="nt">list</span> <span class="nt">and</span> <span class="nt">just</span> <span class="nt">return</span> <span class="nt">that</span><span class="o">.</span>
+  <span class="k">@if</span> <span class="nt">type-of</span><span class="o">($</span><span class="nt">fg</span><span class="o">)</span> <span class="o">==</span> <span class="s1">'list'</span> <span class="p">{</span>
+    <span class="o">$</span><span class="nt">fg-boxflex</span><span class="o">:</span> <span class="nt">nth</span><span class="o">($</span><span class="nt">fg</span><span class="o">,</span> <span class="nt">1</span><span class="o">);</span>
+  <span class="p">}</span>
+
+  <span class="nt">-webkit-box</span><span class="o">:</span> <span class="o">$</span><span class="nt">fg-boxflex</span><span class="o">;</span>
+  <span class="nt">-moz-box</span><span class="o">:</span> <span class="o">$</span><span class="nt">fg-boxflex</span><span class="o">;</span>
+<span class="nt">  -webkit-flex</span><span class="o">:</span> <span class="o">$</span><span class="nt">fg</span> <span class="o">$</span><span class="nt">fs</span> <span class="o">$</span><span class="nt">fb</span><span class="o">;</span>
+  <span class="nt">-ms-flexbox</span><span class="o">:</span> <span class="o">$</span><span class="nt">fg</span> <span class="o">$</span><span class="nt">fs</span> <span class="o">$</span><span class="nt">fb</span><span class="o">;</span>
+  <span class="nt">flex</span><span class="o">:</span> <span class="o">$</span><span class="nt">fg</span> <span class="o">$</span><span class="nt">fs</span> <span class="o">$</span><span class="nt">fb</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Justify_Content">Flexbox Justify Content</h3>
+
+<p>The 'justify-content' property aligns flex items along the main axis of the current line of the flex container. This is done after any flexible lengths and any auto margins have been resolved. Typically, it helps to distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</p>
+
+<p>Note: 'space-*' values not supported in older syntaxes.</p>
+
+<p>Values: flex-start | flex-end | center | space-between | space-around Default: flex-start</p>
+
+<p><a href="#">http://w3.org/tr/css3-flexbox/#justify-content-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">justify-content</span><span class="o">($</span><span class="nt">value</span><span class="o">:</span> <span class="nt">flex-start</span><span class="o">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">flex-start</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-pack</span><span class="o">:</span> <span class="nt">start</span><span class="o">;
+</span><span class="nt">    -moz-box-pack</span><span class="o">:</span> <span class="nt">start</span><span class="o">;</span>
+    <span class="nt">-ms-flex-pack</span><span class="o">:</span> <span class="nt">start</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="nt">if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">flex-end</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-pack</span><span class="o">:</span> <span class="nt">end</span><span class="o">;
+</span><span class="nt">    -moz-box-pack</span><span class="o">:</span> <span class="nt">end</span><span class="o">;</span>
+    <span class="nt">-ms-flex-pack</span><span class="o">:</span> <span class="nt">end</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="nt">if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">space-between</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-pack</span><span class="o">:</span> <span class="nt">justify</span><span class="o">;
+</span><span class="nt">    -font-box-pack</span><span class="o">:</span> <span class="nt">justify</span><span class="o">;</span>
+    <span class="nt">-ms-flex-pack</span><span class="o">:</span> <span class="nt">justify</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="nt">if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">space-around</span> <span class="p">{</span>
+    <span class="nt">-ms-flex-pack</span><span class="o">:</span> <span class="nt">distribute</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-pack</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;
+</span><span class="nt">    -moz-box-pack</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+    <span class="nt">-ms-flex-pack</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="p">}</span>
+  <span class="nt">-webkit-justify-content</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="nt">justify-content</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+<span class="p">}</span>
+  <span class="o">//</span> <span class="nt">Shorter</span> <span class="nt">version</span><span class="o">:</span>
+  <span class="k">@mixin</span> <span class="nt">flex-just</span><span class="o">($</span><span class="nt">args</span><span class="o">...)</span> <span class="p">{</span> <span class="k">@include</span> <span class="nt">justify-content</span><span class="o">($</span><span class="nt">args</span><span class="o">...)</span><span class="p">;</span> <span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Align_Items">Flexbox Align Items</h3>
+
+<p>Flex items can be aligned in the cross axis of the current line of the flex container, similar to 'justify-content' but in the perpendicular direction. 'align-items' sets the default alignment for all of the flex container's items, including anonymous flex items. 'align-self' allows this default alignment to be overridden for individual flex items. (For anonymous flex items, 'align-self' always matches the value of 'align-items' on their associated flex container.)</p>
+
+<p>Values: flex-start | flex-end | center | baseline | stretch Default: stretch</p>
+
+<p><a href="#">http://w3.org/tr/css3-flexbox/#align-items-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">align-items</span><span class="o">($</span><span class="nt">value</span><span class="o">:</span> <span class="nt">stretch</span><span class="o">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">flex-start</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-align</span><span class="o">:</span> <span class="nt">start</span><span class="o">;
+</span><span class="nt">    -moz-box-align</span><span class="o">:</span> <span class="nt">start</span><span class="o">;</span>
+    <span class="nt">-ms-flex-align</span><span class="o">:</span> <span class="nt">start</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="nt">if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">flex-end</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-align</span><span class="o">:</span> <span class="nt">end</span><span class="o">;
+</span><span class="nt">    -moz-box-align</span><span class="o">:</span> <span class="nt">end</span><span class="o">;</span>
+    <span class="nt">-ms-flex-align</span><span class="o">:</span> <span class="nt">end</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="nt">-webkit-box-align</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;
+</span><span class="nt">    -mox-box-align</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+    <span class="nt">-ms-flex-align</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="p">}</span>
+  <span class="nt">-webkit-align-items</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="nt">align-items</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Align_Self">Flexbox Align Self</h3>
+
+<p>Values: auto | flex-start | flex-end | center | baseline | stretch Default: auto</p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">align-self</span><span class="o">($</span><span class="nt">value</span><span class="o">:</span> <span class="nt">auto</span><span class="o">)</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="nt">No</span> <span class="nt">Webkit</span> <span class="nt">Box</span> <span class="nt">Fallback</span><span class="o">.</span>
+  <span class="nt">-webkit-align-self</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="k">@if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">flex-start</span> <span class="p">{</span>
+    <span class="nt">-ms-flex-item-align</span><span class="o">:</span> <span class="nt">start</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="nt">if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">flex-end</span> <span class="p">{</span>
+    <span class="nt">-ms-flex-item-align</span><span class="o">:</span> <span class="nt">end</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="nt">-ms-flex-item-align</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="p">}</span>
+  <span class="nt">align-self</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+
+<h3 id="Flexbox_Align_Content">Flexbox Align Content</h3>
+
+<p>The 'align-content' property aligns a flex container's lines within the flex container when there is extra space in the cross-axis, similar to how 'justify-content' aligns individual items within the main-axis. Note, this property has no effect when the flexbox has only a single line.</p>
+
+<p>Values: flex-start | flex-end | center | space-between | space-around | stretch Default: stretch</p>
+
+<p><a href="#">http://w3.org/tr/css3-flexbox/#align-content-property</a></p>
+
+<div class="highlight">
+<pre><code class="language-css"><span class="k">@mixin</span> <span class="nt">align-content</span><span class="o">($</span><span class="nt">value</span><span class="o">:</span> <span class="nt">stretch</span><span class="o">)</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="nt">No</span> <span class="nt">Webkit</span> <span class="nt">Box</span> <span class="nt">Fallback</span><span class="o">.</span>
+  <span class="nt">-webkit-align-content</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="k">@if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">flex-start</span> <span class="p">{</span>
+    <span class="nt">-ms-flex-line-pack</span><span class="o">:</span> <span class="nt">start</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="nt">if</span> <span class="o">$</span><span class="nt">value</span> <span class="o">==</span> <span class="nt">flex-end</span> <span class="p">{</span>
+    <span class="nt">-ms-flex-line-pack</span><span class="o">:</span> <span class="nt">end</span><span class="o">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="nt">-ms-flex-line-pack</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+  <span class="p">}</span>
+  <span class="nt">align-content</span><span class="o">:</span> <span class="o">$</span><span class="nt">value</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+</div>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/jwhitlock">jwhitlock</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/siilime">siilime</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/hexalys">hexalys</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/rolfedh">rolfedh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/PushpitaPikuDey">PushpitaPikuDey</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/newswim">newswim</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jeremie">Jeremie</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/saki007ster">saki007ster</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/jwhitlock">jwhitlock</a>,
+                      <time datetime="2016-11-13T16:28:43-08:00">Nov 13, 2016, 4:28:43 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="French" value="/fr/docs/Web/CSS/Disposition_des_bo%C3%AEtes_flexibles_CSS/Mises_en_page_avancees_avec_flexbox">
+            Français (fr)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/%E5%BC%B9%E6%80%A7%E6%A1%86%E7%9A%84%E9%AB%98%E7%BA%A7%E5%B8%83%E5%B1%80">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Advanced_layouts_with_flexbox by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:54:36 GMT -->
+</body></html>

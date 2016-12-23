@@ -1,0 +1,1078 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/image-rendering by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:42:12 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>image-rendering</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering$json">
+  <link rel="canonical" href="image-rendering.html">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/image-rendering" title="image-rendering">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/Image-rendering" title="image-rendering">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/image-rendering" title="image-rendering">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/image-rendering" title="image-rendering">
+    
+      <link rel="alternate" hreflang="nl" href="https://developer.mozilla.org/nl/docs/Web/CSS/image-rendering" title="image-rendering">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/image-rendering" title="image-rendering">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="image-rendering">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering">
+  <meta name="twitter:title" content="image-rendering">
+  
+  <meta property="og:description" content="The image-rendering CSS property provides a hint to the browser about the algorithm it should use to scale images. It applies to the element itself as well as any images supplied in other properties for the element. It has no effect on non-scaled images.">
+  <meta name="description" content="The image-rendering CSS property provides a hint to the browser about the algorithm it should use to scale images. It applies to the element itself as well as any images supplied in other properties for the element. It has no effect on non-scaled images.">
+  <meta name="twitter:description" content="The image-rendering CSS property provides a hint to the browser about the algorithm it should use to scale images. It applies to the element itself as well as any images supplied in other properties for the element. It has no effect on non-scaled images.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/image-rendering" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fimage-rendering" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/image-rendering">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/image-rendering" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/Image-rendering" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/image-rendering" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/image-rendering" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/nl/docs/Web/CSS/image-rendering" title="Dutch">Nederlands (nl)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/image-rendering" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">image-rendering</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/mattbrundage" title="View profile: mattbrundage">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mattbrundage" data-src="../../../../../secure.gravatar.com/avatar/4498ae1597545e32b7eff4019971a32d6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mattbrundage</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/yisibl" title="View profile: yisibl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="yisibl" data-src="../../../../../secure.gravatar.com/avatar/5c4ad3dbe5a5074993a6e270c38636096c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">yisibl</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/wbamberg" title="View profile: wbamberg">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="wbamberg" data-src="../../../../../secure.gravatar.com/avatar/576b94c81f8ad97e58d63f12e5fdb00c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">wbamberg</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/stuart" title="View profile: stuart">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="stuart" data-src="../../../../../secure.gravatar.com/avatar/624fe53e6c12a6fd7cc6092e09c87d406c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">stuart</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Volker-E" title="View profile: Volker-E">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Volker-E" data-src="../../../../../secure.gravatar.com/avatar/843a280d4a66f976352066c815d727a56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Volker-E</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jpmedley" title="View profile: jpmedley">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jpmedley" data-src="../../../../../secure.gravatar.com/avatar/fde784135f738cc182672e703dea9a4b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jpmedley</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mreinstein" title="View profile: mreinstein">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mreinstein" data-src="../../../../../secure.gravatar.com/avatar/1bf9fda328ba3bac084f83bd829fadde6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mreinstein</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/myakura" title="View profile: myakura">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="myakura" data-src="../../../../../secure.gravatar.com/avatar/5053cd2607234c47d43959cc9430f1a56c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">myakura</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/paul.irish" title="View profile: paul.irish">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="paul.irish" data-src="../../../../../secure.gravatar.com/avatar/ffe68d6f71b225f7661d33f2a89082816c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">paul.irish</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/emersion" title="View profile: emersion">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="emersion" data-src="../../../../../secure.gravatar.com/avatar/1ce071dd3264c7d9f5d9c0b7137faa6b6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">emersion</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/EdShaw" title="View profile: EdShaw">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="EdShaw" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">EdShaw</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/SaschaNaz" title="View profile: SaschaNaz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="SaschaNaz" data-src="../../../../../secure.gravatar.com/avatar/f8c82bc9cbb037eb3f988371d941c5e86c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">SaschaNaz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ethertank" title="View profile: ethertank">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ethertank" data-src="../../../../../secure.gravatar.com/avatar/abac73ba2093b500bf7599c76d80280c6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ethertank</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/gabebear" title="View profile: gabebear">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="gabebear" data-src="../../../../../secure.gravatar.com/avatar/3636c744534d2351127ad83752692bce6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">gabebear</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/rchl" title="View profile: rchl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="rchl" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">rchl</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/meatmiracle" title="View profile: meatmiracle">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="meatmiracle" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">meatmiracle</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/brianblakely" title="View profile: brianblakely">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="brianblakely" data-src="../../../../../secure.gravatar.com/avatar/9481d4984e85f636fd5911554c4ef8856c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">brianblakely</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/brianloveswords" title="View profile: brianloveswords">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="brianloveswords" data-src="../../../../../secure.gravatar.com/avatar/50de5d0681e88e9f9fdb44ebb2995d346c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">brianloveswords</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/nimbu" title="View profile: nimbu">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="nimbu" data-src="../../../../../secure.gravatar.com/avatar/c64a99fbbc7785e6cf9588a8777ba0836c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">nimbu</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sephr" title="View profile: Sephr">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sephr" data-src="../../../../../secure.gravatar.com/avatar/f43206cf935c8a5d532285c0d67b20d16c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sephr</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/grantgalitz" title="View profile: grantgalitz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="grantgalitz" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">grantgalitz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/grendel" title="View profile: grendel">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="grendel" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">grendel</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Taken" title="View profile: Taken">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Taken" data-src="../../../../../secure.gravatar.com/avatar/b80232a8fdfe509a55ef7a34c41f030d6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Taken</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>image-rendering</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Examples" rel="internal">Examples</a><ol><li><a href="#Live_Examples" rel="internal">Live Examples</a><ol><li><a href="#image-rendering_auto" rel="internal">image-rendering: auto;</a></li><li><a href="#image-rendering_pixelated_(-ms-interpolation-mode_nearest-neighbor)" rel="internal">image-rendering: pixelated; (-ms-interpolation-mode: nearest-neighbor)</a></li><li><a href="#image-rendering_crisp-edges_(-webkit-optimize-contrast)" rel="internal">image-rendering: crisp-edges; (-webkit-optimize-contrast)</a></li></ol></li></ol></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a><ol><li><a href="#Notes" rel="internal">Notes</a></li></ol></li>
+                </ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section class="Quick_links" id="Quick_Links"><!-- --></section> <div class="notice experimental"> 
+    <p><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span> <strong>This is an experimental technology</strong><br>Because this technology's specification has not stabilized, check the <a href="#Browser_compatibility">compatibility table</a> for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes.</p> 
+</div></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>image-rendering</code></strong> <a title="CSS" href="../CSS.html">CSS</a> property provides a hint to the browser about the algorithm it should use to scale images. It applies to the element itself as well as any images supplied in other properties for the element. It has no effect on non-scaled images.</p>
+
+<p>For example, if the natural size of the image is<em> 100×100px </em>but the page author specifies its dimensions as <code>200×200px</code> (or <code>50×50px</code>), then the image will be upscaled (or downscaled) to the new dimensions using the specified algorithm. Scaling may also apply due to user interaction (zooming).</p>
+
+<p></p><table class="properties"><tbody><tr><th scope="row"><a href="initial_value.html">Initial value</a></th><td><code>auto</code></td></tr><tr><th scope="row">Applies to</th><td>all elements</td></tr><tr><th scope="row"><a href="inheritance.html">Inherited</a></th><td>yes</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="computed_value.html">Computed value</a></th><td>as specified</td></tr><tr><th scope="row">Animatable</th><td>no</td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table><p></p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush:css">image-rendering: auto;
+image-rendering: crisp-edges;
+image-rendering: pixelated;
+
+/* Global values */
+image-rendering: inherit;
+image-rendering: initial;
+image-rendering: unset;
+</pre>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt><code><strong>auto</strong></code></dt>
+ <dd>Default value, the image should be scaled with an algorithm that maximizes the appearance of the image. In particular, scaling algorithms that "smooth" colors are acceptable, such as bilinear interpolation. This is intended for images such as photos.&nbsp;Since version 1.9 (Firefox 3.0), Gecko uses<em> bilinear </em>resampling (high quality).</dd>
+</dl>
+
+<dl>
+</dl>
+
+<dl>
+ <dt><code><strong>crisp-edges</strong></code></dt>
+ <dd>The image must be scaled with an algorithm that preserves contrast and edges in the image, and which does not smooth colors or introduce blur to the image in the process. This is intended for images such as pixel art.</dd>
+ <dt><code><strong>pixelated</strong></code></dt>
+ <dd>When scaling the image up, the "nearest neighbor" or similar algorithm must be used, so that the image appears to be composed of large pixels. When scaling down, this is the same as 'auto'.</dd>
+</dl>
+
+<div class="note">The values&nbsp;<span style="display: none;" id="cke_bm_145S"> </span><code>optimizeQuality</code> and <code>optimizeSpeed</code> present in early draft (and coming from its SVG counterpart) are defined as synonyms for the <code>auto</code> value.</div>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox">auto <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> crisp-edges <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> pixelated</pre>
+
+<h2 id="Examples">Examples</h2>
+
+<pre class="brush:css;">/* applies to GIF and PNG images; avoids blurry edges */
+
+img[src$=".gif"], img[src$=".png"] {
+                  &nbsp;image-rendering: -moz-crisp-edges;         /* Firefox */
+                   image-rendering:   -o-crisp-edges;         /* Opera */
+                   image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+                   image-rendering: crisp-edges;
+                   -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+                 }
+
+</pre>
+
+<pre class="brush:css;">div { 
+        background: url(chessboard.gif) no-repeat 50% 50%;
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}</pre>
+
+<h3 id="Live_Examples">Live Examples</h3>
+
+<h4 id="image-rendering_auto">image-rendering: auto;</h4>
+
+<p style="image-rendering: auto;">78% <img src="../../../../../mdn.mozillademos.org/files/2766/squares.gif" style="height: 39px; width: 39px;" alt="squares.gif"> 100% <img src="../../../../../mdn.mozillademos.org/files/2766/squares.gif" style="height: 50px; width: 50px;" alt="squares.gif"> 138% <img src="../../../../../mdn.mozillademos.org/files/2766/squares.gif" style="height: 69px; width: 69px;" alt="squares.gif"> downsized <img src="../../../../../mdn.mozillademos.org/files/2767/hut.jpg" style="height: 89px; width: 89px;" alt="hut.jpg"> upsized <img src="../../../../../mdn.mozillademos.org/files/2765/blumen.jpg" style="height: 89px; width: 77px;" alt="blumen.jpg"></p>
+
+<h4 id="image-rendering_pixelated_(-ms-interpolation-mode_nearest-neighbor)">image-rendering: pixelated; (-ms-interpolation-mode: nearest-neighbor)</h4>
+
+<p style="-ms-interpolation-mode: nearest-neighbor; image-rendering: pixelated;">78% <img src="../../../../../mdn.mozillademos.org/files/2766/squares.gif" style="height: 39px; width: 39px;" alt="squares.gif"> 100% <img src="../../../../../mdn.mozillademos.org/files/2766/squares.gif" style="height: 50px; width: 50px;" alt="squares.gif"> 138% <img src="../../../../../mdn.mozillademos.org/files/2766/squares.gif" style="height: 69px; width: 69px;" alt="squares.gif"> downsized <img src="../../../../../mdn.mozillademos.org/files/2767/hut.jpg" style="height: 89px; width: 89px;" alt="hut.jpg"> upsized <img src="../../../../../mdn.mozillademos.org/files/2765/blumen.jpg" style="height: 89px; width: 77px;" alt="blumen.jpg"></p>
+
+<h4 id="image-rendering_crisp-edges_(-webkit-optimize-contrast)">image-rendering: crisp-edges; (-webkit-optimize-contrast)</h4>
+
+<p style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges;">78% <img src="../../../../../mdn.mozillademos.org/files/2766/squares.gif" style="height: 39px; width: 39px;" alt="squares.gif"> 100% <img src="../../../../../mdn.mozillademos.org/files/2766/squares.gif" style="height: 50px; width: 50px;" alt="squares.gif"> 138% <img src="../../../../../mdn.mozillademos.org/files/2766/squares.gif" style="height: 69px; width: 69px;" alt="squares.gif"> downsized <img src="../../../../../mdn.mozillademos.org/files/2767/hut.jpg" style="height: 89px; width: 89px;" alt="hut.jpg"> upsized <img src="../../../../../mdn.mozillademos.org/files/2765/blumen.jpg" style="height: 89px; width: 77px;" alt="blumen.jpg"></p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a lang="en" hreflang="en" href="https://drafts.csswg.org/css-images-3/#the-image-rendering" class="external">CSS Image Values and Replaced Content Module Level&nbsp;3<br><small lang="en-US">The definition of 'image-rendering' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<p>Though initially close from the SVG <code>image-rendering</code> property, the values are quite different now.</p>
+
+<h2 name="Browser_compatibility" id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari (WebKit)</th>
+  </tr>
+  <tr>
+   <td>Basic support (<code>auto</code>)</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>3.6 (1.9.2)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup><a href="#bc1">[1]</a></sup></td>
+   <td>11.60</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td><code>crisp-edges</code></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>3.6 (1.9.2)<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-moz' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-moz</a></span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>11.60<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-o' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-o</a></span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span> <sup>[2]</sup></td>
+  </tr>
+  <tr>
+   <td><code>pixelated</code></td>
+   <td>41.0</td>
+   <td><span style="color: #f00;">No&nbsp;support</span> (bug <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=856337" class="external">856337</a>)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>26.0</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span> <sup>[3]</sup></td>
+  </tr>
+  <tr>
+   <td><code>optimizeQuality</code>, <code>optimizeSpeed</code><span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>3.6 (1.9.2)</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>11.60</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE&nbsp;Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>41.0</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<h3 id="Notes">Notes</h3>
+
+<p><sup><a name="bc1">[1]</a></sup> Internet Explorer 7 and 8 supports the non-standard <code>-ms-interpolation-mode</code> property with two values (<code>bicubic</code> and <code>nearest-neighbor</code>):</p>
+
+<ul>
+ <li>applies only to images (JPG, GIF, PNG, ...)</li>
+ <li>in IE7 only for images without transparency</li>
+ <li>does not inherit</li>
+ <li>default value IE7:<code> nearest-neighbor</code> (low quality)</li>
+ <li>default value IE8:<code> bicubic</code> (high quality)</li>
+ <li>obsolete as of IE9</li>
+</ul>
+
+<p>[2] Supported with a non-standard name: <code>-webkit-optimize-contrast</code>.</p>
+
+<p>[3] WebKit Nightly support, see <a href="https://bugs.webkit.org/show_bug.cgi?id=146771" class="external">bug</a></p>
+
+<p>Canvas can provide a <a title="http://phrogz.net/tmp/canvas_image_zoom.html" href="http://phrogz.net/tmp/canvas_image_zoom.html" class="external">fallback solution for crisp-edge/optimize-contrast</a> through manual imageData manipulation.</p>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Image.html">CSS Image</a></li>
+      
+        <li><a href="../../tag/CSS%20Property.html">CSS Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Experimental">Experimental</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/NeedsMobileBrowserCompatibility">NeedsMobileBrowserCompatibility</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/SVG">SVG</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/mattbrundage">mattbrundage</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/yisibl">yisibl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/wbamberg">wbamberg</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/stuart">stuart</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Volker-E">Volker-E</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jpmedley">jpmedley</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mreinstein">mreinstein</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/myakura">myakura</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/paul.irish">paul.irish</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/emersion">emersion</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/EdShaw">EdShaw</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/SaschaNaz">SaschaNaz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/gabebear">gabebear</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/rchl">rchl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/meatmiracle">meatmiracle</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/brianblakely">brianblakely</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/brianloveswords">brianloveswords</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/nimbu">nimbu</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sephr">Sephr</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/grantgalitz">grantgalitz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/grendel">grendel</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Taken">Taken</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/mattbrundage">mattbrundage</a>,
+                      <time datetime="2016-06-16T12:05:24-07:00">Jun 16, 2016, 12:05:24 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Images.html">CSS Images</a></strong></li><li data-default-state="open"><a href="#"><strong>Guides</strong></a><ol><li><a title="Image sprites are used in numerous web apps where multiple images are used. Rather than include each image as a separate image file, it is much more memory and bandwidth-friendly to send them as a single image, so the number of HTTP requests is reduced." href="CSS_Images/Implementing_image_sprites_in_CSS.html">Implementing image sprites in CSS</a></li><li><a title="CSS gradients are new types of &lt;image&gt; added in the CSS3 Image Module. Using CSS gradients lets you display smooth transitions between two or more specified colors." href="/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients">Using CSS gradients</a></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a title="The image-orientation CSS property describes how to correct the default orientation of an image." href="image-orientation.html"><code>image-orientation</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><em><code>image-rendering</code></em></li><li><a title="The object-fit CSS property specifies how the contents of a replaced element should be fitted to the box established by its used height and width." href="object-fit.html"><code>object-fit</code></a></li><li><a title="The object-position property determines the alignment of the replaced element inside its box." href="object-position.html"><code>object-position</code></a></li></ol></li><li data-default-state="open"><a href="#"><strong>Data types</strong></a><ol><li><a title="The &lt;gradient&gt; CSS data type denotes a CSS &lt;image&gt; made of a progressive transition between two or more colors. A CSS gradient is not a CSS &lt;color&gt; but an image with no intrinsic dimensions; that is, it has no natural or preferred size, nor a preferred ratio. Its concrete size will match the one of the element it applies to." href="/en-US/docs/Web/CSS/gradient"><code>&lt;gradient&gt;</code></a></li><li><a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image"><code>&lt;image&gt;</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/image-rendering$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/image-rendering$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/image-rendering" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" value="/de/docs/Web/CSS/image-rendering">
+            Deutsch (de)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/Image-rendering">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/image-rendering">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/image-rendering">
+            한국어 (ko)
+          </option>
+          <option title="Dutch" value="/nl/docs/Web/CSS/image-rendering">
+            Nederlands (nl)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/image-rendering">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/image-rendering by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:42:16 GMT -->
+</body></html>

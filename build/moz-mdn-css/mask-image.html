@@ -1,0 +1,857 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/mask-image by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:43:19 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>mask-image</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image$json">
+  <link rel="canonical" href="mask-image.html">
+
+  
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/mask-image" title="mask-image">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/mask-image" title="mask-image">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="mask-image">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image">
+  <meta name="twitter:title" content="mask-image">
+  
+  <meta property="og:description" content="The mask-image CSS property sets the image that is used as mask layer for an element.">
+  <meta name="description" content="The mask-image CSS property sets the image that is used as mask layer for an element.">
+  <meta name="twitter:description" content="The mask-image CSS property sets the image that is used as mask layer for an element.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/mask-image" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fmask-image" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/mask-image">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/mask-image" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/mask-image" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">mask-image</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Siilwyn" title="View profile: Siilwyn">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Siilwyn" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Siilwyn</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/rolfedh" title="View profile: rolfedh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="rolfedh" data-src="../../../../../secure.gravatar.com/avatar/4d9e73208c9af39018924d0e67821a796c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">rolfedh</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>mask-image</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a rel="internal" href="#Summary">Summary</a></li><li><a rel="internal" href="#Syntax">Syntax</a><ol><li><a rel="internal" href="#Values">Values</a></li><li><a rel="internal" href="#Formal_syntax">Formal syntax</a></li></ol></li><li><a rel="internal" href="#Example">Example</a><ol><li><a rel="internal" href="#CSS_Content">CSS Content</a></li><li><a rel="internal" href="#HTML_Content">HTML Content</a></li></ol></li><li><a rel="internal" href="#Specifications">Specifications</a></li><li><a rel="internal" href="#Browser_compatibility">Browser compatibility</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section><div class="notice experimental"> 
+    <p><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span> <strong>This is an experimental technology</strong><br>Because this technology's specification has not stabilized, check the <a href="#Browser_compatibility">compatibility table</a> for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes.</p> 
+</div></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>mask-image</code></strong> <a href="../CSS.html">CSS</a> property sets the image that is used as mask layer for an element.</p>
+
+<p></p><table class="properties"><tbody><tr><th scope="row"><a href="initial_value.html">Initial value</a></th><td><code>none</code></td></tr><tr><th scope="row">Applies to</th><td>all elements; In SVG, it applies to container elements excluding the <a title="SVG allows graphical objects to be defined for later reuse. It is recommended that, wherever possible, referenced elements be defined inside of a &lt;defs&gt; element. Defining these elements inside of a &lt;defs&gt; element promotes understandability of the SVG content and thus promotes accessibility. Graphical elements defined in a &lt;defs&gt; element will not be directly rendered. You can use a &lt;use&gt; element to render those elements wherever you want on the viewport." href="/en-US/docs/Web/SVG/Element/defs"><code>&lt;defs&gt;</code></a> element and all graphics elements</td></tr><tr><th scope="row"><a href="inheritance.html">Inherited</a></th><td>no</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="computed_value.html">Computed value</a></th><td>as specified, but with URIs made absolute</td></tr><tr><th scope="row">Animation type</th><td>discrete</td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table><p></p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush:css">/* Keyword value */
+mask-image: none;
+
+/* &lt;mask-source&gt; value */
+mask-image: url(masks.svg#mask1);
+
+/* &lt;image&lt; values */
+mask-image: linear-gradient(rgba(0, 0, 0, 1.0), transparent);
+mask-image: image(url(mask.png), skyblue);
+
+/* Multiple values */
+mask-image: image(url(mask.png), skyblue), linear-gradient(rgba(0, 0, 0, 1.0), transparent);
+
+/* Global values */
+mask-image: inherit;
+mask-image: initial;
+mask-image: unset;
+</pre>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt><code>none</code></dt>
+ <dd>This keyword is interpreted as a transparent black image layer.</dd>
+ <dt><code>&lt;mask-source&gt;</code></dt>
+ <dd>A <a title="The &lt;url&gt; CSS data type denotes a pointer to a resource. It has no proper syntax and can only be expressed through the url() functional notation." href="/en-US/docs/Web/CSS/url"><code>&lt;url&gt;</code></a> reference to a <a title="In SVG, you can specify that any other graphics object or &lt;g&gt; element can be used as an alpha mask for compositing the current object into the background. A mask is defined with the &lt;mask&gt; element. A mask is used/referenced using the mask property." href="/en-US/docs/Web/SVG/Element/mask"><code>&lt;mask&gt;</code></a> or to a CSS image.</dd>
+ <dt><a title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree." href="/en-US/docs/Web/CSS/image"><code>&lt;image&gt;</code></a></dt>
+ <dd>An image value used as mask image layer.</dd>
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox"><a href="#mask-reference">&lt;mask-reference&gt;</a><a title="Hash mark" href="Value_definition_syntax.html#Hash_mark_()">#</a><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="mask-reference">&lt;mask-reference&gt;</span> = none <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="" href="image.html">&lt;image&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#mask-source">&lt;mask-source&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="image">&lt;image&gt;</span> = <a title="" href="url.html">&lt;url&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#image()">&lt;image()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#image-set()">&lt;image-set()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#element()">&lt;element()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#cross-fade()">&lt;cross-fade()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#gradient">&lt;gradient&gt;</a><br><span id="mask-source">&lt;mask-source&gt;</span> = <a title="" href="url.html">&lt;url&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="image()">&lt;image()&gt;</span> = image( <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> <a title="" href="image.html">&lt;image&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="" href="string.html">&lt;string&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a title="" href="color_value.html">&lt;color&gt;</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a>! )<br><span id="image-set()">&lt;image-set()&gt;</span> = image-set( <a href="#image-set-option">&lt;image-set-option&gt;</a><a title="Hash mark" href="Value_definition_syntax.html#Hash_mark_()">#</a> )<br><span id="element()">&lt;element()&gt;</span> = element( &lt;id-selector&gt; )<br><span id="cross-fade()">&lt;cross-fade()&gt;</span> = cross-fade( <a href="#cf-mixing-image">&lt;cf-mixing-image&gt;</a> , <a href="#cf-final-image">&lt;cf-final-image&gt;</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> )<br><span id="gradient">&lt;gradient&gt;</span> = <a href="#linear-gradient()">&lt;linear-gradient()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#repeating-linear-gradient()">&lt;repeating-linear-gradient()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#radial-gradient()">&lt;radial-gradient()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#repeating-radial-gradient()">&lt;repeating-radial-gradient()&gt;</a></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="color">&lt;color&gt;</span> = <a href="#rgb()">&lt;rgb()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#rgba()">&lt;rgba()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#hsl()">&lt;hsl()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#hsla()">&lt;hsla()&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> &lt;hex-color&gt; <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#named-color">&lt;named-color&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> currentcolor <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#deprecated-system-color">&lt;deprecated-system-color&gt;</a><br><span id="image-set-option">&lt;image-set-option&gt;</span> = <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> <a title="" href="image.html">&lt;image&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="" href="string.html">&lt;string&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a> <a title="" href="resolution.html">&lt;resolution&gt;</a><br><span id="cf-mixing-image">&lt;cf-mixing-image&gt;</span> = <a title="" href="percentage.html">&lt;percentage&gt;</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Double ampersand" href="Value_definition_syntax.html#Double_ampersand">&amp;&amp;</a> <a title="" href="image.html">&lt;image&gt;</a><br><span id="cf-final-image">&lt;cf-final-image&gt;</span> = <a title="" href="image.html">&lt;image&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="" href="color_value.html">&lt;color&gt;</a><br><span id="linear-gradient()">&lt;linear-gradient()&gt;</span> = linear-gradient( <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> <a title="Possible values: a number followed by'deg', 'grad', 'rad' or 'turn', like 2turn, 1.3rad, -60deg or 0grad." href="angle.html">&lt;angle&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> to <a href="#side-or-corner">&lt;side-or-corner&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a href="#color-stop-list">&lt;color-stop-list&gt;</a> )<br><span id="repeating-linear-gradient()">&lt;repeating-linear-gradient()&gt;</span> = repeating-linear-gradient( <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> <a title="Possible values: a number followed by'deg', 'grad', 'rad' or 'turn', like 2turn, 1.3rad, -60deg or 0grad." href="angle.html">&lt;angle&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> to <a href="#side-or-corner">&lt;side-or-corner&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a href="#color-stop-list">&lt;color-stop-list&gt;</a> )<br><span id="radial-gradient()">&lt;radial-gradient()&gt;</span> = radial-gradient( <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> <a href="#ending-shape">&lt;ending-shape&gt;</a> <a title="Double bar" href="Value_definition_syntax.html#Double_bar">||</a> <a href="#size">&lt;size&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> at <a title="" href="position_value.html">&lt;position&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a href="#color-stop-list">&lt;color-stop-list&gt;</a> )<br><span id="repeating-radial-gradient()">&lt;repeating-radial-gradient()&gt;</span> = repeating-radial-gradient( <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> <a href="#ending-shape">&lt;ending-shape&gt;</a> <a title="Double bar" href="Value_definition_syntax.html#Double_bar">||</a> <a href="#size">&lt;size&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> at <a title="" href="position_value.html">&lt;position&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> , <a href="#color-stop-list">&lt;color-stop-list&gt;</a> )</code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="rgb()">&lt;rgb()&gt;</span> = rgb( <a href="#rgb-component">&lt;rgb-component&gt;</a><a title="Hash mark" href="Value_definition_syntax.html#Hash_mark_()">#</a><a title="Curly braces" href="Value_definition_syntax.html#Curly_braces_(_)">{</a>3<a title="Curly braces" href="Value_definition_syntax.html#Curly_braces_(_)">}</a> )<br><span id="rgba()">&lt;rgba()&gt;</span> = rgba( <a href="#rgb-component">&lt;rgb-component&gt;</a><a title="Hash mark" href="Value_definition_syntax.html#Hash_mark_()">#</a><a title="Curly braces" href="Value_definition_syntax.html#Curly_braces_(_)">{</a>3<a title="Curly braces" href="Value_definition_syntax.html#Curly_braces_(_)">}</a> , <a href="#alpha-value">&lt;alpha-value&gt;</a> )<br><span id="hsl()">&lt;hsl()&gt;</span> = hsl( <a href="#hue">&lt;hue&gt;</a>, <a title="" href="percentage.html">&lt;percentage&gt;</a>, <a title="" href="percentage.html">&lt;percentage&gt;</a> )<br><span id="hsla()">&lt;hsla()&gt;</span> = hsla( <a href="#hue">&lt;hue&gt;</a>, <a title="" href="percentage.html">&lt;percentage&gt;</a>, <a title="" href="percentage.html">&lt;percentage&gt;</a>, <a href="#alpha-value">&lt;alpha-value&gt;</a> )<br><span id="named-color">&lt;named-color&gt;</span> = &lt;ident&gt;<br><span id="deprecated-system-color">&lt;deprecated-system-color&gt;</span> = ActiveBorder <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ActiveCaption <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> AppWorkspace <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> Background <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ButtonFace <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ButtonHighlight <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ButtonShadow <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ButtonText <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> CaptionText <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> GrayText <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> Highlight <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> HighlightText <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> InactiveBorder <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> InactiveCaption <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> InactiveCaptionText <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> InfoBackground <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> InfoText <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> Menu <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> MenuText <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> Scrollbar <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDDarkShadow <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDFace <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDHighlight <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDLightShadow <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ThreeDShadow <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> Window <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> WindowFrame <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> WindowText<br><span id="side-or-corner">&lt;side-or-corner&gt;</span> = <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> left <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> right <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a> <a title="Double bar" href="Value_definition_syntax.html#Double_bar">||</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> top <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> bottom <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><br><span id="color-stop-list">&lt;color-stop-list&gt;</span> = <a href="#color-stop">&lt;color-stop&gt;</a><a title="Curly braces" href="Value_definition_syntax.html#Curly_braces_(_)">{</a>2,}<br><span id="ending-shape">&lt;ending-shape&gt;</span> = circle <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> ellipse<br><span id="size">&lt;size&gt;</span> = closest-side <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> farthest-side <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> closest-corner <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> farthest-corner <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Possible values: a number followed by'em', 'ex', 'ch', 'rem', 'px', 'cm', 'mm', 'in', 'vh', 'vw', 'vmin', 'vmax', 'pt', 'pc' or 'px', like 3px, 1.5cm, -0.5em or 0" href="length.html">&lt;length&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#length-percentage">&lt;length-percentage&gt;</a><a title="Curly braces" href="Value_definition_syntax.html#Curly_braces_(_)">{</a>2<a title="Curly braces" href="Value_definition_syntax.html#Curly_braces_(_)">}</a><br><span id="position">&lt;position&gt;</span> = <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a><a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> left <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> center <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> right <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> top <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> bottom <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#length-percentage">&lt;length-percentage&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> left <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> center <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> right <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#length-percentage">&lt;length-percentage&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> top <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> center <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> bottom <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a href="#length-percentage">&lt;length-percentage&gt;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> center <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> left <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> right <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a> <a href="#length-percentage">&lt;length-percentage&gt;</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a> <a title="Double ampersand" href="Value_definition_syntax.html#Double_ampersand">&amp;&amp;</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> center <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">[</a> top <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> bottom <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a> <a href="#length-percentage">&lt;length-percentage&gt;</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a> <a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><a title="Brackets" href="Value_definition_syntax.html#Brackets">]</a><br></code></p><p style="font-family: Open Sans,Arial,sans-serif; margin: 10px 0 0 0;">where <br><code style="font-family: Consolas,Monaco,&quot;Andale Mono&quot;,monospace;"><span id="rgb-component">&lt;rgb-component&gt;</span> = <a title="" href="integer.html">&lt;integer&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="" href="percentage.html">&lt;percentage&gt;</a><br><span id="alpha-value">&lt;alpha-value&gt;</span> = <a title="" href="number.html">&lt;number&gt;</a><br><span id="hue">&lt;hue&gt;</span> = <a title="" href="number.html">&lt;number&gt;</a><br><span id="color-stop">&lt;color-stop&gt;</span> = <a title="" href="color_value.html">&lt;color&gt;</a> <a href="#length-percentage">&lt;length-percentage&gt;</a><a title="Question mark" href="Value_definition_syntax.html#Question_mark_()">?</a><br><span id="length-percentage">&lt;length-percentage&gt;</span> = <a title="Possible values: a number followed by'em', 'ex', 'ch', 'rem', 'px', 'cm', 'mm', 'in', 'vh', 'vw', 'vmin', 'vmax', 'pt', 'pc' or 'px', like 3px, 1.5cm, -0.5em or 0" href="length.html">&lt;length&gt;</a> <a title="Single bar" href="Value_definition_syntax.html#Single_bar">|</a> <a title="" href="percentage.html">&lt;percentage&gt;</a></code></p></pre>
+
+<h2 id="Example">Example</h2>
+
+<h3 id="CSS_Content">CSS Content</h3>
+
+<pre class="brush: css; highlight[5]">#masked {
+  width: 100px;
+  height: 100px;
+  background-color: #8cffa0;
+  mask-image: url(https://mdn.mozillademos.org/files/12676/star.svg);
+}
+</pre>
+
+<h3 id="HTML_Content">HTML Content</h3>
+
+<pre class="brush: html">&lt;div id="masked"&gt;&lt;/div&gt;
+</pre>
+
+<p><iframe width="100px" id="frame_Example" frameborder="0" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/mask-image%24samples/Exampled26b.html?revision=1127783" height="100px" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a hreflang="en" class="external" lang="en" href="https://drafts.fxtf.org/css-masking-1/#the-mask-image">CSS Masking Level&nbsp;1<br><small lang="en-US">The definition of 'mask-image' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Edge</th>
+   <th>Opera</th>
+   <th>Safari (WebKit)</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>1.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span><sup>[1]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[2]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+   <td>4.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span><sup>[3]</sup></td>
+  </tr>
+  <tr>
+   <td>Multiple mask images</td>
+   <td>1.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[2]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+   <td>4.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+  </tr>
+  <tr>
+   <td>SVG masks</td>
+   <td>8.0</td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[2]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+   <td>4.0<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE&nbsp;Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>2.1<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span><sup>[4]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[2]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>3.2<span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span><sup>[5]</sup></td>
+  </tr>
+  <tr>
+   <td>Multiple mask images</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[2]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+  </tr>
+  <tr>
+   <td>SVG masks</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span><sup>[2]</sup></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span><span title="prefix" class="inlineIndicator prefixBox prefixBoxInline"><a title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental" href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes">-webkit</a></span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] Implemented in version 8.0, Chrome initially only supported the <code>-webkit</code> prefixed versions of gradients as values. Later, support for the unprefixed versions was added.</p>
+
+<p>[2] This feature is not implemented yet. It is only available in Nightly and Dev Edition. See <a title="Ship CSS positioned mask support on beta &amp; release channels" class="external" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1251161">bug&nbsp;1251161</a>.</p>
+
+<p>[3] Implemented in version 4.0, Safari initially only supported the <code>-webkit</code> prefixed versions of gradients as values.</p>
+
+<p>[4] Android initially only supported the <code>-webkit</code> prefixed versions of gradients as values.</p>
+
+<p>[5] iOS Safari initially only supported the <code>-webkit</code> prefixed versions of gradients as values.</p>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Masks.html">CSS Masks</a></li>
+      
+        <li><a href="../../tag/CSS%20Property.html">CSS Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Experimental">Experimental</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/NeedsBrowserCompatibility">NeedsBrowserCompatibility</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/NeedsMobileBrowserCompatibility">NeedsMobileBrowserCompatibility</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Siilwyn">Siilwyn</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/rolfedh">rolfedh</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>,
+                      <time datetime="2016-10-06T03:54:51-07:00">Oct 6, 2016, 3:54:51 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li><li><strong><a href="CSS_Masks.html">CSS Masks</a></strong></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><a title="The mask property in CSS allows users to alter the visibility of an item by either partially or fully hiding it. This is accomplished by either masking or clipping the image at specific points." href="mask.html"><code>mask</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The mask-clip CSS property determines the area, which is affected by a mask. The painted content of an element must be restricted to this area." href="mask-clip.html"><code>mask-clip</code></a></li><li><span class="sidebar-icon"><span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></span><a title="The mask-composite CSS property represents a compositing operation used on the current mask layer with the mask layers below it." href="mask-composite.html"><code>mask-composite</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><em><code>mask-image</code></em></li><li><span class="sidebar-icon"><span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></span><a title="The mask-mode CSS property indicates whether the mask reference defined by mask-image is treated as a luminance or alpha mask." href="mask-mode.html"><code>mask-mode</code></a></li><li><a title="The mask-origin CSS property determines the origin of a mask." href="mask-origin.html"><code>mask-origin</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The mask-position CSS property sets the initial position, relative to the mask position layer defined by mask-origin for each defined mask image." href="mask-position.html"><code>mask-position</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The mask-repeat CSS property defines how mask images are repeated. A mask image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all." href="mask-repeat.html"><code>mask-repeat</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a title="The mask-size CSS property specifies the sizes of the mask images. The size of the image can be fully or partially constrained&nbsp;in order to preserve its intrinsic ratio." href="mask-size.html"><code>mask-size</code></a></li><li><a title="The CSS mask-type properties defines if a mask is used as a luminance or an alpha mask." href="mask-type.html"><code>mask-type</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/mask-image$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/mask-image$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/mask-image" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="French" value="/fr/docs/Web/CSS/mask-image">
+            Français (fr)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/mask-image">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/mask-image by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:43:20 GMT -->
+</body></html>

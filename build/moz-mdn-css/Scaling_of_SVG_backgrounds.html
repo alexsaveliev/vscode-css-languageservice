@@ -1,0 +1,822 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 01:05:01 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>Scaling of SVG backgrounds</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds$json">
+  <link rel="canonical" href="Scaling_of_SVG_backgrounds.html">
+
+  
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/Redimensionnement_arrière-plans_SVG" title="Redimensionnement d'arrière-plans SVG">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="Scaling of SVG backgrounds">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds">
+  <meta name="twitter:title" content="Scaling of SVG backgrounds">
+  
+  <meta property="og:description" content="Given the flexibility of SVG images, there's a lot to keep in mind when using them as background images with the background-image property, and even more to keep in mind when also scaling them using the background-size property. This article describes how scaling of SVG images is handled when using these properties.">
+  <meta name="description" content="Given the flexibility of SVG images, there's a lot to keep in mind when using them as background images with the background-image property, and even more to keep in mind when also scaling them using the background-size property. This article describes how scaling of SVG images is handled when using these properties.">
+  <meta name="twitter:description" content="Given the flexibility of SVG images, there's a lot to keep in mind when using them as background images with the background-image property, and even more to keep in mind when also scaling them using the background-size property. This article describes how scaling of SVG images is handled when using these properties.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/Scaling_of_SVG_backgrounds" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FScaling_of_SVG_backgrounds" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/Redimensionnement_arrière-plans_SVG" title="French">Français (fr)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">Scaling of SVG backgrounds</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/C.Bertolini" title="View profile: C.Bertolini">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="C.Bertolini" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">C.Bertolini</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>Scaling of SVG backgrounds</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-closed wiki-left-none">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#The_algorithm.2C_in_summary" rel="internal">The algorithm, in summary</a></li><li><a href="#Source_image_examples" rel="internal">Source image examples</a><ol><li><a href="#Dimensionless_and_proportionless" rel="internal">Dimensionless and proportionless</a></li><li><a href="#One_specified_dimension_and_proportionless" rel="internal">One specified dimension and proportionless</a></li><li><a href="#One_specified_dimension_with_intrinsic_ratio" rel="internal">One specified dimension with intrinsic ratio</a></li><li><a href="#No_width_or_height_with_intrinsic_ratio" rel="internal">No width or height with intrinsic ratio</a></li></ol></li><li><a href="#Scaling_examples" rel="internal">Scaling examples</a><ol><li><a href="#Specifying_fixed_lengths_for_both_dimensions" rel="internal">Specifying fixed lengths for both dimensions</a><ol><li><a href="#Source.3A_No_dimensions_or_intrinsic_ratio" rel="internal">Source: No dimensions or intrinsic ratio</a></li><li><a href="#Source.3A_One_specified_dimension.2C_no_intrinsic_ratio" rel="internal">Source: One specified dimension, no intrinsic ratio</a></li><li><a href="#Source.3A_One_specified_dimension_with_intrinsic_ratio" rel="internal">Source: One specified dimension with intrinsic ratio</a></li><li><a href="#Source.3A_No_specified_width_or_height_with_intrinsic_ratio" rel="internal">Source: No specified width or height with intrinsic ratio</a></li></ol></li><li><a href="#Using_contain_or_cover" rel="internal">Using contain or cover</a><ol><li><a href="#Source.3A_No_dimensions_or_intrinsic_ratio_2" rel="internal">Source: No dimensions or intrinsic ratio</a></li><li><a href="#Source.3A_One_specified_dimension.2C_no_intrinsic_ratio_2" rel="internal">Source: One specified dimension, no intrinsic ratio</a></li><li><a href="#Source.3A_One_specified_dimension_with_intrinsic_ratio_2" rel="internal">Source: One specified dimension with intrinsic ratio</a></li><li><a href="#Source.3A_No_dimensions_with_intrinsic_ratio" rel="internal">Source: No dimensions with intrinsic ratio</a></li></ol></li><li><a href="#Automatic_sizing_using_.22auto.22_for_both_dimensions" rel="internal">Automatic sizing using "auto" for both dimensions</a><ol><li><a href="#Source.3A_No_dimensions_or_intrinsic_ratio_3" rel="internal">Source: No dimensions or intrinsic ratio</a></li><li><a href="#Source.3A_One_dimension_and_no_intrinsic_ratio" rel="internal">Source: One dimension and no intrinsic ratio</a></li><li><a href="#Source.3A_One_dimension_and_an_intrinsic_ratio" rel="internal">Source: One dimension and an intrinsic ratio</a></li><li><a href="#Source.3A_No_fixed_dimensions_with_intrinsic_ratio" rel="internal">Source: No fixed dimensions with intrinsic ratio</a></li></ol></li><li><a href="#Using_.22auto.22_and_one_specific_length" rel="internal">Using "auto" and one specific length</a><ol><li><a href="#Source.3A_No_dimensions_or_intrinsic_ratio_4" rel="internal">Source: No dimensions or intrinsic ratio</a></li><li><a href="#Source.3A_One_specified_dimension_with_no_intrinsic_ratio" rel="internal">Source: One specified dimension with no intrinsic ratio</a></li><li><a href="#Source.3A_One_specified_dimension_with_intrinsic_ratio_3" rel="internal">Source: One specified dimension with intrinsic ratio</a></li><li><a href="#Source.3A_No_specified_dimensions_with_intrinsic_ratio" rel="internal">Source: No specified dimensions with intrinsic ratio</a></li></ol></li></ol></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-main wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                  <div class="warning warning-review">
+                    <p>
+                      This article needs a technical review. <a href="https://developer.mozilla.org/docs/MDN/Contribute/HowTo/Do_a_technical_review">How you can help.</a>
+                    </p>
+                  </div>
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p>Given the flexibility of SVG images, there's a lot to keep in mind when using them as background images with the <a href="background-image.html"><code>background-image</code></a> property, and even more to keep in mind when also scaling them using the <a href="background-size.html"><code>background-size</code></a> property. This article describes how scaling of SVG images is handled when using these properties.</p>
+<h2 id="The_algorithm.2C_in_summary">The algorithm, in summary</h2>
+<p>The algorithm can for the most part be summarized by these four rules. There are some edge cases that aren't covered by these rules, but this covers the majority of cases.</p>
+<ol>
+ <li>If <a href="background-size.html"><code>background-size</code></a> specifies a fixed dimension (that is, percentages and relative units are fixed by their context), that dimension wins.</li>
+ <li>If the image has an intrinsic ratio (that is, its width:height ratio is constant, such as 16:9, 4:3, 2.39:1, 1:1, and so forth), the rendered size preserves that ratio.</li>
+ <li>If the image specifies a size, and the size isn't modified by constrain or cover, that specified size wins.</li>
+ <li>If none of the above cases are met, the image is rendered at the same size as the background area.</li>
+</ol>
+<p>It's worth noting that the sizing algorithm only cares about the image's dimensions and proportions, or lack thereof. An SVG image with fixed dimensions will be treated just like a raster image of the same size.</p>
+<h2 id="Source_image_examples">Source image examples</h2>
+<p>Before diving in to look at the results of using different kinds of source images and seeing how they look when used with <a href="background-size.html"><code>background-size</code></a>, it would be helpful to look at a few example source images that have different dimensions and sizing settings.</p>
+<p>In each case, we show what the source image looks like rendered in a 150x150 box, and provide a link to the SVG source.</p>
+<h3 id="Dimensionless_and_proportionless">Dimensionless and proportionless</h3>
+<p>This image is both dimensionless and proportionless. It doesn't care what size it is, nor does it care about remaining at a particular aspect ratio. This would make a good gradient desktop background that would work regardless of your screen size and its aspect ratio.</p>
+<p><img alt="no-dimensions-or-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3465/no-dimensions-or-ratio.png" style=""></p>
+<p><a href="../../../../../mdn.mozillademos.org/files/3469/no-dimensions-or-ratio.svg" title="no-dimensions-or-ratio.svg">SVG source</a></p>
+<h3 id="One_specified_dimension_and_proportionless">One specified dimension and proportionless</h3>
+<p>This image specifies a width of 100 pixels but no height or intrinsic ratio. This is, basically, a thin strip of wallpaper that could be stretched across the entire height of a block.</p>
+<p><img alt="100px-wide-no-height-or-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3463/100px-wide-no-height-or-ratio.png"></p>
+<p><a href="../../../../../mdn.mozillademos.org/files/3468/100px-wide-no-height-or-ratio.svg" title="100px-wide-no-height-or-ratio.svg">SVG source</a></p>
+<h3 id="One_specified_dimension_with_intrinsic_ratio">One specified dimension with intrinsic ratio</h3>
+<p>This image specifies a 100 pixel height but no width. It also specifies an intrinsic aspect ratio of 3:4. This ensures that its width:height ratio is always 3:4, unless it's deliberately scaled to a disproportionate size (that is, by explicitly specifying both width and height that aren't of that ratio).</p>
+<p>This is very much like specifying a specific width and height, since once you have one dimension and a ratio, the other dimension is implied, but it's still a useful example.</p>
+<p><img alt="100px-height-3x4-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3462/100px-height-3x4-ratio.png"></p>
+<p><a href="../../../../../mdn.mozillademos.org/files/3467/100px-height-3x4-ratio.svg" title="100px-height-3x4-ratio.svg">SVG source</a></p>
+<h3 id="No_width_or_height_with_intrinsic_ratio">No width or height with intrinsic ratio</h3>
+<p>This image doesn't specify either a width or a height; instead, it specifies an intrinsic ratio of 1:1. Think of this like a program icon. It's always square, and is usable at any size, such as 32x32, 128x128, or 512x512, for example.</p>
+<p><img alt="no-dimensions-1x1-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3464/no-dimensions-1x1-ratio.png"></p>
+<p><a href="../../../../../mdn.mozillademos.org/files/3466/no-dimensions-1x1-ratio.svg" title="no-dimensions-1x1-ratio.svg">SVG source</a></p>
+<h2 id="Scaling_examples">Scaling examples</h2>
+<p>Now let's see some examples of what happens as we apply different scaling to these images. In each of the examples below, the enclosing rectangles are 300 pixels wide and 200 pixels tall. In addition, the backgrounds have <a href="background-repeat.html"><code>background-repeat</code></a> set to no-repeat for clarity.</p>
+<div class="note">
+ <strong>Note:</strong> The screenshots below show the <strong>expected</strong> rendering. Not all browsers currently render these correctly.</div>
+<h3 id="Specifying_fixed_lengths_for_both_dimensions">Specifying fixed lengths for both dimensions</h3>
+<p>If you use <a href="background-size.html"><code>background-size</code></a> to specify fixed lengths for both dimensions, those lengths are always used, per rule 1 above. In other words, the image will always get stretched to the dimensions you specify, regardless of whether or not the source image has specified its dimensions and/or aspect ratio.</p>
+<h4 id="Source.3A_No_dimensions_or_intrinsic_ratio">Source: No dimensions or intrinsic ratio</h4>
+<p>Given this CSS:</p>
+<pre>background: url(no-dimensions-or-ratio.svg);
+background-size: 125px 175px;
+</pre>
+<p>The rendered output would look like this:</p>
+<p><img alt="fixed-no-dimensions-or-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3473/fixed-no-dimensions-or-ratio.png" style=""></p>
+<h4 id="Source.3A_One_specified_dimension.2C_no_intrinsic_ratio">Source: One specified dimension, no intrinsic ratio</h4>
+<p>Given this CSS:</p>
+<pre>background: url(100px-wide-no-height-or-ratio.svg);
+background-size: 250px 150px;
+</pre>
+<p>The rendered output would look like this:</p>
+<p><img alt="fixed-100px-wide-no-height-or-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3471/fixed-100px-wide-no-height-or-ratio.png"></p>
+<h4 id="Source.3A_One_specified_dimension_with_intrinsic_ratio">Source: One specified dimension with intrinsic ratio</h4>
+<p>Given this CSS:</p>
+<pre>background: url(100px-height-3x4-ratio.svg);
+background-size: 275px 125px;
+</pre>
+<p>The rendered output would look like this:</p>
+<p><img alt="fixed-100px-height-3x4-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3470/fixed-100px-height-3x4-ratio.png"></p>
+<h4 id="Source.3A_No_specified_width_or_height_with_intrinsic_ratio">Source: No specified width or height with intrinsic ratio</h4>
+<p>Given this CSS:</p>
+<pre class="note">background: url(no-dimensions-1x1-ratio.svg);
+background-size: 250px 100px;
+</pre>
+<p>The rendered output would look like this:</p>
+<p><img alt="fixed-no-dimensions-1x1-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3472/fixed-no-dimensions-1x1-ratio.png" style=""></p>
+<h3 id="Using_contain_or_cover">Using contain or cover</h3>
+<p>Specifying <code>cover</code> for <a href="background-size.html"><code>background-size</code></a> makes the picture as small as possible while still covering the entire background area. <code>contain</code>, on the other hand, makes the image as large as possible while not being clipped by the background area.</p>
+<p>For an image with an intrinsic ratio, exactly one size matches the <code>cover</code>/fit criteria alone. But if there is no intrinsic ratio specified, <code>cover</code>/fit isn't sufficient, so the large/small constraints choose the resulting size.</p>
+<h4 id="Source.3A_No_dimensions_or_intrinsic_ratio_2">Source: No dimensions or intrinsic ratio</h4>
+<p>If an image doesn't specify either dimensions or an intrinsic ratio, neither rule 2 nor rule 3 apply, so rule 4 takes over: the background image is rendered covering the entire background area. This satisfies the largest-or-smallest constraint.</p>
+<pre>background: url(no-dimensions-or-ratio.svg);
+background-size: contain;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="no-dimensions-or-ratio-contain.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3479/no-dimensions-or-ratio-contain.png"></p>
+<h4 id="Source.3A_One_specified_dimension.2C_no_intrinsic_ratio_2">Source: One specified dimension, no intrinsic ratio</h4>
+<p>Similarly, if the image has one dimension specified but no intrinsic ratio, rule 4 applies, and the image is scaled to cover the entire background area.</p>
+<pre>background: url(100px-wide-no-height-or-ratio.svg);
+background-size: contain;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="100px-wide-no-height-or-ratio-contain.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3476/100px-wide-no-height-or-ratio-contain.png" style=""></p>
+<h4 id="Source.3A_One_specified_dimension_with_intrinsic_ratio_2">Source: One specified dimension with intrinsic ratio</h4>
+<p>Things change when you specify an intrinsic ratio. In this case, rule 1 isn't relevant, so rule 2 is applied: we try to preserve any intrinsic ratio (while respecting <code>contain</code> or <code>cover</code>). For example, preserving a 3:4 intrinsic aspect ratio for a 300x200 box with <code>contain</code> means drawing a 150x200 background.</p>
+<h5 id="contain_case">contain case</h5>
+<pre>background: url(100px-height-3x4-ratio.svg);
+background-size: contain;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="100px-height-3x4-ratio-contain.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3474/100px-height-3x4-ratio-contain.png"></p>
+<p>Notice how the entire image is rendered, fitting as best as possible into the box without clipping any of it away.</p>
+<h5 id="cover_case">cover case</h5>
+<pre>background: url(100px-height-3x4-ratio.svg);
+background-size: cover;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="100px-height-3x4-ratio-cover.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3475/100px-height-3x4-ratio-cover.png" style=""></p>
+<p>Here, the 3:4 ratio is preserved while still stretching the image to fill the entire box. That causes the bottom of the image to be clipped away.</p>
+<h4 id="Source.3A_No_dimensions_with_intrinsic_ratio">Source: No dimensions with intrinsic ratio</h4>
+<p>When using an image with no intrinsic dimensions but an intrinsic ratio, things work similarly.</p>
+<h5 id="contain_case_2">contain case</h5>
+<pre>background: url(no-dimensions-1x1-ratio.svg);
+background-size: contain;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="no-dimensions-1x1-ratio-contain.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3477/no-dimensions-1x1-ratio-contain.png"></p>
+<p>Notice that the image is sized to fit the smallest dimension while preserving the 1:1 aspect ratio.</p>
+<h5 id="cover_case_2">cover case</h5>
+<pre>background: url(no-dimensions-1x1-ratio.svg);
+background-size: cover;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="no-dimensions-1x1-ratio-cover.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3478/no-dimensions-1x1-ratio-cover.png"></p>
+<p>Here, the image is sized so that it fills the largest dimension. The 1:1 aspect ratio has been preserved, although with this source image, that can be difficult to see.</p>
+<h3 id="Automatic_sizing_using_.22auto.22_for_both_dimensions">Automatic sizing using "auto" for both dimensions</h3>
+<p>If <a href="background-size.html"><code>background-size</code></a> is set to <code>auto</code> or <code>auto auto</code>, rule 2 says that rendering must preserve any intrinsic ratio that's provided.</p>
+<h4 id="Source.3A_No_dimensions_or_intrinsic_ratio_3">Source: No dimensions or intrinsic ratio</h4>
+<p>When no intrinsic ratio or dimensions are specified by the source image, rule 4 takes effect, and the image is rendered to fill the background area.</p>
+<pre>background: url(no-dimensions-or-ratio.svg);
+background-size: auto auto;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="auto-no-dimensions-or-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3483/auto-no-dimensions-or-ratio.png"></p>
+<h4 id="Source.3A_One_dimension_and_no_intrinsic_ratio">Source: One dimension and no intrinsic ratio</h4>
+<p>If no intrinsic ratio is specified, but at least one dimension is specified, rule 3 takes effect, and we render the image obeying those dimensions.</p>
+<pre>background: url(100px-wide-no-height-or-ratio.svg);
+background-size: auto auto;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="auto-100px-wide-no-height-or-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3481/auto-100px-wide-no-height-or-ratio.png" style=""></p>
+<p>Note here that the width, which is specified in the source SVG at 100 pixels, is obeyed, while the height fills the background area since it's not specified (either explicitly or by an intrinsic ratio).</p>
+<h4 id="Source.3A_One_dimension_and_an_intrinsic_ratio">Source: One dimension and an intrinsic ratio</h4>
+<p>If we have an intrinsic ratio with a fixed dimension, that fixes both dimensions in place. Knowing one dimension and a ratio is, as has been mentioned already, the same as specifying both dimensions explicitly.</p>
+<pre>background: url(100px-height-3x4-ratio.svg);
+background-size: auto auto;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="auto-100px-height-3x4-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3480/auto-100px-height-3x4-ratio.png"></p>
+<p>Since this image has an explicit 100 pixel height, the 3:4 ratio explicitly sets its width at 75 pixels, so that's how it's rendered in the <code>auto</code> case.</p>
+<h4 id="Source.3A_No_fixed_dimensions_with_intrinsic_ratio">Source: No fixed dimensions with intrinsic ratio</h4>
+<p>When an intrinsic ratio is specified, but no dimensions, rule 4 is applied -- except that rule 2 also applies. The image is therefore rendered just like for the <code>contain</code> case.</p>
+<pre>background: url(no-dimensions-1x1-ratio.svg);
+background-size: auto auto;
+</pre>
+<p>The rendered output looks like this:</p>
+<p><img alt="auto-no-dimensions-1x1-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3482/auto-no-dimensions-1x1-ratio.png"></p>
+<h3 id="Using_.22auto.22_and_one_specific_length">Using "auto" and one specific length</h3>
+<p>Given rule 1, specified dimensions are always used, so we need to use our rules only to determine the second dimension.</p>
+<h4 id="Source.3A_No_dimensions_or_intrinsic_ratio_4">Source: No dimensions or intrinsic ratio</h4>
+<p>If the image has no dimensions or intrinsic ratio, rule 4 applies, and we use the background area's dimension to determine the value for the <code>auto</code> dimension.</p>
+<pre>background: url(no-dimensions-or-ratio.svg);
+background-size: auto 150px;
+</pre>
+<p><img alt="1auto-no-dimensions-or-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3486/1auto-no-dimensions-or-ratio.png" style=""></p>
+<p>Here, the width is determined using the background area's width per rule 4, while the height is the 140px specified in the CSS.</p>
+<h4 id="Source.3A_One_specified_dimension_with_no_intrinsic_ratio">Source: One specified dimension with no intrinsic ratio</h4>
+<p>If the image has one specified dimension but no intrinsic ratio, that specified dimension is used per rule 3 if that dimension is set to <code>auto</code> in the CSS.</p>
+<pre>background: url(100px-wide-no-height-or-ratio.svg);
+background-size: 200px auto;
+</pre>
+<p><img alt="100px-wide-no-height-or-ratio-length-auto.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3488/100px-wide-no-height-or-ratio-length-auto.png" style=""></p>
+<p>Here, the 200px specified in the CSS overrides the 100px width specified in the SVG, per rule 1. Since there's no intrinsic ratio or height provided, <code>auto</code> selects the height of the background area as the height for the rendered image.</p>
+<pre>background: url(100px-wide-no-height-or-ratio.svg);
+background-size: auto 125px;
+</pre>
+<p><img alt="100px-wide-no-height-or-ratio-auto-length.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3487/100px-wide-no-height-or-ratio-auto-length.png" style=""></p>
+<p>In this case, the width is specified as auto in the CSS, so the 100px width specified in the SVG is selected, per rule 3. The height is set at 125px in the CSS, so that is selected per rule 1.</p>
+<h4 id="Source.3A_One_specified_dimension_with_intrinsic_ratio_3">Source: One specified dimension with intrinsic ratio</h4>
+<p>When a dimension is specified, rule 1 applies that dimension from the SVG to the rendered background unless specifically overridden by the CSS. When an intrinsic ratio is also specified, that's used to determine the other dimension.</p>
+<pre>background: url(100px-height-3x4-ratio.svg);
+background-size: 150px auto;
+</pre>
+<p><img alt="1auto-100px-height-3x4-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3484/1auto-100px-height-3x4-ratio.png"></p>
+<p>In this case, we've overridden the height of the image in the CSS to be 150px, so rule 1 is applied. The intrinsic 3:4 aspect ratio then determines the width for the <code>auto</code> case.</p>
+<h4 id="Source.3A_No_specified_dimensions_with_intrinsic_ratio">Source: No specified dimensions with intrinsic ratio</h4>
+<p>If no dimensions are specified in the SVG, the specified dimension in the CSS is applied, then the intrinsic ratio is used to select the other dimension, per rule 2.</p>
+<pre>background: url(no-dimensions-1x1-ratio.svg);
+background-size: 150px auto;
+</pre>
+<p><img alt="1auto-no-dimensions-1x1-ratio.png" class="internal default" src="../../../../../mdn.mozillademos.org/files/3485/1auto-no-dimensions-1x1-ratio.png"></p>
+<p>The width is set by the CSS to 150px. The <code>auto</code> value for the height is computed using that width and the 1:1 aspect ratio to be 150px as well, resulting in the image above.</p>
+<h2 id="See_also">See also</h2>
+<ul>
+ <li><a href="background-size.html"><code>background-size</code></a></li>
+ <li>Blog post: <a class="external" href="http://whereswalden.com/2011/10/21/properly-resizing-vector-image-backgrounds/" title="http://whereswalden.com/2011/10/21/properly-resizing-vector-image-backgrounds/">Properly resizing vector image backgrounds</a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Background">Background</a></li>
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Guide">Guide</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Images">Images</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/SVG">SVG</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/C.Bertolini">C.Bertolini</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/C.Bertolini">C.Bertolini</a>,
+                      <time datetime="2014-07-02T06:32:40-07:00">Jul 2, 2014, 6:32:40 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="French" value="/fr/docs/Web/CSS/Redimensionnement_arri%C3%A8re-plans_SVG">
+            Français (fr)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 01:05:16 GMT -->
+</body></html>

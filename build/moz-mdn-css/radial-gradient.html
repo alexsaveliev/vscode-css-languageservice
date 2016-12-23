@@ -1,0 +1,1213 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:45:19 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>radial-gradient()</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient$json">
+  <link rel="canonical" href="radial-gradient.html">
+
+  
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/radial-gradient" title="radial-gradient()">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/radial-gradient" title="radial-gradient">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/radial-gradient" title="radial-gradient">
+    
+      <link rel="alternate" hreflang="pt-BR" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/radial-gradient" title="radial-gradient()">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/radial-gradient" title="radial-gradient()">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="radial-gradient()">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient">
+  <meta name="twitter:title" content="radial-gradient()">
+  
+  <meta property="og:description" content="The CSS radial-gradient() function creates an image which represents a gradient of colors radiating from an origin, the center of the gradient. The result of this function is an object of the CSS gradient data type.">
+  <meta name="description" content="The CSS radial-gradient() function creates an image which represents a gradient of colors radiating from an origin, the center of the gradient. The result of this function is an object of the CSS gradient data type.">
+  <meta name="twitter:description" content="The CSS radial-gradient() function creates an image which represents a gradient of colors radiating from an origin, the center of the gradient. The result of this function is an object of the CSS gradient data type.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/radial-gradient" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fradial-gradient" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/radial-gradient" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/radial-gradient" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/radial-gradient" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/radial-gradient" title="Portuguese (Brazilian)">Português (do&nbsp;Brasil) (pt-BR)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/radial-gradient" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">radial-gradient()</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/isiahmeadows" title="View profile: isiahmeadows">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="isiahmeadows" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">isiahmeadows</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Druzion" title="View profile: Druzion">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Druzion" data-src="../../../../../secure.gravatar.com/avatar/256946e794d4192b39969e78e30e80656c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Druzion</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Simplexible" title="View profile: Simplexible">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Simplexible" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Simplexible</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/wizAmit" title="View profile: wizAmit">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="wizAmit" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">wizAmit</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/slayslot" title="View profile: slayslot">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="slayslot" data-src="../../../../../secure.gravatar.com/avatar/e0726371728b6ee94c11e0848f54a6ee6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">slayslot</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mrstork" title="View profile: mrstork">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mrstork" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mrstork</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mrenty" title="View profile: mrenty">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mrenty" data-src="../../../../../secure.gravatar.com/avatar/c8f29bcf27d5ddaeb1164f24f42a3ba26c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mrenty</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Dholbert" title="View profile: Dholbert">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Dholbert" data-src="../../../../../secure.gravatar.com/avatar/cd9b85b2e112bd7941b21ad03f42604e6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Dholbert</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/chk1" title="View profile: chk1">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="chk1" data-src="../../../../../secure.gravatar.com/avatar/3ebdc7f1a4ea10ca2025fb96e4a005776c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">chk1</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/phistuck" title="View profile: phistuck">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="phistuck" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">phistuck</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Equal" title="View profile: Equal">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Equal" data-src="../../../../../secure.gravatar.com/avatar/d9fde8d3d0cabcd893721788e40b98246c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Equal</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/zant95" title="View profile: zant95">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="zant95" data-src="../../../../../secure.gravatar.com/avatar/58853e7648c37a19d4bd295347e7fc146c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">zant95</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ipestov" title="View profile: ipestov">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ipestov" data-src="../../../../../secure.gravatar.com/avatar/fbe811e3d4be35a62e1936b3f78c75896c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ipestov</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/katydecorah" title="View profile: katydecorah">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="katydecorah" data-src="../../../../../secure.gravatar.com/avatar/8ae1a6fbbef60082000a64c3725790836c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">katydecorah</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/roryokane" title="View profile: roryokane">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="roryokane" data-src="../../../../../secure.gravatar.com/avatar/5b2b185c814bb25f2f95a1152e58f0336c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">roryokane</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/aMoniker" title="View profile: aMoniker">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="aMoniker" data-src="../../../../../secure.gravatar.com/avatar/5d39d28c4d581d7353aa180ff424aec26c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">aMoniker</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/joyously" title="View profile: joyously">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="joyously" data-src="../../../../../secure.gravatar.com/avatar/aa8e5a3c12d13b8a152e6fb1862cb0b46c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">joyously</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter" title="View profile: enderandpeter">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="enderandpeter" data-src="../../../../../secure.gravatar.com/avatar/e272c067cd5fe72f2992b1667340956b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">enderandpeter</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/naena" title="View profile: naena">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="naena" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">naena</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/CutenessOverload" title="View profile: CutenessOverload">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="CutenessOverload" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">CutenessOverload</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/FredB" title="View profile: FredB">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="FredB" data-src="../../../../../secure.gravatar.com/avatar/ae5b9bd466dae65a6be4e9ff223d2b2a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">FredB</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/lstorset@opera" title="View profile: lstorset@opera">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="lstorset@opera" data-src="../../../../../secure.gravatar.com/avatar/c29b89910a5515bb410117eef9dacc7a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">lstorset@opera</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/estelle" title="View profile: estelle">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="estelle" data-src="../../../../../secure.gravatar.com/avatar/8e75de08afdc1e0fe9333e758d3c72496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">estelle</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kathyw" title="View profile: kathyw">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kathyw" data-src="../../../../../secure.gravatar.com/avatar/d5a90aa4f20e55029bb1a5f4beacb18c6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kathyw</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/nimbu" title="View profile: nimbu">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="nimbu" data-src="../../../../../secure.gravatar.com/avatar/c64a99fbbc7785e6cf9588a8777ba0836c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">nimbu</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/paul.irish" title="View profile: paul.irish">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="paul.irish" data-src="../../../../../secure.gravatar.com/avatar/ffe68d6f71b225f7661d33f2a89082816c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">paul.irish</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/cers" title="View profile: cers">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="cers" data-src="../../../../../secure.gravatar.com/avatar/f707fa6760548904567df014d76a4f046c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">cers</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Level" title="View profile: Level">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Level" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Level</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Roc" title="View profile: Roc">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Roc" data-src="../../../../../secure.gravatar.com/avatar/43d0fc3cd1a4969dfee1772696b5f60a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Roc</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Blizzard" title="View profile: Blizzard">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Blizzard" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Blizzard</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Mvent2" title="View profile: Mvent2">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Mvent2" data-src="../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Mvent2</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>radial-gradient()</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Syntax" rel="internal">Syntax</a><ol><li><a href="#Values" rel="internal">Values</a></li><li><a href="#Formal_syntax" rel="internal">Formal syntax</a></li></ol></li><li><a href="#Example_1" rel="internal">Example 1</a></li><li><a href="#Example_2" rel="internal">Example 2</a></li><li><a href="#Example_3" rel="internal">Example 3</a></li><li><a href="#Example_4" rel="internal">Example 4</a></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p></p><section id="Quick_Links" class="Quick_links"><!-- --></section><p></p>
+
+<p>The CSS <code>radial-gradient()</code> function creates an <a href="image.html" title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree."><code>&lt;image&gt;</code></a> which represents a gradient of colors radiating from an origin, the <em>center</em> of the gradient. The result of this function is an object of the CSS <a href="gradient.html" title="The &lt;gradient&gt; CSS data type denotes a CSS &lt;image&gt; made of a progressive transition between two or more colors. A CSS gradient is not a CSS &lt;color&gt; but an image with no intrinsic dimensions; that is, it has no natural or preferred size, nor a preferred ratio. Its concrete size will match the one of the element it applies to."><code>&lt;gradient&gt;</code></a> data type.</p>
+
+<p><img src="../../../../../mdn.mozillademos.org/files/3795/radial%20gradient.png" style="float: left; height: 176px; width: 396px;" alt="">Radial gradients are defined by their <em>center</em>, the <em>ending shape</em> contour and position, and <em>color stops</em>. The radial gradient consists, going from its center to its ending shape and potentially beyond, of successive uniformly-scaled concentric shapes, identical to the ending shape. Color stops are positioned on a <em>virtual gradient ray</em> going out horizontally of the center to the right. Percentages positioning of color stops are relative to the intersection between the ending shape and this gradient ray representing <code>100%</code>. Each shape is monocolor and defined by the color on the gradient ray it intersects.</p>
+
+<p>Ending shapes can only be <code>circle</code> or <code>ellipse</code>.</p>
+
+<p>Like any other gradient, a CSS radial gradient is not a CSS <a href="color_value.html" rel="custom"><code>&lt;color&gt;</code></a> but an image with <a href="image.html#no_intrinsic">no intrinsic dimensions</a>, i. e. it has no natural or preferred size, nor ratio. Its concrete size will match the one of the element it applies to.</p>
+
+<p>The <code>radial-gradient</code> function does not allow repeating gradients. For such a functionality, use the CSS <a href="repeating-radial-gradient.html" title="This works similarly to the standard radial gradients as described by radial-gradient(), but it automatically repeats the color stops infinitely in both directions, with their positions shifted by multiples of the difference between the last color stop's position and the first one's position."><code>repeating-radial-gradient()</code></a> function.</p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush: css">// Definition of the ending shape
+radial-gradient( circle, … )                /* Synonym of radial-gradient( circle farthest-corner, … ) */
+radial-gradient( ellipse, … )               /* Synonym of radial-gradient( ellipse farthest-corner, … ) */
+radial-gradient( <em>&lt;extent-keyword&gt;</em>, … )      /* It draws a circle */
+radial-gradient( circle <em>radius</em>, … )         /* A centered circle of the given length. It can't be a percentage */
+radial-gradient( ellipse <em>x-axis</em> <em>y-axis</em>, … ) /* The two semi-major axes are given, horizontal, then vertical */
+
+// Definition of the position of the shape
+radial-gradient ( … at &lt;position&gt;, … )
+
+// Definition of the color stops
+radial-gradient ( …, &lt;color-stop&gt;, … )
+radial-gradient ( …, &lt;color-stop&gt;, &lt;color-stop&gt; )</pre>
+
+<h3 id="Values">Values</h3>
+
+<dl>
+ <dt><code>&lt;position&gt;</code></dt>
+ <dd>A <a href="position_value.html" title="The &lt;position&gt; CSS data type denotes a coordinate in a 2D space used to set a location relative to a box."><code>&lt;position&gt;</code></a>, interpreted in the same way as <a href="background-position.html" title="The background-position CSS property sets the initial position for each defined background image, relative to the background position layer defined by background-origin."><code>background-position</code></a> or <a href="transform-origin.html" title="The transform-origin property lets you modify the origin for transformations of an element. For example, the transform-origin of the rotate() function is the centre of rotation. (This property is applied by first translating the element by the negated value of the property, then applying the element's transform, then translating by the property value.)"><code>transform-origin</code></a>. If omitted, the default is <code>center</code>.</dd>
+ <dt><code>&lt;shape&gt;</code></dt>
+ <dd>The gradient's shape. This is one of <code>circle</code> (meaning that the gradient's shape is a circle with constant radius) or <code>ellipse</code> (meaning that the shape is an axis-aligned ellipse). The default value is <code>ellipse</code>.</dd>
+ <dt><code>&lt;color-stop&gt;</code></dt>
+ <dd>Representing a fixed color at a precise position, this value is composed by a <a href="color_value.html" title="The &lt;color&gt; CSS data type denotes a color in the sRGB color space. A color can be described in any of these ways:"><code>&lt;color&gt;</code></a> value, followed by an optional stop position (either a <a href="percentage.html" title="The &lt;percentage&gt; CSS data types represent a percentage value. Many CSS properties can take percentage values, often to define sizes in terms of parent objects. Percentages are formed by a &lt;number&gt; immediately followed by the percentage sign %. Just as is the case with all other units in CSS, there isn't a space between the '%' and the number."><code>&lt;percentage&gt;</code></a> or a <a href="length.html" title="The &lt;length&gt; CSS data type denotes distance measurements. It is a &lt;number&gt; immediately followed by a length unit (px, em, pc, in, mm, …). Like for any CSS dimension, there is no space between the unit literal and the number.&nbsp;The length unit is optional after the &lt;number&gt; 0."><code>&lt;length&gt;</code></a> along the virtual gradient ray). A percentage of <code>0%</code>, or a length of <code>0</code>, represents the center of the gradient, the value <code>100%</code> of the intersection of the ending shape with the virtual gradient ray. Percentage values in-between are linearly positioned on the gradient ray.</dd>
+ <dt><code>&lt;extent-keyword&gt;</code></dt>
+ <dd>Keywords describing how big the ending shape must be. The possible keywords are:</dd>
+ <dd>
+ <table class="standard-table">
+  <tbody>
+   <tr>
+    <th>Constant</th>
+    <th>Description</th>
+   </tr>
+   <tr>
+    <td><code>closest-side</code></td>
+    <td>The gradient's ending shape meets the side of the box closest to its center (for circles) or meets both the vertical and horizontal sides closest to the center (for ellipses).</td>
+   </tr>
+   <tr>
+    <td><code>closest-corner</code></td>
+    <td>The gradient's ending shape is sized so it exactly meets the closest corner of the box from its center.</td>
+   </tr>
+   <tr>
+    <td><code>farthest-side</code></td>
+    <td>Similar to closest-side, except the ending shape is sized to meet the side of the box farthest from its center (or vertical and horizontal sides).</td>
+   </tr>
+   <tr>
+    <td><code>farthest-corner</code></td>
+    <td>The gradient's ending shape is sized so it exactly meets the farthest corner of the box from its center.</td>
+   </tr>
+  </tbody>
+ </table>
+ Early drafts included other keywords (<code>cover</code> and <code>contain</code>) as synonyms of the standard <span class="st"><code>farthest-corner</code></span> and <code>closest-side</code> respectively. Use the standard keywords only, as some implementations have already dropped those older variants.</dd>
+</dl>
+
+<h3 id="Formal_syntax">Formal syntax</h3>
+
+<pre class="syntaxbox"><code>radial-gradient(
+&nbsp; [ [ circle || <a href="length.html">&lt;length&gt;</a> ]                         [ at <a href="position_value.html">&lt;position&gt;</a> ]? , |
+&nbsp;   [ ellipse || [ <a href="length.html">&lt;length&gt;</a> | <a href="percentage.html">&lt;percentage&gt;</a> ]{2} ]  [ at <a href="position_value.html">&lt;position&gt;</a> ]? , |
+    [ [ circle | ellipse ] || &lt;extent-keyword&gt; ]   [ at <a href="position_value.html">&lt;position&gt;</a> ]? , |
+&nbsp;   at <a href="position_value.html">&lt;position&gt;</a> ,
+&nbsp; ]?
+  &lt;color-stop&gt; [ , &lt;color-stop&gt; ]+
+)
+where &lt;extent-keyword&gt; = closest-corner | closest-side | farthest-corner | farthest-side
+  and<code> &lt;color-stop&gt;     = &lt;color&gt; [ &lt;percentage&gt; | &lt;length&gt; ]?</code> 
+</code></pre>
+
+<h2 name="Example_1" id="Example_1">Example 1</h2>
+
+<p>Using the following CSS we can get an ellipse background in the <code>farthest-corner</code> at <code>45px 45px</code>, changing color from Turquoise (<code>#00FFFF</code>), to White, to Blue (<code>#0000FF</code>):</p>
+
+<pre class="brush: css">body {
+  width: 100vh;
+  height: 100vh;
+  background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #00FFFF 0%, rgba(0, 0, 255, 0) 50%, #0000FF 95%);
+} </pre>
+
+<p><iframe frameborder="0" id="frame_Example_1" class="live-sample-frame sample-code-frame" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/radial-gradient%24samples/Example_117cb.html?revision=1106163"></iframe></p>
+
+<h2 name="Example_2" id="Example_2">Example 2</h2>
+
+<p>This will procude an ellipse background in the <code>farthest-corner</code> at <code>470px 45px</code>, changing color from Yellow (<code>#FFFF80</code>), to Pale Maroon, to Pale Blue (<code>#E6E6FF</code>):</p>
+
+<pre class="brush: css">body {
+  width: 100vh;
+  height: 100vh;
+  background-image: radial-gradient(ellipse farthest-corner at 470px 47px , #FFFF80 20%, rgba(204, 153, 153, 0.4) 30%, #E6E6FF 60%);
+}</pre>
+
+<p><iframe frameborder="0" id="frame_Example_2" class="live-sample-frame sample-code-frame" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/radial-gradient%24samples/Example_217cb.html?revision=1106163"></iframe></p>
+
+<h2 name="Example_3" id="Example_3">Example 3</h2>
+
+<p>This will procude an ellipse background in the <code>farthest-corner</code> at <code>45px 45px, </code>changing color from Red (<code>#FF0000</code>) to Blue (<code>#0000FF</code>):</p>
+
+<pre class="brush: css">body {
+  width: 100vh;
+  height: 100vh;
+  background-image: radial-gradient(farthest-corner at 45px 45px , #FF0000 0%, #0000FF 100%);
+}</pre>
+
+<p><iframe frameborder="0" id="frame_Example_3" class="live-sample-frame sample-code-frame" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/radial-gradient%24samples/Example_317cb.html?revision=1106163"></iframe></p>
+
+<h2 name="Example_4" id="Example_4">Example 4</h2>
+
+<p>This will procude a fuzzy circle with a <code>16px</code> radius:</p>
+
+<pre class="brush: css">body {
+  width: 100vh;
+  height: 100vh;
+  background-image:  radial-gradient(16px at 60px 50% , #000000 0%, #000000 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px); 
+} </pre>
+
+<p><iframe frameborder="0" id="frame_Example_4" class="live-sample-frame sample-code-frame" src="../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/radial-gradient%24samples/Example_417cb.html?revision=1106163"></iframe></p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-images-3/#radial-gradients" class="external" lang="en" hreflang="en">CSS Image Values and Replaced Content Module Level&nbsp;3<br><small lang="en-US">The definition of 'radial-gradients()' in that specification.</small></a></td>
+   <td><span class="spec-CR">Candidate Recommendation</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Firefox (Gecko)</th>
+   <th>Chrome</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support (on <a href="background.html" title="The background CSS property is a shorthand for setting the individual background values in a single place in the style sheet. background can be used to set the values for one or more of: background-clip, background-color, background-image, background-origin, background-position, background-repeat, background-size, and background-attachment."><code>background</code></a> and <a href="background-image.html" title="The CSS background-image property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user."><code>background-image</code></a>)</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/3.6" title="Released on 2010-01-21.">3.6</a> (1.9.2)<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-moz' as this browser considers it experimental">-moz</a></span><sup>[1]</sup><br>
+    <a href="https://developer.mozilla.org/en-US/Firefox/Releases/16" title="Released on 2012-10-09.">16</a> (16)</td>
+   <td>10.0 (534.16)<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><sup>[2]</sup></td>
+   <td>10.0<sup>[3]</sup></td>
+   <td>11.60<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-o' as this browser considers it experimental">-o</a></span></td>
+   <td>5.1<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><sup>[2]</sup></td>
+  </tr>
+  <tr>
+   <td>On <a href="border-image.html" title="The border-image CSS property allows drawing an image on the borders of elements. This makes drawing complex looking widgets much simpler than it has been and removes the need for nine boxes in some cases. The border-image is used instead of the border styles given by the border-style properties. Though the specification requires that border-style must be present if border-image is used, some browsers many not implement this."><code>border-image</code></a></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/29" title="Released on 2014-04-29.">29</a> (29)</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td>On any other property that accept <a href="image.html" title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree."><code>&lt;image&gt;</code></a></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td><a href="http://www.webkit.org/blog/175/introducing-css-gradients/" class="external">Legacy webkit syntax</a> <span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>3<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><sup>[2]</sup></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>4.0<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><sup>[2]</sup></td>
+  </tr>
+  <tr>
+   <td><code>at</code> syntax (final standard syntax)</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/10" title="Released on 2012-01-31.">10</a> (10)<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-moz' as this browser considers it experimental">-moz</a></span><sup>[1]</sup><br>
+    <a href="https://developer.mozilla.org/en-US/Firefox/Releases/16" title="Released on 2012-10-09.">16</a> (16)<sup>[4]</sup></td>
+   <td>26</td>
+   <td>10.0</td>
+   <td>11.60<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-o' as this browser considers it experimental">-o</a></span><sup>[2]</sup><br>
+    2.12</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td>Interpolation hints (a percent without a color)</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/36" title="Released on 2015-02-24.">36</a> (36)</td>
+   <td>40</td>
+   <td>&nbsp;</td>
+   <td>27</td>
+   <td>&nbsp;</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support (on <a href="background.html" title="The background CSS property is a shorthand for setting the individual background values in a single place in the style sheet. background can be used to set the values for one or more of: background-clip, background-color, background-image, background-origin, background-position, background-repeat, background-size, and background-attachment."><code>background</code></a> and <a href="background-image.html" title="The CSS background-image property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user."><code>background-image</code></a>)</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>1.0 (1.9.2)<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-moz' as this browser considers it experimental">-moz</a></span><sup>[1]</sup><br>
+    16.0 (16)</td>
+   <td>10</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td>On <a href="border-image.html" title="The border-image CSS property allows drawing an image on the borders of elements. This makes drawing complex looking widgets much simpler than it has been and removes the need for nine boxes in some cases. The border-image is used instead of the border styles given by the border-style properties. Though the specification requires that border-style must be present if border-image is used, some browsers many not implement this."><code>border-image</code></a></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td>29.0 (29)</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td>On any other property that accept <a href="image.html" title="The &lt;image&gt; CSS data type represents a 2D image. There are two kinds of images in CSS: plain static images, often referenced using a URL, and dynamically-generated images like gradients or representations of parts of the tree."><code>&lt;image&gt;</code></a></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+  </tr>
+  <tr>
+   <td><a href="http://www.webkit.org/blog/175/introducing-css-gradients/" class="external">Legacy webkit syntax</a> <span title="This API has not been standardized."><i class="icon-warning-sign"> </i></span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+  <tr>
+   <td><code>at</code> syntax (final standard syntax)</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td>10.0 (10)<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-moz' as this browser considers it experimental">-moz</a></span><sup>[1]</sup><br>
+    16.0 (16)</td>
+   <td>10</td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+   <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] Firefox 3.6 implemented, prefixed, an early syntax. Before Firefox 36, Gecko didn't apply gradient on the pre-multiplied color space, leading to shade of grey unexpectedly appearing when used with transparency. Since Firefox 42, the prefixed version of gradients can be disabled by setting <code>layout.css.prefixes.gradients</code> to <code>false</code>.</p>
+
+<p>[2] Webkit implemented, prefixed, an early syntax. WebKit since 528 supports the legacy <a href="https://developer.apple.com/library/safari/documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Gradients/Gradient.html#//apple_ref/doc/uid/TP40008032-CH10-SW34" class="external"><code>-webkit-gradient(radial,…)</code> function</a>. See also their <a href="https://developer.apple.com/library/safari/#documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Gradients/Gradient.html#//apple_ref/doc/uid/TP40008032-CH10-SW15" class="external">current support</a> for radial gradients.</p>
+
+<p>[3] Internet Explorer 5.5 through 9.0 supports proprietary <a href="http://msdn.microsoft.com/en-us/library/ms532997(VS.85,loband).aspx" class="external"><code>filter: progid:DXImageTransform.Microsoft.Gradient()</code> filter</a>.</p>
+
+<p>[4] In addition to the unprefixed support, Gecko 44.0 (Firefox 44.0 / Thunderbird 44.0 / SeaMonkey 2.41) added support for a <code>-webkit</code> prefixed version of the function for web compatibility reasons behind the preference <code>layout.css.prefixes.webkit</code>, defaulting to <code>false</code>. Since Gecko 49.0 (Firefox 49.0 / Thunderbird 49.0 / SeaMonkey 2.46) the preference defaults to <code>true</code>.</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="CSS_Images/Using_CSS_gradients.html">Using CSS gradients</a>, <a href="repeating-radial-gradient.html" title="This works similarly to the standard radial gradients as described by radial-gradient(), but it automatically repeats the color stops infinitely in both directions, with their positions shifted by multiples of the difference between the last color stop's position and the first one's position."><code>repeating-radial-gradient()</code></a>, <a href="linear-gradient.html" title="The CSS linear-gradient() function creates an &lt;image&gt; which represents a linear gradient of colors. The result of this function is an object of the CSS &lt;gradient&gt; data type. Like any other gradient, a CSS linear gradient is not a CSS &lt;color&gt; but an image with no intrinsic dimensions; that is, it has neither natural or preferred size, nor ratio. Its concrete size will match the size&nbsp;of the element it applies to."><code>linear-gradient()</code></a></li>
+ <li>WebKit's original proposal: <a href="http://webkit.org/blog/175/introducing-css-gradients/" class="external">http://webkit.org/blog/175/introducing-css-gradients/</a></li>
+ <li>WebKit's new implementation: <a href="http://webkit.org/blog/1424/css3-gradients/" class="external">http://webkit.org/blog/1424/css3-gradients/</a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Function.html">CSS Function</a></li>
+      
+        <li><a href="../../tag/CSS%20Image.html">CSS Image</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Graphics">Graphics</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Layout">Layout</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Web">Web</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/isiahmeadows">isiahmeadows</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Druzion">Druzion</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Simplexible">Simplexible</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/wizAmit">wizAmit</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/slayslot">slayslot</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mrstork">mrstork</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mrenty">mrenty</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Dholbert">Dholbert</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/chk1">chk1</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/phistuck">phistuck</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Equal">Equal</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/zant95">zant95</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ipestov">ipestov</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/katydecorah">katydecorah</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/roryokane">roryokane</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/aMoniker">aMoniker</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/joyously">joyously</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter">enderandpeter</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/naena">naena</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/CutenessOverload">CutenessOverload</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/lstorset@opera">lstorset@opera</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/estelle">estelle</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kathyw">kathyw</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/nimbu">nimbu</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/paul.irish">paul.irish</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/cers">cers</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Level">Level</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Roc">Roc</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Blizzard">Blizzard</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Mvent2">Mvent2</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>,
+                      <time datetime="2016-08-16T15:54:39-07:00">Aug 16, 2016, 3:54:39 PM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/radial-gradient$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/radial-gradient$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/radial-gradient" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="Spanish" value="/es/docs/Web/CSS/radial-gradient">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/radial-gradient">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/radial-gradient">
+            日本語 (ja)
+          </option>
+          <option title="Portuguese (Brazilian)" value="/pt-BR/docs/Web/CSS/radial-gradient">
+            Português (do&nbsp;Brasil) (pt-BR)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/radial-gradient">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:45:28 GMT -->
+</body></html>

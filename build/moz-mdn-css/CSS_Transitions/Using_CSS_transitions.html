@@ -1,0 +1,2232 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:48:50 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>Using CSS transitions</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions$json">
+  <link rel="canonical" href="Using_CSS_transitions.html">
+
+  
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/Transiciones_de_CSS" title="Transiciones de CSS">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Transitions/Utiliser_transitions_CSS" title="Utiliser les transitions CSS">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" title="CSS transition の使用">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" title="CSS 트랜지션 사용하기">
+    
+      <link rel="alternate" hreflang="ro" href="https://developer.mozilla.org/ro/docs/Web/CSS/CSS_Transitions/transitions_in_css" title="Cum folosim transitions in CSS">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" title="Использование CSS переходов">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" title="使用 CSS transitions">
+    
+      <link rel="alternate" hreflang="zh-TW" href="https://developer.mozilla.org/zh-TW/docs/CSS_轉場" title="CSS 轉場">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="Using CSS transitions">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">
+  <meta name="twitter:title" content="Using CSS transitions">
+  
+  <meta property="og:description" content="CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.">
+  <meta name="description" content="CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.">
+  <meta name="twitter:description" content="CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/CSS_Transitions/Using_CSS_transitions" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FCSS_Transitions%2FUsing_CSS_transitions" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/Transiciones_de_CSS" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Transitions/Utiliser_transitions_CSS" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ro/docs/Web/CSS/CSS_Transitions/transitions_in_css" title="Romanian">Română (ro)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-TW/docs/CSS_轉場" title="Chinese (Traditional)">正體中文 (繁體) (zh-TW)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS_Transitions.html" rel="v:url" property="v:title">CSS Transitions</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">Using CSS transitions</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors" data-has-hidden="1">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sheppy" title="View profile: Sheppy">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sheppy" data-src="../../../../../../secure.gravatar.com/avatar/945076feb88f2d7003891ffbf06f32bf6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sheppy</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/andrewhl" title="View profile: andrewhl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="andrewhl" data-src="../../../../../../secure.gravatar.com/avatar/2aba1afe8cd4285ab80dddf74bb4e5856c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">andrewhl</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/jsx" title="View profile: jsx">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jsx" data-src="../../../../../../secure.gravatar.com/avatar/8cc61d4e2dc63e75976a334348d473bc6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jsx</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/LongBu" title="View profile: LongBu">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="LongBu" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">LongBu</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/LeekAnarchism" title="View profile: LeekAnarchism">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="LeekAnarchism" data-src="../../../../../../secure.gravatar.com/avatar/31e956d7464ea31044a066d3fb1766e86c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">LeekAnarchism</noscript></a>
+                </li>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/teoli" title="View profile: teoli">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="teoli" data-src="../../../../../../secure.gravatar.com/avatar/d0d90148e08e3b64ccf75c46f31442c56c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">teoli</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/hweeks" title="View profile: hweeks">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="hweeks" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">hweeks</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jonankabigumira" title="View profile: jonankabigumira">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jonankabigumira" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jonankabigumira</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Flimm" title="View profile: Flimm">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Flimm" data-src="../../../../../../secure.gravatar.com/avatar/936383b387d6cc6d51279e429e5d7cd96c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Flimm</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/victormiguez" title="View profile: victormiguez">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="victormiguez" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">victormiguez</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/cvrebert" title="View profile: cvrebert">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="cvrebert" data-src="../../../../../../secure.gravatar.com/avatar/1432b541cac41e85e190050a5361b3966c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">cvrebert</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/aziz_shaik" title="View profile: aziz_shaik">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="aziz_shaik" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">aziz_shaik</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ChrisL" title="View profile: ChrisL">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ChrisL" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ChrisL</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/amitabha197" title="View profile: amitabha197">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="amitabha197" data-src="../../../../../../secure.gravatar.com/avatar/db120a6c3f973ebba7252d7bea55870b6c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">amitabha197</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/tagawa" title="View profile: tagawa">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="tagawa" data-src="../../../../../../secure.gravatar.com/avatar/b84ad00e61a0d135257b794bab1e55c66c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">tagawa</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jeremie" title="View profile: Jeremie">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jeremie" data-src="../../../../../../secure.gravatar.com/avatar/ea74cf7f528273838138e9ae407cd8ef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jeremie</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sertion" title="View profile: Sertion">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sertion" data-src="../../../../../../secure.gravatar.com/avatar/6bea003dfb0bd6ab0ab8c0c080a713086c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sertion</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/dbruant" title="View profile: dbruant">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="dbruant" data-src="../../../../../../secure.gravatar.com/avatar/b9b113093c351a599f86e0647c43add16c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">dbruant</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/stevenvachon" title="View profile: stevenvachon">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="stevenvachon" data-src="../../../../../../secure.gravatar.com/avatar/cb89faca3d25d3e0cc1438bed784495a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">stevenvachon</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/kscarfone" title="View profile: kscarfone">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="kscarfone" data-src="../../../../../../secure.gravatar.com/avatar/89c1e54a9703125168e40d22316d2b496c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">kscarfone</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ScottMichaud" title="View profile: ScottMichaud">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ScottMichaud" data-src="../../../../../../secure.gravatar.com/avatar/7cd370b3a426846a69406d85c484b44a6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ScottMichaud</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jeremy Banks" title="View profile: Jeremy Banks">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jeremy Banks" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jeremy Banks</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter" title="View profile: enderandpeter">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="enderandpeter" data-src="../../../../../../secure.gravatar.com/avatar/e272c067cd5fe72f2992b1667340956b6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">enderandpeter</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/terrycloth" title="View profile: terrycloth">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="terrycloth" data-src="../../../../../../secure.gravatar.com/avatar/8faf540b936dcb1627afb83f053692f46c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">terrycloth</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Emmrargh" title="View profile: Emmrargh">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Emmrargh" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Emmrargh</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/m_gol" title="View profile: m_gol">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="m_gol" data-src="../../../../../../secure.gravatar.com/avatar/72ea0622f7b690ed82f5261b16ff8cef6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">m_gol</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/BluesM" title="View profile: BluesM">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="BluesM" data-src="../../../../../../secure.gravatar.com/avatar/5a68f3fa9bf667a9cf38b357e45eb8626c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">BluesM</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/ronj" title="View profile: ronj">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="ronj" data-src="../../../../../../secure.gravatar.com/avatar/784ce9225bc2201f1f328906e9a701796c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">ronj</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/jaffathecake" title="View profile: jaffathecake">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="jaffathecake" data-src="../../../../../../secure.gravatar.com/avatar/34551f266d9bfdeed1e7f287c59f789d6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">jaffathecake</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/matt_basta" title="View profile: matt_basta">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="matt_basta" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">matt_basta</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/iskin" title="View profile: iskin">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="iskin" data-src="../../../../../../secure.gravatar.com/avatar/cd32d17c95d3bfb352504c36462b98bd6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">iskin</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/anushbmx" title="View profile: anushbmx">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="anushbmx" data-src="../../../../../../secure.gravatar.com/avatar/9eb34ba0257e9e56039186ca633a4b8c6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">anushbmx</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/davezatch" title="View profile: davezatch">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="davezatch" data-src="../../../../../../secure.gravatar.com/avatar/d028fe987dd6394283a3d15be361b42c6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">davezatch</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Rkovac" title="View profile: Rkovac">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Rkovac" data-src="../../../../../../secure.gravatar.com/avatar/4e421216de11881c193cebb6cdc6ea036c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Rkovac</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/JohnKarahalis" title="View profile: JohnKarahalis">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="JohnKarahalis" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">JohnKarahalis</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/BYK" title="View profile: BYK">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="BYK" data-src="../../../../../../secure.gravatar.com/avatar/5754ca44a9d2c6687a8c65f5ed91d51e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">BYK</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Martndemus" title="View profile: Martndemus">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Martndemus" data-src="../../../../../../secure.gravatar.com/avatar/58968fa46a5a77f354c48c26e85a0bd36c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Martndemus</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/codepo8" title="View profile: codepo8">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="codepo8" data-src="../../../../../../secure.gravatar.com/avatar/07fcd228af02d476b1b8367d85a903b26c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">codepo8</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Marcoos" title="View profile: Marcoos">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Marcoos" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Marcoos</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Meggin Kearney" title="View profile: Meggin Kearney">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Meggin Kearney" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Meggin Kearney</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka" title="View profile: Jürgen Jeka">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Jürgen Jeka" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Jürgen Jeka</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/mechaxl" title="View profile: mechaxl">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="mechaxl" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">mechaxl</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/yyss" title="View profile: yyss">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="yyss" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">yyss</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fredrikekelund" title="View profile: fredrikekelund">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fredrikekelund" data-src="../../../../../../secure.gravatar.com/avatar/0046c96cfeff0483a7cdedd867b733c66c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fredrikekelund</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/talldan" title="View profile: talldan">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="talldan" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">talldan</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/inma_610" title="View profile: inma_610">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="inma_610" data-src="../../../../../../secure.gravatar.com/avatar/bdc39d1a570f34b1aca764a6dd6822586c02.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">inma_610</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/borismus" title="View profile: borismus">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="borismus" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">borismus</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/grendel" title="View profile: grendel">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="grendel" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">grendel</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/paul.irish" title="View profile: paul.irish">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="paul.irish" data-src="../../../../../../secure.gravatar.com/avatar/ffe68d6f71b225f7661d33f2a89082816c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">paul.irish</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/robodesign" title="View profile: robodesign">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="robodesign" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">robodesign</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/sebmozilla" title="View profile: sebmozilla">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="sebmozilla" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">sebmozilla</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Paul" title="View profile: Paul">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Paul" data-src="../../../../../../secure.gravatar.com/avatar/a910b7c21b8b05766236349a959b23d46c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Paul</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/fscholz" title="View profile: fscholz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="fscholz" data-src="../../../../../../secure.gravatar.com/avatar/e24391c9174352988d819a9b9ea77c9e6c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">fscholz</noscript></a>
+                </li>
+            
+                <li class="hidden">
+                <a href="https://developer.mozilla.org/en-US/profiles/Hansschmucker" title="View profile: Hansschmucker">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Hansschmucker" data-src="../../../../../../i2.wp.com/developer.cdn.mozilla.net/media/img/avatareb45.png?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Hansschmucker</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>Using CSS transitions</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Which_CSS_properties_are_animatable" rel="internal">Which CSS properties are animatable?</a><ol><li><a href="#Multiple_animated_properties_example" rel="internal">Multiple animated properties example</a><ol><li><a href="#HTML_Content" rel="internal">HTML Content</a></li><li><a href="#CSS_Content" rel="internal">CSS Content</a></li></ol></li></ol></li><li><a href="#CSS_properties_used_to_define_transitions" rel="internal">CSS properties used to define transitions</a></li><li><a href="#Detecting_the_completion_of_a_transition" rel="internal">Detecting the completion of a transition</a></li><li><a href="#When_property_value_lists_are_of_different_lengths" rel="internal">When property value lists are of different lengths</a></li><li><a href="#A_simple_example" rel="internal">A simple example</a></li><li><a href="#Using_transitions_when_highlighting_menus" rel="internal">Using transitions when highlighting menus</a></li><li><a href="#Using_transitions_to_make_JavaScript_functionality_smooth" rel="internal">Using transitions to make JavaScript functionality smooth</a></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p></p><section id="Quick_Links" class="Quick_links"><!-- --></section><div class="notice experimental"> 
+    <p><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span> <strong>This is an experimental technology</strong><br>Because this technology's specification has not stabilized, check the <a href="#Browser_compatibility">compatibility table</a> for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes.</p> 
+</div><p></p>
+
+<p><span class="seoSummary"><strong>CSS transitions</strong>&nbsp;provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.</span> For example, if you change the color of an element from white to black, usually the change is instantaneous. With CSS transitions enabled, changes occur at time intervals that follow an acceleration curve, all of which can be customized.</p>
+
+<p>Animations that involve transitioning between two states are often called <em>implicit transitions</em> as the states in between the start and final states are implicitly defined by the browser.</p>
+
+<p><img src="../../../../../../mdn.mozillademos.org/files/4529/TransitionsPrinciple.png" style="display: block; height: 196px; margin: auto; width: 680px;" alt="A CSS transition tells the browser to draw the intermediate states between the initial and final states, showing the user a smooth transitions."></p>
+
+<p>CSS transitions let you decide which properties to animate (by <em>listing them explicitly</em>), when the animation will start (by setting a <em>delay)</em>, how long the transition will last (by setting a <em>duration</em>), and how the transition will run (by defining a <em>timing function</em>, e.g. linearly or quick at the beginning, slow at the end).</p>
+
+<div class="note"><strong>Note:</strong> CSS transition properties can be used without any prefix provider, but since the specification has only recently achieved stability, the vendor prefixes can still be necessary for browsers based on WebKit. They are also necessary for compatibility with older browser versions (e.g.: Firefox 15 and earlier, Opera 12 and earlier). A compatibility table is available at the bottom of this page with more information.</div>
+
+<h2 id="Which_CSS_properties_are_animatable">Which CSS properties are animatable?</h2>
+
+<p>The Web author can define which property has to be animated and in which way. This allows the creation of complex transitions. As it doesn't make sense to animate some properties, the <a href="../CSS_animated_properties.html">list of animatable properties</a> is limited to a finite set.</p>
+
+<div class="note">Note: The set of properties that can be animated is subject to change. Developers should proceed with caution.</div>
+
+<p class="note">Also the auto value is often a very complex case. The specification asks not to animate from and to such a value. Some user agents, like those based on Gecko, implement this requirement and others, like those based on WebKit, are less strict. Using animations with <code>auto</code>&nbsp;may lead to unpredictable results, depending on&nbsp;the browser and its version, and should be avoided.</p>
+
+<p class="note">Care should also be taken when using a transition immediately after adding the element to the DOM using&nbsp;<code>.appendChild()</code> or removing its&nbsp;<code>display: none;&nbsp;</code>property. This is seen as if the initial state had never occurred and the element was always in its final state. The easy way to overcome this limitation is to apply a&nbsp;<code>window.setTimeout()</code> of a handful of milliseconds before changing the CSS property you intend to transition to.</p>
+
+<h3 id="Multiple_animated_properties_example">Multiple animated properties example</h3>
+
+<h4 id="HTML_Content">HTML Content</h4>
+
+<pre class="brush: html; highlight:[3]">&lt;body&gt;
+&nbsp;&nbsp;&nbsp; &lt;p&gt;The box below combines transitions for: width, height, background-color, transform. Hover over the box to see these properties animated.&lt;/p&gt;
+&nbsp;&nbsp;&nbsp; &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/body&gt;</pre>
+
+<h4 id="CSS_Content">CSS Content</h4>
+
+<pre class="brush: css; highlight:[8,9]">.box {
+&nbsp;&nbsp;&nbsp; border-style: solid;
+&nbsp;&nbsp;&nbsp; border-width: 1px;
+&nbsp;&nbsp;&nbsp; display: block;
+&nbsp;&nbsp;&nbsp; width: 100px;
+&nbsp;&nbsp;&nbsp; height: 100px;
+&nbsp;&nbsp;&nbsp; background-color: #0000FF;
+&nbsp;&nbsp;&nbsp; -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+&nbsp;&nbsp;&nbsp; transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+&nbsp;&nbsp;&nbsp; background-color: #FFCCCC;
+&nbsp;&nbsp;&nbsp; width: 200px;
+&nbsp;&nbsp;&nbsp; height: 200px;
+&nbsp;&nbsp;&nbsp; -webkit-transform: rotate(180deg);
+&nbsp;&nbsp;&nbsp; transform: rotate(180deg);
+}
+</pre>
+
+<p><iframe id="frame_Multiple_animated_properties_example" height="300" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/Multiple_animated_properties_example12b5.html?revision=1142529" frameborder="0" width="600" class="live-sample-frame sample-code-frame"></iframe></p>
+
+<h2 id="CSS_properties_used_to_define_transitions">CSS properties used to define transitions</h2>
+
+<p>CSS Transitions are controlled using the shorthand<a href="../transition.html"> </a><a href="../transition.html" title="The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. It enables you to define the transition between two states of an element. Different states may be defined using pseudo-classes like :hover or :active or dynamically set using JavaScript."><code>transition</code></a> property. This is the best way to configure transitions, as it makes it easier to avoid that the lengths of the parameter list are out of sync, which can be very frustrating to have to spend lots of time debugging the CSS.</p>
+
+<p>You can control the individual components of the transition with the following sub-properties:</p>
+
+<p><strong>(Note that these transitions loop infinitely only for the purpose of our examples; CSS <code>transition</code>s only visualize a property change from start to finish. If you need visualizations that loop, look into the CSS <a href="../animation.html"><code>animation</code></a> property.)</strong></p>
+
+<dl>
+ <dt><a href="../transition-property.html" title="The transition-property CSS property is used to specify the names of CSS properties to which a transition effect should be applied."><code>transition-property</code></a></dt>
+ <dd>Specifies the name or names of the CSS&nbsp;properties to which transitions should be applied. Only properties listed here are animated during transitions; changes to all other properties occur instantaneously as usual.</dd>
+ <dt><a href="../transition-duration.html" title="The transition-duration CSS property specifies the number of seconds or milliseconds a transition animation should take to complete. By default, the value is 0s, meaning that no animation will occur."><code>transition-duration</code></a></dt>
+ <dd>Specifies the duration over which transitions should occur. You can specify a single duration that applies to all properties during the transition, or multiple values to allow each property to transition over a different period of time.
+ <div>
+ <div id="duration_0_5s" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-duration: 0.5s</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush:css">.parent { width: 250px; height:125px;}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position:absolute;
+    -webkit-transition-property: width height background-color font-size left top transform -webkit-transform color;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top transform -webkit-transform color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.box1{
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top transform -webkit-transform color;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top transform -webkit-transformv color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_duration_0_5s" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/duration_0_5s12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+
+ <div id="duration_1s" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-duration: 1s</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent { width: 250px; height:125px;}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top -webkit-transform color;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top transform color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.box1{
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top -webkit-transform transform color;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top transform -webkit-transform color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_duration_1s" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/duration_1s12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+
+ <div id="duration_2s" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-duration: 2s</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent { width: 250px; height:125px;}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top transform -webkit-transform color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.box1{
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top transform -webkit-transform color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_duration_2s" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/duration_2s12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+
+ <div id="duration_4s" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-duration: 4s</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent { width: 250px; height:125px;}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top transform -webkit-transform color;
+    -webkit-transition-duration: 4s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top transform -webkit-transform color;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+}
+.box1{
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top transform -webkit-transform color;
+    -webkit-transition-duration: 4s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top transform -webkit-transform color;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_duration_4s" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/duration_4s12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+ </div>
+ </dd>
+ <dt><a href="../transition-timing-function.html" title="The transition-timing-function CSS property is used to describe how the intermediate values of the CSS&nbsp;properties being affected by a transition effect are calculated. This in essence lets you establish an acceleration curve, so that the speed of the transition can vary over its duration."><code>transition-timing-function</code></a></dt>
+ <dd><img src="../../../../../../mdn.mozillademos.org/files/3434/TF_with_output_gt_than_1.png" style="float: left; height: 173px; margin-right: 5px; width: 130px;" alt="">Specifies a function to define how intermediate values for properties are computed. <em>Timing functions</em> determine how intermediate values of the transition are calculated. Most <a href="../single-transition-timing-function.html">timing functions</a> can be specified by providing the graph of the corresponding function, as defined by four points defining a cubic bezier. You can also choose easing from&nbsp;<a href="http://easings.net/" class="external">Easing Functions Cheat Sheet</a>.
+ <div class="cleared">
+ <div id="ttf_ease" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-timing-function: ease</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent { width: 250px; height:125px;}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+.box1{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position:absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_ttf_ease" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/ttf_ease12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+
+ <div id="ttf_linear" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-timing-function: linear</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent { width: 250px; height:125px;}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.box1{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top:25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_ttf_linear" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/ttf_linear12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+
+ <div id="ttf_stepend" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-timing-function: step-end</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent { width: 250px; height:125px;}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: step-end;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: step-end;
+}
+.box1{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top:25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: step-end;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: step-end;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_ttf_stepend" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/ttf_stepend12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+
+ <div id="ttf_step4end" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-timing-function: steps(4, end)</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent { width: 250px; height:125px;}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: steps(4, end);
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: steps(4, end);
+}
+.box1{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: steps(4, end);
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: steps(4, end);
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_ttf_step4end" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/ttf_step4end12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+ </div>
+ </dd>
+ <dt><a href="../transition-delay.html" title="The transition-delay CSS property specifies the amount of time to wait between a change being requested to a property that is to be transitioned and the start of the transition effect."><code>transition-delay</code></a></dt>
+ <dd>Defines how long to wait between the time a property is changed and the transition actually begins.
+ <div>
+ <div id="delay_0_5s" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-delay: 0.5s</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent {
+    width: 250px;
+    height: 125px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 0.5s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+}
+
+.box1 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top:25px;
+    position: absolute;
+     -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 0.5s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_delay_0_5s" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/delay_0_5s12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+
+ <div id="delay_1s" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-delay: 1s</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent {
+    width: 250px;
+    height: 125px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+     -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 1s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+}
+
+.box1{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 1s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_delay_1s" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/delay_1s12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+
+ <div id="delay_2s" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-delay: 2s</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent {
+    width: 250px;
+    height: 125px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 2s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+}
+
+.box1 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 2s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_delay_2s" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/delay_2s12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+
+ <div id="delay_4s" style="width: 251px; display: inline-block; margin-right: 1px; margin-bottom: 1px;">
+ <p><code>transition-delay: 4s</code></p>
+
+ <div style="display: none;">
+ <pre class="brush:html"> &lt;div class="parent"&gt;
+  &lt;div class="box"&gt;Lorem&lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+ <pre class="brush: css">.parent {
+    width: 250px;
+    height: 125px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 4s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 4s;
+    transition-timing-function: ease-in-out;
+}
+
+.box1 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 4s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 4s;
+    transition-timing-function: ease-in-out;
+}
+</pre>
+
+ <pre class="brush:js">function updateTransition() {
+  var el = document.querySelector("div.box");
+   
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 7000);
+</pre>
+ </div>
+
+ <div><iframe id="frame_delay_4s" height="150" src="../../../../../../mdn.mozillademos.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions%24samples/delay_4s12b5.html?revision=1142529" frameborder="0" width="275" class="live-sample-frame sample-code-frame"></iframe></div>
+ </div>
+ </div>
+ </dd>
+</dl>
+
+<p>The shorthand CSS syntax is written as follows:</p>
+
+<pre class="brush: css">div {
+    transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;
+}</pre>
+
+<h2 id="Detecting_the_completion_of_a_transition">Detecting the completion of a transition</h2>
+
+<p>You can use the <code><a href="https://developer.mozilla.org/en-US/docs/Web/Events/transitionend" title="/en-US/docs/Web/Events/transitionend">transitionend</a></code> event to detect that an animation has finished running. This is a <a href="https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent" title="The TransitionEvent interface represents events providing information related to transitions."><code>TransitionEvent</code></a> object, which has two added properties beyond a typical <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" title="The Event interface represents any event which takes place in the DOM; some are user-generated (such as mouse or keyboard events), while others are generated by APIs (such as events that indicate an animation has finished running, a video has been paused, and so forth). There are many types of event, some of which use are other interfaces based on the main Event interface. Event itself contains the properties and methods which are common to all events."><code>Event</code></a> object:</p>
+
+<dl>
+ <dt><code>propertyName</code></dt>
+ <dd>A string indicating the name of the CSS property whose transition completed.</dd>
+ <dt><code>elapsedTime</code></dt>
+ <dd>A float indicating the number of seconds the transition had been running at the time the event fired. This value isn't affected by the value of <a href="../transition-delay.html" title="The transition-delay CSS property specifies the amount of time to wait between a change being requested to a property that is to be transitioned and the start of the transition effect."><code>transition-delay</code></a>.</dd>
+</dl>
+
+<p>As usual, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" title="The EventTarget.addEventListener() method registers the specified listener on the EventTarget it's called on. The event target may be an Element in a document, the Document itself, a Window, or any other object that supports events (such as XMLHttpRequest)."><code>addEventListener()</code></a>&nbsp;method to monitor for this event:</p>
+
+<pre class="brush: js">el.addEventListener("transitionend", updateTransition, true);
+</pre>
+
+<div class="note">The <code>transitionend</code> event doesn't fire if the transition is aborted before the transition is completed because either the element is made <a href="../display.html" title="The display CSS property specifies the type of rendering box used for an element. In HTML, default display property values are taken from behaviors described in the HTML specifications or from the browser/user default stylesheet. The default value in XML is inline."><code>display</code></a><code>: none</code> or the animating property's value is changed.</div>
+
+<h2 id="When_property_value_lists_are_of_different_lengths">When property value lists are of different lengths</h2>
+
+<p>If any property's list of values is shorter than the others, its values are repeated to make them match. For example:</p>
+
+<pre class="brush: css">div {
+&nbsp; transition-property:&nbsp;opacity, left, top, height;
+&nbsp; transition-duration: 3s, 5s;
+}
+</pre>
+
+<p>This is treated as if it were:</p>
+
+<pre class="brush: css">div {
+&nbsp; transition-property:&nbsp;opacity, left, top, height;
+&nbsp; transition-duration: 3s, 5s, 3s, 5s;
+}</pre>
+
+<p>Similarly, if any property's value list is longer than that for <a href="../transition-property.html" title="The transition-property CSS property is used to specify the names of CSS properties to which a transition effect should be applied."><code>transition-property</code></a>, it's truncated, so if you have the following CSS:</p>
+
+<pre class="brush: css">div {
+&nbsp; transition-property:&nbsp;opacity, left;
+&nbsp; transition-duration: 3s, 5s, 2s, 1s;
+}</pre>
+
+<p>This gets interpreted as:</p>
+
+<pre class="brush: css">div {
+&nbsp; transition-property:&nbsp;opacity, left;
+&nbsp; transition-duration: 3s, 5s;
+}</pre>
+
+<h2 id="A_simple_example">A simple example</h2>
+
+<p>This example performs a four-second font size transition with a two-second delay between the time the user mouses over the element and the beginning of the animation effect:</p>
+
+<pre class="brush: css">#delay1 {
+  position: relative;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+  font-size: 14px;
+}
+
+#delay1:hover {
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+  font-size: 36px;
+}
+</pre>
+
+<h2 id="Using_transitions_when_highlighting_menus">Using transitions when highlighting menus</h2>
+
+<p>A common use of CSS is to highlight items in a menu as the user hovers the mouse cursor over them. It's easy to use transitions to make the effect even more attractive.</p>
+
+<p>Before we look at code snippets, you might want to <a href="https://developer.mozilla.org/samples/cssref/transitions/sample2">take a look at the live demo</a> (assuming your browser supports transitions). You can also take a <a href="../../../../../samples/cssref/transitions/sample2/transitions.css">look directly at the CSS</a> it uses.</p>
+
+<p>First we set up the menu using HTML:</p>
+
+<pre class="brush: html">&lt;div class="sidebar"&gt;
+  &lt;p&gt;&lt;a class="menuButton" href="home"&gt;Home&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a class="menuButton" href="about"&gt;About&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a class="menuButton" href="contact"&gt;Contact Us&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a class="menuButton" href="links"&gt;Links&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+<p>Then we build the CSS to implement the look and feel of our menu. The relevant portions are shown here:</p>
+
+<pre class="brush: css">.menuButton {
+  position: relative;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  text-align: left;
+  background-color: grey;
+  left: 5px;
+  top: 5px;
+  height: 26px;
+  color: white;
+  border-color: black;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 2px 2px 1px black;
+  padding: 2px 4px;
+  border: solid 1px black;
+}
+
+.menuButton:hover {
+  position: relative;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  background-color:white;
+  color:black;
+  box-shadow: 2px 2px 1px black;
+}
+</pre>
+
+<p>This CSS&nbsp;establishes the look of the menu, with the background and text colors both changing when the element is in its <a href="../_hover.html" title="The :hover CSS pseudo-class matches when the user designates an element with a pointing device, but does not necessarily activate it. This style may be overridden by any other link-related pseudo-classes, that is :link, :visited, and :active, appearing in subsequent rules. In order to style appropriately links, you need to put the :hover rule after the :link and :visited rules but before the :active one, as defined by the LVHA-order: :link — :visited — :hover — :active."><code>:hover</code></a> state.</p>
+
+<p>Instead of describing the effect at length, you can take a <a href="https://developer.mozilla.org/samples/cssref/transitions/sample2">look at the live sample</a> if your <a href="#Browser_compatibility">browser has transitions support</a>.</p>
+
+<h2 id="Using_transitions_to_make_JavaScript_functionality_smooth">Using transitions to make JavaScript functionality smooth</h2>
+
+<p>Transitions are a great tool to make things look much smoother without having to do anything to your JavaScript functionality. Take the following example.</p>
+
+<pre class="brush: html">&lt;p&gt;Click anywhere to move the ball&lt;/p&gt;
+&lt;div id="foo"&gt;&lt;/div&gt;
+</pre>
+
+<p>Using JavaScript you can make the effect of moving the ball to a certain position happen:</p>
+
+<pre class="brush: js">var f = document.getElementById('foo');
+document.addEventListener('click', function(ev){
+    f.style.transform = 'translateY('+(ev.clientY-25)+'px)';
+&nbsp; &nbsp; f.style.transform += 'translateX('+(ev.clientX-25)+'px)';
+},false);
+</pre>
+
+<p>With CSS you can make it smooth without any extra effort. Simply add a transition to the element and any change will happen smoothly:</p>
+
+<pre class="brush: css">p {
+  padding-left: 60px;
+}
+
+#foo {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: #c00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s;
+}
+</pre>
+
+<p>You can play with this here: <a href="http://jsfiddle.net/9h261pzo/291/" class="external">http://jsfiddle.net/9h261pzo/291/</a></p>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-transitions/" class="external" lang="en" title="The 'CSS Transitions' specification" hreflang="en">CSS Transitions</a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<p></p><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div><p></p>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Chrome</th>
+   <th>Firefox (Gecko)</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari (WebKit)</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>1.0 <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span><br>
+    26.0</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/4" title="Released on 2011-03-22.">4.0</a> (2.0) <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-moz' as this browser considers it experimental">-moz</a></span><br>
+    <a href="https://developer.mozilla.org/en-US/Firefox/Releases/16" title="Released on 2012-10-09.">16.0</a> (16.0)</td>
+   <td>10</td>
+   <td>10.5 <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-o' as this browser considers it experimental">-o</a></span><br>
+    12.10</td>
+   <td>3.2 <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-webkit' as this browser considers it experimental">-webkit</a></span></td>
+  </tr>
+  <tr>
+   <td><code>transitionend</code> event</td>
+   <td>1.0<sup>[1]</sup><br>
+    26.0</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/4" title="Released on 2011-03-22.">4.0</a> (2.0)</td>
+   <td>10</td>
+   <td>10.5<sup>[2]</sup><br>
+    12<br>
+    12.10</td>
+   <td>3.2<sup>[1]</sup><br>
+    6.0</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Android</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>IE&nbsp;Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>2.1</td>
+   <td>4.0 (2.0) <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-moz' as this browser considers it experimental">-moz</a></span><br>
+    16.0 (16.0)</td>
+   <td>10</td>
+   <td>10 <span class="inlineIndicator prefixBox prefixBoxInline" title="prefix"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with '-o' as this browser considers it experimental">-o</a></span><br>
+    12.10</td>
+   <td>3.2</td>
+  </tr>
+  <tr>
+   <td><code>transitionend</code> event</td>
+   <td>2.1<sup>[1]</sup></td>
+   <td>4.0 (2.0)</td>
+   <td>10</td>
+   <td>10<sup>[2]</sup><br>
+    12<br>
+    12.10</td>
+   <td>3.2<sup>[1]</sup></td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<p>[1] Chrome 1.0, WebKit 3.2 and Android 2.1 implemented this as the non-standard <code>webkitTransitionEnd</code>. Chrome 26.0 and WebKit 6.0 implement the standard <code>transitionend</code>.</p>
+
+<p>[2] Opera 10.5 and Opera Mobile 10 implemented this as <code>oTransitionEnd</code>, version 12 as <code>otransitionend</code> and version 12.10 as the standard <code>transitionend</code>.</p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent" title="The TransitionEvent interface represents events providing information related to transitions."><code>TransitionEvent</code></a> interface and the <code><a href="https://developer.mozilla.org/en-US/docs/Web/Events/transitionend" title="/en-US/docs/Web/Events/transitionend">transitionend</a></code> event.\</li>
+ <li><a href="../CSS_Animations/Using_CSS_animations.html">Using CSS animations</a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Advanced">Advanced</a></li>
+      
+        <li><a href="../../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../../tag/CSS%20Transitions.html">CSS Transitions</a></li>
+      
+        <li><a href="../../../tag/CSS3%20Transitions.html">CSS3 Transitions</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Experimental">Experimental</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Guide">Guide</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Tutorial">Tutorial</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/andrewhl">andrewhl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jsx">jsx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/LongBu">LongBu</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/LeekAnarchism">LeekAnarchism</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/hweeks">hweeks</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jonankabigumira">jonankabigumira</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Flimm">Flimm</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/victormiguez">victormiguez</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/cvrebert">cvrebert</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/aziz_shaik">aziz_shaik</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ChrisL">ChrisL</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/amitabha197">amitabha197</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/tagawa">tagawa</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jeremie">Jeremie</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sertion">Sertion</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/dbruant">dbruant</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/stevenvachon">stevenvachon</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ScottMichaud">ScottMichaud</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jeremy Banks">Jeremy Banks</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/enderandpeter">enderandpeter</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/terrycloth">terrycloth</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Emmrargh">Emmrargh</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/m_gol">m_gol</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/BluesM">BluesM</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ronj">ronj</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jaffathecake">jaffathecake</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/matt_basta">matt_basta</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/iskin">iskin</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/anushbmx">anushbmx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/davezatch">davezatch</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Rkovac">Rkovac</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/JohnKarahalis">JohnKarahalis</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/BYK">BYK</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Martndemus">Martndemus</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/codepo8">codepo8</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Marcoos">Marcoos</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Meggin Kearney">Meggin Kearney</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Jürgen Jeka">Jürgen Jeka</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mechaxl">mechaxl</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/yyss">yyss</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fredrikekelund">fredrikekelund</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/talldan">talldan</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/inma_610">inma_610</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/borismus">borismus</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/grendel">grendel</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/paul.irish">paul.irish</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/robodesign">robodesign</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/sebmozilla">sebmozilla</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Paul">Paul</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Hansschmucker">Hansschmucker</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>,
+                      <time datetime="2016-11-14T08:51:09-08:00">Nov 14, 2016, 8:51:09 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../../CSS.html">CSS</a></strong></li><li><strong><a href="../Reference.html">CSS Reference</a></strong></li><li><strong><a href="../CSS_Transitions.html">CSS Transitions</a></strong></li><li data-default-state="open"><a href="#"><strong>Guides</strong></a><ol><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><em>Using CSS transitions</em></li></ol></li><li data-default-state="open"><a href="#"><strong>Properties</strong></a><ol><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a href="../transition.html" title="The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. It enables you to define the transition between two states of an element. Different states may be defined using pseudo-classes like :hover or :active or dynamically set using JavaScript."><code>transition</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a href="../transition-delay.html" title="The transition-delay CSS property specifies the amount of time to wait between a change being requested to a property that is to be transitioned and the start of the transition effect."><code>transition-delay</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a href="../transition-duration.html" title="The transition-duration CSS property specifies the number of seconds or milliseconds a transition animation should take to complete. By default, the value is 0s, meaning that no animation will occur."><code>transition-duration</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a href="../transition-property.html" title="The transition-property CSS property is used to specify the names of CSS properties to which a transition effect should be applied."><code>transition-property</code></a></li><li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a href="../transition-timing-function.html" title="The transition-timing-function CSS property is used to describe how the intermediate values of the CSS&nbsp;properties being affected by a transition effect are calculated. This in essence lets you establish an acceleration curve, so that the speed of the transition can vary over its duration."><code>transition-timing-function</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="Spanish" value="/es/docs/Web/CSS/Transiciones_de_CSS">
+            Español (es)
+          </option>
+          <option title="French" value="/fr/docs/Web/CSS/CSS_Transitions/Utiliser_transitions_CSS">
+            Français (fr)
+          </option>
+          <option title="Japanese" value="/ja/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">
+            日本語 (ja)
+          </option>
+          <option title="Korean" value="/ko/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">
+            한국어 (ko)
+          </option>
+          <option title="Romanian" value="/ro/docs/Web/CSS/CSS_Transitions/transitions_in_css">
+            Română (ro)
+          </option>
+          <option title="Russian" value="/ru/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" value="/zh-CN/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">
+            中文 (简体) (zh-CN)
+          </option>
+          <option title="Chinese (Traditional)" value="/zh-TW/docs/CSS_%E8%BD%89%E5%A0%B4">
+            正體中文 (繁體) (zh-TW)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:49:03 GMT -->
+</body></html>

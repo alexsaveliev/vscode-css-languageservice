@@ -1,0 +1,994 @@
+<html><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:46:38 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="../../../../../www.google-analytics.com/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  
+    
+  
+
+  
+  <title>&lt;single-transition-timing-function&gt;</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="#copyright">
+  
+
+  
+    
+    
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/mdn.fbe297e5e96c.css" rel="stylesheet" type="text/css">
+
+    
+  
+    <link href="../../../../../developer.cdn.mozilla.net/static/build/styles/wiki.d9818563511b.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="../../../../../developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="../../../../../developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function$json">
+  <link rel="canonical" href="single-transition-timing-function.html">
+
+  
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/single-transition-timing-function" title="single-transition-timing-function">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="&lt;single-transition-timing-function&gt;">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function">
+  <meta name="twitter:title" content="&lt;single-transition-timing-function&gt;">
+  
+  <meta property="og:description" content="The single-transition-timing-function CSS data type denotes a mathematical function that describes how fast one-dimensional values change during transitions or animations. This in essence lets you establish an acceleration curve, so that the speed of the animation can vary over its duration. These functions are often called easing functions.">
+  <meta name="description" content="The single-transition-timing-function CSS data type denotes a mathematical function that describes how fast one-dimensional values change during transitions or animations. This in essence lets you establish an acceleration curve, so that the speed of the animation can vary over its duration. These functions are often called easing functions.">
+  <meta name="twitter:description" content="The single-transition-timing-function CSS data type denotes a mathematical function that describes how fast one-dimensional values change during transitions or animations. This in essence lets you establish an acceleration curve, so that the speed of the animation can vary over its duration. These functions are often called easing functions.">
+  
+
+  
+  <script type="text/javascript">
+    
+      var document_saved = 0;
+    
+  </script>
+
+  
+    
+
+
+
+  
+</head>
+<body data-slug="Web/CSS/single-transition-timing-function" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+        
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'iperceptions': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets_disabled: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.50e1e1191368.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.a042fac0d66c.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+  
+  <div class="global-notice">
+    <div class="wrap center">
+      
+        <p><bdi>MDN will be unavailable on Thursday December 1st at 17:00-18:00 Pacific (Dec. 2 01:00-02:00 UTC) for database maintenance.</bdi></p>
+      
+    </div>
+  </div>
+
+  <ul id="nav-access">
+    <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+    <li><a href="#q" id="skip-search">Skip to search</a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="http://www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div id="nav-sec">
+        
+                  <ul>
+                  <li><div class="login">
+    
+      
+       <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fsingle-transition-timing-function" class="login-link js-login-link" data-service="GitHub">
+        Sign in
+        <i class="icon-github" aria-hidden="true"></i>
+      </a>
+    
+</div></li>
+                </ul>
+        
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="../CSS.html">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learning web development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+
+   <!-- end is_zone -->
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      
+      <div class="article-meta">
+        <!-- action buttons -->
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons" data-sticky="false">
+      
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/single-transition-timing-function" title="French">Français (fr)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function$locales" rel="nofollow, noindex" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function$history" rel="nofollow, noindex">History</a></li>
+                
+                
+                
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+        
+  <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Web" rel="v:url" property="v:title">Web technology For developers</a></li>
+    
+      <li class="crumb" typeof="v:Breadcrumb"><a href="../CSS.html" rel="v:url" property="v:title">CSS</a></li>
+    
+    <li class="crumb" typeof="v:Breadcrumb" property="v:title">&lt;single-transition-timing-function&gt;</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc submenu">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        
+        <div class="contributor-avatars" data-all-text="see all contributors" data-alternate-message="hide contributors">
+            <ul>
+            
+                <li class="shown">
+                <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz" title="View profile: Sebastianz">
+                <noscript data-width="34" data-height="34" data-class="avatar" data-alt="Sebastianz" data-src="../../../../../secure.gravatar.com/avatar/337fa9c543a4f881977b6d2fbbd2dea86c02.jpeg?s=34&amp;r=pg&amp;d=https%3A%2F%2Fdeveloper.cdn.mozilla.net%2Fmedia%2Fimg%2Favatar.png">Sebastianz</noscript></a>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+        <h1>&lt;single-transition-timing-function&gt;</h1>
+
+      </div>
+      
+
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+              <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+              
+              <!-- table of contents -->
+              <div id="toc" class="toc toggleable" data-closed="true">
+                <a href="#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus">In This Article<i></i></a>
+                <ol class="toggle-container">
+                  <li><a href="#Summary" rel="internal">Summary</a></li><li><a href="#Values" rel="internal">Values</a><ol><li><a href="#The_cubic-bezier()_class_of_timing-functions" rel="internal">The <code>cubic-bezier()</code> class of timing-functions</a><ol><li><a href="#Syntax" rel="internal">Syntax</a></li><li><a href="#Examples" rel="internal">Examples</a></li></ol></li><li><a href="#The_steps()_class_of_timing-functions" rel="internal">The <code>steps()</code> class of timing-functions</a><ol><li><a href="#Syntax_2" rel="internal">Syntax</a></li><li><a href="#Examples_2" rel="internal">Examples</a></li></ol></li><li><a href="#Keywords_for_common_timing-functions" rel="internal">Keywords for common timing-functions</a><ol><li><a href="#linear" rel="internal"><code>linear</code></a></li><li><a href="#ease" rel="internal"><code>ease</code></a></li><li><a href="#ease-in" rel="internal"><code>ease-in</code></a></li><li><a href="#ease-in-out" rel="internal"><code>ease-in-out</code></a></li><li><a href="#ease-out" rel="internal"><code>ease-out</code></a></li><li><a href="#step-start" rel="internal"><code>step-start</code></a></li><li><a href="#step-end" rel="internal"><code>step-end</code></a></li></ol></li></ol></li><li><a href="#Specifications" rel="internal">Specifications</a></li><li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li><li><a href="#See_also" rel="internal">See also</a>
+                </li></ol>
+              </div>
+              
+              </div>
+            
+
+            
+            
+              
+            
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+
+              
+
+              
+                
+                
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div><section id="Quick_Links" class="Quick_links"><!-- --></section></div>
+
+<h2 id="Summary">Summary</h2>
+
+<p>The <strong><code>&lt;single-transition-timing-function&gt;</code></strong> <a href="../CSS.html">CSS</a> data type denotes a mathematical function that describes how fast one-dimensional values change during transitions or animations. This in essence lets you establish an acceleration curve, so that the speed of the animation can vary over its duration. These functions are often called <em>easing functions<code>.</code></em></p>
+
+<p>It is a function linking the time with a ratio of the output value, expressed as a <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension."><code>&lt;number&gt;</code></a>, with <code>0.0</code> representing the initial state, <code>1.0</code> the final state.</p>
+
+<p><img src="../../../../../mdn.mozillademos.org/files/3434/TF_with_output_gt_than_1.png"><img src="../../../../../mdn.mozillademos.org/files/3435/TF_with_output_gt_than_1_clipped.png" style="margin-right: 5px;"></p>
+
+<p>The output ratio can be greater than 1.0 (or smaller than 0.0). This causes the animation to go farther than the final state, then come back, in a kind of <em>bouncing</em> effect.</p>
+
+<p>Nevertheless, if the output value goes outside of its possible range, such as a component of a color going greater than <code>255</code> or smaller than <code>0</code>, the value is clipped to its closest allowed value (in the case of a color-component <code>255</code> and <code>0</code> respectively. Some <code>cubic-bezier()</code> curves exhibit this property.</p>
+
+<h2 id="Values" class="cleared">Values</h2>
+
+<div style="width: 100%;">
+<p>CSS supports two kinds of timing functions: the subset of the cubic Bézier curves that are functions and staircase functions. The most useful of these functions are given a <em>keyword</em> that allows to easily describe them.</p>
+
+<h3 id="The_cubic-bezier()_class_of_timing-functions">The <code>cubic-bezier()</code> class of timing-functions</h3>
+
+<table class="withoutBorder">
+ <tbody>
+  <tr>
+   <td><img src="../../../../../mdn.mozillademos.org/files/3433/cubic-bezier%2c%20example.png" style="float: left;"></td>
+   <td>
+    <p>The <code>cubic-bezier()</code> functional notation defines a <a href="https://en.wikipedia.org/wiki/Bézier_curve#Cubic_B.C3.A9zier_curves" class="external">cubic Bézier curve</a>. As these curves are continuous, they are often used to smooth down the start and end of the animation and are therefore sometimes called <em>easing functions</em>.</p>
+
+    <p>A cubic Bézier curve is defined by four points P<sub>0</sub>, P<sub>1</sub>, P<sub>2</sub>, and P<sub>3</sub>. P<sub>0</sub> and P<sub>3</sub> are the start and the end of the curve and, in CSS these points are fixed as the coordinates are ratios (the abscissa the ratio of time, the ordinate the ratio of the output range). P<sub>0</sub> is <code>(0, 0)</code> and represents the initial time and the initial state, P<sub>3</sub> is <code>(1, 1)</code> and represents the final time and the final state.</p>
+
+    <p>Not all cubic Bézier curves are suitable as timing functions as not all are <a href="https://en.wikipedia.org/wiki/Function_(mathematics)" class="external">mathematical functions</a>, i.e. curves that for a given abscissa have zero or one value. With P<sub>0</sub> and P<sub>3</sub> fixed as defined by CSS, a cubic Bézier curve is a function, and is therefore valid, if and only if the abscissas of P<sub>1</sub> and P<sub>2</sub> are both in the <code>[0, 1]</code> range.</p>
+
+    <p>Cubic Bézier curves with the P<sub>1</sub> or P<sub>2</sub> ordinate outside the <code>[0, 1]</code> range may generate <em>bouncing</em> effects.</p>
+
+    <p>When you specify an invalid <code>cubic-bezier</code> curve, CSS ignores the whole property.</p>
+   </td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<h4 id="Syntax">Syntax</h4>
+
+<pre class="syntaxbox">cubic-bezier(<var>x<sub>1</sub></var>, <var>y<sub>1</sub></var>, <var>x<sub>2</sub></var>, <var>y<sub>2</sub></var>)
+</pre>
+
+<p>where:</p>
+
+<dl>
+ <dt><strong><em>x<sub>1</sub></em>, <em>y<sub>1</sub></em>, <em>x<sub>2</sub></em>, <em>y<sub>2</sub></em></strong></dt>
+ <dd>Are <a href="number.html" title="The &lt;number&gt; CSS data type represents a number, either integer or fractional. Its syntax extends the one of the &lt;integer&gt; data value. To represent a fractional value, add the fractional part — a '.' followed by one or several decimal digits — to any &lt;integer&gt; data value. Like for &lt;integer&gt; data type, there isn't any unit associated to a &lt;number&gt;, which is not a CSS dimension."><code>&lt;number&gt;</code></a> values representing the abscissas and ordinates of the P<sub>1</sub> and P<sub>2</sub> points defining the cubic Bézier curve. x<sub>1</sub> and x<sub>2</sub> must be in the range [0, 1] or the value is invalid.</dd>
+</dl>
+
+<h4 id="Examples">Examples</h4>
+
+<p>These cubic Bézier curves are valid for use in CSS :</p>
+
+<pre class="brush: css">/* The canonical Bézier curve with four &lt;number&gt; in the [0,1] range. */
+cubic-bezier(0.1, 0.7, 1.0, 0.1)   
+
+/* Using &lt;integer&gt; is valid as any &lt;integer&gt; is also a &lt;number&gt;. */
+cubic-bezier(0, 0, 1, 1)           
+
+/* Negative values for ordinates are valid, leading to bouncing effects.*/
+cubic-bezier(0.1, -0.6, 0.2, 0)    
+
+/* Values &gt; 1.0 for ordinates are also valid. */
+cubic-bezier(0, 1.1, 0.8, 4)
+</pre>
+
+<p>These cubic Bézier curves definitions are invalid :</p>
+
+<pre class="brush: css">/* Though the animated output type may be a color, 
+   Bézier curves work w/ numerical ratios.*/
+cubic-bezier(0.1, red, 1.0, green) 
+
+/* Abscissas must be in the [0, 1] range or 
+   the curve is not a function of time. */
+cubic-bezier(2.45, 0.6, 4, 0.1)    
+
+/* The two points must be defined, there is no default value. */
+cubic-bezier(0.3, 2.1)   
+
+/* Abscissas must be in the [0, 1] range or 
+   the curve is not a function of time. */
+cubic-bezier(-1.9, 0.3, -0.2, 2.1) 
+</pre>
+
+<h3 id="The_steps()_class_of_timing-functions">The <code>steps()</code> class of timing-functions</h3>
+
+<table class="withoutBorder">
+ <tbody>
+  <tr>
+   <td><img src="../../../../../mdn.mozillademos.org/files/3436/steps(2%2cstart).png" style="height: 332px; width: 248px;"></td>
+   <td><img src="../../../../../mdn.mozillademos.org/files/3437/steps(4%2cend).png" style="height: 332px; width: 248px;"></td>
+   <td rowspan="2">
+    <p>The <code>steps()</code> functional notation defines a <a href="https://en.wikipedia.org/wiki/Step_function" class="external">step function</a> dividing the domain of output values in equidistant steps.</p>
+
+    <p>This subclass of step functions are sometimes also called staircase functions.</p>
+   </td>
+  </tr>
+  <tr style="text-align: center;">
+   <td style="white-space: nowrap;"><code>steps(2, start)</code></td>
+   <td><code>steps(4, end)</code></td>
+  </tr>
+ </tbody>
+</table>
+
+<h4 id="Syntax_2">Syntax</h4>
+
+<pre class="syntaxbox">steps(<var>number_of_steps</var>, <var>direction</var>)
+</pre>
+
+<p>where:</p>
+
+<dl>
+ <dt><var>number_of_steps</var></dt>
+ <dd>Is a strictly positive <a href="integer.html" title="The &lt;integer&gt; CSS data type denotes an integer number, positive or negative. There isn't any associated unit with the value. An integer consists of one or several decimal digits, 0 to 9, optionally preceded by one single + or - sign."><code>&lt;integer&gt;</code></a> representing the amount of equidistant treads composing the stepping function.</dd>
+ <dt><var>direction</var></dt>
+ <dd>Is a keyword indicating if it the function is <a href="https://en.wikipedia.org/wiki/Left-continuous#Directional_and_semi-continuity" class="external">left- or right-continuous</a>:
+ <ul>
+  <li><code>start</code> denotes a left-continuous function, so that the first step happens when the animation begins;</li>
+  <li><code>end</code> denotes a right-continuous function, so that the last step happens when the animation ends.</li>
+ </ul>
+ <code>end</code> is the default.</dd>
+</dl>
+
+<h4 id="Examples_2">Examples</h4>
+
+<p>These timing functions are valid :</p>
+
+<pre class="brush: css">/* There is 5 treads, the last one happens 
+   right before the end of the animation. */
+steps(5, end)
+
+/* A two-step staircase, the first one happening 
+   at the start of the animation. */
+steps(2, start)        
+
+/* The second parameter is optional. */
+steps(2)               
+</pre>
+
+<p>These timing function are invalid :</p>
+
+<pre class="brush: css">/* The first parameter must be an <a href="integer.html">&lt;integer&gt;</a> and 
+   cannot be a real value, even if it is equal to one. */
+steps(2.0, end)
+
+/* The amount of steps must be non-negative. */
+steps(-3, start)
+
+/* There must be at least one step.*/
+steps(0, end)       
+</pre>
+
+<h3 id="Keywords_for_common_timing-functions">Keywords for common timing-functions</h3>
+
+<h4 id="linear"><code>linear</code></h4>
+
+<table class="withoutBorder">
+ <tbody>
+  <tr style="vertical-align: top;">
+   <td><img src="../../../../../mdn.mozillademos.org/files/3425/cubic-bezier%2clinear.png" style="height: 332px; width: 249px;"></td>
+   <td>This keyword represents the timing function <code>cubic-bezier(</code><code>0.0, 0.0, 1.0, 1.0</code><code>)</code>. Using this timing function, the animation goes from its initial state to its final one regularly, with a constant speed.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h4 id="ease"><code>ease</code></h4>
+
+<table class="withoutBorder">
+ <tbody>
+  <tr style="vertical-align: top;">
+   <td><img src="../../../../../mdn.mozillademos.org/files/3429/cubic-bezier%2cease.png" style="height: 332px; width: 244px;"></td>
+   <td>This keyword represents the timing function <code>cubic-bezier(0.25, 0.1, 0.25, 1.0)</code>. This function is similar to <a href="single-transition-timing-function.html#ease-in-out"><code>ease-in-out</code></a>, though it accelerates more sharply at the beginning and the acceleration already starts to slow down near the middle of it.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h4 id="ease-in"><code>ease-in</code></h4>
+
+<table class="withoutBorder">
+ <tbody>
+  <tr style="vertical-align: top;">
+   <td><img src="../../../../../mdn.mozillademos.org/files/3426/cubic-bezier%2cease-in.png" style="height: 332px; width: 249px;"></td>
+   <td>This keyword represents the timing function <code>cubic-bezier(0.42, 0.0, 1.0, 1.0)</code>. The animation begins slowly, then progressively accelerates until the final state is reached and the animation stops abruptly.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h4 id="ease-in-out"><code>ease-in-out</code></h4>
+
+<table class="withoutBorder">
+ <tbody>
+  <tr style="vertical-align: top;">
+   <td><img src="../../../../../mdn.mozillademos.org/files/3428/cubic-bezier%2cease-in-out.png" style="height: 332px; width: 244px;"></td>
+   <td>This keyword represents the timing function <code>cubic-bezier(</code><code>0.42, 0.0, 0.58, 1.0</code><code>)</code>. With this timing function, the animation starts slowly, accelerates then slows down when approaching its final state. At the beginning, it behaves similarly to the <a href="single-transition-timing-function.html#ease-in"><code>ease-in</code></a> function; at the end, it is similar to the <a href="single-transition-timing-function.html#ease-out"><code>ease-out</code></a> function.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h4 id="ease-out"><code>ease-out</code></h4>
+
+<table class="withoutBorder">
+ <tbody>
+  <tr style="vertical-align: top;">
+   <td><img src="../../../../../mdn.mozillademos.org/files/3427/cubic-bezer%2cease-out.png" style="height: 332px; width: 249px;"></td>
+   <td>This keyword represents the timing function <code>cubic-bezier(</code><code>0.0, 0.0, 0.58, 1.0</code><code>)</code>. The animation starts quickly then slow progressively down when approaching to its final state.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h4 id="step-start"><code>step-start</code></h4>
+
+<table class="withoutBorder">
+ <tbody>
+  <tr>
+   <td><img src="../../../../../mdn.mozillademos.org/files/3423/steps(1%2cstart).png" style="height: 332px; width: 248px;">This keyword represents the timing function <code>steps(1, start)</code>. Using this timing function, the animation jumps immediately to the end state and stay in that position until the end of the animation.</td>
+   <td>&nbsp;</td>
+  </tr>
+ </tbody>
+</table>
+
+<h4 id="step-end"><code>step-end</code></h4>
+
+<table class="withoutBorder">
+ <tbody>
+  <tr style="vertical-align: top;">
+   <td><img src="../../../../../mdn.mozillademos.org/files/3424/steps(1%2cend).png" style="height: 332px; width: 248px;"></td>
+   <td>This keyword represents the timing function <code>steps(1, end)</code>. Using this timing function, the animation stays in its initial state until the end, where it directly jumps to its final position.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Specifications">Specifications</h2>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th>Specification</th>
+   <th>Status</th>
+   <th>Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-animations/#animation-timing-function" class="external" lang="en" hreflang="en">CSS Animations<br><small lang="en-US">The definition of '&lt;single-transition-timing-function&gt;' in that specification.</small></a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>Defines <code>&lt;single-timing-function&gt;</code> as synonym for <code>&lt;single-transition-timing-function&gt;</code> of CSS Transitions Module.</td>
+  </tr>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-transitions/#transition-timing-function" class="external" lang="en" hreflang="en">CSS Transitions<br><small lang="en-US">The definition of '&lt;single-transition-timing-function&gt;' in that specification.</small></a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>Initial definition</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_compatibility">Browser compatibility</h2>
+
+<div><div class="htab"> 
+    <a name="AutoCompatibilityTable" id="AutoCompatibilityTable"></a> 
+    <ul> 
+        <li class="selected"><a>Desktop</a></li> 
+        <li><a>Mobile</a></li> 
+    </ul> 
+</div></div>
+
+<div id="compat-desktop">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Firefox (Gecko)</th>
+   <th>Chrome</th>
+   <th>Internet Explorer</th>
+   <th>Opera</th>
+   <th>Safari</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/4" title="Released on 2011-03-22.">4.0</a> (2.0)</td>
+   <td>4.0</td>
+   <td>10.0</td>
+   <td>10.5</td>
+   <td>3.1</td>
+  </tr>
+  <tr>
+   <td><code>cubic-bezier()</code> with ordinate ∉ [0,1]</td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/4" title="Released on 2011-03-22.">4.0</a> (2.0)</td>
+   <td>16.0</td>
+   <td>10.0</td>
+   <td>12.1</td>
+   <td><em><a href="http://nightly.webkit.org/" class="external">Nightly build</a></em></td>
+  </tr>
+  <tr>
+   <td><code>steps()</code></td>
+   <td><a href="https://developer.mozilla.org/en-US/Firefox/Releases/4" title="Released on 2011-03-22.">4.0</a> (2.0)</td>
+   <td>8.0</td>
+   <td>10.0</td>
+   <td>12.1</td>
+   <td>5.1</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="compat-mobile">
+<table class="compat-table">
+ <tbody>
+  <tr>
+   <th>Feature</th>
+   <th>Firefox Mobile (Gecko)</th>
+   <th>Android</th>
+   <th>IE Phone</th>
+   <th>Opera Mobile</th>
+   <th>Safari Mobile</th>
+  </tr>
+  <tr>
+   <td>Basic support</td>
+   <td>4.0 (2.0)</td>
+   <td>4.0</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>10.0</td>
+   <td>2.0</td>
+  </tr>
+  <tr>
+   <td><code>cubic-bezier()</code> with ordinate ∉ [0,1]</td>
+   <td>4.0 (2.0)</td>
+   <td><span title="Please update this with the earliest version of support." style="color: #888;">(Yes)</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+  </tr>
+  <tr>
+   <td><code>steps()</code></td>
+   <td>4.0 (2.0)</td>
+   <td>4.0</td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td><span style="color: #f00;">No&nbsp;support</span></td>
+   <td>5.0</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="Reference.html">CSS Reference</a></li>
+</ul>
+                  
+                
+              </article>
+
+              
+
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                  
+                  
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="../../tag/CSS.html">CSS</a></li>
+      
+        <li><a href="../../tag/CSS%20Data%20Type.html">CSS Data Type</a></li>
+      
+        <li><a href="../../tag/CSS%20Reference.html">CSS Reference</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Layout">Layout</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference">Reference</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Web">Web</a></li>
+      
+    </ul>
+  </div>
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>
+    
+                    </div>
+                  
+
+                  
+                    <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>,
+                      <time datetime="2016-10-25T09:25:10-07:00">Oct 25, 2016, 9:25:10 AM</time>
+                    </div>
+                  
+                </div>
+              
+
+              
+                  <div class="newsletter-box">
+                    <div class="newsletter">
+    <form id="newsletterForm" name="newsletter-form" class="nodisable" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+        <p class="newsletter-description">Sign up for our newsletter:</p>
+        <input type="hidden" id="fmt" name="fmt" value="H">
+        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+
+        <div id="newsletterErrors" class="newsletter-errors"></div>
+
+        <div id="newsletterEmail" class="form-group">
+            <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+            <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+        </div>
+
+        <div id="newsletterPrivacy" class="form-group form-group-agree hidden">
+            <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+            <label for="newsletterPrivacyInput">
+            I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+            </label>
+        </div>
+        <div id="newsletterSubmit">
+            <button id="newsletter-submit" type="submit" class="button positive">Sign up now</button>
+        </div>
+        
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+                  </div>
+              
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="title see-also">See also</div>
+    <ol><li><strong><a href="../CSS.html">CSS</a></strong></li><li><strong><a href="Reference.html">CSS Reference</a></strong></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/single-transition-timing-function$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/single-transition-timing-function$history" label="View page history"></menuitem>
+  </menu>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer id="main-footer"><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+        
+        <div class="contentinfo">
+          <p>© 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+            <li><a href="http://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="http://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="http://github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="column-strip">
+        
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" value="/en-US/docs/Web/CSS/single-transition-timing-function" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="French" value="/fr/docs/Web/CSS/single-transition-timing-function">
+            Français (fr)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+        
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/syntax-prism-min.js" charset="utf-8"></script><script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/main.69644b44d458.js" charset="utf-8"></script>
+    
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+    
+    <script type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/wiki.d85ddd33511e.js" charset="utf-8" id="wikiscript"></script>
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="../../../../../developer.cdn.mozilla.net/static/build/js/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+<!-- Mirrored from developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Dec 2016 00:46:48 GMT -->
+</body></html>
