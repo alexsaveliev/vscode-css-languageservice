@@ -200,8 +200,9 @@ export class CSSHover {
 				case nodes.NodeType.Keyframe: { } break;
 				case nodes.NodeType.FontFace: { } break;
 				case nodes.NodeType.Import: {
+					const sources = (node as nodes.Import).getSources().map((src) => src.getName());
 					return {
-						contents: ["sources: " + (node as nodes.Import).getSources().join(", ")],
+						contents: ["sources: " + sources.join(", ")],
 						range: getRange(node),
 					};
 				}

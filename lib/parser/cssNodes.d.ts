@@ -51,19 +51,20 @@ export declare enum NodeType {
     Keyframe = 49,
     FontFace = 50,
     Import = 51,
-    Namespace = 52,
-    Invocation = 53,
-    FunctionDeclaration = 54,
-    ReturnStatement = 55,
-    MediaQuery = 56,
-    FunctionParameter = 57,
-    FunctionArgument = 58,
-    KeyframeSelector = 59,
-    ViewPort = 60,
-    Document = 61,
-    AtApplyRule = 62,
-    CustomPropertyDeclaration = 63,
-    CustomPropertySet = 64,
+    ImportSource = 52,
+    Namespace = 53,
+    Invocation = 54,
+    FunctionDeclaration = 55,
+    ReturnStatement = 56,
+    MediaQuery = 57,
+    FunctionParameter = 58,
+    FunctionArgument = 59,
+    KeyframeSelector = 60,
+    ViewPort = 61,
+    Document = 62,
+    AtApplyRule = 63,
+    CustomPropertyDeclaration = 64,
+    CustomPropertySet = 65,
 }
 export declare enum ReferenceType {
     Mixin = 0,
@@ -134,13 +135,10 @@ export declare class Identifier extends Node {
 }
 export declare class Stylesheet extends Node {
     private name;
-    private dependencyMap;
+    private dependencies;
     constructor(offset: number, length: number);
-    getDependencies(): {
-        [src: string]: string;
-    };
-    remDependencies(src: string[]): void;
-    addDependencies(src: string[]): void;
+    getDependencies(): string[];
+    addDependencies(src: ImportSource[]): void;
     readonly type: NodeType;
     setName(value: string): void;
 }
@@ -326,13 +324,20 @@ export declare class KeyframeSelector extends BodyDeclaration {
     constructor(offset: number, length: number);
     readonly type: NodeType;
 }
-export declare class Import extends Node {
-    private medialist;
-    private sourceList;
+export declare class ImportSource extends Node {
     constructor(offset: number, length: number);
     readonly type: NodeType;
-    addSource(src: string): void;
-    getSources(): string[];
+    getName(): string;
+    getPath(): string;
+    private unquote(text);
+}
+export declare class Import extends Node {
+    private medialist;
+    private sources;
+    constructor(offset: number, length: number);
+    readonly type: NodeType;
+    addSource(node: ImportSource): boolean;
+    getSources(): ImportSource[];
     setMedialist(node: Node): boolean;
 }
 export declare class Namespace extends Node {

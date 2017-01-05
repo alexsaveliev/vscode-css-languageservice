@@ -34,14 +34,7 @@ export class Parser {
 	}
 
 	public findDependencies(stylesheet: nodes.Stylesheet): string[] {
-		let ret = [];
-		let Deps = stylesheet.getDependencies();
-
-		for (var prop in Deps) {
-			ret.push(prop + "");
-		}
-
-		return ret;
+		return stylesheet.getDependencies();
 	}
 
 	public peek(type: TokenType, text?: string, ignoreCase: boolean = true): boolean {
@@ -205,8 +198,8 @@ export class Parser {
 						if (node.type === nodes.NodeType.Import) {
 							sheet.addDependencies((node as nodes.Import).getSources());
 							return;
-						}
-						node.getChildren().map((node) => parseChildNodes(sheet, node));
+						}				
+						node.getChildren().map((node) => parseChildNodes(sheet, node));								
 					})(node, statement);
 					hasMatch = true;
 					inRecovery = false;
@@ -595,7 +588,7 @@ export class Parser {
 			return this.finish(node, ParseError.URIOrStringExpected);
 		}
 
-		node.addSource(this.prevToken.text);
+		node.addSource(new nodes.ImportSource(this.prevToken.offset, this.prevToken.len));
 		node.setMedialist(this._parseMediaList());
 
 		return this.finish(node);

@@ -1,7 +1,10 @@
 import * as nodes from '../parser/cssNodes';
 import { TextDocument, Range, Position, Location, DocumentHighlight, SymbolInformation, WorkspaceEdit } from 'vscode-languageserver-types';
 import { Symbols } from '../parser/cssSymbolScope';
+import { URIResolver } from '../services/uriResolver';
 export declare class CSSNavigation {
+    private uriResolver;
+    constructor(uriResolver: URIResolver);
     findDecl(thisURI: string, documents: {
         [uri: string]: {
             textDoc: TextDocument;

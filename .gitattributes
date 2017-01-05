@@ -3,4 +3,6 @@ lib/* linguist-vendored
 LICENSE.md linguist-documentation
 README.md linguist-documentation
 thirdpartynotices.txt linguist-documentation
+*.js text eol=lf
+*.ts text eol=lf
 

@@ -62,6 +62,7 @@ export enum NodeType {
 	Keyframe,
 	FontFace,
 	Import,
+	ImportSource,
 	Namespace,
 	Invocation,
 	FunctionDeclaration,
@@ -409,27 +410,19 @@ export class Identifier extends Node {
 export class Stylesheet extends Node {
 
 	private name: string;
-	private dependencyMap: {[src: string]: string};
+	private dependencies: ImportSource[];
 
 	constructor(offset: number, length: number) {
 		super(offset, length);
-		this.dependencyMap = Object.create(null);
+		this.dependencies = [];
 	}
 
-	public getDependencies(): {[src: string]: string} {
-		return this.dependencyMap;
+	public getDependencies(): string[] {
+		return this.dependencies.map((dep) => dep.getName());
 	}
 
-	public remDependencies(src: string[]) {
-		src.map((dep) => {
-			delete this.dependencyMap[dep];
-		})
-	}
-
-	public addDependencies(src: string[]) {
-		src.map((dep) => {
-			this.dependencyMap[dep] = "";
-		});
+	public addDependencies(src: ImportSource[]) {
+		Array.prototype.push.apply(this.dependencies, src);
 	}
 
 	public get type(): NodeType {
@@ -989,26 +982,61 @@ export class KeyframeSelector extends BodyDeclaration {
 	}
 }
 
+export class ImportSource extends Node {
+	constructor(offset: number, length: number) {
+		super(offset, length);
+	}	
+
+	public get type(): NodeType {
+		return NodeType.ImportSource;
+	}	
+
+	public getName(): string {
+		return this.unquote(this.getText()).trim();
+	}
+
+	public getPath(): string {
+		let text = this.getName();
+		if (/^url\(.+\)$/.test(text)) {
+			text = text.substring(4).substring(0, text.length - 1).trim();
+			return this.unquote(text).trim();
+		}
+		return text;
+	}		
+
+	private unquote(text: string): string {
+		let out = text.replace(/^"|"$/g, "");
+		if (text.length != out.length) {
+			return out;
+		}
+		return text.replace(/^'|'$/g, "");		
+	}
+	
+}
+
 export class Import extends Node {
 
 	private medialist: Node;
-	private sourceList: string[];
+	private sources: ImportSource[];
 
 	constructor(offset: number, length: number) {
 		super(offset, length);
-		this.sourceList = [];
+		this.sources = [];
 	}
 
 	public get type(): NodeType {
 		return NodeType.Import;
 	}
 
-	public addSource(src: string): void {
-		this.sourceList.push(src.replace(/['"]+/g, ""));
+	public addSource(node: ImportSource): boolean {
+		if (node) {
+			this.sources.push(node);
+		}
+		return this.addChild(node);
 	}
 
-	public getSources(): string[] {
-		return this.sourceList;
+	public getSources(): ImportSource[] {
+		return this.sources;
 	}
 
 	public setMedialist(node: Node): boolean {
@@ -1568,6 +1596,8 @@ export class DefaultVisitor implements IVisitor {
 				return this.visitNodelist(<Nodelist> node);
 			case NodeType.Import:
 				return this.visitImport(<Import> node);
+			case NodeType.ImportSource:
+				return this.visitImportSource(<ImportSource> node);				
 			case NodeType.Namespace:
 				return this.visitNamespace(<Namespace> node);
 			case NodeType.Keyframe:
@@ -1639,6 +1669,10 @@ export class DefaultVisitor implements IVisitor {
 	}
 
 	public visitImport(node:Import):boolean {
+		return true;
+	}
+
+	public visitImportSource(node:ImportSource):boolean {
 		return true;
 	}
 

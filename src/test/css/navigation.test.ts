@@ -9,6 +9,7 @@ import {Scope, GlobalScope, ScopeBuilder, Symbols} from '../../parser/cssSymbolS
 import * as nodes from '../../parser/cssNodes';
 import {Parser} from '../../parser/cssParser';
 import {CSSNavigation} from '../../services/cssNavigation';
+import {CSSURIResolver} from '../../services/cssUriResolver';
 
 import {TextDocument, DocumentHighlightKind} from 'vscode-languageserver-types';
 
@@ -30,7 +31,7 @@ export function assertHighlights(p: Parser, input: string, marker: string, expec
 	let index = input.indexOf(marker) + marker.length;
 	let position = document.positionAt(index);
 
-	return asPromise(new CSSNavigation().findDocumentHighlights(document, nodes.getNodeAtOffset(stylesheet, document.offsetAt(position)), new Symbols(stylesheet), stylesheet)).then(highlights => {
+	return asPromise(new CSSNavigation(new CSSURIResolver).findDocumentHighlights(document, nodes.getNodeAtOffset(stylesheet, document.offsetAt(position)), new Symbols(stylesheet), stylesheet)).then(highlights => {
 		assert.equal(highlights.length, expectedMatches, input);
 
 		let nWrites = 0;

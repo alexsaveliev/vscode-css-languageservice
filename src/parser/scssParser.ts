@@ -42,7 +42,7 @@ export class SCSSParser extends cssParser.Parser {
 			if (!this.accept(TokenType.URI) && !this.accept(TokenType.String)) {
 				return this.finish(node, ParseError.URIOrStringExpected);
 			}
-			node.addSource(this.prevToken.text);
+			node.addSource(new nodes.ImportSource(this.prevToken.offset, this.prevToken.len));
 		} while (this.accept(TokenType.Comma));
 
 		node.setMedialist(this._parseMediaList());

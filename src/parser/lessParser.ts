@@ -38,10 +38,11 @@ export class LESSParser extends cssParser.Parser {
 			if (!this.accept(TokenType.Ident)) {
 				return this.finish(node, ParseError.IdentifierExpected, [TokenType.SemiColon]);
 			}
-			while (this.accept(TokenType.Comma) && this.accept(TokenType.Ident)) {
-				node.addSource(this.prevToken.text);
-			}
-
+			do {
+				if (!this.accept(TokenType.Comma)) {
+					break;
+				}
+			} while (this.accept(TokenType.Ident));
 			if (!this.accept(TokenType.ParenthesisR)) {
 				return this.finish(node, ParseError.RightParenthesisExpected, [TokenType.SemiColon]);
 			}
@@ -50,7 +51,7 @@ export class LESSParser extends cssParser.Parser {
 		if (!this.accept(TokenType.URI) && !this.accept(TokenType.String)) {
 			return this.finish(node, ParseError.URIOrStringExpected, [TokenType.SemiColon]);
 		}
-		node.addSource(this.prevToken.text);
+		node.addSource(new nodes.ImportSource(this.prevToken.offset, this.prevToken.len));
 		node.setMedialist(this._parseMediaList());
 
 		return this.finish(node);

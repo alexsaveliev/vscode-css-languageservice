@@ -9,13 +9,22 @@ import {TextDocument, Range, Position, Location, DocumentHighlightKind, Document
 	SymbolInformation, SymbolKind, WorkspaceEdit, TextEdit, VersionedTextDocumentIdentifier, MarkedString} from 'vscode-languageserver-types';
 import {Symbols} from '../parser/cssSymbolScope';
 import {isColorValue} from '../services/languageFacts';
+import {URIResolver} from '../services/uriResolver';
 
 import * as nls from 'vscode-nls';
 const localize = nls.loadMessageBundle();
 
 var path = require("path");
+var url = require("url");
 
 export class CSSNavigation {
+
+	private uriResolver: URIResolver;
+
+	constructor(uriResolver: URIResolver) {
+		this.uriResolver = uriResolver;
+	}
+
 	public findDecl(thisURI: string, documents: {[uri: string]: {textDoc: TextDocument, styleSheet: nodes.Stylesheet}}, name: string, type: nodes.NodeType, range: Range): Location {
 		function getRange(document: TextDocument, node: nodes.Node) {
 			return Range.create(document.positionAt(node.offset), document.positionAt(node.end));
@@ -145,7 +154,28 @@ export class CSSNavigation {
 				case nodes.NodeType.Media: { } break;
 				case nodes.NodeType.Keyframe: { } break;
 				case nodes.NodeType.FontFace: { } break;
-				case nodes.NodeType.Import: { } break;
+				case nodes.NodeType.Import: { 
+					for (const source of (node as nodes.Import).getSources()) {
+						if (source.offset <= offset &&
+							source.offset + source.length > offset) {
+								let path = source.getPath();
+								const parsedUrl = url.parse(path);
+								if (parsedUrl.protocol == 'http:' ||
+									parsedUrl.protocol == 'https:') {
+									continue;
+								}
+								path = parsedUrl.pathname;
+								const resolved = this.uriResolver.resolve(url.resolve(document.uri, path), documents);
+								if (resolved) {
+									return {
+										uri: resolved,
+										range: Range.create(0, 0, 0, 0)
+									};
+								}
+						}
+					}
+				} 
+				break;
 				case nodes.NodeType.Namespace: { } break;
 				case nodes.NodeType.Invocation: { }
 				case nodes.NodeType.FunctionDeclaration: { } break;

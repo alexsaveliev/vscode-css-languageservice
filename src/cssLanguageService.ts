@@ -13,11 +13,14 @@ import {CSSHover} from './services/cssHover';
 import {CSSNavigation} from './services/cssNavigation';
 import {CSSCodeActions} from './services/cssCodeActions';
 import {CSSValidation} from './services/cssValidation';
+import {CSSURIResolver} from './services/cssUriResolver';
 
 import {SCSSParser} from './parser/scssParser';
 import {SCSSCompletion} from './services/scssCompletion';
+import {SCSSURIResolver} from './services/scssUriResolver';
 import {LESSParser} from './parser/lessParser';
 import {LESSCompletion} from './services/lessCompletion';
+import {LESSURIResolver} from './services/lessUriResolver';
 
 export type Stylesheet = {};
 
@@ -57,21 +60,21 @@ function createFacade(parser: Parser, completion: CSSCompletion, hover: CSSHover
 		findDocumentSymbols: navigation.findDocumentSymbols.bind(navigation),
 		doCodeActions: codeActions.doCodeActions.bind(codeActions),
 		findColorSymbols: navigation.findColorSymbols.bind(navigation),
-		doRename: navigation.doRename.bind(navigation),
+		doRename: navigation.doRename.bind(navigation)
 	};
 }
 
 
 export function getCSSLanguageService() : LanguageService {
-	return createFacade(new Parser(), new CSSCompletion(), new CSSHover(), new CSSNavigation(), new CSSCodeActions(), new CSSValidation);
+	return createFacade(new Parser(), new CSSCompletion(), new CSSHover(), new CSSNavigation(new CSSURIResolver), new CSSCodeActions(), new CSSValidation);
 }
 
 
 export function getSCSSLanguageService() : LanguageService {
-	return createFacade(new SCSSParser(), new SCSSCompletion(), new CSSHover(), new CSSNavigation(), new CSSCodeActions(), new CSSValidation);
+	return createFacade(new SCSSParser(), new SCSSCompletion(), new CSSHover(), new CSSNavigation(new SCSSURIResolver), new CSSCodeActions(), new CSSValidation);
 }
 
 
 export function getLESSLanguageService() : LanguageService {
-	return createFacade(new LESSParser(), new LESSCompletion(), new CSSHover(), new CSSNavigation(), new CSSCodeActions(), new CSSValidation);
+	return createFacade(new LESSParser(), new LESSCompletion(), new CSSHover(), new CSSNavigation(new LESSURIResolver), new CSSCodeActions(), new CSSValidation);
 }
